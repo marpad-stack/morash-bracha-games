@@ -1,0 +1,16 @@
+# Machine-local agent state and temporary files
+.claude/
+__pycache__/
+*.pyc
+*.tmp
+*.log
+Thumbs.db
+.DS_Store
+
+# Local credentials must never be part of project backups
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx

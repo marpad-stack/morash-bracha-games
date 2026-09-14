@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>מרווח</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF6F2;
+  --card:#FFFFFF;
+  --ink:#3A3038;
+  --ink-2:#7A6B72;
+  --ink-3:#A99AA1;
+  --line:#EADFD8;
+  --rose:#C9788A;
+  --rose-bg:#FBECEE;
+  --sage:#7E9B7C;
+  --sage-bg:#EDF3EC;
+  --plum:#8B7BA8;
+  --plum-bg:#F0ECF6;
+  --serif:'Frank Ruhl Libre','David Libre',serif;
+  --sans:'Heebo','Arial Hebrew',sans-serif;
+  --sh:0 2px 14px rgba(90,60,70,.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#EFE7E2;font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased;
+  display:flex;justify-content:center;min-height:100dvh}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--rose);outline-offset:2px;border-radius:8px}
+
+.app{width:100%;max-width:430px;background:var(--paper);min-height:100dvh;
+  display:flex;flex-direction:column;position:relative;overflow:hidden}
+
+header{display:flex;justify-content:space-between;align-items:center;
+  padding:16px 20px 12px;border-bottom:1px solid var(--line);background:var(--paper)}
+.brand{font-family:var(--serif);font-size:21px;font-weight:500}
+.daymark{font-size:13px;color:var(--ink-3)}
+
+main{flex:1;overflow-y:auto;padding:18px 20px 96px}
+.screen{display:none}
+.screen.show{display:block}
+
+.eyebrow{font-size:13px;color:var(--ink-2);margin-bottom:14px;line-height:1.6}
+h2.title{font-family:var(--serif);font-size:24px;font-weight:500;margin-bottom:4px}
+
+/* --- mood --- */
+.mood-btn{width:100%;text-align:right;background:var(--card);border:1px solid var(--line);
+  border-radius:16px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--sh);
+  display:flex;justify-content:space-between;align-items:center;gap:10px}
+.mood-btn b{font-weight:500;font-size:16px}
+.mood-btn small{font-size:12.5px;color:var(--ink-3);text-align:left;max-width:52%}
+.mood-btn:active{background:var(--rose-bg)}
+
+/* --- card --- */
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:22px;box-shadow:var(--sh);margin-bottom:14px;border-top:4px solid var(--accent)}
+.tag{display:inline-block;font-size:12px;padding:4px 11px;border-radius:20px;
+  background:var(--accent-bg);color:var(--accent);margin-bottom:12px}
+.card h1{font-family:var(--serif);font-size:27px;font-weight:500;line-height:1.25;margin-bottom:12px}
+.insight{font-size:16.5px;line-height:1.75;color:var(--ink)}
+.reveal{margin-top:18px;width:100%;padding:13px;border-radius:12px;
+  background:var(--rose-bg);color:var(--rose);font-weight:500;font-size:15px}
+.task{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);display:none}
+.task.open{display:block}
+.task small{display:block;font-size:12.5px;color:var(--ink-3);margin-bottom:6px}
+.task p{font-size:17px;line-height:1.65;font-weight:500}
+
+.row{display:flex;gap:10px;margin-bottom:12px}
+.btn{flex:1;padding:13px;border-radius:12px;font-size:14.5px;font-weight:500;
+  border:1px solid var(--line);background:var(--card);text-align:center}
+.btn.fill{background:var(--rose);border-color:var(--rose);color:#fff}
+.btn.on{background:var(--rose-bg);border-color:var(--rose);color:var(--rose)}
+.btn.wide{width:100%;margin-bottom:10px}
+
+.couple-card{background:var(--plum-bg);border:1px solid #DFD6EC;border-radius:16px;
+  padding:16px 18px;width:100%;text-align:right;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.couple-card b{display:block;font-weight:500;font-size:15px;color:#5F5177}
+.couple-card span{font-size:12.5px;color:#8477A0;line-height:1.5}
+.chev{color:var(--plum);font-size:22px}
+
+.note{text-align:center;font-size:12.5px;color:var(--ink-3);margin-top:14px;line-height:1.6}
+
+/* --- thread --- */
+.thread-box{background:var(--card);border:1px solid var(--line);border-radius:18px;
+  padding:14px 8px;box-shadow:var(--sh);margin:14px 0}
+.thread-box svg{width:100%;height:auto;display:block}
+.stats{display:flex;gap:8px;margin-bottom:16px}
+.stat{flex:1;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 8px;text-align:center}
+.stat b{display:block;font-family:var(--serif);font-size:23px;font-weight:500}
+.stat span{font-size:11.5px;color:var(--ink-3)}
+.stamps{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.stamp{aspect-ratio:1;border-radius:50%;border:1px dashed var(--line);display:flex;
+  flex-direction:column;align-items:center;justify-content:center;font-size:10.5px;
+  color:var(--ink-3);text-align:center;padding:6px;line-height:1.3;background:var(--card)}
+.stamp b{font-family:var(--serif);font-size:15px;font-weight:500}
+.stamp.got{border:1px solid var(--rose);background:var(--rose-bg);color:var(--rose)}
+
+/* --- album --- */
+.mini{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;
+  margin-bottom:10px;box-shadow:var(--sh);border-inline-start:4px solid var(--accent)}
+.mini h3{font-family:var(--serif);font-size:19px;font-weight:500;margin-bottom:5px}
+.mini p{font-size:14px;line-height:1.6;color:var(--ink-2)}
+.mini .m{margin-top:9px;font-size:12px;color:var(--rose)}
+.empty{border:1px dashed var(--line);border-radius:18px;padding:34px 22px;text-align:center;
+  color:var(--ink-3);font-size:14px;line-height:1.8;background:var(--card)}
+
+/* --- couple --- */
+.q-card{background:var(--plum-bg);border:1px solid #DFD6EC;border-radius:18px;padding:22px;margin-bottom:14px}
+.q-card small{font-size:12px;color:#8477A0;display:block;margin-bottom:10px}
+.q-card .q{font-family:var(--serif);font-size:22px;font-weight:500;line-height:1.45;color:#4E4262}
+.half{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:10px}
+.half small{font-size:12px;color:var(--ink-3);display:block;margin-bottom:6px}
+.half textarea{width:100%;min-height:80px;border:0;resize:none;font:inherit;font-size:15px;
+  line-height:1.6;color:var(--ink);background:transparent}
+.half textarea::placeholder{color:var(--ink-3)}
+.half .wait{font-size:13.5px;color:var(--ink-3);line-height:1.7;padding:8px 0}
+.btn.plum{background:var(--plum);border-color:var(--plum);color:#fff}
+.btn.plum[disabled]{opacity:.4}
+
+/* --- nav --- */
+nav{position:fixed;bottom:0;width:100%;max-width:430px;background:var(--paper);
+  border-top:1px solid var(--line);display:flex;padding:8px 12px calc(10px + env(safe-area-inset-bottom))}
+.nb{flex:1;padding:9px 4px;border-radius:12px;font-size:13px;color:var(--ink-3);font-weight:500}
+.nb.on{color:var(--rose);background:var(--rose-bg)}
+
+.toast{position:fixed;bottom:88px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;
+  padding:10px 18px;border-radius:12px;font-size:13px;opacity:0;transition:.3s;pointer-events:none;z-index:9}
+.toast.show{opacity:1}
+.demo{text-align:center;padding:6px;background:#F3EAE4;border-bottom:1px solid var(--line)}
+.demo button{font-size:11.5px;color:var(--ink-2)}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="demo"><button id="next">מצב הדגמה ← קפצי ליום הבא</button></div>
+  <header>
+    <div class="brand">מרווח</div>
+    <div class="daymark" id="dm">יום 1</div>
+  </header>
+
+  <main>
+    <section class="screen show" id="s-mood">
+      <h2 class="title">בוקר טוב</h2>
+      <p class="eyebrow">איך את מגיעה לרגע הזה? לפי זה אבחר לך את הכרטיס.</p>
+      <div id="moods"></div>
+    </section>
+
+    <section class="screen" id="s-card"><div id="cardBox"></div></section>
+
+    <section class="screen" id="s-path">
+      <h2 class="title">החוט שלך</h2>
+      <p class="eyebrow">כל יום שנפתח מוסיף קטע. לא צריך רצף מושלם.</p>
+      <div class="stats" id="stats"></div>
+      <div class="thread-box" id="thread"></div>
+      <div class="stamps" id="stamps"></div>
+    </section>
+
+    <section class="screen" id="s-album">
+      <h2 class="title">מה שנשאר אצלי</h2>
+      <p class="eyebrow">הכרטיסים ששמרת.</p>
+      <div id="album"></div>
+    </section>
+
+    <section class="screen" id="s-couple"><div id="coupleBox"></div></section>
+  </main>
+
+  <nav>
+    <button class="nb on" data-g="today">היום</button>
+    <button class="nb" data-g="path">החוט</button>
+    <button class="nb" data-g="album">אצלי</button>
+  </nav>
+  <div class="toast" id="toast"></div>
+</div>
+
+<script>
+const CAT={
+ parent:{n:'הורות',c:'#C9788A',bg:'#FBECEE'},
+ educ:{n:'חינוך',c:'#7E9B7C',bg:'#EDF3EC'},
+ self:{n:'אני',c:'#8B7BA8',bg:'#F0ECF6'}};
+
+const CARDS=[
+ {c:'parent',t:'מילה טובה אחת',i:'ילד זוכר איך הרגיש, ולאו דווקא את מה שאמרנו. הרגש שנשאר אצלו הוא השורש של הביטחון העצמי.',m:'לומר לכל ילד "שמתי לב ש…"'},
+ {c:'parent',t:'הטון קודם',i:'הילדים מרגישים את הטון ואת מה שמעבר למילים עצמן. כשאנחנו מדברות ברוגע, המסר שלנו נכנס ישר ללב.',m:'כשהילד מתוסכל, קחי נשימה אחת ודברי איתו בטון נמוך מהרגיל.'},
+ {c:'parent',t:'לתת שם לרגש',i:'כשהילד בסערת רגשות, הוא פשוט רוצה שנעזור לו להבין מה עובר עליו. ברגע שאנחנו קוראות לרגש בשמו, המערכת שלו נרגעת.',m:'אמרי לילד מתוסכל: "אני רואה שזה ממש מרגיז אותך".'},
+ {c:'parent',t:'תזכורת קטנה מראש',i:'מעברים פתאומיים בין משחק ליציאה מהבית יכולים להוליד כעס. תזכורת קטנה מראש מכינה את הילד ומונעת את ההתפרצות.',m:'תני התראה קצרה וקלילה: "עוד שתי דקות מסיימים לשחק ולובשים נעליים".'},
+ {c:'parent',t:'חיבוק בלי סיבה',i:'כשמגיע תינוק חדש, הגדולים מחפשים לוודא שהמקום שלהם בלב עדיין שמור. חיבוק ספונטני עושה עבודה ששום מילים לא יעשו.',m:'חבקי את הילד הבוגר באמצע היום, סתם ככה.'},
+ {c:'parent',t:'מבט פנימי',i:'ילדים צריכים להרגיש ששמחים לראות אותם. המבט שתתני להם בבוקר ילווה אותם לאורך כל היום.',m:'כשהילד נכנס לחדר, עצרי לרגע, הביטי בו וחייכי אליו מכל הלב.'},
+ {c:'educ',t:'בחירה חופשית',i:'בחירה בין שתי אפשרויות נותנת לילד תחושת שליטה ומונעת מאבק.',m:'תני לילד לבחור בין שתי אפשרויות בלבד ("חולצה ירוקה או כחולה?").'},
+ {c:'educ',t:'אומרים מה כן',i:'המוח שלנו מבין הוראות חיוביות הרבה יותר טוב מסיסמאות של "לא". במקום להגיד מה אסור, כווני למה שרצוי לעשות.',m:'החליפי את המשפט "אל תרוץ" ב-"נלך לאט ובזהירות".'},
+ {c:'educ',t:'לראות את הטוב',i:'מה שזכה לתשומת הלב שלנו יחזור על עצמו. אם נשים לב לרגעים השקטים והטובים, הילדים ישמחו לשכפל אותם.',m:'תפסי את הילד ברגע יפה ואמרי לו: "איזה כיף לראות אותך משחק ככה בכיף".'},
+ {c:'parent',t:'למתן את הרעש',i:'לפעמים ההתפרצויות הן לא פינוק, אלא פשוט עומס של רעש, מסכים ועייפות. מעט שקט סביבתי עושה פלאים לנפש.',m:'עממי את התאורה בסלון וכבי מסכים ומוזיקה למשך 20 דקות.'},
+ {c:'parent',t:'פרידה קצרה ובטוחה',i:'כשנפרדים בבקרים, ההיסוס שלנו מעביר לילד מסר שמשהו לא בטוח. פרידה קצרה, חמה ובטוחה מעניקה לו ביטחון לעזוב.',m:'תני נשיקה, אמרי "נתראה בצהריים!" ושחררי בחיוך בלי להתמהמה.'},
+ {c:'educ',t:'מחמאה על הדרך',i:'כשמשבחים ילד על התוצאה, הוא מפחד להיכשל בפעם הבאה. כשמשבחים את המאמץ והדרך, הוא מקבל אומץ לנסות שוב ושוב.',m:'אמרי לילד: "ראיתי כמה השקעת ומאוד אהבתי את הדרך שבה ניסית!".'},
+ {c:'parent',t:'מותר לקנא',i:'קנאה בין אחים היא דבר טבעי לגמרי. ניסיון לבטל את הרגש רק מגביר את התסכול, בעוד שהבנה פשוטה מביאה לרגיעה.',m:'כשהילד מתלונן על התינוק, אמרי לו: "זה באמת לא פשוט לשתף בתשומת הלב".'},
+ {c:'parent',t:'תמיד אפשר לתקן',i:'אנחנו לא רובוטים ולפעמים אנחנו מאבדות סבלנות. היכולת לחזור, לחבק ולפתוח דף חדש מלמדת את הילד סלחנות ואהבה.',m:'אם הרמת קול, חזרי לאחר שנרגעת ואמרי: "כעסתי מקודם, אבל אני תמיד אוהבת אותך".'},
+ {c:'parent',t:'להיות שם איתו',i:'ברגעי בכי או תסכול, הילד לא צריך שנפתיע אותו בפתרון קסם. הוא צריך לדעת שזה בסדר להרגיש, ושאת שם לצידו.',m:'כשהילד בוכה, שבי לידו בשקט וברוגע בלי לנסות להשתיק אותו מיד.'},
+ {c:'parent',t:'קודם להקשיב',i:'כשהילד מספר על קושי, הריצה המהירה שלנו לתת עצות גורמת לו להרגיש שלא באמת שמענו אותו. הקשבה פשוטה עושה את ההבדל.',m:'כשהילד משתף במשהו, אמרי פשוט: "אני מבינה" במקום לפתור מיד.'},
+ {c:'educ',t:'דוגמה אישית',i:'הילדים לומדים על העולם דרך צפייה בנו. הדרך שבה אנחנו מגיבות ללחץ או לטעות קטנה משפיעה עליהם פי כמה מכל שיחה חינוכית.',m:'השתדלי לשמור על טון רגוע ושקט כשמשהו נשפך או נשבר בבית.'},
+ {c:'educ',t:'גאווה פנימית',i:'פרסים ומדבקות עובדים לטווח קצר, אבל הסיפוק האמיתי מגיע מבפנים. כשהילד מרגיש גאה במעשיו, הוא לא צריך פרס חיצוני.',m:'שאלי את הילד בסיום משימה: "איך הרגשת כשהצלחת?" במקום להבטיח פרס.'},
+ {c:'educ',t:'משימות קטנות',i:'הוראה גדולה כמו "לסדר את החדר" נשמעת לילד כמו הר בלתי עביר. פירוק לצעד קטן ויחיד מאפשר לו להתחיל לפעול בקלות.',m:'תני הוראה קונקרטית יחידה: "שים את המכוניות בקופסה".'},
+ {c:'educ',t:'תוצאות למעשים',i:'עונשים שלא קשורים למעשה סתם מרגיזים. כשתוצאה מגיעה באופן טבעי ממה שקרה, הילד לומד אחריות אמיתית.',m:'אם משחק לא הוחזר למקום, אמרי ברוגע: "משחק שעל הרצפה ינוח בארון עד מחר".'},
+ {c:'educ',t:'שאלות במקום הטפה',i:'נאומי מוסר גורמים לילדים לסגור את האוזניים. שאלות פתוחות ומעניינות מעוררות אותם לחשוב ולמצוא פתרון בעצמם.',m:'במקום להטיף, שאלי: "מה לדעתך אפשר לעשות עכשיו כדי לתקן?".'},
+ {c:'educ',t:'שותף פעיל',i:'ילדים רוצים להרגיש חשובים ובעלי ערך. תפקיד קטן ואמיתי בבית מעניק לילד תחושת בגרות ואחריות.',m:'תני לילד תפקיד קטן ואמיתי (כמו להניח מפיות) והודי לו על העזרה.'},
+ {c:'educ',t:'לדעת לחכות',i:'היכולת להמתין בסבלנות היא כמו שריר שמתפתח עם הזמן. מילוי מיידי של כל בקשה מונע מהילד לפתח איפוק.',m:'כשהילד מבקש משהו, אמרי: "בשמחה! רק אסיים לשטוף את הכוס ואני איתך".'},
+ {c:'educ',t:'מילים לרגשות',i:'כשיודעים להגיד בדיוק מה מציק, פחות צועקים או רבים. עזרי לילד להגדיל את אוצר המילים הרגשי שלו בשיח היום-יומי.',m:'הוסיפי מילת רגש חדשה לשיחה (כמו: "אתה סקרן", "אתה מופתע").'},
+ {c:'educ',t:'מקום לנסות',i:'כשאנחנו רצות לעזור ולפתור כל קושי מיד, הילד מבין שהוא לא יכול לבד. קצת סבלנות מצידנו בונה את הביטחון שלו.',m:'כשהילד מתקשה בפעולה קטנה, המתיני 10 שניות לפני שאת מושיטה יד.'},
+ {c:'educ',t:'לשתף במחשבות',i:'ערכים נלמדים בעיקר כשהילדים רואים אותנו פועלות בשטח. שיתוף קצר במחשבה מאחורי המעשה עוזר להם להבין למה.',m:'הסבירי בקצרה למה עשית מעשה: "השארתי מקום לשכן כי חשוב להתחשב".'},
+ {c:'self',t:'פחות התלבטויות',i:'אמא בחופשת לידה מקבלת המון החלטות ביום. כדי לא להישחק, כדאי לקבוע דברים קבועים ולחסוך אנרגיה יקרה.',m:'קבעי תפריט סגור מראש לארוחת הערב היום בלי להסס או להתלבט.'},
+ {c:'self',t:'בלי רגשות אשמה',i:'מחשבות של "אני לא מספיק סבלנית" סתם מעייפות אותך. את אמא אנושית, נפלאה, ועושה כמיטב יכולתך בכל רגע.',m:'זהי מחשבה של אשמה והחליפי אותה ב: "אני עושה כמיטב יכולתי".'},
+ {c:'self',t:'לשחרר מפרפקציוניזם',i:'הבית לא חייב להיראות כמו מוזיאון, בטח לא עכשיו. הרוגע שלך והחיוך שלך חשובים הרבה יותר מעוד כיור נקי.',m:'בחרי דבר אחד בבית שיישאר מבולגן היום, והגדירי אותו כ"בסדר גמור".'},
+ {c:'self',t:'חמש דקות של שקט',i:'רעש רציף, בכי ודיבורים בלי הפסקה יוצרים עומס גדול. יציאה קצרה לשקט פיזי מחזירה לך את הסבלנות והרוגע.',m:'צאי לחמש דקות של שקט במרפסת או בחדר סגור כשהילדים בהשגחה.'},
+ {c:'self',t:'לבקש ישר ולעניין',i:'לקוות שמישהו ינחש לבד מה את צריכה סתם מביא לאכזבה. בקשה פשוטה ומדויקת משיגה עזרה נהדרת בלי מתחים.',m:'בקשי עזרה מוגדרת וקונקרטית ("תוכל לקפל את הכביסה הזו?") בלי לצפות שינחשו.'}
+];
+
+const MOODS=[
+ {l:'עייפה',s:'משהו קטן שלא דורש כוח',p:[26,27,28,29,30,9,4,15]},
+ {l:'על הקצה',s:'קודם משהו שירגיע אותי',p:[1,13,27,9,14,29,7,2]},
+ {l:'רוצה חיזוק',s:'להזכיר לי מי אני להם',p:[0,4,5,8,11,15,17,21]},
+ {l:'יציבה היום',s:'יש לי מקום ללמוד משהו',p:[6,10,12,16,18,19,20,22,23,24,25]}];
+
+const QS={
+ parent:['איזה רגע קטן עם הילדים היום היית רוצה שיזכרו?','מה הפתיע אותך היום באחד הילדים?','איפה הרגשת שהטון שלנו עשה את ההבדל?'],
+ educ:['מה הילדים למדו היום דווקא מלראות אותנו?','מתי היום נתנו לילד לנסות לבד, ומה קרה?','איזו הרגל קטנה היית רוצה שנבנה יחד בבית?'],
+ self:['מה עזר לך היום להחזיק, ומה היה עוזר יותר?','איזו התלבטות אפשר להוריד לך השבוע?','מה היה הרגע השקט שלך היום?']};
+
+const WEEKS=['שבוע ראשון','שבוע שני','שבוע שלישי','שבוע רביעי'];
+const S={day:1,today:null,done:{},saved:{},couple:{},used:new Set()};
+const $=s=>document.querySelector(s);
+
+function go(id,nav){
+ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('show'));
+ $('#s-'+id).classList.add('show');
+ document.querySelectorAll('.nb').forEach(b=>b.classList.toggle('on',b.dataset.g===(nav||'today')));
+ $('main').scrollTop=0;
+}
+function toast(t){const x=$('#toast');x.textContent=t;x.classList.add('show');clearTimeout(x._t);x._t=setTimeout(()=>x.classList.remove('show'),1700);}
+
+/* mood */
+$('#moods').innerHTML=MOODS.map((m,i)=>
+ `<button class="mood-btn" data-i="${i}"><b>${m.l}</b><small>${m.s}</small></button>`).join('');
+$('#moods').onclick=e=>{
+ const b=e.target.closest('.mood-btn'); if(!b)return;
+ const m=MOODS[+b.dataset.i];
+ let p=m.p.find(i=>!S.used.has(i));
+ if(p==null)p=CARDS.findIndex((_,i)=>!S.used.has(i));
+ if(p<0)p=(S.day-1)%CARDS.length;
+ S.today=p;S.used.add(p);drawCard();go('card');
+};
+
+/* card */
+function drawCard(){
+ const i=S.today,c=CARDS[i],k=CAT[c.c];
+ $('#cardBox').innerHTML=`
+  <div class="card" style="--accent:${k.c};--accent-bg:${k.bg}">
+    <span class="tag" style="background:${k.bg};color:${k.c}">${k.n}</span>
+    <h1>${c.t}</h1>
+    <p class="insight">${c.i}</p>
+    <button class="reveal" id="rev">ומה עושים עם זה היום</button>
+    <div class="task" id="task"><small>הצעד של היום</small><p>${c.m}</p></div>
+  </div>
+  <div class="row">
+    <button class="btn fill" id="did">${S.done[i]?'✓ ניסיתי היום':'ניסיתי'}</button>
+    <button class="btn ${S.saved[i]?'on':''}" id="sav">${S.saved[i]?'♥ שמור אצלי':'♡ לשמור אצלי'}</button>
+  </div>
+  <button class="couple-card" id="cp">
+    <div><b>שאלת ערב לשניכם</b><span>הכרטיס הזה, שאלה אחת, בשולחן</span></div><span class="chev">‹</span>
+  </button>
+  <p class="note" id="note"></p>`;
+ $('#rev').onclick=e=>{$('#task').classList.add('open');e.target.style.display='none'};
+ $('#did').onclick=e=>{S.done[i]=S.day;e.target.textContent='✓ ניסיתי היום';toast('נרשם בחוט שלך');note()};
+ $('#sav').onclick=e=>{S.saved[i]=!S.saved[i];e.target.className='btn '+(S.saved[i]?'on':'');
+   e.target.textContent=S.saved[i]?'♥ שמור אצלי':'♡ לשמור אצלי';toast(S.saved[i]?'נשמר':'הוסר')};
+ $('#cp').onclick=()=>{drawCouple(i);go('couple')};
+ note();
+}
+function note(){const n=Object.keys(S.done).length;const e=$('#note');if(!e)return;
+ e.textContent=n===0?'לא חייבים לסמן כלום. הכרטיס כבר אצלך.':n===1?'צעד אחד. זה מה שצריך ליום.':`${n} צעדים עד עכשיו. החוט מתארך.`}
+
+/* thread */
+function drawPath(){
+ const n=CARDS.length,W=350,H=210,cols=8,dx=W/(cols+1),rows=Math.ceil(n/cols),dy=H/(rows+1);
+ const pts=[];
+ for(let i=0;i<n;i++){const r=(i/cols)|0,col=i%cols,d=r%2?cols-1-col:col;
+  pts.push([W-(d+1)*dx,(r+1)*dy]);}
+ const D=u=>pts.slice(0,u).map(([x,y],i)=>{if(!i)return`M${x} ${y}`;
+  const[px,py]=pts[i-1],cx=(px+x)/2;return` C${cx} ${py},${cx} ${y},${x} ${y}`}).join('');
+ $('#thread').innerHTML=`<svg viewBox="0 0 ${W} ${H+16}">
+  <path d="${D(n)}" fill="none" stroke="#EADFD8" stroke-width="2" stroke-linecap="round"/>
+  <path d="${D(S.day)}" fill="none" stroke="#C9788A" stroke-width="2.2" stroke-linecap="round"/>
+  ${pts.map(([x,y],i)=>{const d=i+1;
+   return`<circle cx="${x}" cy="${y}" r="${d===S.day?6:4.5}" fill="${d<=S.day?'#C9788A':'#fff'}" stroke="${d<=S.day?'#C9788A':'#EADFD8'}" stroke-width="1.6"/>`}).join('')}
+ </svg>`;
+ $('#stats').innerHTML=`<div class="stat"><b>${S.day}</b><span>ימים</span></div>
+  <div class="stat"><b>${Object.keys(S.done).length}</b><span>צעדים שניסית</span></div>
+  <div class="stat"><b>${Object.values(S.couple).filter(x=>x.sent).length}</b><span>שיחות ערב</span></div>`;
+ $('#stamps').innerHTML=WEEKS.map((w,i)=>{const got=S.day>(i+1)*7;
+  return`<div class="stamp ${got?'got':''}"><b>${i+1}</b>${got?w:'עוד '+((i+1)*7-S.day+1)}</div>`}).join('');
+}
+
+/* album */
+function drawAlbum(){
+ const ids=Object.keys(S.saved).filter(k=>S.saved[k]).map(Number);
+ $('#album').innerHTML=ids.length?ids.map(i=>{const c=CARDS[i],k=CAT[c.c];
+  return`<div class="mini" style="--accent:${k.c}"><h3>${c.t}</h3><p>${c.m}</p>
+   <div class="m">${k.n}${S.done[i]?' · ניסיתי':''}${S.couple[i]&&S.couple[i].sent?' · דיברנו':''}</div></div>`}).join('')
+  :`<div class="empty">עדיין ריק, וזה בסדר.<br>כשכרטיס ידבר אליך, לחצי "לשמור אצלי"<br>והוא יחכה לך כאן.</div>`;
+}
+
+/* couple */
+function drawCouple(i){
+ const c=CARDS[i],qs=QS[c.c],q=qs[i%qs.length];
+ const st=S.couple[i]||(S.couple[i]={mine:'',sent:false});
+ $('#coupleBox').innerHTML=`
+  <h2 class="title">שאלת ערב</h2>
+  <p class="eyebrow">כל אחד כותב לעצמו, ובערב קוראים יחד. לא מבחן, התחלה של שיחה.</p>
+  <div class="q-card"><small>מתוך "${c.t}"</small><div class="q">${q}</div></div>
+  <div class="half"><small>אני</small><textarea id="ta" placeholder="מה שעולה, במילים שלך" ${st.sent?'readonly':''}>${st.mine}</textarea></div>
+  <div class="half"><small>הוא</small><div class="wait">${st.sent?'התשובה שלו תיפתח כאן אחרי שהוא יכתוב את שלו.':'השאלה תגיע אליו אחרי שתשמרי את שלך.'}</div></div>
+  <button class="btn wide plum" id="snd" ${st.sent||!st.mine.trim()?'disabled':''}>${st.sent?'נשמר לערב':'לשמור ולשלוח לו את השאלה'}</button>
+  <button class="btn wide" id="bk">חזרה לכרטיס</button>`;
+ const ta=$('#ta');
+ ta.oninput=()=>{st.mine=ta.value;$('#snd').disabled=!ta.value.trim()};
+ $('#snd').onclick=()=>{st.sent=true;toast('השאלה בדרך אליו');drawCouple(i)};
+ $('#bk').onclick=()=>go('card');
+}
+
+document.querySelectorAll('.nb').forEach(b=>b.onclick=()=>{
+ const g=b.dataset.g;
+ if(g==='today')S.today!=null?go('card'):go('mood');
+ if(g==='path'){drawPath();go('path','path')}
+ if(g==='album'){drawAlbum();go('album','album')}
+});
+$('#next').onclick=()=>{S.day++;S.today=null;$('#dm').textContent='יום '+S.day;go('mood');toast('בוקר חדש')};
+</script>
+</body>
+</html>

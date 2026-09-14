@@ -1,0 +1,170 @@
+[
+  {
+    "part": "a",
+    "collection": "PAGES",
+    "identical": true,
+    "sha256": "d37015d1244681653f51f690abb2a850996d76f66598cd184e01855daa8ac69e"
+  },
+  {
+    "part": "a",
+    "collection": "CATS",
+    "identical": true,
+    "sha256": "7ace66533c64c5ca9d3743ff1ce2d757342ebe1f88e28b313fcb5c0624b6027b"
+  },
+  {
+    "part": "a",
+    "collection": "CATNAME",
+    "identical": true,
+    "sha256": "287e93c563f4f48b20be3814a607a614a92517bd1bd48dcde0b3747ec031e870"
+  },
+  {
+    "part": "b",
+    "collection": "PAGES",
+    "identical": true,
+    "sha256": "9a4c8911cd7efcd4016ba79bdb0f898cdf88c208c9da8dff1a42fa6c6157e1dc"
+  },
+  {
+    "part": "b",
+    "collection": "GAMES",
+    "identical": true,
+    "sha256": "15ba7c19e92365d58e201ad706acc67cd963b28071a0c7822d3719bdd859aeb2"
+  },
+  {
+    "part": "c",
+    "collection": "OBJECTS",
+    "identical": true,
+    "sha256": "ab7c2f1b03001e0e784864cafd5094cf3b171119a82594248219edfae38c7674"
+  },
+  {
+    "part": "c",
+    "collection": "DECOYS",
+    "identical": true,
+    "sha256": "59ffd4b0af62b50a0f8fb512722f15c909b0ffd6aa3651e9e2acbc64967f68ca"
+  },
+  {
+    "part": "d",
+    "collection": "UI",
+    "identical": true,
+    "sha256": "0a7cfb0890ffe80aa784c49b8d89261432e853e498b6fea361cadf0ef38b5f05"
+  },
+  {
+    "part": "d",
+    "collection": "CHEERS",
+    "identical": true,
+    "sha256": "db992c4131f9dfeb53fde3f8ac371f372bc4e64bf8925039cf3d9373fa063901"
+  },
+  {
+    "part": "d",
+    "collection": "MITZVOT",
+    "identical": true,
+    "sha256": "18bf78504df776c9067746984ca2906457cd95a28ebcc3fc774b7391c1504d7d"
+  },
+  {
+    "part": "d",
+    "collection": "SIT",
+    "identical": true,
+    "sha256": "b8fb746d48d4d58affdf3205ccef77b57b657823cd5fff019468a762959053c8"
+  },
+  {
+    "part": "d",
+    "collection": "QUIZ",
+    "identical": true,
+    "sha256": "f69003412f817113a26553aa4a12dce763416318793ec2513c3e1c25c5348ad0"
+  },
+  {
+    "part": "d",
+    "collection": "CHAL",
+    "identical": true,
+    "sha256": "72de31cdaeb4ef89792586a0501a6b68eb557c87f3cae247a829bc6ca06f65c9"
+  },
+  {
+    "part": "d",
+    "collection": "SURPRISE",
+    "identical": true,
+    "sha256": "9e4ee4ad6c2ac65996a2e5f8510ad644871aa72776cfbcbb5f2459d95afd9207"
+  },
+  {
+    "part": "e",
+    "collection": "EVENTS",
+    "identical": true,
+    "sha256": "abecfcc10801e6be0f8117d616091083fb92350c034bcd61e75843304293ce55"
+  },
+  {
+    "part": "e",
+    "collection": "MINI",
+    "identical": true,
+    "sha256": "7ce454125393fdcfa7b68a689b1ff92cf586e091e7abc2560e6abd0c42f93bb8"
+  },
+  {
+    "part": "e",
+    "collection": "STR",
+    "identical": true,
+    "sha256": "e850cf9e8213770808aec00d5705bca45cf9a30282211eef6c5d6f217ce350fd"
+  },
+  {
+    "part": "f",
+    "collection": "G",
+    "identical": true,
+    "sha256": "e2d04cf5f69410ff0327dbc9e6cc8c1c36a3ee98fc056751dd1141bdeff0684e"
+  },
+  {
+    "part": "f",
+    "collection": "SCENES",
+    "identical": true,
+    "sha256": "7069c68aa2bd95f4c13df435adcc1c68354215a641b3e59de2403656f6011417"
+  },
+  {
+    "part": "i",
+    "collection": "HMO",
+    "identical": true,
+    "sha256": "b2eb9a4a53bb776d73f7418172f1751ea76d30107a3de23f9dec8da096457cf9"
+  },
+  {
+    "part": "i",
+    "collection": "DAYMSG",
+    "identical": true,
+    "sha256": "8854f781bf91b4b8bad2c106e7179bb592c869db3def86a881091d2ff9d23686"
+  },
+  {
+    "part": "i",
+    "collection": "CATS",
+    "identical": true,
+    "sha256": "41028809e74a6f7167e094e7822a1c923bdec2c9819e6e2254a70270742c6a10"
+  },
+  {
+    "part": "i",
+    "collection": "CHEERS",
+    "identical": true,
+    "sha256": "853128b31636ec7c4356abaf653def869e66a235f13c795e67687b6dd4063103"
+  },
+  {
+    "part": "j",
+    "collection": "CAT",
+    "identical": true,
+    "sha256": "253479c104ce1c0cc291bed111be27fcba4a9b9d741858e570319ae957393d87"
+  },
+  {
+    "part": "j",
+    "collection": "CARDS",
+    "identical": true,
+    "sha256": "1f23c21e47c0ea4144108f6a988850490e65ae768c7be25aab9f13af8fa28ffe"
+  },
+  {
+    "part": "j",
+    "collection": "MOODS",
+    "identical": true,
+    "sha256": "f22b9a41905050944a79af3b406fc5f74ae7c4ec2a3da099a30a8bcdb0d7a03f"
+  },
+  {
+    "part": "j",
+    "collection": "QS",
+    "identical": true,
+    "sha256": "4795e039e7942ce728069f92c6a6e4b174aedf0246b44c40ea5a5dfe5b522332"
+  },
+  {
+    "part": "j",
+    "collection": "WEEKS",
+    "identical": true,
+    "sha256": "287daba0f8385b7116820a4633703e67e67a8a9af28a17c12a72ede723b637ab"
+  }
+]

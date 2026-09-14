@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<title>אור הגיע אלינו</title>
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light only;
+ --cream:#F3EFE4;--paper:#FBF8F1;--teal:#1E4D4A;--navy:#2E3C5B;--ink:#2A2724;--sand:#E2D8C3;--blush:#F1E2E7}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--cream)!important;color:var(--ink)!important}
+body{font-family:'Assistant',-apple-system,'Segoe UI',Arial,sans-serif;overflow:hidden}
+h1,h2,h3{font-family:'Suez One','Assistant',Georgia,serif;font-weight:400;margin:0}
+
+#app{position:fixed;inset:0;display:flex;flex-direction:column;background:var(--cream)}
+
+/* פס עליון */
+header{flex:0 0 auto;display:flex;align-items:center;gap:10px;padding:10px 14px;
+ background:var(--paper);border-bottom:1px solid var(--sand)}
+header h1{font-size:19px;color:var(--teal)}
+#logo{height:36px;width:auto;display:block}
+.grow{flex:1}
+.btn{border:1px solid var(--sand);background:#fff;color:var(--teal);border-radius:999px;
+ padding:9px 16px;font:600 14px/1 'Assistant',sans-serif;cursor:pointer}
+.btn:hover{border-color:var(--teal)}
+.btn:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+/* הספר */
+#book{flex:1;position:relative;display:flex;align-items:center;justify-content:center;
+ padding:14px 14px 26px;overflow:hidden;
+ background:radial-gradient(ellipse at 50% 32%,#FBF8F1 0%,#EFEADC 58%,#E4DCC9 100%)}
+#stack{position:relative;max-width:100%;max-height:100%;display:flex}
+#stack::before,#stack::after{content:"";position:absolute;inset:0;border-radius:16px;
+ background:var(--paper);box-shadow:0 2px 10px rgba(60,45,20,.10);z-index:-1}
+#stack::before{transform:rotate(-1.1deg) translateY(3px)}
+#stack::after{transform:rotate(1deg) translateY(5px)}
+#pageImg{max-width:100%;max-height:100%;border-radius:16px;display:block;background:var(--paper);
+ box-shadow:0 10px 34px rgba(60,45,20,.20);transition:transform .26s ease,opacity .26s ease}
+#pageImg.fwd{animation:fwd .32s ease}
+#pageImg.back{animation:back .32s ease}
+@keyframes fwd{from{transform:translateX(26px) rotateY(-7deg);opacity:.25}to{transform:none;opacity:1}}
+@keyframes back{from{transform:translateX(-26px) rotateY(7deg);opacity:.25}to{transform:none;opacity:1}}
+.tapzone{position:absolute;top:0;bottom:0;width:33%;z-index:2;background:transparent;border:none;cursor:pointer}
+#tapNext{left:0}#tapPrev{right:0}
+#bookbar{position:absolute;left:0;right:0;bottom:0;height:4px;background:rgba(226,216,195,.7)}
+#bookbar i{display:block;height:100%;background:var(--teal);transition:width .26s ease}
+.arrow{position:absolute;top:50%;z-index:3;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;
+ border:none;background:rgba(30,77,74,.88);color:#fff;font-size:26px;cursor:pointer;line-height:1;
+ display:flex;align-items:center;justify-content:center}
+.arrow:disabled{opacity:.25;cursor:default}
+#next{left:12px}#prev{right:12px}
+#count{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);
+ background:rgba(251,248,241,.92);border:1px solid var(--sand);border-radius:999px;
+ padding:4px 14px;font-size:13px;color:#7C6E58}
+
+/* שורת המשחקים */
+#games{flex:0 0 auto;position:relative;
+ background:linear-gradient(180deg,#F6E7EC 0%,#F1E2E7 100%);
+ padding:16px 12px calc(14px + env(safe-area-inset-bottom))}
+#games::before{content:"";position:absolute;top:-11px;left:0;right:0;height:12px;
+ background:radial-gradient(circle at 10px 0,transparent 11px,#F6E7EC 12px);
+ background-size:22px 12px;background-repeat:repeat-x}
+#games .lbl{font-family:'Suez One',serif;font-size:19px;letter-spacing:0;color:var(--teal);
+ margin-bottom:12px;text-align:center}
+#games .lbl::before{content:"🎲 "}#games .lbl::after{content:" 🎈"}
+#games .row{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 6px;scrollbar-width:none}
+#games .row::-webkit-scrollbar{display:none}
+.gbtn{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:8px;
+ border:none;background:#fff;border-radius:22px;padding:12px 14px 11px;cursor:pointer;
+ min-width:106px;font:700 14px/1.2 'Assistant',sans-serif;color:var(--navy);
+ box-shadow:0 4px 12px rgba(60,45,20,.13);transition:transform .15s ease,box-shadow .15s ease}
+.gbtn:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(60,45,20,.18)}
+.gbtn:active{transform:scale(.96)}
+.gbtn .ico{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;
+ justify-content:center;padding:11px}
+.gbtn svg{width:100%;height:100%}
+.gbtn:nth-child(8n+1) .ico{background:#DCEBE4}
+.gbtn:nth-child(8n+2) .ico{background:#DCE4F2}
+.gbtn:nth-child(8n+3) .ico{background:#F6E3D3}
+.gbtn:nth-child(8n+4) .ico{background:#F2DCE1}
+.gbtn:nth-child(8n+5) .ico{background:#F3EBD3}
+.gbtn:nth-child(8n+6) .ico{background:#DEE3F0}
+.gbtn:nth-child(8n+7) .ico{background:#E2EFDC}
+.gbtn:nth-child(8n+8) .ico{background:#F0E2F0}
+
+/* חלון משחק */
+#modal{position:fixed;inset:0;background:rgba(42,39,36,.55);display:none;
+ align-items:center;justify-content:center;padding:14px;z-index:20}
+#modal.on{display:flex}
+#sheet{background:var(--cream);border-radius:24px;width:min(680px,100%);max-height:92vh;
+ overflow-y:auto;padding:22px;text-align:center;position:relative}
+#sheet h2{color:var(--teal);font-size:26px;margin-bottom:6px}
+#sheet .how{font-size:15px;color:#7C6E58;max-width:36ch;margin:0 auto 16px}
+#close{position:absolute;top:12px;left:12px;border:none;background:var(--sand);color:var(--ink);
+ width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer}
+#msg{font-family:'Suez One',serif;color:var(--teal);font-size:19px;min-height:28px;margin-top:14px}
+.board{background:var(--paper);border:1px solid var(--sand);border-radius:20px;padding:18px}
+
+.tray{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chip{width:72px;height:72px;border-radius:16px;border:2px solid var(--sand);background:#fff;
+ display:flex;align-items:center;justify-content:center;cursor:pointer;padding:7px}
+.chip svg{width:100%;height:100%}
+.chip[aria-pressed="true"]{border-color:var(--teal);transform:scale(1.08)}
+.chip.done{opacity:.22;pointer-events:none}
+.slots{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:26px}
+.drop{width:78px;height:78px;border-radius:16px;border:2px dashed #C9BCA0;background:#fff;
+ display:flex;align-items:center;justify-content:center;padding:7px;cursor:pointer;position:relative}
+.drop svg{width:100%;height:100%}
+.drop .cap{position:absolute;bottom:-19px;font-size:11px;color:#9C8A6B;white-space:nowrap}
+.drop.filled{border-style:solid;border-color:#B9D2C9;background:#F0F7F4}
+.shake{animation:sh .3s}@keyframes sh{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+
+.mem{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:340px;margin:0 auto}
+.card{aspect-ratio:1/1;border-radius:14px;border:2px solid var(--sand);background:var(--teal);
+ cursor:pointer;display:flex;align-items:center;justify-content:center;padding:9px}
+.card svg{width:100%;height:100%;opacity:0;transition:opacity .2s}
+.card.up{background:#fff}.card.up svg{opacity:1}
+.card.matched{background:#F0F7F4;border-color:#B9D2C9;pointer-events:none}
+
+.holdbtn{width:160px;height:160px;border-radius:50%;border:3px solid var(--teal);background:var(--paper);
+ cursor:pointer;font:400 19px/1.3 'Suez One',serif;color:var(--teal)}
+.meter{width:min(400px,80%);height:13px;border-radius:99px;background:var(--sand);
+ overflow:hidden;margin:14px auto 0}
+.meter i{display:block;height:100%;width:0;background:var(--teal);transition:width .1s linear}
+
+.face{width:210px;height:210px;border-radius:50%;background:#FBE3CE;border:3px solid #E6C7A8;
+ position:relative;margin:0 auto}
+.facerow{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:10px}
+.facerow button{border:1px solid var(--sand);background:#fff;border-radius:12px;width:42px;height:42px;
+ font-size:19px;cursor:pointer;color:var(--teal)}
+.facerow span{font-size:14px;color:#7C6E58;min-width:6ch}
+
+.lights{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.lamp{width:70px;height:70px;border-radius:50%;border:none;cursor:pointer;
+ background:radial-gradient(circle at 40% 35%,#FFE9B8,#E8B94E);
+ box-shadow:0 0 24px 6px rgba(232,185,78,.5);transition:all .35s}
+.lamp.off{background:#3A4A70;box-shadow:none}
+
+#canvas{background:#fff;border:2px solid var(--sand);border-radius:16px;touch-action:none;
+ width:100%;max-width:520px;aspect-ratio:4/3}
+.pens{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.pen{width:36px;height:36px;border-radius:50%;border:2px solid rgba(0,0,0,.12);cursor:pointer}
+.pen[aria-pressed="true"]{border-color:var(--teal);transform:scale(1.14)}
+
+@media (max-width:520px){
+ header h1{font-size:16px}
+ .arrow{width:46px;height:46px;font-size:22px}
+ .chip{width:62px;height:62px}.drop{width:68px;height:68px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+#grid{position:fixed;inset:0;background:var(--cream);z-index:30;display:none;overflow-y:auto;padding:60px 14px 24px}
+#grid.on{display:block}
+#gclose{position:fixed;top:12px;left:12px;border:none;background:var(--sand);width:40px;height:40px;
+ border-radius:50%;font-size:20px;cursor:pointer;z-index:31}
+.gwrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;max-width:900px;margin:0 auto}
+.gwrap button{border:1px solid var(--sand);background:#fff;border-radius:12px;padding:4px;cursor:pointer;position:relative}
+.gwrap img{width:100%;border-radius:9px;display:block}
+.gwrap span{position:absolute;bottom:6px;right:8px;background:rgba(251,248,241,.9);border-radius:99px;
+ padding:1px 7px;font-size:11px;color:#7C6E58}
+
+/* הדפסה */
+#print{display:none}
+@media print{
+ @page{size:A4;margin:9mm}
+ html,body{background:#fff!important;overflow:visible!important;height:auto!important}
+ #app,#modal,#grid{display:none!important}
+ #print{display:block;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .psheet{page-break-after:always;break-after:page;page-break-inside:avoid;break-inside:avoid;
+  display:flex;flex-direction:column;align-items:center;gap:5mm;padding-top:2mm}
+ .psheet:last-child{page-break-after:auto;break-after:auto}
+ .psheet figure{margin:0;text-align:center;page-break-inside:avoid;break-inside:avoid}
+ .psheet .pg{width:128mm;height:128mm;object-fit:contain;border-radius:4mm;
+  border:.5pt solid #D8CDB6;background:#FBF8F1;display:block}
+ .psheet figcaption{font-size:8pt;color:#A79877;margin-top:1.5mm}
+ .psheet.covr .pg{width:168mm;height:168mm;border:none}
+ .psheet.covr{justify-content:center;min-height:250mm}
+}
+</style>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true"><defs>
+ <g id="i-kippah"><ellipse cx="32" cy="42" rx="24" ry="14" fill="#2E3C5B"/><path d="M8 42a24 18 0 0 1 48 0z" fill="#3A4C71"/></g>
+ <g id="i-shirt"><path d="M14 18l10-6h16l10 6 6 10-8 6v22H16V34l-8-6z" fill="#7BA7DA" stroke="#4E7CB3" stroke-width="2"/></g>
+ <g id="i-pants"><path d="M18 10h28v16l-4 30h-8l-2-24-2 24h-8l-4-30z" fill="#3C4A63" stroke="#2A3549" stroke-width="2"/></g>
+ <g id="i-shoes"><path d="M8 40h20l10 8h16a4 4 0 0 1 4 4v4H8z" fill="#8A5A3B" stroke="#6B4429" stroke-width="2"/></g>
+ <g id="i-candle"><rect x="28" y="16" width="8" height="30" fill="#F4EFE2" stroke="#D8CDB6" stroke-width="1.5"/><rect x="22" y="46" width="20" height="8" rx="2" fill="#B9BFC6"/><path d="M32 16c0-6-5-6-2-12 5 4 6 8 2 12z" fill="#E8B94E"/></g>
+ <g id="i-challah"><ellipse cx="32" cy="36" rx="24" ry="13" fill="#E0B06A" stroke="#C08F49" stroke-width="2"/><path d="M12 34q10-7 20 0t20 0" stroke="#C08F49" stroke-width="2" fill="none"/></g>
+ <g id="i-cup"><path d="M22 12h20l-2 16a8 8 0 0 1-16 0z" fill="#C9CDD3" stroke="#9AA1AA" stroke-width="2"/><rect x="30" y="36" width="4" height="12" fill="#C9CDD3"/><ellipse cx="32" cy="50" rx="12" ry="4" fill="#B4BAC2"/></g>
+ <g id="i-siddur"><rect x="14" y="10" width="36" height="44" rx="3" fill="#2E3C5B"/><rect x="19" y="15" width="26" height="34" rx="2" fill="none" stroke="#D9C68A" stroke-width="1.6"/><path d="M24 24h16M24 30h16M24 36h11" stroke="#D9C68A" stroke-width="2" stroke-linecap="round"/></g>
+ <g id="i-chair"><rect x="18" y="8" width="28" height="26" rx="3" fill="#B98F5F"/><rect x="16" y="34" width="32" height="6" rx="2" fill="#D2A972"/><rect x="18" y="40" width="5" height="16" fill="#B98F5F"/><rect x="41" y="40" width="5" height="16" fill="#B98F5F"/></g>
+ <g id="i-plate"><circle cx="32" cy="32" r="22" fill="#fff" stroke="#C9CDD3" stroke-width="2"/><circle cx="32" cy="32" r="13" fill="none" stroke="#DDE1E6" stroke-width="2"/></g>
+ <g id="i-bottle"><rect x="24" y="18" width="16" height="34" rx="6" fill="#EAF1F8" stroke="#B7C6D6" stroke-width="2"/><rect x="27" y="8" width="10" height="10" rx="4" fill="#E9C1A8"/></g>
+ <g id="i-blanket"><path d="M10 20h44v28a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6z" fill="#F2F4F7" stroke="#C6CDD6" stroke-width="2"/><rect x="10" y="20" width="44" height="8" fill="#A9C7E8"/></g>
+ <g id="i-rattle"><circle cx="26" cy="24" r="13" fill="#E9A8B6" stroke="#CE8494" stroke-width="2"/><rect x="34" y="34" width="6" height="20" rx="3" fill="#D2A972" transform="rotate(-40 37 44)"/></g>
+ <g id="i-star"><path d="M32 8l7 15 16 2-12 11 3 16-14-8-14 8 3-16L9 25l16-2z" fill="#E8B94E"/></g>
+ <g id="i-heart"><path d="M32 54S8 40 8 24a12 12 0 0 1 24-5 12 12 0 0 1 24 5c0 16-24 30-24 30z" fill="#D98A96"/></g>
+ <g id="i-baby"><circle cx="32" cy="30" r="18" fill="#F6DCC6"/><circle cx="26" cy="28" r="2.5" fill="#3A2E24"/><circle cx="38" cy="28" r="2.5" fill="#3A2E24"/><path d="M26 37q6 5 12 0" stroke="#3A2E24" stroke-width="2" fill="none"/></g>
+ <g id="i-house"><path d="M12 30L32 12l20 18v22H12z" fill="#DCC9A8" stroke="#B7A280" stroke-width="2"/><rect x="27" y="36" width="10" height="16" fill="#8A6E4B"/></g>
+ <g id="i-pencil"><path d="M14 50l4-12 26-26 8 8-26 26z" fill="#E8B94E" stroke="#C79B36" stroke-width="2"/><path d="M18 38l8 8" stroke="#C79B36" stroke-width="2"/></g>
+ <g id="i-moon"><path d="M42 12a22 22 0 1 0 10 34A24 24 0 0 1 42 12z" fill="#2E3C5B"/></g>
+</defs></svg>
+
+<div id="app">
+  <header>
+    <img id="logo" src="[embedded-image]" alt="מורה שמיים">
+    <h1>אור הגיע אלינו</h1>
+    <div class="grow"></div>
+    <button class="btn" id="gridBtn">כל העמודים</button>
+    <button class="btn" id="printBtn">הדפסת הספר</button>
+  </header>
+
+  <div id="book">
+    <div id="stack"><img id="pageImg" alt="עמוד מהספר"></div>
+    <button class="tapzone" id="tapNext" aria-label="עמוד הבא"></button>
+    <button class="tapzone" id="tapPrev" aria-label="עמוד קודם"></button>
+    <div id="bookbar"><i id="bookfill"></i></div>
+    <button class="arrow" id="prev" aria-label="עמוד קודם">›</button>
+    <button class="arrow" id="next" aria-label="עמוד הבא">‹</button>
+    <div id="count"></div>
+  </div>
+
+  <div id="games">
+    <div class="lbl">משחקים מתוך הסיפור</div>
+    <div class="row" id="grow"></div>
+  </div>
+</div>
+
+<div id="modal">
+  <div id="sheet">
+    <button id="close" aria-label="סגירה">✕</button>
+    <h2 id="gtitle"></h2>
+    <p class="how" id="ghow"></p>
+    <div class="board" id="gb"></div>
+    <div id="msg"></div>
+  </div>
+</div>
+
+<div id="grid"><button id="gclose" aria-label="סגירה">✕</button><div class="gwrap" id="gwrap"></div></div>
+<div id="print"></div>
+
+<script>
+const PAGES=["[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]", "[embedded-image]"];
+
+const LOGO='[embedded-image]';
+const ic=n=>`<svg viewBox="0 0 64 64"><use href="#i-${n}"/></svg>`;
+
+/* ---------- משחקים ---------- */
+const GAMES=[
+ {id:'memory',icon:'house',t:'זיכרון של בית',how:'הפכו קלפים ומצאו את הזוגות.'},
+ {id:'patience',icon:'moon',t:'מחכים בשקט',how:'החזיקו את האצבע על העיגול עד שהתינוק נרדם. אם עזבתם — ממשיכים מאותו מקום.'},
+ {id:'dress',icon:'shirt',t:'מתלבשים לבד',how:'לוחצים על בגד, ואז על המקום שלו.'},
+ {id:'face',icon:'baby',t:'פרצופים מצחיקים',how:'הרכיבו פרצוף. אין פרצוף לא נכון.'},
+ {id:'table',icon:'candle',t:'שולחן שבת',how:'לוחצים על חפץ, ואז על המקום שלו על השולחן.'},
+ {id:'quiet',icon:'star',t:'משתיקים את הבית',how:'מכבים את האורות עד שהבית נרדם.'},
+ {id:'needs',icon:'bottle',t:'מה התינוק צריך?',how:'התינוק התעורר. מה מביאים לו? כל בחירה טובה.'},
+ {id:'draw',icon:'pencil',t:'ציור חופשי',how:'ציירו משהו שאתם אוהבים לעשות יחד במשפחה.'}
+];
+document.getElementById('grow').innerHTML=GAMES.map(g=>
+ `<button class="gbtn" data-g="${g.id}"><span class="ico">${ic(g.icon)}</span><span>${g.t}</span></button>`).join('');
+
+const modal=document.getElementById('modal'),gb=document.getElementById('gb'),msg=document.getElementById('msg');
+document.querySelectorAll('.gbtn').forEach(b=>b.onclick=()=>openGame(b.dataset.g));
+document.getElementById('close').onclick=()=>modal.classList.remove('on');
+modal.onclick=e=>{if(e.target===modal)modal.classList.remove('on')};
+
+function openGame(id){
+ const g=GAMES.find(x=>x.id===id);
+ document.getElementById('gtitle').textContent=g.t;
+ document.getElementById('ghow').textContent=g.how;
+ gb.innerHTML='';msg.textContent='';
+ modal.classList.add('on');
+ START[id](gb,msg);
+}
+
+/* ---------- הספר ---------- */
+let p=0;
+const img=document.getElementById('pageImg'),cnt=document.getElementById('count'),
+      bPrev=document.getElementById('prev'),bNext=document.getElementById('next');
+const fill=document.getElementById('bookfill');
+function show(dir){
+ try{img.src=PAGES[p];}catch(e){cnt.textContent='שגיאה בטעינת העמוד';return;}
+ cnt.textContent=(p+1)+' מתוך '+PAGES.length;
+ bPrev.disabled=p===0;bNext.disabled=p===PAGES.length-1;
+ fill.style.width=((p+1)/PAGES.length*100)+'%';
+ if(dir){img.classList.remove('fwd','back');void img.offsetWidth;
+  img.classList.add(dir>0?'fwd':'back');}
+ if(p+1<PAGES.length)new Image().src=PAGES[p+1];
+ if(p>0)new Image().src=PAGES[p-1];
+}
+const goNext=()=>{if(p<PAGES.length-1){p++;show(1);}};
+const goPrev=()=>{if(p>0){p--;show(-1);}};
+bNext.onclick=goNext;bPrev.onclick=goPrev;
+document.getElementById('tapNext').onclick=goNext;
+document.getElementById('tapPrev').onclick=goPrev;
+
+const grid=document.getElementById('grid');
+document.getElementById('gridBtn').onclick=()=>{
+ const w=document.getElementById('gwrap');
+ if(!w.innerHTML)w.innerHTML=PAGES.map((s,i)=>
+  `<button data-i="${i}"><img src="${s}" alt=""><span>${i+1}</span></button>`).join('');
+ w.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+  p=+b.dataset.i;show(1);grid.classList.remove('on');});
+ grid.classList.add('on');
+};
+document.getElementById('gclose').onclick=()=>grid.classList.remove('on');
+document.addEventListener('keydown',e=>{
+ if(e.key==='ArrowLeft')goNext();
+ if(e.key==='ArrowRight')goPrev();
+ if(e.key==='Escape')grid.classList.remove('on');});
+let sx=null;
+document.getElementById('book').addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+document.getElementById('book').addEventListener('touchend',e=>{
+ if(sx===null)return;const d=e.changedTouches[0].clientX-sx;sx=null;
+ if(d<-45)goNext();if(d>45)goPrev();},{passive:true});
+show();
+
+/* ---------- הדפסה ---------- */
+document.getElementById('printBtn').onclick=()=>{
+ const c=document.getElementById('print');
+ if(!c.innerHTML){
+  const fig=i=>`<figure><img class="pg" src="${PAGES[i]}"><figcaption>${i+1}</figcaption></figure>`;
+  let h=`<div class="psheet covr">${fig(0)}</div>`;
+  for(let i=1;i<PAGES.length;i+=2){
+   h+=`<div class="psheet">${fig(i)}${i+1<PAGES.length?fig(i+1):''}</div>`;
+  }
+  c.innerHTML=h;
+ }
+ setTimeout(()=>window.print(),200);
+};
+
+
+const START={};
+function pickPlace(box,m,items,slots,win){
+ let sel=null,done=0;
+ box.innerHTML=`<div class="slots">${slots.map(s=>
+  `<div class="drop" data-id="${s.id}"><span class="cap">${s.cap}</span></div>`).join('')}</div>
+  <div class="tray">${items.map(i=>
+  `<button class="chip" data-id="${i.id}" aria-pressed="false" aria-label="${i.cap}">${ic(i.icon)}</button>`).join('')}</div>`;
+ const chips=[...box.querySelectorAll('.chip')];
+ chips.forEach(c=>c.onclick=()=>{chips.forEach(x=>x.setAttribute('aria-pressed','false'));
+  c.setAttribute('aria-pressed','true');sel=c;});
+ box.querySelectorAll('.drop').forEach(d=>d.onclick=()=>{
+  if(!sel)return;
+  if(sel.dataset.id===d.dataset.id){
+   const cap=d.querySelector('.cap').textContent;
+   d.innerHTML=sel.innerHTML+`<span class="cap">${cap}</span>`;
+   d.classList.add('filled');sel.classList.add('done');sel=null;done++;
+   if(done===items.length)m.textContent=win;
+  }else{d.classList.add('shake');setTimeout(()=>d.classList.remove('shake'),300);}
+ });
+}
+START.dress=(b,m)=>pickPlace(b,m,
+ [{id:'k',icon:'kippah',cap:'כיפה'},{id:'s',icon:'shirt',cap:'חולצה'},
+  {id:'p',icon:'pants',cap:'מכנסיים'},{id:'h',icon:'shoes',cap:'נעליים'}],
+ [{id:'k',cap:'ראש'},{id:'s',cap:'גוף'},{id:'p',cap:'רגליים'},{id:'h',cap:'כפות רגליים'}],
+ 'התלבשת לבד! בדיוק כמו בסיפור.');
+START.table=(b,m)=>pickPlace(b,m,
+ [{id:'c',icon:'candle',cap:'נרות'},{id:'ch',icon:'challah',cap:'חלה'},
+  {id:'k',icon:'cup',cap:'כוס'},{id:'s',icon:'siddur',cap:'סידור'},
+  {id:'p',icon:'plate',cap:'צלחת'},{id:'r',icon:'chair',cap:'כיסא'}],
+ [{id:'c',cap:'נרות'},{id:'ch',cap:'חלה'},{id:'k',cap:'כוס'},
+  {id:'s',cap:'סידור'},{id:'p',cap:'צלחת'},{id:'r',cap:'כיסא'}],
+ 'השולחן מוכן. שבת שלום!');
+
+START.memory=(b,m)=>{
+ const set=['house','star','heart'];
+ const deck=[...set,...set].sort(()=>Math.random()-.5);
+ b.innerHTML=`<div class="mem">${deck.map(n=>`<button class="card" data-n="${n}">${ic(n)}</button>`).join('')}</div>`;
+ let a=null,lock=false,f=0;
+ b.querySelectorAll('.card').forEach(c=>c.onclick=()=>{
+  if(lock||c.classList.contains('up'))return;
+  c.classList.add('up');
+  if(!a){a=c;return;}
+  if(a.dataset.n===c.dataset.n){a.classList.add('matched');c.classList.add('matched');a=null;f++;
+   if(f===set.length)m.textContent='מצאת את כל הזוגות!';return;}
+  lock=true;const first=a;a=null;
+  setTimeout(()=>{first.classList.remove('up');c.classList.remove('up');lock=false;},700);});
+};
+
+START.patience=(b,m)=>{
+ b.innerHTML=`<button class="holdbtn" id="hb">מחזיקים<br>בשקט</button>
+  <div class="meter"><i id="mi"></i></div>
+  <div id="hs" style="font-size:14px;color:#7C6E58;margin-top:8px">התינוק עוד ער</div>`;
+ const hb=b.querySelector('#hb'),mi=b.querySelector('#mi'),hs=b.querySelector('#hs');
+ let v=0,t=null;
+ const tick=()=>{v=Math.min(100,v+1.4);mi.style.width=v+'%';
+  if(v>35&&v<80)hs.textContent='הוא נרגע...';
+  if(v>=100){clearInterval(t);t=null;hs.textContent='';m.textContent='התינוק נרדם. חיכית — וזה עבד.';}};
+ const on=e=>{e.preventDefault();if(!t&&v<100)t=setInterval(tick,60);};
+ const off=()=>{if(t){clearInterval(t);t=null;if(v<100)hs.textContent='עצרת רגע. אפשר להמשיך מכאן.';}};
+ hb.addEventListener('pointerdown',on);
+ hb.addEventListener('pointerup',off);
+ hb.addEventListener('pointerleave',off);
+ hb.addEventListener('pointercancel',off);
+};
+
+START.face=(b,m)=>{
+ const E=['עגולות','קטנות','עצומות','מופתעות'],M=['חיוך','פיהוק','לשון','או!'],C=['רגילות','מנופחות','ורודות'];
+ let e=0,mo=0,c=0;
+ b.innerHTML=`<div class="face" id="f"></div>
+  <div class="facerow"><button data-k="e" data-d="1">‹</button><span id="le"></span><button data-k="e" data-d="-1">›</button></div>
+  <div class="facerow"><button data-k="m" data-d="1">‹</button><span id="lm"></span><button data-k="m" data-d="-1">›</button></div>
+  <div class="facerow"><button data-k="c" data-d="1">‹</button><span id="lc"></span><button data-k="c" data-d="-1">›</button></div>`;
+ const f=b.querySelector('#f');
+ const draw=()=>{
+  const ey=[`<circle cx="72" cy="88" r="12" fill="#3A2E24"/><circle cx="138" cy="88" r="12" fill="#3A2E24"/>`,
+   `<circle cx="72" cy="88" r="6" fill="#3A2E24"/><circle cx="138" cy="88" r="6" fill="#3A2E24"/>`,
+   `<path d="M58 88q14 10 28 0M124 88q14 10 28 0" stroke="#3A2E24" stroke-width="5" fill="none"/>`,
+   `<circle cx="72" cy="88" r="16" fill="#fff" stroke="#3A2E24" stroke-width="4"/><circle cx="72" cy="88" r="6" fill="#3A2E24"/><circle cx="138" cy="88" r="16" fill="#fff" stroke="#3A2E24" stroke-width="4"/><circle cx="138" cy="88" r="6" fill="#3A2E24"/>`][e];
+  const mu=[`<path d="M78 142q27 24 54 0" stroke="#B4595C" stroke-width="6" fill="none" stroke-linecap="round"/>`,
+   `<ellipse cx="105" cy="150" rx="20" ry="26" fill="#B4595C"/>`,
+   `<path d="M78 140q27 20 54 0z" fill="#B4595C"/><path d="M96 155q9 20 18 0z" fill="#E58F92"/>`,
+   `<circle cx="105" cy="148" r="17" fill="#B4595C"/>`][mo];
+  const ck=['',`<circle cx="46" cy="122" r="20" fill="#F3C4A8"/><circle cx="164" cy="122" r="20" fill="#F3C4A8"/>`,
+   `<circle cx="48" cy="122" r="14" fill="#EDA3A3"/><circle cx="162" cy="122" r="14" fill="#EDA3A3"/>`][c];
+  f.innerHTML=`<svg viewBox="0 0 210 210" style="position:absolute;inset:0">${ck}${ey}
+   <path d="M105 102q-7 17 4 22" stroke="#D9A88A" stroke-width="5" fill="none" stroke-linecap="round"/>${mu}</svg>`;
+  b.querySelector('#le').textContent=E[e];b.querySelector('#lm').textContent=M[mo];b.querySelector('#lc').textContent=C[c];
+ };
+ b.querySelectorAll('.facerow button').forEach(btn=>btn.onclick=()=>{
+  const d=+btn.dataset.d,k=btn.dataset.k;
+  if(k==='e')e=(e+d+E.length)%E.length;
+  if(k==='m')mo=(mo+d+M.length)%M.length;
+  if(k==='c')c=(c+d+C.length)%C.length;
+  draw();m.textContent='איזה פרצוף מצחיק!';});
+ draw();
+};
+
+START.quiet=(b,m)=>{
+ b.innerHTML=`<div class="lights">${[0,1,2,3,4].map(()=>`<button class="lamp" aria-label="מכבים אור"></button>`).join('')}</div>
+  <div id="mn" style="opacity:0;font-size:46px;margin-top:14px">🌙</div>`;
+ let off=0;
+ b.querySelectorAll('.lamp').forEach(l=>l.onclick=()=>{
+  if(l.classList.contains('off'))return;
+  l.classList.add('off');off++;
+  if(off===5){b.querySelector('#mn').style.opacity=1;m.textContent='הבית נרדם. לילה טוב.';}});
+};
+
+START.needs=(b,m)=>{
+ const o=[{icon:'bottle',t:'בקבוק',r:'הוא שותה, ונרגע לגמרי.'},
+          {icon:'blanket',t:'שמיכה',r:'הוא מתכרבל פנימה ועוצם עיניים.'},
+          {icon:'rattle',t:'רעשן',r:'הוא מנופף בידיים ומנסה לתפוס.'}];
+ b.innerHTML=`<div class="tray">${o.map((x,i)=>
+  `<button class="chip" data-i="${i}" aria-label="${x.t}" style="width:92px;height:92px">${ic(x.icon)}</button>`).join('')}</div>`;
+ b.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+  b.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed','false'));
+  c.setAttribute('aria-pressed','true');m.textContent=o[+c.dataset.i].r;});
+};
+
+START.draw=(b,m)=>{
+ b.innerHTML=`<canvas id="canvas"></canvas>
+  <div class="pens">
+   <button class="pen" data-c="#2E3C5B" style="background:#2E3C5B" aria-pressed="true" aria-label="כחול"></button>
+   <button class="pen" data-c="#1E4D4A" style="background:#1E4D4A" aria-pressed="false" aria-label="ירוק"></button>
+   <button class="pen" data-c="#C4726A" style="background:#C4726A" aria-pressed="false" aria-label="אדום"></button>
+   <button class="pen" data-c="#E0A94E" style="background:#E0A94E" aria-pressed="false" aria-label="צהוב"></button>
+   <button class="btn" id="clearC">מתחילים מחדש</button></div>`;
+ const cv=b.querySelector('#canvas');
+ requestAnimationFrame(()=>{
+  const r=cv.getBoundingClientRect();cv.width=r.width*2;cv.height=r.height*2;
+  const cx=cv.getContext('2d');cx.scale(2,2);cx.lineCap='round';cx.lineJoin='round';
+  cx.lineWidth=5;cx.strokeStyle='#2E3C5B';let down=false;
+  const pos=e=>{const q=cv.getBoundingClientRect();return[e.clientX-q.left,e.clientY-q.top]};
+  cv.addEventListener('pointerdown',e=>{down=true;cx.beginPath();cx.moveTo(...pos(e));e.preventDefault()});
+  cv.addEventListener('pointermove',e=>{if(!down)return;cx.lineTo(...pos(e));cx.stroke();e.preventDefault()});
+  window.addEventListener('pointerup',()=>down=false);
+  b.querySelectorAll('.pen').forEach(pn=>pn.onclick=()=>{
+   b.querySelectorAll('.pen').forEach(q=>q.setAttribute('aria-pressed','false'));
+   pn.setAttribute('aria-pressed','true');cx.strokeStyle=pn.dataset.c;});
+  b.querySelector('#clearC').onclick=()=>cx.clearRect(0,0,cv.width,cv.height);
+ });
+};
+</script>
+</body>
+</html>

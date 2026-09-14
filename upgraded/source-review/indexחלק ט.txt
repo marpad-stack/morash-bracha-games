@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>צעדים ראשונים · שפרה ופועה</title>
+<meta name="theme-color" content="#27568C">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="צעדים ראשונים">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#27568C; --blue-deep:#1D4470; --blue-soft:#E6EDF6; --blue-mid:#7C9CC4;
+    --gold:#D7AB34; --gold-deep:#B08A1E; --gold-soft:#FBF1D3;
+    --paper:#FBF8F1; --paper-2:#F3EEE1; --card:#FFFFFF; --input:#FDFCF8;
+    --ink:#26313D; --muted:#6F7A87; --faint:#A3ACB7; --line:#E8E3D7;
+    --coral:#C9705E; --coral-soft:#FBEAE4;
+    --r:18px;
+    --shadow:0 1px 2px rgba(38,49,61,.05),0 10px 30px -14px rgba(39,86,140,.22);
+    --bg1:#E6EDF6; --bg2:#FBF1D3;
+  }
+  body.night{
+    --paper:#151B24; --paper-2:#1F2733; --card:#1B222D; --input:#202936;
+    --ink:#EEF1F5; --muted:#A5AFBC; --faint:#6F7A87; --line:#2C3644;
+    --blue-soft:#243448; --blue-deep:#C9DAF0; --gold-soft:#3B3220; --coral-soft:#3E2823;
+    --bg1:#1C2735; --bg2:#2A2415;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6);
+  }
+  body.night .segbtn[aria-pressed="true"],body.night .chip[aria-pressed="true"]{color:#fff}
+  body.night .tag{color:#C9DAF0}
+  body.night .tag.gold{color:#EBCB6E}
+  body.night .tag.coral{color:#F2A796}
+  body.night .mynote-view{color:#EBCB6E}
+  body.night .usBox{background:linear-gradient(135deg,#3B3220,#2A2415);border-color:#5A4A1C}
+  body.night .usBox h3,body.night .usBox p{color:#F3E6BE}
+  body.night .badge,body.night .daymsg{color:#F3E6BE;background:#3B3220}
+  body.night .hbtn{color:#C9DAF0}
+  body.night .hbtn.solid{color:#fff}
+  body.night .btn-gold{color:#2B2410}
+  body.night .logo path{filter:brightness(1.35)}
+
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(110% 55% at 100% 0%,var(--bg1) 0%,transparent 60%),
+      radial-gradient(80% 45% at 0% 12%,var(--bg2) 0%,transparent 55%),
+      var(--paper);
+    background-attachment:fixed;color:var(--ink);
+    font-family:"Assistant",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:18px 16px 100px}
+  a{color:var(--blue)}
+  body.night a{color:#8FB0DC}
+  button{font-family:inherit;cursor:pointer;transition:.15s}
+  input,select,textarea{font-family:inherit;font-size:16px;color:var(--ink)}
+  .logo{display:block;height:44px;width:auto}
+  .logo svg{height:100%;width:auto;display:block}
+
+  /* ===== מסך פתיחה ===== */
+  .intro{
+    background:var(--card);border:1px solid var(--line);border-radius:26px;
+    padding:24px 22px 22px;box-shadow:var(--shadow);margin-top:10px;position:relative;overflow:hidden;
+  }
+  .intro::before{content:"";position:absolute;inset-inline-start:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:var(--gold-soft);opacity:.7}
+  .intro>*{position:relative}
+  .introHead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+  .pill{font-size:12.5px;font-weight:700;color:var(--blue);background:var(--blue-soft);padding:5px 12px;border-radius:999px}
+  body.night .pill{color:#C9DAF0}
+  .intro h1{font-family:"Frank Ruhl Libre",Georgia,serif;font-weight:800;font-size:clamp(27px,6.4vw,38px);margin:0 0 8px;line-height:1.15}
+  .intro h1 em{font-style:normal;color:var(--blue)}
+  body.night .intro h1 em{color:#8FB0DC}
+  .intro p.sub{margin:0 0 22px;color:var(--muted);font-size:15.5px;max-width:48ch}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-weight:700;font-size:14.5px;margin-bottom:6px}
+  .field .hint{font-size:13px;color:var(--faint);font-weight:400;margin-inline-start:4px}
+  .field input[type="text"],.field input[type="date"]{width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:13px;background:var(--input)}
+  input:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:520px){.row2{grid-template-columns:1fr}}
+  .segbtns{display:flex;flex-wrap:wrap;gap:8px}
+  .segbtn{border:1.5px solid var(--line);background:var(--input);color:var(--muted);padding:9px 15px;border-radius:13px;font-size:14.5px;font-weight:600}
+  .segbtn[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+  .segbtn.warm[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#2B2410}
+  .switch{display:flex;align-items:center;gap:10px;padding:11px 13px;border:1.5px solid var(--line);border-radius:13px;background:var(--input);font-size:14.5px;font-weight:600;cursor:pointer;margin-bottom:9px}
+  .switch input{width:18px;height:18px;accent-color:var(--blue);margin:0}
+  .usBox{margin:22px 0 18px;padding:16px 16px 8px;border-radius:18px;background:linear-gradient(135deg,var(--gold-soft),#FFF9E8);border:1px solid #F1E3B4}
+  .usBox h3{margin:0 0 4px;font-family:"Frank Ruhl Libre",serif;font-size:19px;font-weight:700}
+  .usBox p{margin:0 0 12px;font-size:14px;color:#6B5A26}
+  .btn{border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:10px 16px;border-radius:13px;font-weight:700;font-size:14.5px}
+  .btn:hover{border-color:var(--blue);color:var(--blue)}
+  .btn-main{background:var(--blue);border-color:var(--blue);color:#fff;padding:14px 22px;font-size:16.5px;border-radius:15px}
+  .btn-main:hover{background:var(--blue-deep);border-color:var(--blue-deep);color:#fff}
+  .btn-gold{background:var(--gold);border-color:var(--gold);color:#2B2410}
+  .btn-gold:hover{background:var(--gold-deep);border-color:var(--gold-deep);color:#fff}
+  .btn-quiet{background:transparent;border-color:transparent;color:var(--muted);font-weight:600}
+  .btn-quiet:hover{color:var(--coral);border-color:transparent}
+  .privacy{font-size:12.5px;color:var(--faint);margin-top:14px;text-align:center}
+
+  /* ===== כרטיס העל ===== */
+  .hero{background:var(--card);border-radius:26px;padding:20px 22px 22px;box-shadow:var(--shadow);border:1px solid var(--line);position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset-inline-end:-50px;top:-60px;width:200px;height:200px;border-radius:50%;background:var(--blue-soft);opacity:.8}
+  .hero::after{content:"";position:absolute;inset-inline-start:-30px;bottom:-70px;width:150px;height:150px;border-radius:50%;background:var(--gold-soft)}
+  .hero>*{position:relative;z-index:1}
+  .heroHead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+  .heroHead .tools{display:flex;gap:6px;align-items:center}
+  .iconbtn{width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:17px;display:grid;place-items:center;padding:0}
+  .iconbtn:hover{border-color:var(--blue);color:var(--blue)}
+  .heroTop{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .dayBig{font-family:"Frank Ruhl Libre",serif;font-weight:800;font-size:44px;line-height:1;margin:0;color:var(--blue)}
+  body.night .dayBig{color:#8FB0DC}
+  .dayLabel{font-size:15px;color:var(--muted);margin:0}
+  .heroName{font-family:"Frank Ruhl Libre",serif;font-size:21px;margin:8px 0 2px;font-weight:700}
+  .cheer{margin:0;color:var(--muted);font-size:15px}
+  .daymsg{margin:14px 0 0;padding:12px 14px;border-radius:14px;background:var(--gold-soft);color:#5A4A1C;font-size:14.5px;display:flex;gap:10px;align-items:flex-start}
+  .daymsg .dm-i{font-size:18px;line-height:1.3}
+  .daymsg b{display:block;font-family:"Frank Ruhl Libre",serif;font-size:15.5px;margin-bottom:2px}
+  .ribbon{display:flex;gap:2.5px;align-items:flex-end;height:24px;margin:16px 0 8px}
+  .seg{flex:1;height:8px;border-radius:2px;background:var(--paper-2);transition:.25s}
+  .seg.urgent{background:#F3E4B0}
+  body.night .seg.urgent{background:#4A3E1E}
+  .seg.done{background:var(--blue);height:17px}
+  .seg.done.urgent{background:var(--gold)}
+  .heroStats{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--muted)}
+  .heroStats b{color:var(--ink);font-weight:700}
+  .badge{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:#6B5A26;background:var(--gold-soft);padding:4px 11px;border-radius:999px}
+  .heroBtns{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+  .hbtn{background:var(--blue-soft);border:1px solid transparent;color:var(--blue-deep);padding:9px 14px;border-radius:12px;font-weight:700;font-size:14px}
+  .hbtn:hover{filter:brightness(.95)}
+  .hbtn.solid{background:var(--blue);color:#fff}
+  .hbtn.solid:hover{background:#1D4470}
+
+  /* ===== טאבים ומסננים ===== */
+  .tabs{display:flex;gap:6px;margin:16px 0 0;background:var(--paper-2);padding:5px;border-radius:15px}
+  .tab{flex:1;border:none;background:transparent;color:var(--muted);padding:9px;border-radius:11px;font-weight:700;font-size:15px}
+  .tab[aria-selected="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+  .filters{position:sticky;top:0;z-index:6;margin:10px -16px 2px;padding:10px 16px;background:var(--paper);display:flex;gap:7px;overflow-x:auto;scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+  .chip{white-space:nowrap;border:1.5px solid var(--line);background:var(--card);color:var(--muted);padding:6px 14px;font-weight:700;font-size:13.5px;border-radius:999px}
+  .chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+
+  /* ===== קטגוריות ומשימות ===== */
+  .cat{margin:22px 0 0}
+  .cat-head{display:flex;align-items:center;gap:10px;margin:0 4px 10px}
+  .cat-emoji{font-size:20px;line-height:1}
+  .cat-name{font-family:"Frank Ruhl Libre",serif;font-size:20px;font-weight:700;margin:0}
+  .cat-bar{flex:1;height:5px;border-radius:99px;background:var(--paper-2);overflow:hidden;min-width:40px}
+  .cat-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--blue-mid));border-radius:99px;transition:width .35s}
+  .cat-count{font-size:13px;color:var(--faint);font-weight:700;white-space:nowrap}
+  .cat-done{font-size:13px;color:var(--gold-deep);font-weight:700}
+  .task{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:13px 15px;margin-bottom:9px;display:flex;gap:12px;align-items:flex-start;box-shadow:0 1px 2px rgba(38,49,61,.04)}
+  .task.is-urgent{border-inline-start:4px solid var(--gold)}
+  .task.is-late{border-inline-start:4px solid var(--coral)}
+  .task.is-done{background:var(--paper);border-color:var(--line);box-shadow:none}
+  .task.is-done .title{color:var(--muted);text-decoration:line-through;text-decoration-thickness:1px}
+  .task.is-done .note,.task.is-done .meta{opacity:.6}
+  .box{flex:none;width:26px;height:26px;margin-top:2px;border-radius:9px;border:1.8px solid #C9CDD3;background:var(--card);display:grid;place-items:center;padding:0}
+  body.night .box{border-color:#4A5563}
+  .box:hover{border-color:var(--blue);transform:scale(1.06)}
+  .box svg{width:14px;height:14px;opacity:0;transform:scale(.6);transition:.18s}
+  .task.is-done .box{background:var(--blue);border-color:var(--blue)}
+  .task.is-done .box svg{opacity:1;transform:scale(1)}
+  .body{flex:1;min-width:0}
+  .title{font-weight:700;font-size:16px}
+  .note{margin:5px 0 0;font-size:14px;color:var(--muted)}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
+  .tag{font-size:12.5px;padding:3px 10px;border-radius:999px;background:var(--blue-soft);color:#1D4470;font-weight:700}
+  .tag.gold{background:var(--gold-soft);color:#7A5F12}
+  .tag.coral{background:var(--coral-soft);color:#9E4E3E}
+  .tag.plain{background:var(--paper-2);color:var(--muted)}
+  .tag a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+  .mini{background:transparent;border:none;color:var(--faint);font-size:12.5px;font-weight:700;padding:3px 4px}
+  .mini:hover{color:var(--blue)}
+  .mynote{display:block;width:100%;margin-top:9px;padding:9px 11px;border:1.5px dashed var(--line);border-radius:12px;background:var(--input);font-size:14px;resize:vertical;min-height:44px}
+  .mynote-view{margin-top:8px;padding:8px 11px;background:var(--gold-soft);border-radius:11px;font-size:14px;color:#5A4A1C;white-space:pre-wrap}
+  .addrow{display:flex;gap:8px;margin-top:6px}
+  .addrow input{flex:1;padding:10px 13px;border:1.5px solid var(--line);border-radius:13px;background:var(--card)}
+  .empty{text-align:center;color:var(--muted);padding:26px 16px;border:1.5px dashed var(--line);border-radius:var(--r);background:rgba(255,255,255,.5);font-size:14.5px}
+  body.night .empty{background:rgba(255,255,255,.03)}
+
+  /* ===== רגעים ===== */
+  .momentForm{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:var(--shadow);margin-top:16px}
+  .momentForm h3{margin:0 0 4px;font-family:"Frank Ruhl Libre",serif;font-size:20px}
+  .momentForm p{margin:0 0 12px;color:var(--muted);font-size:14px}
+  .momentForm textarea{width:100%;min-height:70px;padding:11px 13px;border:1.5px solid var(--line);border-radius:13px;background:var(--input);resize:vertical;font-size:15px}
+  .mfRow{display:flex;gap:8px;margin-top:10px;align-items:center;flex-wrap:wrap}
+  .photoBtn{position:relative;overflow:hidden}
+  .photoBtn input{position:absolute;inset:0;opacity:0;cursor:pointer}
+  .preview{width:52px;height:52px;border-radius:12px;object-fit:cover;border:1px solid var(--line);display:none}
+  .preview.on{display:block}
+  .moments{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+  @media (max-width:440px){.moments{grid-template-columns:1fr}}
+  .moment{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px 10px 12px;box-shadow:var(--shadow);transform:rotate(var(--tilt,0deg));position:relative}
+  .moment:nth-child(odd){--tilt:-.7deg}.moment:nth-child(even){--tilt:.6deg}
+  .moment img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block;background:var(--paper-2)}
+  .moment .mday{font-family:"Frank Ruhl Libre",serif;font-weight:700;font-size:15px;margin:8px 4px 0;color:var(--blue)}
+  body.night .moment .mday{color:#8FB0DC}
+  .moment .mtext{margin:2px 4px 0;font-size:14.5px;white-space:pre-wrap}
+  .moment .mdate{margin:4px 4px 0;font-size:12px;color:var(--faint)}
+  .moment .mdel{position:absolute;top:8px;inset-inline-start:8px;background:rgba(0,0,0,.45);color:#fff;border:none;border-radius:999px;width:26px;height:26px;font-size:13px;display:grid;place-items:center}
+  .moment.noimg{background:linear-gradient(135deg,var(--gold-soft),var(--card))}
+  .moment.noimg .mtext{font-size:16px;font-family:"Frank Ruhl Libre",serif;min-height:80px;display:flex;align-items:center}
+
+  footer.note{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--faint);display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+  footer .logo{height:30px;opacity:.85}
+
+  .toast{position:fixed;inset-inline:0;bottom:18px;margin:0 auto;width:max-content;max-width:90%;background:#26313D;color:#fff;padding:11px 20px;border-radius:999px;font-size:14.5px;opacity:0;transform:translateY(8px);transition:.2s;pointer-events:none;z-index:50}
+  .toast.show{opacity:1;transform:none}
+  .confetti{position:fixed;inset:0;pointer-events:none;z-index:40;overflow:hidden}
+  .confetti i{position:absolute;top:-12px;width:9px;height:14px;border-radius:2px;animation:fall 1.5s ease-in forwards}
+  @keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}
+
+  /* מודאל מזכרת */
+  .modal{position:fixed;inset:0;background:rgba(20,26,34,.6);z-index:60;display:none;align-items:center;justify-content:center;padding:16px}
+  .modal.on{display:flex}
+  .modalBox{background:var(--card);border-radius:22px;padding:14px;max-width:420px;width:100%;box-shadow:var(--shadow)}
+  .modalBox canvas{width:100%;height:auto;border-radius:14px;display:block}
+  .modalBtns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+
+  .hidden{display:none!important}
+  :focus-visible{outline:2.5px solid var(--blue);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+  @media print{
+    .filters,.heroBtns,.mini,.addrow,.toast,.confetti,.tabs,.tools,.momentForm{display:none!important}
+    body{background:#fff}.hero{box-shadow:none}.task{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ========== מסך פתיחה ========== -->
+  <section class="intro" id="intro">
+    <div class="introHead">
+      <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="76.3 168 275.3 92.5"><path fill-rule="nonzero" fill="rgb(84.403992%, 67.054749%, 20.4422%)" fill-opacity="1" d="M 347.457031 220.921875 L 347.457031 195.035156 C 347.457031 181.46875 344.214844 176.671875 332.707031 176.671875 L 315.082031 176.671875 L 315.082031 185.449219 L 319.0625 185.449219 L 315.300781 220.921875 L 326.734375 220.921875 L 330.273438 185.15625 L 331.453125 185.15625 C 334.921875 185.15625 335.878906 186.703125 335.878906 191.644531 L 335.878906 212.148438 L 331.160156 212.148438 L 331.160156 220.921875 Z M 298.753906 220.921875 L 310.554688 220.921875 L 310.554688 176.671875 L 298.753906 176.671875 Z M 281.390625 220.921875 L 293.191406 220.921875 L 293.191406 194.152344 C 293.191406 181.613281 290.90625 176.671875 278.664062 176.671875 L 269.371094 176.671875 L 269.371094 185.449219 L 275.566406 185.449219 C 280.136719 185.449219 281.390625 187.808594 281.390625 194.59375 Z M 253.703125 220.921875 L 265.503906 220.921875 L 265.503906 176.671875 L 235.636719 176.671875 L 235.636719 185.449219 L 253.703125 185.449219 Z M 226.578125 239.523438 L 229.390625 239.523438 L 229.390625 229.175781 L 220.4375 229.175781 L 220.4375 231.347656 L 226.578125 231.347656 Z M 218.742188 239.523438 L 216.324219 235.832031 C 217.53125 235.488281 218.621094 234.625 218.621094 232.8125 L 218.621094 229.175781 L 215.808594 229.175781 L 215.808594 232.695312 C 215.808594 233.417969 215.601562 233.796875 215.101562 233.96875 L 211.960938 229.175781 L 209.097656 229.175781 L 211.183594 232.367188 C 209.632812 232.675781 208.925781 233.902344 208.925781 235.472656 L 208.925781 239.523438 L 211.71875 239.523438 L 211.71875 235.453125 C 211.71875 234.730469 211.875 234.332031 212.359375 234.160156 L 215.859375 239.523438 Z M 204.34375 239.523438 L 207.175781 239.523438 L 207.175781 233.660156 C 207.175781 230.347656 206 229.175781 202.914062 229.175781 L 199.617188 229.175781 L 199.617188 231.347656 L 202.292969 231.347656 C 203.863281 231.347656 204.34375 231.984375 204.34375 233.917969 Z M 195.195312 239.523438 L 198.007812 239.523438 L 198.007812 229.175781 L 189.054688 229.175781 L 189.054688 231.347656 L 195.195312 231.347656 Z M 179.601562 239.523438 L 183.121094 229.175781 L 177.496094 229.175781 L 177.496094 227.449219 L 174.808594 227.449219 L 174.808594 231.347656 L 179.5 231.347656 L 176.636719 239.523438 Z M 168.65625 239.523438 L 173.730469 239.523438 L 173.730469 234.074219 C 173.730469 230.589844 172.503906 229.175781 169.398438 229.175781 L 164.257812 229.175781 L 164.257812 231.347656 L 165.570312 231.347656 L 164.121094 239.523438 L 166.96875 239.523438 L 168.347656 231.347656 L 168.882812 231.347656 C 170.453125 231.347656 170.898438 232.175781 170.898438 234.144531 L 170.898438 237.351562 L 168.65625 237.351562 Z M 162.648438 234.195312 L 162.648438 229.175781 L 159.816406 229.175781 L 159.816406 234.125 C 159.816406 236.210938 159.402344 236.714844 157.953125 237.144531 L 156.351562 229.175781 L 153.519531 229.175781 L 155.351562 237.902344 L 153.3125 238.507812 L 153.847656 240.628906 L 158.421875 239.335938 C 161.25 238.542969 162.648438 237.28125 162.648438 234.195312 M 151.875 234.675781 L 151.875 229.175781 L 149.167969 229.175781 L 149.167969 234.382812 C 149.167969 236.609375 148.441406 237.351562 146.183594 237.351562 L 143.472656 237.351562 L 142.59375 229.175781 L 139.851562 229.175781 L 141.003906 239.523438 L 146.699219 239.523438 C 150.339844 239.523438 151.875 238.144531 151.875 234.675781 M 144.785156 235.625 L 147.441406 235.625 L 147.441406 229.175781 L 144.785156 229.175781 Z M 145.453125 215.542969 C 145.507812 215.429688 145.53125 215.308594 145.519531 215.191406 C 145.5 214.953125 145.359375 214.730469 145.128906 214.621094 C 144.785156 214.453125 144.371094 214.601562 144.207031 214.945312 L 142.613281 218.289062 C 142.445312 218.632812 142.59375 219.046875 142.9375 219.210938 C 143.28125 219.375 143.695312 219.230469 143.863281 218.882812 Z M 138.058594 255.355469 L 137.765625 251.667969 C 137.738281 251.285156 137.402344 251 137.023438 251.03125 C 136.640625 251.0625 136.355469 251.394531 136.386719 251.773438 L 136.675781 255.464844 C 136.707031 255.847656 137.039062 256.132812 137.421875 256.101562 C 137.804688 256.070312 138.085938 255.738281 138.058594 255.355469 M 135.117188 239.523438 L 137.929688 239.523438 L 137.929688 229.175781 L 128.972656 229.175781 L 128.972656 231.347656 L 135.117188 231.347656 Z M 135.042969 217.03125 L 134.75 213.34375 C 134.722656 212.960938 134.386719 212.675781 134.007812 212.707031 C 133.625 212.738281 133.339844 213.070312 133.371094 213.449219 L 133.660156 217.140625 C 133.691406 217.523438 134.023438 217.808594 134.40625 217.777344 C 134.785156 217.75 135.070312 217.414062 135.042969 217.03125 M 127.789062 247.738281 C 127.839844 247.625 127.863281 247.503906 127.851562 247.386719 C 127.832031 247.148438 127.691406 246.925781 127.460938 246.816406 C 127.117188 246.652344 126.703125 246.796875 126.535156 247.140625 L 124.945312 250.484375 C 124.777344 250.828125 124.925781 251.242188 125.269531 251.40625 C 125.613281 251.570312 126.027344 251.425781 126.195312 251.078125 Z M 126.976562 220.757812 C 127.1875 220.613281 127.292969 220.371094 127.273438 220.132812 C 127.265625 220.015625 127.226562 219.898438 127.15625 219.796875 L 125.058594 216.742188 C 124.839844 216.429688 124.410156 216.347656 124.09375 216.566406 C 123.777344 216.78125 123.699219 217.214844 123.914062 217.527344 L 126.011719 220.578125 C 126.230469 220.894531 126.660156 220.976562 126.976562 220.757812 M 122.851562 242.800781 C 123.0625 242.65625 123.167969 242.414062 123.148438 242.175781 C 123.140625 242.058594 123.097656 241.941406 123.027344 241.839844 C 122.8125 241.523438 122.378906 241.445312 122.066406 241.660156 L 119.015625 243.757812 C 118.699219 243.972656 118.621094 244.40625 118.835938 244.71875 C 119.050781 245.035156 119.484375 245.113281 119.796875 244.898438 Z M 121.714844 227.335938 C 121.769531 227.222656 121.792969 227.101562 121.78125 226.984375 C 121.761719 226.746094 121.621094 226.523438 121.390625 226.410156 L 118.046875 224.820312 C 117.703125 224.652344 117.289062 224.800781 117.125 225.144531 C 116.960938 225.488281 117.109375 225.902344 117.453125 226.066406 L 120.792969 227.660156 C 121.140625 227.824219 121.550781 227.679688 121.714844 227.335938 M 119.765625 234.058594 L 116.074219 234.347656 C 115.691406 234.378906 115.410156 234.710938 115.4375 235.09375 C 115.46875 235.472656 115.800781 235.757812 116.183594 235.726562 L 119.875 235.4375 C 120.253906 235.40625 120.539062 235.074219 120.511719 234.691406 C 120.480469 234.3125 120.144531 234.027344 119.765625 234.058594 M 131.839844 233.609375 L 129.007812 233.609375 L 129.007812 239.523438 L 131.839844 239.523438 Z M 145.71875 247.953125 C 145.402344 248.167969 145.324219 248.597656 145.539062 248.914062 L 147.636719 251.964844 C 147.851562 252.28125 148.285156 252.359375 148.597656 252.144531 C 148.808594 251.996094 148.914062 251.757812 148.898438 251.519531 C 148.886719 251.402344 148.847656 251.285156 148.777344 251.179688 L 146.679688 248.128906 C 146.464844 247.816406 146.03125 247.734375 145.71875 247.953125 M 191.917969 233.609375 L 189.085938 233.609375 L 189.085938 239.523438 L 191.917969 239.523438 Z M 223.300781 233.609375 L 220.472656 233.609375 L 220.472656 239.523438 L 223.300781 239.523438 Z M 247.730469 193.339844 L 235.929688 193.339844 L 235.929688 220.921875 L 247.730469 220.921875 Z M 247.730469 193.339844 "/><path fill-rule="nonzero" fill="rgb(15.342712%, 33.827209%, 55.024719%)" fill-opacity="1" d="M 347.152344 228.710938 C 346.992188 228.933594 346.824219 229.152344 346.652344 229.363281 C 334.804688 241.445312 309.148438 223.382812 294.378906 235.25 C 293.164062 236.222656 292.101562 237.777344 291.410156 239.585938 C 290.722656 237.777344 289.65625 236.222656 288.445312 235.25 C 273.675781 223.382812 248.015625 241.445312 236.167969 229.363281 C 236 229.152344 235.832031 228.933594 235.667969 228.710938 C 235.667969 228.710938 236.21875 233 240.179688 236.734375 L 240.167969 236.675781 C 240.214844 236.738281 240.261719 236.800781 240.3125 236.863281 C 241.644531 238.09375 243.355469 239.257812 245.542969 240.183594 C 246.636719 240.5625 247.835938 240.875 249.171875 241.085938 C 249.828125 241.15625 250.5 241.179688 251.167969 241.214844 C 262.808594 241.523438 278.101562 234.644531 288.007812 242.605469 C 289.476562 243.785156 290.714844 245.902344 291.203125 248.269531 C 291.28125 248.113281 291.34375 247.953125 291.410156 247.792969 C 291.480469 247.953125 291.542969 248.113281 291.621094 248.269531 C 292.105469 245.902344 293.347656 243.785156 294.816406 242.605469 C 304.71875 234.644531 320.015625 241.523438 331.65625 241.214844 C 332.324219 241.179688 332.996094 241.15625 333.652344 241.085938 C 334.988281 240.875 336.1875 240.5625 337.28125 240.183594 C 339.46875 239.257812 341.175781 238.09375 342.511719 236.863281 C 342.558594 236.800781 342.609375 236.738281 342.65625 236.675781 L 342.644531 236.734375 C 346.605469 233 347.152344 228.710938 347.152344 228.710938 M 227.816406 212.679688 C 230.335938 208.449219 230.703125 203.78125 230.703125 196.257812 L 230.703125 178.828125 C 230.335938 178.03125 229.789062 177.308594 228.910156 177.054688 L 217.804688 177.054688 L 217.734375 185.84375 L 220.875 185.84375 L 220.875 196.910156 C 220.875 202.261719 220.984375 205.375 219.378906 207.832031 C 217.515625 210.726562 213.496094 211.738281 208.964844 211.847656 L 199.867188 212.027344 L 199.6875 205.953125 L 212.800781 203.238281 C 214.078125 202.988281 214.410156 202.226562 214.371094 201.46875 L 214.371094 178.828125 C 214.078125 178.03125 213.496094 177.308594 212.691406 177.054688 L 202.28125 177.054688 L 202.207031 185.84375 L 205.277344 185.84375 L 205.277344 197.199219 L 199.429688 198.429688 L 198.808594 178.828125 C 198.589844 178.03125 198.003906 177.308594 197.128906 177.054688 L 185.65625 177.054688 L 185.65625 185.84375 L 189.273438 185.84375 L 190.1875 220.78125 L 208.964844 220.78125 C 216.746094 220.78125 223.980469 219.152344 227.816406 212.679688 M 183.40625 220.78125 L 183.445312 212.605469 L 183.117188 189.0625 C 183.007812 179.296875 177.5625 176.621094 172.230469 176.65625 L 172.121094 176.65625 C 168.648438 176.65625 165.507812 177.957031 162.949219 180.78125 L 162.804688 180.238281 C 162.292969 178.789062 161.671875 177.34375 161.195312 177.054688 L 149.871094 177.054688 L 149.871094 185.914062 L 156.777344 185.878906 L 157.25 186.710938 L 153.925781 191.015625 L 151.1875 220.78125 L 161.523438 220.78125 L 164.007812 190.4375 C 164.410156 189.785156 165.25 188.664062 165.871094 187.976562 C 167.078125 186.566406 168.320312 185.625 169.78125 185.699219 C 171.5 185.769531 172.851562 186.820312 172.886719 189.566406 L 173.363281 211.992188 L 167.953125 211.992188 L 167.953125 220.78125 Z M 145.128906 196.773438 L 146.527344 173.867188 C 140.703125 173.898438 135.21875 176.679688 131.675781 181.390625 L 130.339844 203.234375 C 134.167969 199.074219 139.53125 196.730469 145.128906 196.773438 M 126.085938 203.128906 L 127.421875 181.289062 C 124.464844 176.210938 119.386719 172.796875 113.636719 172.011719 L 112.175781 194.914062 C 117.742188 195.546875 122.789062 198.527344 126.085938 203.128906 M 108.613281 198.402344 L 109.972656 177.054688 L 80.617188 177.054688 L 80.617188 185.84375 L 85.546875 185.84375 L 82.734375 189.386719 L 82.734375 220.78125 L 113.386719 220.78125 L 113.332031 199.484375 C 111.8125 198.957031 110.234375 198.585938 108.613281 198.402344 M 103.011719 211.992188 L 92.78125 211.992188 L 92.78125 185.84375 L 102.976562 185.84375 Z M 103.011719 211.992188 "/></svg></span>
+      <span class="pill">שפרה ופועה</span>
+    </div>
+    <h1>מזל טוב! <em>נכיר רגע?</em></h1>
+    <p class="sub">כמה שאלות קטנות, ונכין לך מפה אישית לשבועות הראשונים — רק מה שרלוונטי לך, עם תאריכים אמיתיים. הכול נשאר אצלך במכשיר.</p>
+
+    <div class="row2">
+      <div class="field">
+        <label for="fName">איך קוראים לך? <span class="hint">אפשר לדלג</span></label>
+        <input type="text" id="fName" placeholder="שם פרטי">
+      </div>
+      <div class="field">
+        <label for="fBirth">מתי הייתה הלידה?</label>
+        <input type="date" id="fBirth">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>מי הגיע/ה אליכם? 🎀</label>
+      <div class="segbtns" id="fSex">
+        <button type="button" class="segbtn" data-v="f" aria-pressed="false">בת</button>
+        <button type="button" class="segbtn" data-v="m" aria-pressed="false">בן</button>
+        <button type="button" class="segbtn" data-v="n" aria-pressed="true">עדיין לא מספרים</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>ואיך קוראים לתינוק/ת? <span class="hint">אם עוד לא — נשאיר ריק ונחכה</span></label>
+      <input type="text" id="fBaby" placeholder="עדיין מתלבטים">
+    </div>
+
+    <div class="field">
+      <label>יש עוד מישהו קטן שהגיע יחד? <span class="hint">תאומים ושלישיות</span></label>
+      <div class="segbtns" id="fMulti">
+        <button type="button" class="segbtn" data-v="1" aria-pressed="true">לא, רק אחד/ת</button>
+        <button type="button" class="segbtn" data-v="2" aria-pressed="false">תאומים</button>
+        <button type="button" class="segbtn" data-v="3" aria-pressed="false">שלישייה</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>שירותי הבריאות שלכם <span class="hint">קופת חולים</span></label>
+      <div class="segbtns" id="fHmo">
+        <button type="button" class="segbtn" data-v="clalit" aria-pressed="false">כללית</button>
+        <button type="button" class="segbtn" data-v="maccabi" aria-pressed="false">מכבי</button>
+        <button type="button" class="segbtn" data-v="meuhedet" aria-pressed="false">מאוחדת</button>
+        <button type="button" class="segbtn" data-v="leumit" aria-pressed="false">לאומית</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>לפני הלידה עבדת בתור…</label>
+      <div class="segbtns" id="fWork">
+        <button type="button" class="segbtn" data-v="employee" aria-pressed="true">שכירה</button>
+        <button type="button" class="segbtn" data-v="self" aria-pressed="false">עצמאית</button>
+        <button type="button" class="segbtn" data-v="both" aria-pressed="false">גם וגם</button>
+        <button type="button" class="segbtn" data-v="none" aria-pressed="false">לא עבדתי</button>
+      </div>
+    </div>
+
+    <div class="field" id="tenureField">
+      <label>וכמה זמן היית שם?</label>
+      <div class="segbtns" id="fTenure">
+        <button type="button" class="segbtn" data-v="12plus" aria-pressed="true">שנה ומעלה</button>
+        <button type="button" class="segbtn" data-v="less" aria-pressed="false">פחות משנה</button>
+        <button type="button" class="segbtn" data-v="unknown" aria-pressed="false">לא בטוחה</button>
+      </div>
+    </div>
+
+    <div class="field" id="returnField">
+      <label for="fReturn">מתי בערך חוזרים לעבודה? <span class="hint">אפשר לדלג ולעדכן אחר כך</span></label>
+      <input type="date" id="fReturn">
+    </div>
+
+    <div class="field">
+      <label>ועוד קצת עלייך</label>
+      <label class="switch"><input type="checkbox" id="fKids"> יש בבית עוד ילדים</label>
+      <label class="switch"><input type="checkbox" id="fHosp"> היה אשפוז ממושך (שלי או של התינוק/ת)</label>
+      <label class="switch"><input type="checkbox" id="fPrivate"> יש לנו ביטוח בריאות משלים או פרטי</label>
+    </div>
+
+    <div class="usBox">
+      <h3>ושתי שאלות מאיתנו 💛</h3>
+      <p>כדי שנדע מה כבר מחכה לך ומה עוד לא.</p>
+      <div class="field">
+        <label>נרשמת כבר לשפרה ופועה של מורה שמיים?</label>
+        <div class="segbtns" id="fReg">
+          <button type="button" class="segbtn warm" data-v="yes" aria-pressed="true">כן, אני רשומה</button>
+          <button type="button" class="segbtn warm" data-v="no" aria-pressed="false">עוד לא</button>
+        </div>
+      </div>
+      <div class="field" id="giftField">
+        <label>וחבילת המתנות שלנו כבר הגיעה אלייך? 🎁</label>
+        <div class="segbtns" id="fGift">
+          <button type="button" class="segbtn warm" data-v="yes" aria-pressed="true">כן, כבר אצלי</button>
+          <button type="button" class="segbtn warm" data-v="no" aria-pressed="false">עוד לא</button>
+          <button type="button" class="segbtn warm" data-v="unknown" aria-pressed="false">לא בטוחה</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-main" id="startBtn" style="width:100%">מוכן? נבנה את המפה שלי</button>
+    <p class="privacy">הפרטים נשמרים במכשיר שלך בלבד ואינם נשלחים לשום מקום.</p>
+  </section>
+
+  <!-- ========== האפליקציה ========== -->
+  <div id="app" class="hidden">
+    <section class="hero">
+      <div class="heroHead">
+        <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="76.3 168 275.3 92.5"><path fill-rule="nonzero" fill="rgb(84.403992%, 67.054749%, 20.4422%)" fill-opacity="1" d="M 347.457031 220.921875 L 347.457031 195.035156 C 347.457031 181.46875 344.214844 176.671875 332.707031 176.671875 L 315.082031 176.671875 L 315.082031 185.449219 L 319.0625 185.449219 L 315.300781 220.921875 L 326.734375 220.921875 L 330.273438 185.15625 L 331.453125 185.15625 C 334.921875 185.15625 335.878906 186.703125 335.878906 191.644531 L 335.878906 212.148438 L 331.160156 212.148438 L 331.160156 220.921875 Z M 298.753906 220.921875 L 310.554688 220.921875 L 310.554688 176.671875 L 298.753906 176.671875 Z M 281.390625 220.921875 L 293.191406 220.921875 L 293.191406 194.152344 C 293.191406 181.613281 290.90625 176.671875 278.664062 176.671875 L 269.371094 176.671875 L 269.371094 185.449219 L 275.566406 185.449219 C 280.136719 185.449219 281.390625 187.808594 281.390625 194.59375 Z M 253.703125 220.921875 L 265.503906 220.921875 L 265.503906 176.671875 L 235.636719 176.671875 L 235.636719 185.449219 L 253.703125 185.449219 Z M 226.578125 239.523438 L 229.390625 239.523438 L 229.390625 229.175781 L 220.4375 229.175781 L 220.4375 231.347656 L 226.578125 231.347656 Z M 218.742188 239.523438 L 216.324219 235.832031 C 217.53125 235.488281 218.621094 234.625 218.621094 232.8125 L 218.621094 229.175781 L 215.808594 229.175781 L 215.808594 232.695312 C 215.808594 233.417969 215.601562 233.796875 215.101562 233.96875 L 211.960938 229.175781 L 209.097656 229.175781 L 211.183594 232.367188 C 209.632812 232.675781 208.925781 233.902344 208.925781 235.472656 L 208.925781 239.523438 L 211.71875 239.523438 L 211.71875 235.453125 C 211.71875 234.730469 211.875 234.332031 212.359375 234.160156 L 215.859375 239.523438 Z M 204.34375 239.523438 L 207.175781 239.523438 L 207.175781 233.660156 C 207.175781 230.347656 206 229.175781 202.914062 229.175781 L 199.617188 229.175781 L 199.617188 231.347656 L 202.292969 231.347656 C 203.863281 231.347656 204.34375 231.984375 204.34375 233.917969 Z M 195.195312 239.523438 L 198.007812 239.523438 L 198.007812 229.175781 L 189.054688 229.175781 L 189.054688 231.347656 L 195.195312 231.347656 Z M 179.601562 239.523438 L 183.121094 229.175781 L 177.496094 229.175781 L 177.496094 227.449219 L 174.808594 227.449219 L 174.808594 231.347656 L 179.5 231.347656 L 176.636719 239.523438 Z M 168.65625 239.523438 L 173.730469 239.523438 L 173.730469 234.074219 C 173.730469 230.589844 172.503906 229.175781 169.398438 229.175781 L 164.257812 229.175781 L 164.257812 231.347656 L 165.570312 231.347656 L 164.121094 239.523438 L 166.96875 239.523438 L 168.347656 231.347656 L 168.882812 231.347656 C 170.453125 231.347656 170.898438 232.175781 170.898438 234.144531 L 170.898438 237.351562 L 168.65625 237.351562 Z M 162.648438 234.195312 L 162.648438 229.175781 L 159.816406 229.175781 L 159.816406 234.125 C 159.816406 236.210938 159.402344 236.714844 157.953125 237.144531 L 156.351562 229.175781 L 153.519531 229.175781 L 155.351562 237.902344 L 153.3125 238.507812 L 153.847656 240.628906 L 158.421875 239.335938 C 161.25 238.542969 162.648438 237.28125 162.648438 234.195312 M 151.875 234.675781 L 151.875 229.175781 L 149.167969 229.175781 L 149.167969 234.382812 C 149.167969 236.609375 148.441406 237.351562 146.183594 237.351562 L 143.472656 237.351562 L 142.59375 229.175781 L 139.851562 229.175781 L 141.003906 239.523438 L 146.699219 239.523438 C 150.339844 239.523438 151.875 238.144531 151.875 234.675781 M 144.785156 235.625 L 147.441406 235.625 L 147.441406 229.175781 L 144.785156 229.175781 Z M 145.453125 215.542969 C 145.507812 215.429688 145.53125 215.308594 145.519531 215.191406 C 145.5 214.953125 145.359375 214.730469 145.128906 214.621094 C 144.785156 214.453125 144.371094 214.601562 144.207031 214.945312 L 142.613281 218.289062 C 142.445312 218.632812 142.59375 219.046875 142.9375 219.210938 C 143.28125 219.375 143.695312 219.230469 143.863281 218.882812 Z M 138.058594 255.355469 L 137.765625 251.667969 C 137.738281 251.285156 137.402344 251 137.023438 251.03125 C 136.640625 251.0625 136.355469 251.394531 136.386719 251.773438 L 136.675781 255.464844 C 136.707031 255.847656 137.039062 256.132812 137.421875 256.101562 C 137.804688 256.070312 138.085938 255.738281 138.058594 255.355469 M 135.117188 239.523438 L 137.929688 239.523438 L 137.929688 229.175781 L 128.972656 229.175781 L 128.972656 231.347656 L 135.117188 231.347656 Z M 135.042969 217.03125 L 134.75 213.34375 C 134.722656 212.960938 134.386719 212.675781 134.007812 212.707031 C 133.625 212.738281 133.339844 213.070312 133.371094 213.449219 L 133.660156 217.140625 C 133.691406 217.523438 134.023438 217.808594 134.40625 217.777344 C 134.785156 217.75 135.070312 217.414062 135.042969 217.03125 M 127.789062 247.738281 C 127.839844 247.625 127.863281 247.503906 127.851562 247.386719 C 127.832031 247.148438 127.691406 246.925781 127.460938 246.816406 C 127.117188 246.652344 126.703125 246.796875 126.535156 247.140625 L 124.945312 250.484375 C 124.777344 250.828125 124.925781 251.242188 125.269531 251.40625 C 125.613281 251.570312 126.027344 251.425781 126.195312 251.078125 Z M 126.976562 220.757812 C 127.1875 220.613281 127.292969 220.371094 127.273438 220.132812 C 127.265625 220.015625 127.226562 219.898438 127.15625 219.796875 L 125.058594 216.742188 C 124.839844 216.429688 124.410156 216.347656 124.09375 216.566406 C 123.777344 216.78125 123.699219 217.214844 123.914062 217.527344 L 126.011719 220.578125 C 126.230469 220.894531 126.660156 220.976562 126.976562 220.757812 M 122.851562 242.800781 C 123.0625 242.65625 123.167969 242.414062 123.148438 242.175781 C 123.140625 242.058594 123.097656 241.941406 123.027344 241.839844 C 122.8125 241.523438 122.378906 241.445312 122.066406 241.660156 L 119.015625 243.757812 C 118.699219 243.972656 118.621094 244.40625 118.835938 244.71875 C 119.050781 245.035156 119.484375 245.113281 119.796875 244.898438 Z M 121.714844 227.335938 C 121.769531 227.222656 121.792969 227.101562 121.78125 226.984375 C 121.761719 226.746094 121.621094 226.523438 121.390625 226.410156 L 118.046875 224.820312 C 117.703125 224.652344 117.289062 224.800781 117.125 225.144531 C 116.960938 225.488281 117.109375 225.902344 117.453125 226.066406 L 120.792969 227.660156 C 121.140625 227.824219 121.550781 227.679688 121.714844 227.335938 M 119.765625 234.058594 L 116.074219 234.347656 C 115.691406 234.378906 115.410156 234.710938 115.4375 235.09375 C 115.46875 235.472656 115.800781 235.757812 116.183594 235.726562 L 119.875 235.4375 C 120.253906 235.40625 120.539062 235.074219 120.511719 234.691406 C 120.480469 234.3125 120.144531 234.027344 119.765625 234.058594 M 131.839844 233.609375 L 129.007812 233.609375 L 129.007812 239.523438 L 131.839844 239.523438 Z M 145.71875 247.953125 C 145.402344 248.167969 145.324219 248.597656 145.539062 248.914062 L 147.636719 251.964844 C 147.851562 252.28125 148.285156 252.359375 148.597656 252.144531 C 148.808594 251.996094 148.914062 251.757812 148.898438 251.519531 C 148.886719 251.402344 148.847656 251.285156 148.777344 251.179688 L 146.679688 248.128906 C 146.464844 247.816406 146.03125 247.734375 145.71875 247.953125 M 191.917969 233.609375 L 189.085938 233.609375 L 189.085938 239.523438 L 191.917969 239.523438 Z M 223.300781 233.609375 L 220.472656 233.609375 L 220.472656 239.523438 L 223.300781 239.523438 Z M 247.730469 193.339844 L 235.929688 193.339844 L 235.929688 220.921875 L 247.730469 220.921875 Z M 247.730469 193.339844 "/><path fill-rule="nonzero" fill="rgb(15.342712%, 33.827209%, 55.024719%)" fill-opacity="1" d="M 347.152344 228.710938 C 346.992188 228.933594 346.824219 229.152344 346.652344 229.363281 C 334.804688 241.445312 309.148438 223.382812 294.378906 235.25 C 293.164062 236.222656 292.101562 237.777344 291.410156 239.585938 C 290.722656 237.777344 289.65625 236.222656 288.445312 235.25 C 273.675781 223.382812 248.015625 241.445312 236.167969 229.363281 C 236 229.152344 235.832031 228.933594 235.667969 228.710938 C 235.667969 228.710938 236.21875 233 240.179688 236.734375 L 240.167969 236.675781 C 240.214844 236.738281 240.261719 236.800781 240.3125 236.863281 C 241.644531 238.09375 243.355469 239.257812 245.542969 240.183594 C 246.636719 240.5625 247.835938 240.875 249.171875 241.085938 C 249.828125 241.15625 250.5 241.179688 251.167969 241.214844 C 262.808594 241.523438 278.101562 234.644531 288.007812 242.605469 C 289.476562 243.785156 290.714844 245.902344 291.203125 248.269531 C 291.28125 248.113281 291.34375 247.953125 291.410156 247.792969 C 291.480469 247.953125 291.542969 248.113281 291.621094 248.269531 C 292.105469 245.902344 293.347656 243.785156 294.816406 242.605469 C 304.71875 234.644531 320.015625 241.523438 331.65625 241.214844 C 332.324219 241.179688 332.996094 241.15625 333.652344 241.085938 C 334.988281 240.875 336.1875 240.5625 337.28125 240.183594 C 339.46875 239.257812 341.175781 238.09375 342.511719 236.863281 C 342.558594 236.800781 342.609375 236.738281 342.65625 236.675781 L 342.644531 236.734375 C 346.605469 233 347.152344 228.710938 347.152344 228.710938 M 227.816406 212.679688 C 230.335938 208.449219 230.703125 203.78125 230.703125 196.257812 L 230.703125 178.828125 C 230.335938 178.03125 229.789062 177.308594 228.910156 177.054688 L 217.804688 177.054688 L 217.734375 185.84375 L 220.875 185.84375 L 220.875 196.910156 C 220.875 202.261719 220.984375 205.375 219.378906 207.832031 C 217.515625 210.726562 213.496094 211.738281 208.964844 211.847656 L 199.867188 212.027344 L 199.6875 205.953125 L 212.800781 203.238281 C 214.078125 202.988281 214.410156 202.226562 214.371094 201.46875 L 214.371094 178.828125 C 214.078125 178.03125 213.496094 177.308594 212.691406 177.054688 L 202.28125 177.054688 L 202.207031 185.84375 L 205.277344 185.84375 L 205.277344 197.199219 L 199.429688 198.429688 L 198.808594 178.828125 C 198.589844 178.03125 198.003906 177.308594 197.128906 177.054688 L 185.65625 177.054688 L 185.65625 185.84375 L 189.273438 185.84375 L 190.1875 220.78125 L 208.964844 220.78125 C 216.746094 220.78125 223.980469 219.152344 227.816406 212.679688 M 183.40625 220.78125 L 183.445312 212.605469 L 183.117188 189.0625 C 183.007812 179.296875 177.5625 176.621094 172.230469 176.65625 L 172.121094 176.65625 C 168.648438 176.65625 165.507812 177.957031 162.949219 180.78125 L 162.804688 180.238281 C 162.292969 178.789062 161.671875 177.34375 161.195312 177.054688 L 149.871094 177.054688 L 149.871094 185.914062 L 156.777344 185.878906 L 157.25 186.710938 L 153.925781 191.015625 L 151.1875 220.78125 L 161.523438 220.78125 L 164.007812 190.4375 C 164.410156 189.785156 165.25 188.664062 165.871094 187.976562 C 167.078125 186.566406 168.320312 185.625 169.78125 185.699219 C 171.5 185.769531 172.851562 186.820312 172.886719 189.566406 L 173.363281 211.992188 L 167.953125 211.992188 L 167.953125 220.78125 Z M 145.128906 196.773438 L 146.527344 173.867188 C 140.703125 173.898438 135.21875 176.679688 131.675781 181.390625 L 130.339844 203.234375 C 134.167969 199.074219 139.53125 196.730469 145.128906 196.773438 M 126.085938 203.128906 L 127.421875 181.289062 C 124.464844 176.210938 119.386719 172.796875 113.636719 172.011719 L 112.175781 194.914062 C 117.742188 195.546875 122.789062 198.527344 126.085938 203.128906 M 108.613281 198.402344 L 109.972656 177.054688 L 80.617188 177.054688 L 80.617188 185.84375 L 85.546875 185.84375 L 82.734375 189.386719 L 82.734375 220.78125 L 113.386719 220.78125 L 113.332031 199.484375 C 111.8125 198.957031 110.234375 198.585938 108.613281 198.402344 M 103.011719 211.992188 L 92.78125 211.992188 L 92.78125 185.84375 L 102.976562 185.84375 Z M 103.011719 211.992188 "/></svg></span>
+        <div class="tools">
+          <span class="badge" id="giftBadge">🎁 המתנות כבר אצלך</span>
+          <button class="iconbtn" id="nightBtn" title="מצב לילה" aria-label="מצב לילה">🌙</button>
+        </div>
+      </div>
+      <div class="heroTop">
+        <p class="dayBig" id="dayBig">—</p>
+        <p class="dayLabel" id="dayLabel"></p>
+      </div>
+      <p class="heroName" id="heroName"></p>
+      <p class="cheer" id="cheer"></p>
+      <div class="daymsg hidden" id="daymsg"></div>
+      <div class="ribbon" id="ribbon" aria-hidden="true"></div>
+      <div class="heroStats">
+        <span><b id="doneCount">0</b> מתוך <b id="totalCount">0</b> צעדים כבר מאחורייך</span>
+        <span id="urgentLeft"></span>
+      </div>
+      <div class="heroBtns">
+        <button class="hbtn solid" id="waBtn">לשלוח לעצמי בוואטסאפ</button>
+        <button class="hbtn" id="shareBtn">לשתף עם בן הזוג</button>
+        <button class="hbtn" id="cardBtn">כרטיס מזכרת</button>
+        <button class="hbtn" id="printBtn">להדפיס</button>
+        <button class="hbtn" id="editBtn">לעדכן פרטים</button>
+      </div>
+    </section>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-tab="steps" aria-selected="true">הצעדים</button>
+      <button class="tab" role="tab" data-tab="moments" aria-selected="false">📷 הרגעים</button>
+    </div>
+
+    <div id="stepsView">
+      <nav class="filters" id="filters" aria-label="סינון">
+        <button class="chip" data-f="all" aria-pressed="true">הכול</button>
+        <button class="chip" data-f="urgent" aria-pressed="false">⭐ החשוב עכשיו</button>
+        <button class="chip" data-f="week" aria-pressed="false">השבוע</button>
+        <button class="chip" data-f="open" aria-pressed="false">עוד לא</button>
+        <button class="chip" data-f="done" aria-pressed="false">עשיתי ✓</button>
+      </nav>
+      <main id="list"></main>
+    </div>
+
+    <div id="momentsView" class="hidden">
+      <div class="momentForm">
+        <h3>רגע מהיום ✨</h3>
+        <p>משפט אחד, תמונה אחת. בסוף יוצא מזה אלבום קטן של השבועות הראשונים.</p>
+        <textarea id="mText" placeholder="היום..."></textarea>
+        <div class="mfRow">
+          <button class="btn photoBtn">📷 להוסיף תמונה<input type="file" id="mPhoto" accept="image/*"></button>
+          <img class="preview" id="mPreview" alt="">
+          <button class="btn btn-gold" id="mSave" style="margin-inline-start:auto">לשמור רגע</button>
+        </div>
+      </div>
+      <div class="moments" id="moments"></div>
+      <div class="empty" id="momentsEmpty" style="margin-top:16px">עוד אין רגעים. הראשון תמיד הכי קטן — נשימה, חיוך, יד שתפסה אצבע.</div>
+    </div>
+
+    <footer class="note">
+      <span class="logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="76.3 168 275.3 92.5"><path fill-rule="nonzero" fill="rgb(84.403992%, 67.054749%, 20.4422%)" fill-opacity="1" d="M 347.457031 220.921875 L 347.457031 195.035156 C 347.457031 181.46875 344.214844 176.671875 332.707031 176.671875 L 315.082031 176.671875 L 315.082031 185.449219 L 319.0625 185.449219 L 315.300781 220.921875 L 326.734375 220.921875 L 330.273438 185.15625 L 331.453125 185.15625 C 334.921875 185.15625 335.878906 186.703125 335.878906 191.644531 L 335.878906 212.148438 L 331.160156 212.148438 L 331.160156 220.921875 Z M 298.753906 220.921875 L 310.554688 220.921875 L 310.554688 176.671875 L 298.753906 176.671875 Z M 281.390625 220.921875 L 293.191406 220.921875 L 293.191406 194.152344 C 293.191406 181.613281 290.90625 176.671875 278.664062 176.671875 L 269.371094 176.671875 L 269.371094 185.449219 L 275.566406 185.449219 C 280.136719 185.449219 281.390625 187.808594 281.390625 194.59375 Z M 253.703125 220.921875 L 265.503906 220.921875 L 265.503906 176.671875 L 235.636719 176.671875 L 235.636719 185.449219 L 253.703125 185.449219 Z M 226.578125 239.523438 L 229.390625 239.523438 L 229.390625 229.175781 L 220.4375 229.175781 L 220.4375 231.347656 L 226.578125 231.347656 Z M 218.742188 239.523438 L 216.324219 235.832031 C 217.53125 235.488281 218.621094 234.625 218.621094 232.8125 L 218.621094 229.175781 L 215.808594 229.175781 L 215.808594 232.695312 C 215.808594 233.417969 215.601562 233.796875 215.101562 233.96875 L 211.960938 229.175781 L 209.097656 229.175781 L 211.183594 232.367188 C 209.632812 232.675781 208.925781 233.902344 208.925781 235.472656 L 208.925781 239.523438 L 211.71875 239.523438 L 211.71875 235.453125 C 211.71875 234.730469 211.875 234.332031 212.359375 234.160156 L 215.859375 239.523438 Z M 204.34375 239.523438 L 207.175781 239.523438 L 207.175781 233.660156 C 207.175781 230.347656 206 229.175781 202.914062 229.175781 L 199.617188 229.175781 L 199.617188 231.347656 L 202.292969 231.347656 C 203.863281 231.347656 204.34375 231.984375 204.34375 233.917969 Z M 195.195312 239.523438 L 198.007812 239.523438 L 198.007812 229.175781 L 189.054688 229.175781 L 189.054688 231.347656 L 195.195312 231.347656 Z M 179.601562 239.523438 L 183.121094 229.175781 L 177.496094 229.175781 L 177.496094 227.449219 L 174.808594 227.449219 L 174.808594 231.347656 L 179.5 231.347656 L 176.636719 239.523438 Z M 168.65625 239.523438 L 173.730469 239.523438 L 173.730469 234.074219 C 173.730469 230.589844 172.503906 229.175781 169.398438 229.175781 L 164.257812 229.175781 L 164.257812 231.347656 L 165.570312 231.347656 L 164.121094 239.523438 L 166.96875 239.523438 L 168.347656 231.347656 L 168.882812 231.347656 C 170.453125 231.347656 170.898438 232.175781 170.898438 234.144531 L 170.898438 237.351562 L 168.65625 237.351562 Z M 162.648438 234.195312 L 162.648438 229.175781 L 159.816406 229.175781 L 159.816406 234.125 C 159.816406 236.210938 159.402344 236.714844 157.953125 237.144531 L 156.351562 229.175781 L 153.519531 229.175781 L 155.351562 237.902344 L 153.3125 238.507812 L 153.847656 240.628906 L 158.421875 239.335938 C 161.25 238.542969 162.648438 237.28125 162.648438 234.195312 M 151.875 234.675781 L 151.875 229.175781 L 149.167969 229.175781 L 149.167969 234.382812 C 149.167969 236.609375 148.441406 237.351562 146.183594 237.351562 L 143.472656 237.351562 L 142.59375 229.175781 L 139.851562 229.175781 L 141.003906 239.523438 L 146.699219 239.523438 C 150.339844 239.523438 151.875 238.144531 151.875 234.675781 M 144.785156 235.625 L 147.441406 235.625 L 147.441406 229.175781 L 144.785156 229.175781 Z M 145.453125 215.542969 C 145.507812 215.429688 145.53125 215.308594 145.519531 215.191406 C 145.5 214.953125 145.359375 214.730469 145.128906 214.621094 C 144.785156 214.453125 144.371094 214.601562 144.207031 214.945312 L 142.613281 218.289062 C 142.445312 218.632812 142.59375 219.046875 142.9375 219.210938 C 143.28125 219.375 143.695312 219.230469 143.863281 218.882812 Z M 138.058594 255.355469 L 137.765625 251.667969 C 137.738281 251.285156 137.402344 251 137.023438 251.03125 C 136.640625 251.0625 136.355469 251.394531 136.386719 251.773438 L 136.675781 255.464844 C 136.707031 255.847656 137.039062 256.132812 137.421875 256.101562 C 137.804688 256.070312 138.085938 255.738281 138.058594 255.355469 M 135.117188 239.523438 L 137.929688 239.523438 L 137.929688 229.175781 L 128.972656 229.175781 L 128.972656 231.347656 L 135.117188 231.347656 Z M 135.042969 217.03125 L 134.75 213.34375 C 134.722656 212.960938 134.386719 212.675781 134.007812 212.707031 C 133.625 212.738281 133.339844 213.070312 133.371094 213.449219 L 133.660156 217.140625 C 133.691406 217.523438 134.023438 217.808594 134.40625 217.777344 C 134.785156 217.75 135.070312 217.414062 135.042969 217.03125 M 127.789062 247.738281 C 127.839844 247.625 127.863281 247.503906 127.851562 247.386719 C 127.832031 247.148438 127.691406 246.925781 127.460938 246.816406 C 127.117188 246.652344 126.703125 246.796875 126.535156 247.140625 L 124.945312 250.484375 C 124.777344 250.828125 124.925781 251.242188 125.269531 251.40625 C 125.613281 251.570312 126.027344 251.425781 126.195312 251.078125 Z M 126.976562 220.757812 C 127.1875 220.613281 127.292969 220.371094 127.273438 220.132812 C 127.265625 220.015625 127.226562 219.898438 127.15625 219.796875 L 125.058594 216.742188 C 124.839844 216.429688 124.410156 216.347656 124.09375 216.566406 C 123.777344 216.78125 123.699219 217.214844 123.914062 217.527344 L 126.011719 220.578125 C 126.230469 220.894531 126.660156 220.976562 126.976562 220.757812 M 122.851562 242.800781 C 123.0625 242.65625 123.167969 242.414062 123.148438 242.175781 C 123.140625 242.058594 123.097656 241.941406 123.027344 241.839844 C 122.8125 241.523438 122.378906 241.445312 122.066406 241.660156 L 119.015625 243.757812 C 118.699219 243.972656 118.621094 244.40625 118.835938 244.71875 C 119.050781 245.035156 119.484375 245.113281 119.796875 244.898438 Z M 121.714844 227.335938 C 121.769531 227.222656 121.792969 227.101562 121.78125 226.984375 C 121.761719 226.746094 121.621094 226.523438 121.390625 226.410156 L 118.046875 224.820312 C 117.703125 224.652344 117.289062 224.800781 117.125 225.144531 C 116.960938 225.488281 117.109375 225.902344 117.453125 226.066406 L 120.792969 227.660156 C 121.140625 227.824219 121.550781 227.679688 121.714844 227.335938 M 119.765625 234.058594 L 116.074219 234.347656 C 115.691406 234.378906 115.410156 234.710938 115.4375 235.09375 C 115.46875 235.472656 115.800781 235.757812 116.183594 235.726562 L 119.875 235.4375 C 120.253906 235.40625 120.539062 235.074219 120.511719 234.691406 C 120.480469 234.3125 120.144531 234.027344 119.765625 234.058594 M 131.839844 233.609375 L 129.007812 233.609375 L 129.007812 239.523438 L 131.839844 239.523438 Z M 145.71875 247.953125 C 145.402344 248.167969 145.324219 248.597656 145.539062 248.914062 L 147.636719 251.964844 C 147.851562 252.28125 148.285156 252.359375 148.597656 252.144531 C 148.808594 251.996094 148.914062 251.757812 148.898438 251.519531 C 148.886719 251.402344 148.847656 251.285156 148.777344 251.179688 L 146.679688 248.128906 C 146.464844 247.816406 146.03125 247.734375 145.71875 247.953125 M 191.917969 233.609375 L 189.085938 233.609375 L 189.085938 239.523438 L 191.917969 239.523438 Z M 223.300781 233.609375 L 220.472656 233.609375 L 220.472656 239.523438 L 223.300781 239.523438 Z M 247.730469 193.339844 L 235.929688 193.339844 L 235.929688 220.921875 L 247.730469 220.921875 Z M 247.730469 193.339844 "/><path fill-rule="nonzero" fill="rgb(15.342712%, 33.827209%, 55.024719%)" fill-opacity="1" d="M 347.152344 228.710938 C 346.992188 228.933594 346.824219 229.152344 346.652344 229.363281 C 334.804688 241.445312 309.148438 223.382812 294.378906 235.25 C 293.164062 236.222656 292.101562 237.777344 291.410156 239.585938 C 290.722656 237.777344 289.65625 236.222656 288.445312 235.25 C 273.675781 223.382812 248.015625 241.445312 236.167969 229.363281 C 236 229.152344 235.832031 228.933594 235.667969 228.710938 C 235.667969 228.710938 236.21875 233 240.179688 236.734375 L 240.167969 236.675781 C 240.214844 236.738281 240.261719 236.800781 240.3125 236.863281 C 241.644531 238.09375 243.355469 239.257812 245.542969 240.183594 C 246.636719 240.5625 247.835938 240.875 249.171875 241.085938 C 249.828125 241.15625 250.5 241.179688 251.167969 241.214844 C 262.808594 241.523438 278.101562 234.644531 288.007812 242.605469 C 289.476562 243.785156 290.714844 245.902344 291.203125 248.269531 C 291.28125 248.113281 291.34375 247.953125 291.410156 247.792969 C 291.480469 247.953125 291.542969 248.113281 291.621094 248.269531 C 292.105469 245.902344 293.347656 243.785156 294.816406 242.605469 C 304.71875 234.644531 320.015625 241.523438 331.65625 241.214844 C 332.324219 241.179688 332.996094 241.15625 333.652344 241.085938 C 334.988281 240.875 336.1875 240.5625 337.28125 240.183594 C 339.46875 239.257812 341.175781 238.09375 342.511719 236.863281 C 342.558594 236.800781 342.609375 236.738281 342.65625 236.675781 L 342.644531 236.734375 C 346.605469 233 347.152344 228.710938 347.152344 228.710938 M 227.816406 212.679688 C 230.335938 208.449219 230.703125 203.78125 230.703125 196.257812 L 230.703125 178.828125 C 230.335938 178.03125 229.789062 177.308594 228.910156 177.054688 L 217.804688 177.054688 L 217.734375 185.84375 L 220.875 185.84375 L 220.875 196.910156 C 220.875 202.261719 220.984375 205.375 219.378906 207.832031 C 217.515625 210.726562 213.496094 211.738281 208.964844 211.847656 L 199.867188 212.027344 L 199.6875 205.953125 L 212.800781 203.238281 C 214.078125 202.988281 214.410156 202.226562 214.371094 201.46875 L 214.371094 178.828125 C 214.078125 178.03125 213.496094 177.308594 212.691406 177.054688 L 202.28125 177.054688 L 202.207031 185.84375 L 205.277344 185.84375 L 205.277344 197.199219 L 199.429688 198.429688 L 198.808594 178.828125 C 198.589844 178.03125 198.003906 177.308594 197.128906 177.054688 L 185.65625 177.054688 L 185.65625 185.84375 L 189.273438 185.84375 L 190.1875 220.78125 L 208.964844 220.78125 C 216.746094 220.78125 223.980469 219.152344 227.816406 212.679688 M 183.40625 220.78125 L 183.445312 212.605469 L 183.117188 189.0625 C 183.007812 179.296875 177.5625 176.621094 172.230469 176.65625 L 172.121094 176.65625 C 168.648438 176.65625 165.507812 177.957031 162.949219 180.78125 L 162.804688 180.238281 C 162.292969 178.789062 161.671875 177.34375 161.195312 177.054688 L 149.871094 177.054688 L 149.871094 185.914062 L 156.777344 185.878906 L 157.25 186.710938 L 153.925781 191.015625 L 151.1875 220.78125 L 161.523438 220.78125 L 164.007812 190.4375 C 164.410156 189.785156 165.25 188.664062 165.871094 187.976562 C 167.078125 186.566406 168.320312 185.625 169.78125 185.699219 C 171.5 185.769531 172.851562 186.820312 172.886719 189.566406 L 173.363281 211.992188 L 167.953125 211.992188 L 167.953125 220.78125 Z M 145.128906 196.773438 L 146.527344 173.867188 C 140.703125 173.898438 135.21875 176.679688 131.675781 181.390625 L 130.339844 203.234375 C 134.167969 199.074219 139.53125 196.730469 145.128906 196.773438 M 126.085938 203.128906 L 127.421875 181.289062 C 124.464844 176.210938 119.386719 172.796875 113.636719 172.011719 L 112.175781 194.914062 C 117.742188 195.546875 122.789062 198.527344 126.085938 203.128906 M 108.613281 198.402344 L 109.972656 177.054688 L 80.617188 177.054688 L 80.617188 185.84375 L 85.546875 185.84375 L 82.734375 189.386719 L 82.734375 220.78125 L 113.386719 220.78125 L 113.332031 199.484375 C 111.8125 198.957031 110.234375 198.585938 108.613281 198.402344 M 103.011719 211.992188 L 92.78125 211.992188 L 92.78125 185.84375 L 102.976562 185.84375 Z M 103.011719 211.992188 "/></svg></span>
+      <span>המידע כאן הוא הסבר כללי ולא תחליף לבדיקה מול ביטוח לאומי, קופת החולים או המעסיק.</span>
+      <button class="btn btn-quiet" id="resetBtn">להתחיל מחדש (מוחק הכול)</button>
+    </footer>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="confetti" id="confetti"></div>
+<div class="modal" id="modal"><div class="modalBox"><canvas id="cardCanvas" width="1080" height="1350"></canvas>
+  <div class="modalBtns"><button class="btn btn-main" id="cardShare" style="flex:1">לשתף / לשמור</button><button class="btn" id="cardClose">סגירה</button></div></div></div>
+
+<script>
+/* ================= שמירה ================= */
+var store=(function(){var m={};try{localStorage.setItem('__t','1');localStorage.removeItem('__t');
+  return{get:function(k){return localStorage.getItem(k)},set:function(k,v){localStorage.setItem(k,v)}};}
+  catch(e){return{get:function(k){return k in m?m[k]:null},set:function(k,v){m[k]=v}};}})();
+var KEY='shifra-v4';
+var data={profile:null,checked:{},notes:{},custom:[],snooze:{},moments:[],night:false};
+try{var raw=store.get(KEY);if(raw){data=Object.assign(data,JSON.parse(raw));}}catch(e){}
+function save(){try{store.set(KEY,JSON.stringify(data));return true;}catch(e){toast('אין מקום לשמור — נסי למחוק תמונה ישנה');return false;}}
+
+/* ================= עזרים ================= */
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];});}
+function addDays(d,n){var x=new Date(d.getTime());x.setDate(x.getDate()+n);return x;}
+function addMonths(d,n){var x=new Date(d.getTime());x.setMonth(x.getMonth()+n);return x;}
+function midnight(d){var x=new Date(d.getTime());x.setHours(0,0,0,0);return x;}
+function fmt(d){return d.toLocaleDateString('he-IL',{day:'numeric',month:'short'});}
+function fmtFull(d){return d.toLocaleDateString('he-IL',{weekday:'long',day:'numeric',month:'long'});}
+function ymd(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
+function daysBetween(a,b){return Math.round((midnight(b)-midnight(a))/864e5);}
+function dayNum(){return P&&P.birth?daysBetween(new Date(P.birth),new Date())+1:null;}
+
+/* שם, מין וריבוי: {baby} = שם · {זכר|נקבה|לא ידוע|רבים} */
+function gform(){if(P.multi>1)return 'p';return P.sex==='m'?'m':(P.sex==='f'?'f':'n');}
+function baby(){
+  if(P.babyName)return P.babyName;
+  if(P.multi==3)return 'השלישייה';if(P.multi==2)return 'התאומים';
+  return P.sex==='m'?'התינוק':(P.sex==='f'?'התינוקת':'התינוק/ת');
+}
+function fill(s){
+  return String(s).replace(/\{baby\}/g,baby()).replace(/\{([^{}|]*)\|([^{}|]*)\|([^{}|]*)(?:\|([^{}|]*))?\}/g,function(_,m,f,n,p){
+    var g=gform();return g==='m'?m:(g==='f'?f:(g==='p'&&p!=null?p:n));
+  });
+}
+
+/* ================= שירותי בריאות ================= */
+var HMO={
+  clalit:{name:'כללית',phone:'*2700',site:'https://www.clalit.co.il'},
+  maccabi:{name:'מכבי',phone:'*3555',site:'https://www.maccabi4u.co.il'},
+  meuhedet:{name:'מאוחדת',phone:'*3833',site:'https://www.meuhedet.co.il'},
+  leumit:{name:'לאומית',phone:'*507',site:'https://www.leumit.co.il'}
+};
+function hmoLink(){var h=HMO[P.hmo];return h?{label:h.name+' '+h.phone,href:'tel:'+h.phone,site:h.site}:{label:'מוקד שירותי הבריאות',href:''};}
+
+/* ================= הודעות לפי יום (לעריכת הכותבת) ================= */
+var DAYMSG=[
+  {d:1,i:'🏠',t:'ברוכים הבאים הביתה',m:'היום לא צריך לעשות כלום. רק להיות.'},
+  {d:3,i:'🌱',t:'יום שלישי',m:'הגוף עוד לומד, וזה בסדר לבקש עזרה בכל דבר קטן.'},
+  {d:7,i:'🎈',t:'שבוע!',m:'עברת הרבה יותר ממה שנדמה. שבוע שלם.'},
+  {d:14,i:'🍼',t:'שבועיים',m:'אם עוד לא היית בטיפת חלב — זה הזמן. ואם כן, יופי.'},
+  {d:21,i:'🌸',t:'שלושה שבועות',m:'רוב הנשים אומרות שכאן משהו מתחיל להסתדר. גם אם לא — זה יגיע.'},
+  {d:30,i:'🌙',t:'חודש',m:'רגע לעצור ולהסתכל אחורה. את כבר לא אותה אחת שיצאה מבית החולים.'},
+  {d:40,i:'✨',t:'ארבעים יום',m:'תקופה עתיקה ומשמעותית. מגיע לך משהו קטן רק בשבילך היום.'},
+  {d:60,i:'☀️',t:'חודשיים',m:'החיוכים הראשונים בדרך, אם עוד לא הגיעו.'},
+  {d:90,i:'💛',t:'שלושה חודשים',m:'הרבעון הרביעי נגמר. הנה, עברת אותו.'},
+  {d:100,i:'🎉',t:'מאה ימים',m:'מאה. תפתחי את הרגעים ותראי כמה דרך.'}
+];
+function dayMsg(){var n=dayNum();if(n==null)return null;for(var i=0;i<DAYMSG.length;i++)if(DAYMSG[i].d===n)return DAYMSG[i];return null;}
+
+/* ================= תוכן ================= */
+var CATS=[
+ {emoji:'💛',name:'שפרה ופועה',tasks:[
+  {n:0,id:'reg',t:'להירשם לשפרה ופועה של מורה שמיים',w:'כמה דקות',u:1,show:'notreg',note:'הרשמה קצרה — ואז מחכה לך כל מה שהכנו בשבילך.',link:{label:'להרשמה',href:'#'}},
+  {n:0,id:'gift',t:'לוודא שחבילת המתנות בדרך אלייך 🎁',w:'בהקדם',show:'nogift',note:'אם נרשמת ועדיין לא הגיעה — נשמח לבדוק. לחצי ותכתבי לנו.',link:{label:'לכתוב לנו',href:'#'}}
+ ]},
+ {emoji:'💰',name:'הזכויות שמגיעות לך',tasks:[
+  {n:1,t:'לוודא שמענק הלידה נחת בחשבון',w:'תוך חודש מהלידה',due:{base:'birth',d:30},note:'המענק מגיע לבד תוך חודש מהלידה — לא צריך להגיש כלום, רק להציץ שהוא שם.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
+  {n:2,t:'לבדוק את דמי הלידה ולהגיש אם צריך',w:'שבוע-שבועיים',u:1,due:{base:'birth',d:14},show:'employee',note:'אורך התקופה בתשלום תלוי בוותק שלך לפני הלידה.',link:{label:'btl.gov.il',href:'https://www.btl.gov.il'}},
+  {n:3,t:'להגיש תביעה לדמי לידה — כעצמאית',w:'שבועיים',u:1,due:{base:'birth',d:14},show:'self',note:'אצל עצמאיות זה לא קורה לבד — צריך להגיש. זה קצר יותר ממה שזה נשמע.',link:{label:'טופס מקוון',href:'https://www.btl.gov.il'}},
+  {n:38,t:'לבדוק את הזכויות המיוחדות ללידת {baby}',w:'שבועיים',u:1,due:{base:'birth',d:14},show:'multi',note:'בלידה של יותר מתינוק אחד יש תוספת למענק ולתקופת החופשה. שווה שיחה אחת עם ביטוח לאומי.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
+  {n:4,t:'להציץ שקצבת הילדים עודכנה',w:'חודש ראשון',due:{base:'birth',d:30},note:'נפתחת לבד עם הרישום. כדאי רק לוודא שפרטי החשבון נכונים.',link:{label:'btl.gov.il',href:'https://www.btl.gov.il'}},
+  {n:5,t:'לבדוק הארכת חופשה בגלל האשפוז',w:'בהקדם',u:1,show:'hosp',note:'אשפוז של 15 ימים לפחות מזכה בעד 4 שבועות נוספים בתשלום. שווה לבדוק.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
+  {n:6,t:'להציץ ב"חיסכון לכל ילד" של {baby}',w:'תוך חודשיים',due:{base:'birth',d:60},note:'נפתח אוטומטית. אפשר לבחור מסלול ולהוסיף הפקדה קטנה משלכם.',link:{label:'אזור אישי בביטוח לאומי',href:'https://www.btl.gov.il'}}
+ ]},
+ {emoji:'📝',name:'ניירת קטנה',tasks:[
+  {n:7,t:'לבחור שם',w:'בקצב שלכם',show:'noname',note:'הודעת הלידה כבר נשלחה לבד. השם — כשתרגישו שזה הוא.'},
+  {n:8,t:'לוודא ש{baby} {מופיע|מופיעה|מופיע/ה|מופיעים} בשירותי הבריאות',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'לרוב זה קורה לבד דרך הודעת הלידה. הצצה אחת באפליקציה של הקופה מספיקה.'},
+  {n:9,t:'להזמין תעודת לידה מלאה (רק אם צריך)',w:'לפי הצורך',note:'דרך רשות האוכלוסין. נדרש לפעמים לרישומים נוספים.',link:{label:'gov.il',href:'https://www.gov.il'}},
+  {n:10,t:'להוסיף את {baby} לביטוח המשלים או הפרטי',w:'חודש ראשון',due:{base:'birth',d:30},show:'private',note:'שיחה קצרה עם הסוכן או הקופה — לבדוק אם צריך רישום או שזה אוטומטי.',link:{label:'סוכן הביטוח / הקופה',href:''}},
+  {n:11,t:'לעדכן בעבודה מתי חוזרים',w:'חודש לפני החזרה',due:{base:'return',d:-30},show:'employee',note:'הודעה למעסיק על הארכת חופשה נמסרת לפחות 30 יום מראש.'}
+ ]},
+ {emoji:'🍼',name:'הבריאות של {baby}',tasks:[
+  {n:12,t:'לוודא שנעשו בדיקות הסקר ליילוד',w:'לפני השחרור',u:1,note:'כ-36 שעות אחרי הלידה, לפני שיוצאים הביתה. בדיקת דם קטנה לזיהוי מוקדם.'},
+  {n:13,t:'לוודא שנעשה סיקור שמיעה',w:'לפני השחרור',u:1,note:'כל התינוקות עוברים. לא כואב, לוקח דקות.'},
+  {n:14,t:'לקבוע ביקור ראשון בטיפת חלב',w:'עד גיל שבועיים',u:1,due:{base:'birth',d:14},note:'הפגישה הראשונה עם האחות — עד גיל שבועיים.',link:{label:'טיפת חלב אזורית',href:''}},
+  {n:15,t:'לשים עין על צהבת בימים הראשונים',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'אם נראה שמחמיר — לרופא/ת ילדים בלי להתלבט.'},
+  {n:16,t:'להכניס ליומן את מעקבי טיפת חלב',w:'לאורך השנה',milestones:1,note:'בסמוך ללידה, ובגיל חודש, חודשיים, 4, 6, 9 חודשים ושנה.'},
+  {n:17,t:'להציץ בלוח החיסונים',w:'לפי הגיל',note:'רוב הביקורים כוללים חיסון. האחות שולחת תזכורות — לא צריך לזכור לבד.'},
+  {n:18,t:'להכין תיק קבוע לטיפת חלב',w:'לפני הביקור הראשון',due:{base:'birth',d:12},note:'חיתול להחלפה, מטלית לשקילה, פנקס המעקב. מוכן ליד הדלת.'}
+ ]},
+ {emoji:'🌸',name:'ואת? גם את חשובה',tasks:[
+  {n:19,t:'לקבוע לעצמך ביקורת רופא/ה אחרי הלידה',w:'כשישה שבועות מהלידה',due:{base:'birth',d:42},hmo:1,note:'גם כשמרגישים מצוין. זה ביקור שגרתי, וזמן קטן בשבילך.'},
+  {n:20,t:'להקשיב לעצמך, ולפנות אם משהו מרגיש אחרת',w:'החודשים הראשונים',note:'אחות טיפת חלב שואלת גם על ההרגשה שלך — זה חלק טבעי מהמעקב, ואפשר לפנות אליה עם כל שאלה.'},
+  {n:21,t:'לישון כשאפשר. באמת.',w:'יומיומי',note:'"לישון כשהתינוק ישן" — קלישאה, אבל היא עובדת.'},
+  {n:22,t:'בקבוק מים ונשנוש ליד מקום ההאכלה',w:'יומיומי',note:'שיהיה שם כבר. ככה לא שוכחים לשתות.'},
+  {n:23,t:'לרשום שאלות שעולות, לביקור הבא',w:'לאורך זמן',note:'קל לשכוח. אפשר לרשום אותן ממש כאן, בהערה.'}
+ ]},
+ {emoji:'🏠',name:'בית שעובד',tasks:[
+  {n:24,t:'להשלים מלאי לשבוע הקרוב',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},note:'חיתולים, מגבונים, בגדים בכל מידה. אפשר לבקש ממי שמציע לעזור.'},
+  {n:25,t:'מנות מוכנות במקפיא',w:'שוטף',note:'ארוחות מוקפאות מצילות את השבועות הראשונים. וזו משימה מצוינת לתת לאחרים.'},
+  {n:26,t:'פינת החתלה בכל קומה',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},note:'חוסך המון הליכות.'},
+  {n:27,t:'עמדת לילה ליד המיטה',w:'שבוע ראשון',u:1,due:{base:'birth',d:5},note:'מים, חיתולים, אור רך, מטען.'},
+  {n:28,t:'לתאם מי עוזר בכביסה ובסידור',w:'שוטף',note:'לא חייבים הכול לבד. באמת לא.'}
+ ]},
+ {emoji:'🤍',name:'סביבך',tasks:[
+  {n:29,t:'להכין "לוח עזרה" למי ששואל במה לעזור',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},note:'כששואלים "במה לעזור?" — שתהיה תשובה מוכנה: ארוחה, כביסה, הסעה, שמירה.'},
+  {n:30,t:'לתאם ביקורים בקצב שנוח לך',w:'שוטף',note:'מותר לומר "לא עכשיו". זו זכות, לא חוצפה.'},
+  {n:31,t:'לחלק תפקידים בבית ולדבר על ציפיות',w:'שוטף',note:'שיחה קצרה מראש חוסכת הרבה אחר כך.'},
+  {n:32,t:'רגע קטן עם כל אחד מהגדולים',w:'שבועות ראשונים',show:'kids',note:'חמש דקות רק שלו. זה עוזר במעבר יותר ממה שנדמה.'},
+  {n:33,t:'להזכיר לעצמך: זו תקופה, לא לתמיד',w:'יומיומי',note:'הקושי של השבועות הראשונים חולף. גם זה.'}
+ ]},
+ {emoji:'💼',name:'כשמתחילים להסתכל קדימה',tasks:[
+  {n:34,t:'לבדוק הארכת חופשה או חל"ת',w:'חודש-חודשיים לפני החזרה',due:{base:'return',d:-45},show:'employee',note:'מי שעבדה שנה לפחות רשאית לצאת לחל"ת עד שנה מתום החופשה.'},
+  {n:35,t:'לבדוק את זכות בן הזוג לחופשה או להחלפה',w:'לפי הצורך',show:'working',note:'בן הזוג יכול לחלוק את החופשה, ומהשבוע השביעי אף להחליף אותך.'},
+  {n:36,t:'לדעת מה מגיע לך בחזרה לעבודה',w:'לקראת החזרה',due:{base:'return',d:-21},show:'working',note:'אי אפשר לפטר או לצמצם משרה בזמן החופשה, ויש הגנות גם אחרי.',link:{label:'כל זכות',href:'https://www.kolzchut.org.il'}},
+  {n:37,t:'לתכנן סידור ל{baby} לקראת החזרה',w:'חודשיים לפני החזרה',due:{base:'return',d:-60},show:'working',note:'מעון, משפחתון או עזרה — נרשמים מוקדם.'}
+ ]}
+];
+var MYCAT='המשימות שלי';
+
+/* ================= לוגיקה ================= */
+var P=data.profile,filter='all',tab='steps';
+function works(){return P.work==='employee'||P.work==='self'||P.work==='both';}
+function isEmployee(){return P.work==='employee'||P.work==='both';}
+function isSelf(){return P.work==='self'||P.work==='both';}
+function visible(t){
+  switch(t.show){
+    case 'employee':return isEmployee();case 'self':return isSelf();case 'working':return works();
+    case 'kids':return !!P.kids;case 'hosp':return !!P.hosp;case 'private':return !!P.private;
+    case 'noname':return !P.babyName;case 'notreg':return P.reg==='no';
+    case 'nogift':return P.reg==='yes'&&P.gift!=='yes';case 'multi':return P.multi>1;
+    default:return true;
+  }
+}
+function idOf(t){return t.id||('t'+t.n);}
+function isDone(id){return !!data.checked[id];}
+function dueOf(t){
+  var id=idOf(t);
+  if(data.snooze[id])return new Date(data.snooze[id]);
+  if(!t.due)return null;
+  if(t.due.base==='birth'&&P.birth)return addDays(new Date(P.birth),t.due.d);
+  if(t.due.base==='return'&&P.ret)return addDays(new Date(P.ret),t.due.d);
+  return null;
+}
+function activeTasks(){
+  var out=[];
+  CATS.forEach(function(c){c.tasks.forEach(function(t){if(visible(t)){t.cat=fill(c.name);out.push(t);}});});
+  data.custom.forEach(function(t){out.push(t);});
+  return out;
+}
+function statusOf(t){
+  var d=dueOf(t);if(!d)return null;
+  var id=idOf(t),n=daysBetween(new Date(),d),sn=!!data.snooze[id];
+  if(isDone(id))return{cls:'plain',txt:'עד '+fmt(d)};
+  var pre=sn?'נדחה · ':'';
+  if(n<0)return{cls:'coral',txt:'כדאי לטפל · היה עד '+fmt(d),late:1};
+  if(n===0)return{cls:'coral',txt:pre+'היום · '+fmt(d),soon:1};
+  if(n===1)return{cls:'gold',txt:pre+'מחר · '+fmt(d),soon:1};
+  if(n<=7)return{cls:'gold',txt:pre+'בעוד '+n+' ימים · '+fmt(d),soon:1};
+  return{cls:'plain',txt:pre+'עד '+fmt(d)};
+}
+function milestoneText(){
+  if(!P.birth)return'';var b=new Date(P.birth),out=[];
+  [1,2,4,6,9,12].forEach(function(m){out.push((m===1?'חודש':m+' חודשים')+': '+fmt(addMonths(b,m)));});return out.join(' · ');
+}
+function passes(t){
+  var id=idOf(t),st=statusOf(t);
+  if(filter==='urgent')return !!t.u&&!isDone(id);if(filter==='open')return !isDone(id);
+  if(filter==='done')return isDone(id);if(filter==='week')return !isDone(id)&&st&&(st.soon||st.late);return true;
+}
+var CHEERS=[[0,'כל התחלה מתחילה בסימון אחד. בקצב שלך.'],[1,'יופי, יצאנו לדרך 🌱'],[25,'רבע מהדרך כבר מאחורייך.'],[50,'חצי! רואים את זה גם על הסרט למעלה.'],[75,'עוד קצת. את עושה את זה מצוין.'],[100,'סיימת הכול. כל הכבוד 🌟']];
+function cheerFor(pct){var c=CHEERS[0];CHEERS.forEach(function(x){if(pct>=x[0])c=x;});return c[1];}
+
+/* ================= ציור: צעדים ================= */
+var CHECK='<svg viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg>';
+var listEl=document.getElementById('list'),editing=null;
+
+function taskHTML(t){
+  var id=idOf(t),done=isDone(id),st=statusOf(t),late=st&&st.late&&!done,noteTxt=data.notes[id];
+  var link=t.link;if(t.hmo)link=hmoLink();
+  return '<div class="task'+(done?' is-done':'')+(late?' is-late':(t.u&&!done?' is-urgent':''))+'">'+
+    '<button class="box" data-id="'+id+'" role="checkbox" aria-checked="'+done+'" aria-label="'+esc(fill(t.t))+'">'+CHECK+'</button>'+
+    '<div class="body"><span class="title">'+esc(fill(t.t))+'</span>'+
+      (t.note?'<p class="note">'+esc(fill(t.note))+'</p>':'')+(t.milestones?'<p class="note">'+esc(milestoneText())+'</p>':'')+
+      '<div class="meta">'+
+        (t.u&&!done?'<span class="tag gold">⭐ חשוב עכשיו</span>':'')+
+        (st?'<span class="tag '+st.cls+'">'+st.txt+'</span>':'<span class="tag plain">'+esc(t.w||'')+'</span>')+
+        (link?'<span class="tag">'+(link.href?'<a href="'+link.href+'" target="_blank" rel="noopener">'+esc(link.label)+'</a>':esc(link.label))+'</span>':'')+
+        (link&&link.site?'<span class="tag"><a href="'+link.site+'" target="_blank" rel="noopener">האתר</a></span>':'')+
+        (!done&&dueOf(t)?'<button class="mini" data-ics="'+id+'">📅 ליומן</button>':'')+
+        (!done?'<button class="mini" data-snooze="'+id+'">לא עכשיו</button>':'')+
+        '<button class="mini" data-note="'+id+'">'+(noteTxt?'לערוך הערה':'+ הערה שלי')+'</button>'+
+        (String(id).charAt(0)==='c'?'<button class="mini" data-del="'+id+'">למחוק</button>':'')+
+      '</div>'+
+      (editing===id?'<textarea class="mynote" data-area="'+id+'" placeholder="תור שנקבע, טלפון, שאלה לרופאה...">'+esc(noteTxt||'')+'</textarea>'+
+         '<div class="addrow"><button class="btn" data-savenote="'+id+'">לשמור</button><button class="btn btn-quiet" data-cancelnote="1">ביטול</button></div>'
+        :(noteTxt?'<div class="mynote-view">'+esc(noteTxt)+'</div>':''))+
+    '</div></div>';
+}
+function render(){
+  var html='',shown=0;
+  CATS.forEach(function(c){
+    var all=c.tasks.filter(visible);if(!all.length)return;var items=all.filter(passes);if(!items.length)return;shown+=items.length;
+    var d=all.filter(function(t){return isDone(idOf(t))}).length,pct=Math.round(d/all.length*100);
+    html+='<section class="cat"><div class="cat-head"><span class="cat-emoji">'+c.emoji+'</span><h2 class="cat-name">'+esc(fill(c.name))+'</h2>'+
+      '<span class="cat-bar"><i style="width:'+pct+'%"></i></span>'+(pct===100?'<span class="cat-done">הושלם ✓</span>':'<span class="cat-count">'+d+'/'+all.length+'</span>')+'</div>';
+    items.forEach(function(t){html+=taskHTML(t);});html+='</section>';
+  });
+  var mine=data.custom.filter(passes),md=data.custom.filter(function(t){return isDone(t.id)}).length;
+  html+='<section class="cat"><div class="cat-head"><span class="cat-emoji">✨</span><h2 class="cat-name">'+MYCAT+'</h2>'+
+    '<span class="cat-bar"><i style="width:'+(data.custom.length?Math.round(md/data.custom.length*100):0)+'%"></i></span><span class="cat-count">'+md+'/'+data.custom.length+'</span></div>';
+  mine.forEach(function(t){html+=taskHTML(t);});
+  if(!data.custom.length)html+='<div class="empty">מה עוד את רוצה לזכור? ברית, שמות, תור שנקבע, מתנה לאח הגדול — הכול נכנס כאן.</div>';
+  html+='<div class="addrow"><input type="text" id="newTask" placeholder="להוסיף משהו משלי..."><button class="btn btn-gold" id="addBtn">להוסיף</button></div></section>';
+  if(!shown&&!mine.length&&filter!=='all')html='<div class="empty">'+(filter==='done'?'עוד לא סימנת כלום — וזה בסדר גמור.':'אין כאן כלום כרגע. יופי.')+'</div>';
+  listEl.innerHTML=html;updateHero();
+  var ta=listEl.querySelector('textarea[data-area]');if(ta){ta.focus();ta.setSelectionRange(ta.value.length,ta.value.length);}
+}
+function updateHero(){
+  var all=activeTasks(),done=all.filter(function(t){return isDone(idOf(t))}).length,pct=all.length?Math.round(done/all.length*100):0;
+  document.getElementById('doneCount').textContent=done;document.getElementById('totalCount').textContent=all.length;
+  document.getElementById('cheer').textContent=cheerFor(pct);
+  var late=all.filter(function(t){var s=statusOf(t);return !isDone(idOf(t))&&s&&s.late}).length,uLeft=all.filter(function(t){return t.u&&!isDone(idOf(t))}).length;
+  document.getElementById('urgentLeft').textContent=late?'· '+late+' שכדאי לטפל בהם':(uLeft?'· ⭐ '+uLeft+' חשובים לעכשיו':'· החשובים סגורים 👌');
+  var r='';all.forEach(function(t){r+='<span class="seg'+(isDone(idOf(t))?' done':'')+(t.u?' urgent':'')+'"></span>';});document.getElementById('ribbon').innerHTML=r;
+  var n=dayNum();
+  if(n!=null){document.getElementById('dayBig').textContent=n<1?'בקרוב':'יום '+n;document.getElementById('dayLabel').textContent=n<1?'הלידה עוד לפניכם':'עם '+baby();}
+  else{document.getElementById('dayBig').textContent='המפה';document.getElementById('dayLabel').textContent='שלך';}
+  document.getElementById('heroName').textContent=P.name?('היי '+P.name+' 👋'):'ברוכה הבאה';
+  document.getElementById('giftBadge').classList.toggle('hidden',!(P.reg==='yes'&&P.gift==='yes'));
+  var dm=dayMsg(),el=document.getElementById('daymsg');
+  if(dm){el.innerHTML='<span class="dm-i">'+dm.i+'</span><span><b>'+esc(dm.t)+'</b>'+esc(dm.m)+'</span>';el.classList.remove('hidden');}else el.classList.add('hidden');
+}
+
+/* ================= רגעים ================= */
+var pendingPhoto=null;
+function renderMoments(){
+  var box=document.getElementById('moments'),ms=data.moments.slice().reverse(),h='';
+  ms.forEach(function(m){
+    h+='<div class="moment'+(m.photo?'':' noimg')+'">'+(m.photo?'<img src="'+m.photo+'" alt="">':'')+
+      '<button class="mdel" data-mdel="'+m.id+'" aria-label="למחוק">✕</button>'+
+      (m.day!=null?'<div class="mday">יום '+m.day+'</div>':'')+
+      (m.text?'<div class="mtext">'+esc(m.text)+'</div>':'')+
+      '<div class="mdate">'+fmt(new Date(m.date))+'</div></div>';
+  });
+  box.innerHTML=h;document.getElementById('momentsEmpty').classList.toggle('hidden',ms.length>0);
+}
+function shrinkImage(file,cb){
+  var r=new FileReader();r.onload=function(){var img=new Image();img.onload=function(){
+    var max=720,w=img.width,h=img.height,s=Math.min(1,max/Math.max(w,h));
+    var c=document.createElement('canvas');c.width=Math.round(w*s);c.height=Math.round(h*s);
+    c.getContext('2d').drawImage(img,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.72));
+  };img.src=r.result;};r.readAsDataURL(file);
+}
+document.getElementById('mPhoto').addEventListener('change',function(){
+  var f=this.files[0];if(!f)return;shrinkImage(f,function(url){pendingPhoto=url;var p=document.getElementById('mPreview');p.src=url;p.classList.add('on');});
+});
+document.getElementById('mSave').addEventListener('click',function(){
+  var t=document.getElementById('mText').value.trim();if(!t&&!pendingPhoto){toast('משפט או תמונה — משהו אחד מספיק');return;}
+  data.moments.push({id:'m'+Date.now(),date:ymd(new Date()),day:dayNum(),text:t,photo:pendingPhoto});
+  if(save()){document.getElementById('mText').value='';pendingPhoto=null;var p=document.getElementById('mPreview');p.src='';p.classList.remove('on');renderMoments();toast('הרגע נשמר 💛');if(data.moments.length===1)confetti(24);}
+  else data.moments.pop();
+});
+document.getElementById('moments').addEventListener('click',function(e){
+  var b=e.target.closest('[data-mdel]');if(!b)return;if(!confirm('למחוק את הרגע הזה?'))return;
+  var id=b.getAttribute('data-mdel');data.moments=data.moments.filter(function(m){return m.id!==id});save();renderMoments();
+});
+
+/* ================= כרטיס מזכרת ================= */
+function drawCard(cb){
+  var c=document.getElementById('cardCanvas'),x=c.getContext('2d'),W=c.width,H=c.height;
+  var g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'#FBF8F1');g.addColorStop(1,'#F3EEE1');x.fillStyle=g;x.fillRect(0,0,W,H);
+  x.fillStyle='#E6EDF6';x.beginPath();x.arc(W+40,-40,300,0,7);x.fill();x.fillStyle='#FBF1D3';x.beginPath();x.arc(-40,H+40,260,0,7);x.fill();
+  x.direction='rtl';x.textAlign='right';x.fillStyle='#27568C';x.font='700 34px Assistant, sans-serif';x.fillText('שפרה ופועה · מורה שמיים',W-80,110);
+  var n=dayNum(),all=activeTasks(),done=all.filter(function(t){return isDone(idOf(t))}).length;
+  x.fillStyle='#26313D';x.font='800 112px "Frank Ruhl Libre", serif';
+  x.fillText(n!=null&&n>0?(n<8?'יום '+n:(n<60?'שבוע '+Math.ceil(n/7):'חודש '+Math.max(1,Math.floor(n/30)))):'המפה שלי',W-80,250);
+  x.font='500 52px "Frank Ruhl Libre", serif';x.fillStyle='#27568C';x.fillText('עם '+baby(),W-80,325);
+  var last=data.moments.length?data.moments[data.moments.length-1]:null,y=380;
+  function finish(){
+    x.fillStyle='#26313D';x.font='600 40px Assistant, sans-serif';
+    x.fillText(done+' צעדים כבר מאחוריי',W-80,y+70);x.fillText(data.moments.length+' רגעים שנשמרו',W-80,y+130);
+    if(last&&last.text){x.fillStyle='#5A4A1C';x.font='500 44px "Frank Ruhl Libre", serif';wrap(x,'“'+last.text+'”',W-80,y+230,W-160,58,4);}
+    x.fillStyle='#A3ACB7';x.font='600 30px Assistant, sans-serif';x.fillText(fmtFull(new Date()),W-80,H-70);
+    var bar=W-160,seg=Math.max(1,all.length),bw=bar/seg;
+    for(var i=0;i<seg;i++){x.fillStyle=i<done?'#27568C':'#E8E3D7';x.fillRect(80+i*bw,H-130,bw-3,14);}
+    cb();
+  }
+  if(last&&last.photo){var im=new Image();im.onload=function(){
+    var s=560,px=80,py=y;x.save();rr(x,px,py,s,s,28);x.clip();
+    var r=Math.max(s/im.width,s/im.height);x.drawImage(im,px+(s-im.width*r)/2,py+(s-im.height*r)/2,im.width*r,im.height*r);x.restore();y+=s+20;finish();};im.src=last.photo;}
+  else finish();
+}
+function rr(x,px,py,w,h,r){x.beginPath();x.moveTo(px+r,py);x.arcTo(px+w,py,px+w,py+h,r);x.arcTo(px+w,py+h,px,py+h,r);x.arcTo(px,py+h,px,py,r);x.arcTo(px,py,px+w,py,r);x.closePath();}
+function wrap(x,text,rx,y,maxW,lh,maxLines){var words=text.split(' '),line='',lines=0;for(var i=0;i<words.length;i++){var test=line?line+' '+words[i]:words[i];if(x.measureText(test).width>maxW&&line){x.fillText(line,rx,y);y+=lh;line=words[i];if(++lines>=maxLines-1){x.fillText(line+'…',rx,y);return;}}else line=test;}if(line)x.fillText(line,rx,y);}
+document.getElementById('cardBtn').addEventListener('click',function(){document.fonts&&document.fonts.ready.then(function(){drawCard(function(){document.getElementById('modal').classList.add('on');});});});
+document.getElementById('cardClose').addEventListener('click',function(){document.getElementById('modal').classList.remove('on');});
+document.getElementById('cardShare').addEventListener('click',function(){
+  var c=document.getElementById('cardCanvas');
+  c.toBlob(function(b){
+    var f=new File([b],'shifra-card.png',{type:'image/png'});
+    if(navigator.share&&navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],title:'כרטיס מזכרת'}).catch(function(){});}
+    else{var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='shifra-card.png';a.click();}
+  },'image/png');
+});
+
+/* ================= יומן (ics) ================= */
+function icsFor(t){
+  var d=dueOf(t),ds=ymd(d).replace(/-/g,''),ttl=fill(t.t),desc=(t.note?fill(t.note):'')+'\\nשפרה ופועה · מורה שמיים';
+  var s=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Moreh Shamayim//Shifra//HE','BEGIN:VEVENT','UID:'+idOf(t)+'-'+ds+'@shifra','DTSTAMP:'+ymd(new Date()).replace(/-/g,'')+'T090000Z',
+    'DTSTART;VALUE=DATE:'+ds,'SUMMARY:'+ttl.replace(/,/g,'\\,'),'DESCRIPTION:'+desc.replace(/,/g,'\\,'),'BEGIN:VALARM','TRIGGER:-PT15H','ACTION:DISPLAY','DESCRIPTION:'+ttl,'END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/calendar;charset=utf-8'}));a.download='shifra-'+idOf(t)+'.ics';a.click();toast('נפתח ביומן — אשרי הוספה');
+}
+
+/* ================= שיתוף עם בן הזוג ================= */
+function b64e(s){return btoa(unescape(encodeURIComponent(s)));}function b64d(s){return decodeURIComponent(escape(atob(s)));}
+document.getElementById('shareBtn').addEventListener('click',function(){
+  var payload={p:P,c:data.checked,x:data.custom,s:data.snooze},url=location.origin+location.pathname+'#s='+b64e(JSON.stringify(payload));
+  var txt=(P.name?'המפה של '+P.name:'המפה שלנו')+' לשבועות הראשונים עם '+baby()+' — כאן רואים מה כבר עשינו ומה עוד לא:\n'+url;
+  if(navigator.share){navigator.share({text:txt}).catch(function(){});}
+  else{var w=window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');if(!w&&navigator.clipboard){navigator.clipboard.writeText(url);toast('הקישור הועתק');}}
+});
+(function importShared(){
+  var m=location.hash.match(/#s=(.+)/);if(!m)return;
+  try{var o=JSON.parse(b64d(m[1]));if(!o.p)return;
+    if(data.profile&&!confirm('התקבלה מפה משותפת. לטעון אותה כאן במקום המפה הנוכחית?')){history.replaceState(null,'',location.pathname);return;}
+    data.profile=o.p;data.checked=o.c||{};data.custom=o.x||[];data.snooze=o.s||{};P=data.profile;save();history.replaceState(null,'',location.pathname);setTimeout(function(){toast('המפה המשותפת נטענה 💛');},400);
+  }catch(e){}
+})();
+
+/* ================= מילוי מראש מקישור (?name=&baby=&birth=&reg=) ================= */
+(function prefill(){
+  if(!location.search)return;var q=new URLSearchParams(location.search);
+  if(q.get('name'))document.getElementById('fName').value=q.get('name');
+  if(q.get('baby'))document.getElementById('fBaby').value=q.get('baby');
+  if(q.get('birth'))document.getElementById('fBirth').value=q.get('birth');
+  if(q.get('hmo'))setSeg('fHmo',q.get('hmo'));if(q.get('reg'))setSeg('fReg',q.get('reg'));if(q.get('gift'))setSeg('fGift',q.get('gift'));
+})();
+
+/* ================= אירועים כלליים ================= */
+function confetti(n){var box=document.getElementById('confetti'),cols=['#27568C','#D7AB34','#7C9CC4','#FBF1D3'];for(var i=0;i<(n||22);i++){var s=document.createElement('i');s.style.left=(Math.random()*100)+'vw';s.style.background=cols[i%cols.length];s.style.animationDelay=(Math.random()*.4)+'s';s.style.animationDuration=(1.2+Math.random()*.9)+'s';box.appendChild(s);(function(el){setTimeout(function(){el.remove()},2400)})(s);}}
+function toast(m){var el=document.getElementById('toast');el.textContent=m;el.classList.add('show');setTimeout(function(){el.classList.remove('show')},2600);}
+
+listEl.addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;var id;
+  if((id=b.getAttribute('data-id'))){
+    var wasDone=!!data.checked[id];if(wasDone)delete data.checked[id];else data.checked[id]=1;save();render();
+    if(!wasDone){var all=activeTasks(),done=all.filter(function(t){return isDone(idOf(t))}).length,t=all.filter(function(x){return idOf(x)===id})[0];if(done===all.length)confetti(60);else if(t&&t.u)confetti(18);}
+    return;
+  }
+  if((id=b.getAttribute('data-snooze'))){data.snooze[id]=ymd(addDays(new Date(),7));save();render();toast('נדחה בשבוע. בקצב שלך.');return;}
+  if((id=b.getAttribute('data-ics'))){var t=activeTasks().filter(function(x){return idOf(x)===id})[0];if(t)icsFor(t);return;}
+  if((id=b.getAttribute('data-note'))){editing=id;render();return;}
+  if(b.getAttribute('data-cancelnote')){editing=null;render();return;}
+  if((id=b.getAttribute('data-savenote'))){var ta=listEl.querySelector('textarea[data-area="'+id+'"]'),v=ta?ta.value.trim():'';if(v)data.notes[id]=v;else delete data.notes[id];editing=null;save();render();toast('נשמר 💛');return;}
+  if((id=b.getAttribute('data-del'))){if(!confirm('למחוק את המשימה?'))return;data.custom=data.custom.filter(function(t){return t.id!==id});delete data.checked[id];delete data.notes[id];delete data.snooze[id];save();render();return;}
+  if(b.id==='addBtn'){var inp=document.getElementById('newTask'),v=inp.value.trim();if(!v){inp.focus();return;}data.custom.push({id:'c'+Date.now(),t:v,w:'שלי',cat:MYCAT});save();render();toast('נוסף לרשימה');return;}
+});
+listEl.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.id==='newTask'){e.preventDefault();document.getElementById('addBtn').click();}});
+document.getElementById('filters').addEventListener('click',function(e){var c=e.target.closest('.chip');if(!c)return;filter=c.getAttribute('data-f');[].forEach.call(this.querySelectorAll('.chip'),function(x){x.setAttribute('aria-pressed',x===c?'true':'false');});render();});
+document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;tab=b.getAttribute('data-tab');[].forEach.call(this.querySelectorAll('.tab'),function(x){x.setAttribute('aria-selected',x===b?'true':'false');});document.getElementById('stepsView').classList.toggle('hidden',tab!=='steps');document.getElementById('momentsView').classList.toggle('hidden',tab!=='moments');if(tab==='moments')renderMoments();});
+document.getElementById('nightBtn').addEventListener('click',function(){data.night=!data.night;applyNight();save();});
+function applyNight(){document.body.classList.toggle('night',!!data.night);document.getElementById('nightBtn').textContent=data.night?'☀️':'🌙';document.querySelector('meta[name=theme-color]').setAttribute('content',data.night?'#151B24':'#27568C');}
+
+function buildText(){
+  var all=activeTasks(),done=all.filter(function(t){return isDone(idOf(t))}).length;
+  var L=['*'+(P.name?'המפה של '+P.name:'המפה שלי')+' · שפרה ופועה*',done+' מתוך '+all.length+' צעדים כבר מאחוריי'];
+  if(P.birth)L.push(baby()+' · '+fmtFull(new Date(P.birth)));L.push('');
+  var open=all.filter(function(t){return !isDone(idOf(t))});if(!open.length){L.push('הכול סומן 🌟');return L.join('\n');}
+  L.push('*מה שעוד לפניי:*');var g={};open.forEach(function(t){(g[t.cat]=g[t.cat]||[]).push(t);});
+  Object.keys(g).forEach(function(k){L.push('','*'+k+'*');g[k].forEach(function(t){var s=statusOf(t);L.push((t.u?'⭐ ':'• ')+fill(t.t)+' ('+(s?s.txt:(t.w||''))+')'+(data.notes[idOf(t)]?'\n   ↳ '+data.notes[idOf(t)]:''));});});
+  return L.join('\n');
+}
+document.getElementById('waBtn').addEventListener('click',function(){var txt=buildText(),w=window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');if(!w){if(navigator.clipboard){navigator.clipboard.writeText(txt);toast('הרשימה הועתקה — אפשר להדביק בוואטסאפ');}else toast('לא הצלחתי לפתוח וואטסאפ מכאן');}});
+document.getElementById('printBtn').addEventListener('click',function(){window.print()});
+document.getElementById('resetBtn').addEventListener('click',function(){if(!confirm('להתחיל מחדש? הסימונים, ההערות, הרגעים והפרטים יימחקו.'))return;data={profile:null,checked:{},notes:{},custom:[],snooze:{},moments:[],night:false};save();location.reload();});
+
+/* ================= מסך פתיחה ================= */
+function segSetup(id){var w=document.getElementById(id);w.addEventListener('click',function(e){var b=e.target.closest('.segbtn');if(!b)return;[].forEach.call(w.querySelectorAll('.segbtn'),function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});if(id==='fWork')syncWorkFields();if(id==='fReg')syncRegFields();});}
+function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed="true"]');return b?b.getAttribute('data-v'):'';}
+function setSeg(id,v){[].forEach.call(document.querySelectorAll('#'+id+' .segbtn'),function(x){x.setAttribute('aria-pressed',x.getAttribute('data-v')===String(v)?'true':'false');});}
+['fWork','fTenure','fReg','fGift','fSex','fMulti','fHmo'].forEach(segSetup);
+function syncWorkFields(){var off=segVal('fWork')==='none';document.getElementById('tenureField').classList.toggle('hidden',off);document.getElementById('returnField').classList.toggle('hidden',off);}
+function syncRegFields(){document.getElementById('giftField').classList.toggle('hidden',segVal('fReg')!=='yes');}
+
+document.getElementById('startBtn').addEventListener('click',function(){
+  data.profile={name:document.getElementById('fName').value.trim(),babyName:document.getElementById('fBaby').value.trim(),birth:document.getElementById('fBirth').value||'',ret:document.getElementById('fReturn').value||'',
+    sex:segVal('fSex'),multi:parseInt(segVal('fMulti')||'1',10),hmo:segVal('fHmo'),work:segVal('fWork'),tenure:segVal('fTenure'),reg:segVal('fReg'),gift:segVal('fGift'),
+    kids:document.getElementById('fKids').checked,hosp:document.getElementById('fHosp').checked,private:document.getElementById('fPrivate').checked};
+  var first=!P;P=data.profile;save();boot();window.scrollTo({top:0});if(first){confetti(30);toast(P.name?'המפה של '+P.name+' מוכנה 💛':'המפה שלך מוכנה 💛');}
+});
+document.getElementById('editBtn').addEventListener('click',function(){fillForm();document.getElementById('intro').classList.remove('hidden');document.getElementById('app').classList.add('hidden');window.scrollTo({top:0});});
+function fillForm(){
+  if(!P)return;document.getElementById('fName').value=P.name||'';document.getElementById('fBaby').value=P.babyName||'';document.getElementById('fBirth').value=P.birth||'';document.getElementById('fReturn').value=P.ret||'';
+  document.getElementById('fKids').checked=!!P.kids;document.getElementById('fHosp').checked=!!P.hosp;document.getElementById('fPrivate').checked=!!P.private;
+  setSeg('fWork',P.work);setSeg('fTenure',P.tenure);setSeg('fReg',P.reg||'yes');setSeg('fGift',P.gift||'yes');setSeg('fSex',P.sex||'n');setSeg('fMulti',P.multi||1);setSeg('fHmo',P.hmo||'');
+  syncWorkFields();syncRegFields();document.getElementById('startBtn').textContent='לעדכן את המפה';
+}
+function tenureNote(){var t=CATS[1].tasks.filter(function(x){return x.n===2})[0];if(!t)return;
+  if(P.tenure==='12plus')t.note='שנה ומעלה של ותק מזכה בתקופה ארוכה יותר בתשלום. כדאי רק לוודא שהתביעה נקלטה.';
+  else if(P.tenure==='less')t.note='עם פחות משנה, התקופה בתשלום קצרה יותר — שווה לבדוק מול ביטוח לאומי מה בדיוק מגיע.';
+  else t.note='אורך התקופה בתשלום תלוי בוותק. שיחה אחת עם ביטוח לאומי תסגור את זה.';}
+function boot(){
+  applyNight();
+  if(!P){document.getElementById('intro').classList.remove('hidden');document.getElementById('app').classList.add('hidden');return;}
+  tenureNote();document.getElementById('intro').classList.add('hidden');document.getElementById('app').classList.remove('hidden');render();renderMoments();
+}
+if(P)fillForm();syncWorkFields();syncRegFields();boot();
+if('serviceWorker' in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('sw.js').catch(function(){});}
+</script>
+</body>
+</html>

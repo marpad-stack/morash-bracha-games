@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#2B1D20">
+<title>מטבח השבת — הכנת החלות לכבוד שבת</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme: dark;
+    --wood:#2B1D20; --wood-soft:#3A282B;
+    --flour:#F7EEDD; --flour-dim:#E6D8C0;
+    --crust:#C97B2C; --gold:#E8B44A; --sesame:#F2E4BC;
+    --sage:#7FA98A; --ember:#D9552F;
+    --dough:#EFE0BE; --dough-dk:#DDC593;
+    --radius:18px; --shadow:0 10px 24px rgba(0,0,0,.28);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{background:#2B1D20;color-scheme:dark}
+  html,body{margin:0;padding:0;overflow-x:hidden}
+  body{
+    background:#2B1D20;
+    background:radial-gradient(120% 80% at 50% -10%, #4A3236 0%, transparent 60%), var(--wood);
+    color:#F7EEDD;
+    color:var(--flour); font-family:'Assistant','Segoe UI',Arial,sans-serif;
+    min-height:100vh; padding:16px 12px 40px; -webkit-font-smoothing:antialiased;
+    user-select:none;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;
+    background-image:radial-gradient(1.5px 1.5px at 20% 30%,#fff,transparent),
+      radial-gradient(1.5px 1.5px at 70% 60%,#fff,transparent),
+      radial-gradient(1px 1px at 40% 80%,#fff,transparent),
+      radial-gradient(1px 1px at 85% 20%,#fff,transparent),
+      radial-gradient(1.5px 1.5px at 10% 70%,#fff,transparent),
+      radial-gradient(1px 1px at 55% 12%,#fff,transparent);
+    background-size:380px 380px;
+  }
+  .wrap{max-width:980px;margin:0 auto;position:relative}
+  h1,h2,h3{font-family:'Suez One','Assistant',serif;font-weight:400;margin:0}
+  .screen{display:none}
+  .screen.on{display:block;animation:rise .45s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+  .logo{display:block;height:52px;width:auto;margin:0 auto 14px}
+  .logo.small{height:30px;margin:0}
+
+  .opening{text-align:center;padding:28px 18px 26px;max-width:600px;margin:4vh auto 0;
+    background:linear-gradient(180deg,rgba(247,238,221,.06),rgba(247,238,221,.02));
+    border:1px solid rgba(247,238,221,.14);border-radius:26px}
+  .eyebrow{font-size:.85rem;letter-spacing:.14em;color:var(--gold);font-weight:700}
+  .opening h1{font-size:2rem;color:var(--flour);margin:10px 0 4px}
+  .opening .sub{color:var(--gold);font-family:'Suez One',serif;font-size:1.02rem;margin-bottom:14px}
+  .opening p{color:var(--flour-dim);font-size:1.05rem;line-height:1.7;margin:0 auto 10px;max-width:44ch}
+  .opening .tip{font-size:.92rem;color:var(--sesame);margin-bottom:18px}
+  .btn{font-family:'Suez One',serif;font-size:1.08rem;border:0;cursor:pointer;
+    background:linear-gradient(180deg,var(--gold),var(--crust));color:#2B1D20;
+    padding:14px 30px;border-radius:999px;box-shadow:0 6px 0 #9B5A1E,var(--shadow);
+    transition:transform .12s ease,box-shadow .12s ease;}
+  .btn:hover{transform:translateY(2px);box-shadow:0 4px 0 #9B5A1E,var(--shadow)}
+  .btn:active{transform:translateY(6px);box-shadow:0 0 0 #9B5A1E}
+  .btn.ghost{background:transparent;color:var(--flour);border:1.5px solid rgba(247,238,221,.35);box-shadow:none;font-size:1rem;padding:12px 24px}
+  .btn.ghost:hover{background:rgba(247,238,221,.08);transform:none}
+  .btn:disabled{opacity:.4;cursor:default;filter:grayscale(.4)}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+  .nikud-toggle{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:700;
+    color:var(--gold);background:rgba(232,180,74,.1);border:1.5px solid rgba(232,180,74,.45);
+    border-radius:999px;padding:7px 14px;cursor:pointer;font-family:'Assistant',sans-serif;
+    transition:background .2s ease}
+  .nikud-toggle:hover{background:rgba(232,180,74,.2)}
+  .nikud-toggle.on{background:var(--gold);color:#2B1D20}
+  .opening .nikud-toggle{margin-bottom:16px}
+
+  .topbar{display:flex;align-items:flex-start;gap:14px;background:rgba(247,238,221,.05);
+    border:1px solid rgba(247,238,221,.12);border-radius:var(--radius);padding:12px 16px;margin-bottom:12px;flex-wrap:wrap}
+  .topbar .brand{display:flex;flex-direction:column;gap:6px;flex:1 1 220px;min-width:180px}
+  .topbar .brand-row{display:flex;align-items:center;gap:10px}
+  .topbar h2{font-size:1.1rem}
+  .meta{font-size:.86rem;color:var(--flour-dim)}
+  .progress-dots{display:flex;gap:5px;margin-top:7px;flex-wrap:wrap}
+  .dot{width:13px;height:13px;border-radius:50%;background:rgba(247,238,221,.16);border:1px solid rgba(247,238,221,.2);transition:.3s}
+  .dot.done{background:linear-gradient(180deg,var(--gold),var(--crust));border-color:var(--gold)}
+  .top-actions{display:flex;flex-direction:column;align-items:flex-end;gap:10px;margin-inline-start:auto}
+  .candle{display:flex;flex-direction:column;align-items:center;gap:5px;flex:0 0 auto}
+  .holder{position:relative;width:30px;height:88px;display:flex;align-items:flex-end;justify-content:center}
+  .wax{width:22px;background:linear-gradient(180deg,#FBF6EA,#DCCBAE);border-radius:6px 6px 3px 3px;height:100%;transition:height 1s linear;box-shadow:inset -4px 0 6px rgba(0,0,0,.12)}
+  .flame{position:absolute;left:50%;width:11px;height:16px;border-radius:50%/60% 60% 40% 40%;
+    background:radial-gradient(circle at 50% 70%,#FFF3C4 0%,var(--gold) 45%,var(--ember) 100%);
+    transform:translate(-50%,0);transition:bottom 1s linear;box-shadow:0 0 16px 5px rgba(232,180,74,.35);animation:flick 1.6s ease-in-out infinite}
+  @keyframes flick{0%,100%{transform:translate(-50%,0) scale(1)}50%{transform:translate(-50%,-2px) scale(1.12,.94)}}
+  .dish{width:30px;height:6px;background:linear-gradient(180deg,#B9903F,#7C5C22);border-radius:3px}
+  .clock{font-family:'Suez One',serif;font-size:1.05rem}
+  .candle.hurry .clock{color:var(--ember)}
+  .candle.hurry .flame{animation-duration:.5s}
+
+  .board{display:grid;grid-template-columns:1.3fr .7fr;gap:14px;align-items:start}
+  .panel{background:rgba(247,238,221,.05);border:1px solid rgba(247,238,221,.12);border-radius:var(--radius);padding:14px}
+  .panel h3{font-size:.95rem;color:var(--gold);margin-bottom:8px}
+
+  .banner{min-height:50px;display:flex;align-items:center;justify-content:center;text-align:center;
+    font-family:'Suez One',serif;font-size:1rem;color:var(--sesame);line-height:1.4;
+    background:rgba(232,180,74,.1);border:1px dashed rgba(232,180,74,.4);border-radius:var(--radius);
+    padding:11px 16px;margin-bottom:12px;transition:.25s}
+  .banner.good{color:#DFF5E4;background:rgba(127,169,138,.16);border-color:rgba(127,169,138,.5)}
+
+  .stage{position:relative;min-height:320px;border-radius:14px;
+    background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.05));
+    border:1px solid rgba(247,238,221,.1);}
+  .stage-inner{position:relative;width:100%;min-height:320px;padding:18px 14px 22px;display:flex;align-items:center;justify-content:center}
+
+  .done-list{list-style:none;padding:0;margin:0;display:grid;gap:7px;max-height:420px;overflow:auto}
+  .done-item{display:flex;gap:9px;align-items:flex-start;background:rgba(127,169,138,.12);
+    border:1px solid rgba(127,169,138,.3);border-radius:12px;padding:8px 10px;animation:rise .35s ease both}
+  .num{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--sage);color:#1F2A22;
+    font-family:'Suez One',serif;font-size:.82rem;display:grid;place-items:center}
+  .done-item .txt{font-size:.88rem;font-weight:600;line-height:1.3}
+  .done-item .say{display:block;font-weight:400;font-size:.8rem;color:var(--flour-dim);margin-top:1px}
+  .empty{color:var(--flour-dim);font-size:.9rem;line-height:1.6;margin:0}
+
+  /* ---- reusable game bits ---- */
+  .slot{position:relative;flex:0 0 auto}
+  .drag{position:absolute;top:0;left:0;cursor:grab;touch-action:none;user-select:none;will-change:transform}
+  .drag.dragging{cursor:grabbing;z-index:50;filter:drop-shadow(0 10px 16px rgba(0,0,0,.4))}
+  .drag-label{position:absolute;top:100%;left:50%;transform:translateX(-50%);font-size:.76rem;color:var(--sesame);white-space:nowrap;margin-top:6px;font-weight:700}
+  .zone{position:relative;border-radius:16px;border:2px dashed rgba(247,238,221,.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;pointer-events:none}
+  .zone-label{font-size:.78rem;color:var(--flour-dim);font-weight:700;white-space:nowrap}
+  .zone.active{border-color:var(--gold);background:rgba(232,180,74,.1)}
+
+  .ring{position:relative;width:64px;height:64px}
+  .ring svg{transform:rotate(-90deg)}
+  .ring .bg{stroke:rgba(247,238,221,.15)}
+  .ring .fg{stroke:var(--gold);stroke-linecap:round;transition:stroke-dashoffset .1s linear}
+  .ring .pct{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Suez One',serif;font-size:.85rem}
+
+  .bag{width:46px;height:56px;background:linear-gradient(180deg,#EFE0BE,#D8BE87);border-radius:6px 6px 14px 14px;
+    border:2px solid #9B7A3F;display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+  .bag::before{content:"";position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:14px;height:12px;background:#B98F49;border-radius:2px}
+  .jar{width:34px;height:44px;background:linear-gradient(180deg,#F4E7C6,#DEC583);border:2px solid #9B7A3F;border-radius:6px 6px 10px 10px;display:flex;align-items:center;justify-content:center;font-size:1.15rem}
+  .basket{width:96px;height:70px;background:linear-gradient(180deg,#B9793A,#8C5626);border-radius:8px 8px 20px 20px;
+    border:3px solid #6E3F1B;position:relative}
+  .basket::before{content:"";position:absolute;top:-14px;left:14px;right:14px;height:16px;border:3px solid #6E3F1B;border-bottom:0;border-radius:16px 16px 0 0}
+
+  .bowl{width:150px;height:90px;border-radius:0 0 60px 60px/0 0 70px 70px;background:linear-gradient(180deg,#8C5626,#5E3717);
+    border:3px solid #47270F;position:relative;overflow:hidden}
+  .bowl-fill{position:absolute;bottom:0;left:0;right:0;height:0%;background:linear-gradient(180deg,#FBF6EA,#E7D6AE);transition:height .25s ease;pointer-events:none}
+  .sifter{width:48px;height:34px;background:#C9C1B4;border:2px solid #8A8272;border-radius:6px;position:relative;display:flex;align-items:center;justify-content:center;font-size:1rem;cursor:pointer}
+  .flourbit{position:absolute;width:5px;height:5px;background:#FBF6EA;border-radius:50%;pointer-events:none;animation:fall .7s ease forwards}
+  @keyframes fall{to{transform:translateY(48px);opacity:0}}
+
+  .dough{width:130px;height:110px;border-radius:52% 48% 55% 45%/55% 50% 50% 45%;
+    background:radial-gradient(circle at 35% 30%,#FBF3DD,var(--dough) 60%,var(--dough-dk)),
+      radial-gradient(1.5px 1.5px at 30% 25%,rgba(255,255,255,.8),transparent),
+      radial-gradient(1.5px 1.5px at 62% 40%,rgba(255,255,255,.7),transparent),
+      radial-gradient(1px 1px at 45% 60%,rgba(255,255,255,.6),transparent),
+      radial-gradient(1.5px 1.5px at 70% 65%,rgba(255,255,255,.6),transparent),
+      radial-gradient(1px 1px at 25% 55%,rgba(255,255,255,.5),transparent);
+    box-shadow:inset -6px -10px 16px rgba(0,0,0,.12),0 8px 14px rgba(0,0,0,.25);
+    display:flex;align-items:center;justify-content:center;cursor:grab;touch-action:none;position:relative}
+  .dough.small{width:44px;height:38px}
+  .kli{width:70px;height:50px;border-radius:0 0 30px 30px/0 0 36px 36px;background:linear-gradient(180deg,#7C5C22,#4E3A15);border:2px solid #362810}
+  .cloth{position:absolute;top:-70px;left:50%;transform:translateX(-50%);width:170px;height:60px;
+    background:repeating-linear-gradient(45deg,#D9552F,#D9552F 8px,#C24425 8px,#C24425 16px);
+    border-radius:8px;box-shadow:var(--shadow);transition:top .5s cubic-bezier(.3,.8,.4,1);pointer-events:none}
+  .cloth.covered{top:6px}
+  .bar{width:100%;height:10px;background:rgba(247,238,221,.15);border-radius:6px;overflow:hidden;margin-top:8px}
+  .bar > i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--crust));transition:width .2s linear}
+
+  .hands{font-size:2rem;cursor:pointer;filter:grayscale(1) opacity(.5);transition:.3s}
+  .hands.ready{filter:none;animation:pulse 1.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+  .spark{position:absolute;font-size:1rem;pointer-events:none;animation:sparkle 1s ease forwards}
+  @keyframes sparkle{0%{opacity:1;transform:translateY(0) scale(.6)}100%{opacity:0;transform:translateY(-30px) scale(1.3)}}
+
+  .log{display:flex;gap:2px;align-items:center;justify-content:center}
+  .seg{width:60px;height:26px;background:linear-gradient(180deg,#FBF3DD,var(--dough));border-radius:13px;
+    box-shadow:inset -3px -4px 8px rgba(0,0,0,.12);transition:transform .35s ease,margin .35s ease}
+  .cutbtn{width:28px;height:40px;border-radius:6px;background:rgba(247,238,221,.12);border:1.5px dashed rgba(247,238,221,.4);
+    color:var(--flour);font-size:1.05rem;display:flex;align-items:center;justify-content:center;cursor:pointer}
+  .cutbtn.done{opacity:.25;pointer-events:none}
+
+  .braidbtn{width:150px;height:44px;border-radius:999px;background:linear-gradient(180deg,var(--gold),var(--crust));
+    border:0;color:#2B1D20;font-family:'Suez One',serif;font-size:1rem;cursor:pointer;box-shadow:0 5px 0 #9B5A1E}
+  .braidbtn:active{transform:translateY(3px);box-shadow:0 2px 0 #9B5A1E}
+  @keyframes pulseHint{0%,100%{box-shadow:0 0 0 0 rgba(232,180,74,.55)}50%{box-shadow:0 0 0 9px rgba(232,180,74,0)}}
+  .pulse-hint{animation:pulseHint 1.5s ease-in-out infinite}
+  .braid-strip{display:flex;height:34px;align-items:center}
+  .braid-seg{width:34px;height:24px;border-radius:12px;background:linear-gradient(180deg,#F0C468,#B9793A);
+    border:1.5px solid #8A4C15;margin-inline-start:-9px;opacity:0;transform:scale(.4) translateY(10px);
+    animation:pop .35s ease forwards}
+  @keyframes pop{to{opacity:1;transform:scale(1) translateY(0)}}
+
+  .challah{width:170px;height:70px;border-radius:38px;position:relative;
+    background:linear-gradient(180deg,#EFE0BE,#DCC594);box-shadow:0 6px 10px rgba(0,0,0,.2);touch-action:none;cursor:grab;
+    display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+  .challah .wash{position:absolute;inset:0;border-radius:38px;background:linear-gradient(180deg,#F0C468,#C97B2C);opacity:0;pointer-events:none}
+  .seed{position:absolute;width:4px;height:2.5px;background:#3A2A12;border-radius:50%;opacity:0;animation:seedpop .25s ease forwards;pointer-events:none}
+  @keyframes seedpop{to{opacity:.9}}
+
+  .oven{width:220px;height:190px;background:linear-gradient(180deg,#3A2A26,#241A17);border-radius:14px;
+    border:4px solid #17100E;position:relative;margin:0 auto;box-shadow:var(--shadow)}
+  .oven-slot{position:absolute;top:14px;left:14px;right:14px;height:34px}
+  .oven-window{position:absolute;left:20px;right:20px;bottom:16px;top:56px;border-radius:10px;
+    background:radial-gradient(circle at 50% 60%,#5A2E12,#1C0E07);border:5px solid #17100E;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .oven-window.hot{box-shadow:0 0 26px 8px rgba(217,85,47,.5) inset}
+  .tray{width:120px;height:20px;background:#8A8A8A;border-radius:3px;display:flex;align-items:center;justify-content:center;gap:6px}
+  .door{position:absolute;inset:56px 20px 16px 20px;border-radius:10px;background:linear-gradient(180deg,#4A3530,#2A1D19);
+    border:3px solid #17100E;transform-origin:right center;transition:transform .5s ease;z-index:5;pointer-events:none}
+  .door.open{transform:rotateY(78deg)}
+  .handle{position:absolute;left:8px;top:50%;transform:translateY(-50%);width:6px;height:34px;background:#C9A15A;border-radius:3px}
+  .steam{position:absolute;bottom:0;font-size:.9rem;opacity:.8;animation:steamup 1.6s ease forwards;pointer-events:none}
+  @keyframes steamup{0%{opacity:.7;transform:translateY(0) scale(.7)}100%{opacity:0;transform:translateY(-40px) scale(1.3)}}
+
+  .table{width:100%;max-width:260px;height:22px;background:linear-gradient(180deg,#8C5626,#5E3717);border-radius:4px;margin:0 auto;position:relative;box-shadow:0 6px 10px rgba(0,0,0,.3)}
+  .table-mark{position:absolute;top:-64px;width:150px;height:56px;left:50%;transform:translateX(-50%)}
+  .cloth2{position:absolute;top:-90px;left:50%;transform:translateX(-50%);width:180px;height:60px;
+    background:repeating-linear-gradient(45deg,#F7EEDD,#F7EEDD 8px,#E6D8C0 8px,#E6D8C0 16px);
+    border:2px solid #C9BB99;border-radius:8px;transition:top .5s cubic-bezier(.3,.8,.4,1),opacity .3s ease;
+    box-shadow:var(--shadow);pointer-events:none;opacity:0}
+  .cloth2.covered{opacity:1;top:-64px}
+
+  .stack{display:flex;flex-direction:column;align-items:center;gap:12px;justify-content:center;width:100%}
+  .row{display:flex;gap:26px;align-items:flex-start;justify-content:center;flex-wrap:wrap;width:100%}
+
+  .ending{text-align:center;max-width:600px;margin:4vh auto 0;padding:30px 20px;
+    background:linear-gradient(180deg,rgba(247,238,221,.07),rgba(247,238,221,.02));border:1px solid rgba(247,238,221,.16);border-radius:26px}
+  .ending h2{font-size:1.6rem;margin-bottom:8px}
+  .ending p{font-size:1.05rem;line-height:1.7;color:var(--flour-dim);max-width:40ch;margin:0 auto 18px}
+  .ending .score{font-family:'Suez One',serif;color:var(--gold);font-size:.98rem;margin-bottom:12px}
+  svg.finalchallah{width:200px;height:auto;margin-bottom:4px;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35))}
+
+  @media (max-width:760px){
+    .board{grid-template-columns:1fr}
+    .opening h1{font-size:1.6rem}
+    .done-list{max-height:220px}
+    .top-actions{width:100%;flex-direction:row;justify-content:space-between;align-items:center}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section class="screen on" id="screen-start">
+    <div class="opening">
+      <img class="logo" src="[embedded-image]" alt="לוגו מורה שמיים">
+      <div class="eyebrow" id="txt-eyebrow"></div>
+      <h1 id="txt-title"></h1>
+      <div class="sub" id="txt-sub"></div>
+      <p id="txt-p1"></p>
+      <p class="tip" id="txt-tip"></p>
+      <div><button class="nikud-toggle" id="nikudBtn1"></button></div>
+      <button class="btn" id="btn-start"></button>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-game">
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-row">
+          <img class="logo small" src="[embedded-image]" alt="לוגו מורה שמיים">
+          <h2 id="txt-h2"></h2>
+        </div>
+        <div class="meta" id="count-meta"></div>
+        <div class="progress-dots" id="dots"></div>
+      </div>
+      <div class="top-actions">
+        <button class="nikud-toggle" id="nikudBtn2"></button>
+        <div class="candle" id="candle">
+          <div class="holder"><div class="wax" id="wax"></div><div class="flame" id="flame"></div></div>
+          <div class="dish"></div>
+          <div class="clock" id="clock">4:00</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner" id="banner"></div>
+
+    <div class="board">
+      <div class="panel">
+        <h3 id="stage-title"></h3>
+        <div class="stage"><div class="stage-inner" id="stage"></div></div>
+      </div>
+      <div class="panel">
+        <h3 id="txt-doneHeading"></h3>
+        <ul class="done-list" id="done"></ul>
+        <p class="empty" id="empty"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-end">
+    <div class="ending">
+      <svg class="finalchallah" viewBox="0 0 260 110" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#F0C468"/><stop offset="60%" stop-color="#D08A32"/><stop offset="100%" stop-color="#A25E1D"/>
+        </linearGradient></defs>
+        <ellipse cx="130" cy="70" rx="118" ry="26" fill="#000" opacity=".22"/>
+        <g id="braidsvg"></g>
+      </svg>
+      <h2 id="end-title"></h2>
+      <div class="score" id="end-score"></div>
+      <p id="end-text"></p>
+      <button class="btn ghost" id="btn-again"></button>
+    </div>
+  </section>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const rand = (a,b) => a + Math.random()*(b-a);
+const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
+let NIKUD = false;
+const L = o => NIKUD ? o.n : o.p;
+
+/* ---------------- global strings ---------------- */
+const G = {
+  eyebrow:{p:"חלק ו׳ · ניהול זמן", n:"חֵלֶק ו׳ · נִיהוּל זְמַן"},
+  title:{p:"מטבח השבת", n:"מִטְבַּח הַשַּׁבָּת"},
+  sub:{p:"הכנת החלות לכבוד שבת", n:"הֲכָנַת הַחַלּוֹת לִכְבוֹד שַׁבָּת"},
+  p1:{p:"משהו מריח נפלא! בואו נעזור להכין את חלות השבת — הפעם ממש עם הידיים: גוררים, לשים, קולעים ואופים.",
+      n:"מַשֶּׁהוּ מֵרִיחַ נִפְלָא! בּוֹאוּ נַעֲזֹר לְהָכִין אֶת חַלּוֹת הַשַּׁבָּת — הַפַּעַם מַמָּשׁ עִם הַיָּדַיִם: גּוֹרְרִים, לָשִׁים, קוֹלְעִים וְאוֹפִים."},
+  tip:{p:"גררו, הקישו ומשכו על המסך כדי לבצע כל שלב בעצמכם, לפני שהנר של שבת נגמר.",
+       n:"גִּרְרוּ, הַקִּישׁוּ וּמִשְׁכוּ עַל הַמָּסָךְ כְּדֵי לְבַצֵּעַ כָּל שָׁלָב בְּעַצְמְכֶם, לִפְנֵי שֶׁהַנֵּר שֶׁל שַׁבָּת נִגְמָר."},
+  startBtn:{p:"מתחילים לאפות", n:"מַתְחִילִים לֶאֱפוֹת"},
+  againBtn:{p:"לשחק שוב", n:"לְשַׂחֵק שׁוּב"},
+  doneHeading:{p:"מה כבר הספקנו", n:"מָה כְּבָר הִסְפַּקְנוּ"},
+  emptyMsg:{p:"עוד לא התחלנו. השלב הראשון מחכה לכם משמאל.", n:"עוֹד לֹא הִתְחַלְנוּ. הַשָּׁלָב הָרִאשׁוֹן מְחַכֶּה לָכֶם מִשְּׂמֹאל."},
+  countSuffix:{p:"מתוך 10 שלבים הושלמו", n:"מִתּוֹךְ 10 שְׁלַבִּים הוּשְׁלְמוּ"},
+  nikudOn:{p:"גרסה מנוקדת", n:"גרסה מנוקדת"},
+  nikudOff:{p:"גרסה רגילה", n:"גרסה רגילה"},
+  wonTitle:{p:"הצלחת בזמן!", n:"הִצְלַחְתָּ בַּזְּמַן!"},
+  wonScorePre:{p:"כל עשרת השלבים הושלמו · נשארו ", n:"כָּל עֲשֶׂרֶת הַשְּׁלַבִּים הוּשְׁלְמוּ · נִשְׁאֲרוּ "},
+  wonScorePost:{p:" דקות עד השבת", n:" דַּקּוֹת עַד שַׁבָּת"},
+  wonText:{p:"כל הכבוד! החלות הקלועות והזהובות מוכנות ומפארות את שולחן השבת!",
+           n:"כָּל הַכָּבוֹד! הַחַלּוֹת הַקְּלוּעוֹת וְהַזְּהֻבּוֹת מוּכָנוֹת וּמְפָאֲרוֹת אֶת שֻׁלְחַן הַשַּׁבָּת!"},
+  lateTitle:{p:"כמעט הספקת!", n:"כִּמְעַט הִסְפַּקְתָּ!"},
+  lateScoreDone:{p:"כל 10 השלבים הושלמו, אך אחרי שהנר כבה", n:"כָּל 10 הַשְּׁלַבִּים הוּשְׁלְמוּ, אַךְ אַחֲרֵי שֶׁהַנֵּר כָּבָה"},
+  lateText:{p:"החלות כמעט מוכנות! בפעם הבאה נתחיל קצת קודם והן יצאו מושלמות בזמן!",
+            n:"הַחַלּוֹת כִּמְעַט מוּכָנוֹת! בַּפַּעַם הַבָּאָה נַתְחִיל קְצָת קֹדֶם וְהֵן יֵצְאוּ מֻשְׁלָמוֹת בַּזְּמַן!"}
+};
+
+/* ---------------- generic drag helper ---------------- */
+function makeDraggable(el, targets, {consume=false, onDrop=()=>{}} = {}){
+  let ox=0, oy=0, sx=0, sy=0, curx=0, cury=0, active=false, locked=false;
+  el.style.touchAction='none';
+  el.addEventListener('pointerdown', e=>{
+    if(locked) return;
+    el.classList.remove('pulse-hint');
+    active=true; try{ el.setPointerCapture(e.pointerId); }catch(_){}
+    sx=e.clientX; sy=e.clientY; el.style.transition='none'; el.classList.add('dragging');
+    targets.forEach(t=>t.classList.add('active'));
+  });
+  el.addEventListener('pointermove', e=>{
+    if(!active) return;
+    curx = ox + (e.clientX-sx); cury = oy + (e.clientY-sy);
+    el.style.transform = `translate(${curx}px,${cury}px)`;
+  });
+  function release(){
+    if(!active) return;
+    active=false; el.classList.remove('dragging');
+    targets.forEach(t=>t.classList.remove('active'));
+    el.style.transition='transform .32s cubic-bezier(.2,.8,.3,1.15)';
+    const er = el.getBoundingClientRect();
+    const ecx = er.left+er.width/2, ecy = er.top+er.height/2;
+    let hit=null;
+    for(const t of targets){
+      const tr=t.getBoundingClientRect();
+      if(ecx>tr.left && ecx<tr.right && ecy>tr.top && ecy<tr.bottom){ hit=t; break; }
+    }
+    if(hit){
+      const tr=hit.getBoundingClientRect();
+      const dx=(tr.left+tr.width/2)-ecx, dy=(tr.top+tr.height/2)-ecy;
+      curx+=dx; cury+=dy; ox=curx; oy=cury;
+      el.style.transform = `translate(${curx}px,${cury}px)`;
+      locked=true;
+      if(consume){ setTimeout(()=>{ el.style.opacity='0'; el.style.transform+=' scale(.3)'; },60); }
+      onDrop(true,hit);
+    } else {
+      curx=ox; cury=oy; el.style.transform=`translate(${ox}px,${oy}px)`;
+      onDrop(false,null);
+    }
+  }
+  el.addEventListener('pointerup', release);
+  el.addEventListener('pointercancel', release);
+}
+
+function ringSVG(id){
+  return `<div class="ring" id="${id}"><svg width="64" height="64"><circle class="bg" cx="32" cy="32" r="26" fill="none" stroke-width="7"/>
+    <circle class="fg" cx="32" cy="32" r="26" fill="none" stroke-width="7" stroke-dasharray="163.4" stroke-dashoffset="163.4"/></svg>
+    <div class="pct">0%</div></div>`;
+}
+function setRing(id, pct){
+  const ring = $(id); if(!ring) return;
+  ring.querySelector('.fg').style.strokeDashoffset = 163.4 - (163.4*pct/100);
+  ring.querySelector('.pct').textContent = Math.round(pct)+'%';
+}
+
+/* ---- drawn icons (replace mismatched emoji) ---- */
+let _iconSeq = 0;
+function challahSVG(w, h, golden){
+  const id = 'chg'+(_iconSeq++);
+  const strands = w > 60 ? 6 : 4;
+  const top = golden ? ['#F0C468','#D08A32','#A25E1D'] : ['#FBF3DD','#EFE0BE','#DDC593'];
+  let mid='';
+  for(let k=0;k<strands;k++){
+    const cx = (w/(strands+0.6))*(k+0.8);
+    const rx = w/(strands*0.82), ry = h*0.44;
+    const rot = k%2? -18:18;
+    mid += `<ellipse cx="${cx.toFixed(1)}" cy="${(h*0.54).toFixed(1)}" rx="${rx.toFixed(1)}" ry="${ry.toFixed(1)}" fill="url(#${id})" stroke="${golden?'#8A4C15':'#C7B584'}" stroke-width="${Math.max(1,w*0.014).toFixed(1)}" transform="rotate(${rot} ${cx.toFixed(1)} ${(h*0.54).toFixed(1)})"/>`;
+  }
+  let seeds='';
+  if(golden){
+    const n = Math.max(4, Math.round(w/11));
+    for(let s=0;s<n;s++){
+      const sx=(rand(0.08,0.92)*w).toFixed(1), sy=(h*0.5+rand(-h*0.2,h*0.2)).toFixed(1);
+      seeds += `<circle cx="${sx}" cy="${sy}" r="${Math.max(0.8,w*0.011).toFixed(1)}" fill="#FBF0D2" opacity=".92"/>`;
+    }
+  }
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg" style="display:block">
+    <defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${top[0]}"/><stop offset="60%" stop-color="${top[1]}"/><stop offset="100%" stop-color="${top[2]}"/>
+    </linearGradient></defs>
+    <ellipse cx="${w/2}" cy="${h*0.92}" rx="${w*0.46}" ry="${h*0.1}" fill="#000" opacity=".18"/>
+    ${mid}${seeds}
+  </svg>`;
+}
+function challahPair(w,h,golden){
+  return `<div style="display:flex;gap:6px;align-items:center;justify-content:center">${challahSVG(w,h,golden)}${challahSVG(w,h,golden)}</div>`;
+}
+function sifterSVG(){
+  return `<svg viewBox="0 0 60 44" width="48" height="36" xmlns="http://www.w3.org/2000/svg" style="display:block">
+    <rect x="1" y="16.5" width="15" height="7" rx="3.5" fill="#B9B2A2" stroke="#8A8272" stroke-width="1.4"/>
+    <circle cx="37" cy="20" r="18" fill="#EDE8DC" stroke="#8A8272" stroke-width="2.4"/>
+    <circle cx="37" cy="20" r="13.5" fill="#DCD5C4" stroke="#a39c8c" stroke-width="1"/>
+    <g stroke="#9c9384" stroke-width="0.7" opacity=".85">
+      <line x1="25" y1="20" x2="49" y2="20"/><line x1="37" y1="7.5" x2="37" y2="32.5"/>
+      <line x1="27.5" y1="10.5" x2="46.5" y2="29.5"/><line x1="27.5" y1="29.5" x2="46.5" y2="10.5"/>
+      <line x1="30.5" y1="8.3" x2="30.5" y2="31.7"/><line x1="43.5" y1="8.3" x2="43.5" y2="31.7"/>
+      <line x1="25.3" y1="13.3" x2="48.7" y2="13.3"/><line x1="25.3" y1="26.7" x2="48.7" y2="26.7"/>
+    </g>
+    <circle cx="37" cy="20" r="13.5" fill="none" stroke="#8A8272" stroke-width="1.6"/>
+  </svg>`;
+}
+
+/* ---------------- scenes ---------------- */
+const SCENES = [
+{
+  t:{p:"קניית קמח ושמרים בחנות", n:"קְנִיַּת קֶמַח וּשְׂמָרִים בַּחֲנוּת"},
+  instr:{p:"גררו את שקית הקמח ואת צנצנת השמרים לתוך הסל", n:"גִּרְרוּ אֶת שַׂקִּית הַקֶּמַח וְאֶת צִנְצֶנֶת הַשְּׂמָרִים לְתוֹךְ הַסַּל"},
+  say:{p:"כל המצרכים לאפיית החלות כבר אצלנו בסל!", n:"כָּל הַמַּצְרָכִים לַאֲפִיַּת הַחַלּוֹת כְּבָר אֶצְלֵנוּ בַּסַּל!"},
+  L:{kemach:{p:"קמח",n:"קֶמַח"}, smarim:{p:"שמרים",n:"שְׂמָרִים"}, sal:{p:"הסל",n:"הַסַּל"}},
+  build(stage, done, sc){
+    stage.innerHTML = `
+      <div class="row">
+        <div class="slot" style="width:46px;height:56px"><div class="bag drag pulse-hint" id="bagItem">🌾</div><div class="drag-label">${L(sc.L.kemach)}</div></div>
+        <div class="slot" style="width:34px;height:44px;margin-top:6px"><div class="jar drag" id="jarItem">🍯</div><div class="drag-label">${L(sc.L.smarim)}</div></div>
+        <div class="zone" id="basketZone" style="width:120px;height:86px">
+          <div class="basket"></div><div class="zone-label" style="position:absolute;bottom:-22px">${L(sc.L.sal)}</div>
+        </div>
+      </div>`;
+    const bag=$('bagItem'), jar=$('jarItem'), zone=$('basketZone');
+    let got=0;
+    function check(ok){ if(ok){ got++; if(got>=2) setTimeout(done,300); } }
+    makeDraggable(bag,[zone],{consume:true,onDrop:check});
+    makeDraggable(jar,[zone],{consume:true,onDrop:check});
+  }
+},
+{
+  t:{p:"ניפוי הקמח לקערה", n:"נִפּוּי הַקֶּמַח לַקְּעָרָה"},
+  instr:{p:"הקישו שוב ושוב על המסננת עד שכל הקמח בקערה", n:"הַקִּישׁוּ שׁוּב וָשׁוּב עַל הַמְּסַנֶּנֶת עַד שֶׁכָּל הַקֶּמַח בַּקְּעָרָה"},
+  say:{p:"הקמח נקי ומוכן לתוך קערת הלישה!", n:"הַקֶּמַח נָקִי וּמוּכָן לְתוֹךְ קְעָרַת הַלִּישָׁה!"},
+  L:{},
+  build(stage, done){
+    stage.innerHTML = `
+      <div class="stack">
+        <div class="sifter pulse-hint" id="sifter">${sifterSVG()}</div>
+        <div class="bowl"><div class="bowl-fill" id="fill"></div></div>
+      </div>`;
+    const sifter=$('sifter'), fill=$('fill');
+    let n=0, need=6, fired=false;
+    sifter.addEventListener('click', ()=>{
+      if(fired) return;
+      sifter.classList.remove('pulse-hint');
+      n=Math.min(need,n+1);
+      fill.style.height = (n/need*100)+'%';
+      for(let k=0;k<5;k++){
+        const b=document.createElement('div');
+        b.className='flourbit';
+        b.style.left=(rand(-14,14))+'px'; b.style.top='0px'; b.style.animationDelay=(k*40)+'ms';
+        sifter.appendChild(b);
+        setTimeout(()=>b.remove(),750);
+      }
+      sifter.style.transform='rotate(-8deg)'; setTimeout(()=>sifter.style.transform='',120);
+      if(n>=need){ fired=true; sifter.style.pointerEvents='none'; setTimeout(done,350); }
+    });
+  }
+},
+{
+  t:{p:"ערבוב המצרכים ולישת הבצק", n:"עִרְבּוּב הַמַּצְרָכִים וְלִישַׁת הַבָּצֵק"},
+  instr:{p:"משכו את האצבע קדימה ואחורה על הבצק כדי ללוש אותו", n:"מִשְׁכוּ אֶת הָאֶצְבַּע קָדִימָה וְאָחוֹרָה עַל הַבָּצֵק כְּדֵי לָלוּשׁ אוֹתוֹ"},
+  say:{p:"לשנו את הבצק וכעת הוא רך ונעים!", n:"לַשְׁנוּ אֶת הַבָּצֵק וְכָעֵת הוּא רַךְ וְנָעִים!"},
+  L:{},
+  build(stage, done){
+    stage.innerHTML = `<div class="stack">
+      <div class="dough pulse-hint" id="doughK"></div>
+      ${ringSVG('kneadRing')}
+    </div>`;
+    const dough=$('doughK'); let total=0, need=650, down=false, lx=0, ly=0, finished=false;
+    dough.addEventListener('pointerdown', e=>{ down=true; lx=e.clientX; ly=e.clientY; dough.classList.remove('pulse-hint'); try{dough.setPointerCapture(e.pointerId);}catch(_){} });
+    dough.addEventListener('pointermove', e=>{
+      if(!down||finished) return;
+      const dx=e.clientX-lx, dy=e.clientY-ly, d=Math.hypot(dx,dy);
+      total+=d; lx=e.clientX; ly=e.clientY;
+      const pct=clamp(total/need*100,0,100);
+      setRing('kneadRing', pct);
+      const s=1+Math.sin(total/38)*0.08;
+      dough.style.transform=`scale(${s},${2-s})`;
+      if(pct>=100 && !finished){ finished=true; dough.style.transform='scale(1,1)'; setTimeout(done,300); }
+    });
+    ['pointerup','pointercancel'].forEach(ev=>dough.addEventListener(ev,()=>down=false));
+  }
+},
+{
+  t:{p:"התפחת הבצק בקערה מכוסה", n:"הַתְפָּחַת הַבָּצֵק בִּקְעָרָה מְכֻסָּה"},
+  instr:{p:"כסו את הקערה במפית וצפו בבצק תופח", n:"כַּסּוּ אֶת הַקְּעָרָה בְּמַפִּית וּצְפוּ בַּבָּצֵק תּוֹפֵחַ"},
+  say:{p:"הבצק נח בקערה ותופח עד שהוא מכפיל את נפחו!", n:"הַבָּצֵק נָח בַּקְּעָרָה וְתוֹפֵחַ עַד שֶׁהוּא מַכְפִּיל אֶת נִפְחוֹ!"},
+  L:{cover:{p:"כסו במפית",n:"כַּסּוּ בְּמַפִּית"}, ing:{p:"מתפיח...",n:"מַתְפִּיחַ..."}},
+  build(stage, done, sc){
+    stage.innerHTML = `<div class="stack" style="padding-top:60px">
+      <div style="position:relative;width:150px;height:90px">
+        <div class="bowl" style="width:150px;height:90px"><div class="dough" id="doughR" style="width:110px;height:70px;position:absolute;left:20px;bottom:6px;transform-origin:bottom center"></div></div>
+        <div class="cloth" id="cloth"></div>
+      </div>
+      <button class="btn pulse-hint" id="coverBtn">${L(sc.L.cover)}</button>
+      <div class="bar" style="width:200px;display:none" id="riseBar"><i id="riseFill"></i></div>
+    </div>`;
+    $('coverBtn').addEventListener('click', function(){
+      this.classList.remove('pulse-hint');
+      $('cloth').classList.add('covered');
+      this.disabled=true; this.textContent=L(sc.L.ing);
+      $('riseBar').style.display='block';
+      const dough=$('doughR'); let p=0;
+      const iv=setInterval(()=>{
+        p+=4; $('riseFill').style.width=p+'%';
+        const s=1+p/100*0.6;
+        dough.style.transform=`scale(${s})`;
+        if(p>=100){ clearInterval(iv); setTimeout(done,400); }
+      },90);
+    });
+  }
+},
+{
+  t:{p:"הפרשת חלה בברכה", n:"הַפְרָשַׁת חַלָּה בִּבְרָכָה"},
+  instr:{p:"צביטו חתיכת בצק לכלי הקטן, ואז חברו כפיים לברכה", n:"צְבִיטוּ חֲתִיכַת בָּצֵק לַכְּלִי הַקָּטָן, וְאָז חַבְּרוּ כַּפַּיִם לִבְרָכָה"},
+  say:{p:"מפרישים חתיכת בצק ומברכים בכוונה גדולה!", n:"מַפְרִישִׁים חֲתִיכַת בָּצֵק וּמְבָרְכִים בְּכַוָּנָה גְּדוֹלָה!"},
+  L:{},
+  build(stage, done){
+    stage.innerHTML = `<div class="row">
+      <div class="slot" style="width:130px;height:110px"><div class="dough" id="bigDough"></div></div>
+      <div class="slot" style="width:100px;height:76px">
+        <div class="dough small drag pulse-hint" id="pinch" style="left:16px;top:0">•</div>
+        <div class="zone" id="kliZone" style="position:absolute;bottom:0;left:15px;width:70px;height:50px"><div class="kli"></div></div>
+      </div>
+      <div class="slot" style="width:52px;height:52px"><div class="hands" id="handsIcon" style="position:absolute">🤲</div></div>
+    </div>`;
+    const pinch=$('pinch'), zone=$('kliZone'), hands=$('handsIcon');
+    let pinched=false, blessed=false;
+    makeDraggable(pinch,[zone],{consume:true,onDrop:(ok)=>{ if(ok){ pinched=true; hands.classList.add('ready'); } }});
+    hands.addEventListener('click', ()=>{
+      if(!pinched || blessed) return;
+      blessed=true;
+      hands.style.filter='none';
+      for(let k=0;k<6;k++){
+        const s=document.createElement('div'); s.className='spark'; s.textContent='✨';
+        s.style.left=(rand(-24,24))+'px'; s.style.top='-10px'; s.style.animationDelay=(k*70)+'ms';
+        hands.parentElement.appendChild(s); setTimeout(()=>s.remove(),1100);
+      }
+      hands.style.pointerEvents='none';
+      setTimeout(done,650);
+    });
+  }
+},
+{
+  t:{p:"חלוקת הבצק לרצועות", n:"חֲלֻקַּת הַבָּצֵק לִרְצוּעוֹת"},
+  instr:{p:"הקישו על הסכין בכל סימון כדי לחתוך את הבצק", n:"הַקִּישׁוּ עַל הַסַּכִּין בְּכָל סִמּוּן כְּדֵי לַחְתֹּךְ אֶת הַבָּצֵק"},
+  say:{p:"מחלקים את הבצק לכדורים ויוצרים רצועות ארוכות!", n:"מְחַלְּקִים אֶת הַבָּצֵק לְכַדּוּרִים וְיוֹצְרִים רְצוּעוֹת אֲרֻכּוֹת!"},
+  L:{},
+  build(stage, done){
+    stage.innerHTML = `<div class="stack">
+      <div class="log" id="doughLog">
+        <div class="seg" id="s1"></div><div class="cutbtn pulse-hint" id="c1">✂️</div>
+        <div class="seg" id="s2"></div><div class="cutbtn" id="c2">✂️</div>
+        <div class="seg" id="s3"></div>
+      </div>
+    </div>`;
+    let cuts=0;
+    $('c1').addEventListener('click', function(){
+      this.classList.add('done'); this.classList.remove('pulse-hint'); cuts++;
+      $('s1').style.transform='translateX(10px)'; $('s2').style.transform='translateX(-4px)';
+      if(cuts>=2) setTimeout(done,400);
+    });
+    $('c2').addEventListener('click', function(){
+      this.classList.add('done'); cuts++;
+      $('s3').style.transform='translateX(-10px)';
+      if(cuts>=2) setTimeout(done,400);
+    });
+  }
+},
+{
+  t:{p:"קליעת החלות היפות", n:"קְלִיעַת הַחַלּוֹת הַיָּפוֹת"},
+  instr:{p:"הקישו על הכפתור שוב ושוב כדי לקלוע את הרצועות", n:"הַקִּישׁוּ עַל הַכַּפְתּוֹר שׁוּב וָשׁוּב כְּדֵי לִקְלֹעַ אֶת הָרְצוּעוֹת"},
+  say:{p:"קולעים את הרצועות לצמות של חלות חגיגיות!", n:"קוֹלְעִים אֶת הָרְצוּעוֹת לְצַמּוֹת שֶׁל חַלּוֹת חֲגִיגִיּוֹת!"},
+  L:{braid:{p:"קלעו 🪢",n:"קִלְעוּ 🪢"}},
+  build(stage, done, sc){
+    stage.innerHTML = `<div class="stack">
+      <div class="braid-strip" id="braidStrip"></div>
+      <button class="braidbtn pulse-hint" id="braidBtn">${L(sc.L.braid)}</button>
+      ${ringSVG('braidRing')}
+    </div>`;
+    const strip=$('braidStrip'); let n=0, need=7, fired=false;
+    const braidBtn=$('braidBtn');
+    braidBtn.addEventListener('click', ()=>{
+      if(fired) return;
+      braidBtn.classList.remove('pulse-hint');
+      n=Math.min(need,n+1);
+      setRing('braidRing', n/need*100);
+      const seg=document.createElement('div'); seg.className='braid-seg';
+      seg.style.transform = (n%2? 'translateY(-4px)':'translateY(4px)');
+      strip.appendChild(seg);
+      if(n>=need){ fired=true; braidBtn.disabled=true; setTimeout(done,400); }
+    });
+  }
+},
+{
+  t:{p:"מריחת ביצה ופיזור שומשום", n:"מְרִיחַת בֵּיצָה וּפִזּוּר שֻׁמְשׁוּם"},
+  instr:{p:"משכו אצבע על החלה למריחה, ואז הקישו עליה לפיזור שומשום", n:"מִשְׁכוּ אֶצְבַּע עַל הַחַלָּה לִמְרִיחָה, וְאָז הַקִּישׁוּ עָלֶיהָ לְפִזּוּר שֻׁמְשׁוּם"},
+  say:{p:"החלות מבריקות, מקושטות בשומשום ומוכנות לאפייה!", n:"הַחַלּוֹת מַבְרִיקוֹת, מְקֻשָּׁטוֹת בְּשֻׁמְשׁוּם וּמוּכָנוֹת לַאֲפִיָּה!"},
+  L:{h1:{p:"שלב 1: מריחת ביצה",n:"שָׁלָב 1: מְרִיחַת בֵּיצָה"}, h2:{p:"שלב 2: הקישו לפיזור שומשום",n:"שָׁלָב 2: הַקִּישׁוּ לְפִזּוּר שֻׁמְשׁוּם"}},
+  build(stage, done, sc){
+    stage.innerHTML = `<div class="stack">
+      <div class="challah pulse-hint" id="challahE"><div class="wash" id="wash"></div></div>
+      <div class="bar" style="width:180px"><i id="washFill"></i></div>
+      <div class="banner" style="min-height:auto;padding:8px 12px;font-size:.88rem" id="stepHint2">${L(sc.L.h1)}</div>
+    </div>`;
+    const ch=$('challahE'), wash=$('wash');
+    let total=0, need=420, down=false, lx=0, washDone=false, seeds=0, needSeeds=7, fired=false;
+    ch.addEventListener('pointerdown', e=>{ if(washDone) return; down=true; lx=e.clientX; ch.classList.remove('pulse-hint'); try{ch.setPointerCapture(e.pointerId);}catch(_){} });
+    ch.addEventListener('pointermove', e=>{
+      if(!down||washDone) return;
+      total+=Math.abs(e.clientX-lx); lx=e.clientX;
+      const pct=clamp(total/need*100,0,100);
+      wash.style.opacity = pct/100;
+      $('washFill').style.width=pct+'%';
+      if(pct>=100 && !washDone){ washDone=true; $('stepHint2').textContent=L(sc.L.h2); }
+    });
+    ['pointerup','pointercancel'].forEach(ev=>ch.addEventListener(ev,()=>down=false));
+    ch.addEventListener('click', e=>{
+      if(!washDone || fired) return;
+      const r=ch.getBoundingClientRect();
+      const ox=e.clientX-r.left, oy=e.clientY-r.top;
+      for(let k=0;k<4;k++){
+        const sd=document.createElement('div'); sd.className='seed';
+        sd.style.left=(ox+rand(-16,16))+'px'; sd.style.top=(oy+rand(-8,8))+'px';
+        sd.style.animationDelay=(k*40)+'ms';
+        ch.appendChild(sd);
+      }
+      seeds++;
+      if(seeds>=needSeeds){ fired=true; setTimeout(done,450); }
+    });
+  }
+},
+{
+  t:{p:"אפיית החלות בתנור", n:"אֲפִיַּת הַחַלּוֹת בַּתַּנּוּר"},
+  instr:{p:"גררו את התבנית לתנור, סגרו את הדלת וצפו באפייה", n:"גִּרְרוּ אֶת הַתַּבְנִית לַתַּנּוּר, סִגְרוּ אֶת הַדֶּלֶת וּצְפוּ בַּאֲפִיָּה"},
+  say:{p:"החלות נאפות בתנור וריח מדהים ממלא את הבית!", n:"הַחַלּוֹת נֶאֱפוֹת בַּתַּנּוּר וְרֵיחַ מַדְהִים מְמַלֵּא אֶת הַבַּיִת!"},
+  L:{tray:{p:"התבנית",n:"הַתַּבְנִית"}, slot:{p:"שבצו כאן",n:"שַׁבְּצוּ כָּאן"}, closeBtn:{p:"סגרו את הדלת",n:"סִגְרוּ אֶת הַדֶּלֶת"}, baking:{p:"אופים...",n:"אוֹפִים..."}},
+  build(stage, done, sc){
+    stage.innerHTML = `<div class="stack">
+      <div class="slot" style="width:120px;height:20px"><div class="tray drag pulse-hint" id="trayItem">${challahPair(48,17,false)}</div><div class="drag-label">${L(sc.L.tray)}</div></div>
+      <div class="oven">
+        <div class="zone" id="ovenSlot" style="position:absolute;top:14px;left:14px;right:14px;height:34px;margin:0"><span class="zone-label">${L(sc.L.slot)}</span></div>
+        <div class="oven-window" id="ovenWin"><span id="ovenChallah"></span></div>
+        <div class="door" id="ovenDoor"><div class="handle"></div></div>
+      </div>
+      <button class="btn ghost" id="closeDoorBtn" disabled>${L(sc.L.closeBtn)}</button>
+      <div class="bar" style="width:200px"><i id="bakeFill"></i></div>
+    </div>`;
+    const tray=$('trayItem'), slot=$('ovenSlot'), win=$('ovenWin'), ovenCh=$('ovenChallah'), door=$('ovenDoor'), btn=$('closeDoorBtn');
+    door.classList.add('open');
+    makeDraggable(tray,[slot],{consume:true,onDrop:(ok)=>{
+      if(ok){ ovenCh.innerHTML=challahPair(52,20,false); btn.disabled=false; }
+    }});
+    btn.addEventListener('click', function(){
+      door.classList.remove('open'); this.disabled=true; this.textContent=L(sc.L.baking);
+      win.classList.add('hot');
+      ovenCh.style.position='relative';
+      const goldLayer = document.createElement('div');
+      goldLayer.style.cssText='position:absolute;inset:0;opacity:0;transition:opacity .3s linear';
+      goldLayer.innerHTML = challahPair(52,20,true);
+      ovenCh.style.display='inline-block'; ovenCh.style.position='relative';
+      ovenCh.appendChild(goldLayer);
+      let p=0;
+      const iv=setInterval(()=>{
+        p+=3; $('bakeFill').style.width=p+'%';
+        goldLayer.style.opacity = p/100;
+        if(Math.random()<0.18){
+          const s=document.createElement('div'); s.className='steam'; s.textContent='〰️';
+          s.style.left=(40+rand(-10,10))+'%'; win.appendChild(s); setTimeout(()=>s.remove(),1600);
+        }
+        if(p>=100){
+          clearInterval(iv);
+          setTimeout(()=>{ door.classList.add('open'); setTimeout(done,500); },400);
+        }
+      },80);
+    });
+  }
+},
+{
+  t:{p:"הנחת החלות על שולחן השבת", n:"הַנָּחַת הַחַלּוֹת עַל שֻׁלְחַן הַשַּׁבָּת"},
+  instr:{p:"גררו את החלות לשולחן, ואז כסו אותן במפה", n:"גִּרְרוּ אֶת הַחַלּוֹת לַשֻּׁלְחָן, וְאָז כַּסּוּ אוֹתָן בְּמַפָּה"},
+  say:{p:"החלות החמות מונחות על השולחן ומכוסות במפה!", n:"הַחַלּוֹת הַחַמּוֹת מֻנָּחוֹת עַל הַשֻּׁלְחָן וּמְכֻסּוֹת בְּמַפָּה!"},
+  L:{mark:{p:"הניחו כאן",n:"הַנִּיחוּ כָּאן"}, cover2:{p:"כסו במפה",n:"כַּסּוּ בְּמַפָּה"}},
+  build(stage, done, sc){
+    stage.innerHTML = `<div class="stack" style="padding-top:76px">
+      <div class="slot" style="width:150px;height:40px"><div class="drag pulse-hint" id="challahFinal" style="cursor:grab;touch-action:none">${challahPair(66,26,true)}</div></div>
+      <div style="position:relative;width:100%;max-width:260px">
+        <div class="table"><div class="zone table-mark" id="tableMark"><span class="zone-label" style="position:relative;top:22px">${L(sc.L.mark)}</span></div></div>
+        <div class="cloth2" id="cloth2"></div>
+      </div>
+      <button class="btn ghost" id="coverBtn2" disabled>${L(sc.L.cover2)}</button>
+    </div>`;
+    const ch=$('challahFinal'), mark=$('tableMark'), btn2=$('coverBtn2');
+    makeDraggable(ch,[mark],{consume:false,onDrop:(ok)=>{ if(ok) btn2.disabled=false; }});
+    btn2.addEventListener('click', function(){
+      this.disabled=true;
+      $('cloth2').classList.add('covered');
+      setTimeout(done,600);
+    });
+  }
+}
+];
+
+/* ---------------- engine ---------------- */
+const TOTAL_TIME = 240;
+let idx=0, left=TOTAL_TIME, tick=null, timeUp=false, lastWon=null, gameActive=false;
+
+function fmt(sec){ const m=Math.floor(sec/60), s=sec%60; return m+':'+String(s).padStart(2,'0'); }
+function paintClock(){
+  $('clock').textContent = fmt(Math.max(0,left));
+  const pct = Math.max(0, left/TOTAL_TIME)*100;
+  $('wax').style.height = pct+'%';
+  $('flame').style.bottom = 'calc('+(pct*0.88)+'px + 6px)';
+  $('candle').classList.toggle('hurry', left<=30);
+}
+function show(id){ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on')); $(id).classList.add('on'); }
+function buildDots(){ $('dots').innerHTML = SCENES.map((_,k)=>`<span class="dot" data-k="${k}"></span>`).join(''); }
+function say(text, good){ const b=$('banner'); b.textContent=text; b.classList.toggle('good', !!good); }
+
+function renderDoneList(){
+  const list = $('done');
+  list.innerHTML='';
+  for(let k=0;k<idx;k++){
+    const sc=SCENES[k];
+    list.insertAdjacentHTML('beforeend',
+      `<li class="done-item"><span class="num">${k+1}</span><span class="txt">${L(sc.t)}<span class="say">${L(sc.say)}</span></span></li>`);
+  }
+  $('empty').style.display = idx===0 ? '' : 'none';
+}
+function renderStaticText(){
+  $('txt-eyebrow').textContent = L(G.eyebrow);
+  $('txt-title').textContent = L(G.title);
+  $('txt-sub').textContent = L(G.sub);
+  $('txt-p1').textContent = L(G.p1);
+  $('txt-tip').textContent = L(G.tip);
+  $('btn-start').textContent = L(G.startBtn);
+  $('btn-again').textContent = L(G.againBtn);
+  $('txt-h2').textContent = L(G.sub);
+  $('txt-doneHeading').textContent = L(G.doneHeading);
+  $('empty').textContent = L(G.emptyMsg);
+  const nb = NIKUD ? L(G.nikudOff) : L(G.nikudOn);
+  $('nikudBtn1').textContent = '🔤 ' + nb;
+  $('nikudBtn2').textContent = '🔤 ' + nb;
+  $('nikudBtn1').classList.toggle('on', NIKUD);
+  $('nikudBtn2').classList.toggle('on', NIKUD);
+  $('count-meta').textContent = idx + ' ' + L(G.countSuffix);
+  renderDoneList();
+}
+
+function loadScene(){
+  const sc = SCENES[idx];
+  $('stage-title').textContent = L(sc.t);
+  say(L(sc.instr), false);
+  const stage = $('stage'); stage.innerHTML='';
+  sc.build(stage, onSceneDone, sc);
+}
+function onSceneDone(){
+  const sc = SCENES[idx];
+  say(L(sc.say), true);
+  idx++;
+  $('count-meta').textContent = idx + ' ' + L(G.countSuffix);
+  renderDoneList();
+  const dotEls = document.querySelectorAll('.dot');
+  if(dotEls[idx-1]) dotEls[idx-1].classList.add('done');
+  if(idx>=SCENES.length){ finish(true); return; }
+  setTimeout(loadScene, 900);
+}
+function finish(won){
+  clearInterval(tick);
+  gameActive=false;
+  lastWon = {won, timeUp, idx, left};
+  renderEnding();
+  show('screen-end');
+}
+function renderEnding(){
+  if(!lastWon) return;
+  const {won, timeUp, idx, left} = lastWon;
+  if(won && !timeUp){
+    $('end-title').textContent = L(G.wonTitle);
+    $('end-score').textContent = L(G.wonScorePre) + fmt(left) + L(G.wonScorePost);
+    $('end-text').textContent = L(G.wonText);
+  } else if(won && timeUp){
+    $('end-title').textContent = L(G.lateTitle);
+    $('end-score').textContent = L(G.lateScoreDone);
+    $('end-text').textContent = L(G.lateText);
+  } else {
+    $('end-title').textContent = L(G.lateTitle);
+    $('end-score').textContent = idx + ' ' + L(G.countSuffix);
+    $('end-text').textContent = L(G.lateText);
+  }
+}
+function start(){
+  idx=0; left=TOTAL_TIME; timeUp=false; gameActive=true; lastWon=null;
+  buildDots(); paintClock();
+  renderStaticText();
+  loadScene();
+  show('screen-game');
+  clearInterval(tick);
+  tick=setInterval(()=>{
+    left--; paintClock();
+    if(left<=0){ timeUp=true; left=0; paintClock(); clearInterval(tick); }
+  },1000);
+}
+function toggleNikud(){
+  NIKUD = !NIKUD;
+  renderStaticText();
+  if(gameActive){ loadScene(); }
+  if(lastWon){ renderEnding(); }
+}
+$('btn-start').addEventListener('click', start);
+$('btn-again').addEventListener('click', start);
+$('nikudBtn1').addEventListener('click', toggleNikud);
+$('nikudBtn2').addEventListener('click', toggleNikud);
+
+renderStaticText();
+
+(function drawBraid(){
+  const g=$('braidsvg'); let s='';
+  for(let k=0;k<7;k++){
+    const x=32+k*33, rot=k%2?-22:22;
+    s+=`<ellipse cx="${x}" cy="55" rx="26" ry="19" fill="url(#g)" stroke="#8A4C15" stroke-width="1.5" transform="rotate(${rot} ${x} 55)"/>`;
+  }
+  for(let k=0;k<26;k++){
+    const x=24+Math.random()*212, y=40+Math.random()*28;
+    s+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="1.7" fill="#FBF0D2" opacity=".9"/>`;
+  }
+  g.innerHTML=s;
+})();
+</script>
+</body>
+</html>
