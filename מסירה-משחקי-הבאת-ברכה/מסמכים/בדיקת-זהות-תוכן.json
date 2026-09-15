@@ -166,5 +166,19 @@
     "collection": "WEEKS",
     "identical": true,
     "sha256": "287daba0f8385b7116820a4633703e67e67a8a9af28a17c12a72ede723b637ab"
+  },
+  {
+    "part": "g",
+    "collection": "CONTENT",
+    "identical": true,
+    "source": "Original content document",
+    "sha256": "03a8815a8c82b2e89bf9dbb54552c32b898213d239774cc374a998e0665c8a43"
+  },
+  {
+    "part": "h",
+    "collection": "BLESSINGS",
+    "identical": true,
+    "source": "Original content document",
+    "sha256": "fc5334cf88e4a26aed6a6f61f027b4487618e21b3d842f4954572ef35733d7b5"
   }
 ]

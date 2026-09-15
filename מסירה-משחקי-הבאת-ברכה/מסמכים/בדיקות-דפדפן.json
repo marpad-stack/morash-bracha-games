@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-15",
+  "browser": "Codex in-app browser (Chromium)",
+  "responsive": {
+    "width_320_all_ten_no_horizontal_overflow": true,
+    "width_390_reviewed": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "g",
+      "h",
+      "i",
+      "j"
+    ],
+    "visible_broken_images": 0,
+    "fixed_during_review": [
+      "Game G narrow-screen route selector overflow",
+      "Game I hero padding",
+      "Game D duplicate reading button"
+    ]
+  },
+  "interactions": {
+    "a": [
+      "Opened games from the pointed landing page",
+      "Memory: flipped cards and closed during pending callback; no stale panel"
+    ],
+    "b": [
+      "Opened additional reader beside original image",
+      "Navigated to page 3",
+      "Toggled pointed/plain text and verified visible output"
+    ],
+    "c": [
+      "Completed all three rounds with optional practice sequence",
+      "Original riddle opened",
+      "Correct answer added 100 points and the letter ו",
+      "Reload preserved total 200 and two letters"
+    ],
+    "d": [
+      "Resumed saved city",
+      "Chose a building and original mitzvah mission",
+      "Read timed original text; completion built synagogue and added 4 points"
+    ],
+    "e": [
+      "Started hands-on route",
+      "Completed four-tap alternative outside play area",
+      "Advanced from station 1 to station 2"
+    ],
+    "f": [
+      "Resumed saved stage 3",
+      "Kneaded with keyboard to 100%",
+      "Completed proofing, keyboard drag, blessing action, cutting, braiding, brushing and seeds",
+      "Keyboard tray placement, oven baking and final table placement",
+      "Ending showed 10 stages complete and 500 chef points"
+    ],
+    "g": [
+      "Opened saved evidence",
+      "Toggled full testimony pointed/plain and back",
+      "Preserved 500-point solved investigation"
+    ],
+    "h": [
+      "Pointed blessing rendered on canvas",
+      "Downloaded and visually opened PNG at 1000x1250; nikud present"
+    ],
+    "i": [
+      "Checked saved map and backup controls visually",
+      "Reviewed new narrow-screen layout"
+    ],
+    "j": [
+      "Checked existing saved card and navigation",
+      "Reviewed adult cover artwork",
+      "Verified fresh first-use mood screen with new photographic cover on isolated localhost origin"
+    ]
+  },
+  "cultural_visual_review": {
+    "original_book_pages": 40,
+    "original_coloring_pages": 15,
+    "new_cover_images": 10,
+    "new_cover_people": 0,
+    "new_cover_animals": 0,
+    "foreign_religious_or_political_symbols_seen": 0,
+    "corrections": [
+      "Discarded initial nursery cover with animal plush before integration",
+      "Removed ambiguous distant village towers from E cover",
+      "Made boy tzitzit visible above trousers",
+      "Neutral display replacement for oil-lamp and flag emoji"
+    ]
+  },
+  "limits": [
+    "Local desktop browser and responsive viewport checks, not physical iPhone/Android devices",
+    "No live-site integration performed",
+    "The new book transcription and nikud should receive an editorial proofread before publication"
+  ]
+}

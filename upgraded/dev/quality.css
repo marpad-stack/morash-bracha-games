@@ -1,0 +1,111 @@
+/* Shared interaction language; each game keeps its own visual world. */
+.reading-controls{display:flex;align-items:center;justify-content:flex-end;gap:6px;direction:rtl;flex-wrap:wrap;margin:8px 0;position:relative;z-index:4;font:700 13px/1.4 Heebo,Arial,sans-serif}
+.reading-controls button,.legacy-reading{min-height:42px;min-width:44px;border:1px solid #bdd3c6;border-radius:13px;padding:8px 12px;background:#fffcf4;color:#31544c;box-shadow:0 3px 0 #35554812;font:inherit;cursor:pointer}
+.reading-controls button[aria-pressed=true],.legacy-reading[aria-pressed=true]{background:#1b6965;color:#fff9ec;border-color:#1b6965}
+.reading-controls button:hover{filter:brightness(1.07)}.reading-controls button:active{transform:translateY(2px)}
+.compact-reading{margin:0 0 10px;gap:5px}.compact-reading button{padding:6px 10px;min-height:38px;font-size:12px}
+.dialog-top>.compact-reading{margin:0 auto 0 10px;order:2}.dialog-top>.close{order:3}
+.ptop>.compact-reading{margin:0}.ptop>.compact-reading button span{display:none}
+.reading-pointed .riddle,.reading-pointed .quote,.reading-pointed .challenge-label,.reading-pointed .instruction,.reading-pointed .how,.reading-pointed .cardtxt{line-height:1.95}
+.reading-pointed h1{line-height:1.35!important;letter-spacing:0!important}
+.reading-large .riddle,.reading-large .quote,.reading-large .story,.reading-large .how,.reading-large .cardtxt,.reading-large .instruction,.reading-large #askText,.reading-large #bubble-text{font-size:clamp(21px,2.4vw,28px)!important;line-height:2!important}
+.reading-large .choice-grid button,.reading-large .decision button{font-size:20px}
+.game-cover{display:block;object-fit:cover;width:100%;height:auto;aspect-ratio:3/2;border-radius:26px;box-shadow:0 18px 45px #244c3920;pointer-events:none}
+.game-banner{position:relative;overflow:hidden;border-radius:26px;margin:18px auto 24px;max-width:980px;border:6px solid #fffdf6;box-shadow:0 12px 45px #233d3217}
+.game-banner .game-cover{border-radius:19px;max-height:280px;object-position:center;box-shadow:none}
+body[data-morash-part=a] .hero{display:grid!important;grid-template-columns:1.05fr 1fr;gap:30px;text-align:right;align-items:center;max-width:1100px;margin:auto}
+body[data-morash-part=a] .hero>.quality-art{grid-column:2;grid-row:1/8}
+body[data-morash-part=a] .gcard{border:1px solid #ffffff90;position:relative;isolation:isolate;overflow:hidden;box-shadow:0 8px 0 #426a4916,0 20px 40px #33573c12}
+body[data-morash-part=a] .gcard:before{content:'';position:absolute;width:180px;height:180px;border:20px solid #ffffff12;border-radius:50%;top:-65px;left:-70px;z-index:-1}
+body[data-morash-part=a] .g1{background:linear-gradient(145deg,#307f91,#354e8b)}
+body[data-morash-part=a] .g2{background:linear-gradient(145deg,#397957,#79974f)}
+body[data-morash-part=a] .g3{background:linear-gradient(145deg,#ce7662,#c09353)}
+body[data-morash-part=a] .g4{background:linear-gradient(145deg,#77649d,#416e8a)}
+body[data-morash-part=a] .gcard p{font-size:15px;line-height:1.85}
+body[data-morash-part=b] #book{background-image:linear-gradient(#f3edf9db,#ece6f2ec),var(--game-art);background-position:center;background-size:cover}
+body[data-morash-part=b] #app{padding-top:0}body[data-morash-part=b] #readingToolbar{margin:0;display:flex;padding:6px 14px;background:#fffaf0;border-bottom:1px solid #e0d8c6;flex-shrink:0}
+body[data-morash-part=b] #sheet{padding-top:20px}body[data-morash-part=b] #sheet>.reading-controls{justify-content:flex-start;padding-right:42px}
+body[data-morash-part=b] .controlbar{margin:0;max-width:none;border:0;border-radius:0;padding:6px 10px;font-size:12px;gap:6px;flex-shrink:0}
+body[data-morash-part=b] .controlbar select{padding:6px 9px;min-height:36px}body[data-morash-part=b] .controlbar .btn{min-height:36px;font-size:12px}
+body[data-morash-part=b] #games{background:linear-gradient(#ede6f5,#e4dcec)}body[data-morash-part=b] #games:before{display:none}
+body[data-morash-part=b] .gbtn{background:#fff9f1;border:1px solid #ddd1e4;min-width:103px}
+body[data-morash-part=b] .gbtn .ico{background:#e6deed}
+.book-reading-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;margin:24px 0}
+.book-reading-layout img{width:100%;border-radius:18px;border:1px solid #dfd4bb;position:sticky;top:0}
+.book-reading-text{white-space:pre-line;font:500 22px/2 Heebo,Arial,sans-serif;color:#294a47}
+.book-reading-nav{display:flex;justify-content:space-between;align-items:center;gap:8px;position:sticky;bottom:-28px;background:#fff9ed;padding:12px 0;border-top:1px solid #ded6c3}
+#bookReaderDialog{width:1050px;max-width:calc(100% - 24px)}
+.reading-large .book-reading-text{font-size:27px;line-height:2.1}
+body[data-morash-part=c] .house{background-image:var(--game-art);background-size:cover;background-position:center;aspect-ratio:1.3;border:7px solid #fffcf2}
+body[data-morash-part=c] .house>svg{visibility:hidden}
+body[data-morash-part=c] .hotspot{background:#fff9e8;border-color:#fff;box-shadow:0 6px 0 #72512766,0 0 0 7px #fff8}
+body[data-morash-part=c] .hotspot:hover{box-shadow:0 7px 0 #72512766,0 0 0 10px #f7d16b99}
+body[data-morash-part=c] .maplist button{min-height:44px;line-height:1.65;font-size:14px}
+body[data-morash-part=c] .subhero{margin:0 0 12px}body[data-morash-part=c] .hero{gap:30px;padding-top:5px}
+body[data-morash-part=c] #readingToolbar{margin:0 0 6px}body[data-morash-part=c] #nikud{display:none}
+body[data-morash-part=c] .arena{background:radial-gradient(circle at 15% 20%,#fff9d888,transparent 30%),linear-gradient(145deg,#d7ebdd,#a8d0c7)}
+body[data-morash-part=c] .arena:before{content:'✦';position:absolute;bottom:-70px;right:-25px;font-size:230px;line-height:1;color:#fff4;transform:rotate(15deg);pointer-events:none}
+.stage-progress{display:flex;align-items:center;gap:12px;direction:ltr;color:#587565;font-weight:800}.stage-progress .progress{flex:1}.stage-progress>span{min-width:55px;text-align:center;font-size:16px}.practice-pattern{font-size:27px;line-height:1.8;text-align:center;min-height:32px;padding:8px;direction:rtl}
+body[data-morash-part=c] .target{z-index:1}.target:active{scale:.85}
+body[data-morash-part=c] .cards button{background:linear-gradient(145deg,#327e87,#21545f);border:2px solid #ffffff55}
+body[data-morash-part=c] .cards button.up{background:#f6d477}
+body[data-morash-part=c] .cards button.matched{background:#cae6d9;color:#235e51;opacity:1}
+body[data-morash-part=d] #setup>.game-banner{margin-top:6px}body[data-morash-part=d] #setup>.game-banner .game-cover{max-height:240px}
+body[data-morash-part=d] .d-build-choice{transition:transform .2s,background .2s;border-bottom-width:5px}
+body[data-morash-part=d] .boardwrap{border-radius:30px}body[data-morash-part=d] #cardSheet>.reading-controls{justify-content:flex-start}
+body[data-morash-part=e] .sbox{max-width:740px}body[data-morash-part=e] .sbox>.game-banner{margin:12px 0 20px;border-width:4px}
+body[data-morash-part=e] .sbox>.game-banner .game-cover{max-height:230px}
+body[data-morash-part=e] #readingToolbar{padding:4px 14px;margin:0;background:#fffaf0;flex-shrink:0}
+body[data-morash-part=e] .niqbtn{height:auto;min-height:38px;white-space:normal}
+body[data-morash-part=f] .opening>.game-banner{max-width:680px;border-color:#5d604c;margin-bottom:25px}
+body[data-morash-part=f] .opening>.game-banner .game-cover{max-height:270px}
+body[data-morash-part=f] #readingToolbar{max-width:980px;margin:5px auto;padding:0 14px}
+body[data-morash-part=f] .reading-controls button{color:#4c3d2c;background:#fff4d8;border-color:#d2b36c}
+body[data-morash-part=f] .reading-controls button[aria-pressed=true]{background:#edc06d;color:#352c1f}
+body[data-morash-part=g] .folder-art{display:block;background:none;min-height:0}
+body[data-morash-part=g] .folder-art>.folder{display:none}body[data-morash-part=g] .folder-art .game-cover{transform:rotate(-3deg);border:7px solid #fff9ea;box-shadow:10px 14px 0 #d8c49e}
+body[data-morash-part=g] .scene{background-image:var(--game-art);background-position:center;background-size:cover;aspect-ratio:1.7}
+body[data-morash-part=g] .scene>svg{visibility:hidden}
+body[data-morash-part=g] .clue{background:#fbf2d53b;border-radius:50%;text-shadow:0 2px 4px #2b1f16;min-width:44px;min-height:44px}
+body[data-morash-part=g] .scene.guided .clue{background:#fff8dcbb}
+body[data-morash-part=g] .clue.found{opacity:.65}.clue:hover{scale:1.12}
+body[data-morash-part=g] .board{background-image:radial-gradient(#88673d22 .9px,transparent 1px);background-size:5px 5px}
+body[data-morash-part=h] .studio-header{padding:28px;border:1px solid #e6d5c7;background:#fff9ef;border-radius:28px;position:relative;overflow:hidden}
+body[data-morash-part=h] .studio-header:after{content:'';position:absolute;width:210px;inset:0 0 0 auto;background:var(--game-art) center/cover;opacity:.16;pointer-events:none}
+body[data-morash-part=h] .studio-header>*{position:relative;z-index:1}
+body[data-morash-part=h] .canvas-wrap{background:radial-gradient(#d9bcad60 1px,transparent 1px),#f1e3d6;background-size:17px 17px;border:1px solid #e0cfc0;border-radius:28px}
+body[data-morash-part=h] .tool-section{padding-bottom:22px;margin-bottom:22px}.sticker-list button{min-height:47px;transition:transform .15s}.sticker-list button:hover{transform:rotate(-8deg) scale(1.12)}
+body[data-morash-part=i] .hero{display:block}body[data-morash-part=i] .heroHead{gap:18px}body[data-morash-part=i] .hero{background-image:linear-gradient(90deg,#fffdf7f2,#fffdf7d9),var(--game-art);background-size:cover;background-position:center}
+body[data-morash-part=i].night .hero{background-image:linear-gradient(90deg,#1b242ce8,#1b242ce8),var(--game-art)}
+body[data-morash-part=j] .brand{border-bottom:1px solid #c8bcb340}body[data-morash-part=j] .intro-art{border:5px solid #fffaf2;border-radius:28px;overflow:hidden;margin:20px 0}
+body[data-morash-part=j] .intro-art img{max-height:210px;box-shadow:none;border-radius:22px}
+body[data-morash-part=j] .card{box-shadow:0 14px 40px #5745380c}.quality-credit{font-size:12px;text-align:center;color:#64766f;line-height:1.8;padding:20px}
+@media(max-width:700px){
+  .book-reading-layout{grid-template-columns:1fr;gap:16px}.book-reading-layout img{width:170px;position:static;margin:auto}.book-reading-text{font-size:22px}.book-reading-nav{bottom:-18px}.book-reading-nav .btn{font-size:12px;padding:8px 10px}#bookReaderCount{font-size:12px;white-space:nowrap}
+  body[data-morash-part=a] .hero{display:flex!important;flex-direction:column;gap:14px;text-align:center}
+  body[data-morash-part=a] .hero>.quality-art{width:100%;max-width:480px;order:-1}.game-cover{border-radius:20px}
+  body[data-morash-part=c] .house{aspect-ratio:1.2}.reading-controls button{font-size:12px;padding:8px 10px}
+  body[data-morash-part=c] .hero{gap:18px}body[data-morash-part=c] .house{margin:0}.subhero .stat{padding:8px 11px}
+  body[data-morash-part=c] .subhero .toolbar{gap:5px}.game-banner .game-cover{max-height:200px!important}
+  body[data-morash-part=g] .folder-art{display:block;max-width:420px;margin:10px auto 15px}
+  body[data-morash-part=g] .scene{aspect-ratio:1.3}body[data-morash-part=h] .studio-header{padding:20px}
+  body[data-morash-part=b] header{flex-wrap:wrap;gap:6px;padding:8px 10px}body[data-morash-part=b] header h1{font-size:16px}
+  body[data-morash-part=b] #readingToolbar{padding:4px 9px}body[data-morash-part=b] #games{padding:10px 8px}
+  body[data-morash-part=b] #games .lbl{font-size:16px;margin-bottom:6px}body[data-morash-part=b] .gbtn{padding:10px;min-width:92px}
+  body[data-morash-part=b] #book{min-height:160px}body[data-morash-part=b] .controlbar{gap:4px}
+  body[data-morash-part=b] #bookBookmark{font-size:11px}.dialog-top{flex-wrap:wrap;gap:8px}
+  .dialog-top h2{flex:1}.dialog-top>.reading-controls{order:4;flex-basis:100%;justify-content:flex-start;margin:0}
+  body[data-morash-part=e] #readingToolbar{padding:3px 10px}body[data-morash-part=e] .sbox{padding:24px 18px}
+}
+@media print{.reading-controls,.game-banner,.quality-art,.quality-credit,.intro-art{display:none!important}}
+
+body[data-morash-part=a] .topbar>.nk{display:none}
+body[data-morash-part=f] #nikudBtn1,body[data-morash-part=f] #nikudBtn2{display:none}
+body[data-morash-part=d] #nikBtn{display:none}
+body[data-morash-part=i] .hero{padding:22px}
+body[data-morash-part=i] .heroHead{flex-wrap:wrap;gap:10px}
+body[data-morash-part=i] .heroHead .tools{flex-wrap:wrap}
+body[data-morash-part=g] .hero>div{min-width:0}
+body[data-morash-part=g] .toolbar .chip{max-width:100%;flex-wrap:wrap}
+body[data-morash-part=g] #level{min-width:0;max-width:100%;font-size:14px}
+@media(max-width:700px){body[data-morash-part=g] .hero{grid-template-columns:minmax(0,1fr)}body[data-morash-part=g] .folder-art{width:92%}}

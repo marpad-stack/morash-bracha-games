@@ -33,7 +33,7 @@ def main():
     dirty = git('diff', '--cached', '--quiet', required=False).returncode
     if dirty:
         git('commit', '--quiet', '-m',
-            'Back up Bracha games, original content and delivery package')
+            'Polish all ten games, add nikud and culturally appropriate website artwork')
     local_sha = git('rev-parse', 'HEAD').stdout.strip()
     print('Local backup committed:', local_sha[:12], flush=True)
     print('Tracked files:', len(git('ls-files', '-z').stdout.split('\0')) - 1,

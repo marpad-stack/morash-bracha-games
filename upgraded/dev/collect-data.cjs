@@ -16,4 +16,12 @@ const plans=[
 ];
 let results=[],checks=[];
 for(const [id,title,src,dest,names]of plans){const source=src?read(path.join(out,src)):null,final=read(path.join(out,dest)),data={};for(const name of names){const v=value(final,name);data[name]=v;if(source){const original=value(source,name),a=JSON.stringify(original),b=JSON.stringify(v);if(a!==b)throw Error('CONTENT CHANGED: '+id+' '+name);checks.push({part:id,collection:name,identical:true,sha256:crypto.createHash('sha256').update(a).digest('hex')})}}results.push({id,title,file:dest,data})}
+const blocks=JSON.parse(read(path.join(out,'source-review/doc-content.json')));
+const g=results.find(x=>x.id==='g').data.CONTENT,h=results.find(x=>x.id==='h').data.BLESSINGS;
+if(blocks[58].p!=='תעלומה קטנה:'+g.story)throw Error('Story differs from the source document');
+if(g.witnesses.length!==blocks[59].table.length-1)throw Error('Witness count changed');
+g.witnesses.forEach((w,i)=>{const r=blocks[59].table[i+1];if(w.name!==r[1]||w.text!==r[2]||w.true!==(r[3].trim()==='אמיתי'))throw Error('Witness differs from source row '+i)});
+for(const key of ['intro','win','hint'])if(!blocks[60].p.includes(g[key]))throw Error('Source prose missing: '+key);
+if(JSON.stringify(h)!==JSON.stringify(blocks[66].table.slice(1).map(r=>r[1])))throw Error('Blessings differ from source');
+for(const [part,collection,v]of [['g','CONTENT',g],['h','BLESSINGS',h]])checks.push({part,collection,identical:true,source:'Original content document',sha256:crypto.createHash('sha256').update(JSON.stringify(v)).digest('hex')});
 fs.writeFileSync(path.join(__dirname,'content-data.json'),JSON.stringify(results,null,2));fs.writeFileSync(path.join(__dirname,'content-checks.json'),JSON.stringify(checks,null,2));console.log('Content locked:',checks.length,'identical collections.');

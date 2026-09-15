@@ -130,3 +130,4 @@ manifest={str(p.relative_to(FINAL)):hashlib.sha256(p.read_bytes()).hexdigest() f
 (DOCS/'manifest-sha256.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
 print('Packaged:',FINAL)
 print('Files:',len(manifest),'Content comparisons:',len(checks))
+exec((DEV/'quality-package.py').read_text(encoding='utf-8'))

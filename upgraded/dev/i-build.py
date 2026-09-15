@@ -20,7 +20,7 @@ css=r'''.controlbar{justify-content:flex-start;font-size:13px}.controlbar .btn{f
 upgrade(s,'i-first-steps/index.html',addon,css)
 # Restrict cache management to this module. Never remove caches belonging to the host site.
 write('i-first-steps/sw.js',r'''
-const CACHE='morash-first-steps-v2';
+const CACHE='morash-first-steps-v3';
 const ASSETS=['./','./index.html','./manifest.json','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>Promise.allSettled(ASSETS.map(url=>cache.add(url)))));self.skipWaiting()});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('morash-first-steps-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});

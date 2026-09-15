@@ -21,4 +21,6 @@ window.addEventListener('pagehide',()=>{if(gameActive)fSave()});
 '''
 css=r''':root{--ink:#f7eedd;color-scheme:dark}body{background:radial-gradient(100% 80% at 50% 0,#4a4536,transparent 75%),#292a25;color:#f7eedd}.panel,.opening{background:#393c32;border-color:#f2e4bc30;box-shadow:0 14px 36px #0002}.controlbar{background:#fff6df;color:#514531}.controlbar .btn,.controlbar select{color:#514531}.btn{background:linear-gradient(#edc15e,#d4953f);color:#392d1d;border:0}.btn.ghost{background:transparent;color:#f7eedd}.banner{color:#f2e4bc}#stage{background:linear-gradient(#2d3028,#343a2b)!important}.topbar{background:#ffffff07}.nikud-toggle{color:#edc675}.panel h3{color:#efcf82}.eyebrow{color:#efcf82}.controlbar{font-size:14px}.controlbar select{font-size:13px}.stage{border-radius:26px!important}.done-item{border-radius:18px!important}#clock{font-size:23px!important;white-space:nowrap}.counter,.timer{border-radius:18px!important}.btn{box-shadow:0 4px 0 #8e644214}.hero{display:block!important}#stage{background:radial-gradient(ellipse at bottom,#f5ddab50,transparent 70%)}
 '''
+exec((DEV/'f-access.py').read_text(encoding='utf-8'))
+css+=' #stage [role=button]:focus-visible{outline:4px solid #ffd77f;outline-offset:5px} '
 upgrade(s,'f-kitchen.html',addon,css)

@@ -64,4 +64,7 @@ for module in ['a','b','d','e','f','i','j']:
     patch=DEV/(module+'-build.py')
     if patch.exists():exec(compile(patch.read_text(encoding='utf-8'),str(patch),'exec'))
 
+quality=DEV/'quality.py'
+if quality.exists():exec(compile(quality.read_text(encoding='utf-8'),str(quality),'exec'))
+
 print('Built:',', '.join(p.name for p in OUT.glob('*.html')))

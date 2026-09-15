@@ -1,4 +1,7 @@
 s=original('masa-hamitzvot*html')
+# Draw tzitzit over the trousers so the existing modest character details remain visible.
+s=s.replace('<path d="M21 49v5M25 49v5M35 49v5M39 49v5" stroke="#fff" stroke-width="1.4"/>','')
+s=s.replace('<ellipse cx="24" cy="77"', '<path d="M20 48l-1 10m3-10v11m16-11 1 10m-3-10v11" stroke="#fff9ec" stroke-width="1.5" fill="none" stroke-linecap="round"/><ellipse cx="24" cy="77"')
 s=replace(s,'function nextTurn(){G.turn=(G.turn+1)%G.players.length;busy=false;renderGame();checkWin();}', 'function nextTurn(){G.turn=(G.turn+1)%G.players.length;busy=false;dSave();renderGame();checkWin();}')
 s=replace(s,'buildBoard();renderGame();\n};','buildBoard();renderGame();dSave();\n};')
 s=replace(s,'function cardMitzva(p){','function cardMitzva(p,chosen){')
