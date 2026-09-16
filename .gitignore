@@ -6,6 +6,7 @@ __pycache__/
 *.log
 Thumbs.db
 .DS_Store
+upgraded/dev/review-evidence/
 
 # Local credentials must never be part of project backups
 .env
@@ -14,3 +15,7 @@ Thumbs.db
 *.pem
 *.key
 *.pfx
+
+# Separate Sites source repository and local publication artifacts
+review-service/
+review-service.tar.gz

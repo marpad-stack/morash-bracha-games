@@ -862,7 +862,7 @@ function memory(pairs){aEpoch++;
     ids.push(id);
   }
   const deck=[...ids,...ids].sort(()=>Math.random()-.5);
-  const cols=pairs<=6?3:4;
+  const cols=4;
   $('#gBody').innerHTML='<div class="howto">הופכים שני קלפים. אם הציורים זהים — הזוג נשאר פתוח.</div>'+
     '<div class="row" style="margin:0 0 4px">'+[4,6,8,12].map(n=>
       '<button class="btn '+(n===pairs?'btn-b':'btn-s')+'" data-mem="'+n+'">'+n+' זוגות</button>').join('')+'</div>'+
@@ -1159,6 +1159,290 @@ window.PLAY_READING_DATA={"id": "a", "pairs": [["התינוק החדש הגיע!
   for(const selector of cfg.legacy||[]){document.querySelectorAll(selector).forEach(b=>{b.dataset.readingToggle='';b.dataset.readingSkip='';b.setAttribute('aria-label','ניקוד אותיות');b.textContent='אָ ניקוד';b.classList.add('legacy-reading')})}
   document.addEventListener('click',e=>{const b=e.target.closest('[data-reading-toggle],[data-reading-large]');if(!b)return;e.preventDefault();e.stopImmediatePropagation();if(b.hasAttribute('data-reading-large')){large=!large;PlayUI.save('morash-reading-large',large);document.body.classList.toggle('reading-large',large);paint()}else set(!enabled)},true);
   document.body.classList.toggle('reading-large',large);set(enabled);
+})();
+</script><style>/* Final review: keep each game's character, simplify the route to playing. */
+.review-intro{color:#315a55;max-width:760px;margin:12px auto 20px;line-height:1.8;text-align:center}
+.review-intro h1{font-size:clamp(26px,4vw,38px);margin:0 0 8px;line-height:1.3}
+.review-intro p{margin:0;font-size:15px}
+.review-help{background:#fffaf0;color:#315a55;border:1px solid #d4dfd0;border-radius:16px;padding:10px 14px;margin:12px 0;font-size:14px;line-height:1.75}
+.review-help summary{cursor:pointer;font-weight:700;min-height:28px}.review-help p{margin:8px 0 0}
+.review-exit{display:block;margin:14px auto;min-height:44px}
+.review-tips{color:#586b63;font-size:13px;text-align:center;line-height:1.7;margin:8px 0}
+.review-tips{grid-column:1/-1}
+body[data-morash-part=f] img.logo{background:#fff8e8;padding:6px;border-radius:10px}
+body[data-morash-part=h] .canvas-wrap{position:sticky;top:16px}
+.reading-controls button{min-height:44px!important;font-size:13px}
+.ptop>.compact-reading button span{display:inline!important}
+.ptop>.compact-reading{flex-basis:100%;justify-content:flex-start}
+.ptop{flex-wrap:wrap}
+body[data-morash-part=d] .gsel .gbtn{min-width:44px;min-height:44px}
+body[data-morash-part=b] #readingToolbar,body[data-morash-part=b] .tapzone{display:none!important}
+body[data-morash-part=b] #sheet>.reading-controls{margin-left:50px;padding-right:0}
+body[data-morash-part=b] #close{z-index:10;min-width:44px;min-height:44px}
+body[data-morash-part=b] .mem{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+body[data-morash-part=b] .mem:has(.card:nth-child(7)){grid-template-columns:repeat(4,minmax(0,1fr))!important}
+body[data-morash-part=b] #games .row{scrollbar-width:thin}
+body[data-morash-part=b] #book{min-height:200px}
+body[data-morash-part=b] #app{overflow-y:auto}
+body[data-morash-part=c] .review-map-list{margin:12px 0}
+body[data-morash-part=c] .review-map-list summary{font-size:14px;cursor:pointer;min-height:44px;padding:10px 0;color:#315a55}
+body[data-morash-part=d] .iconbtn{min-width:44px;min-height:44px}
+body[data-morash-part=d] .actionrow{display:flex;flex-direction:column;gap:10px}
+body[data-morash-part=d] .review-workshop{background:#fffaf0!important;color:#315a55!important;border:1px solid #b9d0c6!important;font-size:16px!important}
+body[data-morash-part=e] #nikudBtn,body[data-morash-part=e] #nikBtn{display:none!important}
+body[data-morash-part=e] #mskip{display:none!important}
+body[data-morash-part=e] #sound,body[data-morash-part=e] #home{min-width:44px;min-height:44px}
+body[data-morash-part=e] .review-start-reading{justify-content:center;margin:12px 0 0}
+body[data-morash-part=f] .review-help{background:#fff3d8;color:#443b2b}
+body[data-morash-part=g] .folder-art{display:none!important}
+body[data-morash-part=g] .hero{grid-template-columns:1fr;max-width:900px;padding-bottom:12px}
+body[data-morash-part=g] .hero h1 br{display:none}
+body[data-morash-part=g] #count{direction:rtl;unicode-bidi:plaintext}
+body[data-morash-part=h] .swatch{width:44px;height:44px}
+body[data-morash-part=h] .sticker-editor input{min-height:44px}
+body[data-morash-part=h] .compact .btn{min-height:44px}
+body[data-morash-part=h] .review-preview-link{display:none}
+body[data-morash-part=j] #s-card>.demo{background:transparent!important;border:0;margin-top:16px}
+body[data-morash-part=j] #next{font-size:14px;min-height:44px;border:1px solid #d7cbd4;border-radius:14px;padding:10px 18px}
+@media(max-width:700px){
+ input:not([type=range]):not([type=color]):not([type=checkbox]),textarea,select{font-size:16px}
+ .review-intro{margin:8px auto 14px}.review-intro p{font-size:14px}
+ body[data-morash-part=a] .hero>.quality-art{max-width:320px}
+ body[data-morash-part=a] .quality-art .game-cover{max-height:160px;object-fit:cover}
+ body[data-morash-part=a] .hero{padding:12px 16px;gap:8px}
+ body[data-morash-part=a] .hero h1{font-size:34px;margin:10px 0}
+ body[data-morash-part=a] .hero p{margin:6px 0 16px}
+ body[data-morash-part=a] .big{min-height:130px;padding:20px 16px}
+ body[data-morash-part=a] .controlbar{margin:8px 14px;padding:9px}
+ body[data-morash-part=b] header h1{font-size:16px;margin:0}
+ body[data-morash-part=b] .controlbar .btn,body[data-morash-part=b] .controlbar select{min-height:44px}
+ body[data-morash-part=b] #games .gbtn{min-width:112px}
+ body[data-morash-part=b] #games .lbl{font-size:15px}
+ body[data-morash-part=c] .hero .house{order:0;width:100%;max-width:500px;margin:auto}
+ body[data-morash-part=c] .hero h1{font-size:34px;margin:8px 0 12px}
+ body[data-morash-part=c] .hero h1 br{display:none}
+ body[data-morash-part=c] .subhero{gap:10px;margin-bottom:12px}
+ body[data-morash-part=c] .stat{padding:8px 12px}.review-map-list .maplist{padding-bottom:8px}
+ body[data-morash-part=d] #setup>.game-banner .game-cover{max-height:150px!important}
+ body[data-morash-part=e] .sbox>.game-banner .game-cover{max-height:145px!important}
+ body[data-morash-part=e] .sbox{padding:18px 16px}
+ body[data-morash-part=f] .opening{padding:20px 16px}
+ body[data-morash-part=f] .opening>.game-banner{margin:4px auto 16px}
+ body[data-morash-part=f] .opening>.game-banner .game-cover{max-height:155px!important}
+ body[data-morash-part=f] .topbar{padding:14px;gap:8px}
+ body[data-morash-part=f] .topbar .brand{min-width:0;flex:1 1 200px}
+ body[data-morash-part=f] .top-actions{width:100%;justify-content:center}
+ body[data-morash-part=f] .candle{display:flex;align-items:center;gap:12px}
+ body[data-morash-part=f] .candle .holder,body[data-morash-part=f] .candle .dish{display:none}
+ body[data-morash-part=f] #clock{font-size:17px!important}
+ body[data-morash-part=f] .stage{min-height:260px}
+ body[data-morash-part=f] #stage{min-height:260px}
+ body[data-morash-part=g] .hero h1{font-size:34px;margin:12px 0}
+ body[data-morash-part=g] .hero{padding-top:8px}
+ body[data-morash-part=h] .canvas-wrap{position:static;padding:18px;gap:10px}
+ body[data-morash-part=h] .canvas-shadow{width:min(100%,270px);transform:none}
+ body[data-morash-part=h] .canvas-wrap .tip{display:none}
+ body[data-morash-part=h] .canvas-footer{max-width:100%;font-size:11px}
+ body[data-morash-part=h] .canvas-footer .btn{min-height:44px;padding:8px 14px}
+ body[data-morash-part=h] .studio-header{padding:16px;margin:10px 0 18px}
+ body[data-morash-part=h] .studio-header h1{font-size:30px}
+ body[data-morash-part=h] .review-preview-link{display:flex;position:sticky;top:8px;z-index:4;background:#176d69;color:white;box-shadow:0 4px 14px #284a3633;margin:0 0 20px;width:100%}
+ body[data-morash-part=h] .tools :is(button,input,select,textarea){scroll-margin-top:80px}
+ body[data-morash-part=i] #intro .game-banner .game-cover{max-height:145px!important}
+ body[data-morash-part=j] .intro-art{margin:12px 0}
+ body[data-morash-part=j] .intro-art img{max-height:150px}
+}
+@media print{.review-help,.review-exit,.review-preview-link,.review-tips{display:none!important}}
+</style><script>(() => {
+ 'use strict';
+ const part=document.body.dataset.morashPart;
+ const find=s=>document.querySelector(s);
+ function help(host,text){if(!host)return;const d=document.createElement('details');d.className='review-help';const summary=document.createElement('summary');summary.textContent='איך משחקים?';const p=document.createElement('p');p.textContent=text;d.append(summary,p);host.prepend(d);return d}
+ function intro(host,title,text){const d=document.createElement('div');d.className='review-intro';const h=document.createElement('h1'),p=document.createElement('p');h.textContent=title;p.textContent=text;d.append(h,p);host.prepend(d)}
+ function button(text,id,action){const b=document.createElement('button');b.type='button';b.className='btn review-exit';b.textContent=text;b.id=id;b.onclick=action;return b}
+ // Custom overlays retain one set of controls and return keyboard focus on closing.
+ const overlays={a:['#studio','#gpanel'],b:['#modal','#grid'],d:['#cardOv'],e:['#mini']}[part]||[];
+ for(const selector of overlays){const el=find(selector);if(!el)continue;let previous=null,opened=false;el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');el.setAttribute('aria-label','חלון פעילות');el.tabIndex=-1;
+ const active=()=>el.classList.contains('on');
+ new MutationObserver(()=>{const on=active();if(on===opened)return;opened=on;if(on){previous=document.activeElement;requestAnimationFrame(()=>{const first=[...el.querySelectorAll('button,input,select,[tabindex="0"]')].find(b=>b.getBoundingClientRect().width&&!b.disabled);(first||el).focus({preventScroll:true})})}else if(previous?.isConnected)previous.focus({preventScroll:true})}).observe(el,{attributes:true,attributeFilter:['class']});
+ el.addEventListener('keydown',e=>{if(e.key!=='Tab'||!active())return;const items=[...el.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(b=>!b.disabled&&b.getBoundingClientRect().width&&getComputedStyle(b).visibility!=='hidden');if(!items.length){e.preventDefault();el.focus();return}const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}});
+ }
+ if(part==='a'){
+  help(find('#games')||find('[data-game="memory"]')?.parentElement,'בוחרים משחק ורמה. בזיכרון הופכים זוג קלפים; בפאזל נוגעים בשני חלקים כדי להחליף ביניהם, או בוחרים במצב הזזה. סימן × מחזיר לבחירת המשחקים.');
+ }
+ if(part==='b'){
+  find('#bookRead').textContent='קריאה בטקסט · עם ניקוד';
+  find('#bookBookmark').hidden=!(Number.isInteger(savedPage)&&savedPage>0);
+  const tip=document.createElement('p');tip.className='review-tips';tip.textContent='מדפדפים בחצים או בהחלקה · מחליקים את שורת המשחקים לעוד פעילויות';find('#games').prepend(tip);
+  const baseOpen=openGame;openGame=function(id){baseOpen(id);gb.querySelectorAll('.mem .card').forEach((b,i)=>b.setAttribute('aria-label','קלף '+(i+1)));};
+ }
+ if(part==='c'){
+  find('.hero h1 br')?.replaceWith(document.createTextNode(' '));
+  const list=find('#maplist'),details=document.createElement('details');details.className='review-map-list';const summary=document.createElement('summary');summary.textContent='מעדיפים לבחור מרשימה?';list.before(details);details.append(summary,list);
+  // On a phone, the instruction precedes the illustrated choice area.
+  const house=find('.house'),hero=find('.hero'),marker=find('.review-map-list'),phone=matchMedia('(max-width:700px)');const arrangeHouse=()=>{if(phone.matches)marker.before(house);else hero.append(house)};arrangeHouse();phone.addEventListener('change',arrangeHouse);
+ }
+ if(part==='d'){
+  intro(find('#setup'),'מסע המצוות','בוחרים משתתפים וקצב. בכל תור אוספים מצוות, מתקדמים בלוח ובונים יחד עיר.');
+  const workshop=[...find('.actionrow').querySelectorAll('button')].find(b=>b.id!=='rollBtn');workshop.classList.add('review-workshop');workshop.textContent='או בוחרים משימת בנייה';
+  help(find('.actionrow'),'לחצו על ״צא לדרך״ ותפסו מצוות בלחיצה או בנגיעה. אחרי האיסוף מתקדמים בלוח ומבצעים את המשימה. אפשר גם לבחור משימת בנייה ישירות. העיר נשמרת במכשיר הזה.');
+  for(const [id,label] of [['nightBtn','מצב לילה'],['cityBtn','העיר שבנינו'],['albumBtn','אלבום המצוות']])find('#'+id)?.setAttribute('aria-label',label);
+  find('#game').append(button('שומרים וחוזרים לתפריט','cityMenu',()=>{if(busy){PlayUI.toast('מסיימים את הפעולה הנוכחית ואז חוזרים לתפריט');return}dSave();location.reload()}));
+ }
+ if(part==='e'){
+  const controls=find('#readingToolbar').cloneNode(true);controls.removeAttribute('id');controls.classList.add('review-start-reading');find('#nikBtn').before(controls);
+  // Keep cloned reading controls in sync with the same persisted setting.
+  controls.querySelectorAll('[data-reading-toggle]').forEach(b=>b.setAttribute('aria-pressed',String(PlayReading.enabled)));
+  help(find('.sbox'),'בחידות ואתגרים בוחרים את התשובה המתאימה לתחנה ואז משחקים. במסע של עשייה עוברים ישר לפעולה. בכל פעילות אפשר להשתמש גם בכפתור הלחיצות שמתחת למשחק.');
+  const close=button('חוזרים לתחנה','timeCloseActivity',()=>{if(miniDone)return;miniDone=true;clearTimeout(skipTimer);find('#mini').classList.remove('on');if(eRunMode==='hands'||misses===0)scores[turn]=Math.max(0,scores[turn]-1);if(eRunMode!=='hands'&&misses===0)streak=Math.max(0,streak-1);busy=false;renderStep()});find('#mini .mbox').append(close);
+ }
+ if(part==='f'){
+  help(find('.opening'),'בטלפון גוררים באצבע ונוגעים בפריטים; במחשב משתמשים בעכבר, או ב־Tab וב־Enter. ללישה ולהברשה אפשר ללחוץ כמה פעמים על רווח. אפשר לצאת לתפריט ולהמשיך מאותו שלב.');
+  find('#screen-game').append(button('שומרים וחוזרים לתפריט','kitchenMenu',()=>{fSave();fClear();clearInterval(tick);gameActive=false;location.reload()}));
+  const oldShow=show;show=function(id){oldShow(id);window.scrollTo({top:0,behavior:'instant'})};
+  const oldDone=renderDoneList;renderDoneList=function(){oldDone();find('#empty').textContent='כאן יופיעו השלבים שסיימתם. מתחילים באזור המשחק.'};renderDoneList();
+ }
+ if(part==='g'){
+  const baseRender=render;render=function(){baseRender();find('#count').innerHTML='<bdi>'+data.found.length+' / 4</bdi> עדויות'};render();
+  find('#begin')?.addEventListener('click',()=>find('#scene').scrollIntoView({block:'center',behavior:'smooth'}));
+  find('#body').addEventListener('click',e=>{if(e.target.id==='begin')find('#scene').scrollIntoView({block:'center',behavior:'smooth'})});
+ }
+ if(part==='h'){
+  const b=button('מגדילים את התצוגה','cardPreview',()=>{const d=document.createElement('dialog');d.setAttribute('aria-label','תצוגה מוגדלת של הכרטיס');const close=button('חזרה לעריכה','closeCardPreview',()=>d.close());render(true);const img=new Image();img.src=canvas.toDataURL('image/png');render();img.alt='הכרטיס שיצרתם';img.style.cssText='display:block;max-width:100%;max-height:68dvh;margin:auto';d.append(close,img);document.body.append(d);d.addEventListener('close',()=>d.remove());d.showModal()});b.classList.add('review-preview-link');find('.canvas-footer').append(b);
+  find('.preview-label').textContent='הכרטיס שלכם · מתעדכן בזמן העריכה';
+  find('.tools').prepend(b);b.textContent='תצוגה מוגדלת של הכרטיס';
+  for(const el of [find('#draw'),find('#move'),find('#stickers')])el.addEventListener('click',()=>{if(matchMedia('(max-width:700px)').matches)find('.canvas-wrap').scrollIntoView({block:'center',behavior:'instant'})});
+ }
+ if(part==='i'){
+  const p=document.createElement('p');p.className='review-tips';p.textContent='אפשר לדלג על פרטים ולהשלים אותם בהמשך דרך ״עריכת פרטים״.';find('#fName').closest('.field')?.before(p);
+  find('#startBtn').textContent='בואי נבנה את המפה שלי';
+ }
+ if(part==='j'){
+  const next=find('#next'),wrapper=next.closest('.demo');find('#s-card').append(wrapper);next.textContent='לבחור כרטיס נוסף להיום';
+ }
+})();
+
+/* Optional review layer. Game visitors only see this with ?review=1. */
+(()=>{
+  const portal=Boolean(document.getElementById('reviewerName'));
+  if(!portal&&new URLSearchParams(location.search).get('review')!=='1')return;
+  const API='https://bracha-games-review.marpad990579.chatgpt.site';
+  const KEY='bracha-point-review-draft-v2',PROFILE='morash-owner-review-2026-09-16';
+  let notes=[];
+  let identity;try{identity=localStorage.getItem('bracha-review-identity')}catch{}
+  if(!/^[a-f0-9]{64}$/.test(identity||'')){identity=[...crypto.getRandomValues(new Uint8Array(32))].map(n=>n.toString(16).padStart(2,'0')).join('');try{localStorage.setItem('bracha-review-identity',identity)}catch{}}
+  async function api(path,method='GET',data){const response=await fetch(API+path,{method,headers:{'Authorization':'Bearer '+identity,...(data?{'Content-Type':'application/json'}:{})},body:data?JSON.stringify(data):undefined,signal:AbortSignal.timeout(20000)});const value=await response.json();if(!response.ok)throw new Error(value.error||'השמירה לא הושלמה. נסי שוב.');return value}
+  async function sync(){const value=await api('/api/notes');notes=value.notes;refresh();return notes}
+  function keepDraft(){if(!draft)return;draft.comment=$('#comment').value;draft.reviewer=$('#name').value;try{localStorage.setItem(KEY,JSON.stringify(draft))}catch{}}
+  function errorMessage(error){return error.name==='TimeoutError'?'השרת לא השיב בזמן. הטיוטה נשמרת כאן; נסי שוב.':error.message==='Failed to fetch'?'אין חיבור לשירות. הטיוטה נשמרת כאן; נסי שוב.':error.message}
+
+  const host=document.createElement('div');host.id='bracha-review-layer';
+  host.style.cssText='position:fixed;inset:0;z-index:2147483000;pointer-events:none';
+  document.body.append(host);const root=host.attachShadow({mode:'open'});
+  root.innerHTML=`<style>
+    :host{font:16px/1.5 Arial,sans-serif;direction:rtl;color:#173f40}
+    *{box-sizing:border-box}button,input,textarea,select{font:inherit}select{min-height:44px;max-width:100%;padding:8px;border:1px solid #9ab9b0;border-radius:8px;background:white;color:#173f40}button{cursor:pointer;min-height:44px;border:1px solid #aec9c1;border-radius:12px;background:white;color:#173f40;padding:9px 14px}button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #e2a635;outline-offset:3px}
+    .bar{position:fixed;bottom:max(12px,env(safe-area-inset-bottom));left:12px;display:flex;gap:6px;align-items:center;padding:6px;background:#173f40;box-shadow:0 3px 15px #0003;border-radius:16px;pointer-events:auto;max-width:calc(100vw - 24px)}
+    .bar button{font-size:14px;font-weight:bold}.bar button.primary{background:#ffdfa3}.hint{position:fixed;top:12px;left:12px;right:12px;margin:auto;width:fit-content;max-width:calc(100vw - 24px);padding:12px 18px;background:#173f40;color:white;border-radius:14px;pointer-events:none}
+    [hidden]{display:none!important}.pin{position:fixed;width:28px;height:28px;min-height:28px;padding:0;border:2px solid white;border-radius:50%;background:#bc3e32;color:white;box-shadow:0 1px 6px #0008;pointer-events:auto;font-size:13px;font-weight:bold}.outline{position:fixed;border:3px solid #bc3e32;pointer-events:none;border-radius:5px}
+    dialog{direction:rtl;color:#173f40;pointer-events:auto;border:0;border-radius:20px;padding:24px;width:min(540px,calc(100vw - 24px));max-height:85dvh;overflow:auto;box-shadow:0 15px 70px #0005}dialog::backdrop{background:#102b2dc2}h2{font-size:24px;margin:0 0 12px}p{margin:10px 0}label{display:block;margin:14px 0 5px;font-weight:bold}input,textarea{width:100%;border:1px solid #9ab9b0;border-radius:10px;padding:10px;background:white;color:#173f40}textarea{resize:vertical;min-height:110px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.primary{background:#176d69;color:white}small{display:block;font-size:13px}.preview{position:relative;max-width:100%;margin:12px 0}.preview img{display:block;max-width:100%;max-height:200px;object-fit:contain}.target{background:#edf2eb;padding:12px;border-radius:10px;overflow-wrap:anywhere}.entry{padding:12px 0;border-top:1px solid #cad7ce;white-space:pre-wrap;overflow-wrap:anywhere}.entry button{margin:6px 4px}.notice{font-size:14px}.status{position:fixed;bottom:80px;left:12px;max-width:min(420px,calc(100vw - 24px));background:#fff7de;border:1px solid #cbbb83;padding:12px;border-radius:12px;pointer-events:auto}
+    @media(max-width:480px){dialog{padding:18px}.bar button{padding:8px 11px}}
+  </style>
+  <div class="pins"></div><div class="hint" hidden>געי בפריט שעליו תרצי להעיר. לביטול לחצי שוב על הכפתור או Esc.</div>
+  <div class="bar"><button class="primary" id="pick">＋ הוספת הערה</button><button id="all">הערות משותפות</button></div>
+  <div class="status" role="status" hidden></div>
+  <dialog id="editor" aria-labelledby="edit-title"><h2 id="edit-title">הערה על הפריט שסימנת</h2><div class="target"></div><div class="preview"></div><label for="name">שם הבודקת</label><input id="name" maxlength="100" autocomplete="name"><label for="comment">מה כדאי לתקן כאן?</label><textarea id="comment" maxlength="5000" placeholder="למשל: הכפתור קטן מדי בטלפון, או לא ברור מה צריך לעשות"></textarea><small>ההערה תישמר ברשימה המשותפת ותהיה גלויה לכל מי שקיבלה את הקישור.</small><div class="actions"><button class="primary" id="save">שמירת הערה</button><button id="cancel">ביטול</button></div></dialog>
+  <dialog id="list" aria-labelledby="list-title"><h2 id="list-title">ההערות של כולן</h2><p class="notice">כל ההערות שמורות במשותף. אפשר להגיב ולעדכן מצב טיפול. השם המוצג הוא השם שהבודקת הזינה.</p><div class="filters"><label for="gameFilter">משחק</label><select id="gameFilter"><option value="">כל המשחקים</option></select><label for="statusFilter">מצב</label><select id="statusFilter"><option value="">כל המצבים</option><option value="open">פתוח</option><option value="progress">בטיפול</option><option value="resolved">טופל</option></select></div><div class="entries"></div><div class="actions"><button class="primary" id="download">הורדת דוח עם סימונים</button><button id="share" hidden>שיתוף הדוח</button><button id="close">חזרה למשחק</button></div></dialog>`;
+  const $=selector=>root.querySelector(selector),editor=$('#editor'),list=$('#list');
+  let picking=false,draft=null,previousFocus=null,suppressUntil=0,noticeTimer;
+  const pageKey=location.pathname;
+  function profile(){try{return JSON.parse(localStorage.getItem(PROFILE))||{}}catch{return {}}}
+  function notify(text){const el=$('.status');el.textContent=text;el.hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>el.hidden=true,9000)}
+  function selectorFor(el){const parts=[];while(el&&el!==document.body){if(el.id){parts.unshift('#'+CSS.escape(el.id));break}const tag=el.localName;if(!tag)break;const siblings=[...el.parentElement.children].filter(x=>x.localName===tag);parts.unshift(tag+':nth-of-type('+(siblings.indexOf(el)+1)+')');el=el.parentElement}return parts.join(' > ')||'body'}
+  function description(el){return (el.getAttribute('aria-label')||el.getAttribute('alt')||el.getAttribute('title')||el.innerText||el.value||el.localName||'אזור במסך').trim().slice(0,350)}
+  function capture(el){
+    const media=el.matches('img,canvas')?el:null;
+    if(!media)return '';
+    try{const w=media.naturalWidth||media.width,h=media.naturalHeight||media.height;if(!w||!h)return '';const scale=Math.min(1,900/w,700/h),canvas=document.createElement('canvas');canvas.width=Math.round(w*scale);canvas.height=Math.round(h*scale);const ctx=canvas.getContext('2d');ctx.fillStyle='white';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(media,0,0,canvas.width,canvas.height);return canvas.toDataURL('image/jpeg',.7)}catch{return ''}
+  }
+  function setPicking(value){picking=value;$('.pins').hidden=value;$('.hint').hidden=!value;$('#pick').textContent=value?'ביטול הסימון':'＋ הוספת הערה';document.documentElement.style.cursor=value?'crosshair':'';if(value)notify('בחרי פריט בעכבר או במגע. אפשר גם לעבור עם Tab ולבחור עם Enter.');else $('.status').hidden=true}
+  function selectTarget(target,x,y){
+    if(!(target instanceof Element)||host.contains(target))return;
+    const el=target.closest('img,canvas,button,a,input,textarea,select,[role="button"]')||target;
+    const rect=el.getBoundingClientRect();if(!rect.width||!rect.height)return;
+    const frame=[...document.querySelectorAll('h1,h2,[role="dialog"] h3')].filter(e=>e.getBoundingClientRect().width&&e.getBoundingClientRect().height).map(e=>e.textContent.trim()).filter(Boolean).slice(-4).join(' / ');
+    draft={id:crypto.randomUUID(),page:pageKey,url:location.href,title:document.title,frame,selector:selectorFor(el),target:description(el),x:Math.max(0,Math.min(1,(x-rect.left)/rect.width)),y:Math.max(0,Math.min(1,(y-rect.top)/rect.height)),image:capture(el),viewport:innerWidth+' × '+innerHeight,device:matchMedia('(pointer:coarse)').matches?'מגע':'עכבר / מקלדת',time:new Date().toISOString()};
+    setPicking(false);openEditor();
+  }
+  function openEditor(){previousFocus=document.activeElement;$('#saveError')?.remove();$('.target').textContent=draft.title+' — '+draft.target;$('.preview').replaceChildren();if(draft.image){const img=document.createElement('img');img.src=draft.image;img.alt='הפריט שסומן';$('.preview').append(img)}$('#name').value=draft.reviewer||profile().reviewerName||'';$('#comment').value=draft.comment||'';editor.showModal();$('#comment').focus()}
+  function closeEditor(){editor.close();draft=null;previousFocus?.focus()}
+  $('#pick').onclick=()=>setPicking(!picking);
+  $('#cancel').onclick=closeEditor;editor.addEventListener('cancel',()=>{draft=null});
+  $('#save').onclick=async()=>{
+    const comment=$('#comment').value.trim(),reviewer=$('#name').value.trim();
+    if(!comment||!reviewer){const field=!reviewer?$('#name'):$('#comment');field.setCustomValidity(!reviewer?'כתבי את שמך.':'כתבי מה כדאי לתקן.');field.reportValidity();return}
+    draft.comment=comment;draft.reviewer=reviewer;keepDraft();const button=$('#save');button.disabled=true;button.textContent='שומרת…';
+    try{await api('/api/notes'+(draft.canEdit?'/'+draft.id:''),draft.canEdit?'PUT':'POST',draft);try{const p=profile();p.reviewerName=reviewer;localStorage.setItem(PROFILE,JSON.stringify(p));localStorage.removeItem(KEY)}catch{}document.dispatchEvent(new CustomEvent('bracha-note-saved',{detail:{selector:draft.selector}}));closeEditor();notify('ההערה נשמרה ברשימה המשותפת וגלויה לכולן.');await sync()}
+    catch(error){const msg=errorMessage(error);if(editor.open){let el=$('#saveError');if(!el){el=document.createElement('p');el.id='saveError';el.setAttribute('role','alert');editor.append(el)}el.textContent=msg}else notify(msg)}
+    finally{button.disabled=false;button.textContent='שמירת הערה'}
+  };
+  for(const id of ['comment','name'])$('#'+id).oninput=()=>{$('#'+id).setCustomValidity('');keepDraft()};
+  const ownEvent=event=>event.composedPath().includes(host);
+  for(const type of ['pointerdown','pointerup','click'])document.addEventListener(type,event=>{
+    if(ownEvent(event))return;
+    if(!picking){if(type==='click'&&performance.now()<suppressUntil){event.preventDefault();event.stopImmediatePropagation()}return}
+    event.preventDefault();event.stopImmediatePropagation();
+    if(type==='pointerup'){suppressUntil=performance.now()+600;selectTarget(event.target,event.clientX,event.clientY)}
+  },true);
+  document.addEventListener('keydown',event=>{if(!picking)return;if(event.key==='Escape'){event.preventDefault();setPicking(false)}else if(event.key==='Enter'&&!ownEvent(event)){event.preventDefault();event.stopImmediatePropagation();const el=document.activeElement,r=el.getBoundingClientRect();selectTarget(el,r.left+r.width/2,r.top+r.height/2)}},true);
+  function renderPins(){
+    const layer=$('.pins');layer.replaceChildren();
+    notes.forEach((n,index)=>{if(n.page!==pageKey)return;let el;try{el=document.querySelector(n.selector)}catch{return}if(!el||description(el)!==n.target)return;const r=el.getBoundingClientRect();if(!r.width||!r.height||r.bottom<0||r.top>innerHeight)return;const pin=document.createElement('button');pin.className='pin';pin.textContent=index+1;pin.title=n.comment;pin.setAttribute('aria-label','עריכת הערה '+(index+1)+': '+n.comment);pin.style.left=Math.max(0,Math.min(innerWidth-28,r.left+r.width*n.x-14))+'px';pin.style.top=Math.max(0,Math.min(innerHeight-28,r.top+r.height*n.y-14))+'px';pin.onclick=()=>showList(n.id);layer.append(pin)});
+  }
+  function refresh(){ $('#all').textContent='הערות של כולן ('+notes.length+')';renderPins();const count=document.getElementById('pointCount');if(count)count.textContent=notes.length+' הערות שמורות ברשימה המשותפת'; }
+  let selectedNote=null;
+  function renderList(){
+    const entries=$('.entries');entries.replaceChildren();const filter=$('#gameFilter'),previous=filter.value;filter.replaceChildren(new Option('כל המשחקים',''));for(const title of [...new Set(notes.map(n=>n.title))])filter.append(new Option(title,title));filter.value=previous;$('.filters').hidden=!!selectedNote;const visible=selectedNote?notes.filter(n=>n.id===selectedNote):notes.filter(n=>(!filter.value||n.title===filter.value)&&(!$('#statusFilter').value||n.status===$('#statusFilter').value));
+    if(selectedNote){const all=document.createElement('button');all.textContent='לכל ההערות';all.onclick=()=>{selectedNote=null;renderList()};entries.append(all)}
+    if(!visible.length){const p=document.createElement('p');p.textContent='עוד אין הערות. פתחי משחק וסמני פריט שעליו תרצי להעיר.';entries.append(p)}
+    for(const n of visible){
+      const entry=document.createElement('div');entry.className='entry';const heading=document.createElement('h3');heading.textContent=n.title;
+      const text=document.createElement('p');text.textContent=n.reviewer+' · '+new Date(n.created).toLocaleString('he-IL')+'\n'+n.target+'\n'+n.comment;
+      entry.append(heading,text);
+      if(n.image){const img=document.createElement('img');img.src=n.image;img.alt='הפריט שסומן';img.style.cssText='max-width:100%;max-height:180px';entry.append(img)}
+      const status=document.createElement('select');status.setAttribute('aria-label','מצב ההערה');for(const [value,title] of Object.entries({open:'פתוח',progress:'בטיפול',resolved:'טופל'})){const option=document.createElement('option');option.value=value;option.textContent=title;status.append(option)}status.value=n.status;
+      status.onchange=async()=>{const reviewer=profile().reviewerName||replyName.value.trim();if(!reviewer){status.value=n.status;replyName.reportValidity();return}status.disabled=true;try{await api('/api/notes/'+n.id,'PATCH',{status:status.value,reviewer});await sync();renderList()}catch(e){error.textContent=errorMessage(e);status.value=n.status}finally{status.disabled=false}};
+      entry.append(status);
+      if(n.canEdit){const edit=document.createElement('button');edit.textContent='עריכת ההערה שלי';edit.onclick=()=>{list.close();draft={...n};openEditor()};entry.append(edit)}
+      for(const r of n.replies||[]){const text=document.createElement('p');text.className='target';text.textContent=r.reviewer+' · '+new Date(r.created).toLocaleString('he-IL')+'\n'+r.comment;entry.append(text)}
+      const replyName=document.createElement('input');replyName.placeholder='השם שלך';replyName.setAttribute('aria-label','שם לתגובה');replyName.required=true;replyName.maxLength=100;replyName.value=profile().reviewerName||'';
+      const reply=document.createElement('textarea');reply.placeholder='תגובה להערה הזו';reply.setAttribute('aria-label','תגובה להערה');reply.maxLength=5000;reply.required=true;
+      const error=document.createElement('p');error.setAttribute('role','alert');const send=document.createElement('button');send.textContent='הוספת תגובה';let replyId=crypto.randomUUID();
+      send.onclick=async()=>{if(!replyName.reportValidity()||!reply.reportValidity())return;send.disabled=true;try{await api('/api/notes/'+n.id+'/replies','POST',{reviewer:replyName.value,comment:reply.value,replyId});try{const p=profile();p.reviewerName=replyName.value;localStorage.setItem(PROFILE,JSON.stringify(p))}catch{}await sync();renderList()}catch(e){error.textContent=errorMessage(e)}finally{send.disabled=false}};
+      entry.append(replyName,reply,send,error);entries.append(entry);
+    }
+  }
+  async function showList(id=null){setPicking(false);selectedNote=typeof id==='string'?id:null;$('.entries').textContent='טוענת את ההערות המשותפות…';if(!list.open)list.showModal();try{await sync();renderList()}catch(error){$('.entries').textContent=errorMessage(error);const retry=document.createElement('button');retry.textContent='ניסיון נוסף';retry.onclick=()=>showList(selectedNote);$('.entries').append(retry)}}
+  $('#gameFilter').onchange=renderList;$('#statusFilter').onchange=renderList;
+  $('#all').onclick=showList;$('#close').onclick=()=>list.close();
+  const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function report(){
+    const p=profile();let general='';for(const [id,value] of Object.entries(p)){if(value&&typeof value==='object'&&value.note){const title=document.querySelector('#note-'+id)?.closest('article')?.querySelector('h2')?.textContent||'חלק '+id;general+='<article><h2>'+escape(title)+'</h2><p>'+escape(value.note)+'</p></article>'}}
+    return '<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>דוח תיקונים — הבאת ברכה</title><style>body{font:17px/1.7 Arial,sans-serif;background:#f7f6ef;color:#173f40;max-width:900px;margin:30px auto;padding:20px}article{border:1px solid #c2d1c6;background:white;border-radius:16px;padding:20px;margin:20px 0;break-inside:avoid}p{white-space:pre-wrap;overflow-wrap:anywhere}figure{position:relative;width:fit-content;max-width:100%;margin:12px 0}img{display:block;max-width:100%;height:auto}.dot{position:absolute;transform:translate(-50%,-50%);background:#bd3b30;color:white;border:2px solid white;border-radius:50%;width:28px;height:28px;text-align:center;line-height:28px}small{color:#576e66}a{overflow-wrap:anywhere}</style><h1>תיקונים למשחקי הבאת ברכה</h1><p>בודקת: '+escape(p.reviewerName||notes[0]?.reviewer||'לא צוין')+'\n'+escape(new Date().toLocaleString('he-IL'))+'\nמכשיר: '+escape(p.reviewDevice||'מופיע בכל סימון')+'</p><p>'+escape(p.generalNotes||'')+'</p>'+general+notes.map((n,index)=>'<article><h2>'+ (index+1)+'. '+escape(n.title)+'</h2><p><b>'+escape(n.comment)+'</b></p><p>מצב: '+escape(({open:'פתוח',progress:'בטיפול',resolved:'טופל'})[n.status]||'פתוח')+'</p><p>הפריט שסומן: '+escape(n.target)+'\nהמסך: '+escape(n.frame)+'\nבודקת: '+escape(n.reviewer)+'\nתצוגה: '+escape(n.viewport)+' · '+escape(n.device)+'\nמיקום בפריט: '+Math.round(n.x*100)+'% משמאל, '+Math.round(n.y*100)+'% מלמעלה</p>'+(n.image&&n.image.startsWith(API+'/api/images/')?'<figure><img alt="הפריט שסומן בזמן הבדיקה" src="'+escape(n.image)+'"><span class="dot" style="left:'+Number(n.x)*100+'%;top:'+Number(n.y)*100+'%">'+(index+1)+'</span></figure>':'')+(n.replies||[]).map(r=>'<p><b>'+escape(r.reviewer)+':</b> '+escape(r.comment)+'</p>').join('')+'<small>מזהה הפריט: '+escape(n.selector)+'</small><p><a href="'+escape(/^https?:/.test(n.url)?n.url:'#')+'">פתיחת המשחק</a> — ייתכן שצריך להתקדם שוב למסך המתואר.</p></article>').join('')+'</html>';
+  }
+  function reportFile(){const name=(profile().reviewerName||'בדיקה').replace(/[^\p{L}\p{N} _-]/gu,'').slice(0,60);return new File(['\ufeff'+report()],'תיקונים-עם-סימונים-'+name+'.html',{type:'text/html;charset=utf-8'})}
+  function download(){const file=reportFile(),url=URL.createObjectURL(file),a=document.createElement('a');a.href=url;a.download=file.name;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);notify('הדוח הורד. ההערות נשארות שמורות גם ברשימה המשותפת.')}
+  $('#download').onclick=download;
+  if(navigator.canShare){$('#share').hidden=false;$('#share').onclick=async()=>{const file=reportFile();if(!navigator.canShare({files:[file]})){download();return}try{await navigator.share({files:[file],title:'דוח תיקונים למשחקים'})}catch(e){if(e.name!=='AbortError')notify('השיתוף לא הושלם. הורידי את הדוח ושלחי אותו כקובץ.')}}}
+  let pending=false;const schedule=()=>{if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;renderPins()})};
+  window.addEventListener('scroll',schedule,true);window.addEventListener('resize',schedule);
+  new MutationObserver(schedule).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['class','style','hidden']});
+  window.addEventListener('focus',()=>sync().catch(()=>{}));
+  setInterval(()=>{if(!document.hidden&&!editor.open&&!list.open)sync().catch(()=>{})},30000);
+  document.addEventListener('bracha-general-note',event=>{draft={id:crypto.randomUUID(),page:location.pathname,url:location.href,title:event.detail.title,frame:'דף הבדיקה המרכזי',selector:event.detail.selector,target:'הערה כללית',x:.5,y:.5,viewport:innerWidth+' × '+innerHeight,device:matchMedia('(pointer:coarse)').matches?'מגע':'מחשב',time:new Date().toISOString(),comment:event.detail.comment||''};openEditor()});
+  if(portal){$('.bar').hidden=true;document.getElementById('downloadPointNotes')?.addEventListener('click',download);document.getElementById('viewPointNotes')?.addEventListener('click',showList)}
+  refresh();sync().catch(error=>notify(errorMessage(error)));
+  try{const saved=JSON.parse(localStorage.getItem(KEY));if(saved&&saved.page===pageKey){draft=saved;openEditor()}}catch{}
 })();
 </script></body>
 </html>

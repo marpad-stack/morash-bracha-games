@@ -20,6 +20,7 @@ head,marker,tail=s.partition('/* games */')
 assert marker
 s=head+marker+tail.replace('setTimeout(', 'aLater(')
 s=s.replace('שלושה משחקים עם אותם ציורים','ארבעה משחקים עם אותם ציורים')
+s=replace(s,'const cols=pairs<=6?3:4;','const cols=4;')
 addon=r'''
 let aEpoch=0;function aLater(fn,ms){const token=aEpoch;return setTimeout(()=>{if(token===aEpoch&&document.getElementById('gpanel').classList.contains('on'))fn()},ms)}
 let aRoundLevel=1,aLevel=PlayUI.read('morash-art-level',1),aRecords=PlayUI.read('morash-art-records',{});
