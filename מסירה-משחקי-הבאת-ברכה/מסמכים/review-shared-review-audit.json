@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "two independent browsers",
+    "shared note and reply",
+    "status history",
+    "author-only edit",
+    "reload persistence",
+    "general note submission",
+    "canvas image storage",
+    "failed save preserves draft",
+    "automatic cloud draft recovery",
+    "offline reload recovery",
+    "offline document contains pending draft",
+    "download embeds images and replies"
+  ],
+  "notes": 3
+}

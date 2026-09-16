@@ -83,7 +83,7 @@ class TextParser(HTMLParser):
 literal_pattern=re.compile(r'''"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|`(?:\\.|[^`\\])*`''')
 supp=[]
 for game in data:
-    src=(GAMES/game['file']).read_text(encoding='utf-8').replace((DEV/'point-review.js').read_text(encoding='utf-8'),'');parser=TextParser();parser.feed(src);strings=parser.lines[:]
+    src=(GAMES/game['file']).read_text(encoding='utf-8').replace((DEV/'point-review.js').read_text(encoding='utf-8'),'').replace((DEV/'draft-backup.js').read_text(encoding='utf-8'),'');parser=TextParser();parser.feed(src);strings=parser.lines[:]
     for scr in re.findall(r'<script\b[^>]*>([\s\S]*?)</script>',src):
         for m in literal_pattern.finditer(scr):
             v=m.group(0)[1:-1]
