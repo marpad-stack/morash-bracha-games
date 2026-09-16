@@ -16,6 +16,9 @@ descriptions={
 'h':('מתנה שאפשר לשמור','💌','#eed9d2','18 הברכות המקוריות, צבעים, מסגרות, מדבקות, ציור חופשי וכרטיס להורדה.','4+ · יצירה והבעה אישית'),
 'i':('הצעדים שלי אחרי הלידה','🌱','#d8e8df','המפה והמשימות המקוריות, עם גיבוי ושחזור מקומי והסבר מדויק על שיתוף עותק.','לאמא · סדר, תכנון ומעקב'),
 'j':('רגע קטן לעצמך','🌷','#e9dfea','31 הכרטיסים המקוריים, שמירה לאורך ימים, מועדפים ומחברת לשיחת ערב.','לאמא ולהורים · התבוננות ושיחה')}
+editorial=json.loads((DEV/'editorial-feedback.json').read_text(encoding='utf-8'))
+for gid,copy in editorial.items():
+    old=descriptions[gid];descriptions[gid]=(copy['title'],old[1],old[2],copy['description'],old[4])
 for game in data:
     dest=GAMES/game['file'];dest.parent.mkdir(parents=True,exist_ok=True)
     shutil.copy2(OUT/game['file'],dest)

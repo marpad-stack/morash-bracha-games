@@ -1,0 +1,23 @@
+[
+  {
+    "width": 320,
+    "bookActivitiesClosed": 24,
+    "puzzleLevelsSolved": 3,
+    "quietPauseResume": true,
+    "passed": true
+  },
+  {
+    "width": 390,
+    "bookActivitiesClosed": 24,
+    "puzzleLevelsSolved": 3,
+    "quietPauseResume": true,
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "bookActivitiesClosed": 24,
+    "puzzleLevelsSolved": 3,
+    "quietPauseResume": true,
+    "passed": true
+  }
+]

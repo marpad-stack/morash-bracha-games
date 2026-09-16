@@ -42,11 +42,11 @@ for p in zips:
             if p.name.startswith('a-'):target=target/'a-coloring'
             if p.name.startswith('i-'):target=target/'i-first-steps'
             assert (target/name).read_bytes()==z.read(name),(p,name)
-checks=json.loads((DEV/'content-checks.json').read_text(encoding='utf-8'));assert len(checks)==30 and all(c['identical'] for c in checks)
+checks=json.loads((DEV/'content-checks.json').read_text(encoding='utf-8'));assert len(checks)==30 and all(c['identical'] or (c.get('approved_editorial') and c['part']=='b' and c['collection']=='GAMES') for c in checks)
 nikud=json.loads((DEV/'nikud-checks.json').read_text(encoding='utf-8'));assert len(nikud)==30 and all(c['letters_identical'] for c in nikud)
 manifest=json.loads((FINAL/'מסמכים/manifest-sha256.json').read_text(encoding='utf-8'))
 for rel,sha in manifest.items():assert hashlib.sha256((FINAL/rel).read_bytes()).hexdigest()==sha,rel
-report={'games':10,'unique_cover_images':10,'cover_files':20,'resolution':'1536x1024','internal_links_checked':checked_links,'missing_links':0,'zip_archives':len(zips),'archived_files_checked':archive_files,'identical_source_collections':len(checks),'additional_nikud_strings_with_identical_letters':len(nikud),'manifest_integrity':True,'book_pages':40,'book_text_pages':36}
+report={'games':10,'unique_cover_images':10,'cover_files':20,'resolution':'1536x1024','internal_links_checked':checked_links,'missing_links':0,'zip_archives':len(zips),'archived_files_checked':archive_files,'identical_source_collections':sum(c['identical'] for c in checks),'approved_editorial_collections':sum(bool(c.get('approved_editorial')) for c in checks),'additional_nikud_strings_with_identical_letters':len(nikud),'manifest_integrity':True,'book_pages':40,'book_text_pages':36}
 (DEV/'package-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 (FINAL/'מסמכים/בדיקות-אריזה.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 manifest={str(p.relative_to(FINAL)):hashlib.sha256(p.read_bytes()).hexdigest() for p in FINAL.rglob('*') if p.is_file() and p.name!='manifest-sha256.json'}

@@ -140,46 +140,46 @@ mishpaha
 
 משחקים מתוך הסיפור
 1 / טקסט / כותרת
-זיכרון של בית
+נראה מי זוכר?
 
 1 / איך משחקים
 הפכו קלפים ומצאו את הזוגות.
 
 2 / טקסט / כותרת
-מחכים בשקט
+משחק השקט
 
 2 / איך משחקים
-החזיקו את האצבע על העיגול עד שהתינוק נרדם. אם עזבתם — ממשיכים מאותו מקום.
+מניחים אצבע על העיגול ועוזרים לתינוק להירדם. עזבתם באמצע? לא נורא, ממשיכים בדיוק מאיפה שהפסקתם!
 
 3 / טקסט / כותרת
-מתלבשים לבד
+מתלבשים נכון!
 
 3 / איך משחקים
-לוחצים על בגד, ואז על המקום שלו.
+בוחרים בגד, ובלחיצה מעבירים אותו למקום הנכון.
 
 4 / טקסט / כותרת
-פרצופים מצחיקים
+מי שטוב לו ושמח!
 
 4 / איך משחקים
 הרכיבו פרצוף. אין פרצוף לא נכון.
 
 5 / טקסט / כותרת
-שולחן שבת
+עורכים שולחן שבת!
 
 5 / איך משחקים
-לוחצים על חפץ, ואז על המקום שלו על השולחן.
+בוחרים חפץ, ובלחיצה מעבירים אותו למקום הנכון בשולחן.
 
 6 / טקסט / כותרת
-משתיקים את הבית
+שומרים על השקט!
 
 6 / איך משחקים
-מכבים את האורות עד שהבית נרדם.
+כבו את האורות בבית כדי שכולם יוכלו לישון בשקט!
 
 7 / טקסט / כותרת
-מה התינוק צריך?
+מה נביא לתינוק?
 
 7 / איך משחקים
-התינוק התעורר. מה מביאים לו? כל בחירה טובה.
+בוחרים מה להביא לתינוק ומתקדמים במשחק!
 
 8 / טקסט / כותרת
 ציור חופשי
@@ -4759,13 +4759,12 @@ self / 3
 מתחם הקטנטנים · מורה שמיים
 רגיל
 מנוקד
-מתחם
-הקטנטנים
-פינה מתוקה לאחים הגדולים — בזמן שאמא עם התינוק החדש.
+צובעים ומרכיבים!
+בוחרים ציור, מעניקים לו צבע ויוצרים ממנו משחק הרכבה שכיף לשחק בו שוב ושוב!
 דפי צביעה
 15 ציורים להדפסה או לצביעה על המסך
 משחקים
-זיכרון · פאזל · צבע לפי מספר
+משחקים לשעות פנאי
 📚 החוברת שלי
 → חזרה למתחם
 דפי הצביעה
@@ -5434,7 +5433,9 @@ document.getElementById('artAlbum').onclick=()=>{let d=document.getElementById('
 אֵין דֶּרֶךְ אַחַת נְכוֹנָה לְקַשֵּׁט. אֶפְשָׁר לְעַרְבֵּב צְבָעִים, לְצַיֵּיר, וּלְנַסּוֹת שׁוּב כַּמָּה שֶׁרוֹצִים.
 מכל הלב
 מִכָּל הַלֵּב
+מתחם
 מִתְחַם
+הקטנטנים
 הַקְּטַנְטַנִּים
 מִשְׂחָקִים
 משחק
@@ -5448,6 +5449,7 @@ document.getElementById('artAlbum').onclick=()=>{let d=document.getElementById('
 הַחוֹבֶרֶת שֶׁלִּי
 להדפסה או לצביעה על המסך
 לְהַדְפָּסָה אוֹ לִצְבִיעָה עַל הַמָּסָךְ
+פינה מתוקה לאחים הגדולים — בזמן שאמא עם התינוק החדש.
 פִּינָּה מְתוּקָה לָאַחִים הַגְּדוֹלִים — בִּזְמַן שֶׁאִמָּא עִם הַתִּינוֹק הֶחָדָשׁ.
 חזרה למתחם
 חֲזָרָה לַמִּתְחָם
@@ -5535,23 +5537,25 @@ document.getElementById('artAlbum').onclick=()=>{let d=document.getElementById('
 
 ב · אור הגיע אלינו — נספח מלל מסכים ופעולות
 אור הגיע אלינו
+תינוק חדש בבית? קוראים ומשחקים!
 כל העמודים
 הדפסת הספר
+תינוק חדש הגיע הביתה והסיפור מתחיל! ספר מאויר ומנוקד שמחבר את הילדים להתרגשות שבבית, לצד פעילויות חווייתיות ומהנות מתוך שגרת המשפחה.
 משחקים מתוך הסיפור
-זיכרון של בית
+נראה מי זוכר?
 הפכו קלפים ומצאו את הזוגות.
-מחכים בשקט
-החזיקו את האצבע על העיגול עד שהתינוק נרדם. אם עזבתם — ממשיכים מאותו מקום.
-מתלבשים לבד
-לוחצים על בגד, ואז על המקום שלו.
-פרצופים מצחיקים
+משחק השקט
+מניחים אצבע על העיגול ועוזרים לתינוק להירדם. עזבתם באמצע? לא נורא, ממשיכים בדיוק מאיפה שהפסקתם!
+מתלבשים נכון!
+בוחרים בגד, ובלחיצה מעבירים אותו למקום הנכון.
+מי שטוב לו ושמח!
 הרכיבו פרצוף. אין פרצוף לא נכון.
-שולחן שבת
-לוחצים על חפץ, ואז על המקום שלו על השולחן.
-משתיקים את הבית
-מכבים את האורות עד שהבית נרדם.
-מה התינוק צריך?
-התינוק התעורר. מה מביאים לו? כל בחירה טובה.
+עורכים שולחן שבת!
+בוחרים חפץ, ובלחיצה מעבירים אותו למקום הנכון בשולחן.
+שומרים על השקט!
+כבו את האורות בבית כדי שכולם יוכלו לישון בשקט!
+מה נביא לתינוק?
+בוחרים מה להביא לתינוק ומתקדמים במשחק!
 ציור חופשי
 ציירו משהו שאתם אוהבים לעשות יחד במשפחה.
 שגיאה בטעינת העמוד
@@ -5619,7 +5623,11 @@ const bBar=document.createElement('div');bBar.className='controlbar';bBar.innerH
 const savedPage=PlayUI.read('morash-book-page',0);document.getElementById('bookBookmark').onclick=()=>{p=Math.min(PAGES.length-1,Math.max(0,savedPage));show();document.getElementById('pageImg').scrollIntoView({behavior:'smooth',block:'center'})};document.getElementById('bookLevel').value=bLevel;document.getElementById('bookLevel').onchange=e=>{bLevel=+e.target.value;PlayUI.save('morash-book-level',bLevel);bPaint()};
 function bPaint(){document.getElementById('bookStars').textContent=Object.keys(bRecords).length*50+' נקודות · '+Object.keys(bRecords).length+' כוכבי משחק';document.querySelectorAll('.gbtn').forEach(b=>b.classList.toggle('b-earned',!!bRecords[b.dataset.g+'-'+bLevel]))}
 function bAward(id){const key=id+'-'+bRoundLevel;if(!bRecords[key]){bRecords[key]=true;PlayUI.save('morash-book-stars',bRecords);PlayUI.celebrate();PlayUI.toast('כוכב חדש לאוסף · 50 נקודות')}bPaint()}
-const bOriginalOpen=openGame;openGame=function(id){bOriginalOpen(id);if(id==='draw'){const bt=document.createElement('button');bt.className='btn';bt.textContent='שומרים את הציור';bt.onclick=()=>{const cv=document.getElementById('canvas'),out=document.createElement('canvas');out.width=cv.width;out.height=cv.height;const c=out.getContext('2d');c.fillStyle='white';c.fillRect(0,0,out.width,out.height);c.drawImage(cv,0,0);out.toBlob(blob=>{if(blob){PlayUI.download('הציור-שלי.png',blob);bAward('draw')}})};gb.append(bt)}if(id==='face'||id==='needs'){const bt=document.createElement('button');bt.className='btn';bt.textContent='סיימתי ליצור · שומרים כוכב';bt.onclick=()=>bAward(id);gb.append(bt)}gb.querySelectorAll('.drop').forEach(d=>{d.tabIndex=0;d.role='button';d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();d.click()}}})};
+// Keep the close action visible and reachable even after scrolling long activities.
+const bExit=document.getElementById('close'),bSheet=document.getElementById('sheet'),bHead=document.createElement('div');bHead.className='b-activity-head';bSheet.prepend(bHead);bHead.append(bExit,document.getElementById('gtitle'));bExit.type='button';bExit.textContent='× סגירה';bExit.setAttribute('aria-label','סגירת המשחק וחזרה לבחירת הפעילויות');
+function bCloseActivity(){modal.classList.remove('on');gb.replaceChildren();msg.textContent='';}
+bExit.onclick=null;bExit.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();bCloseActivity()});
+const bOriginalOpen=openGame;openGame=function(id){bOriginalOpen(id);bSheet.scrollTop=0;if(id==='draw'){const bt=document.createElement('button');bt.className='btn';bt.textContent='שומרים את הציור';bt.onclick=()=>{const cv=document.getElementById('canvas'),out=document.createElement('canvas');out.width=cv.width;out.height=cv.height;const c=out.getContext('2d');c.fillStyle='white';c.fillRect(0,0,out.width,out.height);c.drawImage(cv,0,0);out.toBlob(blob=>{if(blob){PlayUI.download('הציור-שלי.png',blob);bAward('draw')}})};gb.append(bt)}if(id==='face'||id==='needs'){const bt=document.createElement('button');bt.className='btn';bt.textContent='סיימתי - מקבלים כוכב';bt.onclick=()=>bAward(id);gb.append(bt)}gb.querySelectorAll('.drop').forEach(d=>{d.tabIndex=0;d.role='button';d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();d.click()}}})};
 const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}const n=3,grid=Array(9).fill(false),solution=new Set();let won=false;function flip(i){for(const j of [i,i%n?i-1:-1,i%n =0&&j<9)grid[j]=!grid[j];if(solution.has(i))solution.delete(i);else solution.add(i)}for(let k=0;k<(bLevel===2?3:6);k++)flip(Math.floor(Math.random()*9));if(!grid.some(Boolean))flip(4);b.innerHTML='<p class=
 >כל לחיצה משנה גם את האורות הצמודים. נסו לכבות את כולם! <div class=
 >רמז לצעד הבא ';function paint(){b.querySelector('.b-lights').innerHTML=grid.map((v,i)=>'<button data-light=
@@ -5755,19 +5763,31 @@ const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}c
 מַמְשִׁיכִים מֵהַסִּימָנִיָּיה
 כוכבי משחק
 כּוֹכְבֵי מִשְׂחָק
+זיכרון של בית
 זִיכָּרוֹן שֶׁל בַּיִת
 הִפְכוּ קְלָפִים וּמִצְאוּ אֶת הַזּוּגוֹת.
+מחכים בשקט
 מְחַכִּים בְּשֶׁקֶט
+החזיקו את האצבע על העיגול עד שהתינוק נרדם. אם עזבתם — ממשיכים מאותו מקום.
 הַחֲזִיקוּ אֶת הָאֶצְבַּע עַל הָעִיגּוּל עַד שֶׁהַתִּינוֹק נִרְדָּם. אִם עֲזַבְתֶּם — מַמְשִׁיכִים מֵאוֹתוֹ מָקוֹם.
+מתלבשים לבד
 מִתְלַבְּשִׁים לְבַד
+לוחצים על בגד, ואז על המקום שלו.
 לוֹחֲצִים עַל בֶּגֶד, וְאָז עַל הַמָּקוֹם שֶׁלּוֹ.
+פרצופים מצחיקים
 פַּרְצוּפִים מַצְחִיקִים
 הַרְכִּיבוּ פַּרְצוּף. אֵין פַּרְצוּף לֹא נָכוֹן.
+שולחן שבת
 שׁוּלְחַן שַׁבָּת
+לוחצים על חפץ, ואז על המקום שלו על השולחן.
 לוֹחֲצִים עַל חֵפֶץ, וְאָז עַל הַמָּקוֹם שֶׁלּוֹ עַל הַשּׁוּלְחָן.
+משתיקים את הבית
 מַשְׁתִּיקִים אֶת הַבַּיִת
+מכבים את האורות עד שהבית נרדם.
 מְכַבִּים אֶת הָאוֹרוֹת עַד שֶׁהַבַּיִת נִרְדָּם.
+מה התינוק צריך?
 מָה הַתִּינוֹק צָרִיךְ?
+התינוק התעורר. מה מביאים לו? כל בחירה טובה.
 הַתִּינוֹק הִתְעוֹרֵר. מָה מְבִיאִים לוֹ? כָּל בְּחִירָה טוֹבָה.
 צִיּוּר חוֹפְשִׁי
 צַיְּירוּ מַשֶּׁהוּ שֶׁאַתֶּם אוֹהֲבִים לַעֲשׂוֹת יַחַד בַּמִּשְׁפָּחָה.
@@ -6609,9 +6629,8 @@ const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}c
 נקודות
 אותיות בכיס
 5 חפצים · 5 אתגרים · מילה סודית אחת
-כל הבית
-הרפתקה!
-בוחרים חפץ בבית, משחקים באתגר שלו ופותרים חידה. כל הצלחה פותחת אות חדשה. אספתם את כולן? פותחים את התיבה!
+הרפתקה בבית!
+חוקרים את הבית, פותרים חידות ומגלים את הרמזים הסודיים! כל שלב שתעברו יקרב אתכם לפתיחת התיבה ולגילוי הגדול.
 🔒 התיבה מחכה לאותיות
 ההתקדמות נשמרת במכשיר הזה. אפשר לחזור לכל אתגר ולשחק שוב.
 הרפתקה חדשה
@@ -6689,27 +6708,31 @@ const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}c
 חלון הבית
 חַלּוֹן הַבַּיִת
 תופסים כוכבים
-זיכרון מהיר
-מנגינת צבעים
-פאזל הזזה
-עין חדה
+זיכרון מהיר!
+מנגינת הצבעים!
+מסדרים את הרצף
+בלשי הצורות!
 ניקוד אותיות: פעיל
 🎉 התיבה נפתחה!
 🔑 כל האותיות כאן! פותחים את התיבה
 אתגר  [ערך משתנה]  מתוך 5     0
 יש! האתגר הושלם ✦
-תפסו את הכוכבים! נוגעים בכוכב כדי לאסוף אותו.
+געו בכוכב כדי לתפוס אותו.
 איסוף כוכב
-הופכים שני קלפים ומוצאים את הזוגות. אפשר לנסות שוב בלי לאבד נקודות.
+הופכים קלפים ומחפשים זוגות תואמים! טעיתם? לא נורא! נסו שוב בחופשיות, בלי לחשוש מאיבוד נקודות…
 קלף
-זוכרים את הצבעים שנדלקים וחוזרים על הסדר. בכל סיבוב נוסף צבע!
+זוכרים את סדר הצבעים שנדלקים ולוחצים לפי התור. מוכנים? בכל שלב מצטרף צבע חדש.
 [ערך משתנה]
 להראות שוב  רצף לתרגול
 מסתכלים...
 עכשיו תורכם!
 ננסה שוב את אותו הרצף
-מסדרים את המספרים לפי הסדר משמאל לימין. לוחצים על חלק ליד המשבצת הריקה.
-מוצאים את הסימן שמופיע למעלה. בכל סיבוב מחכה סימן אחר.
+מסדרים את המספרים מימין לשמאל, מהקטן לגדול. בוחרים שני ריבועים כדי להחליף ביניהם.
+מתחילים ב־1 בצד ימין <div class="tiles sequence-tiles" style="grid-template-columns:repeat(
+" aria-label="מספר
+בחרו ריבוע נוסף להחלפה
+אפשר להמשיך להחליף עד שהרצף מסודר
+מסתכלים על הצורה למעלה, ומוצאים את התאומה שלה למטה! שימו לב- בכל סיבוב מופיעה צורה חדשה.
 כמעט! חפשו את אותו הסימן
 עוד אחד נאסף!
 החידה של האות
@@ -6985,7 +7008,9 @@ const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}c
 עַמּוּד הַבָּא
 עמוד קודם
 עַמּוּד קוֹדֵם
+כל הבית
 כָּל הַבַּיִת
+הרפתקה!
 הַרְפַּתְקָה!
 הַרְפַּתְקָה בַּבַּיִת
 חפצים
@@ -6994,12 +7019,17 @@ const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}c
 אֶתְגָּרִים
 מילה סודית אחת
 מִילָּה סוֹדִית אַחַת
+בוחרים חפץ בבית, משחקים באתגר שלו ופותרים חידה. כל הצלחה פותחת אות חדשה. אספתם את כולן? פותחים את התיבה!
 בּוֹחֲרִים חֵפֶץ בַּבַּיִת, מְשַׂחֲקִים בָּאֶתְגָּר שֶׁלּוֹ וּפוֹתְרִים חִידָה. כָּל הַצְלָחָה פּוֹתַחַת אוֹת חֲדָשָׁה. אֲסַפְתֶּם אֶת כּוּלָּן? פּוֹתְחִים אֶת הַתֵּיבָה!
 אוֹתִיּוֹת בַּכִּיס
 תּוֹפְסִים כּוֹכָבִים
+זיכרון מהיר
 זִיכָּרוֹן מָהִיר
+מנגינת צבעים
 מַנְגִּינַת צְבָעִים
+פאזל הזזה
 פָּאזֶל הֲזָזָה
+עין חדה
 עַיִן חַדָּה
 התיבה מחכה לאותיות
 הַתֵּיבָה מְחַכָּה לָאוֹתִיּוֹת
@@ -7007,10 +7037,15 @@ const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}c
 הַתֵּיבָה נִפְתְּחָה!
 כל האותיות כאן! פותחים את התיבה
 כָּל הָאוֹתִיּוֹת כָּאן! פּוֹתְחִים אֶת הַתֵּיבָה
+תפסו את הכוכבים! נוגעים בכוכב כדי לאסוף אותו.
 תִּפְסוּ אֶת הַכּוֹכָבִים! נוֹגְעִים בְּכוֹכָב כְּדֵי לֶאֱסוֹף אוֹתוֹ.
+הופכים שני קלפים ומוצאים את הזוגות. אפשר לנסות שוב בלי לאבד נקודות.
 הוֹפְכִים שְׁנֵי קְלָפִים וּמוֹצְאִים אֶת הַזּוּגוֹת. אֶפְשָׁר לְנַסּוֹת שׁוּב בְּלִי לְאַבֵּד נְקוּדוֹת.
+זוכרים את הצבעים שנדלקים וחוזרים על הסדר. בכל סיבוב נוסף צבע!
 זוֹכְרִים אֶת הַצְּבָעִים שֶׁנִּדְלָקִים וְחוֹזְרִים עַל הַסֵּדֶר. בְּכָל סִיבּוּב נוֹסָף צֶבַע!
+מסדרים את המספרים לפי הסדר משמאל לימין. לוחצים על חלק ליד המשבצת הריקה.
 מְסַדְּרִים אֶת הַמִּסְפָּרִים לְפִי הַסֵּדֶר מִשְּׂמֹאל לְיָמִין. לוֹחֲצִים עַל חֵלֶק לְיַד הַמִּשְׁבֶּצֶת הָרֵיקָה.
+מוצאים את הסימן שמופיע למעלה. בכל סיבוב מחכה סימן אחר.
 מוֹצְאִים אֶת הַסִּימָן שֶׁמּוֹפִיעַ לְמַעְלָה. בְּכָל סִיבּוּב מְחַכֶּה סִימָן אַחֵר.
 יש! האתגר הושלם
 יֵשׁ! הָאֶתְגָּר הוּשְׁלַם

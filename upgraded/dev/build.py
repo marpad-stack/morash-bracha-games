@@ -4,6 +4,7 @@ import zipfile,re,json,hashlib
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'upgraded'
 DEV=OUT/'dev'
+editorial=json.loads((DEV/'editorial-feedback.json').read_text(encoding='utf-8'))
 theme=(DEV/'theme.css').read_text(encoding='utf-8')
 ui=(DEV/'ui.js').read_text(encoding='utf-8')
 

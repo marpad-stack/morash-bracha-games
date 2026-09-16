@@ -10,6 +10,8 @@ items={
 'h':('כרטיס מכל הלב','גישה לתצוגה מוגדלת מתוך כלי העריכה בטלפון, מעבר ישיר לציור ואזורי מגע גדולים יותר.','בחרי ברכה, חתמי, קשטי והורידי תמונה; בדקי גם ביטול ומחיקה.'),
 'i':('צעדים ראשונים','הבהרה שאפשר להשלים פרטים בהמשך, פתיחה מותאמת לאמא ובדיקת גיבוי ושחזור.','צרי מפה, סמני משימה, הוסיפי הערה ובדקי את הנוסחים והקישורים.'),
 'j':('מרווח','בחירת כרטיס נוסף הועברה לאחר הכרטיס ונשמר רצף הפתיחה.','בחרי הרגשה, שמרי כרטיס, כתבי שאלת ערב והורידי מחברת.')}
+for gid,copy in editorial.items():
+    old=items[gid];items[gid]=(copy['title'],{'a':'עודכנו הכותרת, ההסבר ותיאור משחקי שעות הפנאי לפי הערות העריכה.','b':'עודכנו שמות הפעילויות וההוראות. כפתור הסגירה נשאר נגיש גם בגלילה.','c':'עודכנו הכותרת וההוראות; משחק המספרים מסודר בשורה מימין לשמאל.'}[gid],old[2])
 cards=[]
 for g in data:
     gid=g['id'];title,change,check=items[gid]
@@ -23,7 +25,7 @@ report='<h1>סיכום בדיקה ותיקונים</h1><p class="lead">16.9.2026
 for gid,(title,change,check) in items.items():report+='<div class="entry"><h2>'+title+'</h2><p>'+change+'</p></div>'
 report+='<h2>בדיקות</h2><p>פתיחה ופריסה לכל עשרת החלקים ברוחב 320, 390 ו־1440 פיקסלים; פעילויות במחשב ובתצוגת טלפון; שגיאות JavaScript, תמונות חסרות וגלילה אופקית; תפקוד ושמירה; השוואת 30 אוספי תוכן למקור; קישורים ואריזות ZIP. פירוט התוצאות בפועל מצורף בקובצי JSON.</p><h2>למעבר שלך</h2><p>הגהת הספר והניקוד, התאמת הקושי לקהל ובדיקה בטלפון פיזי. הדפסה ושיתוף לאפליקציות אחרות דורשים מעבר במכשיר שבו תשתמשי. הגרסה מיועדת לסבב בדיקה ומשוב; הגהת התוכן ובדיקה בטלפון פיזי עדיין נדרשות.</p>'
 (DOCS/'סיכום-בדיקה-סופית.html').write_text(page('סיכום בדיקה סופית',report),encoding='utf-8')
-for filename in ['landing-audit.json','flow-audit.json','deep-audit.json','final-audit.json','shared-review-audit.json','live-review-audit.json']:
+for filename in ['landing-audit.json','flow-audit.json','deep-audit.json','final-audit.json','shared-review-audit.json','live-review-audit.json','editorial-audit.json']:
     src=DEV/'review-evidence'/filename
     if src.exists():shutil.copy2(src,DOCS/('review-'+filename))
 p=FINAL/'התחילו-כאן.html';s=p.read_text(encoding='utf-8');s=s.replace('<main>','<main><div class="note"><b>בודקות את המשחקים?</b><p>פתחי את דף הבדיקה, סמני פריטים במשחק וכתבי הערות ברשימה המשותפת.</p><a class="button" href="בדיקה-סופית.html">מעבר למשחקים ולרשימת התיקונים</a></div>',1);p.write_text(s,encoding='utf-8')
