@@ -2053,6 +2053,47 @@ body[data-morash-part=j] #next{font-size:14px;min-height:44px;border:1px solid #
  body[data-morash-part=j] .intro-art img{max-height:150px}
 }
 @media print{.review-help,.review-exit,.review-preview-link,.review-tips{display:none!important}}
+
+/* Reviewer feedback: layout and operation only, September 2026. */
+body[data-morash-part=e] #startScreen{overflow-y:auto;overscroll-behavior:contain;align-items:start;padding-block:max(18px,env(safe-area-inset-top)) max(22px,env(safe-area-inset-bottom));}
+body[data-morash-part=e] #startScreen .sbox{margin-block:auto;min-width:0;}
+body[data-morash-part=b] #book{flex:0 0 auto;overflow:visible;padding-bottom:36px;}
+body[data-morash-part=b] #stack{width:min(100%,900px);max-height:none;justify-content:center;}
+body[data-morash-part=b] #pageImg{width:100%;height:auto;max-height:none;object-fit:contain;}
+body[data-morash-part=b] #bookbar{bottom:4px;}
+body[data-morash-part=g] .hero h1 br{display:initial;}
+body[data-morash-part=a] [data-pznew],body[data-morash-part=a] #npick{font-size:18px;min-height:48px;}
+body[data-morash-part=a] [data-go=booklet]{font-size:18px!important;background:#236bc0!important;color:white!important;min-height:48px;padding:10px 18px;border-radius:12px;}
+body[data-morash-part=a] .review-help p{white-space:pre-line;}
+body[data-morash-part=a].reading-large :is(.hint,.gcard p,.btn,.tool,.card h3,.review-help p){font-size:20px!important;line-height:1.7;}
+body[data-morash-part=a][data-art-theme=bright]{--teal:#067cab;--coral:#d74464;--gold:#ffc928;--cream:#fffbea;}
+body[data-morash-part=a][data-art-theme=bright] .gcard:nth-child(4n+1){background:#087dac!important;}
+body[data-morash-part=a][data-art-theme=bright] .gcard:nth-child(4n+2){background:#ad3152!important;}
+body[data-morash-part=a][data-art-theme=bright] .gcard:nth-child(4n+3){background:#247341!important;}
+body[data-morash-part=a][data-art-theme=bright] .gcard:nth-child(4n){background:#6f49b3!important;}
+body[data-morash-part=d] .minicity{min-height:110px;overflow:auto;}
+body[data-morash-part=d] #mtrack{position:relative;bottom:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(48px,1fr));align-items:end;gap:5px;padding:8px;height:auto;min-height:100%;overflow:visible;}
+body[data-morash-part=d] #mtrack>div{margin:0!important;transform:none!important;animation:none;width:100%;min-width:0;text-align:center;}
+body[data-morash-part=d] #mtrack svg{width:100%;height:65px;object-fit:contain;}
+body[data-morash-part=d] #cityFull .sheet{max-width:950px;}
+body[data-morash-part=d] #cfStage{height:auto;min-height:220px;max-height:60dvh;overflow:auto;}
+body[data-morash-part=d] #cftrack{position:relative;bottom:auto;height:auto!important;display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:12px;padding:18px;align-items:end;overflow:visible;}
+body[data-morash-part=d] #cftrack>div{transform:none!important;margin:0!important;min-width:0;}
+body[data-morash-part=d] #cftrack svg{width:100%;height:110px;object-fit:contain;}
+body[data-morash-part=d] #cfLegend{max-height:none;}
+@media(min-width:800px){
+ body[data-morash-part=d] .wrap{max-width:850px;}
+ body[data-morash-part=d] .sheet{max-width:620px;padding:24px;}
+ body[data-morash-part=d] .cardtxt{font-size:20px!important;}
+ body[data-morash-part=d] .bigbtn{font-size:20px;min-height:52px;}
+ body[data-morash-part=d] .hint{font-size:16px;}
+ body[data-morash-part=d] #mtrack{grid-template-columns:repeat(auto-fit,minmax(60px,1fr));}
+}
+body[data-morash-part=h] #stickerChoice{width:100%;margin:8px 0;}
+body[data-morash-part=h] #stickerFeedback{font-size:14px;min-height:24px;color:#31544c;}
+body[data-morash-part=h] .sticker-editor input[type=range]{direction:ltr;touch-action:pan-y;}
+body[data-morash-part=h] #stickerMini{width:120px;height:150px;margin:12px auto;box-shadow:0 2px 9px #0002;cursor:default;touch-action:auto;}
+body[data-morash-part=c] #resetDialog .toolbar{justify-content:center;gap:12px;}
 </style><script>(() => {
  'use strict';
  const part=document.body.dataset.morashPart;
@@ -2261,7 +2302,7 @@ body[data-morash-part=j] #next{font-size:14px;min-height:44px;border:1px solid #
       entry.append(replyName,reply,replyStatus,send,error);entries.append(entry);
     }
   }
-  async function showList(id=null){setPicking(false);selectedNote=typeof id==='string'?id:null;$('.entries').textContent='טוענת את ההערות המשותפות…';if(!list.open)list.showModal();try{await sync();renderList()}catch(error){renderList();const warning=document.createElement('p');warning.textContent=errorMessage(error)+' מוצג העותק האחרון מהמכשיר.';$('.entries').prepend(warning);const retry=document.createElement('button');retry.textContent='ניסיון נוסף';retry.onclick=()=>showList(selectedNote);$('.entries').append(retry)}}
+  async function showList(id=null){if(typeof id==='string'&&window.parent!==window&&new URLSearchParams(location.search).get('writerFrame')==='1'){window.parent.postMessage({type:'bracha-writer-note',id},'https://bracha-games-review.marpad990579.chatgpt.site');return}setPicking(false);selectedNote=typeof id==='string'?id:null;$('.entries').textContent='טוענת את ההערות המשותפות…';if(!list.open)list.showModal();try{await sync();renderList()}catch(error){renderList();const warning=document.createElement('p');warning.textContent=errorMessage(error)+' מוצג העותק האחרון מהמכשיר.';$('.entries').prepend(warning);const retry=document.createElement('button');retry.textContent='ניסיון נוסף';retry.onclick=()=>showList(selectedNote);$('.entries').append(retry)}}
   $('#gameFilter').onchange=renderList;$('#statusFilter').onchange=renderList;
   $('#all').onclick=showList;$('#close').onclick=()=>list.close();
   const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -2289,6 +2330,83 @@ body[data-morash-part=j] #next{font-size:14px;min-height:44px;border:1px solid #
   document.addEventListener('bracha-drafts-recovered',restore);restore();
   try{const saved=JSON.parse(localStorage.getItem(KEY));if(saved){backup.put(saved.id,'note',saved);localStorage.removeItem(KEY);restore()}}catch{}
 
+  // Contextual writer workspace: game remains playable in its own frame.
+  const writerOrigin='https://bracha-games-review.marpad990579.chatgpt.site';
+  if(!portal){
+    if(window.parent!==window&&new URLSearchParams(location.search).get('writerFrame')==='1')$('#all').hidden=true;
+    const workspace=document.createElement('button');workspace.textContent='החלטות הכותבת';
+    workspace.onclick=()=>{if(window.parent!==window)window.parent.postMessage({type:'bracha-writer-note',id:notes.find(n=>n.page===pageKey)?.id},writerOrigin);else location.href=writerOrigin+'/workspace?game='+document.body.dataset.morashPart};
+    $('.bar').append(workspace);
+  }
+  document.addEventListener('bracha-note-saved',()=>{if(window.parent!==window)window.parent.postMessage({type:'bracha-note-saved'},writerOrigin)});
+  window.addEventListener('message',event=>{
+    if(event.origin!==writerOrigin||event.source!==window.parent||window.parent===window)return;
+    if(event.data?.type==='bracha-writer-pick'){
+      const reviewer=String(event.data.reviewer||'').slice(0,100);if(reviewer){const p=profile();p.reviewerName=reviewer;try{localStorage.setItem(PROFILE,JSON.stringify(p))}catch{}}
+      if(list.open)list.close();setPicking(true);
+    }
+    if(event.data?.type==='bracha-writer-target'){
+      let el;try{el=document.querySelector(String(event.data.selector).slice(0,1500))}catch{}
+      const found=!!el&&!!el.getBoundingClientRect().width&&!!el.getBoundingClientRect().height&&description(el)===event.data.target;
+      if(found){el.scrollIntoView({block:'center',behavior:'smooth'});const previous=el.style.outline;el.style.outline='4px solid #dc8b16';setTimeout(()=>el.style.outline=previous,6000)}
+      window.parent.postMessage({type:'bracha-writer-target-result',found},writerOrigin);
+    }
+  });
+})();
+
+/* Operation and presentation fixes. Educational texts and game rules stay in their source. */
+(()=>{
+ 'use strict';
+ const part=document.body.dataset.morashPart,find=s=>document.querySelector(s);
+ if(part==='a'){
+  document.querySelectorAll('[data-reading-large]').forEach(b=>{b.textContent='הגדלת טקסט';b.setAttribute('aria-label','הגדלת טקסט');b.title='הגדלה והקטנה של טקסט ההוראות והכפתורים';});
+  const label=document.createElement('label');label.textContent='צבעי התצוגה ';
+  const select=document.createElement('select');select.id='artTheme';select.setAttribute('aria-label','צבעי התצוגה');
+  select.innerHTML='<option value="bright">צבעים חיים</option><option value="calm">צבעים רגועים</option>';
+  select.value=PlayUI.read('morash-art-theme','bright');label.append(select);find('.controlbar').append(label);
+  const paint=()=>{document.body.dataset.artTheme=select.value;PlayUI.save('morash-art-theme',select.value)};select.onchange=paint;paint();
+  const help=find('.review-help p');if(help)help.textContent=help.textContent.replace(/\. /g,'.\n');
+ }
+ if(part==='c'){
+  const dialog=document.createElement('dialog');dialog.id='resetDialog';dialog.setAttribute('aria-labelledby','resetTitle');
+  dialog.innerHTML='<h2 id="resetTitle">הרפתקה חדשה</h2><p>להתחיל הרפתקה חדשה ולאפס את האותיות והנקודות במשחק הזה?</p><div class="toolbar"><button class="btn" id="cancelReset">חוזרים למשחק</button><button class="btn coral" id="confirmReset">מתחילים מחדש</button></div>';
+  document.body.append(dialog);find('#reset').onclick=()=>{dialog.showModal();find('#cancelReset').focus()};
+  find('#cancelReset').onclick=()=>dialog.close();find('#confirmReset').onclick=()=>{clean();state.done=[];state.opened=false;save();render();dialog.close();PlayUI.toast('ההרפתקה החדשה מוכנה')};
+  dialog.addEventListener('close',()=>find('#reset').focus());
+ }
+ if(part==='d'){
+  ICONS.luchot='<rect x="8" y="7" width="11" height="28" fill="#dfe6f0" stroke="#647693"/><rect x="21" y="7" width="11" height="28" fill="#dfe6f0" stroke="#647693"/><path d="M11 14h5m-5 5h5m-5 5h5m9-10h5m-5 5h5m-5 5h5" stroke="#647693" stroke-width="1.6"/>';
+  ICONS.candles='<path d="M12 12C6 9 13 3 13 3s6 7 2 9Z M26 12C20 9 27 3 27 3s6 7 2 9Z" fill="#ef9700"/><path d="M13 10v5m14-5v5" stroke="#382e24" stroke-width="2"/><rect x="9" y="14" width="8" height="14" fill="#fff4dc" stroke="#94703c"/><rect x="23" y="14" width="8" height="14" fill="#fff4dc" stroke="#94703c"/><path d="M7 29h12m2 0h12M13 29v5m14-5v5M7 36h12m2 0h12" stroke="#9e752e" stroke-width="3"/>';
+ }
+ if(part==='e'){
+  const table='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80"><path d="M14 35v38m72-38v38" stroke="#66432a" stroke-width="10"/><rect x="5" y="22" width="90" height="17" rx="4" fill="#c18b55"/><path d="M8 25h84" stroke="#efc896" stroke-width="4"/></svg>';
+  const miniBase=runMini;runMini=function(i){miniBase(i);find('#mini').querySelectorAll('*').forEach(el=>{if(el.children.length===0&&el.textContent.trim()==='🍚'){el.innerHTML=table;el.setAttribute('aria-label','שולחן');el.querySelector('svg').style.cssText='width:1.4em;height:1.2em;display:block;margin:auto';}})};
+ }
+ if(part==='f'){
+  find('#kitchenPace').addEventListener('change',e=>{PlayReading.set(e.target.value!=='240')});
+ }
+ if(part==='h'){
+  const editor=find('.sticker-editor'),choice=document.createElement('select');choice.id='stickerChoice';choice.setAttribute('aria-label','בחירת מדבקה לעריכה');
+  const label=document.createElement('label');label.textContent='המדבקה לעריכה';label.append(choice);editor.before(label);
+  const feedback=document.createElement('p');feedback.id='stickerFeedback';feedback.setAttribute('aria-live','polite');editor.after(feedback);
+  const preview=document.createElement('canvas');preview.id='stickerMini';preview.width=200;preview.height=250;preview.setAttribute('aria-label','תצוגה חיה של המדבקה בכרטיס');feedback.after(preview);
+  const baseRender=render;render=function(exporting=false){
+   if(selected>=data.stickers.length)selected=-1;
+   baseRender(exporting);if(exporting)return;
+   const signature=data.stickers.map(s=>s.s).join('|');if(choice.dataset.signature!==signature){choice.dataset.signature=signature;choice.replaceChildren();data.stickers.forEach((s,i)=>{const o=document.createElement('option');o.value=i;o.textContent=(i+1)+'. '+s.s;choice.append(o)});}
+   choice.value=String(selected);choice.disabled=!data.stickers.length;
+   feedback.textContent=selected<0?(data.stickers.length?'בחרו מדבקה מהרשימה או בכרטיס כדי לשנות גודל וסיבוב.':'הוסיפו מדבקה כדי לערוך אותה.'):'מדבקה '+(selected+1)+' נבחרה · גודל '+Math.round(data.stickers[selected].size)+' · סיבוב '+Math.round(data.stickers[selected].r)+'°';
+   find('#arrange').disabled=!data.stickers.length;
+   preview.getContext('2d').drawImage(canvas,0,0,preview.width,preview.height);
+  };
+  choice.onchange=()=>{const index=Number(choice.value);setMode('move');selected=index;render()};
+  const arrange=find('#arrange').onclick;find('#arrange').onclick=()=>{arrange();PlayUI.toast('המדבקות סודרו מחדש');};
+  if(data.stickers.length)selected=0;render();
+ }
+ if(part==='i'){
+  // The existing Enter handler adds a task. Restore focus to allow consecutive entries.
+  find('#list')?.addEventListener('click',e=>{if(e.target.closest('#addBtn'))requestAnimationFrame(()=>find('#newTask')?.focus({preventScroll:true}))});
+ }
 })();
 </script></body>
 </html>
