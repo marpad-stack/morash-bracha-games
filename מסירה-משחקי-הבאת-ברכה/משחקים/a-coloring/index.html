@@ -1446,7 +1446,7 @@ body[data-morash-part=c] #resetDialog .toolbar{justify-content:center;gap:12px;}
     draft={id:crypto.randomUUID(),page:pageKey,url:location.href,title:document.title,frame,selector:selectorFor(el),target:description(el),x:Math.max(0,Math.min(1,(x-rect.left)/rect.width)),y:Math.max(0,Math.min(1,(y-rect.top)/rect.height)),image:capture(el),viewport:innerWidth+' × '+innerHeight,device:matchMedia('(pointer:coarse)').matches?'מגע':'עכבר / מקלדת',time:new Date().toISOString()};
     setPicking(false);openEditor();
   }
-  function openEditor(){previousFocus=document.activeElement;$('#saveError')?.remove();$('.target').textContent=draft.title+' — '+draft.target;$('.preview').replaceChildren();if(draft.image){const img=document.createElement('img');img.src=draft.image;img.alt='הפריט שסומן';$('.preview').append(img)}$('#name').value=draft.reviewer||profile().reviewerName||'';$('#comment').value=draft.comment||'';editor.showModal();keepDraft();$('#comment').focus()}
+  function openEditor(){if(!draft.reviewState)draft.reviewState=window.BrachaReviewState?.();previousFocus=document.activeElement;$('#saveError')?.remove();$('.target').textContent=draft.title+' — '+draft.target;$('.preview').replaceChildren();if(draft.image){const img=document.createElement('img');img.src=draft.image;img.alt='הפריט שסומן';$('.preview').append(img)}$('#name').value=draft.reviewer||profile().reviewerName||'';$('#comment').value=draft.comment||'';editor.showModal();keepDraft();$('#comment').focus()}
   function closeEditor(){editor.close();draft=null;previousFocus?.focus()}
   $('#pick').onclick=()=>setPicking(!picking);
   $('#cancel').onclick=()=>{keepDraft();closeEditor()};editor.addEventListener('cancel',event=>{if($('#save').disabled){event.preventDefault();return}keepDraft();draft=null});
@@ -1608,5 +1608,5 @@ body[data-morash-part=c] #resetDialog .toolbar{justify-content:center;gap:12px;}
   find('#list')?.addEventListener('click',e=>{if(e.target.closest('#addBtn'))requestAnimationFrame(()=>find('#newTask')?.focus({preventScroll:true}))});
  }
 })();
-</script></body>
+</script><script defer src="https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"></script></body>
 </html>
