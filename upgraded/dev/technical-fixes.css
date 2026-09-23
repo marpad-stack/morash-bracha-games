@@ -1,0 +1,40 @@
+/* Reviewer feedback: layout and operation only, September 2026. */
+body[data-morash-part=e] #startScreen{overflow-y:auto;overscroll-behavior:contain;align-items:start;padding-block:max(18px,env(safe-area-inset-top)) max(22px,env(safe-area-inset-bottom));}
+body[data-morash-part=e] #startScreen .sbox{margin-block:auto;min-width:0;}
+body[data-morash-part=b] #book{flex:0 0 auto;overflow:visible;padding-bottom:36px;}
+body[data-morash-part=b] #stack{width:min(100%,900px);max-height:none;justify-content:center;}
+body[data-morash-part=b] #pageImg{width:100%;height:auto;max-height:none;object-fit:contain;}
+body[data-morash-part=b] #bookbar{bottom:4px;}
+body[data-morash-part=g] .hero h1 br{display:initial;}
+body[data-morash-part=a] [data-pznew],body[data-morash-part=a] #npick{font-size:18px;min-height:48px;}
+body[data-morash-part=a] [data-go=booklet]{font-size:18px!important;background:#236bc0!important;color:white!important;min-height:48px;padding:10px 18px;border-radius:12px;}
+body[data-morash-part=a] .review-help p{white-space:pre-line;}
+body[data-morash-part=a].reading-large :is(.hint,.gcard p,.btn,.tool,.card h3,.review-help p){font-size:20px!important;line-height:1.7;}
+body[data-morash-part=a][data-art-theme=bright]{--teal:#067cab;--coral:#d74464;--gold:#ffc928;--cream:#fffbea;}
+body[data-morash-part=a][data-art-theme=bright] .gcard:nth-child(4n+1){background:#087dac!important;}
+body[data-morash-part=a][data-art-theme=bright] .gcard:nth-child(4n+2){background:#ad3152!important;}
+body[data-morash-part=a][data-art-theme=bright] .gcard:nth-child(4n+3){background:#247341!important;}
+body[data-morash-part=a][data-art-theme=bright] .gcard:nth-child(4n){background:#6f49b3!important;}
+body[data-morash-part=d] .minicity{min-height:110px;overflow:auto;}
+body[data-morash-part=d] #mtrack{position:relative;bottom:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(48px,1fr));align-items:end;gap:5px;padding:8px;height:auto;min-height:100%;overflow:visible;}
+body[data-morash-part=d] #mtrack>div{margin:0!important;transform:none!important;animation:none;width:100%;min-width:0;text-align:center;}
+body[data-morash-part=d] #mtrack svg{width:100%;height:65px;object-fit:contain;}
+body[data-morash-part=d] #cityFull .sheet{max-width:950px;}
+body[data-morash-part=d] #cfStage{height:auto;min-height:220px;max-height:60dvh;overflow:auto;}
+body[data-morash-part=d] #cftrack{position:relative;bottom:auto;height:auto!important;display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:12px;padding:18px;align-items:end;overflow:visible;}
+body[data-morash-part=d] #cftrack>div{transform:none!important;margin:0!important;min-width:0;}
+body[data-morash-part=d] #cftrack svg{width:100%;height:110px;object-fit:contain;}
+body[data-morash-part=d] #cfLegend{max-height:none;}
+@media(min-width:800px){
+ body[data-morash-part=d] .wrap{max-width:850px;}
+ body[data-morash-part=d] .sheet{max-width:620px;padding:24px;}
+ body[data-morash-part=d] .cardtxt{font-size:20px!important;}
+ body[data-morash-part=d] .bigbtn{font-size:20px;min-height:52px;}
+ body[data-morash-part=d] .hint{font-size:16px;}
+ body[data-morash-part=d] #mtrack{grid-template-columns:repeat(auto-fit,minmax(60px,1fr));}
+}
+body[data-morash-part=h] #stickerChoice{width:100%;margin:8px 0;}
+body[data-morash-part=h] #stickerFeedback{font-size:14px;min-height:24px;color:#31544c;}
+body[data-morash-part=h] .sticker-editor input[type=range]{direction:ltr;touch-action:pan-y;}
+body[data-morash-part=h] #stickerMini{width:120px;height:150px;margin:12px auto;box-shadow:0 2px 9px #0002;cursor:default;touch-action:auto;}
+body[data-morash-part=c] #resetDialog .toolbar{justify-content:center;gap:12px;}

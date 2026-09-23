@@ -108,7 +108,7 @@
       entry.append(replyName,reply,replyStatus,send,error);entries.append(entry);
     }
   }
-  async function showList(id=null){setPicking(false);selectedNote=typeof id==='string'?id:null;$('.entries').textContent='טוענת את ההערות המשותפות…';if(!list.open)list.showModal();try{await sync();renderList()}catch(error){renderList();const warning=document.createElement('p');warning.textContent=errorMessage(error)+' מוצג העותק האחרון מהמכשיר.';$('.entries').prepend(warning);const retry=document.createElement('button');retry.textContent='ניסיון נוסף';retry.onclick=()=>showList(selectedNote);$('.entries').append(retry)}}
+  async function showList(id=null){if(typeof id==='string'&&window.parent!==window&&new URLSearchParams(location.search).get('writerFrame')==='1'){window.parent.postMessage({type:'bracha-writer-note',id},'https://bracha-games-review.marpad990579.chatgpt.site');return}setPicking(false);selectedNote=typeof id==='string'?id:null;$('.entries').textContent='טוענת את ההערות המשותפות…';if(!list.open)list.showModal();try{await sync();renderList()}catch(error){renderList();const warning=document.createElement('p');warning.textContent=errorMessage(error)+' מוצג העותק האחרון מהמכשיר.';$('.entries').prepend(warning);const retry=document.createElement('button');retry.textContent='ניסיון נוסף';retry.onclick=()=>showList(selectedNote);$('.entries').append(retry)}}
   $('#gameFilter').onchange=renderList;$('#statusFilter').onchange=renderList;
   $('#all').onclick=showList;$('#close').onclick=()=>list.close();
   const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -136,4 +136,26 @@
   document.addEventListener('bracha-drafts-recovered',restore);restore();
   try{const saved=JSON.parse(localStorage.getItem(KEY));if(saved){backup.put(saved.id,'note',saved);localStorage.removeItem(KEY);restore()}}catch{}
 
+  // Contextual writer workspace: game remains playable in its own frame.
+  const writerOrigin='https://bracha-games-review.marpad990579.chatgpt.site';
+  if(!portal){
+    if(window.parent!==window&&new URLSearchParams(location.search).get('writerFrame')==='1')$('#all').hidden=true;
+    const workspace=document.createElement('button');workspace.textContent='החלטות הכותבת';
+    workspace.onclick=()=>{if(window.parent!==window)window.parent.postMessage({type:'bracha-writer-note',id:notes.find(n=>n.page===pageKey)?.id},writerOrigin);else location.href=writerOrigin+'/workspace?game='+document.body.dataset.morashPart};
+    $('.bar').append(workspace);
+  }
+  document.addEventListener('bracha-note-saved',()=>{if(window.parent!==window)window.parent.postMessage({type:'bracha-note-saved'},writerOrigin)});
+  window.addEventListener('message',event=>{
+    if(event.origin!==writerOrigin||event.source!==window.parent||window.parent===window)return;
+    if(event.data?.type==='bracha-writer-pick'){
+      const reviewer=String(event.data.reviewer||'').slice(0,100);if(reviewer){const p=profile();p.reviewerName=reviewer;try{localStorage.setItem(PROFILE,JSON.stringify(p))}catch{}}
+      if(list.open)list.close();setPicking(true);
+    }
+    if(event.data?.type==='bracha-writer-target'){
+      let el;try{el=document.querySelector(String(event.data.selector).slice(0,1500))}catch{}
+      const found=!!el&&!!el.getBoundingClientRect().width&&!!el.getBoundingClientRect().height&&description(el)===event.data.target;
+      if(found){el.scrollIntoView({block:'center',behavior:'smooth'});const previous=el.style.outline;el.style.outline='4px solid #dc8b16';setTimeout(()=>el.style.outline=previous,6000)}
+      window.parent.postMessage({type:'bracha-writer-target-result',found},writerOrigin);
+    }
+  });
 })();
