@@ -10,7 +10,9 @@ s=replace(s,'$("#again").onclick=()=>location.reload();','$("#again").onclick=()
 s=replace(s,'const left=Math.max(0,8000-(now-t0));','if(document.hidden){t0+=Math.max(0,now-lastHidden);lastHidden=now;catchRAF=requestAnimationFrame(frame);return}if(now-lastHidden>250)t0+=now-lastHidden;lastHidden=now;const left=Math.max(0,dDuration-(now-t0));')
 s=replace(s,'const dt=Math.min(50,now-last);last=now;','const dt=Math.min(50,now-last);last=now;')
 s=replace(s,'(left/8000*100)','(left/dDuration*100)')
-s=replace(s,'const p=cur(),area=$("#catchArea");','const p=cur(),area=$("#catchArea");const dDuration=[12000,10000,8000][dLevel-1];let lastHidden=performance.now();')
+s=replace(s,'function playCatch(cb){','function playCatch(cb,review=false){')
+s=replace(s,'const p=cur(),area=$("#catchArea");','const p=cur(),area=$("#catchArea");const dDuration=review?86400000:[12000,10000,8000][dLevel-1];let lastHidden=performance.now();')
+s=replace(s,'function finish(){','if(review)window.BrachaStopCatch=()=>{cb=()=>{};finish()};\n  function finish(){')
 addon=r'''
 let dLevel=PlayUI.read('morash-city-level',1);const dSnapshot=PlayUI.read('morash-city-v1',null);
 const dBar=document.createElement('div');dBar.className='controlbar';dBar.innerHTML='<label>קצב המשחק <select id="cityLevel" aria-label="קצב המשחק"><option value="1">נינוח · 4+</option><option value="2">זריז · 7+</option><option value="3">מהיר · 10+</option></select></label><span class="mini-medal" id="citySaved">בונים עיר, בניין אחרי בניין</span>';document.getElementById('setup').prepend(dBar);document.getElementById('cityLevel').value=dLevel;document.getElementById('cityLevel').onchange=e=>{dLevel=+e.target.value;PlayUI.save('morash-city-level',dLevel)};
