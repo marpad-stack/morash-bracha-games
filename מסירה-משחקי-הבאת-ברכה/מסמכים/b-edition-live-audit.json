@@ -1,0 +1,119 @@
+{
+  "url": "https://marpad-stack.github.io/morash-bracha-games/%D7%9E%D7%A1%D7%99%D7%A8%D7%94-%D7%9E%D7%A9%D7%97%D7%A7%D7%99-%D7%94%D7%91%D7%90%D7%AA-%D7%91%D7%A8%D7%9B%D7%94/%D7%9E%D7%A9%D7%97%D7%A7%D7%99%D7%9D/b-story.html?v=5c7c912&story=mendy",
+  "variants": [
+    "mendy",
+    "chani"
+  ],
+  "bookPagesPerVariant": 28,
+  "images": [
+    {
+      "src": "b-story-art/arrival-a5355eed4307.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/family-44fc81f2bd3d.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/tower-570a68d12c64.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/shirt-f8c543dfedb0.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/yawn-56d5e9fa3405.jpg",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "src": "b-story-art/shabbat-bde843497f48.jpg",
+      "width": 1,
+      "height": 1
+    },
+    {
+      "src": "b-story-art/night-a5d51fba5830.jpg",
+      "width": 1,
+      "height": 1
+    },
+    {
+      "src": "b-story-art/brit-591e321c4301.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/bond-a23157b99a92.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/reading-6beb3bfec6c2.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/chani-tower-cc7232867896.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/chani-shirt-b4f6b957c876.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/chani-shabbat-36ef6402164a.jpg",
+      "width": 1,
+      "height": 1
+    },
+    {
+      "src": "b-story-art/chani-night-38a27713c37e.jpg",
+      "width": 1,
+      "height": 1
+    },
+    {
+      "src": "b-story-art/chani-brit-e221f8350a86.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/chani-bond-0ca67413d0b3.jpg",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "src": "b-story-art/chani-reading-1123bb481016.jpg",
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "unavailable": [
+    {
+      "src": "b-story-art/shabbat-bde843497f48.jpg",
+      "width": 1,
+      "height": 1
+    },
+    {
+      "src": "b-story-art/night-a5d51fba5830.jpg",
+      "width": 1,
+      "height": 1
+    },
+    {
+      "src": "b-story-art/chani-shabbat-36ef6402164a.jpg",
+      "width": 1,
+      "height": 1
+    },
+    {
+      "src": "b-story-art/chani-night-38a27713c37e.jpg",
+      "width": 1,
+      "height": 1
+    }
+  ],
+  "overflow": false,
+  "errors": []
+}

@@ -36,9 +36,17 @@
       "b-edition-audit.json",
       "b-variants-audit.json",
       "b-edition-pdf-audit.json",
-      "b-edition-offline-audit.json"
+      "b-edition-offline-audit.json",
+      "b-edition-live-audit.json"
     ],
-    "offlineVariants": 2
+    "offlineVariants": 2,
+    "publicLoadedIllustrations": 13,
+    "publicUnavailableIllustrationsInCurrentNetwork": [
+      "b-story-art/shabbat-bde843497f48.jpg",
+      "b-story-art/night-a5d51fba5830.jpg",
+      "b-story-art/chani-shabbat-36ef6402164a.jpg",
+      "b-story-art/chani-night-38a27713c37e.jpg"
+    ]
   },
-  "limitation": "בדיקות הטלפון בוצעו בהדמיית מסך בדפדפן, וההדפסה נבדקה בקובצי PDF בשני גדלי החוברת. טרם נבדקו טלפון ומדפסת פיזיים. נוסחי הניקוד והאיורים זמינים למעבר הסופי שלך."
+  "limitation": "בדיקות הטלפון בוצעו בהדמיית מסך בדפדפן, וההדפסה נבדקה בקובצי PDF בשני גדלי החוברת. טרם נבדקו טלפון ומדפסת פיזיים. נוסחי הניקוד והאיורים זמינים למעבר הסופי שלך. בבדיקת האתר החי ברשת הנוכחית איורי השבת והלילה של מענדי וחני (ארבעה בסך הכול) הוחלפו בתמונות 1×1; הסיבה נראית קשורה לסינון הרשת. 13 האיורים האחרים נטענו, וכל 17 האיורים תקינים מקומית ובחבילת ההורדה. בירור מול ספק הסינון עדיין פתוח."
 }
