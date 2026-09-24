@@ -159,3 +159,13 @@ print('Packaged:',FINAL)
 print('Files:',len(manifest),'Content comparisons:',len(checks))
 exec((DEV/'quality-package.py').read_text(encoding='utf-8'))
 exec((DEV/'review-package.py').read_text(encoding='utf-8'))
+# Later package sections also belong inside the table with its repeated print footer.
+footer_markup='</td></tr></tbody><tfoot><tr><td><div class="morash-print-brand" aria-hidden="true">'+print_logo+'</div></td></tr></tfoot></table>'
+for document in [*DOCS.glob('*.html'),*TEXT.glob('*.html'),*FINAL.glob('*.html'),*(FINAL/'ערכת-תצוגה-לאתר').glob('*.html')]:
+    markup=document.read_text(encoding='utf-8')
+    if footer_markup in markup:
+        markup=markup.replace(footer_markup,'',1)
+        before,closing,after=markup.rpartition('</main>');assert closing
+        document.write_text(before+footer_markup+closing+after,encoding='utf-8')
+manifest={str(p.relative_to(FINAL)):hashlib.sha256(p.read_bytes()).hexdigest() for p in FINAL.rglob('*') if p.is_file() and p.name!='manifest-sha256.json'}
+(DOCS/'manifest-sha256.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
