@@ -18,9 +18,10 @@ document.getElementById('printBtn').onclick=()=>{
   try{
    await Promise.all([...doc.images].map(image=>image.decode?image.decode():new Promise((resolve,reject)=>{if(image.complete&&image.naturalWidth)resolve();else{image.onload=resolve;image.onerror=reject}})));
    if(printWindow.closed||token!==revision)return;
+   if([...doc.images].some(image=>image.naturalWidth<2||image.naturalHeight<2))throw new Error('Missing illustration');
    button.disabled=false;doc.body.dataset.printReady='true';status.textContent=groups.length+' דפי A4 מוכנים. אם חלון ההדפסה לא נפתח, לחצו על הכפתור. בטלפון אפשר לבחור הדפסה גם בתפריט השיתוף.';
    if(auto)printWindow.requestAnimationFrame(()=>printWindow.requestAnimationFrame(()=>{if(!printWindow.closed&&token===revision){printWindow.focus();printWindow.print()}}));
-  }catch{if(!printWindow.closed&&token===revision)status.textContent='לא כל התמונות נטענו. חזרו לספר ונסו שוב.'}
+  }catch{if(!printWindow.closed&&token===revision)status.textContent='ההדפסה ממתינה: חלק מהאיורים חסרים. בדקו את החיבור או את סינון התמונות, חזרו לספר ונסו שוב. אפשר גם לבחור להדפיס רק עמוד שנטען במלואו.'}
  }
  layout.onchange=()=>prepare(false);prepare(true);
 };

@@ -773,9 +773,10 @@ document.getElementById('printBtn').onclick=()=>{
   try{
    await Promise.all([...doc.images].map(image=>image.decode?image.decode():new Promise((resolve,reject)=>{if(image.complete&&image.naturalWidth)resolve();else{image.onload=resolve;image.onerror=reject}})));
    if(printWindow.closed||token!==revision)return;
+   if([...doc.images].some(image=>image.naturalWidth<2||image.naturalHeight<2))throw new Error('Missing illustration');
    button.disabled=false;doc.body.dataset.printReady='true';status.textContent=groups.length+' דפי A4 מוכנים. אם חלון ההדפסה לא נפתח, לחצו על הכפתור. בטלפון אפשר לבחור הדפסה גם בתפריט השיתוף.';
    if(auto)printWindow.requestAnimationFrame(()=>printWindow.requestAnimationFrame(()=>{if(!printWindow.closed&&token===revision){printWindow.focus();printWindow.print()}}));
-  }catch{if(!printWindow.closed&&token===revision)status.textContent='לא כל התמונות נטענו. חזרו לספר ונסו שוב.'}
+  }catch{if(!printWindow.closed&&token===revision)status.textContent='ההדפסה ממתינה: חלק מהאיורים חסרים. בדקו את החיבור או את סינון התמונות, חזרו לספר ונסו שוב. אפשר גם לבחור להדפיס רק עמוד שנטען במלואו.'}
  }
  layout.onchange=()=>prepare(false);prepare(true);
 };
@@ -1323,6 +1324,8 @@ body[data-morash-part=b] header{max-width:none;padding:18px 28px;gap:18px;backgr
  const tips=games.querySelector('.review-tips');tips.textContent='שש פעילויות מתוך העולם של הסיפור. בוחרים רמה ומשחקים בקצב שלכם.';
  gamesTitle.after(bBar);bBar.after(tips);games.prepend(gamesTitle);
  document.getElementById('bookRead').textContent='קריאה בטקסט';
+ const imageNotice=document.createElement('p');imageNotice.className='review-tips';imageNotice.hidden=true;imageNotice.setAttribute('role','status');imageNotice.textContent='האיור בעמוד הזה לא נטען. אפשר להמשיך באמצעות ״קריאה בטקסט״. בדקו את החיבור או את סינון התמונות כדי לראות גם את האיור.';book.before(imageNotice);
+ const bookImage=document.getElementById('pageImg'),checkImage=()=>{imageNotice.hidden=!(bookImage.complete&&(bookImage.naturalWidth<2||bookImage.naturalHeight<2))};bookImage.addEventListener('load',checkImage);bookImage.addEventListener('error',()=>{imageNotice.hidden=false});checkImage();
  const nav=document.createElement('nav');nav.className='b-mobile-tabs';nav.setAttribute('aria-label','בחירת אזור');nav.innerHTML='<button type="button" data-book-view="read" aria-pressed="true">קוראים בספר</button><button type="button" data-book-view="play" aria-pressed="false">משחקים יחד</button>';
  workspace.before(nav);document.body.dataset.bookView='read';
  window.bSetView=view=>{document.body.dataset.bookView=view;nav.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.bookView===view)))};

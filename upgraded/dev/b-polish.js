@@ -10,6 +10,8 @@
  const tips=games.querySelector('.review-tips');tips.textContent='שש פעילויות מתוך העולם של הסיפור. בוחרים רמה ומשחקים בקצב שלכם.';
  gamesTitle.after(bBar);bBar.after(tips);games.prepend(gamesTitle);
  document.getElementById('bookRead').textContent='קריאה בטקסט';
+ const imageNotice=document.createElement('p');imageNotice.className='review-tips';imageNotice.hidden=true;imageNotice.setAttribute('role','status');imageNotice.textContent='האיור בעמוד הזה לא נטען. אפשר להמשיך באמצעות ״קריאה בטקסט״. בדקו את החיבור או את סינון התמונות כדי לראות גם את האיור.';book.before(imageNotice);
+ const bookImage=document.getElementById('pageImg'),checkImage=()=>{imageNotice.hidden=!(bookImage.complete&&(bookImage.naturalWidth<2||bookImage.naturalHeight<2))};bookImage.addEventListener('load',checkImage);bookImage.addEventListener('error',()=>{imageNotice.hidden=false});checkImage();
  const nav=document.createElement('nav');nav.className='b-mobile-tabs';nav.setAttribute('aria-label','בחירת אזור');nav.innerHTML='<button type="button" data-book-view="read" aria-pressed="true">קוראים בספר</button><button type="button" data-book-view="play" aria-pressed="false">משחקים יחד</button>';
  workspace.before(nav);document.body.dataset.bookView='read';
  window.bSetView=view=>{document.body.dataset.bookView=view;nav.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.bookView===view)))};
