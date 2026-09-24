@@ -16,13 +16,13 @@ document.getElementById('printBtn').onclick=()=>{
   doc.getElementById('sheets').replaceChildren();
   groups.forEach(indices=>{const sheet=doc.createElement('section');sheet.className='sheet'+(indices.length===1?' cover':'');indices.forEach(i=>{const figure=doc.createElement('figure'),image=doc.createElement('img'),caption=doc.createElement('figcaption');image.src=new URL(PAGES[i],document.baseURI).href;image.dataset.bookPage=i;image.alt='עמוד '+(i+1);caption.textContent='עמוד '+(i+1)+' מתוך '+PAGES.length;figure.append(image,caption);sheet.append(figure)});doc.getElementById('sheets').append(sheet)});
   try{
-   await Promise.allSettled([...doc.images].map(image=>image.decode?image.decode():new Promise((resolve,reject)=>{if(image.complete&&image.naturalWidth)resolve();else{image.onload=resolve;image.onerror=reject}})));
+   await Promise.allSettled([...doc.images].map(async image=>{await image.decode();if(image.naturalWidth<2||image.naturalHeight<2)return;image.src=await MorashBrand.bookPage(image.src);await image.decode();image.dataset.branded='true'}));
    if(printWindow.closed||token!==revision)return;
    const missing=[...doc.images].filter(image=>image.naturalWidth<2||image.naturalHeight<2);
    if(missing.length){
     textVersion.hidden=false;textVersion.onclick=()=>{
      if(token!==revision||printWindow.closed)return;
-     missing.forEach(image=>{const panel=doc.createElement('div'),copy=doc.createElement('p');panel.className='print-text-page';copy.textContent=BOOK_READING[+image.dataset.bookPage].n||'עמוד איור ללא טקסט. האיור לא היה זמין בזמן הכנת ההדפסה.';panel.append(copy);image.replaceWith(panel)});
+     missing.forEach(image=>{const panel=doc.createElement('div'),copy=doc.createElement('p'),brand=doc.createElement('div');panel.className='print-text-page';panel.style.position='relative';brand.innerHTML=MorashBrand.svg;brand.style.cssText='position:absolute;bottom:2%;left:2%;width:14%';brand.firstElementChild.style.cssText='width:100%;height:auto';copy.textContent=BOOK_READING[+image.dataset.bookPage].n||'עמוד איור ללא טקסט. האיור לא היה זמין בזמן הכנת ההדפסה.';panel.append(copy,brand);image.replaceWith(panel)});
      textVersion.hidden=true;button.disabled=false;doc.body.dataset.printReady='true';doc.body.dataset.textPages=String(missing.length);status.textContent=groups.length+' דפי A4 מוכנים. ב־'+missing.length+' עמודים הוצג טקסט הסיפור במקום האיור החסר. לחצו על הדפסה / שמירה כ־PDF.';
     };throw new Error('Missing illustration');
    }

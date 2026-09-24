@@ -1,5 +1,5 @@
 """Approved illustration/game review; the story transcript remains unchanged."""
-import base64,io
+import base64,io,hashlib
 from PIL import Image
 final_b=json.loads((DEV/'b-final-content.json').read_text(encoding='utf-8'))
 m=re.search(r'const PAGES\s*=\s*(\[[\s\S]*?\]);',s)
@@ -17,9 +17,14 @@ for number,source in enumerate(pages,1):
     with Image.open(io.BytesIO(payload)) as picture:
         assert picture.width>=640 and picture.height>=640,number
         extension={'JPEG':'jpg','WEBP':'webp','PNG':'png'}[picture.format]
-    filename=f'{number:02}.{extension}'
+    revision='-'+hashlib.sha256(payload).hexdigest()[:12] if number in final_b.get('versionedPages',[]) else ''
+    filename=f'{number:02}{revision}.{extension}'
     (book_assets/filename).write_bytes(payload)
     book_paths.append('b-story-pages/'+filename)
+# Prune only generated book images superseded by an approved edit.
+for previous in book_assets.iterdir():
+    if previous.is_file() and re.fullmatch(r'\d{2}(?:-[a-f0-9]{12})?\.(webp|jpg|png)',previous.name) and 'b-story-pages/'+previous.name not in book_paths:
+        previous.unlink()
 s=s[:m.start(1)]+json.dumps(book_paths)+s[m.end(1):]
 for gid,changes in final_b['activities'].items():
     pattern=r"(\{id:'"+gid+r"',icon:'[^']+',t:)(?:\"[^\"]*\"|'[^']*')(,how:)(?:\"[^\"]*\"|'[^']*')"

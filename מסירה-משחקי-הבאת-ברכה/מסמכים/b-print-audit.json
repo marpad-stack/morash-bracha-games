@@ -7,7 +7,8 @@
       "pages": 21,
       "images": 40,
       "userActivation": true,
-      "allImagesReady": true
+      "allImagesReady": true,
+      "embeddedBlackLogo": true
     },
     {
       "width": 390,
@@ -15,7 +16,8 @@
       "pages": 40,
       "images": 40,
       "userActivation": true,
-      "allImagesReady": true
+      "allImagesReady": true,
+      "embeddedBlackLogo": true
     },
     {
       "width": 390,
@@ -23,7 +25,8 @@
       "pages": 1,
       "images": 1,
       "userActivation": true,
-      "allImagesReady": true
+      "allImagesReady": true,
+      "embeddedBlackLogo": true
     },
     {
       "width": 1440,
@@ -31,7 +34,8 @@
       "pages": 21,
       "images": 40,
       "userActivation": true,
-      "allImagesReady": true
+      "allImagesReady": true,
+      "embeddedBlackLogo": true
     },
     {
       "width": 1440,
@@ -39,7 +43,8 @@
       "pages": 40,
       "images": 40,
       "userActivation": true,
-      "allImagesReady": true
+      "allImagesReady": true,
+      "embeddedBlackLogo": true
     },
     {
       "width": 1440,
@@ -47,7 +52,8 @@
       "pages": 1,
       "images": 1,
       "userActivation": true,
-      "allImagesReady": true
+      "allImagesReady": true,
+      "embeddedBlackLogo": true
     }
   ],
   "physicalDevicesTested": false

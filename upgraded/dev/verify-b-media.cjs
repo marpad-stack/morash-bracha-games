@@ -8,7 +8,7 @@ const target=process.env.B_URL||'http://127.0.0.1:8766/upgraded/b-story.html';
    const context=await browser.newContext({viewport:{width,height:900},hasTouch:width===390,isMobile:width===390,reducedMotion:'reduce'});
    await context.addInitScript(()=>{const open=window.open;window.open=function(...a){const w=open.apply(this,a);if(w)w.print=()=>{};return w}});
    const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(target,{waitUntil:'domcontentloaded',timeout:60000});
-   assert(await page.evaluate(()=>PAGES.length===40&&PAGES.every(s=>/^b-story-pages\/[0-9]{2}\.(webp|jpg|png)$/.test(s))));
+   assert(await page.evaluate(()=>PAGES.length===40&&PAGES.every(s=>/^b-story-pages\/[0-9]{2}(?:-[a-f0-9]{12})?\.(webp|jpg|png)$/.test(s))));
    const unavailable=[];
    await page.evaluate(()=>{p=0;show()});
    for(let i=0;i<40;i++){

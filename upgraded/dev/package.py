@@ -11,7 +11,7 @@ data=json.loads((DEV/'content-data.json').read_text(encoding='utf-8'))
 checks=json.loads((DEV/'content-checks.json').read_text(encoding='utf-8'))
 descriptions={
 'a':('ציורים הופכים למשחקים','🎨','#d4e8dc','צביעה, זיכרון, פאזלים וחיפוש. התאמות רמה, שיאים ומדליות שנשמרות.','4+ · יצירה, זיכרון ותפיסה חזותית'),
-'b':('הסיפור ממשיך בידיים','📖','#e8dff0','40 עמודי הספר, שבעה איורים מתוקנים, שש פעילויות, המשך קריאה אוטומטי והדפסה מותאמת.','3+ · סיפור, משחק ודמיון'),
+'b':('הסיפור ממשיך בידיים','📖','#e8dff0','40 עמודי הספר, 11 איורים מתוקנים, שש פעילויות, המשך קריאה אוטומטי והדפסה מותאמת.','3+ · סיפור, משחק ודמיון'),
 'c':('כל הבית הרפתקה','🔑','#f4deb0','חמישה אתגרי פעולה, החידות המקוריות, איסוף אותיות ותיבה סודית.','4+, 7+, 10+ · גילוי, זיכרון וחשיבה'),
 'd':('בונים עיר של מצוות','🏗️','#dbebdc','איסוף בתנועה, לוח מסע, בחירת משימה ובניינים שנשארים בעיר גם כשחוזרים מחר.','4+ · משחק משפחתי, בחירה ובנייה'),
 'e':('יום שלם של משחק','☀️','#f5dfad','12 תחנות ושני מסלולים: חידות ואתגרים או עשייה. אפשרות משחק בלחיצות ושמירת מסע.','4+ · רצף, שגרה ומוטוריקה'),
@@ -28,8 +28,14 @@ for game in data:
     shutil.copy2(OUT/game['file'],dest)
 for directory in ['a-coloring','i-first-steps','b-story-pages']:
     shutil.copytree(OUT/directory,GAMES/directory,dirs_exist_ok=True)
+for previous in (GAMES/'b-story-pages').iterdir():
+    if previous.is_file() and re.fullmatch(r'\d{2}(?:-[a-f0-9]{12})?\.(webp|jpg|png)',previous.name) and not (OUT/'b-story-pages'/previous.name).exists():
+        previous.unlink()
 
+print_logo=(DEV/'assets/morash-logo-black.svg').read_text(encoding='utf-8')
 def page(title,body,extra=''):
+    body='<table class="morash-print-table"><tbody><tr><td>'+body+'</td></tr></tbody><tfoot><tr><td><div class="morash-print-brand" aria-hidden="true">'+print_logo+'</div></td></tr></tfoot></table>'
+    extra+=(DEV/'print-footer.css').read_text(encoding='utf-8')+'@media print{@page{size:A4 portrait;margin:16mm 14mm}}'
     return '<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+'</title><style>'+r'''
 *{box-sizing:border-box}body{margin:0;background:#fcf8ee;color:#264447;font-family:Arial,sans-serif;line-height:1.8}main{max-width:1100px;margin:auto;padding:35px 24px}h1{font-size:42px;line-height:1.2;letter-spacing:-1px}h2{color:#177a7a;margin-top:35px}h3{margin:0 0 12px}a{color:#166c70}p{max-width:85ch}header{padding:18px 26px;border-bottom:1px solid #d9e2d7;background:#fffdf6;display:flex;justify-content:space-between;align-items:center;gap:20px}header b{font-size:21px}.lead{font-size:19px;color:#5b7772}.pill{display:inline-block;padding:7px 15px;border-radius:30px;background:#deede4;color:#246259;font-size:13px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}.card{display:flex;flex-direction:column;background:white;border:1px solid #dfe4d8;border-radius:25px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #28493315}.cover{height:158px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.cover:before,.cover:after{content:'';position:absolute;border:1px solid #fff8;border-radius:50%;width:190px;height:190px;transform:rotate(15deg)}.cover:after{width:230px;height:230px}.symbol{font-size:62px;position:relative;z-index:1;filter:drop-shadow(0 9px 0 #3148310c)}.card-body{padding:22px;flex:1;display:flex;flex-direction:column}.part{font-size:12px;color:#628073;font-weight:bold}.card h2{font-size:23px;margin:5px 0 10px}.card p{font-size:14px;margin:0 0 14px;color:#58716e}.card small{font-size:12px;margin-top:auto;color:#7a725e}.open{margin-top:18px;font-weight:bold;color:#177c7e}.docs{display:flex;gap:14px;flex-wrap:wrap;margin:25px 0}.docs a,.button{display:inline-block;border:1px solid #bfcfc2;border-radius:15px;background:white;padding:12px 18px;text-decoration:none;font:inherit;cursor:pointer}.note{background:#f1ead8;padding:18px 22px;border-radius:18px;margin:25px 0}.entry{background:#fffdf8;padding:20px;border:1px solid #e0e2d7;border-radius:18px;margin:14px 0;break-inside:avoid}.text-row{display:grid;grid-template-columns:130px 1fr;gap:15px;border-top:1px solid #eee8db;padding:9px 0}.text-row:first-child{border:0}.label{font-size:12px;color:#7d8a7b}.value{white-space:pre-wrap;overflow-wrap:anywhere}summary{cursor:pointer;font-size:19px;font-weight:bold;padding:15px;background:#e5eee4;border-radius:15px}details{margin:20px 0}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #d7ddd0;padding:9px;text-align:right}th{background:#e6eedf}img.book-page{max-width:100%;max-height:950px;display:block;margin:15px auto}input.search{width:100%;padding:15px;border:1px solid #b5cbbd;border-radius:15px;font:inherit;background:white}.book-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.book-gallery figure{margin:0;background:white;padding:15px;border-radius:18px}.book-gallery img{width:100%;display:block}.book-gallery figcaption{font-size:13px;color:#7a8775}.footer{color:#7f8e7c;font-size:12px;margin-top:40px}.hidden{display:none}@media(max-width:760px){main{padding:24px 17px}h1{font-size:34px}.cards{grid-template-columns:1fr}.text-row{grid-template-columns:1fr;gap:3px}.book-gallery{grid-template-columns:1fr}.cover{height:145px}}@media print{header,.docs,.search,.button{display:none}.entry{box-shadow:none}main{max-width:none;padding:0}details{display:block}summary{break-after:avoid}.book-gallery{display:block}.book-gallery figure{break-after:page}.hidden{display:block}}
 ''' + extra+'</style><body><header><b>הבאת ברכה ✦</b><span>מסירת משחקים · 16.09.2026</span></header><main>'+body+'</main></body></html>'
@@ -58,7 +64,7 @@ for game in data:
             folder=TEXT/'עמודי-הספר';folder.mkdir(exist_ok=True);figs=[]
             for i,src in enumerate(val):
                 mime,encoded=src.split(',',1);ext='png' if 'png' in mime else 'jpg';fname=f'{i+1:02}.{ext}';(folder/fname).write_bytes(base64.b64decode(encoded));figs.append(f'<figure><figcaption>עמוד {i+1}</figcaption><img class="book-page" loading="lazy" src="עמודי-הספר/{fname}" alt="עמוד {i+1} מתוך אור הגיע אלינו"></figure>')
-            body.append('<h3>הספר המקורי · '+str(len(val))+' עמודים</h3><p>המלל בספר מוטמע בתוך תמונות. הנוסח הקיים נשמר עד לקבלת העריכה החדשה. שבעה איורים תוקנו לפי ההערות, והנוסח שבתוכם נשמר.</p><div class="book-gallery">'+''.join(figs)+'</div>')
+            body.append('<h3>הספר המקורי · '+str(len(val))+' עמודים</h3><p>המלל בספר מוטמע בתוך תמונות. הנוסח הקיים נשמר עד לקבלת העריכה החדשה. 11 איורים תוקנו לפי ההערות, והנוסח שבתוכם נשמר.</p><div class="book-gallery">'+''.join(figs)+'</div>')
             plain.append('אור הגיע אלינו: '+str(len(val))+' עמודים מאוירים. כל העמודים נמצאים בקובץ כל-הטקסטים.html ובתיקיית עמודי-הספר; הם אינם מלל ניתן להעתקה.');continue
         pairs=list(walk(val))
         if not pairs:continue
@@ -126,6 +132,15 @@ integration='''<h1>חיבור המשחקים לאתר</h1><p>כל משחק עו�
 (DOCS/'הוראות-חיבור.html').write_text(page('הוראות חיבור',integration),encoding='utf-8')
 shutil.copy2(DEV/'content-checks.json',DOCS/'בדיקת-זהות-תוכן.json')
 (FINAL/'קראו-אותי.txt').write_text('\ufeff'+'הבאת ברכה — מסירת משחקים\n\nפתחי את התחילו-כאן.html כדי לעבור על כל החלקים.\n\nמשחקים — כל הקבצים הסופיים.\nמסמכים/מה-בוצע.html — פירוט השינויים.\nטקסטים/כל-הטקסטים.html — כל התוכן מסודר, כולל עמודי הספר כתמונות מקור.\nטקסטים/כל-הטקסטים.txt — גרסת טקסט של החלקים הזמינים כמלל.\nמסמכים/הערות-תוכן.html — נקודות במקור שלא שונו.\nמסמכים/הוראות-חיבור.html — הוראות העלאה ושילוב.\nאריזות — ZIP נפרד לכל חלק.\n\nהתיקייה הראשית והקבצים המקוריים נשארו ללא שינוי.\n',encoding='utf-8')
+book_file=GAMES/'b-story.html'
+book_source=book_file.read_text(encoding='utf-8')
+book_paths=json.loads(re.search(r'const PAGES\s*=\s*(\[[\s\S]*?\]);',book_source)[1])
+book_sources=next(g for g in data if g['id']=='b')['data']['PAGES']
+offline_map=dict(zip([Path(p).name for p in book_paths],book_sources))
+offline_book=book_source.replace('<head>','<head><script>window.MORASH_OFFLINE_BOOK_DATA='+json.dumps(offline_map)+';</script>',1)
+def archive_file(z,f,base):
+    if f==book_file:z.writestr(f.relative_to(base).as_posix(),offline_book)
+    else:z.write(f,f.relative_to(base))
 packages=FINAL/'אריזות';packages.mkdir(exist_ok=True)
 for g in data:
     src=GAMES/g['file'];base=src.parent if g['id'] in ['a','i'] else GAMES
@@ -133,11 +148,11 @@ for g in data:
     if g['id']=='b':files+=list((GAMES/'b-story-pages').glob('*'))
     with zipfile.ZipFile(packages/(g['id']+'-'+src.parent.name+'.zip' if g['id'] in ['a','i'] else g['id']+'-'+src.stem+'.zip'),'w',zipfile.ZIP_DEFLATED) as z:
         for f in files:
-            if f.is_file():z.write(f,f.relative_to(base))
+            if f.is_file():archive_file(z,f,base)
 # One current download target is shared by GitHub Pages and the Sites portal.
 with zipfile.ZipFile(FINAL/'corrected-games.zip','w',zipfile.ZIP_DEFLATED) as z:
     for f in GAMES.rglob('*'):
-        if f.is_file():z.write(f,f.relative_to(GAMES))
+        if f.is_file():archive_file(z,f,GAMES)
 manifest={str(p.relative_to(FINAL)):hashlib.sha256(p.read_bytes()).hexdigest() for p in FINAL.rglob('*') if p.is_file() and p.name!='manifest-sha256.json'}
 (DOCS/'manifest-sha256.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
 print('Packaged:',FINAL)

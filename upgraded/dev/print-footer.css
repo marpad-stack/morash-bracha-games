@@ -1,0 +1,11 @@
+.morash-print-table,.morash-print-table>tbody,.morash-print-table>tbody>tr,.morash-print-table>tbody>tr>td{display:contents}
+.morash-print-table>tfoot{display:none}
+@media print{
+ .morash-print-table{display:table;width:100%;border-collapse:collapse;border:0}
+ .morash-print-table>tbody{display:table-row-group}
+ .morash-print-table>tbody>tr,.morash-print-table>tfoot>tr{display:table-row;break-inside:auto}
+ .morash-print-table>tbody>tr>td,.morash-print-table>tfoot>tr>td{display:table-cell;padding:0;border:0;vertical-align:top;text-align:inherit;font-size:inherit}
+ .morash-print-table>tfoot{display:table-footer-group}
+ .morash-print-brand{display:block;width:25mm;height:14mm;padding-top:5mm;margin-right:auto;background:white}
+ .morash-print-brand svg{display:block;width:25mm;height:9mm}
+}

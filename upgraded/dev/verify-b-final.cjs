@@ -20,7 +20,7 @@ const out=path.join(__dirname,'review-evidence'),checks=[],base=process.env.B_UR
  }ok('320/390/1522 layouts: no stretching or horizontal overflow; gallery and reading view navigation');
  await page.setViewportSize({width:390,height:844});await page.evaluate(()=>bSetView('play'));
  for(const level of [1,2,3]){
-  await page.locator('#bookLevel').selectOption(String(level));await page.locator('[data-g="memory"]').click();const count=[3,6,8][level-1];assert.equal(await page.locator('.b-story-memory .card').count(),count*2);
+  await page.locator('#bookLevel').selectOption(String(level));await page.locator('[data-g="memory"]').click();await page.locator('.b-story-memory .card').first().waitFor();const count=[3,6,8][level-1];assert.equal(await page.locator('.b-story-memory .card').count(),count*2);
   const ids=await page.locator('.b-story-memory .card').evaluateAll(cards=>[...new Set(cards.map(c=>c.dataset.scene))]);assert.equal(ids.length,count);
   for(const id of ids){const pair=page.locator('.b-story-memory .card[data-scene="'+id+'"]');await pair.nth(0).click();await pair.nth(1).click();assert(await pair.nth(0).isDisabled())}
   assert.equal(await page.locator('#bPairs').textContent(),String(count));assert(await page.evaluate(level=>bRecords['memory-'+level],level));await page.locator('#close').click();

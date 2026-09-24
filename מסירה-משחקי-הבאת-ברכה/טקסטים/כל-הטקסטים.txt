@@ -5710,12 +5710,12 @@ function bAward(id){const key=id+'-'+bRoundLevel;if(!bRecords[key]){bRecords[key
 const bExit=document.getElementById('close'),bSheet=document.getElementById('sheet'),bHead=document.createElement('div');bHead.className='b-activity-head';bSheet.prepend(bHead);bHead.append(bExit,document.getElementById('gtitle'));bExit.type='button';bExit.textContent='× סגירה';bExit.setAttribute('aria-label','סגירת המשחק וחזרה לבחירת הפעילויות');
 function bCloseActivity(){modal.classList.remove('on');gb.replaceChildren();msg.textContent='';}
 bExit.onclick=null;bExit.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();bCloseActivity()});
-const bOriginalOpen=openGame;openGame=function(id){bOriginalOpen(id);bSheet.scrollTop=0;if(id==='draw'){const bt=document.createElement('button');bt.className='btn';bt.textContent='שומרים את הציור';bt.onclick=()=>{const cv=document.getElementById('canvas'),out=document.createElement('canvas');out.width=cv.width;out.height=cv.height;const c=out.getContext('2d');c.fillStyle='white';c.fillRect(0,0,out.width,out.height);c.drawImage(cv,0,0);out.toBlob(blob=>{if(blob){PlayUI.download('הציור-שלי.png',blob);bAward('draw')}})};gb.append(bt)}if(id==='face'){const bt=document.createElement('button');bt.className='btn';bt.textContent='סיימתי - מקבלים כוכב';bt.onclick=()=>bAward(id);gb.append(bt)}gb.querySelectorAll('.drop').forEach(d=>{d.tabIndex=0;d.role='button';d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();d.click()}}})};
+const bOriginalOpen=openGame;openGame=function(id){bOriginalOpen(id);bSheet.scrollTop=0;if(id==='draw'){const bt=document.createElement('button');bt.className='btn';bt.textContent='שומרים את הציור';bt.onclick=async()=>{await MorashBrand.ready;const cv=document.getElementById('canvas'),out=document.createElement('canvas');out.width=cv.width;out.height=cv.height;const c=out.getContext('2d');c.fillStyle='white';c.fillRect(0,0,out.width,out.height);c.drawImage(cv,0,0);MorashBrand.footer(out).toBlob(blob=>{if(blob){PlayUI.download('הציור-שלי.png',blob);bAward('draw')}})};gb.append(bt)}if(id==='face'){const bt=document.createElement('button');bt.className='btn';bt.textContent='סיימתי - מקבלים כוכב';bt.onclick=()=>bAward(id);gb.append(bt)}gb.querySelectorAll('.drop').forEach(d=>{d.tabIndex=0;d.role='button';d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();d.click()}}})};
 const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}const n=3,grid=Array(9).fill(false),solution=new Set();let won=false;function flip(i){for(const j of [i,i%n?i-1:-1,i%n =0&&j<9)grid[j]=!grid[j];if(solution.has(i))solution.delete(i);else solution.add(i)}for(let k=0;k<(bLevel===2?3:6);k++)flip(Math.floor(Math.random()*9));if(!grid.some(Boolean))flip(4);b.innerHTML='<p class=
 >כל לחיצה משנה גם את האורות הצמודים. נסו לכבות את כולם! <div class=
 >רמז לצעד הבא ';function paint(){b.querySelector('.b-lights').innerHTML=grid.map((v,i)=>'<button data-light=
 >'+(v?'☀':'·')+' ').join('')}paint();b.querySelector('.b-lights').onclick=e=>{const bt=e.target.closest('[data-light]');if(!bt||won)return;flip(+bt.dataset.light);paint();if(!grid.some(Boolean)){won=true;m.textContent='הבית נרדם. לילה טוב.';bAward('quiet')}};b.querySelector('#bHint').onclick=()=>{if(won)return;const i=[...solution][0],bt=b.querySelector('[data-light=
-};
+: [4, 6, 12, 14, 28, 36]};
 /* Activity state is scoped to an opening, so delayed actions cannot award another game. */
 let bEpoch=0;
 const bRetired=new Set(B_REVIEW.retiredActivities);
@@ -5739,13 +5739,29 @@ openGame=function(id){
 };
 // Resume the saved page directly; no second bookmark action is needed.
 if(Number.isInteger(savedPage)&&savedPage>=0&&savedPage {
- const epoch=bEpoch,count=[3,6,8][bRoundLevel-1],chosen=PlayUI.shuffle(bScenes).slice(0,count);
+  const image=new Image();let done=false;
+  const finish=valid=>{if(done)return;done=true;clearTimeout(timer);image.onload=image.onerror=null;resolve(valid)};
+  const timer=setTimeout(()=>finish(false),12000);
+  image.onload=()=>finish(image.naturalWidth>=2&&image.naturalHeight>=2);image.onerror=()=>finish(false);image.src=src;
+ });
+}
+START.memory=async(box,message)=>{
+ const epoch=bEpoch,requested=[3,6,8][bRoundLevel-1];
+ box.innerHTML='<p class=
+>טוענים את תמונות המשחק… ';
+ const visible=await Promise.all(bScenes.map(async scene=>await bCanDisplay(PAGES[scene[0]])?scene:null));
+ if(epoch!==bEpoch)return;
+ const available=visible.filter(Boolean),count=Math.min(requested,available.length),chosen=PlayUI.shuffle(available).slice(0,count);
+ if(count<2){box.innerHTML='<p class=
+>תמונות המשחק לא נטענו. אפשר לנסות שוב או לבחור פעילות אחרת. <button class=
+>ניסיון נוסף ';box.querySelector('button').onclick=()=>openGame('memory');return}
  const deck=PlayUI.shuffle([...chosen,...chosen]);let first=null,locked=false,found=0;
  box.innerHTML='<p class=
 >נמצאו <b id=
 >0  מתוך '+count+' זוגות <div class=
 >הצצה לתמונות ';
  const cards=[...box.querySelectorAll('.card')],peek=box.querySelector('#bPeek');
+ const again=document.createElement('button');again.className='btn b-restart';again.textContent='משחק חדש';again.onclick=()=>openGame('memory');box.append(again);
  const label=card=>{const title=bScenes.find(x=>String(x[0])===card.dataset.scene)[1];card.setAttribute('aria-label',card.classList.contains('up')?title:'קלף '+(cards.indexOf(card)+1)+' סגור')};
  cards.forEach(card=>card.onclick=()=>{
   if(locked||card.classList.contains('up')||epoch!==bEpoch)return;
@@ -6884,6 +6900,8 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 טוענים את עמוד
 בעמוד הזה יש איור ללא טקסט. האיור אינו זמין כרגע; אפשר להמשיך לעמוד הבא.
 האיור אינו זמין כרגע. אפשר לקרוא כאן את הטקסט ולהמשיך בסיפור.
+אפשר לשחק — האיור לא נטען
+האיור לא נטען
 
 ג · בית המצוות — נספח מלל מסכים ופעולות
 בית המצוות · הרפתקת האותיות
@@ -12578,9 +12596,9 @@ function drawCard(cb){
     for(var i=0;i maxW&&line){x.fillText(line,rx,y);y+=lh;line=words[i];if(++lines>=maxLines-1){x.fillText(line+'…',rx,y);return;}}else line=test;}if(line)x.fillText(line,rx,y);}
 document.getElementById('cardBtn').addEventListener('click',function(){document.fonts&&document.fonts.ready.then(function(){drawCard(function(){document.getElementById('modal').classList.add('on');});});});
 document.getElementById('cardClose').addEventListener('click',function(){document.getElementById('modal').classList.remove('on');});
-document.getElementById('cardShare').addEventListener('click',function(){
+document.getElementById('cardShare').addEventListener('click',async function(){await MorashBrand.ready;
   var c=document.getElementById('cardCanvas');
-  c.toBlob(function(b){
+  MorashBrand.footer(c).toBlob(function(b){
     var f=new File([b],'shifra-card.png',{type:'image/png'});
     if(navigator.share&&navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],title:'כרטיס מזכרת'}).catch(function(){});}
     else{var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='shifra-card.png';a.click();}

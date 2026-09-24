@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "40 book images contain a black rasterized logo in a reserved footer",
+    "Card download and print include reserved black-logo footer",
+    "Personal map has a repeated black vector logo in print"
+  ],
+  "bookPages": 40,
+  "errors": []
+}

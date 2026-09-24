@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen edit",
+  "prompt": "Use case: precise-object-edit. Edit target: this square Hebrew story illustration, mother and boy reading an open blue-bound storybook on the floor. Correct ONLY the READING ORIENTATION of the SMALL OPEN BOOK. Mother and boy are above/behind the book in this view, so the printed illustrations and tiny story text must face THEM. Rotate BOTH small printed page contents by 180 degrees within the book: the miniature people on each page must appear UPSIDE DOWN to us, the outside viewer, and the tiny text must likewise be UPSIDE DOWN to us, naturally readable to mother and boy. The top of each printed miniature picture is at the near/lower book edge toward the viewer; its text bottom is toward the readers' hands. Preserve clear narrative pictures, ordinary short story text, realistic perspective on both page planes, blue cover, open spine and book position. Do not rotate the whole illustration! Keep ALL LARGE HEBREW STORY TEXT AT TOP upright and EXACTLY unchanged. Keep all mother/child faces, hands, fingers, bodies, poses, modest clothes, rug and room unchanged. Same warm watercolor storybook style, whole square page.",
+  "input": "upgraded/dev/assets/b-final/page36.png",
+  "source": "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-24f1ee3d-0bb2-43a0-ae5e-fc662ea724ee.png",
+  "output": "upgraded/dev/assets/b-final/page36.jpg"
+}

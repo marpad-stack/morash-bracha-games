@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const {chromium}=require('C:/Users/user/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{const b=await chromium.launch({headless:true,channel:'msedge'});const p=await b.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));
+await p.addInitScript(()=>{const open=window.open;window.open=function(...a){const w=open.apply(this,a);if(w)w.print=()=>{};return w}});
+await p.goto(require('url').pathToFileURL(path.resolve(__dirname,'review-evidence/offline-brand/b-story.html')).href);
+const offline=await p.evaluate(async()=>{const pages=await Promise.all(PAGES.map(x=>MorashBrand.bookPage(x)));return pages.filter(x=>x.startsWith('data:image/png')).length});assert.equal(offline,40);
+const pending=p.waitForEvent('popup');await p.locator('#printBtn').click();const pop=await pending;await pop.waitForFunction(()=>document.body.dataset.printReady==='true',{},{timeout:60000});assert.equal(await pop.locator('img[data-branded=true]').count(),40);await pop.close();
+await p.goto('http://127.0.0.1:8766/'+encodeURI('מסירה-משחקי-הבאת-ברכה/מסמכים/מה-בוצע.html'));await p.pdf({path:path.join(__dirname,'review-evidence/docs-branded.pdf'),preferCSSPageSize:true,printBackground:true});
+await p.goto('http://127.0.0.1:8766/upgraded/i-first-steps/index.html');await p.locator('#fName').fill('בדיקה');await p.locator('#fBirth').fill('2026-09-01');await p.locator('#startBtn').click();await p.locator('#cardBtn').click();await p.evaluate(()=>Object.defineProperty(navigator,'canShare',{value:()=>false,configurable:true}));const dl=p.waitForEvent('download');await p.locator('#cardShare').click();await(await dl).saveAs(path.join(__dirname,'review-evidence/i-branded-card.png'));
+assert.deepEqual(errors,[]);const report={offlineBookPagesBranded:offline,offlinePrintImagesBranded:40,personalCardSaved:true,errors};fs.writeFileSync(path.join(__dirname,"review-evidence/offline-brand-audit.json"),JSON.stringify(report,null,2));console.log(report);await b.close()})().catch(e=>{console.error(e);process.exit(1)});

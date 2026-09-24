@@ -36,7 +36,7 @@ book_paths=json.loads(re.search(r'const PAGES\s*=\s*(\[[\s\S]*?\]);',book_html)[
 book_data=next(g for g in data if g['id']=='b')['data']['PAGES']
 assert len(book_paths)==len(book_data)==40
 for rel,source_data in zip(book_paths,book_data):
-    assert re.fullmatch(r'b-story-pages/\d{2}\.(webp|jpg|png)',rel),rel
+    assert re.fullmatch(r'b-story-pages/\d{2}(?:-[a-f0-9]{12})?\.(webp|jpg|png)',rel),rel
     asset=FINAL/'משחקים'/rel
     assert asset.read_bytes()==base64.b64decode(source_data.split(',',1)[1]),rel
     with Image.open(asset) as im:assert im.width>=640 and im.height>=640,rel
@@ -44,6 +44,13 @@ with zipfile.ZipFile(FINAL/'אריזות/b-b-story.zip') as z:
     assert set(z.namelist())=={'b-story.html',*book_paths}
 zips=list((FINAL/'אריזות').glob('*.zip'));assert len(zips)==11
 archive_files=0
+def verify_archive_file(expected,actual,name):
+    if name!='b-story.html':assert expected==actual,name;return
+    original=expected.decode('utf-8').replace('\r\n','\n');bundled=actual.decode('utf-8').replace('\r\n','\n')
+    match=re.search(r'<script>window.MORASH_OFFLINE_BOOK_DATA=(.*?);</script>',bundled)
+    assert match,'Offline book image data missing'
+    assert bundled.replace(match[0],'',1)==original
+    assert json.loads(match[1])==dict(zip([Path(p).name for p in book_paths],book_data))
 for p in zips:
     with zipfile.ZipFile(p) as z:
         assert z.testzip() is None,p
@@ -52,12 +59,12 @@ for p in zips:
             target=FINAL/('ערכת-תצוגה-לאתר' if p.stem=='ערכת-תצוגה-לאתר' else 'משחקים')
             if p.name.startswith('a-'):target=target/'a-coloring'
             if p.name.startswith('i-'):target=target/'i-first-steps'
-            assert (target/name).read_bytes()==z.read(name),(p,name)
+            verify_archive_file((target/name).read_bytes(),z.read(name),name)
 checks=json.loads((DEV/'content-checks.json').read_text(encoding='utf-8'))
 with zipfile.ZipFile(FINAL/'corrected-games.zip') as z:
     assert z.testzip() is None
     assert set(z.namelist())=={p.relative_to(FINAL/'משחקים').as_posix() for p in (FINAL/'משחקים').rglob('*') if p.is_file()}
-    for name in z.namelist():assert z.read(name)==(FINAL/'משחקים'/name).read_bytes(),name
+    for name in z.namelist():verify_archive_file((FINAL/'משחקים'/name).read_bytes(),z.read(name),name)
 approved={('b','GAMES'),('b','PAGES'),('a','PAGES'),('a','CATS'),('a','CATNAME')}
 assert len(checks)==30 and all(c['identical'] or (c.get('approved_editorial') and (c['part'],c['collection']) in approved) for c in checks)
 nikud=json.loads((DEV/'nikud-checks.json').read_text(encoding='utf-8'));assert len(nikud)==30 and all(c['letters_identical'] for c in nikud)

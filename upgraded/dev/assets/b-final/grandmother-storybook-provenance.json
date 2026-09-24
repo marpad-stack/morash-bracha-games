@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-24",
+  "mode": "built-in image_gen edit",
+  "edits": [
+    {
+      "page": 4,
+      "path": "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/b-story-pages/04.webp",
+      "prompt": "Use case: precise-object-edit. Edit target: this existing square children's story illustration. Change ONLY the elderly grandmother at the far left: replace her gray hair with a normal modest BLACK wig, simple softly waved ear-to-neck length classic bob, black hair with subtle natural highlights, no gray. She must remain clearly an elderly grandmother aged about 70: fine forehead lines, crow's feet, smile lines and mature facial proportions, kind gentle expression. Preserve her identity, clothes, pose and every other person, bassinet, room, layout and warm watercolor storybook style exactly. Do not rejuvenate her. No text additions. Deliver the entire square illustration.",
+      "source": "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-dfbc43c4-51a0-4d32-83ae-abda1313bf2e.png",
+      "output": "upgraded/dev/assets/b-final/page04.jpg"
+    },
+    {
+      "page": 6,
+      "paths": [
+        "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/b-story-pages/06.webp",
+        "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-dfbc43c4-51a0-4d32-83ae-abda1313bf2e.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Image1 is the EDIT TARGET, an entire square storybook page with an inset family illustration and a Hebrew caption below. Image2 is supporting reference ONLY for grandmother's black wig and elderly face. In Image1 change only the grandmother at far left to match Image2: ordinary BLACK softly waved bob wig, no gray hair; visibly elderly around70 with fine wrinkles, crow's feet, mature face. Preserve all other people, objects, clothing, poses, inset round corners, beige margins, fine teal rule, page layout, warm watercolor style and EVERY Hebrew caption letter EXACTLY. Return entire Image1 page, including caption, same square framing. No additions.",
+      "source": "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-6b8daf1f-bf25-4300-b4ba-42b715d45bfd.png",
+      "output": "upgraded/dev/assets/b-final/page06.jpg"
+    },
+    {
+      "page": 12,
+      "path": "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/b-story-pages/12.webp",
+      "prompt": "Use case: precise-object-edit. Edit target: this existing square children's story illustration. Change ONLY the elderly grandmother at the far left: replace her gray hair with a normal modest BLACK wig, simple softly waved ear-to-neck length classic bob, black hair with subtle natural highlights, no gray. She must remain clearly an elderly grandmother aged about 70: fine forehead lines, crow's feet, smile lines and mature facial proportions, kind gentle expression. Preserve her identity, clothes, pose and every other person, bassinet, room, layout and warm watercolor storybook style exactly. Do not rejuvenate her. No text additions. Deliver the entire square illustration.",
+      "source": "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-637ba7ba-e59c-4f35-abc8-19e68ca481f2.png",
+      "output": "upgraded/dev/assets/b-final/page12.jpg"
+    },
+    {
+      "page": 14,
+      "paths": [
+        "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/b-story-pages/14.webp",
+        "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-637ba7ba-e59c-4f35-abc8-19e68ca481f2.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Image1 is the EDIT TARGET, an entire square storybook page with an inset family illustration and a Hebrew caption below. Image2 is supporting reference ONLY for grandmother's black wig and elderly face. In Image1 change only the grandmother at far left to match Image2: ordinary BLACK softly waved bob wig, no gray hair; visibly elderly around70 with fine wrinkles, crow's feet, mature face. Preserve all other people, objects, clothing, poses, inset round corners, beige margins, fine teal rule, page layout, warm watercolor style and EVERY Hebrew caption letter EXACTLY. Return entire Image1 page, including caption, same square framing. No additions.",
+      "source": "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-ec7ffded-0740-4ead-a3e4-1aef3e7ebcce.png",
+      "output": "upgraded/dev/assets/b-final/page14.jpg"
+    },
+    {
+      "page": 28,
+      "path": "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/b-story-pages/28.jpg",
+      "prompt": "Use case: precise-object-edit. Edit target: this entire square Hebrew storybook brit celebration page. User requires grandmother to have a normal BLACK wig while remaining visibly elderly. Correct ALL FIVE background female relatives (two at far left behind grandfather, two small figures behind the central mother, one at right behind the boy): give them modest ordinary BLACK bob wigs with subtle highlights, no gray and no pale brown hair. The three outer elderly grandmothers (far left, next to her behind grandfather, and far right behind the boy) MUST remain visibly 70-80 years old with distinct forehead creases, crow's feet, mature cheeks and smile lines. Do not make them young. Keep the central foreground mother in cream blouse/navy skirt with her existing BROWN bob unchanged. Preserve foreground boy unchanged, grandfather's Chabad BLACK fedora and suit and gray untrimmed beard unchanged. Preserve every Hebrew letter in every bubble EXACTLY, poses, people count, setting, coloring and storybook watercolor illustration style. Change only the specified female relatives' wig color and age cues. Whole square page.",
+      "source": "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-0da6882a-52af-4bfc-9f29-fab4bc2039ea.png",
+      "output": "upgraded/dev/assets/b-final/page28.jpg"
+    },
+    {
+      "page": 36,
+      "path": "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/b-story-pages/36.jpg",
+      "prompt": "Use case: precise-object-edit. Edit target: existing square Hebrew storybook page of mother and boy reading together on the floor. Change ONLY the content visible on the open blue-bound book at the bottom. It must clearly be a children's STORYBOOK with two detailed narrative picture scenes, not a shapes learning book. Replace all the big geometric shapes with charming miniature watercolor narrative illustrations: on the right page a modestly dressed boy in blue kippah bringing a small wrapped gift through a home doorway; on the left page the same boy beside a baby's bassinet with his mother, a continuation of the little story. Include 2-3 short neat lines of tiny dark printed story text under each miniature illustration, integrated into the page perspective. Pictures must show clear recognizable people and room details, not abstract icons. Preserve the open book's blue cover, pages, size, position and perspective. Preserve mother's and boy's hands, bodies, faces, clothes, poses, rug, room, warm watercolor style, and ALL LARGE HEBREW PAGE TEXT EXACTLY AS IT IS. Do not change anything outside the small open book. Entire square page.",
+      "source": "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-4381291d-7ae2-45be-b999-451e2de79637.png",
+      "output": "upgraded/dev/assets/b-final/page36.jpg"
+    }
+  ]
+}

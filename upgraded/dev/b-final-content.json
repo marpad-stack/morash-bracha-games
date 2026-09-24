@@ -3,7 +3,11 @@
   "storyText": "Keep the current story wording until the user supplies the replacement manuscript.",
   "editedPages": [
     2,
+    4,
+    6,
     8,
+    12,
+    14,
     21,
     28,
     29,
@@ -31,5 +35,13 @@
       "how": "מסתכלים על התינוק, בוחרים מה להביא לו ומגלים מה קורה. נסו את שלושת החפצים."
     }
   },
-  "britClothing": "Father: white tallit over a knee-length black sirtuk, no fedora. Other men: black Chabad hats and suits, natural beards."
+  "britClothing": "Father: white tallit over a knee-length black sirtuk, no fedora. Other men: black Chabad hats and suits, natural beards.",
+  "versionedPages": [
+    4,
+    6,
+    12,
+    14,
+    28,
+    36
+  ]
 }

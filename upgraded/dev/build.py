@@ -71,4 +71,6 @@ if quality.exists():exec(compile(quality.read_text(encoding='utf-8'),str(quality
 review=DEV/'review.py'
 if review.exists():exec(compile(review.read_text(encoding='utf-8'),str(review),'exec'))
 
+exec(compile((DEV/'branding.py').read_text(encoding='utf-8'),str(DEV/'branding.py'),'exec'))
+
 print('Built:',', '.join(p.name for p in OUT.glob('*.html')))
