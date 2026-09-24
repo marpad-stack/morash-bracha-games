@@ -21,6 +21,6 @@ body+='<details class="chapter"><summary>התאמה לתינוקת ולגיבו�
 body+='<details class="chapter"><summary>השילוב בספר</summary><ul>'+''.join('<li>'+esc(t)+'</li>' for t in d['productionNotes'])+'</ul></details><div class="brand" aria-label="מורה שמיים">'+logo+'</div>'
 css+=(DEV/'print-footer.css').read_text(encoding='utf-8')+'@media print{.brand{display:none}}'
 body='<table class="morash-print-table"><tbody><tr><td>'+body+'</td></tr></tbody><tfoot><tr><td><div class="morash-print-brand">'+logo+'</div></td></tr></tfoot></table>'
-(OUT/'הסיפור-נוסח-מוצע.html').write_text('<!doctype html><html dir="rtl" lang="he"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>אור הגיע אלינו — הנוסח המאושר</title><style>'+css+'</style><main>'+body+'</main></html>',encoding='utf-8')
+(OUT/'הסיפור-נוסח-מוצע.html').write_text('<!doctype html><html dir="rtl" lang="he"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>אור הגיע אלינו — הנוסח המעודכן</title><style>'+css+'</style><main>'+body+'</main></html>',encoding='utf-8')
 (OUT/'הסיפור-נוסח-מוצע.md').write_text('\n'.join(text),encoding='utf-8')
-print('Story proposal: 11 scenes, 2 closing activities; approved manuscript integrated.')
+print('Story proposal: 11 scenes, 2 closing activities; revised manuscript integrated.')

@@ -33,3 +33,38 @@ body.b-reading-focus #games,body.b-reading-focus>.book-intro{display:none!import
 
 .b-story-choice{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 20px}.b-story-choice>span{font-size:13px;color:#635e50;margin-left:8px}.b-story-choice button{min-height:44px;padding:9px 16px;border-radius:22px;border:1px solid #bcbaa5;background:#fffdf4;color:#385b55;font:700 14px Heebo,Arial,sans-serif}.b-story-choice button[aria-pressed=true]{background:#285f60;color:#fffdf4;border-color:#285f60}.b-edition-actions .reading-controls{margin:0;align-items:center}
 @media(max-width:899px){.b-story-choice>span{flex-basis:100%;margin:0;text-align:center}.b-story-choice button{flex:1;white-space:nowrap;font-size:13px;padding:9px 10px}}
+
+/* A scene is one illustrated spread, with selectable, accessible live text. */
+.b-continuous:after{display:none!important}
+.b-picture-spread{position:relative;isolation:isolate;width:100%;min-height:690px;overflow:hidden;background:#fff8eb;border:1px solid #d2c5ae;border-radius:4px 12px 12px 4px;box-shadow:0 12px 26px #54402822,-4px 3px 0 #f8efdc,-6px 4px 0 #c6bca8}
+.b-scene-art{position:absolute;inset:0 0 0 auto;width:72%;margin:0;z-index:-3}
+.b-scene-art .b-edition-image{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:0}
+.b-scene-art .b-art-unavailable{height:100%;box-sizing:border-box;padding:20px 15% 20px 35%}
+.b-scene-wash{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#fff8eb 0%,#fff8ebfa 30%,#fff8ebed 42%,#fff8eb90 49%,#fff8eb00 65%)}
+.b-scene-copy{position:relative;box-sizing:border-box;width:49%;margin-right:auto;padding:44px 38px 50px 40px;display:flex;flex-direction:column;min-height:690px}
+.b-scene-copy .b-prose{font-size:19px;line-height:1.95;color:#303e38;text-shadow:0 1px #fff8}
+.b-scene-copy .b-prose p{margin:0 0 9px}
+.b-scene-copy .b-pause-button{margin-top:auto;background:#faf6ebd9;border-color:#c5c7aa;padding:10px 14px;box-shadow:none}
+.b-scene-copy .b-prose+.b-pause-button{margin-top:24px}
+.b-scene-number{position:absolute;bottom:15px;left:25%;font-size:12px;color:#776951}
+body.b-reading-focus .b-scene-copy .b-prose,body.reading-large .b-scene-copy .b-prose{font-size:22px;line-height:1.9}
+.b-paper-art,.b-paper-text{overflow:hidden;padding:0!important;background:#fff8eb}
+.b-paper-art .b-paper-content,.b-paper-text .b-paper-content{position:relative}
+.b-paper-art .b-edition-art,.b-paper-text .b-edition-art{margin:0!important;width:100%}
+.b-illustrated-copy{position:relative;background:linear-gradient(#fff8eb00,#fff8eb 42px);margin-top:-65px;padding:72px 28px 45px;flex:1}
+.b-paper-art .b-illustrated-copy .b-prose{font-size:22px;line-height:1.85}
+.b-paper-text .b-edition-art{max-height:235px;overflow:hidden}
+.b-paper-text .b-edition-image{object-fit:cover;object-position:50% 24%;height:290px}
+.b-paper-text .b-illustrated-copy{margin-top:-70px;padding-top:72px}
+@media(max-width:899px){
+ .b-picture-spread{min-height:0;overflow:visible;border-radius:8px}
+ .b-scene-art{position:relative;inset:auto;width:100%;z-index:0;aspect-ratio:1;margin:0}
+ .b-scene-art .b-edition-image{height:auto;object-fit:contain;border-radius:7px 7px 0 0}
+ .b-scene-art .b-art-unavailable{padding:25px;min-height:260px}
+ .b-scene-wash{display:none}
+ .b-scene-copy{width:100%;min-height:0;margin-top:-65px;padding:70px 24px 45px;background:linear-gradient(#fff8eb00,#fff8eb 58px);border-radius:0 0 7px 7px}
+ .b-scene-copy .b-prose{font-size:20px;line-height:1.95}
+ .b-scene-number{left:50%;bottom:12px}
+ body.b-reading-focus .b-scene-copy .b-prose,body.reading-large .b-scene-copy .b-prose{font-size:22px}
+}
+@media(max-width:359px){.b-scene-copy{padding-left:18px;padding-right:18px}.b-scene-copy .b-prose{font-size:19px}}

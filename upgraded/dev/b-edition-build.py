@@ -1,35 +1,38 @@
 """The user-approved manuscript replaces the visual forty-page source edition."""
 import hashlib, shutil
+def story_plain(n):
+    spelling={'בידים':'בידיים','ועינים':'ועיניים','העינים':'העיניים','נתן':'ניתן','עיף':'עייף','עיפה':'עייפה'}
+    return re.sub('[א-ת]+',lambda m:spelling.get(m[0],m[0]),strip(n))
 approved=json.loads((DEV/'story-edit-proposal.json').read_text(encoding='utf-8'))
 edition={key:approved[key] for key in ['title','readingNote','scenes','closingActivities']}
 nikud=json.loads((DEV/'story-edition-nikud.json').read_text(encoding='utf-8'))
 artdir=OUT/'b-story-art';artdir.mkdir(exist_ok=True)
 art={}
 for key in ['arrival','family','tower','shirt','yawn','shabbat','night','brit','bond','reading']:
-    source=DEV/'assets/story-edition'/f'{key}.jpg'
-    payload=source.read_bytes();filename=key+'-'+hashlib.sha256(payload).hexdigest()[:12]+'.jpg'
+    source=DEV/'assets/story-edition'/('brit-festive.png' if key=='brit' else f'{key}.jpg')
+    payload=source.read_bytes();filename=key+'-'+hashlib.sha256(payload).hexdigest()[:12]+source.suffix
     (artdir/filename).write_bytes(payload);art[key]='b-story-art/'+filename
 scene_art=['arrival','family','tower','shirt','yawn','shabbat','night','brit','bond','reading','tower']
 for i,scene in enumerate(edition['scenes']):
     scene['art']=art[scene_art[i]]
     scene['n']=nikud[i]['text'];scene['titleN']=nikud[i]['title']
-    assert strip(scene['n'])==scene['text'],('New manuscript spelling changed',i+1)
+    assert story_plain(scene['n'])==scene['text'],('New manuscript spelling changed',i+1)
     assert strip(scene['titleN'])==scene['title'],('New heading spelling changed',i+1)
-edition.update(version='approved-2026-09-24',status='הנוסח החדש שאושר לשילוב בספר',art=art)
+edition.update(version=approved['revision'],status=approved['status'],art=art)
 edition.update(character='mendy',characterName='מענדי')
 chani=json.loads((DEV/'story-chani.json').read_text(encoding='utf-8'))
 chani_art=dict(art)
 for key in ['tower','shirt','shabbat','night','brit','bond','reading']:
-    source=DEV/'assets/story-edition/chani'/f'{key}.jpg'
-    payload=source.read_bytes();filename='chani-'+key+'-'+hashlib.sha256(payload).hexdigest()[:12]+'.jpg'
+    source=DEV/'assets/story-edition/chani'/('brit-festive.png' if key=='brit' else f'{key}.jpg')
+    payload=source.read_bytes();filename='chani-'+key+'-'+hashlib.sha256(payload).hexdigest()[:12]+source.suffix
     (artdir/filename).write_bytes(payload);chani_art[key]='b-story-art/'+filename
 for i,scene in enumerate(chani['scenes']):
     scene['art']=chani_art[scene_art[i]]
-    assert strip(scene['n'])==scene['text']
+    assert story_plain(scene['n'])==scene['text']
 chani.update(version=edition['version'],art=chani_art)
 editions={'mendy':edition,'chani':chani}
-for previous in artdir.glob('*.jpg'):
-    if re.fullmatch(r'(?:chani-)?[a-z]+-[a-f0-9]{12}\.jpg',previous.name) and 'b-story-art/'+previous.name not in set(art.values())|set(chani_art.values()):previous.unlink()
+for previous in artdir.glob('*'):
+    if re.fullmatch(r'(?:chani-)?[a-z]+-[a-f0-9]{12}\.(?:jpg|png)',previous.name) and 'b-story-art/'+previous.name not in set(art.values())|set(chani_art.values()):previous.unlink()
 path=OUT/'b-story.html';s=path.read_text(encoding='utf-8')
 s=s.replace('const goNext=()=>','let goNext=()=>').replace('const goPrev=()=>','let goPrev=()=>')
 before,sep,after=s.rpartition('</body>');assert sep

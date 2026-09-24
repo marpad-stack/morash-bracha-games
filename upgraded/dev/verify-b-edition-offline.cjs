@@ -8,7 +8,7 @@ const {chromium}=require('C:/Users/user/.cache/codex-runtimes/codex-primary-runt
  for(const name of ['mendy','chani']){
   await p.locator('[data-character='+name+']').click();await p.evaluate(()=>BStory.go(5));assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
   const pending=p.waitForEvent('popup');await p.locator('#printBtn').click();const print=await pending;
-  for(const layout of ['a4','booklet']){if(layout==='booklet')await print.locator('#layout').selectOption(layout);await print.waitForFunction(()=>document.body.dataset.printReady==='true',{},{timeout:90000});assert.equal(await print.locator('img[data-branded=true]').count(),13);assert.equal(await print.locator('.b-print-sheet').count(),layout==='a4'?28:14)}await print.close();
+  for(const layout of ['a4','booklet']){if(layout==='booklet')await print.locator('#layout').selectOption(layout);await print.waitForFunction(()=>document.body.dataset.printReady==='true',{},{timeout:90000});assert.equal(await print.locator('img[data-branded=true]').count(),24);assert.equal(await print.locator('.b-print-sheet').count(),layout==='a4'?28:14)}await print.close();
  }
  assert.deepEqual(errors,[]);fs.writeFileSync(path.join(__dirname,'review-evidence/b-edition-offline-audit.json'),JSON.stringify({offline:true,variants:2,bookPagesPerVariant:28,illustrations:assets.length,printLayoutsPerVariant:2,errors},null,2));console.log('Offline ZIP: both books, 17 branded illustrations, both print layouts; no errors');await b.close();
 })().catch(e=>{console.error(e);process.exit(1)});

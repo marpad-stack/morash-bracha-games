@@ -10,12 +10,12 @@ const out=path.join(__dirname,'review-evidence'),checks=[],base=process.env.B_UR
  const expected=JSON.parse(fs.readFileSync(path.join(__dirname,'story-chani.json')));
  assert.deepEqual(await p.evaluate(()=>BStory.edition.scenes.map(s=>s.text)),expected.scenes.map(s=>s.text));
  assert.equal(await p.evaluate(()=>BStory.pages.map((_,i)=>BStory.pageHTML(i,false)).join('').includes('מענדי')),false);
- assert.equal(await p.evaluate(()=>BStory.edition.scenes.at(-1).text.includes('חני נעשתה אחות גדולה')),true);
+ assert.equal(await p.evaluate(()=>BStory.edition.scenes.at(-1).text.includes('חני מצאה את הקובייה המתאימה')),true);
  await p.evaluate(()=>BStory.go(5));await p.reload({waitUntil:'domcontentloaded'});assert.equal(await p.evaluate(()=>BStory.edition.character),'chani');assert.equal(await p.evaluate(()=>p),5);
  await p.locator('[data-character=mendy]').click();await p.evaluate(()=>BStory.go(9));await p.locator('[data-character=chani]').click();assert.equal(await p.evaluate(()=>p),5);
  for(const width of [320,390,768,1440]){
   await p.setViewportSize({width,height:1100});await p.evaluate(()=>BStory.go(5));assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
-  assert.equal(await p.locator('#bBookSpread .b-paper').count(),width<900?1:2);await p.screenshot({path:path.join(out,'chani-'+width+'.png')});
+  assert.equal(await p.locator('#bBookSpread .b-picture-spread').count(),1);await p.screenshot({path:path.join(out,'chani-'+width+'.png')});
  }
  for(let i=0;i<11;i++){await p.evaluate(i=>BStory.openPause(i),i);assert.equal((await p.locator('#bPauseDialog').textContent()).includes('מענדי'),false);await p.locator('.b-moment-action').click();await p.keyboard.press('Escape')}
  ok('Chani manuscript, UI, all eleven questions, four widths, direct URL and separate bookmarks');
@@ -28,7 +28,7 @@ const out=path.join(__dirname,'review-evidence'),checks=[],base=process.env.B_UR
   for(const layout of ['a4','booklet']){
    await print.emulateMedia({media:'screen'});if(layout==='booklet')await print.locator('#layout').selectOption(layout);
    await print.waitForFunction(()=>document.body.dataset.printReady==='true',{},{timeout:90000});await print.evaluate(()=>document.fonts.ready);await print.emulateMedia({media:'print'});
-   assert.equal(await print.locator('.b-print-sheet').count(),layout==='a4'?28:14);assert.equal(await print.locator('img[data-branded=true]').count(),13);
+   assert.equal(await print.locator('.b-print-sheet').count(),layout==='a4'?28:14);assert.equal(await print.locator('img[data-branded=true]').count(),24);
    assert.equal((await print.locator('#sheets').textContent()).includes('מענדי'),false);
    assert.deepEqual(await print.locator('.b-paper').evaluateAll(xs=>xs.filter(x=>x.scrollHeight>x.clientHeight+1).map(x=>x.dataset.bookPage)),[]);
    await print.pdf({path:path.join(out,'chani-'+layout+'-'+width+'.pdf'),preferCSSPageSize:true,printBackground:true});

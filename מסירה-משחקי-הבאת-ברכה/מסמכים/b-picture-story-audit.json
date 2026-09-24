@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "mendy: eleven full scenes at four widths; no headings/overflow; navigation, activities, 84 PDF pages with no clipped prose",
+    "chani: eleven full scenes at four widths; no headings/overflow; navigation, activities, 84 PDF pages with no clipped prose"
+  ],
+  "errors": [],
+  "printCases": 8,
+  "pdfPages": 168,
+  "physicalDevicesTested": false
+}

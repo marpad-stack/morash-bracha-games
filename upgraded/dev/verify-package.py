@@ -41,7 +41,7 @@ for rel,source_data in zip(book_paths,book_data):
     assert asset.read_bytes()==base64.b64decode(source_data.split(',',1)[1]),rel
     with Image.open(asset) as im:assert im.width>=640 and im.height>=640,rel
 with zipfile.ZipFile(FINAL/'אריזות/b-b-story.zip') as z:
-    edition_paths={(Path('b-story-art')/p.name).as_posix() for p in (FINAL/'משחקים/b-story-art').glob('*.jpg')}
+    edition_paths={(Path('b-story-art')/p.name).as_posix() for p in (FINAL/'משחקים/b-story-art').glob('*')}
     assert set(z.namelist())=={'b-story.html',*book_paths,*edition_paths}
 zips=list((FINAL/'אריזות').glob('*.zip'));assert len(zips)==11
 archive_files=0
@@ -52,7 +52,7 @@ def verify_archive_file(expected,actual,name):
     assert match,'Offline book image data missing'
     assert bundled.replace(match[0],'',1)==original
     expected_data=dict(zip([Path(p).name for p in book_paths],book_data))
-    expected_data.update({Path(p).name:'data:image/jpeg;base64,'+base64.b64encode((FINAL/'משחקים'/p).read_bytes()).decode() for p in edition_paths})
+    expected_data.update({Path(p).name:'data:image/'+('png' if Path(p).suffix=='.png' else 'jpeg')+';base64,'+base64.b64encode((FINAL/'משחקים'/p).read_bytes()).decode() for p in edition_paths})
     assert json.loads(match[1])==expected_data
 for p in zips:
     with zipfile.ZipFile(p) as z:

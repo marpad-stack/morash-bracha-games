@@ -31,8 +31,8 @@ for directory in ['a-coloring','i-first-steps','b-story-pages','b-story-art']:
 for previous in (GAMES/'b-story-pages').iterdir():
     if previous.is_file() and re.fullmatch(r'\d{2}(?:-[a-f0-9]{12})?\.(webp|jpg|png)',previous.name) and not (OUT/'b-story-pages'/previous.name).exists():
         previous.unlink()
-for previous in (GAMES/'b-story-art').glob('*.jpg'):
-    if re.fullmatch(r'(?:chani-)?[a-z]+-[a-f0-9]{12}\.jpg',previous.name) and not (OUT/'b-story-art'/previous.name).exists():previous.unlink()
+for previous in (GAMES/'b-story-art').glob('*'):
+    if re.fullmatch(r'(?:chani-)?[a-z]+-[a-f0-9]{12}\.(?:jpg|png)',previous.name) and not (OUT/'b-story-art'/previous.name).exists():previous.unlink()
 
 print_logo=(DEV/'assets/morash-logo-black.svg').read_text(encoding='utf-8')
 def page(title,body,extra=''):
@@ -139,7 +139,7 @@ book_source=book_file.read_text(encoding='utf-8')
 book_paths=json.loads(re.search(r'const PAGES\s*=\s*(\[[\s\S]*?\]);',book_source)[1])
 book_sources=next(g for g in data if g['id']=='b')['data']['PAGES']
 offline_map=dict(zip([Path(p).name for p in book_paths],book_sources))
-offline_map.update({p.name:'data:image/jpeg;base64,'+base64.b64encode(p.read_bytes()).decode() for p in (GAMES/'b-story-art').glob('*.jpg')})
+offline_map.update({p.name:'data:image/'+('png' if p.suffix=='.png' else 'jpeg')+';base64,'+base64.b64encode(p.read_bytes()).decode() for p in (GAMES/'b-story-art').glob('*')})
 offline_book=book_source.replace('<head>','<head><script>window.MORASH_OFFLINE_BOOK_DATA='+json.dumps(offline_map)+';</script>',1)
 def archive_file(z,f,base):
     if f==book_file:z.writestr(f.relative_to(base).as_posix(),offline_book)

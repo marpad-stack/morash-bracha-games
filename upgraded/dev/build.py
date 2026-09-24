@@ -4,6 +4,8 @@ import zipfile,re,json,hashlib
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'upgraded'
 DEV=OUT/'dev'
+import runpy
+runpy.run_path(str(DEV/'build-story-manuscript.py'))['compile_manuscript'](DEV)
 editorial=json.loads((DEV/'editorial-feedback.json').read_text(encoding='utf-8'))
 theme=(DEV/'theme.css').read_text(encoding='utf-8')
 ui=(DEV/'ui.js').read_text(encoding='utf-8')
