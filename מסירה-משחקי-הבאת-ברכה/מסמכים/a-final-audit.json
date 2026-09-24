@@ -1,0 +1,46 @@
+{
+  "url": "http://127.0.0.1:8766/upgraded/a-coloring/index.html",
+  "checks": [
+    {
+      "name": "19 pages; rejected pages removed; saved booklet migrated and rendered",
+      "passed": true
+    },
+    {
+      "name": "All active full-size images, colors, thumbnails and masks load",
+      "passed": true
+    },
+    {
+      "name": "Phone widths 320/390 and desktop 1440: gallery, category, 3 choices, closing, no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Memory: 4/6/12 pairs completed, unique illustrations, scores and closing",
+      "passed": true
+    },
+    {
+      "name": "Object finder: complete 6/8/10 rounds, wrong answers, hints, default untimed and finish",
+      "passed": true
+    },
+    {
+      "name": "Optional timer expires gently without losing the round",
+      "passed": true
+    },
+    {
+      "name": "All 10 edited/new drawings: actual color-by-number region fills",
+      "passed": true
+    },
+    {
+      "name": "Free coloring fill, PNG export and studio closing",
+      "passed": true
+    },
+    {
+      "name": "Booklet survives reload; four full printable image pages generated",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript page errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

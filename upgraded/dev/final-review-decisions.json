@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "startedOn": "2026-09-24",
+  "source": {
+    "githubCommit": "8892edbe65a2d98fb5d69fa9fb618860f782eb28",
+    "reviewSnapshot": "upgraded/dev/review-evidence/latest-notes-2026-09-24.json",
+    "notes": 86,
+    "replies": 4
+  },
+  "rules": [
+    "הצעה אינה אישור.",
+    "אישור המשתמשת נשמר בנפרד ממצב הביצוע.",
+    "סגירת הערה רק לאחר יישום ובדיקה; אין להסיק טיפול מהימצאות קוד בלבד."
+  ],
+  "parts": {
+    "a": {
+      "status": "implemented_pending_user_review",
+      "decisions": [
+        {
+          "id": "a-repair-art",
+          "status": "implemented",
+          "proposal": "לתקן פנים לתינוק, להוסיף מזוזה, להפריד את ידי ההורים ולהוסיף מסגרת עם אות בספר תורה בציור השמיכה.",
+          "notes": [
+            "1f6ff2f5-ba82-4724-937d-69d853a6b7a2",
+            "c1f96902-77e8-487c-9ce3-177e2a83a87c",
+            "16acd020-a07a-4a0e-aac5-555762d23592"
+          ],
+          "approvedOn": "2026-09-24",
+          "verifiedOn": "2026-09-24"
+        },
+        {
+          "id": "a-remove-stroller",
+          "status": "implemented",
+          "proposal": "להסיר מהגלריה וממקורות המשחקים את הציור ״בבית הכנסת עם העגלה״.",
+          "notes": [
+            "29642004-d6e2-4b94-8858-69e3c47094c4"
+          ],
+          "approvedOn": "2026-09-24",
+          "verifiedOn": "2026-09-24"
+        },
+        {
+          "id": "a-expand-art",
+          "status": "implemented",
+          "proposal": "להוסיף שישה ציורים: סעודת שבת משפחתית עם התינוק, משפחה בברית, קניות משפחתיות, אחים עם תינוקת, קריאת שם לבת וכיסא אליהו. קטגוריית ברית כוללת כיסא אליהו וחגיגה משפחתית; ציור ההכנות עם האם והכורסה הוסר לבקשת המשתמשת.",
+          "notes": [
+            "b7c4e761-bdd0-41c1-8e2a-91d574340b17",
+            "09299390-7230-4e04-84cf-fadcb2ee4b3e",
+            "bebf37e0-f39c-4231-b6af-3cfcabefabbb",
+            "aeaec972-4e66-4356-82c8-f1deedbc9edf"
+          ],
+          "approvedOn": "2026-09-24",
+          "verifiedOn": "2026-09-24"
+        },
+        {
+          "id": "a-games",
+          "status": "implemented",
+          "proposal": "לשלב את הציורים החדשים בזיכרון; להפוך את משחק הזיהוי למציאת חפץ מתוך ציור בין שלוש תמונות, עם שעון שאפשר להפעיל ולכבות. ברירת המחדל ללא הגבלת זמן.",
+          "notes": [
+            "9be03cdc-25b7-4158-a5cd-42b34b1e3898",
+            "452e8532-f3e2-498c-b993-8aec82eeeee3"
+          ],
+          "approvedOn": "2026-09-24",
+          "verifiedOn": "2026-09-24"
+        },
+        {
+          "id": "a-presentation",
+          "status": "implemented",
+          "proposal": "הוראות קצרות בשורות נפרדות, כפתורים ברורים וגדולים, בחירה בין צבעים חיים לרגועים. נוסח החוברת: ״בלחיצה על ＋ הציור שלכם יתווסף לחוברת. את החוברת תוכלו להדפיס לאחר מכן.״ לבדוק בפועל את תיקוני התצוגה שכבר נמצאים בקוד.",
+          "notes": [
+            "cc448817-8690-4a23-91ff-59fa8af33a2a",
+            "d1f63b9a-a73c-42fe-ab7a-ef5bca0a23dd",
+            "c19e5f0c-a532-452f-96d4-3b586be1768e",
+            "7136dcff-eea7-4c26-b7a9-10dd109ae70e",
+            "ce1d1411-0de5-4a8c-8337-53f22a2d86e0",
+            "42973a23-a962-49e4-b79c-6c089f5d1ee5"
+          ],
+          "approvedOn": "2026-09-24",
+          "verifiedOn": "2026-09-24"
+        },
+        {
+          "id": "a-optional-later",
+          "status": "proposed",
+          "proposal": "להשאיר מחולל דפי צביעה מתמונה אישית ומוזיקת רקע לשלב הבא, בכפוף להחלטת המשתמשת.",
+          "notes": [
+            "6bb256c1-5f46-4c9e-86db-8531ac2b6b14",
+            "1120f2bb-2255-44c3-866c-24fa870f7047"
+          ]
+        },
+        {
+          "id": "a-general",
+          "status": "informational",
+          "proposal": "המשוב הכללי חיובי; ההערות הפרטניות נכללות בהחלטות לעיל.",
+          "notes": [
+            "02b88366-35db-43aa-a0df-ffbbca8d8d45"
+          ]
+        }
+      ],
+      "clarifications": [
+        "תעודת אות בספר תורה דומה לתמונה שסיפקה המשתמשת, לא ציור כללי של ספר תורה",
+        "ללא מגע בין האם לאב או לתינוק בתמונה המשפחתית",
+        "האם והילדה בבית הכנסת בעזרת נשים מאחורי מחיצה ברורה",
+        "למחוק את החפץ ליד האגרטל בציור כיסא אליהו",
+        "להסיר את ציור האם ושני הילדים המכינים כורסה; המשתמשת אישרה הסרה במפורש",
+        "נרות שבת: שני פמוטים גדולים ועוד פמוט קטן לכל ילד המופיע בתמונה, כולל התינוק. בחלק א מדובר בדפים 10 ו־16: חמישה פמוטים בכל ציור.",
+        "על שולחן שבת גביע קידוש ללא רגל ובקבוק יין לצדו."
+      ],
+      "verification": {
+        "activePages": 19,
+        "newIllustrations": 6,
+        "editedIllustrations": 4,
+        "removedIds": [
+          9,
+          15
+        ],
+        "excludedDraft": 22,
+        "viewports": [
+          320,
+          390,
+          1440
+        ],
+        "memoryPairs": [
+          4,
+          6,
+          12
+        ],
+        "finderRounds": [
+          6,
+          8,
+          10
+        ],
+        "numberedDrawingsTested": 10,
+        "printPdfCases": 6,
+        "printPdfPages": 10,
+        "physicalDevicesTested": false,
+        "evidence": [
+          "a-final-audit.json",
+          "a-print-audit.json",
+          "a-print-pdf-audit.json"
+        ]
+      }
+    },
+    "b": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    },
+    "c": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    },
+    "d": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    },
+    "e": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    },
+    "f": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    },
+    "g": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    },
+    "h": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    },
+    "i": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    },
+    "j": {
+      "status": "awaiting_joint_review",
+      "decisions": []
+    }
+  },
+  "globalArtGuidelines": [
+    "בכל ציור עם נרות שבת: שני פמוטים גדולים ועוד קטנים כמספר הילדים בתמונה, כולל התינוק.",
+    "שולחן שבת כולל גביע קידוש ללא רגל ויין."
+  ]
+}

@@ -2,26 +2,26 @@
   {
     "part": "a",
     "collection": "PAGES",
-    "identical": true,
-    "approved_editorial": false,
+    "identical": false,
+    "approved_editorial": true,
     "sha256": "d37015d1244681653f51f690abb2a850996d76f66598cd184e01855daa8ac69e",
-    "current_sha256": "d37015d1244681653f51f690abb2a850996d76f66598cd184e01855daa8ac69e"
+    "current_sha256": "38eeaced598fe98927c4b24318246a6e8f4c417285f42b6f5622690a0c7c5865"
   },
   {
     "part": "a",
     "collection": "CATS",
-    "identical": true,
-    "approved_editorial": false,
+    "identical": false,
+    "approved_editorial": true,
     "sha256": "7ace66533c64c5ca9d3743ff1ce2d757342ebe1f88e28b313fcb5c0624b6027b",
-    "current_sha256": "7ace66533c64c5ca9d3743ff1ce2d757342ebe1f88e28b313fcb5c0624b6027b"
+    "current_sha256": "7fa80e9ffc2e54c944c929cd39f6b6e6256f0f6bac2660d14d6f3aabe5a9316f"
   },
   {
     "part": "a",
     "collection": "CATNAME",
-    "identical": true,
-    "approved_editorial": false,
+    "identical": false,
+    "approved_editorial": true,
     "sha256": "287e93c563f4f48b20be3814a607a614a92517bd1bd48dcde0b3747ec031e870",
-    "current_sha256": "287e93c563f4f48b20be3814a607a614a92517bd1bd48dcde0b3747ec031e870"
+    "current_sha256": "90791c7938afb296ad8333efda0b52d0147acc8ea4513dec8173bfa387a428b6"
   },
   {
     "part": "b",

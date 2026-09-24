@@ -1,6 +1,6 @@
 """Generate the owner's review checklist alongside the delivery files."""
 items={
-'a':('מתחם הקטנטנים','סידור קלפי הזיכרון, פתיחה קצרה בטלפון והסבר לבחירת המשחק.','בדקי את ארבעת המשחקים, הרמות, הצביעה והחוברת.'),
+'a':('צובעים ומרכיבים!','עדכון 24.9: איורים חדשים ומתוקנים, חיפוש חפצים, זיכרון משופר ותיקון חוברת, שמירה והדפסה.','בדקי את 19 הדפים, את ארבעת המשחקים ואת ההדפסה בטלפון ובמדפסת שלך.'),
 'b':('אור הגיע אלינו','ניווט נקי, הבחנה בין תמונת הספר לקריאה בטקסט ותיקון החפיפה בכפתור הסגירה.','דפדפי בספר, נסי את שמונה הפעילויות והגיהי את התמלול והניקוד.'),
 'c':('בית המצוות','הוראה לפני הבחירה בטלפון ורשימת בחירה חלופית סגורה, למניעת כפתורים כפולים במסך.','נסי את חמשת האתגרים, החידות ואיסוף האותיות.'),
 'd':('מסע המצוות','הקדמה, הסבר לתור הראשון, הבחנה בין המסלול הרגיל למשימת בנייה וחזרה לתפריט.','נסי בחירת משתתפים, תור איסוף, בניית עיר והמשך משחק שמור.'),
@@ -29,5 +29,10 @@ for filename in ['landing-audit.json','flow-audit.json','deep-audit.json','final
     src=DEV/'review-evidence'/filename
     if src.exists():shutil.copy2(src,DOCS/('review-'+filename))
 p=FINAL/'התחילו-כאן.html';s=p.read_text(encoding='utf-8');s=s.replace('<main>','<main><section class="reviewer-details"><h2>בודקות ומחליטות בתוך המשחק</h2><a class="button" href="https://bracha-games-review.marpad990579.chatgpt.site/workspace">פתיחת סביבת הכותבת</a></section><div class="note"><b>בודקות את המשחקים?</b><p>פתחי את דף הבדיקה, סמני פריטים במשחק וכתבי הערות ברשימה המשותפת.</p><a class="button" href="בדיקה-סופית.html">מעבר למשחקים ולרשימת התיקונים</a></div>',1);p.write_text(s,encoding='utf-8')
+release=json.loads((DEV/'a-release.json').read_text(encoding='utf-8'))
+(DOCS/'עדכון-מתחם-הצביעה.json').write_text(json.dumps(release,ensure_ascii=False,indent=2),encoding='utf-8')
+(DOCS/'עדכון-מתחם-הצביעה.html').write_text(page('עדכון מתחם הצביעה','<h1>צובעים ומרכיבים! — עדכון 24.9.2026</h1><ul>'+''.join('<li>'+html.escape(t)+'</li>' for t in release['changes'])+'</ul><p>'+html.escape(release['limitation'])+'</p><a class="button" href="../משחקים/a-coloring/index.html">פתיחת המתחם</a>'),encoding='utf-8')
+for evidence in ['a-final-audit.json','a-print-audit.json','a-print-pdf-audit.json']:
+    shutil.copy2(DEV/'review-evidence'/evidence,DOCS/evidence)
 manifest={str(p.relative_to(FINAL)):hashlib.sha256(p.read_bytes()).hexdigest() for p in FINAL.rglob('*') if p.is_file() and p.name!='manifest-sha256.json'}
 (DOCS/'manifest-sha256.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')

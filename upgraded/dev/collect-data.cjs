@@ -15,8 +15,16 @@ const plans=[
  ['j','י · מרווח','../חלק י.html','j-meravach.html',['CAT','CARDS','MOODS','QS','WEEKS']]
 ];
 const editorial=JSON.parse(read(path.join(__dirname,'editorial-feedback.json')));
+const approvedArt=JSON.parse(read(path.join(__dirname,'a-final-content.json')));
+function approvedValue(id,name,original){
+ if(id==='b'&&name==='GAMES')return original.map(g=>({...g,...(editorial.b.activities[g.id]||{})}));
+ if(id==='a'&&name==='PAGES')return [...original.filter(p=>!approvedArt.removedIds.includes(p.id)),...approvedArt.addedPages];
+ if(id==='a'&&name==='CATS')return approvedArt.categories;
+ if(id==='a'&&name==='CATNAME')return approvedArt.categoryNames;
+ return original;
+}
 let results=[],checks=[];
-for(const [id,title,src,dest,names]of plans){const source=src?read(path.join(out,src)):null,final=read(path.join(out,dest)),data={};for(const name of names){const v=value(final,name);data[name]=v;if(source){const original=value(source,name),a=JSON.stringify(original),b=JSON.stringify(v);const approved=id==='b'&&name==='GAMES';const expected=approved?JSON.stringify(original.map(g=>({...g,...(editorial.b.activities[g.id]||{})}))):a;if(expected!==b)throw Error('UNAPPROVED CONTENT CHANGE: '+id+' '+name);checks.push({part:id,collection:name,identical:a===b,approved_editorial:approved,sha256:crypto.createHash('sha256').update(a).digest('hex'),current_sha256:crypto.createHash('sha256').update(b).digest('hex')})}}results.push({id,title,file:dest,data})}
+for(const [id,title,src,dest,names]of plans){const source=src?read(path.join(out,src)):null,final=read(path.join(out,dest)),data={};for(const name of names){const v=value(final,name);data[name]=v;if(source){const original=value(source,name),a=JSON.stringify(original),b=JSON.stringify(v);const approved=(id==='b'&&name==='GAMES')||(id==='a'&&['PAGES','CATS','CATNAME'].includes(name));const expected=JSON.stringify(approvedValue(id,name,original));if(expected!==b)throw Error('UNAPPROVED CONTENT CHANGE: '+id+' '+name);checks.push({part:id,collection:name,identical:a===b,approved_editorial:approved,sha256:crypto.createHash('sha256').update(a).digest('hex'),current_sha256:crypto.createHash('sha256').update(b).digest('hex')})}}results.push({id,title,file:dest,data})}
 const blocks=JSON.parse(read(path.join(out,'source-review/doc-content.json')));
 const g=results.find(x=>x.id==='g').data.CONTENT,h=results.find(x=>x.id==='h').data.BLESSINGS;
 if(blocks[58].p!=='תעלומה קטנה:'+g.story)throw Error('Story differs from the source document');

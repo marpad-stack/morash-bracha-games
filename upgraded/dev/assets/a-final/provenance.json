@@ -1,0 +1,64 @@
+{
+  "createdOn": "2026-09-24",
+  "pairs": {
+    "10": [
+      "2f9577d9-f9d9-4b01-8229-1f034fe744f4",
+      "aab385e4-abc8-408e-8376-d24a260b6403"
+    ],
+    "16": [
+      "ad5e616b-208f-420b-8ab1-1b9528508b2c",
+      "54c7cda3-d4bd-4c6c-80a5-f17679d3943c"
+    ],
+    "17": [
+      "64946b66-ccd4-43ff-b650-7dffee648e35",
+      "74c45ec7-9cd0-41d3-a86f-bf0285aae6ff"
+    ],
+    "18": [
+      "64bf0aff-2ba7-4c3e-9e39-bef60408786f",
+      "351e570d-ecd5-4e25-9513-c620541b8ecf"
+    ],
+    "19": [
+      "d20476f4-daef-4169-b358-0a0e3118f4c5",
+      "e89f5e2a-b640-4a54-8340-102603e6126c"
+    ],
+    "20": [
+      "b24ed380-7524-4419-b6b4-dc3bc0545869",
+      "8c1cb38b-dbf3-4824-a891-712006caf025"
+    ],
+    "21": [
+      "862f0af9-9515-4ef6-a6c7-4e1b1dadbddd",
+      "dd8f6fcc-b228-4a81-b94f-86b88ae2a98e"
+    ],
+    "02": [
+      "6dbc32de-9e22-44d6-938a-408330258183",
+      "15326086-4d22-4fe0-a7dd-f91426289f11"
+    ],
+    "03": [
+      "ebe02764-3007-49b0-92ad-fb091e6551db",
+      "87f8cb87-9cee-459f-a456-b75bae4bf3d8"
+    ],
+    "06": [
+      "6e56d632-4312-414b-a9ab-13084ad7dec6",
+      "0d51c540-86b2-4e41-b91e-bc6e9b85be47"
+    ]
+  },
+  "discardedIds": [
+    22
+  ],
+  "notes": [
+    "Source illustrations and color editions generated with image_gen.",
+    "2 tall + 3 small Shabbat candles for pages 10 and 16.",
+    "Certificate based on user supplied reference. Synagogue women behind partition.",
+    "Final Shabbat editions include a stemless kiddush cup and wine bottle; all ordinary glasses have flat bases."
+  ],
+  "prompts": {
+    "10-candles": "Edit ONLY the Shabbat candlestick arrangement in this exact black-and-white children's coloring page. It depicts THREE children (boy, girl, newborn), so show exactly FIVE separate single-candle candlesticks: TWO large matching candlesticks and THREE smaller matching candlesticks half their height. Arrange all five neatly on one roomy tray at the rear-right of the table, large pair behind small three, with clear gaps between every holder and every flame. All exactly countable. You may gently move nearby goblets to make room but preserve every person, face, baby, bassinet, furniture, flowers, challahs and background. No other changes. Clean closed black outlines, pure white interiors, no gray shading or colors, preserve portrait frame. Do not add any children.",
+    "16-candles": "Edit ONLY the Shabbat candlesticks on the upper-right sideboard of this exact black-and-white coloring illustration. This family has THREE children (boy, girl, newborn). Replace the two candles arrangement with exactly FIVE separate single-candle candlesticks: TWO tall matching ornate candlesticks at the rear, plus THREE smaller matching candlesticks in a tidy evenly spaced row in front. All five must be clearly countable, upright, have candle and flame, with visible gaps between them; the small holders approximately half the height of large holders. Move the goblet a little left or omit it from the sideboard if needed for spacious clean composition. Keep entire family, newborn, faces, clothing, two challahs, flowers, room, rounded frame and every other detail unchanged. No added people. Keep clean pure white interiors and black closed contour lines, NO colors/gray/shading. Preserve A4 portrait aspect ratio.",
+    "color10": "Colorize the attached EXACT line drawing in a warm children's storybook style. Preserve all original contours, shapes, geometry, people, objects and portrait frame without adding or removing anything. In particular preserve EXACTLY FIVE Shabbat candlesticks: TWO large and THREE small, with five flames. Keep every candlestick visible and separated. Warm light skin tones, navy male hats and trousers, soft pink/lavender dresses, honey-brown wood, golden challahs, white tablecloth and candles, silver candlesticks, emerald leaves, cheerful gentle blue background. Light pastel shading inside black outlines.",
+    "color16-final": "Colorize the attached EXACT line drawing in a warm children's storybook style. Preserve all original contours, shapes, geometry, people, objects and portrait frame without adding or removing anything. In particular preserve EXACTLY FIVE Shabbat candlesticks: TWO large and THREE small, with five flames. Keep every candlestick visible and separated. Warm light skin tones, navy male hats and trousers, soft pink/lavender dresses, honey-brown wood, golden challahs, white tablecloth and candles, silver candlesticks, emerald leaves, cheerful gentle blue background. Light pastel shading inside black outlines.",
+    "color17": "Colorize this EXACT black-and-white illustration into a warm children's storybook image. Keep all existing outlines, geometry, facial features, poses, objects, clothing shapes and rounded border EXACTLY unchanged. Do not add/remove any object or person. Gentle warm pastel palette: warm natural skin, navy/charcoal men's hats/suits/trousers, soft sky-blue shirts, muted pink/lavender girls' and mother's dresses, light honey wood, emerald green leaves. Delicate soft shading inside the original black outlines, clean bright background. Keep separation between parents and the woman's position; do not change any arms. Keep text if present. A4 portrait matching input.",
+    "color19": "Colorize this EXACT black-and-white illustration into a warm children's storybook image. Keep all existing outlines, geometry, facial features, poses, objects, clothing shapes and rounded border EXACTLY unchanged. Do not add/remove any object or person. Gentle warm pastel palette: warm natural skin, navy/charcoal men's hats/suits/trousers, soft sky-blue shirts, muted pink/lavender girls' and mother's dresses, light honey wood, emerald green leaves. Delicate soft shading inside the original black outlines, clean bright background. Keep separation between parents and the woman's position; do not change any arms. Keep text if present. A4 portrait matching input.",
+    "color20": "Colorize this EXACT black-and-white illustration into a warm children's storybook image. Keep all existing outlines, geometry, facial features, poses, objects, clothing shapes and rounded border EXACTLY unchanged. Do not add/remove any object or person. Gentle warm pastel palette: warm natural skin, navy/charcoal men's hats/suits/trousers, soft sky-blue shirts, muted pink/lavender girls' and mother's dresses, light honey wood, emerald green leaves. Delicate soft shading inside the original black outlines, clean bright background. Keep separation between parents and the woman's position; do not change any arms. Keep text if present. A4 portrait matching input.",
+    "color21": "Colorize this EXACT black-and-white illustration into a warm children's storybook image. Keep all existing outlines, geometry, facial features, poses, objects, clothing shapes and rounded border EXACTLY unchanged. Do not add/remove any object or person. Gentle warm pastel palette: warm natural skin, navy/charcoal men's hats/suits/trousers, soft sky-blue shirts, muted pink/lavender girls' and mother's dresses, light honey wood, emerald green leaves. Delicate soft shading inside the original black outlines, clean bright background. Keep separation between parents and the woman's position; do not change any arms. Keep text if present. A4 portrait matching input."
+  }
+}

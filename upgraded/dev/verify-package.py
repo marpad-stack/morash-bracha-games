@@ -42,7 +42,13 @@ for p in zips:
             if p.name.startswith('a-'):target=target/'a-coloring'
             if p.name.startswith('i-'):target=target/'i-first-steps'
             assert (target/name).read_bytes()==z.read(name),(p,name)
-checks=json.loads((DEV/'content-checks.json').read_text(encoding='utf-8'));assert len(checks)==30 and all(c['identical'] or (c.get('approved_editorial') and c['part']=='b' and c['collection']=='GAMES') for c in checks)
+checks=json.loads((DEV/'content-checks.json').read_text(encoding='utf-8'))
+with zipfile.ZipFile(FINAL/'corrected-games.zip') as z:
+    assert z.testzip() is None
+    assert set(z.namelist())=={p.relative_to(FINAL/'משחקים').as_posix() for p in (FINAL/'משחקים').rglob('*') if p.is_file()}
+    for name in z.namelist():assert z.read(name)==(FINAL/'משחקים'/name).read_bytes(),name
+approved={('b','GAMES'),('a','PAGES'),('a','CATS'),('a','CATNAME')}
+assert len(checks)==30 and all(c['identical'] or (c.get('approved_editorial') and (c['part'],c['collection']) in approved) for c in checks)
 nikud=json.loads((DEV/'nikud-checks.json').read_text(encoding='utf-8'));assert len(nikud)==30 and all(c['letters_identical'] for c in nikud)
 manifest=json.loads((FINAL/'מסמכים/manifest-sha256.json').read_text(encoding='utf-8'))
 for rel,sha in manifest.items():assert hashlib.sha256((FINAL/rel).read_bytes()).hexdigest()==sha,rel

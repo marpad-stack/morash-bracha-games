@@ -1,0 +1,52 @@
+[
+  {
+    "id": 2,
+    "colorRegions": 22,
+    "palette": 5
+  },
+  {
+    "id": 3,
+    "colorRegions": 26,
+    "palette": 6
+  },
+  {
+    "id": 6,
+    "colorRegions": 25,
+    "palette": 7
+  },
+  {
+    "id": 10,
+    "colorRegions": 24,
+    "palette": 7
+  },
+  {
+    "id": 16,
+    "colorRegions": 20,
+    "palette": 7
+  },
+  {
+    "id": 17,
+    "colorRegions": 23,
+    "palette": 6
+  },
+  {
+    "id": 18,
+    "colorRegions": 21,
+    "palette": 5
+  },
+  {
+    "id": 19,
+    "colorRegions": 24,
+    "palette": 5
+  },
+  {
+    "id": 20,
+    "colorRegions": 20,
+    "palette": 7
+  },
+  {
+    "id": 21,
+    "colorRegions": 20,
+    "palette": 4
+  }
+]

@@ -1,0 +1,23 @@
+body[data-morash-part=a] .panel .ptop{position:sticky;top:0;z-index:15;background:#fffdf7;border-bottom:1px solid #ccdbd6;gap:12px;flex-wrap:wrap}
+body[data-morash-part=a] .panel .ptop h2{font-size:clamp(19px,3.2vw,28px);flex:1;min-width:120px}
+body[data-morash-part=a] .panel .ptop>.x{font:700 16px/1.4 Arial,sans-serif;min-height:46px;white-space:nowrap;position:static;border:1px solid #b3c9c8;background:white;color:#184d55;order:0;padding:8px 13px}
+body[data-morash-part=a] .panel .ptop>img{width:95px}
+body[data-morash-part=a] .howto{font-size:18px;line-height:1.8;text-align:center;max-width:700px;margin:12px auto 18px}
+body[data-morash-part=a] .tool{font-size:18px;min-height:46px;width:auto;padding:8px 12px;border-radius:12px;display:inline-flex;align-items:center;gap:6px}
+body[data-morash-part=a] .tool span{font-size:16px}
+body[data-morash-part=a] .filters button{font-size:16px;min-height:44px;padding:9px 16px}
+body[data-morash-part=a] .card h3{font-size:18px;line-height:1.6}
+body[data-morash-part=a] .card .acts button{min-height:44px;font-size:15px}
+body[data-morash-part=a] .explain ol{font-size:17px;line-height:1.9}
+body[data-morash-part=a] .bk small{font-size:15px}
+body[data-morash-part=a] .bk .rm{width:44px;height:44px;z-index:2}
+.a-settings,.a-game-status,.a-game-actions{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:16px}
+.a-settings .btn{min-width:48px}.a-game-status{background:#e9f3f5;padding:12px;border-radius:16px;color:#234e58}.a-game-status label{display:flex;align-items:center;gap:7px}.a-game-status select{padding:8px;font-size:16px;min-height:44px}
+.a-feedback{min-height:30px;margin:16px 0;text-align:center;font-size:17px;font-weight:700;line-height:1.7}
+body[data-morash-part=a] .mem-board{gap:10px;max-width:760px}.mem:disabled{opacity:1}.mem.done{box-shadow:0 0 0 3px #268970}.mem:focus-visible{outline-offset:4px}
+.a-clue-wrap{max-width:210px;margin:0 auto 18px;text-align:center}.a-clue-wrap canvas{width:100%;height:auto;background:white;border:3px solid #e8b33b;box-shadow:0 5px 0 #bf8e211f;border-radius:20px}.a-clue-wrap p{font-size:15px;margin:6px 0}
+.a-find-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:660px;margin:auto}.a-find-options .mo{padding:8px;border:3px solid #c3d7d9;background:white;border-radius:16px;display:grid;gap:8px;color:#22474d}.a-find-options .mo img{width:100%;height:auto;aspect-ratio:800/1131;object-fit:contain;border-radius:8px}.a-find-options .mo span{font-size:15px;line-height:1.5}.a-find-options .mo.right{border-color:#218754;background:#e2f7df;opacity:1}.a-find-options .mo.wrong{opacity:.4}.a-find-options .mo:disabled:not(.wrong){opacity:1}
+.a-complete{text-align:center;padding:30px 0}.a-complete>span{font-size:70px;color:#d39a17}.a-complete h3{font-size:28px}.a-complete p{font-size:19px}.a-points{font-weight:800;color:#15737c}.a-complete .btn{margin:6px}
+#artDialog .a-medal-card{position:static;display:block;padding:16px;border:1px solid #c4d7ce;border-radius:16px;background:#fffdf7;text-align:center}#artDialog .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}#artDialog .a-medal-card p{font-size:15px;line-height:1.6}@media(max-width:600px){#artDialog .grid{grid-template-columns:1fr}}
+body[data-morash-part=a] .review-help p{line-height:1.85;font-size:17px;white-space:pre-line}
+@media(max-width:650px){body[data-morash-part=a] .panel .ptop{padding:10px;gap:8px}body[data-morash-part=a] .panel .ptop>img{display:none}body[data-morash-part=a] .studio{padding:12px}body[data-morash-part=a] .mem-board{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:8px}body[data-morash-part=a] .grid{gap:10px}body[data-morash-part=a] .card .acts{flex-wrap:wrap;gap:5px}body[data-morash-part=a] .card .acts button{flex:1 1 70px}body[data-morash-part=a] .card .acts .b-pick{flex:0 0 44px}.a-find-options{gap:8px}.a-find-options .mo{padding:4px;border-radius:10px}.a-find-options .mo span{font-size:14px}.a-clue-wrap{max-width:175px}.a-game-status{gap:10px;padding:10px}.a-settings{gap:8px}body[data-morash-part=a] .howto{font-size:17px}body[data-morash-part=a] .tools{gap:6px}}

@@ -1,0 +1,38 @@
+[
+  {
+    "file": "a-print-booklet-1440.pdf",
+    "pages": 3,
+    "format": "A4",
+    "oneImagePerPage": true
+  },
+  {
+    "file": "a-print-booklet-390.pdf",
+    "pages": 3,
+    "format": "A4",
+    "oneImagePerPage": true
+  },
+  {
+    "file": "a-print-painted-1440.pdf",
+    "pages": 1,
+    "format": "A4",
+    "oneImagePerPage": true
+  },
+  {
+    "file": "a-print-painted-390.pdf",
+    "pages": 1,
+    "format": "A4",
+    "oneImagePerPage": true
+  },
+  {
+    "file": "a-print-single-1440.pdf",
+    "pages": 1,
+    "format": "A4",
+    "oneImagePerPage": true
+  },
+  {
+    "file": "a-print-single-390.pdf",
+    "pages": 1,
+    "format": "A4",
+    "oneImagePerPage": true
+  }
+]

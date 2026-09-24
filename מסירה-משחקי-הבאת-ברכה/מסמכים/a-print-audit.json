@@ -1,0 +1,47 @@
+{
+  "browser": "Edge headless, emulated touch/mobile viewport",
+  "results": [
+    {
+      "width": 390,
+      "type": "single",
+      "userActivation": true,
+      "imagesReady": true,
+      "pages": 1
+    },
+    {
+      "width": 390,
+      "type": "booklet",
+      "userActivation": true,
+      "imagesReady": true,
+      "pages": 3
+    },
+    {
+      "width": 390,
+      "type": "painted",
+      "userActivation": true,
+      "imagesReady": true,
+      "pages": 1
+    },
+    {
+      "width": 1440,
+      "type": "single",
+      "userActivation": true,
+      "imagesReady": true,
+      "pages": 1
+    },
+    {
+      "width": 1440,
+      "type": "booklet",
+      "userActivation": true,
+      "imagesReady": true,
+      "pages": 3
+    },
+    {
+      "width": 1440,
+      "type": "painted",
+      "userActivation": true,
+      "imagesReady": true,
+      "pages": 1
+    }
+  ]
+}

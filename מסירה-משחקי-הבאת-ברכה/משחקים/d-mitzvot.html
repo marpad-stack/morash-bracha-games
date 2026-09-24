@@ -2110,7 +2110,7 @@ body[data-morash-part=c] #resetDialog .toolbar{justify-content:center;gap:12px;}
  el.addEventListener('keydown',e=>{if(e.key!=='Tab'||!active())return;const items=[...el.querySelectorAll('button,a[href],input,select,textarea,[tabindex="0"]')].filter(b=>!b.disabled&&b.getBoundingClientRect().width&&getComputedStyle(b).visibility!=='hidden');if(!items.length){e.preventDefault();el.focus();return}const first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}});
  }
  if(part==='a'){
-  help(find('#games')||find('[data-game="memory"]')?.parentElement,'בוחרים משחק ורמה. בזיכרון הופכים זוג קלפים; בפאזל נוגעים בשני חלקים כדי להחליף ביניהם, או בוחרים במצב הזזה. סימן × מחזיר לבחירת המשחקים.');
+  help(find('#games')||find('[data-game="memory"]')?.parentElement,'בוחרים רמה בראש העמוד ואז משחק.\nבזיכרון הופכים שני קלפים ומחפשים זוג.\nבפאזל בוחרים שני חלקים כדי להחליף ביניהם.\nבבלשי החפצים מחפשים את החפץ בין שלושה ציורים.\nכפתור ״סגירה״ מחזיר לבחירת המשחקים.');
  }
  if(part==='b'){
   find('#bookRead').textContent='קריאה בטקסט · עם ניקוד';
