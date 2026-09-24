@@ -29,6 +29,7 @@ const bScenes=[
  [15,'רגע משפחתי'],[19,'מתכוננים לשבת'],[23,'לילה בבית'],
  [27,'חוגגים יחד'],[31,'אח גדול ותינוק'],[35,'קוראים ביחד']
 ];
+function bGameArt(index){return window.BStory?.artForLegacyPage(index)||PAGES[index]}
 function bCanDisplay(src){
  return new Promise(resolve=>{
   const image=new Image();let done=false;
@@ -40,12 +41,12 @@ function bCanDisplay(src){
 START.memory=async(box,message)=>{
  const epoch=bEpoch,requested=[3,6,8][bRoundLevel-1];
  box.innerHTML='<p class="b-progress" role="status">טוענים את תמונות המשחק…</p>';
- const visible=await Promise.all(bScenes.map(async scene=>await bCanDisplay(PAGES[scene[0]])?scene:null));
+ const visible=await Promise.all(bScenes.map(async scene=>await bCanDisplay(bGameArt(scene[0]))?scene:null));
  if(epoch!==bEpoch)return;
  const available=visible.filter(Boolean),count=Math.min(requested,available.length),chosen=PlayUI.shuffle(available).slice(0,count);
  if(count<2){box.innerHTML='<p class="b-progress" role="status">תמונות המשחק לא נטענו. אפשר לנסות שוב או לבחור פעילות אחרת.</p><button class="btn b-restart">ניסיון נוסף</button>';box.querySelector('button').onclick=()=>openGame('memory');return}
  const deck=PlayUI.shuffle([...chosen,...chosen]);let first=null,locked=false,found=0;
- box.innerHTML='<p class="b-progress" role="status">נמצאו <b id="bPairs">0</b> מתוך '+count+' זוגות</p><div class="mem b-story-memory">'+deck.map(([index,title],i)=>'<button type="button" class="card" data-scene="'+index+'" aria-label="קלף '+(i+1)+' סגור"><span class="b-card-back" aria-hidden="true">✦</span><img src="'+PAGES[index]+'" alt="" draggable="false"><span class="b-card-caption">'+title+'</span></button>').join('')+'</div><button class="btn" id="bPeek">הצצה לתמונות</button>';
+ box.innerHTML='<p class="b-progress" role="status">נמצאו <b id="bPairs">0</b> מתוך '+count+' זוגות</p><div class="mem b-story-memory">'+deck.map(([index,title],i)=>'<button type="button" class="card" data-scene="'+index+'" aria-label="קלף '+(i+1)+' סגור"><span class="b-card-back" aria-hidden="true">✦</span><img src="'+bGameArt(index)+'" alt="" draggable="false"><span class="b-card-caption">'+title+'</span></button>').join('')+'</div><button class="btn" id="bPeek">הצצה לתמונות</button>';
  const cards=[...box.querySelectorAll('.card')],peek=box.querySelector('#bPeek');
  const again=document.createElement('button');again.className='btn b-restart';again.textContent='משחק חדש';again.onclick=()=>openGame('memory');box.append(again);
  const label=card=>{const title=bScenes.find(x=>String(x[0])===card.dataset.scene)[1];card.setAttribute('aria-label',card.classList.contains('up')?title:'קלף '+(cards.indexOf(card)+1)+' סגור')};

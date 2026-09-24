@@ -1,0 +1,91 @@
+[
+  {
+    "key": "arrival",
+    "prompt": "Remove every printed Hebrew word from the wall at the right, replacing it with continuous clean wall. Preserve mother holding the swaddled newborn, father standing well apart, their faces/clothes, doorway, full room and square composition exactly. No text anywhere.",
+    "refs": [
+      "b-story-pages/02.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "savedFile": "arrival.jpg"
+  },
+  {
+    "key": "tower",
+    "prompt": "First image is edit target and room/father/mother identity; second image is reference ONLY for the little boy's identity (Mendy, blue shirt, dark pants, navy kippah, visible tzitzit). Change the scene into father and Mendy sitting beside a modest wooden block tower on the rug; mother kneels on the other side of the tower with comfortable space from father and offers the boy a roof block. Their hands do not touch. Baby rests safely in the bassinet in the back. Match the warm domestic watercolor exactly. Natural anatomically correct hands and child proportions, clear wooden blocks and pathway. Mother full long skirt and long sleeves. No adults touching one another. No words or speech bubbles anywhere.",
+    "refs": [
+      "b-story-pages/08.jpg",
+      "dev/assets/b-final/page36.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "savedFile": "tower.jpg"
+  },
+  {
+    "key": "shirt",
+    "prompt": "First image edit target; second image reference ONLY for boy Mendy's identity: blue shirt navy kippah dark trousers visible tzitzit. Recompose this family visiting scene: elderly grandmother with black wig stands RIGHT NEXT TO mother on the right side. Two men stand together at far left with clear gap from women. Add Mendy in foreground showing mother the last button he has fastened on his blue shirt; mother looks at him kindly and attentively, grandma smiles. Baby stays in the bassinet. Keep every adult's face and clothing and elderly wrinkles; modest long skirts long sleeves, no male/female physical contact. Exactly four adults one boy one baby. Whole warm room and watercolor quality. No writing anywhere.",
+    "refs": [
+      "dev/assets/b-final/page12.jpg",
+      "dev/assets/b-final/page36.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "savedFile": "shirt.jpg"
+  },
+  {
+    "key": "shabbat",
+    "prompt": "Use case: illustration-story. Create a fresh square watercolor illustration for the newly approved children's story scene 'Friday preparations'. Attached images are STYLE AND CHARACTER IDENTITY REFERENCES ONLY, not edit targets. Match the father, mother and little boy Mendy exactly: natural bearded father white long sleeve shirt dark trousers kippah; mother short brown wig cream high-neck long-sleeve blouse full ankle-length blue skirt; boy blue shirt navy kippah dark trousers visible tzitzit. Compose a normal elegant rectangular Shabbat dining table, white cloth, exactly TWO braided challahs on a platter, dark wine bottle, a silver STEMLESS kiddush cup on a saucer, exactly TWO large silver candlesticks plus TWO smaller silver candlesticks neatly beside them, all four with white candles (unlit, it is Friday daytime). Father places one plate on the table, Mendy brings two siddur prayer books with simple non-lettered covers. In the background to the right mother sits resting on a chair beside a safe bassinet holding a swaddled sleeping infant, she does NOT touch the baby. Baby and Mendy are the exactly two children in the image, hence exactly two small candles. Keep all adults spaced apart, no physical contact between parents. Warm cream domestic light, consistent same family watercolor storybook quality, clear recognizable objects, good hands and proportions. No words, no lettering, no speech bubbles, no logo, no frames. This should be a full new artwork that illustrates preparation for Shabbat.",
+    "refs": [
+      "b-story-pages/21.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "savedFile": "shabbat.jpg"
+  },
+  {
+    "key": "night",
+    "prompt": "First image edit target; second reference ONLY for father identity (dark natural beard, white long sleeve shirt, dark pants, kippah). Remove all three thought bubbles AND their text completely. Add father sitting comfortably beside Mendy's bed at left, attentively listening with kind face, lightly arranging the blanket at its edge. Mendy remains sitting in bed wearing blue pajamas and navy kippah, looking toward his father reassured, not alone. Keep soft warm bedside lamp against peaceful blue night, cozy bed, room style and square composition. Natural hands and proportions. No text anywhere, no new speech bubbles.",
+    "refs": [
+      "b-story-pages/24.webp",
+      "b-story-pages/08.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "savedFile": "night.jpg"
+  },
+  {
+    "key": "brit",
+    "prompt": "First image edit target. Remove ALL Hebrew writing on upper left; replace with continuous synagogue wall. Add Mendy (identity from second reference, blue shirt dark trousers navy kippah visible tzitzit) standing next to his father with a small comfortable space, looking up happily. Father's white tallit with black stripes is over modest knee-length black sirtuk, NO black hat on father, natural untrimmed beard. He safely cradles swaddled baby. Preserve all other men in black Chabad hats/suits, natural beards, table, room. No female characters in this scene. No text or thought bubbles. Keep same watercolor finish and square frame.",
+    "refs": [
+      "b-story-pages/29.jpg",
+      "dev/assets/b-final/page36.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "savedFile": "brit.jpg"
+  },
+  {
+    "key": "bond",
+    "prompt": "First image edit target, second mother identity only. Remove all thought bubbles and lettering. Recompose slightly to show Mendy safely sitting beside the bassinet, hands resting on his own knees, mother sitting beside him on a chair a little behind. Both look toward baby resting inside bassinet, never lifting or handing the baby. Mother has same brown wig cream high-neck long-sleeve blouse full long blue skirt; Mendy blue shirt dark pants kippah and tzitzit. Preserve warm gentle watercolor style, room, soft light. No words, no bubbles, no extra people. Full square illustration.",
+    "refs": [
+      "b-story-pages/32.webp",
+      "dev/assets/b-final/page36.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "savedFile": "bond.jpg"
+  },
+  {
+    "key": "reading",
+    "prompt": "Remove ONLY the large Hebrew story text at upper right, replace with continuous rug/floor background. Preserve mother, little boy, ALL hands, poses, modest clothes, room and the small open blue storybook EXACTLY. The small book's narrative pictures and tiny print remain rotated upside down to viewer, facing MOTHER AND CHILD. Do NOT erase the tiny print inside the book. No new words outside the small physical book. Same square watercolor scene.",
+    "refs": [
+      "dev/assets/b-final/page36.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "savedFile": "reading.jpg"
+  },
+  {
+    "key": "family",
+    "prompt": "Use case: precise-object-edit. Edit target: this square warm watercolor children's book illustration. Change ONLY the standing arrangement of the four adults. Rearrange from viewer LEFT TO RIGHT: the man in navy sweater, the father in white shirt, a clear comfortable empty gap, the elderly grandmother in cream cardigan with black bob wig, the mother in cream blouse and long blue skirt nearest the baby's bassinet. The grandmother must stand immediately beside the mother, grouping the two women together and the two men together. Preserve all four identities, facial features, outfits, body proportions, the grandmother's elderly wrinkles and BLACK wig. Keep modest natural spacing; absolutely no physical contact between men and women, no touching hands or arms. Keep father's open palm gesture natural. Both women's hands clasped in front. Baby stays safely in its bassinet lower right, no adult touches baby. Keep whole room, bookcase, window, bassinet, baby, warm tones, square framing and illustration quality. Exactly four adults, no new people. No logos or added text.",
+    "mode": "built-in image_gen edit",
+    "savedFile": "family.jpg"
+  },
+  {
+    "key": "yawn",
+    "mode": "existing illustration reused",
+    "source": "upgraded/b-story-pages/16.webp",
+    "savedFile": "yawn.jpg"
+  }
+]

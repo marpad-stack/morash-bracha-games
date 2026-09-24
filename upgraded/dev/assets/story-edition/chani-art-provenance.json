@@ -1,0 +1,77 @@
+[
+  {
+    "key": "tower",
+    "prompt": "Use case: precise-object-edit, children's story illustration. Edit the supplied square watercolor storybook image. This is the identical story in a girl-protagonist edition. Replace ONLY the little boy in the center with Chani, a five-year-old Chabad Jewish girl: warm brown eyes, chestnut-brown hair in two neat braids with small navy blue bows, friendly expressive face, pale blue long-sleeved collared buttoned blouse, modest navy skirt covering knees even while seated, white opaque tights and simple dark shoes. No kippah or tzitzit on the girl. Preserve her exact age, size, seated position, reaching gesture and wooden-block activity. Keep BOTH parents and the baby exactly as shown, their faces, outfits, spacing, no contact between parents, bassinet, entire room, warm watercolor texture, lighting and square full-bleed composition. Do not add words, logos, borders, speech bubbles or extra people. Keep detailed natural hands. This girl is the character reference for ten matching illustrations.",
+    "refs": [
+      "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/dev/assets/story-edition/tower.jpg"
+    ],
+    "mode": "built-in image_gen edit",
+    "generatedPath": "C:\\Users\\user\\.codex\\generated_images\\01a0a9af-8e32-72c1-95f4-e97131a770d4\\exec-359a2e64-425c-4c85-a8b2-a55d524fb57e.png"
+  },
+  {
+    "key": "shirt",
+    "extra": "Girl shows the button on her own blouse exactly like the boy. Grandmother stands beside mother; keep her visibly old with wrinkles but ensure her ordinary wig is BLACK (not gray).",
+    "prompt": "Use case: precise-object-edit. Image 1 is the EXACT scene to edit; image 2 is ONLY the character reference for little Chani (girl between parents with blocks). Create the matching girl edition of image 1. Replace the little BOY ONLY with the identical five-year-old Chani from image 2: same face, brown eyes, chestnut two braids with navy bows, pale blue long sleeve collared blouse, modest navy skirt covering knees, opaque white tights, dark shoes. No kippah or tzitzit on girl. Preserve the scene's composition, pose, activity, parents and infant, furniture, lighting, square full-bleed warm watercolor, all details. Keep parents physically apart. No frame, logo, speech bubble or new writing. Girl shows the button on her own blouse exactly like the boy. Grandmother stands beside mother; keep her visibly old with wrinkles but ensure her ordinary wig is BLACK (not gray).",
+    "refs": [
+      "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/dev/assets/story-edition/shirt.jpg",
+      "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-359a2e64-425c-4c85-a8b2-a55d524fb57e.png"
+    ],
+    "mode": "built-in image_gen edit",
+    "generatedPath": "C:\\Users\\user\\.codex\\generated_images\\01a0a9af-8e32-72c1-95f4-e97131a770d4\\exec-2d1b191e-053f-400f-bbdf-38a691adad37.png"
+  },
+  {
+    "key": "shabbat",
+    "extra": "Chani carries the two siddur books as the boy does. Preserve EXACTLY two large and two small candlesticks with white candles, two challahs, wine bottle, stemless silver kiddush cup on saucer. Mother stays seated by baby's bassinet.",
+    "prompt": "Use case: precise-object-edit. Image 1 is the EXACT scene to edit; image 2 is ONLY the character reference for little Chani (girl between parents with blocks). Create the matching girl edition of image 1. Replace the little BOY ONLY with the identical five-year-old Chani from image 2: same face, brown eyes, chestnut two braids with navy bows, pale blue long sleeve collared blouse, modest navy skirt covering knees, opaque white tights, dark shoes. No kippah or tzitzit on girl. Preserve the scene's composition, pose, activity, parents and infant, furniture, lighting, square full-bleed warm watercolor, all details. Keep parents physically apart. No frame, logo, speech bubble or new writing. Chani carries the two siddur books as the boy does. Preserve EXACTLY two large and two small candlesticks with white candles, two challahs, wine bottle, stemless silver kiddush cup on saucer. Mother stays seated by baby's bassinet.",
+    "refs": [
+      "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/dev/assets/story-edition/shabbat.jpg",
+      "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-359a2e64-425c-4c85-a8b2-a55d524fb57e.png"
+    ],
+    "mode": "built-in image_gen edit",
+    "generatedPath": "C:\\Users\\user\\.codex\\generated_images\\01a0a9af-8e32-72c1-95f4-e97131a770d4\\exec-a619e3d1-3254-480c-a17e-3381b718494a.png"
+  },
+  {
+    "key": "night",
+    "extra": "Girl is under the blanket in bed. Keep her two brown braids but use light-blue modest long-sleeved nightwear as appropriate in this scene. Her father remains sitting reassuringly by her bed. No hat on girl.",
+    "prompt": "Use case: precise-object-edit. Image 1 is the EXACT scene to edit; image 2 is ONLY the character reference for little Chani (girl between parents with blocks). Create the matching girl edition of image 1. Replace the little BOY ONLY with the identical five-year-old Chani from image 2: same face, brown eyes, chestnut two braids with navy bows, pale blue long sleeve collared blouse, modest navy skirt covering knees, opaque white tights, dark shoes. No kippah or tzitzit on girl. Preserve the scene's composition, pose, activity, parents and infant, furniture, lighting, square full-bleed warm watercolor, all details. Keep parents physically apart. No frame, logo, speech bubble or new writing. Girl is under the blanket in bed. Keep her two brown braids but use light-blue modest long-sleeved nightwear as appropriate in this scene. Her father remains sitting reassuringly by her bed. No hat on girl.",
+    "refs": [
+      "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/dev/assets/story-edition/night.jpg",
+      "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-359a2e64-425c-4c85-a8b2-a55d524fb57e.png"
+    ],
+    "mode": "built-in image_gen edit",
+    "generatedPath": "C:\\Users\\user\\.codex\\generated_images\\01a0a9af-8e32-72c1-95f4-e97131a770d4\\exec-00fd190e-7dfd-4e1c-a201-c2166b826343.png"
+  },
+  {
+    "key": "brit",
+    "extra": "This is the celebration AFTER her infant brother's brit, near her own father. Keep father holding the baby, wearing WHITE TALLIT WITH BLACK STRIPES OVER BLACK SIRTUK, black kippah but NO FEDORA on father. Other men retain black Chabad fedora hats and suits, natural untrimmed beards. Chani stands in boy's spot beside her own father, in long-sleeved blue blouse and navy skirt, white tights. Do not introduce mother or grandmother.",
+    "prompt": "Use case: precise-object-edit. Image 1 is the EXACT scene to edit; image 2 is ONLY the character reference for little Chani (girl between parents with blocks). Create the matching girl edition of image 1. Replace the little BOY ONLY with the identical five-year-old Chani from image 2: same face, brown eyes, chestnut two braids with navy bows, pale blue long sleeve collared blouse, modest navy skirt covering knees, opaque white tights, dark shoes. No kippah or tzitzit on girl. Preserve the scene's composition, pose, activity, parents and infant, furniture, lighting, square full-bleed warm watercolor, all details. Keep parents physically apart. No frame, logo, speech bubble or new writing. This is the celebration AFTER her infant brother's brit, near her own father. Keep father holding the baby, wearing WHITE TALLIT WITH BLACK STRIPES OVER BLACK SIRTUK, black kippah but NO FEDORA on father. Other men retain black Chabad fedora hats and suits, natural untrimmed beards. Chani stands in boy's spot beside her own father, in long-sleeved blue blouse and navy skirt, white tights. Do not introduce mother or grandmother.",
+    "refs": [
+      "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/dev/assets/story-edition/brit.jpg",
+      "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-359a2e64-425c-4c85-a8b2-a55d524fb57e.png"
+    ],
+    "mode": "built-in image_gen edit",
+    "generatedPath": "C:\\Users\\user\\.codex\\generated_images\\01a0a9af-8e32-72c1-95f4-e97131a770d4\\exec-54d3de5a-5c7d-411b-add8-f56c3918987f.png"
+  },
+  {
+    "key": "bond",
+    "extra": "Chani sits beside her mother greeting baby in bassinet. Her skirt fully covers knees in seated pose. Keep all hands natural and no extra limbs.",
+    "prompt": "Use case: precise-object-edit. Image 1 is the EXACT scene to edit; image 2 is ONLY the character reference for little Chani (girl between parents with blocks). Create the matching girl edition of image 1. Replace the little BOY ONLY with the identical five-year-old Chani from image 2: same face, brown eyes, chestnut two braids with navy bows, pale blue long sleeve collared blouse, modest navy skirt covering knees, opaque white tights, dark shoes. No kippah or tzitzit on girl. Preserve the scene's composition, pose, activity, parents and infant, furniture, lighting, square full-bleed warm watercolor, all details. Keep parents physically apart. No frame, logo, speech bubble or new writing. Chani sits beside her mother greeting baby in bassinet. Her skirt fully covers knees in seated pose. Keep all hands natural and no extra limbs.",
+    "refs": [
+      "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/dev/assets/story-edition/bond.jpg",
+      "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-359a2e64-425c-4c85-a8b2-a55d524fb57e.png"
+    ],
+    "mode": "built-in image_gen edit",
+    "generatedPath": "C:\\Users\\user\\.codex\\generated_images\\01a0a9af-8e32-72c1-95f4-e97131a770d4\\exec-171219f1-63b9-4ed3-a911-f4f7ffd683bc.png"
+  },
+  {
+    "key": "reading",
+    "extra": "Chani reads with mother. Her full skirt remains modest over her body in the lying position. The OPEN MINIATURE STORYBOOK must keep TWO CLEAR STORY PICTURES oriented toward mother and Chani, upside-down relative to viewer, as already in image 1. Replace the little boy depicted INSIDE the miniature storybook pictures with tiny matching Chani too, preserving orientation toward readers. Keep recognizable story illustrations, not abstract shapes. Do not change the miniature printed text or add any large page writing.",
+    "prompt": "Use case: precise-object-edit. Image 1 is the EXACT scene to edit; image 2 is ONLY the character reference for little Chani (girl between parents with blocks). Create the matching girl edition of image 1. Replace the little BOY ONLY with the identical five-year-old Chani from image 2: same face, brown eyes, chestnut two braids with navy bows, pale blue long sleeve collared blouse, modest navy skirt covering knees, opaque white tights, dark shoes. No kippah or tzitzit on girl. Preserve the scene's composition, pose, activity, parents and infant, furniture, lighting, square full-bleed warm watercolor, all details. Keep parents physically apart. No frame, logo, speech bubble or new writing. Chani reads with mother. Her full skirt remains modest over her body in the lying position. The OPEN MINIATURE STORYBOOK must keep TWO CLEAR STORY PICTURES oriented toward mother and Chani, upside-down relative to viewer, as already in image 1. Replace the little boy depicted INSIDE the miniature storybook pictures with tiny matching Chani too, preserving orientation toward readers. Keep recognizable story illustrations, not abstract shapes. Do not change the miniature printed text or add any large page writing.",
+    "refs": [
+      "C:/Users/user/Desktop/משחקים שפרה ופועה/upgraded/dev/assets/story-edition/reading.jpg",
+      "C:/Users/user/.codex/generated_images/01a0a9af-8e32-72c1-95f4-e97131a770d4/exec-359a2e64-425c-4c85-a8b2-a55d524fb57e.png"
+    ],
+    "mode": "built-in image_gen edit",
+    "generatedPath": "C:\\Users\\user\\.codex\\generated_images\\01a0a9af-8e32-72c1-95f4-e97131a770d4\\exec-9744f863-2135-47ca-b633-103794a40455.png"
+  }
+]

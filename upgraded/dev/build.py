@@ -72,5 +72,6 @@ review=DEV/'review.py'
 if review.exists():exec(compile(review.read_text(encoding='utf-8'),str(review),'exec'))
 
 exec(compile((DEV/'branding.py').read_text(encoding='utf-8'),str(DEV/'branding.py'),'exec'))
+exec(compile((DEV/'b-edition-build.py').read_text(encoding='utf-8'),str(DEV/'b-edition-build.py'),'exec'))
 
 print('Built:',', '.join(p.name for p in OUT.glob('*.html')))

@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:8766/upgraded/b-story.html",
+  "checks": [
+    "Approved manuscript and nikud match exactly; all ten illustrations load",
+    "320/390/768/1440 layouts, RTL spreads, contents and reading mode",
+    "All eleven optional reading moments support multiple answers, action reveal and continuation without scoring feelings",
+    "Edition bookmark persists",
+    "Four A4 print cases: 84 PDF pages, every logical page exactly once, RTL folded order, all 13 artwork instances branded, no clipped paper",
+    "Memory 3/6/8 pairs, lights 2x2/3x3/4x4, and dressing completed at all levels; stars awarded",
+    "Dressing supports real pointer drag and click placement",
+    "Table completed with wine and stemless cup; all baby items explored; no stale table style",
+    "Peek timer, Escape and rapid canvas closing do not leak into another activity",
+    "No JavaScript errors"
+  ],
+  "errors": [],
+  "bookPages": 28,
+  "scenes": 11,
+  "artwork": 10,
+  "physicalDevicesTested": false
+}

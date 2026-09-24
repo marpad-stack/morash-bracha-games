@@ -18,7 +18,7 @@ for game in data:
          const working=new WeakMap();
          function decorate(img){
           const src=img.getAttribute('src')||'';
-          if(!src.includes('b-story-pages/')||working.get(img)===src)return;
+          if((!src.includes('b-story-pages/')&&!src.includes('b-story-art/'))||working.get(img)===src)return;
           working.set(img,src);MorashBrand.bookPage(src).then(url=>{if(img.getAttribute('src')===src){img.src=url;img.dataset.branded='true'}}).catch(()=>{});
          }
          document.addEventListener('load',event=>{if(event.target instanceof HTMLImageElement)decorate(event.target)},true);

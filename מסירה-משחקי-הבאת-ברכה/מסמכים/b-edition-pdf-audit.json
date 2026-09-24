@@ -1,0 +1,66 @@
+[
+  {
+    "file": "edition-a4-1440.pdf",
+    "pages": 28,
+    "sizePoints": [
+      595,
+      842
+    ]
+  },
+  {
+    "file": "edition-a4-390.pdf",
+    "pages": 28,
+    "sizePoints": [
+      595,
+      842
+    ]
+  },
+  {
+    "file": "edition-booklet-1440.pdf",
+    "pages": 14,
+    "sizePoints": [
+      842,
+      595
+    ]
+  },
+  {
+    "file": "edition-booklet-390.pdf",
+    "pages": 14,
+    "sizePoints": [
+      842,
+      595
+    ]
+  },
+  {
+    "file": "chani-a4-1440.pdf",
+    "pages": 28,
+    "sizePoints": [
+      595,
+      842
+    ]
+  },
+  {
+    "file": "chani-a4-390.pdf",
+    "pages": 28,
+    "sizePoints": [
+      595,
+      842
+    ]
+  },
+  {
+    "file": "chani-booklet-1440.pdf",
+    "pages": 14,
+    "sizePoints": [
+      842,
+      595
+    ]
+  },
+  {
+    "file": "chani-booklet-390.pdf",
+    "pages": 14,
+    "sizePoints": [
+      842,
+      595
+    ]
+  }
+]

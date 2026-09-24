@@ -1,0 +1,104 @@
+{
+  "url": "http://127.0.0.1:8766/upgraded/b-story.html",
+  "checks": [
+    "Chani manuscript, UI, all eleven questions, four widths, direct URL and separate bookmarks",
+    "All 17 illustrations load; logo changes only its small corner and keeps artwork dimensions",
+    "Chani four print cases: 84 PDF pages, no clipped paper, full A4 and folded A4; print edition remains stable",
+    "Chani memory uses nine different scene pictures and completes eight pairs",
+    "Unavailable artwork leaves readable story and blocks blank printing until explicit text fallback"
+  ],
+  "art": [
+    {
+      "src": "b-story-art/arrival-a5355eed4307.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/family-44fc81f2bd3d.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/tower-570a68d12c64.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/shirt-f8c543dfedb0.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/yawn-56d5e9fa3405.jpg",
+      "w": 640,
+      "h": 640
+    },
+    {
+      "src": "b-story-art/shabbat-bde843497f48.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/night-a5d51fba5830.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/brit-591e321c4301.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/bond-a23157b99a92.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/reading-6beb3bfec6c2.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-tower-cc7232867896.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-shirt-b4f6b957c876.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-shabbat-36ef6402164a.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-night-38a27713c37e.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-brit-e221f8350a86.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-bond-0ca67413d0b3.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-reading-1123bb481016.jpg",
+      "w": 1254,
+      "h": 1254
+    }
+  ],
+  "brand": {
+    "outside": 0,
+    "inside": 2312,
+    "sameSize": true
+  },
+  "errors": [],
+  "physicalDevicesTested": false
+}
