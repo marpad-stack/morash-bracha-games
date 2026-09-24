@@ -5715,7 +5715,7 @@ const bQuiet=START.quiet;START.quiet=(b,m)=>{if(bLevel===1){bQuiet(b,m);return}c
 >כל לחיצה משנה גם את האורות הצמודים. נסו לכבות את כולם! <div class=
 >רמז לצעד הבא ';function paint(){b.querySelector('.b-lights').innerHTML=grid.map((v,i)=>'<button data-light=
 >'+(v?'☀':'·')+' ').join('')}paint();b.querySelector('.b-lights').onclick=e=>{const bt=e.target.closest('[data-light]');if(!bt||won)return;flip(+bt.dataset.light);paint();if(!grid.some(Boolean)){won=true;m.textContent='הבית נרדם. לילה טוב.';bAward('quiet')}};b.querySelector('#bHint').onclick=()=>{if(won)return;const i=[...solution][0],bt=b.querySelector('[data-light=
-}}};
+};
 /* Activity state is scoped to an opening, so delayed actions cannot award another game. */
 let bEpoch=0;
 const bRetired=new Set(B_REVIEW.retiredActivities);
@@ -6866,7 +6866,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 בוחרים רגע של משחק
 שש פעילויות מתוך העולם של הסיפור. בוחרים רמה ומשחקים בקצב שלכם.
 קריאה בטקסט
-האיור בעמוד הזה לא נטען. אפשר להמשיך באמצעות ״קריאה בטקסט״. בדקו את החיבור או את סינון התמונות כדי לראות גם את האיור.
 בחירת אזור
 קוראים בספר  משחקים יחד
 מחפשים זוגות מהסיפור
@@ -6881,6 +6880,9 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 עובי הקו
 המחק נבחר. עוברים על מה שרוצים למחוק.
 אפשר להמשיך לצייר.
+טוענים את עמוד
+בעמוד הזה יש איור ללא טקסט. האיור אינו זמין כרגע; אפשר להמשיך לעמוד הבא.
+האיור אינו זמין כרגע. אפשר לקרוא כאן את הטקסט ולהמשיך בסיפור.
 
 ג · בית המצוות — נספח מלל מסכים ופעולות
 בית המצוות · הרפתקת האותיות

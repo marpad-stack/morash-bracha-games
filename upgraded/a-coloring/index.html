@@ -552,11 +552,11 @@ nikud=store.get('mn_nikud',false); picked=store.get('mn_picked',[]); kidName=sto
 if(!Array.isArray(picked)) picked=[];picked=[...new Set(picked)].filter(id=>PAGES.some(p=>p.id===id));
 
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const img=n=>'images/page'+String(n).padStart(2,'0')+'.png?v=20260924-a2';
-const thumb=n=>'images/thumb'+String(n).padStart(2,'0')+'.png?v=20260924-a2';
-const mimg=n=>'images/mask'+String(n).padStart(2,'0')+'.png?v=20260924-a2';
-const cimg=n=>'images/color'+String(n).padStart(2,'0')+'.jpg?v=20260924-a2';
-const cthumb=n=>'images/colorthumb'+String(n).padStart(2,'0')+'.jpg?v=20260924-a2';
+const img=n=>'images/page'+String(n).padStart(2,'0')+'.png?v=20260924-a3';
+const thumb=n=>'images/thumb'+String(n).padStart(2,'0')+'.png?v=20260924-a3';
+const mimg=n=>'images/mask'+String(n).padStart(2,'0')+'.png?v=20260924-a3';
+const cimg=n=>'images/color'+String(n).padStart(2,'0')+'.jpg?v=20260924-a3';
+const cthumb=n=>'images/colorthumb'+String(n).padStart(2,'0')+'.jpg?v=20260924-a3';
 const abs=u=>new URL(u, location.href).href;
 const titleOf=p=>nikud?p.t:p.p;
 const pageById=id=>PAGES.find(p=>p.id===id);

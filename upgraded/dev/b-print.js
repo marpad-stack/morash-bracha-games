@@ -14,7 +14,7 @@ document.getElementById('printBtn').onclick=()=>{
   else if(mode==='large')PAGES.forEach((_,i)=>groups.push([i]));
   else{groups.push([0]);for(let i=1;i<PAGES.length;i+=2)groups.push(i+1<PAGES.length?[i,i+1]:[i])}
   doc.getElementById('sheets').replaceChildren();
-  groups.forEach(indices=>{const sheet=doc.createElement('section');sheet.className='sheet'+(indices.length===1?' cover':'');indices.forEach(i=>{const figure=doc.createElement('figure'),image=doc.createElement('img'),caption=doc.createElement('figcaption');image.src=PAGES[i];image.alt='עמוד '+(i+1);caption.textContent='עמוד '+(i+1)+' מתוך '+PAGES.length;figure.append(image,caption);sheet.append(figure)});doc.getElementById('sheets').append(sheet)});
+  groups.forEach(indices=>{const sheet=doc.createElement('section');sheet.className='sheet'+(indices.length===1?' cover':'');indices.forEach(i=>{const figure=doc.createElement('figure'),image=doc.createElement('img'),caption=doc.createElement('figcaption');image.src=new URL(PAGES[i],document.baseURI).href;image.alt='עמוד '+(i+1);caption.textContent='עמוד '+(i+1)+' מתוך '+PAGES.length;figure.append(image,caption);sheet.append(figure)});doc.getElementById('sheets').append(sheet)});
   try{
    await Promise.all([...doc.images].map(image=>image.decode?image.decode():new Promise((resolve,reject)=>{if(image.complete&&image.naturalWidth)resolve();else{image.onload=resolve;image.onerror=reject}})));
    if(printWindow.closed||token!==revision)return;

@@ -5,6 +5,9 @@
     2,
     8,
     21,
+    28,
+    29,
+    30,
     36
   ],
   "retiredActivities": [
@@ -27,5 +30,6 @@
     "needs": {
       "how": "מסתכלים על התינוק, בוחרים מה להביא לו ומגלים מה קורה. נסו את שלושת החפצים."
     }
-  }
+  },
+  "britClothing": "Father: white tallit over a knee-length black sirtuk, no fedora. Other men: black Chabad hats and suits, natural beards."
 }

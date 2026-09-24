@@ -2,7 +2,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import unquote,urlsplit
-import json,hashlib,zipfile
+import json,hashlib,zipfile,re,base64
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[2];DEV=ROOT/'upgraded/dev';FINAL=ROOT/'מסירה-משחקי-הבאת-ברכה'
 class Links(HTMLParser):
@@ -31,6 +31,17 @@ for m in cards:
 assert len(set(hashes))==10,'Duplicate game cover'
 for g in data:
     final=FINAL/'משחקים'/g['file'];source=ROOT/'upgraded'/g['file'];assert final.read_bytes()==source.read_bytes(),g['id']
+book_html=(FINAL/'משחקים/b-story.html').read_text(encoding='utf-8')
+book_paths=json.loads(re.search(r'const PAGES\s*=\s*(\[[\s\S]*?\]);',book_html)[1])
+book_data=next(g for g in data if g['id']=='b')['data']['PAGES']
+assert len(book_paths)==len(book_data)==40
+for rel,source_data in zip(book_paths,book_data):
+    assert re.fullmatch(r'b-story-pages/\d{2}\.(webp|jpg|png)',rel),rel
+    asset=FINAL/'משחקים'/rel
+    assert asset.read_bytes()==base64.b64decode(source_data.split(',',1)[1]),rel
+    with Image.open(asset) as im:assert im.width>=640 and im.height>=640,rel
+with zipfile.ZipFile(FINAL/'אריזות/b-b-story.zip') as z:
+    assert set(z.namelist())=={'b-story.html',*book_paths}
 zips=list((FINAL/'אריזות').glob('*.zip'));assert len(zips)==11
 archive_files=0
 for p in zips:

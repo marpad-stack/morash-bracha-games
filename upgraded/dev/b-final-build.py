@@ -1,12 +1,26 @@
 """Approved illustration/game review; the story transcript remains unchanged."""
-import base64
+import base64,io
+from PIL import Image
 final_b=json.loads((DEV/'b-final-content.json').read_text(encoding='utf-8'))
 m=re.search(r'const PAGES\s*=\s*(\[[\s\S]*?\]);',s)
 assert m
 pages=json.loads(m[1])
 for number in final_b['editedPages']:
     pages[number-1]='data:image/jpeg;base64,'+base64.b64encode((DEV/'assets/b-final'/f'page{number:02}.jpg').read_bytes()).decode()
-s=s[:m.start(1)]+json.dumps(pages)+s[m.end(1):]
+# Use real, correctly typed image files on the website and in the offline ZIP.
+# Preserve source bytes exactly; no new artwork or story changes are involved.
+book_assets=OUT/'b-story-pages'
+book_assets.mkdir(exist_ok=True)
+book_paths=[]
+for number,source in enumerate(pages,1):
+    payload=base64.b64decode(source.split(',',1)[1])
+    with Image.open(io.BytesIO(payload)) as picture:
+        assert picture.width>=640 and picture.height>=640,number
+        extension={'JPEG':'jpg','WEBP':'webp','PNG':'png'}[picture.format]
+    filename=f'{number:02}.{extension}'
+    (book_assets/filename).write_bytes(payload)
+    book_paths.append('b-story-pages/'+filename)
+s=s[:m.start(1)]+json.dumps(book_paths)+s[m.end(1):]
 for gid,changes in final_b['activities'].items():
     pattern=r"(\{id:'"+gid+r"',icon:'[^']+',t:)(?:\"[^\"]*\"|'[^']*')(,how:)(?:\"[^\"]*\"|'[^']*')"
     title=editorial['b']['activities'].get(gid,{}).get('t')

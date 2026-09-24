@@ -1,0 +1,21 @@
+{
+  "url": "http://127.0.0.1:8766/upgraded/b-story.html",
+  "checks": [
+    {
+      "width": 390,
+      "pages": 40,
+      "unavailable": [],
+      "blankPages": 0,
+      "printReady": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "pages": 40,
+      "unavailable": [],
+      "blankPages": 0,
+      "printReady": true,
+      "errors": []
+    }
+  ]
+}

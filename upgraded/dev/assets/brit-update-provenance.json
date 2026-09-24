@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-24",
+  "mode": "Built-in image_gen editing",
+  "reference": "https://col.org.il/news/155685",
+  "instruction": "Father wears a white tallit over a moderate knee-length sirtuk, without a fedora. Other adult men wear black Chabad hats and suits, natural untrimmed beards.",
+  "assets": [
+    {
+      "id": "b29final",
+      "prompt": "Image 1 is the exact children's book PAGE TO EDIT. Image 2 is a real Chabad bris CLOTHING/BEARD REFERENCE ONLY: do not copy identities or photographic composition. Correct all ADULT MEN in image 1 to look naturally Chabad Lubavitch. Foreground father holding baby: a BLACK sirtuk/kapota coat of MODERATE length ending AT THE KNEE, definitely not calf/ankle length; black trousers; WHITE TALLIT with traditional BLACK stripe bands draped naturally over his head and shoulders and over the black coat, tzitzit ends visible. Father wears NO FEDORA/HAT; a small black kippah underneath the tallit is fine. His face remains open and recognizable. Give him a natural full untrimmed beard with soft irregular wispy edges, not a barber-shaped short beard or sharp symmetrical point; moderate natural length. The two adult men behind him wear black SUIT JACKETS over white shirts plus black Chabad fedora hats, and natural untrimmed beards. Preserve exact identities, smiles, positions, arms and hand anatomy, the same wrapped infant, background room and props. ALL HEBREW TEXT must stay EXACTLY letter-for-letter unchanged in the same locations. Keep warm painterly storybook style and square page, no extra people, no medical procedure.",
+      "generated": "exec-da6c8b15-a105-455d-97f8-ade7fb683946.png",
+      "saved": [
+        "upgraded/dev/assets/b-final/page29.png",
+        "upgraded/dev/assets/b-final/page29.jpg"
+      ]
+    },
+    {
+      "id": "b28final",
+      "prompt": "Image 1 is the exact square Hebrew children's book page TO EDIT. Image 2 is only a real Chabad event reference for clothing and natural beard. Edit ONLY the prominent elderly adult man with glasses at the left: replace his white shirt-only outfit with a normal BLACK SUIT JACKET ending at hip/upper thigh, white shirt and black trousers, and add a black Chabad felt fedora, similar to the reference. NOT a long overcoat and NO tallit for this grandfather. Keep his gray beard natural, softly irregular and untrimmed rather than neatly barber-shaped. Preserve identity, glasses, hands and pose. Preserve ALL women, children, their modest clothes, the little walking boy, entire background and speech bubbles. Every HEBREW letter in the thought bubbles must remain EXACTLY as in image 1. Do not add a father or extra person. Maintain original warm illustrated style, square framing, original colors elsewhere.",
+      "generated": "exec-c2f8cce7-5f41-440b-97f8-0c30bc99edab.png",
+      "saved": [
+        "upgraded/dev/assets/b-final/page28.png",
+        "upgraded/dev/assets/b-final/page28.jpg"
+      ]
+    },
+    {
+      "id": "a17linefinal",
+      "prompt": "Image 1 is the exact black-and-white children's COLORING PAGE TO EDIT. Image 2 is ONLY a Chabad bris reference for garment drape and natural beards. Edit the center FATHER HOLDING THE INFANT: remove his fedora completely. Give him a traditional WHITE TALLIT with outlined BLACK STRIPE BANDS, draped over his HEAD AND SHOULDERS with his face clearly visible, over a double-breasted Chabad sirtuk coat ending at the KNEE (NOT below knee or calf length). The coat must have WHITE unfilled interiors for children to color; clean closed black outlines. Tallit fringe strings visible. Father beard natural, full and gently irregular, not a neatly barber-cut geometric beard; use restrained flowing hair outlines, not a solid geometric patch. The grandfather remains in a normal suit and Chabad fedora, with naturally flowing white beard. Keep ALL identities, hand positions, sleeping wrapped infant, mother and girl's modest clothes, boy with kippah, background throne/flowers, clear physical separation between parents and between mother and infant EXACTLY as original. No contact or added people. Keep the entire rounded border and portrait A4 composition. Pure black contour linework on white, no gray and no color. Preserve closed regions for digital fill.",
+      "generated": "exec-b9a088bf-446a-45c0-a532-19bfeeb24393.png",
+      "saved": [
+        "upgraded/dev/assets/a-final/source/page17.png"
+      ]
+    },
+    {
+      "id": "b30final",
+      "prompt": "Image 1 is the exact square children's storybook PAGE TO EDIT. Image 2 is the approved clothing/character reference for this SAME father and background men. Apply the same clothing and natural beards from image 2 to the people in image 1, while preserving image 1 composition, cream margins, rounded inner photo frame, thin green divider and Hebrew caption EXACTLY. Father holding the baby in image 1: NO HAT/FEDORA; white tallit with black stripe bands draped over his head and shoulders over a black knee-length sirtuk, NOT calf-length; black trousers. Natural full untrimmed beard with softly irregular hair edges matching reference 2. Both background adult men: black Chabad fedora hats, black suits over white shirts, naturally full beards matching reference 2. Preserve exact body positions, anatomy, baby blanket, faces, furniture, plant and light of image 1. Caption must remain exactly: 'ואתה מרגיש שגם אתה חלק מהרגע המיוחד הזה.' No new text, people or objects. Warm painterly storybook style, square page.",
+      "generated": "exec-14da3108-08ea-47b9-a6e4-1d20d4e070f1.png",
+      "saved": [
+        "upgraded/dev/assets/b-final/page30.png",
+        "upgraded/dev/assets/b-final/page30.jpg"
+      ]
+    },
+    {
+      "id": "a17colorfinal",
+      "prompt": "Colorize IMAGE 1 (the EXACT black-and-white line drawing with father in tallit) without changing ANY outlines, geometry, proportions, poses, faces, beard shapes, clothing shapes, room, rounded border or object. IMAGE 2 is color/style reference ONLY, DO NOT restore its old father's hat or short jacket. In image 1 father has NO HAT, his head and shoulders are covered by a WHITE tallit with BLACK stripes over a BLACK/very dark charcoal knee-length sirtuk coat, black trousers and shoes; preserve those exact shapes. Grandfather wears BLACK/charcoal Chabad hat and suit, white beard natural. Father's beard is deep brown-black with natural strands, same shape as line drawing. Warm natural skin tones, boy light blue shirt/navy trousers, mother's muted pink dress, girl's soft lavender dress, golden wooden chair, blue upholstery/curtains, gold trim, fresh green leaves and white flowers, white baby blanket with subtle blue trim. Warm gentle pastel shading INSIDE existing lines. All hands remain identical and no physical contact between mother and baby or between parents. Preserve portrait A4 aspect ratio and closed outlines exactly.",
+      "generated": "exec-a895f7c3-4dfe-4c38-b3a7-dce4da4d5c81.png",
+      "saved": [
+        "upgraded/dev/assets/a-final/source/color17.png"
+      ]
+    }
+  ]
+}

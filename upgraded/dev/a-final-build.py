@@ -24,7 +24,7 @@ s=s.replace('הדפים נשמרים ברשימה גם אם סוגרים את ה
 s=s.replace('שלוש רמות קושי.','בוחרים כמה זוגות למצוא ומשחקים בקצב שלכם.')
 for prefix,ext in [('page','png'),('thumb','png'),('mask','png'),('color','jpg'),('colorthumb','jpg')]:
     old="'images/"+prefix+"'+String(n).padStart(2,'0')+'."+ext+"'"
-    new="'images/"+prefix+"'+String(n).padStart(2,'0')+'."+ext+"?v=20260924-a2'"
+    new="'images/"+prefix+"'+String(n).padStart(2,'0')+'."+ext+"?v=20260924-a3'"
     s=replace(s,old,new)
 # A rapid image switch must not let an older load overwrite the new canvas.
 s=replace(s,'function openStudio(id){','function openStudio(id){const token=window.aStudioToken=(window.aStudioToken||0)+1;')

@@ -10,8 +10,8 @@
       "54c7cda3-d4bd-4c6c-80a5-f17679d3943c"
     ],
     "17": [
-      "64946b66-ccd4-43ff-b650-7dffee648e35",
-      "74c45ec7-9cd0-41d3-a86f-bf0285aae6ff"
+      "b9a088bf-446a-45c0-a532-19bfeeb24393",
+      "a895f7c3-4dfe-4c38-b3a7-dce4da4d5c81"
     ],
     "18": [
       "64bf0aff-2ba7-4c3e-9e39-bef60408786f",
@@ -49,7 +49,8 @@
     "Source illustrations and color editions generated with image_gen.",
     "2 tall + 3 small Shabbat candles for pages 10 and 16.",
     "Certificate based on user supplied reference. Synagogue women behind partition.",
-    "Final Shabbat editions include a stemless kiddush cup and wine bottle; all ordinary glasses have flat bases."
+    "Final Shabbat editions include a stemless kiddush cup and wine bottle; all ordinary glasses have flat bases.",
+    "Updated brit clothing per user: father wears a tallit over a moderate sirtuk, no hat. Prompts and source reference: ../brit-update-provenance.json."
   ],
   "prompts": {
     "10-candles": "Edit ONLY the Shabbat candlestick arrangement in this exact black-and-white children's coloring page. It depicts THREE children (boy, girl, newborn), so show exactly FIVE separate single-candle candlesticks: TWO large matching candlesticks and THREE smaller matching candlesticks half their height. Arrange all five neatly on one roomy tray at the rear-right of the table, large pair behind small three, with clear gaps between every holder and every flame. All exactly countable. You may gently move nearby goblets to make room but preserve every person, face, baby, bassinet, furniture, flowers, challahs and background. No other changes. Clean closed black outlines, pure white interiors, no gray shading or colors, preserve portrait frame. Do not add any children.",
