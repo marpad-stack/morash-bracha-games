@@ -2,5 +2,6 @@
   "placeholderDetected": true,
   "readingTextAlternative": true,
   "blankPrintPrevented": true,
+  "explicitTextPrintAlternative": true,
   "validCurrentPageCanPrint": true
 }

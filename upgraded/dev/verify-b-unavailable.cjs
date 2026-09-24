@@ -10,10 +10,11 @@ const {chromium}=require('C:/Users/user/.cache/codex-runtimes/codex-primary-runt
   const notice=page.locator('.b-book-column .review-tips');await notice.waitFor({state:'visible'});
   let wait=page.waitForEvent('popup');await page.locator('#printBtn').tap();let popup=await wait;
   await popup.waitForFunction(()=>document.getElementById('status').textContent.includes('ההדפסה ממתינה'));
-  assert(await popup.locator('#printNow').isDisabled());assert.equal(await popup.evaluate(()=>printCalls),0);assert.equal(await popup.locator('body').getAttribute('data-print-ready'),'false');await popup.close();
+  assert(await popup.locator('#printNow').isDisabled());assert.equal(await popup.evaluate(()=>printCalls),0);assert.equal(await popup.locator('body').getAttribute('data-print-ready'),'false');
+  await popup.locator('#printTextVersion').click();assert(await popup.locator('#printNow').isEnabled());assert.equal(await popup.locator('.print-text-page').count(),1);assert((await popup.locator('.print-text-page').textContent()).trim().length>0);assert.equal(await popup.locator('.sheet').count(),21);assert.equal(await popup.evaluate(()=>printCalls),0);await popup.close();
   await page.evaluate(()=>{p=20;show()});await notice.waitFor({state:'hidden'});
   wait=page.waitForEvent('popup');await page.locator('#printBtn').tap();popup=await wait;await popup.locator('#layout').selectOption('current');
   await popup.waitForFunction(()=>document.body.dataset.printReady==='true');assert(await popup.locator('#printNow').isEnabled());assert.equal(await popup.locator('.sheet').count(),1);assert(await popup.locator('img').evaluate(im=>im.naturalWidth>=640));
-  const report={placeholderDetected:true,readingTextAlternative:true,blankPrintPrevented:true,validCurrentPageCanPrint:true};fs.writeFileSync(path.join(__dirname,'review-evidence/b-unavailable-audit.json'),JSON.stringify(report,null,2));console.log(report);
+  const report={placeholderDetected:true,readingTextAlternative:true,blankPrintPrevented:true,explicitTextPrintAlternative:true,validCurrentPageCanPrint:true};fs.writeFileSync(path.join(__dirname,'review-evidence/b-unavailable-audit.json'),JSON.stringify(report,null,2));console.log(report);
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exit(1)});
