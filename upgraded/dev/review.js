@@ -17,7 +17,7 @@
  }
  if(part==='b'){
   find('#bookRead').textContent='קריאה בטקסט · עם ניקוד';
-  find('#bookBookmark').hidden=!(Number.isInteger(savedPage)&&savedPage>0);
+  find('#bookBookmark').hidden=true;
   const tip=document.createElement('p');tip.className='review-tips';tip.textContent='מדפדפים בחצים או בהחלקה · מחליקים את שורת המשחקים לעוד פעילויות';find('#games').prepend(tip);
   const baseOpen=openGame;openGame=function(id){baseOpen(id);gb.querySelectorAll('.mem .card').forEach((b,i)=>b.setAttribute('aria-label','קלף '+(i+1)));};
  }

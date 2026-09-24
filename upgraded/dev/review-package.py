@@ -12,6 +12,7 @@ items={
 'j':('מרווח','בחירת כרטיס נוסף הועברה לאחר הכרטיס ונשמר רצף הפתיחה.','בחרי הרגשה, שמרי כרטיס, כתבי שאלת ערב והורידי מחברת.')}
 for gid,copy in editorial.items():
     old=items[gid];items[gid]=(copy['title'],{'a':'עודכנו הכותרת, ההסבר ותיאור משחקי שעות הפנאי לפי הערות העריכה.','b':'עודכנו שמות הפעילויות וההוראות. כפתור הסגירה נשאר נגיש גם בגלילה.','c':'עודכנו הכותרת וההוראות; משחק המספרים מסודר בשורה מימין לשמאל.'}[gid],old[2])
+items['b']=(editorial['b']['title'],'עדכון 24.9: תצוגה חדשה, ארבעה איורים מתוקנים, שש פעילויות משודרגות והדפסה. נוסח הסיפור הקיים נשאר עד לקבלת העריכה החדשה.','בדקי קריאה ומשחקים בטלפון ובמחשב, הלבשה בגרירה ובלחיצה, והדפסת הספר או עמוד בודד.')
 cards=[]
 for g in data:
     gid=g['id'];title,change,check=items[gid]
@@ -33,6 +34,11 @@ release=json.loads((DEV/'a-release.json').read_text(encoding='utf-8'))
 (DOCS/'עדכון-מתחם-הצביעה.json').write_text(json.dumps(release,ensure_ascii=False,indent=2),encoding='utf-8')
 (DOCS/'עדכון-מתחם-הצביעה.html').write_text(page('עדכון מתחם הצביעה','<h1>צובעים ומרכיבים! — עדכון 24.9.2026</h1><ul>'+''.join('<li>'+html.escape(t)+'</li>' for t in release['changes'])+'</ul><p>'+html.escape(release['limitation'])+'</p><a class="button" href="../משחקים/a-coloring/index.html">פתיחת המתחם</a>'),encoding='utf-8')
 for evidence in ['a-final-audit.json','a-print-audit.json','a-print-pdf-audit.json']:
+    shutil.copy2(DEV/'review-evidence'/evidence,DOCS/evidence)
+book_release=json.loads((DEV/'b-release.json').read_text(encoding='utf-8'))
+(DOCS/'עדכון-מתחם-הסיפור.json').write_text(json.dumps(book_release,ensure_ascii=False,indent=2),encoding='utf-8')
+(DOCS/'עדכון-מתחם-הסיפור.html').write_text(page('עדכון מתחם הסיפור','<h1>קוראים ומשחקים! — עדכון 24.9.2026</h1><p>'+html.escape(book_release['storyStatus'])+'</p><ul>'+''.join('<li>'+html.escape(t)+'</li>' for t in book_release['changes'])+'</ul><p>'+html.escape(book_release['limitation'])+'</p><a class="button" href="../משחקים/b-story.html">פתיחת המתחם</a>'),encoding='utf-8')
+for evidence in book_release['verification']['evidence']:
     shutil.copy2(DEV/'review-evidence'/evidence,DOCS/evidence)
 manifest={str(p.relative_to(FINAL)):hashlib.sha256(p.read_bytes()).hexdigest() for p in FINAL.rglob('*') if p.is_file() and p.name!='manifest-sha256.json'}
 (DOCS/'manifest-sha256.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')

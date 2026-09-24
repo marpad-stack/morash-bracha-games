@@ -1406,7 +1406,7 @@ body[data-morash-part=j] #next{font-size:14px;min-height:44px;border:1px solid #
 body[data-morash-part=e] #startScreen{overflow-y:auto;overscroll-behavior:contain;align-items:start;padding-block:max(18px,env(safe-area-inset-top)) max(22px,env(safe-area-inset-bottom));}
 body[data-morash-part=e] #startScreen .sbox{margin-block:auto;min-width:0;}
 body[data-morash-part=b] #book{flex:0 0 auto;overflow:visible;padding-bottom:36px;}
-body[data-morash-part=b] #stack{width:min(100%,900px);max-height:none;justify-content:center;}
+body[data-morash-part=b] #stack{width:min(100%,640px,max(230px,calc(100dvh - 290px)));max-height:none;justify-content:center;}
 body[data-morash-part=b] #pageImg{width:100%;height:auto;max-height:none;object-fit:contain;}
 body[data-morash-part=b] #bookbar{bottom:4px;}
 body[data-morash-part=g] .hero h1 br{display:initial;}
@@ -1461,7 +1461,7 @@ body[data-morash-part=c] #resetDialog .toolbar{justify-content:center;gap:12px;}
  }
  if(part==='b'){
   find('#bookRead').textContent='קריאה בטקסט · עם ניקוד';
-  find('#bookBookmark').hidden=!(Number.isInteger(savedPage)&&savedPage>0);
+  find('#bookBookmark').hidden=true;
   const tip=document.createElement('p');tip.className='review-tips';tip.textContent='מדפדפים בחצים או בהחלקה · מחליקים את שורת המשחקים לעוד פעילויות';find('#games').prepend(tip);
   const baseOpen=openGame;openGame=function(id){baseOpen(id);gb.querySelectorAll('.mem .card').forEach((b,i)=>b.setAttribute('aria-label','קלף '+(i+1)));};
  }

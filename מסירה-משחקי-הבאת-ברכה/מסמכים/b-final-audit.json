@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:8766/upgraded/b-story.html",
+  "checks": [
+    "40 pages load; story transcript unchanged; bookmark resumes on reload",
+    "320/390/1522 layouts: no stretching or horizontal overflow; gallery and reading view navigation",
+    "Memory 3/6/8 pairs, lights 2x2/3x3/4x4, and dressing completed at all levels; stars awarded",
+    "Dressing supports real pointer drag and click placement",
+    "Table completed with wine and stemless cup; all baby items explored; no stale table style",
+    "Peek timer, Escape and rapid canvas closing do not leak into another activity",
+    "Page and achievements persist; no JavaScript errors"
+  ],
+  "errors": [],
+  "storyTextUnchanged": true
+}

@@ -34,14 +34,14 @@ p.write_text(s,encoding='utf-8')
 added={'book': [{'page':p['page'],'p':strip(p['n']),'n':p['n']} for p in book], 'g':extra['g'],'h':extra['h'],'ui':[{'p':strip(n),'n':n} for n in extra['ui']]}
 (TEXT/'נוסחי-קריאה-נוספים.json').write_text(json.dumps(added,ensure_ascii=False,indent=2),encoding='utf-8')
 reading_html=[];reading_txt=['\nגרסאות קריאה נוספות — עם ובלי ניקוד\n']
-for part,obj in [('ספר — תמלול לצד התמונות המקוריות',added['book']),('תעלומת המתנה',added['g']),('ברכות לאמא',added['h']),('הוראות, ניווט ומשוב',added['ui'])]:
+for part,obj in [('ספר — הנוסח הקיים לצד האיורים',added['book']),('תעלומת המתנה',added['g']),('ברכות לאמא',added['h']),('הוראות, ניווט ומשוב',added['ui'])]:
     rows=[];reading_txt.append('\n'+part)
     for key,txt in walk(obj):
         label=' / '.join(key);rows.append('<div class="text-row"><span class="label">'+html.escape(label)+'</span><div class="value">'+html.escape(txt)+'</div></div>');reading_txt.extend([label,txt,''])
     reading_html.append('<details class="text-section"><summary>'+part+'</summary><div class="entry">'+''.join(rows)+'</div></details>')
 p=TEXT/'כל-הטקסטים.html';s=p.read_text(encoding='utf-8')
-s=s.replace('העמודים המקוריים משולבים כאן ללא תמלול וללא שינוי, כך שגם הניקוד והעימוד נשמרים בדיוק.','העמודים המקוריים משולבים כאן ללא שינוי. בהמשך מצורפת גם תצוגת קריאה מתומללת, עם ניקוד ובלעדיו.')
-s=s.replace('</main>','<h2>תוספת לסבב השדרוג — קריאה נגישה</h2><p>בספר נשמרו כל 40 התמונות המקוריות, ונוספה תצוגת קריאה למלל של 36 העמודים שבהם יש טקסט. ארבעה עמודים הם איורים ללא מלל. הטקסט תומלל מול התמונות, כולל בועות בחירה וכיתובים קטנים; כדאי לעבור עליו בהגהה לפני הפרסום.</p>'+''.join(reading_html)+'</main>')
+s=s.replace('הנוסח הקיים נשמר עד לקבלת העריכה החדשה. ארבעה איורים תוקנו לפי ההערות, והנוסח שבתוכם נשמר.','ארבעה איורים תוקנו; נוסח הסיפור הנוכחי נשמר. בהמשך מצורפת תצוגת קריאה מתומללת, עם ניקוד ובלעדיו.')
+s=s.replace('</main>','<h2>תוספת לסבב השדרוג — קריאה נגישה</h2><p>בספר נשמרו 40 העמודים, ארבעה איורים תוקנו ונוסח הסיפור הקיים נשמר. קיימת תצוגת קריאה למלל של 36 העמודים שבהם יש טקסט. ארבעה עמודים הם איורים ללא מלל. הטקסט תומלל מול התמונות, כולל בועות בחירה וכיתובים קטנים; כדאי לעבור עליו בהגהה לפני הפרסום.</p>'+''.join(reading_html)+'</main>')
 p.write_text(s,encoding='utf-8')
 p=TEXT/'כל-הטקסטים.txt';s=p.read_text(encoding='utf-8').replace('הם אינם מלל ניתן להעתקה.','תמלול להעתקה וגרסה מנוקדת נוספו בנספח הקריאה בסוף הקובץ.');p.write_text(s+'\n'+'\n'.join(reading_txt),encoding='utf-8')
 shutil.copy2(DEV/'nikud-checks.json',DOCS/'בדיקת-ניקוד-נוסף.json')

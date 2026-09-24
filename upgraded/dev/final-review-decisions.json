@@ -140,8 +140,123 @@
       }
     },
     "b": {
-      "status": "awaiting_joint_review",
-      "decisions": []
+      "status": "implemented_pending_story_manuscript_and_user_review",
+      "scope": "המשתמשת ביקשה לתקן ולשדרג את הכל ולהשאיר בינתיים את נוסח הסיפור הקיים; החלפת הנוסח ממתינה לשליחתו. ההוראה הזמנית להסתיר את הסיפור בוטלה לפני ביצוע.",
+      "decisions": [
+        {
+          "id": "b-presentation",
+          "status": "implemented",
+          "proposal": "מסך הספר לפי גודל המקור, פריסה למחשב ולטלפון, המשך קריאה, סגירה והדפסה לאחר טעינת כל העמודים.",
+          "notes": [
+            "401a0385-dcab-47d1-840d-130ba21ccc4d"
+          ],
+          "approvedOn": "2026-09-24"
+        },
+        {
+          "id": "b-art",
+          "status": "implemented",
+          "proposal": "איורים מתוקנים בעמודים 2, 8 ו־36; שולחן שבת בעמוד 21 עם חלות, יין, גביע ללא רגל ושני פמוטים גדולים ושניים קטנים.",
+          "notes": [
+            "4f009493-c5c4-4fd5-ac70-78ee83c0bb01",
+            "42a6767a-5f4d-47f6-903c-2af4fa442334",
+            "a0eb80e9-f017-4921-bb15-6d394dcd2bc3"
+          ],
+          "approvedOn": "2026-09-24"
+        },
+        {
+          "id": "b-memory",
+          "status": "implemented",
+          "proposal": "זיכרון מתמונות הסיפור בשלוש רמות, הצצה, משוב וכפתור למשחק חדש.",
+          "notes": [
+            "9ad608bb-5816-48d9-9c5d-2a95ce74a719"
+          ],
+          "approvedOn": "2026-09-24"
+        },
+        {
+          "id": "b-retired",
+          "status": "implemented",
+          "proposal": "פעילויות ההמתנה והפרצופים הוסתרו מהתפריט כחלק משדרוג שש פעילויות הסיפור; המקורות וההערות שמורים.",
+          "notes": [
+            "7b911ac9-4e9f-46aa-b73e-501ba7f18c36",
+            "35ebe34d-70b0-4708-9c5e-2f353511786f"
+          ],
+          "approvedOn": "2026-09-24"
+        },
+        {
+          "id": "b-dress",
+          "status": "implemented",
+          "proposal": "הלבשת תינוק בלחיצה או בגרירה, בחירה בין יום חול לשבת, צבעים והשלמת ארבעה פריטים.",
+          "notes": [
+            "e92f0ddf-6567-4bcc-b56f-30fe2ad7a132"
+          ],
+          "approvedOn": "2026-09-24"
+        },
+        {
+          "id": "b-lights",
+          "status": "implemented",
+          "proposal": "חידת אורות בשלוש רמות עם רמז לצעד אפשרי ומצב סיום ברור.",
+          "notes": [
+            "02568b7c-5738-45a6-a346-073347719e13"
+          ],
+          "approvedOn": "2026-09-24"
+        },
+        {
+          "id": "b-needs",
+          "status": "implemented",
+          "proposal": "איורים ושמות גלויים לחפצים; תגובה שונה לכל חפץ והשלמה לאחר בדיקת שלושתם.",
+          "notes": [
+            "a42da66a-73f2-47f3-ba26-ad5892d2fefd"
+          ],
+          "approvedOn": "2026-09-24"
+        },
+        {
+          "id": "b-story-manuscript",
+          "status": "awaiting_user_manuscript",
+          "proposal": "הנוסח הקיים נשמר. ממתינים לנוסח ערוך מהמשתמשת לפני שינוי הסיפור והמסר הרגשי או יצירת גרסת בת.",
+          "notes": [
+            "84eb6234-c15a-44f7-a9f1-b3b83ef715b0",
+            "dfb12e5c-f9a0-4679-85e1-bcf055262b9e",
+            "26e671a0-d697-44f0-99d4-a5ac2ef75edc"
+          ],
+          "approvedOn": "2026-09-24"
+        }
+      ],
+      "verification": {
+        "bookPages": 40,
+        "storyTranscriptUnchanged": true,
+        "editedIllustrations": [
+          2,
+          8,
+          21,
+          36
+        ],
+        "activeActivities": 6,
+        "viewports": [
+          320,
+          390,
+          1522
+        ],
+        "memoryPairs": [
+          3,
+          6,
+          8
+        ],
+        "lightGrids": [
+          2,
+          3,
+          4
+        ],
+        "printCases": 6,
+        "printPdfPages": 124,
+        "physicalDevicesTested": false,
+        "evidence": [
+          "b-final-audit.json",
+          "b-print-audit.json",
+          "b-print-pdf-audit.json",
+          "b-polish-audit.json"
+        ]
+      },
+      "storyTranscriptSha256": "fc68c9c0852153ee3b241c8a2a6fbcde97f8ce4e44690d46a41ceb17f6081b22"
     },
     "c": {
       "status": "awaiting_joint_review",

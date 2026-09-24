@@ -26,10 +26,10 @@
   {
     "part": "b",
     "collection": "PAGES",
-    "identical": true,
-    "approved_editorial": false,
+    "identical": false,
+    "approved_editorial": true,
     "sha256": "9a4c8911cd7efcd4016ba79bdb0f898cdf88c208c9da8dff1a42fa6c6157e1dc",
-    "current_sha256": "9a4c8911cd7efcd4016ba79bdb0f898cdf88c208c9da8dff1a42fa6c6157e1dc"
+    "current_sha256": "62241b966cc5e69a579c8b7347d68afaec24f194fb9fce57a2efcb8a1cab2f44"
   },
   {
     "part": "b",
@@ -37,7 +37,7 @@
     "identical": false,
     "approved_editorial": true,
     "sha256": "15ba7c19e92365d58e201ad706acc67cd963b28071a0c7822d3719bdd859aeb2",
-    "current_sha256": "0902cf40b98af1a87b89df599558e94077b9fdec94cc9cfebe85ade11dfe738c"
+    "current_sha256": "f566f0808ffd891c73360707e1070bb5ec56893bf72609af0f96e973153d1b8e"
   },
   {
     "part": "c",

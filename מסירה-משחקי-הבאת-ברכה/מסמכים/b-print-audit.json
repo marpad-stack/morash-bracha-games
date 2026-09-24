@@ -1,0 +1,54 @@
+{
+  "browser": "Edge; mobile viewport and touch emulation",
+  "results": [
+    {
+      "width": 390,
+      "mode": "compact",
+      "pages": 21,
+      "images": 40,
+      "userActivation": true,
+      "allImagesReady": true
+    },
+    {
+      "width": 390,
+      "mode": "large",
+      "pages": 40,
+      "images": 40,
+      "userActivation": true,
+      "allImagesReady": true
+    },
+    {
+      "width": 390,
+      "mode": "current",
+      "pages": 1,
+      "images": 1,
+      "userActivation": true,
+      "allImagesReady": true
+    },
+    {
+      "width": 1440,
+      "mode": "compact",
+      "pages": 21,
+      "images": 40,
+      "userActivation": true,
+      "allImagesReady": true
+    },
+    {
+      "width": 1440,
+      "mode": "large",
+      "pages": 40,
+      "images": 40,
+      "userActivation": true,
+      "allImagesReady": true
+    },
+    {
+      "width": 1440,
+      "mode": "current",
+      "pages": 1,
+      "images": 1,
+      "userActivation": true,
+      "allImagesReady": true
+    }
+  ],
+  "physicalDevicesTested": false
+}

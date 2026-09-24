@@ -47,7 +47,7 @@ with zipfile.ZipFile(FINAL/'corrected-games.zip') as z:
     assert z.testzip() is None
     assert set(z.namelist())=={p.relative_to(FINAL/'משחקים').as_posix() for p in (FINAL/'משחקים').rglob('*') if p.is_file()}
     for name in z.namelist():assert z.read(name)==(FINAL/'משחקים'/name).read_bytes(),name
-approved={('b','GAMES'),('a','PAGES'),('a','CATS'),('a','CATNAME')}
+approved={('b','GAMES'),('b','PAGES'),('a','PAGES'),('a','CATS'),('a','CATNAME')}
 assert len(checks)==30 and all(c['identical'] or (c.get('approved_editorial') and (c['part'],c['collection']) in approved) for c in checks)
 nikud=json.loads((DEV/'nikud-checks.json').read_text(encoding='utf-8'));assert len(nikud)==30 and all(c['letters_identical'] for c in nikud)
 manifest=json.loads((FINAL/'מסמכים/manifest-sha256.json').read_text(encoding='utf-8'))

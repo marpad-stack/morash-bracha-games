@@ -1,0 +1,38 @@
+[
+  {
+    "page": 2,
+    "prompt": "Edit the attached Hebrew children's book page. Keep the exact square composition, warm watercolor/painterly style, characters, wardrobe, background and ALL existing Hebrew text EXACTLY letter for letter in the same location. Change ONLY the newborn held by the mother: make the baby a realistically tiny two-day-old newborn, asleep with closed eyes, peaceful neutral closed mouth, no smile, no raised waving arm, securely wrapped in the same white blanket with blue trim. Keep mother's hands natural supporting the wrapped baby. Maintain separate parents, no physical contact between them. Do not rewrite any text, add objects, or change the story. High-quality clean illustration, square.",
+    "source": "exec-682f8327-ddc1-4946-8d44-aa2faef03c7b.png",
+    "savedAssets": [
+      "upgraded/dev/assets/b-final/page02.png",
+      "upgraded/dev/assets/b-final/page02.jpg"
+    ]
+  },
+  {
+    "page": 8,
+    "prompt": "Edit the attached children's book illustration, keeping exact warm painterly style, recognizable same parents, clothes, bassinet, room and square framing. Fix the father's strange twisted crouch: on the RIGHT of the bassinet he kneels naturally on his right knee with the left foot flat and left knee bent, balanced torso leaning slightly toward baby, one hand resting on his own thigh, the other relaxed at his side. Correct natural human anatomy, two normal arms and legs. Mother stays on LEFT separated by the bassinet, standing naturally with both feet on floor and hands together near her waist, not reaching or touching baby or father. The newborn sleeps eyes closed, neutral small face, no smile. No text, no extra people. Keep baby tiny, wrapped in white and blue.",
+    "source": "exec-7775d543-f448-4c77-b34a-4331ec3bb79f.png",
+    "savedAssets": [
+      "upgraded/dev/assets/b-final/page08.png",
+      "upgraded/dev/assets/b-final/page08.jpg"
+    ]
+  },
+  {
+    "page": 21,
+    "prompt": "Edit the provided Hebrew storybook illustration. The Shabbat table currently looks strange with two bulky covered mounds and too many stacked plates. Redesign ONLY the tabletop into a natural, elegant family Shabbat setting, while preserving the father, room, square framing, warm painterly style and ALL existing Hebrew story text exactly. Arrange: ONE central wooden challah board with exactly TWO beautiful clearly visible braided golden challahs side by side, a single neatly folded embroidered white challah cover partly covering their far ends; on the back-left part of the table a silver tray with exactly FOUR matching candleholders, TWO TALL large candlesticks and TWO SHORT miniature candlesticks beside them, all holding white candles (unlit while the father is preparing for Shabbat); next to the challah board a single dark wine bottle labelled יין and one silver cylindrical Kiddush cup WITHOUT ANY STEM resting on its flat base. Four coherent individual place settings around the table, each ONE white plate with a normal knife/fork beside it and a flat-bottomed water glass, father naturally positioning one plate. Remove both previous cloth mounds and unnecessary extra plates/books from the tabletop. Keep clear spacing and believable perspective, tidy but not empty. The new candle grouping must clearly show two tall AND two small holders. Do NOT alter, misspell or omit any Hebrew story text.",
+    "source": "exec-175c7a0d-cd8a-47d8-9303-77c42e0c550c.png",
+    "savedAssets": [
+      "upgraded/dev/assets/b-final/page21.png",
+      "upgraded/dev/assets/b-final/page21.jpg"
+    ]
+  },
+  {
+    "page": 36,
+    "prompt": "Edit this square Hebrew children's book page. Preserve ALL the existing Hebrew text at the upper right EXACTLY word for word, letter for letter and same paragraph breaks. Preserve warm painterly style, same mother with cream long-sleeve blouse and modest long navy skirt, same blue-shirt boy with kippah and tzitzit, rug and open shape book. Fix their unnatural relative positions: the mother should sit comfortably on the rug immediately to the LEFT side of the child, next to his torso and shoulders, sharing the book and looking warmly toward his face. She must NOT be sitting on or pinning his legs or feet. Child naturally sitting or lying comfortably beside her looking at the book, natural correct anatomy and proportions. Keep their bodies and book below and left of the existing text area so text remains unobscured and unchanged. No additional people or objects. Maintain natural mother-child closeness, no distorted limbs.",
+    "source": "exec-cb446cbb-c0a3-41f9-bcc8-8c5b6aff9edf.png",
+    "savedAssets": [
+      "upgraded/dev/assets/b-final/page36.png",
+      "upgraded/dev/assets/b-final/page36.jpg"
+    ]
+  }
+]
