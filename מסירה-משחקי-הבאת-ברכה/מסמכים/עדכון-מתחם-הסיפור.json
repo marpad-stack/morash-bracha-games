@@ -1,11 +1,11 @@
 {
-  "updatedOn": "2026-09-24",
+  "updatedOn": "2026-09-25",
   "part": "b",
   "title": "תינוק חדש בבית? קוראים ומשחקים!",
-  "storyStatus": "הסיפור מוצג שוב בכפולות: איור מלא מימין וטקסט משמאל, על רקע משותף המותאם לצבעי האיור. השאלות הוסרו מרצף הסיפור; פעילויות משחק קצרות מרוכזות בסופו.",
+  "storyStatus": "17 איורים הורחבו לכפולות מצוירות. הטקסט משולב ישירות בתוך הסצנות בשתי גרסאות הספר, באתר ובהדפסה.",
   "changes": [
     "11 סצנות ברצף ברור: הגעת התינוק, ימים בבית, שבת, הברית והמשך השגרה. משחק הקוביות מחבר בין הפתיחה לסיום. שיחות ושאלות נוסחו מחדש לשפה פשוטה.",
-    "הוחזר מבנה הספר הקודם: איור מלא בעמוד הימני וטקסט בעמוד השמאלי, על גוון רקע משותף. בטלפון מדפדפים עמוד אחד בכל פעם. הדמויות מוצגות בשלמותן ללא טשטוש או חיתוך.",
+    "איור רציף לאורך הכפולה, עם אזורים מצוירים שקטים למילים. בסצנות נבחרות הפתיחה מעל הדמויות והמשך הסיפור באזור הפנוי. בטלפון הטקסט גדל לאורך העמוד ללא חיתוך.",
     "הוסרו כפתורי השאלות מכל הסצנות ומההדפסה. בסוף הספר: בניית מגדל בלחיצות, פיהוקים מצחיקים וחיפוש באיור; בהדפסה מופיעות הוראות למשחק משותף.",
     "שבעה איורים מותאמים לחני, עם אותה משפחה וסיפור. שלושה איורים של ההורים והתינוק משותפים.",
     "באיור הברית חני לובשת שמלה לבנה חגיגית וצנועה ומענדי חולצה לבנה. גם הטקסט מתאר את הבגדים החדשים.",
@@ -21,12 +21,13 @@
     "bookPagesPerVariant": 28,
     "storyScenesPerVariant": 11,
     "readingMomentsPerVariant": 0,
-    "uniqueIllustrations": 17,
+    "uniqueIllustrations": 34,
     "activeActivities": 6,
     "viewports": [
       320,
       390,
       768,
+      1024,
       1440
     ],
     "printCases": 8,
@@ -34,21 +35,27 @@
     "physicalDevicesTested": false,
     "blankPrintPrevented": true,
     "evidence": [
-      "b-facing-book-audit.json",
-      "b-facing-pdf-audit.json",
-      "b-edition-offline-audit.json"
+      "b-painted-book-audit.json",
+      "b-painted-pdf-audit.json",
+      "b-edition-offline-audit.json",
+      "b-painted-large-audit.json"
     ],
     "offlineVariants": 2,
-    "publicLoadedIllustrations": 13,
-    "publicUnavailableIllustrationsInCurrentNetwork": [
-      "b-story-art/shabbat-bde843497f48.jpg",
-      "b-story-art/night-a5d51fba5830.jpg",
-      "b-story-art/chani-shabbat-36ef6402164a.jpg",
-      "b-story-art/chani-night-38a27713c37e.jpg"
-    ],
     "revision": "2026-09-24-clear-story",
     "endActivitiesPerVariant": 3,
-    "layoutRevision": "facing-pages-end-play"
+    "layoutRevision": "painted-scenes-integrated-type",
+    "paintedSpreads": 17,
+    "previousNetworkCheck": {
+      "date": "2026-09-24",
+      "originalIllustrationsLoaded": 13,
+      "unavailableOriginalIllustrations": [
+        "b-story-art/shabbat-bde843497f48.jpg",
+        "b-story-art/night-a5d51fba5830.jpg",
+        "b-story-art/chani-shabbat-36ef6402164a.jpg",
+        "b-story-art/chani-night-38a27713c37e.jpg"
+      ]
+    },
+    "enlargedReadingModesChecked": 2
   },
-  "limitation": "בדיקות הטלפון בוצעו בהדמיית מסך בדפדפן, וההדפסה נבדקה בקובצי PDF בשני גדלי החוברת. טרם נבדקו טלפון ומדפסת פיזיים. נוסחי הניקוד והאיורים זמינים למעבר הסופי שלך. בבדיקת האתר החי ברשת הנוכחית איורי השבת והלילה של מענדי וחני (ארבעה בסך הכול) הוחלפו בתמונות 1×1; הסיבה נראית קשורה לסינון הרשת. 13 האיורים האחרים נטענו, וכל 17 האיורים תקינים מקומית ובחבילת ההורדה. בירור מול ספק הסינון עדיין פתוח."
+  "limitation": "בדיקות הטלפון בוצעו בהדמיית מסך בדפדפן, וההדפסה נבדקה בקובצי PDF בשני גדלי החוברת. טרם נבדקו טלפון ומדפסת פיזיים. בבדיקת הרשת הקודמת מ־24.9 ארבעה מהאיורים המרובעים המקוריים הוחלפו בתמונות 1×1; הם נשמרו למשחקים ולתיעוד. 17 האיורים המורחבים החדשים נבדקים בנפרד, לצד כל הנכסים בחבילת ההורדה."
 }

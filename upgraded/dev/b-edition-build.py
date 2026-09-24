@@ -31,8 +31,22 @@ for i,scene in enumerate(chani['scenes']):
     assert story_plain(scene['n'])==scene['text']
 chani.update(version=edition['version'],art=chani_art)
 editions={'mendy':edition,'chani':chani}
+for character,book in editions.items():
+    spreads={}
+    for key in art:
+        source=DEV/'assets/story-spreads'/((('chani-' if character=='chani' and key in ['tower','shirt','shabbat','night','brit','bond','reading'] else '')+key)+'.jpg')
+        if source.exists():
+            payload=source.read_bytes();filename='spread-'+source.stem+'-'+hashlib.sha256(payload).hexdigest()[:12]+'.jpg'
+            (artdir/filename).write_bytes(payload);spreads[key]='b-story-art/'+filename
+        else:
+            raise FileNotFoundError('Missing painted spread: '+str(source))
+    book['spreads']=spreads
+    for i,scene in enumerate(book['scenes']):
+        scene['spread']=spreads.get(scene_art[i],'')
+        scene['artKey']=scene_art[i]
+active_art=set(art.values())|set(chani_art.values())|set(edition['spreads'].values())|set(chani['spreads'].values())
 for previous in artdir.glob('*'):
-    if re.fullmatch(r'(?:chani-)?[a-z]+-[a-f0-9]{12}\.(?:jpg|png)',previous.name) and 'b-story-art/'+previous.name not in set(art.values())|set(chani_art.values()):previous.unlink()
+    if re.fullmatch(r'(?:spread-)?(?:chani-)?[a-z]+-[a-f0-9]{12}\.(?:jpg|png)',previous.name) and 'b-story-art/'+previous.name not in active_art:previous.unlink()
 path=OUT/'b-story.html';s=path.read_text(encoding='utf-8')
 s=s.replace('const goNext=()=>','let goNext=()=>').replace('const goPrev=()=>','let goPrev=()=>')
 before,sep,after=s.rpartition('</body>');assert sep

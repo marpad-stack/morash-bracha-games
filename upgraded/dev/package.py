@@ -32,7 +32,7 @@ for previous in (GAMES/'b-story-pages').iterdir():
     if previous.is_file() and re.fullmatch(r'\d{2}(?:-[a-f0-9]{12})?\.(webp|jpg|png)',previous.name) and not (OUT/'b-story-pages'/previous.name).exists():
         previous.unlink()
 for previous in (GAMES/'b-story-art').glob('*'):
-    if re.fullmatch(r'(?:chani-)?[a-z]+-[a-f0-9]{12}\.(?:jpg|png)',previous.name) and not (OUT/'b-story-art'/previous.name).exists():previous.unlink()
+    if re.fullmatch(r'(?:spread-)?(?:chani-)?[a-z]+-[a-f0-9]{12}\.(?:jpg|png)',previous.name) and not (OUT/'b-story-art'/previous.name).exists():previous.unlink()
 
 print_logo=(DEV/'assets/morash-logo-black.svg').read_text(encoding='utf-8')
 def page(title,body,extra=''):

@@ -1,0 +1,47 @@
+{
+  "cases": [
+    {
+      "file": "painted-chani-a4-1440.pdf",
+      "pages": 28,
+      "size": "A4 portrait"
+    },
+    {
+      "file": "painted-chani-a4-390.pdf",
+      "pages": 28,
+      "size": "A4 portrait"
+    },
+    {
+      "file": "painted-chani-booklet-1440.pdf",
+      "pages": 14,
+      "size": "A4 landscape"
+    },
+    {
+      "file": "painted-chani-booklet-390.pdf",
+      "pages": 14,
+      "size": "A4 landscape"
+    },
+    {
+      "file": "painted-mendy-a4-1440.pdf",
+      "pages": 28,
+      "size": "A4 portrait"
+    },
+    {
+      "file": "painted-mendy-a4-390.pdf",
+      "pages": 28,
+      "size": "A4 portrait"
+    },
+    {
+      "file": "painted-mendy-booklet-1440.pdf",
+      "pages": 14,
+      "size": "A4 landscape"
+    },
+    {
+      "file": "painted-mendy-booklet-390.pdf",
+      "pages": 14,
+      "size": "A4 landscape"
+    }
+  ],
+  "totalPages": 168,
+  "pageSizesCorrect": true,
+  "physicalPrinterTested": false
+}

@@ -21,11 +21,14 @@
  const mark='<div class="b-paper-brand" aria-hidden="true">'+MorashBrand.svg+'</div>';
  function pageHTML(index,interactive=true,pointed=PlayReading.enabled){
   const record=pages[index],scene=E.scenes[record.scene],text=(plain,n)=>pointed&&n?n:plain;
+  const comfortable=interactive&&(document.body.classList.contains('reading-large')||document.body.classList.contains('b-reading-focus'));
+  const lines=scene?text(scene.text,scene.n).split('\n'):[],lead=scene?.spread&&!comfortable&&(!interactive||media.matches)?(scene.artKey==='tower'?2:scene.artKey==='night'?1:0):0;
+  const prose=xs=>xs.map(line=>'<p>'+esc(line)+'</p>').join('');
   let body='';
   const image=(src,alt)=>'<figure class="b-edition-art"><img class="b-edition-image" src="'+esc(src)+'" alt="'+esc(alt)+'" draggable="false"><figcaption class="b-art-unavailable" hidden>האיור לא נטען כרגע. אפשר להמשיך לקרוא את הסיפור.</figcaption></figure>';
   if(record.type==='cover')body='<div class="b-cover-copy"><span class="b-paper-kicker">סיפור על אח קטן ומשפחה שגדלה</span><h1>אוֹר הִגִּיעַ אֵלֵינוּ</h1><p>קוראים, מגלים ומשחקים יחד</p></div>'+image(E.art.arrival,'אמא ואבא מגיעים הביתה עם התינוק')+'<p class="b-cover-bottom">עם מענדי והמשפחה</p>';
-  else if(record.type==='art')body=image(scene.art,scene.title);
-  else if(record.type==='text')body='<div class="b-prose">'+text(scene.text,scene.n).split('\n').map(line=>'<p>'+esc(line)+'</p>').join('')+'</div>';
+  else if(record.type==='art')body=image(scene.spread||scene.art,scene.title)+(lead?'<div class="b-prose b-opening-line">'+prose(lines.slice(0,lead))+'</div>':'');
+  else if(record.type==='text')body=(scene.spread?image(scene.spread,''):'')+'<div class="b-prose">'+prose(lines.slice(lead))+'</div>';
   else if(record.type==='draw')body='<div class="b-paper-kicker">הסיפור ממשיך אצלנו</div><h2>מציירים רגע יחד</h2><p class="b-page-lead">'+esc(E.closingActivities[0].text)+'</p><div class="b-drawing-space"><span aria-hidden="true">✎</span><p>הרגע שלנו</p></div>'+(interactive?'<button class="btn primary b-page-game" data-story-game="draw">פותחים את דף הציור</button>':'');
   else if(record.type==='talk')body='<div class="b-paper-kicker">סיימנו לקרוא? בואו נשחק</div><h2>עוד קצת כיף!</h2><div class="b-end-activities">'+[
    ['tower','▦','מגדל עד השמיים','מוסיפים קובייה ועוד קובייה. כמה גבוה נגיע?','בנו מגדל מקוביות. כל אחד מוסיף קובייה בתורו.'],
@@ -37,7 +40,7 @@
   else body='<div class="b-back-cover"><span aria-hidden="true">✦</span><h2>אור הגיע אלינו</h2><p>אח קטן הגיע הביתה.<br>מענדי כבר מחכה לשחק איתו!</p><p>סיפור לקריאה משותפת,<br>בקצב שלכם.</p>'+MorashBrand.svg+'</div>';
   if(E.character==='chani')body=body.replaceAll('עם מענדי והמשפחה','עם חני והמשפחה').replaceAll('אמא ומענדי קוראים','אמא וחני קוראות').replaceAll('אח קטן הגיע הביתה.<br>מענדי כבר מחכה לשחק איתו!','אח קטן הגיע הביתה.<br>חני כבר מחכה לשחק איתו!').replaceAll('על מענדי','על חני').replaceAll('מהילד לספר על עצמו','מהילדה לספר על עצמה');
   const backgrounds=['#f4e5cc','#f3e8d4','#f4e6d1','#f4e9d7','#f5ead8','#f3dfc2','#e0e7ef','#f3e5cc','#f4e8d5','#f2e5d2','#f4e6d1'];
-  return '<article style="--b-page-bg:'+ (scene?backgrounds[record.scene]:'#fffdf7')+'" class="b-paper b-paper-'+record.type+'" data-book-page="'+index+'" data-reading-skip><div class="b-paper-content">'+body+'</div>'+(!['art','cover','again','back'].includes(record.type)?mark:'')+'<span class="b-paper-number">'+(index+1)+'</span></article>';
+  return '<article style="--b-page-bg:'+ (scene?backgrounds[record.scene]:'#fffdf7')+'" class="b-paper b-paper-'+record.type+(scene?.spread?' b-painted-page':'')+'" data-scene="'+(scene?.artKey||'')+'" data-book-page="'+index+'" data-reading-skip><div class="b-paper-content">'+body+'</div>'+(!scene?.spread&&!['art','cover','again','back'].includes(record.type)?mark:'')+'<span class="b-paper-number">'+(index+1)+'</span></article>';
  }
  function visiblePages(){
   if(!media.matches||p===0||p===pages.length-1)return[p];
@@ -57,7 +60,7 @@
  goPrev=()=>{if(p>0)go(Math.max(0,p-(media.matches&&p>1?2:1)))};
  show=render;document.getElementById('prev').onclick=goPrev;document.getElementById('next').onclick=goNext;
  media.addEventListener('change',render);window.addEventListener('morash-reading-change',render);
- document.getElementById('bookRead').onclick=event=>{const active=document.body.classList.toggle('b-reading-focus');event.currentTarget.setAttribute('aria-pressed',String(active));event.currentTarget.textContent=active?'חזרה לתצוגה רגילה':'מצב הקראה'};
+ document.getElementById('bookRead').onclick=event=>{const active=document.body.classList.toggle('b-reading-focus');event.currentTarget.setAttribute('aria-pressed',String(active));event.currentTarget.textContent=active?'חזרה לתצוגה רגילה':'מצב הקראה';render()};
  const contents=document.createElement('dialog');contents.id='bContents';contents.setAttribute('aria-labelledby','bContentsTitle');contents.innerHTML='<div class="dialog-top"><h2 id="bContentsTitle">לאיזה רגע חוזרים?</h2><button class="close" aria-label="סגירת תוכן העניינים">×</button></div><div class="b-contents-list"><button data-page="0">הכריכה</button>'+E.scenes.map((scene,i)=>'<button data-page="'+(1+i*2)+'"><span>'+String(i+1).padStart(2,'0')+'</span>'+esc(scene.title)+'</button>').join('')+'<button data-page="23">מציירים רגע יחד</button><button data-page="24">עוד קצת כיף!</button><button data-page="25">למי שמקריאים</button></div>';document.body.append(contents);contents.querySelector('.close').onclick=()=>contents.close();contents.onclick=e=>{const b=e.target.closest('[data-page]');if(b){go(+b.dataset.page);contents.close()}};document.getElementById('gridBtn').onclick=()=>contents.showModal();
  const fun=document.createElement('dialog');fun.id='bBookFun';fun.setAttribute('aria-labelledby','bBookFunTitle');document.body.append(fun);
  function openFun(id){

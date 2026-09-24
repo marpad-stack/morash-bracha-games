@@ -28,7 +28,7 @@ const out=path.join(__dirname,'review-evidence'),checks=[],base=process.env.B_UR
   for(const layout of ['a4','booklet']){
    await print.emulateMedia({media:'screen'});if(layout==='booklet')await print.locator('#layout').selectOption(layout);
    await print.waitForFunction(()=>document.body.dataset.printReady==='true',{},{timeout:90000});await print.evaluate(()=>document.fonts.ready);await print.emulateMedia({media:'print'});
-   assert.equal(await print.locator('.b-print-sheet').count(),layout==='a4'?28:14);assert.equal(await print.locator('img[data-branded=true]').count(),13);
+   assert.equal(await print.locator('.b-print-sheet').count(),layout==='a4'?28:14);assert.equal(await print.locator('img[data-branded=true]').count(),24);
    assert.equal((await print.locator('#sheets').textContent()).includes('מענדי'),false);
    assert.deepEqual(await print.locator('.b-paper').evaluateAll(xs=>xs.filter(x=>x.scrollHeight>x.clientHeight+1).map(x=>x.dataset.bookPage)),[]);
    await print.pdf({path:path.join(out,'chani-'+layout+'-'+width+'.pdf'),preferCSSPageSize:true,printBackground:true});

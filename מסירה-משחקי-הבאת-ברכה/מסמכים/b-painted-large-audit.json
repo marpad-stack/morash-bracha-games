@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "mode": "reading-large",
+      "scenes": 11
+    },
+    {
+      "width": 390,
+      "mode": "b-reading-focus",
+      "scenes": 11
+    },
+    {
+      "width": 1024,
+      "mode": "reading-large",
+      "scenes": 11
+    },
+    {
+      "width": 1024,
+      "mode": "b-reading-focus",
+      "scenes": 11
+    },
+    {
+      "width": 1280,
+      "mode": "reading-large",
+      "scenes": 11
+    },
+    {
+      "width": 1280,
+      "mode": "b-reading-focus",
+      "scenes": 11
+    },
+    {
+      "width": 1440,
+      "mode": "reading-large",
+      "scenes": 11
+    },
+    {
+      "width": 1440,
+      "mode": "b-reading-focus",
+      "scenes": 11
+    }
+  ]
+}

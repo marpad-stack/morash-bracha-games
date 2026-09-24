@@ -1,0 +1,568 @@
+{
+  "checks": [
+    "mendy: every word once on painted scene; all art loaded; five viewports; no clipped text; end play; four print cases",
+    "chani: every word once on painted scene; all art loaded; five viewports; no clipped text; end play; four print cases"
+  ],
+  "geometry": [
+    {
+      "character": "mendy",
+      "i": 0,
+      "bounds": [
+        {
+          "page": "2",
+          "top": 0.12725821961249667,
+          "bottom": 0.5831577224461403,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 1,
+      "bounds": [
+        {
+          "page": "4",
+          "top": 0.12725821961249667,
+          "bottom": 0.6255703091433599,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 2,
+      "bounds": [
+        {
+          "page": "5",
+          "top": 0.049491580907175155,
+          "bottom": 0.19792540458702457,
+          "left": 0.11999421296296296,
+          "right": 0.9,
+          "font": "18px",
+          "clip": false
+        },
+        {
+          "page": "6",
+          "top": 0.08484563291527712,
+          "bottom": 0.6679828958405795,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 3,
+      "bounds": [
+        {
+          "page": "8",
+          "top": 0.12725821961249667,
+          "bottom": 0.7209935143318943,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 4,
+      "bounds": [
+        {
+          "page": "10",
+          "top": 0.12725821961249667,
+          "bottom": 0.5301471039548253,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 5,
+      "bounds": [
+        {
+          "page": "12",
+          "top": 0.12725821961249667,
+          "bottom": 0.7209935143318943,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 6,
+      "bounds": [
+        {
+          "page": "13",
+          "top": 0.049491580907175155,
+          "bottom": 0.10250219939849009,
+          "left": 0.11999421296296296,
+          "right": 0.9,
+          "font": "18px",
+          "clip": false
+        },
+        {
+          "page": "14",
+          "top": 0.12725821961249667,
+          "bottom": 0.5831577224461403,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 7,
+      "bounds": [
+        {
+          "page": "16",
+          "top": 0.12725821961249667,
+          "bottom": 0.6255703091433599,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 8,
+      "bounds": [
+        {
+          "page": "18",
+          "top": 0.12725821961249667,
+          "bottom": 0.5407451357489208,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 9,
+      "bounds": [
+        {
+          "page": "20",
+          "top": 0.12725821961249667,
+          "bottom": 0.6679828958405795,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "mendy",
+      "i": 10,
+      "bounds": [
+        {
+          "page": "21",
+          "top": 0.049491580907175155,
+          "bottom": 0.19792540458702457,
+          "left": 0.11999421296296296,
+          "right": 0.9,
+          "font": "18px",
+          "clip": false
+        },
+        {
+          "page": "22",
+          "top": 0.08484563291527712,
+          "bottom": 0.3923113120690713,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 0,
+      "bounds": [
+        {
+          "page": "2",
+          "top": 0.12725821961249667,
+          "bottom": 0.5831577224461403,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 1,
+      "bounds": [
+        {
+          "page": "4",
+          "top": 0.12725821961249667,
+          "bottom": 0.6255703091433599,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 2,
+      "bounds": [
+        {
+          "page": "5",
+          "top": 0.049491580907175155,
+          "bottom": 0.19792540458702457,
+          "left": 0.11999421296296296,
+          "right": 0.9,
+          "font": "18px",
+          "clip": false
+        },
+        {
+          "page": "6",
+          "top": 0.08484563291527712,
+          "bottom": 0.6255703091433599,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 3,
+      "bounds": [
+        {
+          "page": "8",
+          "top": 0.12725821961249667,
+          "bottom": 0.7209935143318943,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 4,
+      "bounds": [
+        {
+          "page": "10",
+          "top": 0.12725821961249667,
+          "bottom": 0.5301471039548253,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 5,
+      "bounds": [
+        {
+          "page": "12",
+          "top": 0.12725821961249667,
+          "bottom": 0.7209935143318943,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 6,
+      "bounds": [
+        {
+          "page": "13",
+          "top": 0.049491580907175155,
+          "bottom": 0.10250219939849009,
+          "left": 0.11999421296296296,
+          "right": 0.9,
+          "font": "18px",
+          "clip": false
+        },
+        {
+          "page": "14",
+          "top": 0.12725821961249667,
+          "bottom": 0.5831577224461403,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 7,
+      "bounds": [
+        {
+          "page": "16",
+          "top": 0.12725821961249667,
+          "bottom": 0.6255703091433599,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 8,
+      "bounds": [
+        {
+          "page": "18",
+          "top": 0.12725821961249667,
+          "bottom": 0.5831577224461403,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 9,
+      "bounds": [
+        {
+          "page": "20",
+          "top": 0.12725821961249667,
+          "bottom": 0.6679828958405795,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    },
+    {
+      "character": "chani",
+      "i": 10,
+      "bounds": [
+        {
+          "page": "21",
+          "top": 0.049491580907175155,
+          "bottom": 0.19792540458702457,
+          "left": 0.11999421296296296,
+          "right": 0.9,
+          "font": "18px",
+          "clip": false
+        },
+        {
+          "page": "22",
+          "top": 0.08484563291527712,
+          "bottom": 0.3923113120690713,
+          "left": 0.10998263888888889,
+          "right": 0.8200231481481481,
+          "font": "18px",
+          "clip": false
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "illustrations": [
+    {
+      "src": "b-story-art/arrival-a5355eed4307.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/family-44fc81f2bd3d.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/tower-570a68d12c64.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/shirt-f8c543dfedb0.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/yawn-56d5e9fa3405.jpg",
+      "w": 640,
+      "h": 640
+    },
+    {
+      "src": "b-story-art/shabbat-bde843497f48.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/night-a5d51fba5830.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/brit-4d8211d94190.png",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/bond-a23157b99a92.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/reading-6beb3bfec6c2.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/spread-arrival-da42733d2f44.jpg",
+      "w": 1491,
+      "h": 1055
+    },
+    {
+      "src": "b-story-art/spread-family-fea955ddd9d2.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-tower-34d6cbd821b1.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-shirt-d1e979aa3ce9.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-yawn-1841650b3cb6.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-shabbat-0f991e62fdc8.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-night-1ff53a1977c3.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-brit-6896be65a25b.jpg",
+      "w": 1491,
+      "h": 1055
+    },
+    {
+      "src": "b-story-art/spread-bond-226097ebe91f.jpg",
+      "w": 1491,
+      "h": 1055
+    },
+    {
+      "src": "b-story-art/spread-reading-80f86c03730e.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/chani-tower-cc7232867896.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-shirt-b4f6b957c876.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-shabbat-36ef6402164a.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-night-38a27713c37e.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-brit-59e3b301a93b.png",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-bond-0ca67413d0b3.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/chani-reading-1123bb481016.jpg",
+      "w": 1254,
+      "h": 1254
+    },
+    {
+      "src": "b-story-art/spread-chani-tower-8a7c7e6ee103.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-chani-shirt-7bcdf2164906.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-chani-shabbat-57be2112d3c1.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-chani-night-63430e4bf3a9.jpg",
+      "w": 1491,
+      "h": 1055
+    },
+    {
+      "src": "b-story-art/spread-chani-brit-e871c5342ebe.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-chani-bond-5c041d526374.jpg",
+      "w": 1492,
+      "h": 1054
+    },
+    {
+      "src": "b-story-art/spread-chani-reading-ead8277c722d.jpg",
+      "w": 1492,
+      "h": 1054
+    }
+  ],
+  "printCases": 8,
+  "pdfPages": 168,
+  "physicalDevicesTested": false
+}

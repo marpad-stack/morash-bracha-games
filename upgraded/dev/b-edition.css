@@ -34,22 +34,6 @@ body.b-reading-focus #games,body.b-reading-focus>.book-intro{display:none!import
 .b-story-choice{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 20px}.b-story-choice>span{font-size:13px;color:#635e50;margin-left:8px}.b-story-choice button{min-height:44px;padding:9px 16px;border-radius:22px;border:1px solid #bcbaa5;background:#fffdf4;color:#385b55;font:700 14px Heebo,Arial,sans-serif}.b-story-choice button[aria-pressed=true]{background:#285f60;color:#fffdf4;border-color:#285f60}.b-edition-actions .reading-controls{margin:0;align-items:center}
 @media(max-width:899px){.b-story-choice>span{flex-basis:100%;margin:0;text-align:center}.b-story-choice button{flex:1;white-space:nowrap;font-size:13px;padding:9px 10px}}
 
-/* Two facing pages share the illustration's palette; artwork stays fully visible. */
-.b-paper-art,.b-paper-text{background:var(--b-page-bg,#f4e8d5);border-color:#c7b79b}
-.b-paper-art{padding:0 0 44px;justify-content:center}
-.b-paper-art .b-paper-content{justify-content:center}
-.b-paper-art .b-edition-art{margin:0;width:100%;flex:none}
-.b-paper-art .b-edition-image{width:100%;height:auto;object-fit:contain;border-radius:0;opacity:1}
-.b-paper-text .b-paper-content{justify-content:center;gap:26px}
-.b-paper-text .b-prose{color:#293c37;font-size:18px;line-height:1.95}
-.b-paper-text .b-pause-button{margin-top:0;background:#ffffff60;border-color:#aea988}
-.b-paper-text .b-print-question{margin-top:0}
-@media(max-width:899px){
- .b-spread .b-paper-art{padding:22px 0 44px;min-height:0}
- .b-paper-art .b-edition-art{margin:0}
- .b-paper-text .b-prose{font-size:20px;line-height:1.9}
- .b-paper-text .b-paper-content{gap:22px}
-}
 .b-end-activities{display:grid;gap:15px;margin:12px 0}
 .b-end-card{display:flex;align-items:center;gap:16px;width:100%;border:1px solid #d0c8b2;border-radius:20px;background:#e7eee3;padding:20px;color:#294e4b;text-align:right;font:inherit}
 .b-end-card:nth-child(2){background:#f5e6c6}.b-end-card:nth-child(3){background:#e3e9ee}
@@ -67,3 +51,46 @@ button.b-end-card:hover{border-color:#547771;transform:translateY(-2px)}
 .b-fun-picture{width:100%;height:auto;max-height:55vh;object-fit:contain;border-radius:12px}
 @media(max-width:899px){.b-end-card{padding:16px;gap:12px}.b-end-card b{font-size:19px}.b-end-card small{font-size:14px}.b-end-icon{width:42px;height:42px;font-size:27px}#bBookFun{padding:20px}}
 @media(prefers-reduced-motion:reduce){.b-sleepy-face>span{transition:none}button.b-end-card:hover{transform:none}}
+/* A single painted scene continues across the two facing leaves. */
+.b-spread:has(.b-painted-page):after{display:none}
+.b-paper.b-painted-page{padding:0;border:0;overflow:hidden;color:#382f26;background:var(--b-page-bg)}
+.b-painted-page .b-paper-content{position:relative;justify-content:flex-start;isolation:isolate}
+.b-painted-page .b-edition-art{position:absolute;inset:0;margin:0!important;width:100%;height:100%;overflow:hidden;z-index:-1}
+.b-painted-page .b-edition-image{position:absolute;top:0;width:200%;max-width:none;height:100%;object-fit:fill;border-radius:0}
+.b-paper-art.b-painted-page .b-edition-image{right:0}
+.b-paper-text.b-painted-page .b-edition-image{left:0}
+.b-paper-text.b-painted-page .b-prose{position:relative;margin:18% 18% 26% 11%;font-size:18px;line-height:1.8;color:#382f26;text-align:right;font-weight:500}
+.b-paper-text.b-painted-page[data-scene=tower] .b-prose{margin-top:12%}
+.b-painted-page .b-opening-line{position:relative;margin:7% 10% 0 12%;font-size:18px;line-height:1.8;color:#382f26;font-weight:500}
+.b-painted-page .b-prose p{margin:0 0 .45em;line-height:inherit}
+.b-painted-page .b-paper-number{color:#584632;bottom:10px}
+.b-painted-page .b-art-unavailable{height:100%;background:var(--b-page-bg);font-size:14px}
+.b-paper-text .b-art-unavailable{visibility:hidden}
+.b-painted-page[data-scene=night]{background:#173252!important}
+.b-painted-page[data-scene=night] .b-prose,.b-painted-page[data-scene=night] .b-paper-number{color:#fff4de}
+@media(min-width:900px) and (max-width:1199px){.b-paper-text.b-painted-page .b-prose,.b-painted-page .b-opening-line{font-size:15px;line-height:1.75}}
+@media(max-width:899px){
+ body[data-morash-part=b] .b-workspace{padding-left:5px;padding-right:5px}
+ body[data-morash-part=b] .b-book-column{padding-left:5px;padding-right:5px}
+ .b-spread .b-paper.b-painted-page{padding:0;min-height:0}
+ .b-spread .b-paper-art.b-painted-page{aspect-ratio:.877}
+ .b-paper-art.b-painted-page .b-edition-image{width:161.29%}
+ .b-spread .b-paper-text.b-painted-page{aspect-ratio:auto;min-height:480px}
+ .b-paper-text.b-painted-page .b-paper-content{min-height:0;flex:auto}
+ .b-paper-text.b-painted-page .b-edition-image{width:280%}
+ .b-paper-text.b-painted-page .b-prose{margin:16% 12% 28%;font-size:20px;line-height:1.85}
+}
+body.b-reading-focus .b-paper-text.b-painted-page .b-prose,body.reading-large .b-paper-text.b-painted-page .b-prose{font-size:21px;line-height:1.85}
+/* Enlarged reading gets more room, preserving the painted quiet area. */
+body:is(.reading-large,.b-reading-focus)[data-morash-part=b] .b-workspace{width:min(1500px,100%)}
+body:is(.reading-large,.b-reading-focus) .b-spread{max-width:1300px}
+body:is(.reading-large,.b-reading-focus) .b-paper-text.b-painted-page .b-prose{font-size:20px;line-height:1.85}
+@media(min-width:900px){
+ body:is(.reading-large,.b-reading-focus) .b-spread{flex-direction:column;max-width:720px}
+ body:is(.reading-large,.b-reading-focus) .b-spread .b-paper{width:100%;aspect-ratio:auto}
+ body:is(.reading-large,.b-reading-focus) .b-spread .b-paper-art.b-painted-page{aspect-ratio:.877}
+ body:is(.reading-large,.b-reading-focus) .b-paper-art.b-painted-page .b-edition-image{width:161.29%}
+ body:is(.reading-large,.b-reading-focus) .b-paper-text.b-painted-page .b-edition-image{width:280%}
+ body:is(.reading-large,.b-reading-focus) .b-paper-text.b-painted-page .b-paper-content{min-height:0;flex:auto}
+ body:is(.reading-large,.b-reading-focus) .b-paper-text.b-painted-page .b-prose{margin:16% 12% 28%}
+}

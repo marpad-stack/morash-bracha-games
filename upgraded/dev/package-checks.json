@@ -6,7 +6,7 @@
   "internal_links_checked": 144,
   "missing_links": 0,
   "zip_archives": 11,
-  "archived_files_checked": 214,
+  "archived_files_checked": 231,
   "identical_source_collections": 25,
   "approved_editorial_collections": 5,
   "additional_nikud_strings_with_identical_letters": 30,
@@ -15,5 +15,6 @@
   "book_variants": 2,
   "book_text_scenes_per_variant": 11,
   "legacy_source_book_pages": 40,
-  "current_illustrations": 17
+  "current_illustrations": 34,
+  "painted_spreads": 17
 }

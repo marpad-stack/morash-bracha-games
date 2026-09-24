@@ -5,7 +5,7 @@ const {chromium}=require('C:/Users/user/.cache/codex-runtimes/codex-primary-runt
  const b=await chromium.launch({headless:true,channel:'msedge'}),p=await b.newPage({viewport:{width:390,height:844}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
  await p.goto(url,{waitUntil:'domcontentloaded',timeout:90000});await p.waitForFunction(()=>window.BStory,{},{timeout:60000});
  const report=await p.evaluate(async()=>{
-  const paths=[...new Set(Object.values(BStory.editions).flatMap(x=>Object.values(x.art)))];
+  const paths=[...new Set(Object.values(BStory.editions).flatMap(x=>[...Object.values(x.art),...Object.values(x.spreads)]))];
   const images=await Promise.all(paths.map(src=>new Promise(resolve=>{const i=new Image(),timer=setTimeout(()=>resolve({src,timeout:true}),40000);i.onload=()=>{clearTimeout(timer);resolve({src,width:i.naturalWidth,height:i.naturalHeight})};i.onerror=()=>{clearTimeout(timer);resolve({src,error:true})};i.src=src})));
   return{url:location.href,variants:Object.keys(BStory.editions),bookPagesPerVariant:BStory.pages.length,images,unavailable:images.filter(i=>!(i.width>=640)),overflow:document.documentElement.scrollWidth>innerWidth};
  });
