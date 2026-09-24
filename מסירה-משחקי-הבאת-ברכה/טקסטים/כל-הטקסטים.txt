@@ -6903,7 +6903,7 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 האיור אינו זמין כרגע. אפשר לקרוא כאן את הטקסט ולהמשיך בסיפור.
 אפשר לשחק — האיור לא נטען
 האיור לא נטען
-קוראים יחד בקצב שנעים לכם. אפשר לעצור לשאלה או למשחק קצר, ואפשר להמשיך בסיפור. כל תשובה מתקבלת, וגם להקשיב זה בסדר.
+קוראים יחד בקצב שנעים לכם. בסוף הספר מחכות פעילויות קצרות ומשחקים שאפשר לבחור, אם מתחשק.
 אח קטן בבית
 מענדי ישב על השטיח ובנה מגדל מקוביות.
 פתאום נפתחה הדלת. אבא נכנס, ואחריו אמא. בידיים שלה היה תינוק קטן, עטוף בשמיכה.
@@ -6912,12 +6912,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״הוא יוכל לשחק איתי?״ שאל.
 ״כשיגדל קצת,״ אמר אבא.
 מענדי הסתכל על האצבעות הקטנטנות ולחש: ״שלום, אח קטן!״
-מה מענדי רוצה לעשות עם אחיו כשיגדל?
-שלום, תינוק!
-לבנות מגדל
-לשחק בכדור
-לקרוא ספר
-מנופפים ביד ואומרים בקול שקט: ״שלום, אח קטן!״ איזה משחק הייתם רוצים להראות לו?
 מֶענְדִי יָשַׁב עַל הַשָּׁטִיחַ וּבָנָה מִגְדָּל מִקּוּבִּיּוֹת.
 פִּתְאוֹם נִפְתְּחָה הַדֶּלֶת. אַבָּא נִכְנַס, וְאַחֲרָיו אִמָּא. בַּיָּדַיִם שֶׁלָּהּ הָיָה תִּינוֹק קָטָן, עָטוּף בִּשְׂמִיכָה.
 ״מֶענְדִי, בּוֹא לְהַכִּיר אֶת אָחִיךָ הַקָּטָן!״ אָמְרָה אִמָּא.
@@ -6934,12 +6928,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 עכשיו מענדי ראה את כל הפנים הקטנות: אף פצפון, פה קטן ועיניים עצומות.
 ״הוא ישן,״ לחש מענדי.
 ״נכון,״ לחשה סבתא בחזרה. ״ניתן לו לישון.״
-איך אבא עזר למענדי לראות את התינוק?
-יש מקום לידיי
-אפשר לזוז קצת?
-גם אני רוצה לראות
-אפשר לשבת לידך?
-מפנים מקום קטן לידנו ומזמינים את מי שקורא איתנו לשבת קרוב יותר.
 מְעַט אַחַר כָּךְ בָּאוּ סַבָּא וְסָבְתָא. ״מַזָּל טוֹב!״ אָמְרוּ, וְנִיגְּשׁוּ לִרְאוֹת אֶת הַתִּינוֹק בָּעֲרִיסָה.
 מֶענְדִי עָמַד מֵאֲחוֹרֵיהֶם. הוּא הִתְרוֹמֵם עַל קְצוֹת הָאֶצְבָּעוֹת, אֲבָל עֲדַיִין לֹא רָאָה הֵיטֵב.
 ״גַּם אֲנִי רוֹצֶה לִרְאוֹת!״ אָמַר.
@@ -6958,12 +6946,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 מענדי הנהן. הם סידרו קובייה ליד קובייה.
 כשהתינוק נרגע, אמא חזרה. ״איפה הגג שלנו?״ שאלה.
 ״כאן!״ מענדי הגיש לה את הקובייה. עכשיו המגדל היה מוכן.
-למה מענדי רצה שאמא תישאר לידו?
-בונים ביחד
-עוד לא סיימנו
-כיף לבנות יחד
-צריך להוסיף גג
-בונים בידיים מגדל דמיוני: קומה ועוד קומה. מי יוסיף את הגג?
 אַחֲרֵי הַבִּיקּוּר חָזַר מֶענְדִי אֶל הַקּוּבִּיּוֹת. אִמָּא הִתְיַישְּׁבָה לְיָדוֹ, וְיַחַד בָּנוּ מִגְדָּל גָּבוֹהַּ.
 נִשְׁאַר רַק לְהוֹסִיף אֶת הַגַּג. אֲבָל אָז הַתִּינוֹק הִתְחִיל לִבְכּוֹת.
 ״אֲנִי צְרִיכָה לָגֶשֶׁת לַתִּינוֹק,״ אָמְרָה אִמָּא וְקָמָה.
@@ -6983,12 +6965,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״בוא נשב יחד,״ אמרה אמא ופינתה לו מקום לידה.
 ״מה נבנה היום?״ שאלה.
 ״אולי גשר!״ אמר מענדי. ״עם מקום למכוניות לעבור מתחתיו.״
-מה מענדי ביקש מאמא?
-רגע עם אמא
-לשבת יחד
-לספר רעיון
-לשחק בקוביות
-כל אחד בוחר משהו קטן שהיה רוצה לעשות יחד עם מי שמקריא את הסיפור. אפשר לספר או להראות בתנועה.
 לְמָחֳרָת בַּבּוֹקֶר לָבַשׁ מֶענְדִי חוּלְצָה. הַכַּפְתּוֹר הָאַחֲרוֹן לֹא נִסְגַּר בְּקַלּוּת. הוּא נִיסָּה פַּעַם, וְעוֹד פַּעַם, עַד שֶׁהִצְלִיחַ.
 בַּסָּלוֹן הָיוּ אוֹרְחִים. כּוּלָּם דִּיבְּרוּ עַל הַתִּינוֹק.
 ״אִמָּא, תִּרְאִי! סָגַרְתִּי לְבַד!״ קָרָא מֶענְדִי.
@@ -7005,11 +6981,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״שלי זה פיהוק של אריה!״ אמר.
 אמא ואבא צחקו בשקט.
 מענדי הסתכל על אחיו הקטן. התינוק עוד לא יודע לבנות מגדל, אבל לפהק — הוא כבר יודע!
-איך נראה פיהוק של אריה?
-מי מפהק?
-פיהוק קטנטן
-רק מסתכלים
-פותחים את הפה לפיהוק גדול ושקט. עכשיו מנסים פיהוק קטנטן. מי שרוצה רק להסתכל יכול להצטרף אחר כך.
 פִּתְאוֹם נִשְׁמַע קוֹל קָטָן מֵהָעֲרִיסָה. הַתִּינוֹק הִתְעוֹרֵר.
 הוּא פָּתַח אֶת הַפֶּה בְּפִיהוּק גָּדוֹל, וְאָז שׁוּב עָצַם אֶת הָעֵינַיִם.
 מֶענְדִי פִּיהֵק אַחֲרָיו. פִּיהוּק גָּדוֹל־גָּדוֹל!
@@ -7026,12 +6997,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 כשהגיעה שבת, כולם ישבו לסעודה. אבא התחיל לשיר ״שלום עליכם״.
 מענדי שר איתו את המילים שהכיר. התינוק נח בעריסה שליד השולחן.
 זאת הייתה השבת הראשונה שלו בבית.
-מה אתם אוהבים בשבת?
-שבת בבית שלנו
-ריח החלות
-לשיר יחד
-לשבת עם המשפחה
-מזמזמים יחד מנגינה של שבת, או מספרים על דבר אחד שאוהבים לעשות בשבת.
 בְּיוֹם שִׁישִׁי הִתְכּוֹנְנוּ בַּבַּיִת לְשַׁבָּת. רֵיחַ שֶׁל חַלּוֹת מִילֵּא אֶת הַמִּטְבָּח.
 עַל הַשּׁוּלְחָן הָיוּ מַפָּה נְקִיָּיה, חַלּוֹת, יַיִן וּגְבִיעַ. לְיַד הַפָּמוֹטִים הַגְּדוֹלִים עָמְדוּ גַּם פָּמוֹטִים קְטַנִּים.
 אַבָּא סִידֵּר אֶת הַצַּלָּחוֹת, וְאִמָּא נָחָה לְיַד הָעֲרִיסָה.
@@ -7050,12 +7015,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״תישאר עוד קצת?״ ביקש מענדי.
 ״כן,״ אמר אבא.
 מענדי התכרבל בשמיכה. אבא נשאר לידו, ולאט־לאט מענדי נרדם שוב.
-מה עזר למענדי לחזור לישון?
-עוד קצת לידי
-אבא ישב לידי
-השמיכה הנעימה
-לבקש מה שצריך
-מניחים את הראש על כפות הידיים כמו על כרית. לוחשים יחד: ״לילה טוב״.
 בַּלַּיְלָה הִתְעוֹרֵר מֶענְדִי לְקוֹל הַבֶּכִי שֶׁל הַתִּינוֹק.
 הוּא מָשַׁךְ אֶת הַשְּׂמִיכָה וְקָרָא: ״אַבָּא!״
 אַבָּא נִכְנַס לַחֶדֶר וְהִתְיַישֵּׁב לְיַד הַמִּיטָּה.
@@ -7073,12 +7032,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״שלום, אח קטן!״ לחש מענדי.
 השירה הייתה שמחה, אבל אחרי זמן־מה היה למענדי רועש מדי. ״סבא, אפשר לשבת קצת בצד?״ שאל.
 ״בודאי,״ אמר סבא. הם מצאו פינה שקטה וישבו יחד.
-מה אפשר לעשות כשבחגיגה רועש לנו מדי?
-חגיגה בקצב שלנו
-לשבת קצת בצד
-לגשת למבוגר
-לבקש מקום שקט
-מוחאים כפיים בעדינות כמו בחגיגה, ואז עוצרים ומקשיבים לשקט. אפשר לבחור רק באחד מהם.
 הִגִּיעַ יוֹם הַבְּרִית. מֶענְדִי לָבַשׁ חוּלְצָה לְבָנָה וַחֲגִיגִית.
 הָיוּ שָׁם הַרְבֵּה אֲנָשִׁים. מֶענְדִי עָמַד לְיַד סַבָּא וְהִסְתַּכֵּל סָבִיב.
 אַחֲרֵי הַבְּרִית הִתְחִילוּ לָשִׁיר. אַבָּא עָמַד עָטוּף בְּטַלִּית וְהֶחֱזִיק אֶת הַתִּינוֹק.
@@ -7095,12 +7048,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 התינוק הזיז יד קטנה והביט לעברו.
 מענדי חייך. ״כשתגדל, נבנה יחד מגדל!״
 בינתיים הוא נשאר לשבת ליד אמא והסתכל על אחיו.
-איך אפשר להגיד שלום לתינוק?
-שלום קטן
-לנופף ביד
-לדבר בקול נעים
-לשבת יחד לידו
-כל אחד ממציא ״שלום״ קטן משלו: במילה, בחיוך או בנפנוף יד.
 הַיָּמִים עָבְרוּ, וּמֶענְדִי הִכִּיר אֶת אָחִיו קְצָת יוֹתֵר.
 לִפְעָמִים הַתִּינוֹק יָשַׁן, לִפְעָמִים בָּכָה, וְלִפְעָמִים פָּקַח אֶת הָעֵינַיִם וְהִסְתַּכֵּל סָבִיב.
 יוֹם אֶחָד יָשַׁב מֶענְדִי לְיַד אִמָּא, קָרוֹב לָעֲרִיסָה.
@@ -7117,12 +7064,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 אחרי כמה עמודים אמר: ״אמא, אני אוהב את התינוק. אבל לפעמים אני רוצה להיות רק איתך.״
 ״ואני אוהבת להיות איתך,״ אמרה אמא. ״עכשיו אנחנו כאן יחד.״
 מענדי הפך דף. ״ומה קורה כאן?״ שאל. אמא המשיכה לקרוא.
-איזה סיפור אתם אוהבים לקרוא יחד?
-הספר האהוב
-סיפור מצחיק
-סיפור לפני השינה
-סיפור אחר שאוהבים
-נזכרים בדמות מספר אהוב. אפשר לספר עליה דבר אחד, או להראות איך היא זזה.
 בָּעֶרֶב הָיָה אַבָּא עִם הַתִּינוֹק. מֶענְדִי הֵבִיא לְאִמָּא אֶת הַסֵּפֶר הָאָהוּב עָלָיו.
 ״עַכְשָׁיו הַסִּיפּוּר שֶׁלָּנוּ?״ שָׁאַל.
 ״כֵּן, בּוֹא נִקְרָא יַחַד,״ אָמְרָה אִמָּא.
@@ -7139,12 +7080,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״נכון,״ אמרה אמא. ״ובינתיים נבנה אנחנו.״
 מענדי מצא את הקובייה המתאימה והושיט אותה לאמא.
 ״הנה הגג!״
-איזה מגדל הייתם בונים יחד?
-המגדל שלנו
-מגדל גבוה
-מגדל עם גשר
-מגדל עם חצר
-מציירים באוויר את המגדל שלנו. כל אחד מוסיף לו דבר אחד: חלון, דלת, גשר או משהו אחר.
 לְמָחֳרָת יָשַׁב מֶענְדִי שׁוּב עַל הַשָּׁטִיחַ. הַפַּעַם הוּא בָּנָה מִגְדָּל גָּבוֹהַּ עוֹד יוֹתֵר.
 אַבָּא בָּנָה שְׁבִיל, וְאִמָּא חִיפְּשָׂה קוּבִּיָּיה לַגַּג.
 הַתִּינוֹק נִמְנֵם בָּעֲרִיסָה שֶׁלְּיָדָם.
@@ -7155,11 +7090,10 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 מִגְדָּל לְכוּלָּנוּ
 מציירים רגע יחד
 ציירו משהו שאתם אוהבים לעשות עם אמא, אבא או מישהו אחר מהמשפחה.
-מדברים, אם רוצים
-איזה רגע בסיפור אהבתם?
-איזה רגע הצחיק אתכם?
-מה הייתם רוצים לעשות יחד עם המשפחה?
-מה יקרה כשהתינוק יגדל?
+עוד קצת כיף!
+בונים מגדל מקוביות. כל אחד מוסיף קובייה בתורו.
+מנסים פיהוק קטנטן, ואז פיהוק ענקי של אריה.
+בוחרים איור ומחפשים בו משהו עגול, משהו כחול ומישהו שמחייך.
 נערך מחדש לפי בקשת המשתמשת לשפה פשוטה, טבעית וברורה
 מענדי
 חני
@@ -7177,7 +7111,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״הוּא יוּכַל לְשַׂחֵק אִיתִּי?״ שָׁאֲלָה.
 ״כְּשֶׁיִּגְדַּל קְצָת,״ אָמַר אַבָּא.
 חַנִּי הִסְתַּכְּלָה עַל הָאֶצְבָּעוֹת הַקְּטַנְטַנּוֹת וְלָחֲשָׁה: ״שָׁלוֹם, אָח קָטָן!״
-מה חני רוצה לעשות עם אחיה כשיגדל?
 מעט אחר כך באו סבא וסבתא. ״מזל טוב!״ אמרו, וניגשו לראות את התינוק בעריסה.
 חני עמדה מאחוריהם. היא התרוממה על קצות האצבעות, אבל עדיין לא ראתה היטב.
 ״גם אני רוצה לראות!״ אמרה.
@@ -7192,7 +7125,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 עַכְשָׁיו חַנִּי רָאֲתָה אֶת כָּל הַפָּנִים הַקְּטַנּוֹת: אַף פִּצְפּוֹן, פֶּה קָטָן וְעֵינַיִם עֲצוּמוֹת.
 ״הוּא יָשֵׁן,״ לָחֲשָׁה חַנִּי.
 ״נָכוֹן,״ לָחֲשָׁה סָבְתָא בַּחֲזָרָה. ״נִתֵּן לוֹ לִישׁוֹן.״
-איך אבא עזר לחני לראות את התינוק?
 אחרי הביקור חזרה חני אל הקוביות. אמא התיישבה לידה, ויחד בנו מגדל גבוה.
 נשאר רק להוסיף את הגג. אבל אז התינוק התחיל לבכות.
 ״אני צריכה לגשת לתינוק,״ אמרה אמא וקמה.
@@ -7211,7 +7143,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 חַנִּי הִנְהֲנָה. הֵם סִידְּרוּ קוּבִּיָּיה לְיַד קוּבִּיָּיה.
 כְּשֶׁהַתִּינוֹק נִרְגַּע, אִמָּא חָזְרָה. ״אֵיפֹה הַגַּג שֶׁלָּנוּ?״ שָׁאֲלָה.
 ״כָּאן!״ חַנִּי הִגִּישָׁה לָהּ אֶת הַקּוּבִּיָּיה. עַכְשָׁיו הַמִּגְדָּל הָיָה מוּכָן.
-למה חני רצתה שאמא תישאר לידה?
 למחרת בבוקר לבשה חני חולצה. הכפתור האחרון לא נסגר בקלות. היא ניסתה פעם, ועוד פעם, עד שהצליחה.
 בסלון היו אורחים. כולם דיברו על התינוק.
 ״אמא, תראי! סגרתי לבד!״ קראה חני.
@@ -7228,7 +7159,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״בּוֹאִי נֵשֵׁב יַחַד,״ אָמְרָה אִמָּא וּפִינְּתָה לָהּ מָקוֹם לְיָדָהּ.
 ״מָה נִבְנֶה הַיּוֹם?״ שָׁאֲלָה.
 ״אוּלַי גֶּשֶׁר!״ אָמְרָה חַנִּי. ״עִם מָקוֹם לְמְכוֹנִיּוֹת לַעֲבוֹר מִתַּחְתָּיו.״
-מה חני ביקשה מאמא?
 פתאום נשמע קול קטן מהעריסה. התינוק התעורר.
 הוא פתח את הפה בפיהוק גדול, ואז שוב עצם את העיניים.
 חני פיהקה אחריו. פיהוק גדול־גדול!
@@ -7273,7 +7203,6 @@ disabled>הדפסה / שמירה כ־PDF <button id=
 ״תִּישָּׁאֵר עוֹד קְצָת?״ בִּיקְּשָׁה חַנִּי.
 ״כֵּן,״ אָמַר אַבָּא.
 חַנִּי הִתְכַּרְבְּלָה בַּשְּׂמִיכָה. אַבָּא נִשְׁאַר לְיָדָהּ, וּלְאַט־לְאַט חַנִּי נִרְדְּמָה שׁוּב.
-מה עזר לחני לחזור לישון?
 הגיע יום הברית. חני לבשה שמלה לבנה וחגיגית.
 היו שם הרבה אנשים. חני עמדה ליד סבא והסתכלה סביב.
 אחרי הברית התחילו לשיר. אבא עמד עטוף בטלית והחזיק את התינוק.
@@ -7346,25 +7275,25 @@ disabled>הדפסה / שמירה כ־PDF <button id=
  const copy=(plain,pointed)=>PlayReading.enabled&&pointed?pointed:plain;
  const mark='<div class=
 hidden>האיור לא נטען כרגע. אפשר להמשיך לקרוא את הסיפור.  ';
-  const question=()=>interactive?'<button class=
->✦   רגע יחד  שאלה קטנה או משחקון, אם רוצים  <span aria-hidden=
-> רגע יחד, אם רוצים  '+esc(scene.pause)+'  ';
   if(record.type==='cover')body='<div class=
 >סיפור על אח קטן ומשפחה שגדלה  אוֹר הִגִּיעַ אֵלֵינוּ  קוראים, מגלים ומשחקים יחד  '+image(E.art.arrival,'אמא ואבא מגיעים הביתה עם התינוק')+'<p class=
 >עם מענדי והמשפחה ';
-  else if(record.type==='art'||record.type==='text'){
-   const lines=text(scene.text,scene.n).split('
-'),part=record.type==='art'?lines.slice(0,2):lines.slice(2);
-   body=image(scene.art,scene.title)+'<div class=
+  else if(record.type==='art')body=image(scene.art,scene.title);
+  else if(record.type==='text')body='<div class=
 >הסיפור ממשיך אצלנו  מציירים רגע יחד <p class=
 >✎  הרגע שלנו  '+(interactive?'<button class=
 >פותחים את דף הציור ':'');
   else if(record.type==='talk')body='<div class=
->אין תשובה אחת נכונה  מדברים, אם רוצים <div class=
->אפשר גם רק להקשיב, או לדפדף הלאה. ';
+>סיימנו לקרוא? בואו נשחק  עוד קצת כיף! <div class=
+>'+[
+   ['tower','▦','מגדל עד השמיים','מוסיפים קובייה ועוד קובייה. כמה גבוה נגיע?','בנו מגדל מקוביות. כל אחד מוסיף קובייה בתורו.'],
+   ['yawn','☾','אריה ישנוני','פיהוק קטנטן… ועכשיו פיהוק ענקי!','נסו פיהוק קטנטן, ואז פיהוק גדול ושקט של אריה.'],
+   ['find','✦','מחפשים באיור','יש כאן משהו עגול, משהו כחול וחיוך.','בחרו איור וחפשו בו משהו עגול, משהו כחול ומישהו שמחייך.']
+  ].map(([id,icon,title,description,printed])=>'<'+(interactive?'button type=
+>בוחרים מה שמתחשק, ומשחקים יחד. ';
   else if(record.type==='grownups')body='<div class=
 >למי שמקריאים  רגע של קרבה <div class=
-> אפשר לקרוא את הסיפור ברצף. כפתורי ״רגע יחד״ מזמינים שיחה או משחק קטן, רק אם מתאים עכשיו.  תנו מקום לכל תשובה, וגם לשתיקה. אין צורך לבקש מהילד לספר על עצמו; אפשר לדבר על מענדי ועל מה שקורה בסיפור.  אפשר לשמוח וגם להתגעגע למה שהיה. הקשר עם התינוק יכול להיבנות לאט, וההורים ממשיכים להיות אחראים לטיפול בו.  אם עוצרים באמצע, אפשר לחזור לאותו עמוד בפעם הבאה.  ';
+> קוראים את הסיפור ברצף, ועוצרים לשיחה אם היא עולה מעצמה. בסוף הספר מחכות פעילויות ומשחקים לבחירה.  תנו מקום לכל תשובה, וגם לשתיקה. אין צורך לבקש מהילד לספר על עצמו; אפשר לדבר על מענדי ועל מה שקורה בסיפור.  אפשר לשמוח וגם להתגעגע למה שהיה. הקשר עם התינוק יכול להיבנות לאט, וההורים ממשיכים להיות אחראים לטיפול בו.  אם עוצרים באמצע, אפשר לחזור לאותו עמוד בפעם הבאה.  ';
   else if(record.type==='again')body='<div class=
 >לכל אחד יש מקום בסיפור  עוד רגע ביחד? '+image(E.art.reading,'אמא ומענדי קוראים יחד בספר')+'<p class=
 >אפשר לחזור לרגע שאהבתם, לצייר משהו משלכם או לבחור משחק. '+(interactive?'<div class=
@@ -7373,19 +7302,23 @@ data-story-play>בוחרים משחק  ':'');
   else body='<div class=
 >✦  אור הגיע אלינו  אח קטן הגיע הביתה. מענדי כבר מחכה לשחק איתו!  סיפור לקריאה משותפת, בקצב שלכם. '+MorashBrand.svg+' ';
   if(E.character==='chani')body=body.replaceAll('עם מענדי והמשפחה','עם חני והמשפחה').replaceAll('אמא ומענדי קוראים','אמא וחני קוראות').replaceAll('אח קטן הגיע הביתה. מענדי כבר מחכה לשחק איתו!','אח קטן הגיע הביתה. חני כבר מחכה לשחק איתו!').replaceAll('על מענדי','על חני').replaceAll('מהילד לספר על עצמו','מהילדה לספר על עצמה');
-  return '<article class=
-hidden>האיור לא נטען כרגע. הסיפור מופיע כאן ואפשר להמשיך לקרוא.  <div class=
->✦   רגע יחד  שאלה או משחק קטן, אם רוצים  <span aria-hidden=
->'+(sceneIndex+1)+'  ';
+  const backgrounds=['#f4e5cc','#f3e8d4','#f4e6d1','#f4e9d7','#f5ead8','#f3dfc2','#e0e7ef','#f3e5cc','#f4e8d5','#f2e5d2','#f4e6d1'];
+  return '<article style=
+>'+(index+1)+'  ';
  }
  function visiblePages(){
-  if(p>0&&p 0&&p 0&&p pageHTML(i)).join('');spread.classList.toggle('b-single-page',indices.length===1);spread.classList.toggle('b-continuous',isScene);
+  if(!media.matches||p===0||p===pages.length-1)return[p];
+  const start=p%2===0?p-1:p;return[start,start+1];
+ }
+ function render(){
+  const indices=visiblePages();if(media.matches)p=indices[0];
+  spread.innerHTML=indices.map(i=>pageHTML(i)).join('');spread.classList.toggle('b-single-page',indices.length===1);
   document.getElementById('prev').disabled=p===0;document.getElementById('next').disabled=indices.at(-1)===pages.length-1;
-  document.getElementById('bPageCount').innerHTML=isScene?'רגע '+(sceneIndex+1)+' מתוך '+E.scenes.length:indices.length===2?'עמודים <bdi dir=
+  document.getElementById('bPageCount').innerHTML=indices.length===2?'עמודים <bdi dir=
 >'+(indices[0]+1)+'–'+(indices[1]+1)+'  מתוך '+pages.length:'עמוד '+(p+1)+' מתוך '+pages.length;
   document.querySelector('.b-edition-progress i').style.width=((indices.at(-1)+1)/pages.length*100)+'%';
   PlayUI.save(bookmark(),p);chooser.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.character===E.character)));
-  spread.querySelectorAll('img').forEach(im=>{const check=()=>{if(im.complete&&(im.naturalWidth {const visible=visiblePages();if(visible.at(-1) {if(p>0)go(Math.max(0,p-((media.matches||p>1&&p 1?2:1)))};
+  spread.querySelectorAll('img').forEach(im=>{const check=()=>{if(im.complete&&(im.naturalWidth {const visible=visiblePages();if(visible.at(-1) {if(p>0)go(Math.max(0,p-(media.matches&&p>1?2:1)))};
  show=render;document.getElementById('prev').onclick=goPrev;document.getElementById('next').onclick=goNext;
  media.addEventListener('change',render);window.addEventListener('morash-reading-change',render);
  document.getElementById('bookRead').onclick=event=>{const active=document.body.classList.toggle('b-reading-focus');event.currentTarget.setAttribute('aria-pressed',String(active));event.currentTarget.textContent=active?'חזרה לתצוגה רגילה':'מצב הקראה'};
@@ -7393,19 +7326,35 @@ hidden>האיור לא נטען כרגע. הסיפור מופיע כאן ואפ�
 >לאיזה רגע חוזרים? <button class=
 >הכריכה '+E.scenes.map((scene,i)=>'<button data-page=
 >מציירים רגע יחד <button data-page=
->מדברים, אם רוצים <button data-page=
+>עוד קצת כיף! <button data-page=
 >למי שמקריאים  ';document.body.append(contents);contents.querySelector('.close').onclick=()=>contents.close();contents.onclick=e=>{const b=e.target.closest('[data-page]');if(b){go(+b.dataset.page);contents.close()}};document.getElementById('gridBtn').onclick=()=>contents.showModal();
- const pause=document.createElement('dialog');pause.id='bPauseDialog';pause.setAttribute('aria-labelledby','bPauseTitle');document.body.append(pause);
- function openPause(index){const s=E.scenes[index],m=s.moment;
-  pause.innerHTML='<div class=
->עוצרים רק אם רוצים <h2 id=
->אפשר לבחור כמה רעיונות, לומר משהו אחר או רק להקשיב. <button class=
->מנסים רגע קטן יחד <div class=
->ממשיכים בסיפור ← ';
-  pause.querySelector('.close').onclick=()=>pause.close();pause.querySelector('.b-moment-choices').onclick=e=>{const b=e.target.closest('button');if(!b)return;b.setAttribute('aria-pressed',String(b.getAttribute('aria-pressed')!=='true'));pause.querySelector('.b-moment-response').textContent='אפשר לספר על הרעיון שבחרתם. גם רעיונות שונים יכולים להתאים.'};
-  pause.querySelector('.b-moment-action').onclick=e=>{const panel=pause.querySelector('.b-moment-do');panel.hidden=!panel.hidden;e.currentTarget.setAttribute('aria-expanded',String(!panel.hidden));panel.scrollIntoView({block:'nearest',behavior:'smooth'})};pause.querySelector('.b-moment-continue').onclick=()=>{pause.close();go(Math.min(pages.length-1,3+index*2))};pause.showModal();
+ const fun=document.createElement('dialog');fun.id='bBookFun';fun.setAttribute('aria-labelledby','bBookFunTitle');document.body.append(fun);
+ function openFun(id){
+  const titles={tower:'מגדל עד השמיים',yawn:'אריה ישנוני',find:'מחפשים באיור'};
+  const top='<div class=
+>×  ';
+  if(id==='tower'){
+   fun.innerHTML=top+' לוחצים על הכפתור ומוסיפים קובייה למגדל. <div class=
+>המגדל שלנו מתחיל כאן! <button class=
+data-add-block>עוד קובייה!  <button class=
+data-reset-tower>בונים מחדש <p class=
+>אפשר לבנות יחד גם מקוביות שיש בבית. ';
+   let count=0;const status=fun.querySelector('.b-fun-status'),add=fun.querySelector('[data-add-block]'),tower=fun.querySelector('.b-fun-tower');
+   add.onclick=()=>{count++;const block=document.createElement('span');block.style.setProperty('--block-color',['#79aaa6','#e0b76d','#bc8c77','#9ba87d'][count%4]);block.style.transform='translateX('+[0,8,-5,4][count%4]+'px)';tower.append(block);status.textContent=count===8?'איזה מגדל גבוה בנינו יחד!':'כבר יש לנו '+count+' קוביות!';if(count===8){add.disabled=true;tower.classList.add('b-tower-done')}};
+   fun.querySelector('[data-reset-tower]').onclick=()=>{count=0;tower.replaceChildren();tower.classList.remove('b-tower-done');add.disabled=false;status.textContent='מוכנים למגדל חדש!'};
+  }else if(id==='yawn'){
+   fun.innerHTML=top+'<div class=
+>מתחילים בפיהוק קטנטן ושקט… <button class=
+data-yawn>ועכשיו פיהוק של אריה! <p class=
+>כל אחד מצטרף כשמתחשק לו. אפשר גם להצחיק זה את זה בפיהוקים. ';
+   fun.querySelector('[data-yawn]').onclick=e=>{const big=fun.querySelector('.b-sleepy-face').classList.toggle('b-big-yawn');fun.querySelector('.b-fun-status').textContent=big?'פותחים פה גדול־גדול… איזה אריה ישנוני!':'ועכשיו שוב פיהוק קטנטן…';e.currentTarget.textContent=big?'ועכשיו קטנטן':'ועכשיו פיהוק של אריה!'};
+  }else{
+   fun.innerHTML=top+' מחפשים יחד: משהו עגול, משהו כחול ומישהו שמחייך. <img class=
+>כל אחד יכול למצוא משהו אחר. אפשר גם להמציא משהו חדש לחפש. ';
+  }
+  fun.querySelector('.close').onclick=()=>fun.close();fun.showModal();
  }
- spread.onclick=e=>{const q=e.target.closest('[data-pause]');if(q)return openPause(+q.dataset.pause);const game=e.target.closest('[data-story-game]');if(game){bSetView('play');openGame(game.dataset.storyGame)}if(e.target.closest('[data-story-start]'))go(0);if(e.target.closest('[data-story-play]')){bSetView('play');document.getElementById('games').scrollIntoView({behavior:'smooth',block:'start'})}};
+ spread.onclick=e=>{const f=e.target.closest('[data-book-fun]');if(f)return openFun(f.dataset.bookFun);const game=e.target.closest('[data-story-game]');if(game){bSetView('play');openGame(game.dataset.storyGame)}if(e.target.closest('[data-story-start]'))go(0);if(e.target.closest('[data-story-play]')){bSetView('play');document.getElementById('games').scrollIntoView({behavior:'smooth',block:'start'})}};
  // Clear, purpose-built game illustrations instead of tiny pages of printed text.
  const cards={memory:['שני קלפים, תגלית אחת','i-star','מגלים זוגות'],dress:['מה נלבש היום?','i-shirt','בוחרים ומתאימים'],table:['מכינים מקום לשבת','i-challah','מסדרים יחד'],quiet:['אור קטן, חידה גדולה','i-candle','חושבים ומגלים'],needs:['מה מסתתר בסל?','i-heart','מכירים חפצים'],draw:['כל רעיון מתחיל בקו','i-star','יוצרים בחופשיות']};
  document.querySelectorAll('.gbtn').forEach(button=>{if(!cards[button.dataset.g]){button.remove();return}const [caption,icon,tag]=cards[button.dataset.g],g=GAMES.find(g=>g.id===button.dataset.g);button.innerHTML='<span class=
@@ -7422,7 +7371,7 @@ hidden>האיור לא נטען כרגע. הסיפור מופיע כאן ואפ�
   go(+PlayUI.read(bookmark(),0)||0);
  }
  chooser.onclick=e=>{const b=e.target.closest('[data-character]');if(b)selectCharacter(b.dataset.character)};
- window.BStory={pages,get edition(){return E},editions:B_EDITIONS,selectCharacter,esc,pageHTML,go,render,openPause,visiblePages,artForLegacyPage:index=>E.art[map[index]||'arrival']};
+ window.BStory={pages,get edition(){return E},editions:B_EDITIONS,selectCharacter,esc,pageHTML,go,render,openFun,visiblePages,artForLegacyPage:index=>E.art[map[index]||'arrival']};
  selectCharacter(E.character);bPaint();
 })();
 
@@ -7433,8 +7382,8 @@ document.getElementById('printBtn').onclick=()=>{
  const css=String(B_EDITION_CSS)+`
  body{margin:0;background:#e4e4dc;font:16px/1.7 Arial,sans-serif;color:#2b5050}header{position:sticky;top:0;z-index:4;background:#fffdf6;padding:18px;text-align:center;box-shadow:0 3px 10px #0001}header h1{font:700 22px Arial;margin:0}header p{margin:7px auto;max-width:800px}select,button{font:inherit;padding:10px 15px;border:1px solid #b8c9bb;border-radius:12px;min-height:44px;margin:5px}button{background:#246469;color:white}button:disabled{opacity:.5}button[hidden]{display:none}#sheets{margin:auto}.b-print-sheet{display:flex;direction:ltr;justify-content:center;margin:25px auto;width:210mm;background:white;box-shadow:0 10px 25px #0002;break-after:page;page-break-after:always}.b-print-sheet:last-child{break-after:auto;page-break-after:auto}.b-paper{box-sizing:border-box;direction:rtl;width:210mm;height:297mm;min-height:0;aspect-ratio:auto;flex:none;border:0;box-shadow:none;padding:15mm 16mm 16mm;overflow:hidden;background:#fffdf7}.b-paper-content h2{font-size:25pt}.b-prose{font-size:16pt;line-height:1.85}.b-prose p{margin-bottom:2.2mm}.b-paper-kicker{font-size:9pt}.b-paper-brand{left:10mm;bottom:7mm;width:22mm}.b-paper-number{font-size:8pt;bottom:7mm}.b-edition-art{margin:8mm -4mm 4mm}.b-paper-art .b-art-title{font-size:25pt}.b-print-question{font-size:11pt;line-height:1.6;padding-top:3mm}.b-cover-copy h1{font-size:40pt}.b-cover-copy p,.b-cover-bottom,.b-art-invitation{font-size:12pt}.b-page-lead{font-size:17pt}.b-conversation-cards p{font-size:17pt}.b-back-cover p{font-size:23pt}.b-art-unavailable{min-height:120mm;background:#eee8d8}.b-print-sheet:has(.b-paper-cover){background:#fbf4e5}
  body[data-layout=booklet] .b-print-sheet{width:297mm;height:210mm;position:relative}body[data-layout=booklet] .b-print-sheet:after{content:'';position:absolute;left:50%;top:4mm;bottom:4mm;border-left:.2mm dashed #ddd5c4;pointer-events:none}body[data-layout=booklet] .b-paper{width:148.5mm;height:210mm;padding:10mm 11mm 12mm}body[data-layout=booklet] .b-paper-content h2{font-size:18pt;margin:3mm 0 5mm}body[data-layout=booklet] .b-prose{font-size:11.5pt;line-height:1.75}body[data-layout=booklet] .b-prose p{margin-bottom:1.5mm}body[data-layout=booklet] .b-print-question{font-size:8.5pt;padding-top:2mm}body[data-layout=booklet] .b-cover-copy h1{font-size:30pt}body[data-layout=booklet] .b-cover-copy p,body[data-layout=booklet] .b-cover-bottom,body[data-layout=booklet] .b-art-invitation{font-size:9pt}body[data-layout=booklet] .b-paper-kicker{font-size:7pt}body[data-layout=booklet] .b-edition-art{margin:5mm -3mm 3mm}body[data-layout=booklet] .b-paper-cover .b-edition-art{margin:3mm 0;max-width:116mm;width:100%;align-self:center}body[data-layout=booklet] .b-paper-art .b-art-title{font-size:19pt}body[data-layout=booklet] .b-paper-brand{width:17mm;bottom:5mm;left:7mm}body[data-layout=booklet] .b-paper-number{bottom:5mm;font-size:7pt}body[data-layout=booklet] .b-page-lead,body[data-layout=booklet] .b-conversation-cards p{font-size:12pt}body[data-layout=booklet] .b-conversation-cards{gap:3mm;margin:4mm 0}body[data-layout=booklet] .b-conversation-cards>div{padding:4mm}body[data-layout=booklet] .b-drawing-space{min-height:85mm}body[data-layout=booklet] .b-back-cover p{font-size:18pt}body[data-layout=booklet] .b-art-unavailable{min-height:70mm}
- .b-paper-art,.b-paper-text{background:#fff8eb}.b-illustrated-copy{padding:18mm 16mm 14mm;margin-top:-18mm;background:linear-gradient(#fff8eb00,#fff8eb 16mm)}.b-paper-art .b-illustrated-copy .b-prose{font-size:18pt;line-height:1.8}.b-paper-text .b-edition-art{height:64mm;max-height:64mm}.b-paper-text .b-edition-image{height:78mm;object-position:50% 24%}.b-paper-text .b-illustrated-copy{padding-top:19mm;margin-top:-18mm}.b-paper-text .b-print-question{margin-top:5mm}.b-paper-art .b-paper-content,.b-paper-text .b-paper-content{flex:none;height:100%}
- body[data-layout=booklet] .b-illustrated-copy{padding:13mm 11mm 12mm;margin-top:-14mm;background:linear-gradient(#fff8eb00,#fff8eb 12mm)}body[data-layout=booklet] .b-paper-art .b-illustrated-copy .b-prose{font-size:13pt;line-height:1.8}body[data-layout=booklet] .b-paper-text .b-edition-art{height:43mm;max-height:43mm}body[data-layout=booklet] .b-paper-text .b-edition-image{height:55mm}body[data-layout=booklet] .b-paper-text .b-illustrated-copy{padding-top:14mm;margin-top:-13mm}body[data-layout=booklet] .b-paper-text .b-print-question{margin-top:3mm}.b-paper-art .b-art-unavailable,.b-paper-text .b-art-unavailable{min-height:0;height:100%;font-size:12pt}body[data-layout=booklet] .b-paper-art .b-art-unavailable,body[data-layout=booklet] .b-paper-text .b-art-unavailable{min-height:0;font-size:9pt}
+ .b-paper-art,.b-paper-text{background:var(--b-page-bg,#f4e8d5)}.b-paper-art{padding:0 0 16mm}.b-paper-art .b-edition-art{margin:0;width:100%}.b-paper-art .b-edition-image{height:auto;object-fit:contain}.b-paper-text .b-prose{font-size:16pt;line-height:1.85}.b-paper-text .b-paper-content{gap:6mm}.b-paper-text .b-print-question{margin-top:0}body[data-layout=booklet] .b-paper-art{padding:0 0 12mm}body[data-layout=booklet] .b-paper-text .b-prose{font-size:11.5pt;line-height:1.75}body[data-layout=booklet] .b-paper-text .b-paper-content{gap:4mm}
+ .b-end-card{padding:7mm;gap:5mm}.b-end-card b{font-size:19pt}.b-end-card small{font-size:14pt}.b-end-activities{gap:5mm}.b-end-invitation{font-size:14pt}body[data-layout=booklet] .b-end-card{padding:4mm;gap:3mm}body[data-layout=booklet] .b-end-card b{font-size:14pt}body[data-layout=booklet] .b-end-card small{font-size:10.5pt}body[data-layout=booklet] .b-end-activities{gap:3mm}body[data-layout=booklet] .b-end-icon{width:10mm;height:10mm;font-size:22pt}body[data-layout=booklet] .b-end-invitation{font-size:11pt}
  @media screen and (max-width:850px){#sheets{overflow-x:auto;padding:10px}.b-print-sheet{zoom:.42;margin:18px auto}body[data-layout=booklet] .b-print-sheet{zoom:.29}header{position:static}header p{font-size:14px}}
  @media print{html,body{margin:0;background:white}header{display:none!important}#sheets{padding:0;overflow:visible}.b-print-sheet{margin:0;box-shadow:none;zoom:1!important}.b-edition-image{-webkit-print-color-adjust:exact;print-color-adjust:exact}.b-paper{print-color-adjust:exact;-webkit-print-color-adjust:exact}.b-paper[hidden]{display:none!important}}
  `;
@@ -13534,24 +13483,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״כשיגדל קצת,״ אמר אבא.
 מענדי הסתכל על האצבעות הקטנטנות ולחש: ״שלום, אח קטן!״
 
-1 / pause
-מה מענדי רוצה לעשות עם אחיו כשיגדל?
-
-1 / moment / כותרת
-שלום, תינוק!
-
-1 / moment / choices / 1
-לבנות מגדל
-
-1 / moment / choices / 2
-לשחק בכדור
-
-1 / moment / choices / 3
-לקרוא ספר
-
-1 / moment / action
-מנופפים ביד ואומרים בקול שקט: ״שלום, אח קטן!״ איזה משחק הייתם רוצים להראות לו?
-
 1 / עם ניקוד
 מֶענְדִי יָשַׁב עַל הַשָּׁטִיחַ וּבָנָה מִגְדָּל מִקּוּבִּיּוֹת.
 פִּתְאוֹם נִפְתְּחָה הַדֶּלֶת. אַבָּא נִכְנַס, וְאַחֲרָיו אִמָּא. בַּיָּדַיִם שֶׁלָּהּ הָיָה תִּינוֹק קָטָן, עָטוּף בִּשְׂמִיכָה.
@@ -13575,24 +13506,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 עכשיו מענדי ראה את כל הפנים הקטנות: אף פצפון, פה קטן ועיניים עצומות.
 ״הוא ישן,״ לחש מענדי.
 ״נכון,״ לחשה סבתא בחזרה. ״ניתן לו לישון.״
-
-2 / pause
-איך אבא עזר למענדי לראות את התינוק?
-
-2 / moment / כותרת
-יש מקום לידיי
-
-2 / moment / choices / 1
-אפשר לזוז קצת?
-
-2 / moment / choices / 2
-גם אני רוצה לראות
-
-2 / moment / choices / 3
-אפשר לשבת לידך?
-
-2 / moment / action
-מפנים מקום קטן לידנו ומזמינים את מי שקורא איתנו לשבת קרוב יותר.
 
 2 / עם ניקוד
 מְעַט אַחַר כָּךְ בָּאוּ סַבָּא וְסָבְתָא. ״מַזָּל טוֹב!״ אָמְרוּ, וְנִיגְּשׁוּ לִרְאוֹת אֶת הַתִּינוֹק בָּעֲרִיסָה.
@@ -13619,24 +13532,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 מענדי הנהן. הם סידרו קובייה ליד קובייה.
 כשהתינוק נרגע, אמא חזרה. ״איפה הגג שלנו?״ שאלה.
 ״כאן!״ מענדי הגיש לה את הקובייה. עכשיו המגדל היה מוכן.
-
-3 / pause
-למה מענדי רצה שאמא תישאר לידו?
-
-3 / moment / כותרת
-בונים ביחד
-
-3 / moment / choices / 1
-עוד לא סיימנו
-
-3 / moment / choices / 2
-כיף לבנות יחד
-
-3 / moment / choices / 3
-צריך להוסיף גג
-
-3 / moment / action
-בונים בידיים מגדל דמיוני: קומה ועוד קומה. מי יוסיף את הגג?
 
 3 / עם ניקוד
 אַחֲרֵי הַבִּיקּוּר חָזַר מֶענְדִי אֶל הַקּוּבִּיּוֹת. אִמָּא הִתְיַישְּׁבָה לְיָדוֹ, וְיַחַד בָּנוּ מִגְדָּל גָּבוֹהַּ.
@@ -13665,24 +13560,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״מה נבנה היום?״ שאלה.
 ״אולי גשר!״ אמר מענדי. ״עם מקום למכוניות לעבור מתחתיו.״
 
-4 / pause
-מה מענדי ביקש מאמא?
-
-4 / moment / כותרת
-רגע עם אמא
-
-4 / moment / choices / 1
-לשבת יחד
-
-4 / moment / choices / 2
-לספר רעיון
-
-4 / moment / choices / 3
-לשחק בקוביות
-
-4 / moment / action
-כל אחד בוחר משהו קטן שהיה רוצה לעשות יחד עם מי שמקריא את הסיפור. אפשר לספר או להראות בתנועה.
-
 4 / עם ניקוד
 לְמָחֳרָת בַּבּוֹקֶר לָבַשׁ מֶענְדִי חוּלְצָה. הַכַּפְתּוֹר הָאַחֲרוֹן לֹא נִסְגַּר בְּקַלּוּת. הוּא נִיסָּה פַּעַם, וְעוֹד פַּעַם, עַד שֶׁהִצְלִיחַ.
 בַּסָּלוֹן הָיוּ אוֹרְחִים. כּוּלָּם דִּיבְּרוּ עַל הַתִּינוֹק.
@@ -13707,24 +13584,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 אמא ואבא צחקו בשקט.
 מענדי הסתכל על אחיו הקטן. התינוק עוד לא יודע לבנות מגדל, אבל לפהק — הוא כבר יודע!
 
-5 / pause
-איך נראה פיהוק של אריה?
-
-5 / moment / כותרת
-מי מפהק?
-
-5 / moment / choices / 1
-פיהוק קטנטן
-
-5 / moment / choices / 2
-פיהוק של אריה
-
-5 / moment / choices / 3
-רק מסתכלים
-
-5 / moment / action
-פותחים את הפה לפיהוק גדול ושקט. עכשיו מנסים פיהוק קטנטן. מי שרוצה רק להסתכל יכול להצטרף אחר כך.
-
 5 / עם ניקוד
 פִּתְאוֹם נִשְׁמַע קוֹל קָטָן מֵהָעֲרִיסָה. הַתִּינוֹק הִתְעוֹרֵר.
 הוּא פָּתַח אֶת הַפֶּה בְּפִיהוּק גָּדוֹל, וְאָז שׁוּב עָצַם אֶת הָעֵינַיִם.
@@ -13748,24 +13607,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 כשהגיעה שבת, כולם ישבו לסעודה. אבא התחיל לשיר ״שלום עליכם״.
 מענדי שר איתו את המילים שהכיר. התינוק נח בעריסה שליד השולחן.
 זאת הייתה השבת הראשונה שלו בבית.
-
-6 / pause
-מה אתם אוהבים בשבת?
-
-6 / moment / כותרת
-שבת בבית שלנו
-
-6 / moment / choices / 1
-ריח החלות
-
-6 / moment / choices / 2
-לשיר יחד
-
-6 / moment / choices / 3
-לשבת עם המשפחה
-
-6 / moment / action
-מזמזמים יחד מנגינה של שבת, או מספרים על דבר אחד שאוהבים לעשות בשבת.
 
 6 / עם ניקוד
 בְּיוֹם שִׁישִׁי הִתְכּוֹנְנוּ בַּבַּיִת לְשַׁבָּת. רֵיחַ שֶׁל חַלּוֹת מִילֵּא אֶת הַמִּטְבָּח.
@@ -13793,24 +13634,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״כן,״ אמר אבא.
 מענדי התכרבל בשמיכה. אבא נשאר לידו, ולאט־לאט מענדי נרדם שוב.
 
-7 / pause
-מה עזר למענדי לחזור לישון?
-
-7 / moment / כותרת
-עוד קצת לידי
-
-7 / moment / choices / 1
-אבא ישב לידי
-
-7 / moment / choices / 2
-השמיכה הנעימה
-
-7 / moment / choices / 3
-לבקש מה שצריך
-
-7 / moment / action
-מניחים את הראש על כפות הידיים כמו על כרית. לוחשים יחד: ״לילה טוב״.
-
 7 / עם ניקוד
 בַּלַּיְלָה הִתְעוֹרֵר מֶענְדִי לְקוֹל הַבֶּכִי שֶׁל הַתִּינוֹק.
 הוּא מָשַׁךְ אֶת הַשְּׂמִיכָה וְקָרָא: ״אַבָּא!״
@@ -13836,24 +13659,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 השירה הייתה שמחה, אבל אחרי זמן־מה היה למענדי רועש מדי. ״סבא, אפשר לשבת קצת בצד?״ שאל.
 ״בודאי,״ אמר סבא. הם מצאו פינה שקטה וישבו יחד.
 
-8 / pause
-מה אפשר לעשות כשבחגיגה רועש לנו מדי?
-
-8 / moment / כותרת
-חגיגה בקצב שלנו
-
-8 / moment / choices / 1
-לשבת קצת בצד
-
-8 / moment / choices / 2
-לגשת למבוגר
-
-8 / moment / choices / 3
-לבקש מקום שקט
-
-8 / moment / action
-מוחאים כפיים בעדינות כמו בחגיגה, ואז עוצרים ומקשיבים לשקט. אפשר לבחור רק באחד מהם.
-
 8 / עם ניקוד
 הִגִּיעַ יוֹם הַבְּרִית. מֶענְדִי לָבַשׁ חוּלְצָה לְבָנָה וַחֲגִיגִית.
 הָיוּ שָׁם הַרְבֵּה אֲנָשִׁים. מֶענְדִי עָמַד לְיַד סַבָּא וְהִסְתַּכֵּל סָבִיב.
@@ -13877,24 +13682,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 התינוק הזיז יד קטנה והביט לעברו.
 מענדי חייך. ״כשתגדל, נבנה יחד מגדל!״
 בינתיים הוא נשאר לשבת ליד אמא והסתכל על אחיו.
-
-9 / pause
-איך אפשר להגיד שלום לתינוק?
-
-9 / moment / כותרת
-שלום קטן
-
-9 / moment / choices / 1
-לנופף ביד
-
-9 / moment / choices / 2
-לדבר בקול נעים
-
-9 / moment / choices / 3
-לשבת יחד לידו
-
-9 / moment / action
-כל אחד ממציא ״שלום״ קטן משלו: במילה, בחיוך או בנפנוף יד.
 
 9 / עם ניקוד
 הַיָּמִים עָבְרוּ, וּמֶענְדִי הִכִּיר אֶת אָחִיו קְצָת יוֹתֵר.
@@ -13920,24 +13707,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״ואני אוהבת להיות איתך,״ אמרה אמא. ״עכשיו אנחנו כאן יחד.״
 מענדי הפך דף. ״ומה קורה כאן?״ שאל. אמא המשיכה לקרוא.
 
-10 / pause
-איזה סיפור אתם אוהבים לקרוא יחד?
-
-10 / moment / כותרת
-הספר האהוב
-
-10 / moment / choices / 1
-סיפור מצחיק
-
-10 / moment / choices / 2
-סיפור לפני השינה
-
-10 / moment / choices / 3
-סיפור אחר שאוהבים
-
-10 / moment / action
-נזכרים בדמות מספר אהוב. אפשר לספר עליה דבר אחד, או להראות איך היא זזה.
-
 10 / עם ניקוד
 בָּעֶרֶב הָיָה אַבָּא עִם הַתִּינוֹק. מֶענְדִי הֵבִיא לְאִמָּא אֶת הַסֵּפֶר הָאָהוּב עָלָיו.
 ״עַכְשָׁיו הַסִּיפּוּר שֶׁלָּנוּ?״ שָׁאַל.
@@ -13961,24 +13730,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״נכון,״ אמרה אמא. ״ובינתיים נבנה אנחנו.״
 מענדי מצא את הקובייה המתאימה והושיט אותה לאמא.
 ״הנה הגג!״
-
-11 / pause
-איזה מגדל הייתם בונים יחד?
-
-11 / moment / כותרת
-המגדל שלנו
-
-11 / moment / choices / 1
-מגדל גבוה
-
-11 / moment / choices / 2
-מגדל עם גשר
-
-11 / moment / choices / 3
-מגדל עם חצר
-
-11 / moment / action
-מציירים באוויר את המגדל שלנו. כל אחד מוסיף לו דבר אחד: חלון, דלת, גשר או משהו אחר.
 
 11 / עם ניקוד
 לְמָחֳרָת יָשַׁב מֶענְדִי שׁוּב עַל הַשָּׁטִיחַ. הַפַּעַם הוּא בָּנָה מִגְדָּל גָּבוֹהַּ עוֹד יוֹתֵר.
@@ -14018,24 +13769,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״כְּשֶׁיִּגְדַּל קְצָת,״ אָמַר אַבָּא.
 חַנִּי הִסְתַּכְּלָה עַל הָאֶצְבָּעוֹת הַקְּטַנְטַנּוֹת וְלָחֲשָׁה: ״שָׁלוֹם, אָח קָטָן!״
 
-1 / pause
-מה חני רוצה לעשות עם אחיה כשיגדל?
-
-1 / moment / כותרת
-שלום, תינוק!
-
-1 / moment / choices / 1
-לבנות מגדל
-
-1 / moment / choices / 2
-לשחק בכדור
-
-1 / moment / choices / 3
-לקרוא ספר
-
-1 / moment / action
-מנופפים ביד ואומרים בקול שקט: ״שלום, אח קטן!״ איזה משחק הייתם רוצים להראות לו?
-
 2 / כותרת
 סבא וסבתא באים
 
@@ -14059,24 +13792,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 עַכְשָׁיו חַנִּי רָאֲתָה אֶת כָּל הַפָּנִים הַקְּטַנּוֹת: אַף פִּצְפּוֹן, פֶּה קָטָן וְעֵינַיִם עֲצוּמוֹת.
 ״הוּא יָשֵׁן,״ לָחֲשָׁה חַנִּי.
 ״נָכוֹן,״ לָחֲשָׁה סָבְתָא בַּחֲזָרָה. ״נִתֵּן לוֹ לִישׁוֹן.״
-
-2 / pause
-איך אבא עזר לחני לראות את התינוק?
-
-2 / moment / כותרת
-יש מקום לידיי
-
-2 / moment / choices / 1
-אפשר לזוז קצת?
-
-2 / moment / choices / 2
-גם אני רוצה לראות
-
-2 / moment / choices / 3
-אפשר לשבת לידך?
-
-2 / moment / action
-מפנים מקום קטן לידנו ומזמינים את מי שקורא איתנו לשבת קרוב יותר.
 
 3 / כותרת
 בונים מגדל
@@ -14106,24 +13821,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 כְּשֶׁהַתִּינוֹק נִרְגַּע, אִמָּא חָזְרָה. ״אֵיפֹה הַגַּג שֶׁלָּנוּ?״ שָׁאֲלָה.
 ״כָּאן!״ חַנִּי הִגִּישָׁה לָהּ אֶת הַקּוּבִּיָּיה. עַכְשָׁיו הַמִּגְדָּל הָיָה מוּכָן.
 
-3 / pause
-למה חני רצתה שאמא תישאר לידה?
-
-3 / moment / כותרת
-בונים ביחד
-
-3 / moment / choices / 1
-עוד לא סיימנו
-
-3 / moment / choices / 2
-כיף לבנות יחד
-
-3 / moment / choices / 3
-צריך להוסיף גג
-
-3 / moment / action
-בונים בידיים מגדל דמיוני: קומה ועוד קומה. מי יוסיף את הגג?
-
 4 / כותרת
 אמא, תראי!
 
@@ -14150,24 +13847,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״מָה נִבְנֶה הַיּוֹם?״ שָׁאֲלָה.
 ״אוּלַי גֶּשֶׁר!״ אָמְרָה חַנִּי. ״עִם מָקוֹם לְמְכוֹנִיּוֹת לַעֲבוֹר מִתַּחְתָּיו.״
 
-4 / pause
-מה חני ביקשה מאמא?
-
-4 / moment / כותרת
-רגע עם אמא
-
-4 / moment / choices / 1
-לשבת יחד
-
-4 / moment / choices / 2
-לספר רעיון
-
-4 / moment / choices / 3
-לשחק בקוביות
-
-4 / moment / action
-כל אחד בוחר משהו קטן שהיה רוצה לעשות יחד עם מי שמקריא את הסיפור. אפשר לספר או להראות בתנועה.
-
 5 / כותרת
 פיהוק של אריה
 
@@ -14189,24 +13868,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״שֶׁלִּי זֶה פִּיהוּק שֶׁל אַרְיֵה!״ אָמְרָה.
 אִמָּא וְאַבָּא צָחֲקוּ בְּשֶׁקֶט.
 חַנִּי הִסְתַּכְּלָה עַל אָחִיהָ הַקָּטָן. הַתִּינוֹק עוֹד לֹא יוֹדֵעַ לִבְנוֹת מִגְדָּל, אֲבָל לְפַהֵק — הוּא כְּבָר יוֹדֵעַ!
-
-5 / pause
-איך נראה פיהוק של אריה?
-
-5 / moment / כותרת
-מי מפהק?
-
-5 / moment / choices / 1
-פיהוק קטנטן
-
-5 / moment / choices / 2
-פיהוק של אריה
-
-5 / moment / choices / 3
-רק מסתכלים
-
-5 / moment / action
-פותחים את הפה לפיהוק גדול ושקט. עכשיו מנסים פיהוק קטנטן. מי שרוצה רק להסתכל יכול להצטרף אחר כך.
 
 6 / כותרת
 שבת ראשונה
@@ -14234,24 +13895,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 חַנִּי שָׁרָה אִיתּוֹ אֶת הַמִּילִּים שֶׁהִכִּירָה. הַתִּינוֹק נָח בָּעֲרִיסָה שֶׁלְּיַד הַשּׁוּלְחָן.
 זֹאת הָיְיתָה הַשַּׁבָּת הָרִאשׁוֹנָה שֶׁלּוֹ בַּבַּיִת.
 
-6 / pause
-מה אתם אוהבים בשבת?
-
-6 / moment / כותרת
-שבת בבית שלנו
-
-6 / moment / choices / 1
-ריח החלות
-
-6 / moment / choices / 2
-לשיר יחד
-
-6 / moment / choices / 3
-לשבת עם המשפחה
-
-6 / moment / action
-מזמזמים יחד מנגינה של שבת, או מספרים על דבר אחד שאוהבים לעשות בשבת.
-
 7 / כותרת
 לילה טוב
 
@@ -14278,24 +13921,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״כֵּן,״ אָמַר אַבָּא.
 חַנִּי הִתְכַּרְבְּלָה בַּשְּׂמִיכָה. אַבָּא נִשְׁאַר לְיָדָהּ, וּלְאַט־לְאַט חַנִּי נִרְדְּמָה שׁוּב.
 
-7 / pause
-מה עזר לחני לחזור לישון?
-
-7 / moment / כותרת
-עוד קצת לידי
-
-7 / moment / choices / 1
-אבא ישב לידי
-
-7 / moment / choices / 2
-השמיכה הנעימה
-
-7 / moment / choices / 3
-לבקש מה שצריך
-
-7 / moment / action
-מניחים את הראש על כפות הידיים כמו על כרית. לוחשים יחד: ״לילה טוב״.
-
 8 / כותרת
 יום הברית
 
@@ -14319,24 +13944,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״שָׁלוֹם, אָח קָטָן!״ לָחֲשָׁה חַנִּי.
 הַשִּׁירָה הָיְיתָה שְׂמֵחָה, אֲבָל אַחֲרֵי זְמַן־מָה הָיָה לְחַנִּי רוֹעֵשׁ מִדַּי. ״סַבָּא, אֶפְשָׁר לָשֶׁבֶת קְצָת בַּצַּד?״ שָׁאֲלָה.
 ״בְּוַדַּאי,״ אָמַר סַבָּא. הֵם מָצְאוּ פִּינָּה שְׁקֵטָה וְיָשְׁבוּ יַחַד.
-
-8 / pause
-מה אפשר לעשות כשבחגיגה רועש לנו מדי?
-
-8 / moment / כותרת
-חגיגה בקצב שלנו
-
-8 / moment / choices / 1
-לשבת קצת בצד
-
-8 / moment / choices / 2
-לגשת למבוגר
-
-8 / moment / choices / 3
-לבקש מקום שקט
-
-8 / moment / action
-מוחאים כפיים בעדינות כמו בחגיגה, ואז עוצרים ומקשיבים לשקט. אפשר לבחור רק באחד מהם.
 
 9 / כותרת
 שלום, אח קטן
@@ -14362,24 +13969,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 חַנִּי חִיְּיכָה. ״כְּשֶׁתִּגְדַּל, נִבְנֶה יַחַד מִגְדָּל!״
 בֵּינְתַיִים הִיא נִשְׁאֲרָה לָשֶׁבֶת לְיַד אִמָּא וְהִסְתַּכְּלָה עַל אָחִיהָ.
 
-9 / pause
-איך אפשר להגיד שלום לתינוק?
-
-9 / moment / כותרת
-שלום קטן
-
-9 / moment / choices / 1
-לנופף ביד
-
-9 / moment / choices / 2
-לדבר בקול נעים
-
-9 / moment / choices / 3
-לשבת יחד לידו
-
-9 / moment / action
-כל אחד ממציא ״שלום״ קטן משלו: במילה, בחיוך או בנפנוף יד.
-
 10 / כותרת
 סיפור עם אמא
 
@@ -14404,24 +13993,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״וַאֲנִי אוֹהֶבֶת לִהְיוֹת אִיתָּךְ,״ אָמְרָה אִמָּא. ״עַכְשָׁיו אֲנַחְנוּ כָּאן יַחַד.״
 חַנִּי הָפְכָה דַּף. ״וּמָה קוֹרֶה כָּאן?״ שָׁאֲלָה. אִמָּא הִמְשִׁיכָה לִקְרוֹא.
 
-10 / pause
-איזה סיפור אתם אוהבים לקרוא יחד?
-
-10 / moment / כותרת
-הספר האהוב
-
-10 / moment / choices / 1
-סיפור מצחיק
-
-10 / moment / choices / 2
-סיפור לפני השינה
-
-10 / moment / choices / 3
-סיפור אחר שאוהבים
-
-10 / moment / action
-נזכרים בדמות מספר אהוב. אפשר לספר עליה דבר אחד, או להראות איך היא זזה.
-
 11 / כותרת
 מגדל לכולנו
 
@@ -14445,24 +14016,6 @@ function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed=
 ״נָכוֹן,״ אָמְרָה אִמָּא. ״וּבֵינְתַיִים נִבְנֶה אֲנַחְנוּ.״
 חַנִּי מָצְאָה אֶת הַקּוּבִּיָּיה הַמַּתְאִימָה וְהוֹשִׁיטָה אוֹתָהּ לְאִמָּא.
 ״הִנֵּה הַגַּג!״
-
-11 / pause
-איזה מגדל הייתם בונים יחד?
-
-11 / moment / כותרת
-המגדל שלנו
-
-11 / moment / choices / 1
-מגדל גבוה
-
-11 / moment / choices / 2
-מגדל עם גשר
-
-11 / moment / choices / 3
-מגדל עם חצר
-
-11 / moment / action
-מציירים באוויר את המגדל שלנו. כל אחד מוסיף לו דבר אחד: חלון, דלת, גשר או משהו אחר.
 
 
 תעלומת המתנה

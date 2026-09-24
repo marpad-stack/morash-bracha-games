@@ -14,18 +14,13 @@ const out=path.join(__dirname,'review-evidence'),checks=[],base=process.env.B_UR
  for(const width of [320,390,768,1440]){
   await page.setViewportSize({width,height:1100});await page.evaluate(()=>{bSetView('read');BStory.go(5)});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
-  assert.equal(await page.locator('#bBookSpread .b-picture-spread').count(),1);
+  assert.equal(await page.locator('#bBookSpread .b-paper').count(),width>=900?2:1);
   await page.screenshot({path:path.join(out,'edition-'+width+'.png')});
   await page.locator('#gridBtn').click();assert.equal(await page.locator('#bContents [data-page]').count(),15);await page.locator('#bContents [data-page="19"]').click();
   await page.locator('#bookRead').click();assert(await page.evaluate(()=>document.body.classList.contains('b-reading-focus')));await page.locator('#bookRead').click();
  }ok('320/390/768/1440 layouts, RTL spreads, contents and reading mode');
  await page.evaluate(()=>BStory.go(20));await page.locator('[data-reading-toggle]:visible').first().click();assert.equal(await page.locator('#bBookSpread .b-prose').textContent(),approved.scenes[9].text.replace(/\n/g,''));await page.locator('[data-reading-toggle]:visible').first().click();
- const records=await page.evaluate(()=>JSON.stringify(bRecords));
- for(let i=0;i<11;i++){
-  await page.evaluate(i=>BStory.openPause(i),i);const chips=page.locator('.b-moment-choices button');await chips.nth(0).click();await chips.nth(1).click();assert.equal(await page.locator('.b-moment-choices [aria-pressed=true]').count(),2);
-  await page.locator('.b-moment-action').click();assert(await page.locator('.b-moment-do').isVisible());await page.locator('.b-moment-continue').click();assert.equal(await page.locator('#bPauseDialog').isVisible(),false);
- }
- assert.equal(await page.evaluate(()=>JSON.stringify(bRecords)),records);ok('All eleven optional reading moments support multiple answers, action reveal and continuation without scoring feelings');
+ assert.equal(await page.locator('[data-pause]').count(),0);await page.evaluate(()=>BStory.go(24));assert.equal(await page.locator('[data-book-fun]').count(),3);ok('No inline questions; three end activities');
  await page.evaluate(()=>BStory.go(19));await page.reload({waitUntil:'domcontentloaded'});assert.equal(await page.evaluate(()=>p),19);ok('Edition bookmark persists');
  for(const width of [1440,390]){
   await page.setViewportSize({width,height:1100});await page.evaluate(()=>bSetView('read'));
@@ -34,12 +29,12 @@ const out=path.join(__dirname,'review-evidence'),checks=[],base=process.env.B_UR
    await pop.emulateMedia({media:'screen'});if(layout==='booklet')await pop.locator('#layout').selectOption(layout);
    await pop.waitForFunction(()=>document.body.dataset.printReady==='true',{},{timeout:90000});await pop.evaluate(()=>document.fonts.ready);await pop.emulateMedia({media:'print'});
    const values=await pop.locator('[data-book-page]').evaluateAll(xs=>xs.map(x=>+x.dataset.bookPage));assert.deepEqual([...values].sort((a,b)=>a-b),Array.from({length:28},(_,i)=>i));
-   assert.equal(await pop.locator('.b-print-sheet').count(),layout==='a4'?28:14);assert.equal(await pop.locator('img[data-branded=true]').count(),24);
+   assert.equal(await pop.locator('.b-print-sheet').count(),layout==='a4'?28:14);assert.equal(await pop.locator('img[data-branded=true]').count(),13);
    const over=await pop.locator('.b-paper').evaluateAll(xs=>xs.filter(x=>x.scrollHeight>x.clientHeight+1).map(x=>x.dataset.bookPage));assert.deepEqual(over,[],layout+' overflowing pages');
    if(layout==='booklet')assert.deepEqual(values.slice(0,4),[0,27,26,1]);
    await pop.pdf({path:path.join(out,'edition-'+layout+'-'+width+'.pdf'),preferCSSPageSize:true,printBackground:true});
   }await pop.close();
- }ok('Four A4 print cases: 84 PDF pages, every logical page exactly once, RTL folded order, all 24 artwork instances branded, no clipped paper');
+ }ok('Four A4 print cases: 84 PDF pages, every logical page exactly once, RTL folded order, all 13 artwork instances branded, no clipped paper');
  await page.setViewportSize({width:390,height:844});await page.evaluate(()=>bSetView('play'));assert.equal(await page.locator('.gbtn:visible').count(),6);
  // Run the existing completion journeys against the new book integration.
  const old=fs.readFileSync(path.join(__dirname,'verify-b-final.cjs'),'utf8');

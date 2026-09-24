@@ -11,8 +11,8 @@ body+='<p><a href="../../b-story.html">פתיחת הספר המאויר עם מ�
 body+='<details class="chapter"><summary>מה שיניתי ולמה — מול הערות הכותבות</summary><table><tr><th>עמודים במקור</th><th>הקושי</th><th>השינוי המוצע</th></tr>'+''.join('<tr><td>'+esc(x['pages'])+'</td><td>'+esc(x['issue'])+'</td><td>'+esc(x['change'])+'</td></tr>' for x in d['editorial'])+'</table></details>'
 text=[d['title'],d['subtitle'],d['status'],'',d['readingNote']]
 for x in d['scenes']:
-    body+='<section class="chapter"><p class="meta">סצנה '+str(x['id'])+' · מתאימה לעמודי המקור '+', '.join(map(str,x['pages']))+'</p><h2>'+esc(x['title'])+'</h2><p class="story">'+esc(x['text'])+'</p><p class="question"><b>עצירה לשיחה — רק אם רוצים:</b> '+esc(x['pause'])+'</p></section>'
-    text+=['','## '+x['title'],'',x['text'],'','לשיחה, אם רוצים: '+x['pause']]
+    body+='<section class="chapter"><p class="meta">סצנה '+str(x['id'])+' · מתאימה לעמודי המקור '+', '.join(map(str,x['pages']))+'</p><h2>'+esc(x['title'])+'</h2><p class="story">'+esc(x['text'])+'</p></section>'
+    text+=['','## '+x['title'],'',x['text']]
 for x in d['closingActivities']:
     body+='<section class="chapter"><h2>'+esc(x['title'])+'</h2><p class="story">'+esc(x['text'])+'</p></section>'
     text+=['','## '+x['title'],'',x['text']]

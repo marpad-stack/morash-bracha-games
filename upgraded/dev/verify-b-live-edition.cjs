@@ -10,6 +10,6 @@ const {chromium}=require('C:/Users/user/.cache/codex-runtimes/codex-primary-runt
   return{url:location.href,variants:Object.keys(BStory.editions),bookPagesPerVariant:BStory.pages.length,images,unavailable:images.filter(i=>!(i.width>=640)),overflow:document.documentElement.scrollWidth>innerWidth};
  });
  await p.locator('[data-character=chani]').click();await p.evaluate(()=>BStory.go(6));assert.equal(await p.evaluate(()=>BStory.edition.character),'chani');assert((await p.locator('.b-prose').textContent()).includes('חַנִּי'));
- await p.locator('[data-pause]').click();assert(await p.locator('#bPauseDialog').isVisible());await p.keyboard.press('Escape');
+ await p.evaluate(()=>BStory.go(24));await p.locator('[data-book-fun=yawn]').click();assert(await p.locator('#bBookFun').isVisible());await p.keyboard.press('Escape');
  report.errors=errors;assert.deepEqual(errors,[]);assert.equal(report.overflow,false);fs.writeFileSync(path.join(__dirname,'review-evidence/b-edition-live-audit.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));await b.close();
 })().catch(e=>{console.error(e);process.exit(1)});

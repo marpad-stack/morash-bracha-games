@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "mendy: complete illustrations on facing pages with matching backgrounds; full prose, no inline questions; three end activities; four viewports and four print cases",
+    "chani: complete illustrations on facing pages with matching backgrounds; full prose, no inline questions; three end activities; four viewports and four print cases"
+  ],
+  "errors": [],
+  "printCases": 8,
+  "pdfPages": 168,
+  "physicalDevicesTested": false
+}

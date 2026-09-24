@@ -26,10 +26,9 @@ def compile_manuscript(dev):
         for i, scene in enumerate(source['scenes']):
             n = '\n'.join(choose(line) for line in scene['lines'])
             title = scene.get('titleGirl',scene['title']) if gender else scene['title']
-            assert n and len(scene['moment']['choices']) == 3
+            assert n
             edition['scenes'].append(dict(id=i+1,pages=previous['scenes'][i]['pages'],
-                title=strip(title),titleN=title,text=plain(n),n=n,
-                pause=choose(scene['pause']),moment=scene['moment']))
+                title=strip(title),titleN=title,text=plain(n),n=n))
         editions.append(edition)
     def save(name, content):
         (dev/name).write_text(json.dumps(content,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
@@ -39,16 +38,16 @@ def compile_manuscript(dev):
     previous['scenes']=[{k:v for k,v in s.items() if k not in ['n','titleN']} for s in boy['scenes']]
     previous['revisionNotes']=['משפטים פשוטים, דיאלוגים טבעיים ורצף ברור בין הימים.',
         'המגדל חוזר לאורך הסיפור ומחבר את הפתיחה לסיום.',
-        'הכותרות מופיעות בתוכן העניינים בלבד; באתר הטקסט משתלב במפתח המאויר.',
+        'כפולות עם איור מלא וטקסט בעמוד נפרד, על רקע משותף המותאם לאיור.',
         'בברית מענדי בחולצה לבנה וחני בשמלה לבנה חגיגית וצנועה.']
-    previous['productionNotes']=['הטקסט חי ונגיש גם כשהאיור לא זמין, ומשתלב בו בעיצוב הספר.',
+    previous['productionNotes']=['הטקסט חי ונגיש גם כשהאיור לא זמין, ובעמוד נפרד לצד האיור.',
         'שתי גרסאות עם התאמה מפורשת של המשפטים, הניקוד והאיורים.',
-        '11 עצירות משחק ושיחה, בלי ניקוד ובלי חובה להשתתף.',
-        '11 מפתחים מאוירים באתר; 28 עמודים בהדפסת A4 או חוברת מקופלת.']
+        'אין שאלות במהלך הסיפור. בסוף שלוש פעילויות קצרות: בניית מגדל, פיהוקים וחיפוש באיור.',
+        '28 עמודים: כפולות במחשב, עמוד בודד בטלפון; הדפסת A4 או חוברת מקופלת.']
     save('story-edit-proposal.json',previous)
     save('story-edition-nikud.json',[dict(title=s['titleN'],text=s['n']) for s in boy['scenes']])
     save('story-chani.json',girl)
 
 if __name__ == '__main__':
     compile_manuscript(Path(__file__).resolve().parent)
-    print('Compiled 11 story scenes and reading moments for Mendy and Chani.')
+    print('Compiled 11 story scenes and end activities for Mendy and Chani.')
