@@ -1,5 +1,5 @@
 {
- "run": "2026-10-04T14:39:44",
+ "run": "2026-10-04T19:23:03",
  "parts": [
   {
    "part": "a",
@@ -16,7 +16,7 @@
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
     "https://fonts.gstatic.com",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha#game-a"
    ],
    "external_scripts": [],
    "google_fonts": [
@@ -59,7 +59,7 @@
    "external_urls": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha#game-b"
    ],
    "external_scripts": [],
    "google_fonts": [
@@ -102,7 +102,7 @@
    "kit_audience": "רמות לגילי 4+, 7+, 10+ · הרפתקה וחשיבה",
    "external_urls": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha#game-c"
    ],
    "external_scripts": [],
    "google_fonts": [
@@ -133,7 +133,7 @@
   {
    "part": "d",
    "file": "d-mitzvot.html",
-   "kb": 910,
+   "kb": 909,
    "title": "מסע המצוות · מורה שמיים",
    "h1": [],
    "kit_title": "מסע המצוות",
@@ -143,7 +143,7 @@
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
     "https://fonts.gstatic.com",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha#game-d"
    ],
    "external_scripts": [],
    "google_fonts": [
@@ -178,7 +178,7 @@
    "part": "e",
    "file": "e-time.html",
    "kb": 813,
-   "title": "מסע בזמן — סדר יום יהודי",
+   "title": "מסע בזמן – סדר יום יהודי",
    "h1": [
     ""
    ],
@@ -189,7 +189,7 @@
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&family=Noto+Sans+Hebrew:wght@400;600;700&display=swap",
     "https://fonts.gstatic.com",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha#game-e"
    ],
    "external_scripts": [],
    "google_fonts": [
@@ -233,7 +233,7 @@
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
     "https://fonts.gstatic.com",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha#game-f"
    ],
    "external_scripts": [],
    "google_fonts": [
@@ -274,7 +274,7 @@
    "kit_audience": "מגיל 6 בליווי · קריאה, חקירה וחשיבה",
    "external_urls": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha#game-g"
    ],
    "external_scripts": [],
    "google_fonts": [
@@ -305,7 +305,7 @@
   {
    "part": "h",
    "file": "h-card-studio.html",
-   "kb": 448,
+   "kb": 463,
    "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "h1": [
     "כרטיס מכל הלב"
@@ -314,7 +314,7 @@
    "kit_audience": "מגיל 4 בליווי · יצירה והבעה",
    "external_urls": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha#game-h"
    ],
    "external_scripts": [],
    "google_fonts": [
@@ -357,8 +357,8 @@
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.gstatic.com",
-    "https://morash.co.il/bracha",
     "https://morash.co.il/bracha#birth-form",
+    "https://morash.co.il/bracha#game-i",
     "https://morash.co.il/contact",
     "https://wa.me/?text=",
     "https://www.btl.gov.il/benefits/Pages/maanakleda.aspx",
@@ -415,7 +415,7 @@
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.gstatic.com",
-    "https://morash.co.il/bracha",
+    "https://morash.co.il/bracha#game-j",
     "https://wa.me/?text="
    ],
    "external_scripts": [],
