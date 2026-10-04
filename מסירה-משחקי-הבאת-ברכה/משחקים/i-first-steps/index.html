@@ -428,7 +428,7 @@ html body.night[data-morash-part=i] .intro .bracha-part-title{color:#8FB0DC}
     </div>
     <h1 class="bracha-part-title">צעדים ראשונים</h1>
     <h2 class="intro-greet">מזל טוב! <em>נכיר רגע?</em></h2>
-    <p class="sub">כמה שאלות קטנות, ונכין לך מפה אישית לשבועות הראשונים — רק מה שרלוונטי לך, עם תאריכים אמיתיים. הכול נשאר אצלך במכשיר.</p>
+    <p class="sub">כמה שאלות קטנות, ונכין לך מפה אישית לשבועות הראשונים – רק מה שרלוונטי לך, עם תאריכים אמיתיים. הכול נשאר אצלך במכשיר.</p>
 
     <div class="row2">
       <div class="field">
@@ -451,7 +451,7 @@ html body.night[data-morash-part=i] .intro .bracha-part-title{color:#8FB0DC}
     </div>
 
     <div class="field">
-      <label>ואיך קוראים לתינוק/ת? <span class="hint">אם עוד לא — נשאיר ריק ונחכה</span></label>
+      <label>ואיך קוראים לתינוק/ת? <span class="hint">אם עוד לא – נשאיר ריק ונחכה</span></label>
       <input type="text" id="fBaby" placeholder="עדיין מתלבטים">
     </div>
 
@@ -525,7 +525,7 @@ html body.night[data-morash-part=i] .intro .bracha-part-title{color:#8FB0DC}
       </div>
     </div>
 
-    <button class="btn btn-main" id="startBtn" style="width:100%">מוכן? נבנה את המפה שלי</button>
+    <button class="btn btn-main" id="startBtn" style="width:100%">מוכנה? נבנה את המפה שלי</button>
     <p class="privacy">הפרטים נשמרים במכשיר שלך בלבד ואינם נשלחים לשום מקום.</p>
   </section>
 
@@ -588,7 +588,7 @@ html body.night[data-morash-part=i] .intro .bracha-part-title{color:#8FB0DC}
         </div>
       </div>
       <div class="moments" id="moments"></div>
-      <div class="empty" id="momentsEmpty" style="margin-top:16px">עוד אין רגעים. הראשון תמיד הכי קטן — נשימה, חיוך, יד שתפסה אצבע.</div>
+      <div class="empty" id="momentsEmpty" style="margin-top:16px">עוד אין רגעים. הראשון תמיד הכי קטן – נשימה, חיוך, יד שתפסה אצבע.</div>
     </div>
 
     <footer class="note">
@@ -612,7 +612,7 @@ var store=(function(){var m={};try{localStorage.setItem('__t','1');localStorage.
 var KEY='shifra-v4';
 var data={profile:null,checked:{},notes:{},custom:[],snooze:{},moments:[],night:false};
 try{var raw=store.get(KEY);if(raw){data=Object.assign(data,JSON.parse(raw));}}catch(e){}
-function save(){try{store.set(KEY,JSON.stringify(data));return true;}catch(e){toast('אין מקום לשמור — נסי למחוק תמונה ישנה');return false;}}
+function save(){try{store.set(KEY,JSON.stringify(data));return true;}catch(e){toast('אין מקום לשמור – נסי למחוק תמונה ישנה');return false;}}
 
 /* ================= עזרים ================= */
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];});}
@@ -633,7 +633,7 @@ function baby(){
   return P.sex==='m'?'התינוק':(P.sex==='f'?'התינוקת':'התינוק/ת');
 }
 function fill(s){
-  return String(s).replace(/\{baby\}/g,baby()).replace(/\{([^{}|]*)\|([^{}|]*)\|([^{}|]*)(?:\|([^{}|]*))?\}/g,function(_,m,f,n,p){
+  return String(s).replace(/ל\{baby\}/g,function(){var b=baby();return (!P.babyName&&b.charAt(0)==='ה')?'ל'+b.slice(1):'ל'+b;}).replace(/\{baby\}/g,baby()).replace(/\{([^{}|]*)\|([^{}|]*)\|([^{}|]*)(?:\|([^{}|]*))?\}/g,function(_,m,f,n,p){
     var g=gform();return g==='m'?m:(g==='f'?f:(g==='p'&&p!=null?p:n));
   });
 }
@@ -652,7 +652,7 @@ var DAYMSG=[
   {d:1,i:'🏠',t:'ברוכים הבאים הביתה',m:'היום לא צריך לעשות כלום. רק להיות.'},
   {d:3,i:'🌱',t:'יום שלישי',m:'הגוף עוד לומד, וזה בסדר לבקש עזרה בכל דבר קטן.'},
   {d:7,i:'🎈',t:'שבוע!',m:'עברת הרבה יותר ממה שנדמה. שבוע שלם.'},
-  {d:14,i:'🍼',t:'שבועיים',m:'אם עוד לא היית בטיפת חלב — זה הזמן. ואם כן, יופי.'},
+  {d:14,i:'🍼',t:'שבועיים',m:'אם עוד לא היית בטיפת חלב – זה הזמן. ואם כן, יופי.'},
   {d:21,i:'🌸',t:'שלושה שבועות',m:'רוב הנשים אומרות שכאן משהו מתחיל להסתדר. גם אם לא — זה יגיע.'},
   {d:30,i:'🌙',t:'חודש',m:'רגע לעצור ולהסתכל אחורה. את כבר לא אותה אחת שיצאה מבית החולים.'},
   {d:40,i:'✨',t:'ארבעים יום',m:'תקופה עתיקה ומשמעותית. מגיע לך משהו קטן רק בשבילך היום.'},
@@ -665,38 +665,38 @@ function dayMsg(){var n=dayNum();if(n==null)return null;for(var i=0;i<DAYMSG.len
 /* ================= תוכן ================= */
 var CATS=[
  {emoji:'💛',name:'שפרה ופועה',tasks:[
-  {n:0,id:'reg',t:'להירשם לשפרה ופועה של מורה שמיים',w:'כמה דקות',u:1,show:'notreg',note:'הרשמה קצרה — ואז מחכה לך כל מה שהכנו בשבילך.',link:{label:'להרשמה',href:'https://morash.co.il/bracha#birth-form'}},
-  {n:0,id:'gift',t:'לוודא שחבילת המתנות בדרך אלייך 🎁',w:'בהקדם',show:'nogift',note:'אם נרשמת ועדיין לא הגיעה — נשמח לבדוק. לחצי ותכתבי לנו.',link:{label:'לכתוב לנו',href:'https://morash.co.il/contact'}}
+  {n:0,id:'reg',t:'להירשם לשפרה ופועה של מורה שמיים',w:'כמה דקות',u:1,show:'notreg',note:'הרשמה קצרה – ואז מחכה לך כל מה שהכנו בשבילך.',link:{label:'להרשמה',href:'https://morash.co.il/bracha#birth-form'}},
+  {n:0,id:'gift',t:'לוודא שחבילת המתנות בדרך אלייך 🎁',w:'בהקדם',show:'nogift',note:'אם נרשמת ועדיין לא הגיעה – נשמח לבדוק. לחצי וכתבי לנו.',link:{label:'לכתוב לנו',href:'https://morash.co.il/contact'}}
  ]},
  {emoji:'💰',name:'הזכויות שמגיעות לך',tasks:[
-  {n:1,t:'לוודא שמענק הלידה נחת בחשבון',w:'תוך חודש מהלידה',due:{base:'birth',d:30},note:'המענק מגיע לבד תוך חודש מהלידה — לא צריך להגיש כלום, רק להציץ שהוא שם.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
-  {n:2,t:'לבדוק את דמי הלידה ולהגיש אם צריך',w:'שבוע-שבועיים',u:1,due:{base:'birth',d:14},show:'employee',note:'אורך התקופה בתשלום תלוי בוותק שלך לפני הלידה.',link:{label:'btl.gov.il',href:'https://www.btl.gov.il'}},
-  {n:3,t:'להגיש תביעה לדמי לידה — כעצמאית',w:'שבועיים',u:1,due:{base:'birth',d:14},show:'self',note:'אצל עצמאיות זה לא קורה לבד — צריך להגיש. זה קצר יותר ממה שזה נשמע.',link:{label:'טופס מקוון',href:'https://www.btl.gov.il'}},
+  {n:1,t:'לוודא שמענק הלידה נחת בחשבון',w:'תוך חודש מהלידה',due:{base:'birth',d:30},note:'המענק מגיע לבד תוך חודש מהלידה – לא צריך להגיש כלום, רק להציץ שהוא שם.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
+  {n:2,t:'לבדוק את דמי הלידה ולהגיש אם צריך',w:'שבוע – שבועיים',u:1,due:{base:'birth',d:14},show:'employee',note:'אורך התקופה בתשלום תלוי בוותק שלך לפני הלידה.',link:{label:'btl.gov.il',href:'https://www.btl.gov.il'}},
+  {n:3,t:'להגיש תביעה לדמי לידה – כעצמאית',w:'שבועיים',u:1,due:{base:'birth',d:14},show:'self',note:'אצל עצמאיות זה לא קורה לבד – צריך להגיש. זה קצר יותר ממה שזה נשמע.',link:{label:'טופס מקוון',href:'https://www.btl.gov.il'}},
   {n:38,t:'לבדוק את הזכויות המיוחדות ללידת {baby}',w:'שבועיים',u:1,due:{base:'birth',d:14},show:'multi',note:'בלידה של יותר מתינוק אחד יש תוספת למענק ולתקופת החופשה. שווה שיחה אחת עם ביטוח לאומי.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
   {n:4,t:'להציץ שקצבת הילדים עודכנה',w:'חודש ראשון',due:{base:'birth',d:30},note:'נפתחת לבד עם הרישום. כדאי רק לוודא שפרטי החשבון נכונים.',link:{label:'btl.gov.il',href:'https://www.btl.gov.il'}},
   {n:5,t:'לבדוק הארכת חופשה בגלל האשפוז',w:'בהקדם',u:1,show:'hosp',note:'אשפוז של 15 ימים לפחות מזכה בעד 4 שבועות נוספים בתשלום. שווה לבדוק.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
   {n:6,t:'להציץ ב"חיסכון לכל ילד" של {baby}',w:'תוך חודשיים',due:{base:'birth',d:60},note:'נפתח אוטומטית. אפשר לבחור מסלול ולהוסיף הפקדה קטנה משלכם.',link:{label:'אזור אישי בביטוח לאומי',href:'https://www.btl.gov.il'}}
  ]},
  {emoji:'📝',name:'ניירת קטנה',tasks:[
-  {n:7,t:'לבחור שם',w:'בקצב שלכם',show:'noname',note:'הודעת הלידה כבר נשלחה לבד. השם — כשתרגישו שזה הוא.'},
+  {n:7,t:'לבחור שם',w:'בקצב שלכם',show:'noname',note:'הודעת הלידה כבר נשלחה לבד. השם – כשתרגישו שזה הוא.'},
   {n:8,t:'לוודא ש{baby} {מופיע|מופיעה|מופיע/ה|מופיעים} בשירותי הבריאות',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'לרוב זה קורה לבד דרך הודעת הלידה. הצצה אחת באפליקציה של הקופה מספיקה.'},
   {n:9,t:'להזמין תעודת לידה מלאה (רק אם צריך)',w:'לפי הצורך',note:'דרך רשות האוכלוסין. נדרש לפעמים לרישומים נוספים.',link:{label:'gov.il',href:'https://www.gov.il'}},
-  {n:10,t:'להוסיף את {baby} לביטוח המשלים או הפרטי',w:'חודש ראשון',due:{base:'birth',d:30},show:'private',note:'שיחה קצרה עם הסוכן או הקופה — לבדוק אם צריך רישום או שזה אוטומטי.',link:{label:'סוכן הביטוח / הקופה',href:''}},
+  {n:10,t:'להוסיף את {baby} לביטוח המשלים או הפרטי',w:'חודש ראשון',due:{base:'birth',d:30},show:'private',note:'שיחה קצרה עם הסוכן או הקופה – לבדוק אם צריך רישום או שזה אוטומטי.',link:{label:'סוכן הביטוח / הקופה',href:''}},
   {n:11,t:'לעדכן בעבודה מתי חוזרים',w:'חודש לפני החזרה',due:{base:'return',d:-30},show:'employee',note:'הודעה למעסיק על הארכת חופשה נמסרת לפחות 30 יום מראש.'}
  ]},
  {emoji:'🍼',name:'הבריאות של {baby}',tasks:[
-  {n:12,t:'לוודא שנעשו בדיקות הסקר ליילוד',w:'לפני השחרור',u:1,note:'כ-36 שעות אחרי הלידה, לפני שיוצאים הביתה. בדיקת דם קטנה לזיהוי מוקדם.'},
+  {n:12,t:'לוודא שנעשו בדיקות הסקר ליילוד',w:'לפני השחרור',u:1,note:'כ־36 שעות אחרי הלידה, לפני שיוצאים הביתה. בדיקת דם קטנה לזיהוי מוקדם.'},
   {n:13,t:'לוודא שנעשה סיקור שמיעה',w:'לפני השחרור',u:1,note:'כל התינוקות עוברים. לא כואב, לוקח דקות.'},
-  {n:14,t:'לקבוע ביקור ראשון בטיפת חלב',w:'עד גיל שבועיים',u:1,due:{base:'birth',d:14},note:'הפגישה הראשונה עם האחות — עד גיל שבועיים.',link:{label:'טיפת חלב אזורית',href:''}},
-  {n:15,t:'לשים עין על צהבת בימים הראשונים',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'אם נראה שמחמיר — לרופא/ת ילדים בלי להתלבט.'},
+  {n:14,t:'לקבוע ביקור ראשון בטיפת חלב',w:'עד גיל שבועיים',u:1,due:{base:'birth',d:14},note:'הפגישה הראשונה עם האחות – עד גיל שבועיים.',link:{label:'טיפת חלב אזורית',href:''}},
+  {n:15,t:'לשים עין על צהבת בימים הראשונים',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'אם נראה שמחמיר – לרופא/ת ילדים בלי להתלבט.'},
   {n:16,t:'להכניס ליומן את מעקבי טיפת חלב',w:'לאורך השנה',milestones:1,note:'בסמוך ללידה, ובגיל חודש, חודשיים, 4, 6, 9 חודשים ושנה.'},
-  {n:17,t:'להציץ בלוח החיסונים',w:'לפי הגיל',note:'רוב הביקורים כוללים חיסון. האחות שולחת תזכורות — לא צריך לזכור לבד.'},
+  {n:17,t:'להציץ בלוח החיסונים',w:'לפי הגיל',note:'רוב הביקורים כוללים חיסון. האחות שולחת תזכורות – לא צריך לזכור לבד.'},
   {n:18,t:'להכין תיק קבוע לטיפת חלב',w:'לפני הביקור הראשון',due:{base:'birth',d:12},note:'חיתול להחלפה, מטלית לשקילה, פנקס המעקב. מוכן ליד הדלת.'}
  ]},
  {emoji:'🌸',name:'ואת? גם את חשובה',tasks:[
   {n:19,t:'לקבוע לעצמך ביקורת רופא/ה אחרי הלידה',w:'כשישה שבועות מהלידה',due:{base:'birth',d:42},hmo:1,note:'גם כשמרגישים מצוין. זה ביקור שגרתי, וזמן קטן בשבילך.'},
   {n:20,t:'להקשיב לעצמך, ולפנות אם משהו מרגיש אחרת',w:'החודשים הראשונים',note:'אחות טיפת חלב שואלת גם על ההרגשה שלך — זה חלק טבעי מהמעקב, ואפשר לפנות אליה עם כל שאלה.'},
-  {n:21,t:'לישון כשאפשר. באמת.',w:'יומיומי',note:'"לישון כשהתינוק ישן" — קלישאה, אבל היא עובדת.'},
+  {n:21,t:'לישון כשאפשר. באמת.',w:'יומיומי',note:'"לישון כשהתינוק ישן" – קלישאה, אבל היא עובדת.'},
   {n:22,t:'בקבוק מים ונשנוש ליד מקום ההאכלה',w:'יומיומי',note:'שיהיה שם כבר. ככה לא שוכחים לשתות.'},
   {n:23,t:'לרשום שאלות שעולות, לביקור הבא',w:'לאורך זמן',note:'קל לשכוח. אפשר לרשום אותן ממש כאן, בהערה.'}
  ]},
@@ -708,17 +708,17 @@ var CATS=[
   {n:28,t:'לתאם מי עוזר בכביסה ובסידור',w:'שוטף',note:'לא חייבים הכול לבד. באמת לא.'}
  ]},
  {emoji:'🤍',name:'סביבך',tasks:[
-  {n:29,t:'להכין "לוח עזרה" למי ששואל במה לעזור',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},note:'כששואלים "במה לעזור?" — שתהיה תשובה מוכנה: ארוחה, כביסה, הסעה, שמירה.'},
+  {n:29,t:'להכין "לוח עזרה" למי ששואל במה לעזור',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},note:'כששואלים "במה לעזור?" – שתהיה תשובה מוכנה: ארוחה, כביסה, הסעה, שמירה.'},
   {n:30,t:'לתאם ביקורים בקצב שנוח לך',w:'שוטף',note:'מותר לומר "לא עכשיו". זו זכות, לא חוצפה.'},
   {n:31,t:'לחלק תפקידים בבית ולדבר על ציפיות',w:'שוטף',note:'שיחה קצרה מראש חוסכת הרבה אחר כך.'},
   {n:32,t:'רגע קטן עם כל אחד מהגדולים',w:'שבועות ראשונים',show:'kids',note:'חמש דקות רק שלו. זה עוזר במעבר יותר ממה שנדמה.'},
   {n:33,t:'להזכיר לעצמך: זו תקופה, לא לתמיד',w:'יומיומי',note:'הקושי של השבועות הראשונים חולף. גם זה.'}
  ]},
  {emoji:'💼',name:'כשמתחילים להסתכל קדימה',tasks:[
-  {n:34,t:'לבדוק הארכת חופשה או חל"ת',w:'חודש-חודשיים לפני החזרה',due:{base:'return',d:-45},show:'employee',note:'מי שעבדה שנה לפחות רשאית לצאת לחל"ת עד שנה מתום החופשה.'},
+  {n:34,t:'לבדוק הארכת חופשה או חל"ת',w:'חודש – חודשיים לפני החזרה',due:{base:'return',d:-45},show:'employee',note:'מי שעבדה שנה לפחות רשאית לצאת לחל"ת עד שנה מתום החופשה.'},
   {n:35,t:'לבדוק את זכות בן הזוג לחופשה או להחלפה',w:'לפי הצורך',show:'working',note:'בן הזוג יכול לחלוק את החופשה, ומהשבוע השביעי אף להחליף אותך.'},
   {n:36,t:'לדעת מה מגיע לך בחזרה לעבודה',w:'לקראת החזרה',due:{base:'return',d:-21},show:'working',note:'אי אפשר לפטר או לצמצם משרה בזמן החופשה, ויש הגנות גם אחרי.',link:{label:'כל זכות',href:'https://www.kolzchut.org.il'}},
-  {n:37,t:'לתכנן סידור ל{baby} לקראת החזרה',w:'חודשיים לפני החזרה',due:{base:'return',d:-60},show:'working',note:'מעון, משפחתון או עזרה — נרשמים מוקדם.'}
+  {n:37,t:'לתכנן סידור ל{baby} לקראת החזרה',w:'חודשיים לפני החזרה',due:{base:'return',d:-60},show:'working',note:'מעון, משפחתון או עזרה – נרשמים מוקדם.'}
  ]}
 ];
 var MYCAT='המשימות שלי';
@@ -815,9 +815,9 @@ function render(){
   html+='<section class="cat"><div class="cat-head"><span class="cat-emoji">✨</span><h2 class="cat-name">'+MYCAT+'</h2>'+
     '<span class="cat-bar"><i style="width:'+(data.custom.length?Math.round(md/data.custom.length*100):0)+'%"></i></span><span class="cat-count">'+md+'/'+data.custom.length+'</span></div>';
   mine.forEach(function(t){html+=taskHTML(t);});
-  if(!data.custom.length)html+='<div class="empty">מה עוד את רוצה לזכור? ברית, שמות, תור שנקבע, מתנה לאח הגדול — הכול נכנס כאן.</div>';
+  if(!data.custom.length)html+='<div class="empty">מה עוד את רוצה לזכור? ברית, שמות, תור שנקבע, מתנה לאח הגדול – הכול נכנס כאן.</div>';
   html+='<div class="addrow"><input type="text" id="newTask" placeholder="להוסיף משהו משלי..."><button class="btn btn-gold" id="addBtn">להוסיף</button></div></section>';
-  if(!shown&&!mine.length&&filter!=='all')html='<div class="empty">'+(filter==='done'?'עוד לא סימנת כלום — וזה בסדר גמור.':'אין כאן כלום כרגע. יופי.')+'</div>';
+  if(!shown&&!mine.length&&filter!=='all')html='<div class="empty">'+(filter==='done'?'עוד לא סימנת כלום – וזה בסדר גמור.':'אין כאן כלום כרגע. יופי.')+'</div>';
   listEl.innerHTML=html;updateHero();
   var ta=listEl.querySelector('textarea[data-area]');if(ta){ta.focus();ta.setSelectionRange(ta.value.length,ta.value.length);}
 }
@@ -861,7 +861,7 @@ document.getElementById('mPhoto').addEventListener('change',function(){
   var f=this.files[0];if(!f)return;shrinkImage(f,function(url){pendingPhoto=url;var p=document.getElementById('mPreview');p.src=url;p.classList.add('on');});
 });
 document.getElementById('mSave').addEventListener('click',function(){
-  var t=document.getElementById('mText').value.trim();if(!t&&!pendingPhoto){toast('משפט או תמונה — משהו אחד מספיק');return;}
+  var t=document.getElementById('mText').value.trim();if(!t&&!pendingPhoto){toast('משפט או תמונה – משהו אחד מספיק');return;}
   data.moments.push({id:'m'+Date.now(),date:ymd(new Date()),day:dayNum(),text:t,photo:pendingPhoto});
   if(save()){document.getElementById('mText').value='';pendingPhoto=null;var p=document.getElementById('mPreview');p.src='';p.classList.remove('on');renderMoments();toast('הרגע נשמר 💛');if(data.moments.length===1)confetti(24);}
   else data.moments.pop();
@@ -885,7 +885,7 @@ function drawCard(cb){
   function finish(){
     x.fillStyle='#26313D';x.font='600 40px Assistant, sans-serif';
     x.fillText(done+' צעדים כבר מאחוריי',W-80,y+70);x.fillText(data.moments.length+' רגעים שנשמרו',W-80,y+130);
-    if(last&&last.text){x.fillStyle='#5A4A1C';x.font='500 44px "Frank Ruhl Libre", serif';wrap(x,'“'+last.text+'”',W-80,y+230,W-160,58,4);}
+    if(last&&last.text){x.fillStyle='#5A4A1C';x.font='500 44px "Frank Ruhl Libre", serif';wrap(x,'"'+last.text+'"',W-80,y+230,W-160,58,4);}
     x.fillStyle='#A3ACB7';x.font='600 30px Assistant, sans-serif';x.fillText(fmtFull(new Date()),W-80,H-70);
     var bar=W-160,seg=Math.max(1,all.length),bw=bar/seg;
     for(var i=0;i<seg;i++){x.fillStyle=i<done?'#27568C':'#E8E3D7';x.fillRect(80+i*bw,H-130,bw-3,14);}
@@ -914,14 +914,14 @@ function icsFor(t){
   var d=dueOf(t),ds=ymd(d).replace(/-/g,''),ttl=fill(t.t),desc=(t.note?fill(t.note):'')+'\\nשפרה ופועה · מורה שמיים';
   var s=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Moreh Shamayim//Shifra//HE','BEGIN:VEVENT','UID:'+idOf(t)+'-'+ds+'@shifra','DTSTAMP:'+ymd(new Date()).replace(/-/g,'')+'T090000Z',
     'DTSTART;VALUE=DATE:'+ds,'SUMMARY:'+ttl.replace(/,/g,'\\,'),'DESCRIPTION:'+desc.replace(/,/g,'\\,'),'BEGIN:VALARM','TRIGGER:-PT15H','ACTION:DISPLAY','DESCRIPTION:'+ttl,'END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
-  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/calendar;charset=utf-8'}));a.download='shifra-'+idOf(t)+'.ics';a.click();toast('נפתח ביומן — אשרי הוספה');
+  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/calendar;charset=utf-8'}));a.download='shifra-'+idOf(t)+'.ics';a.click();toast('נפתח ביומן – אשרי הוספה');
 }
 
 /* ================= שיתוף עם בן הזוג ================= */
 function b64e(s){return btoa(unescape(encodeURIComponent(s)));}function b64d(s){return decodeURIComponent(escape(atob(s)));}
 document.getElementById('shareBtn').addEventListener('click',function(){
   var payload={p:P,c:data.checked,x:data.custom,s:data.snooze},url=location.origin+location.pathname+'#s='+b64e(JSON.stringify(payload));
-  var txt=(P.name?'המפה של '+P.name:'המפה שלנו')+' לשבועות הראשונים עם '+baby()+' — כאן רואים מה כבר עשינו ומה עוד לא:\n'+url;
+  var txt=(P.name?'המפה של '+P.name:'המפה שלנו')+' לשבועות הראשונים עם '+baby()+' – כאן רואים מה כבר עשינו ומה עוד לא:\n'+url;
   if(navigator.share){navigator.share({text:txt}).catch(function(){});}
   else{var w=window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');if(!w&&navigator.clipboard){navigator.clipboard.writeText(url);toast('הקישור הועתק');}}
 });
@@ -976,7 +976,7 @@ function buildText(){
   Object.keys(g).forEach(function(k){L.push('','*'+k+'*');g[k].forEach(function(t){var s=statusOf(t);L.push((t.u?'⭐ ':'• ')+fill(t.t)+' ('+(s?s.txt:(t.w||''))+')'+(data.notes[idOf(t)]?'\n   ↳ '+data.notes[idOf(t)]:''));});});
   return L.join('\n');
 }
-document.getElementById('waBtn').addEventListener('click',function(){var txt=buildText(),w=window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');if(!w){if(navigator.clipboard){navigator.clipboard.writeText(txt);toast('הרשימה הועתקה — אפשר להדביק בוואטסאפ');}else toast('לא הצלחתי לפתוח וואטסאפ מכאן');}});
+document.getElementById('waBtn').addEventListener('click',function(){var txt=buildText(),w=window.open('https://wa.me/?text='+encodeURIComponent(txt),'_blank');if(!w){if(navigator.clipboard){navigator.clipboard.writeText(txt);toast('הרשימה הועתקה – אפשר להדביק בוואטסאפ');}else toast('לא הצלחתי לפתוח וואטסאפ מכאן');}});
 document.getElementById('printBtn').addEventListener('click',function(){window.print()});
 document.getElementById('resetBtn').addEventListener('click',function(){if(!confirm('להתחיל מחדש? הסימונים, ההערות, הרגעים והפרטים יימחקו.'))return;data={profile:null,checked:{},notes:{},custom:[],snooze:{},moments:[],night:false};save();location.reload();});
 
@@ -1003,7 +1003,7 @@ function fillForm(){
 }
 function tenureNote(){var t=CATS[1].tasks.filter(function(x){return x.n===2})[0];if(!t)return;
   if(P.tenure==='12plus')t.note='שנה ומעלה של ותק מזכה בתקופה ארוכה יותר בתשלום. כדאי רק לוודא שהתביעה נקלטה.';
-  else if(P.tenure==='less')t.note='עם פחות משנה, התקופה בתשלום קצרה יותר — שווה לבדוק מול ביטוח לאומי מה בדיוק מגיע.';
+  else if(P.tenure==='less')t.note='עם פחות משנה, התקופה בתשלום קצרה יותר – שווה לבדוק מול ביטוח לאומי מה בדיוק מגיע.';
   else t.note='אורך התקופה בתשלום תלוי בוותק. שיחה אחת עם ביטוח לאומי תסגור את זה.';}
 function boot(){
   applyNight();
@@ -1228,7 +1228,7 @@ body[data-morash-part=c] #resetDialog .toolbar{justify-content:center;gap:12px;}
   for(const el of [find('#draw'),find('#move'),find('#stickers')])el.addEventListener('click',()=>{if(matchMedia('(max-width:700px)').matches)find('.canvas-wrap').scrollIntoView({block:'center',behavior:'instant'})});
  }
  if(part==='i'){
-  const p=document.createElement('p');p.className='review-tips';p.textContent='אפשר לדלג על פרטים ולהשלים אותם בהמשך דרך ״עריכת פרטים״.';find('#fName').closest('.field')?.before(p);
+  const p=document.createElement('p');p.className='review-tips';p.textContent='אפשר לדלג על פרטים ולהשלים אותם בהמשך דרך "עריכת פרטים".';find('#fName').closest('.field')?.before(p);
   find('#startBtn').textContent='בואי נבנה את המפה שלי';
  }
  if(part==='j'){
