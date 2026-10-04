@@ -25,7 +25,12 @@ if os.path.exists(p):
         if len(line) > 25 and cur != '?':
             owner = 'בדיקה מקצועית' if re.search(r'דמי לידה|ביטוח לאומי|בריאות|מקצועית', line) else ('קוד' if '#' in line or 'קישור' in line else 'כותבת')
             add(cur, line, 'הערות-תוכן.html', 'פתוח', owner)
-# 2. final-review-decisions.json
+# 2. final-review-decisions.json (+ אימות בהרצה מ-qa/out/notes-verification.json, אם קיים)
+VERIFIED, VERIFIED_DATE = {}, ''
+pv = os.path.join(OUT, 'notes-verification.json')
+if os.path.exists(pv):
+    jv = json.load(open(pv, encoding='utf-8'))
+    VERIFIED, VERIFIED_DATE = jv.get('verification', {}), jv.get('date', '')
 p = os.path.join(ROOT, 'upgraded', 'dev', 'final-review-decisions.json')
 if os.path.exists(p):
     d = json.load(open(p, encoding='utf-8'))
@@ -36,7 +41,12 @@ if os.path.exists(p):
         for dec in decs:
             st = dec.get('status')
             status = {'implemented': 'תוקן — ' + ('אומת' if dec.get('verifiedOn') else 'לא אומת'), 'proposed': 'הצעה — לא אושרה', 'informational': 'לידיעה'}.get(st, st)
-            add(part, f"[{dec['id']}] {dec.get('proposal','')}", 'final-review-decisions.json', status, 'מרפד' if st == 'proposed' else 'קוד', f"אושר {dec.get('approvedOn') or '—'} · אומת {dec.get('verifiedOn') or '—'} · {len(dec.get('notes', []))} הערות")
+            proof = f"אושר {dec.get('approvedOn') or '—'} · אומת {dec.get('verifiedOn') or '—'} · {len(dec.get('notes', []))} הערות"
+            # אימות בהרצה (qa/out/notes-verification.json): "תוקן" רק עם הוכחה מהרצה/בדיקה חזותית
+            if dec['id'] in VERIFIED:
+                status, ev = VERIFIED[dec['id']]['status'], VERIFIED[dec['id']]['evidence']
+                proof = f"אומת בהרצה {VERIFIED_DATE}: {ev}"
+            add(part, f"[{dec['id']}] {dec.get('proposal','')}", 'final-review-decisions.json', status, 'מרפד' if st == 'proposed' else 'קוד', proof)
         for c in v.get('clarifications', []): add(part, 'הבהרה: ' + c, 'final-review-decisions.json', 'כלל תוכן', 'איור/תוכן')
     for g in d.get('globalArtGuidelines', []): add('all', 'כלל איור: ' + g, 'final-review-decisions.json', 'כלל תוכן', 'איור')
 # 3. ייצוא הערות מדף הבדיקה (qa/in/*.html|*.json) — טקסט גולמי, ממופה לפי חלק כשמזוהה
@@ -64,11 +74,15 @@ for f in glob.glob(os.path.join(OUT, 'qa-*.json')):
     except Exception: continue
     for x in j.get('findings', []):
         if x.get('severity') in ('red', 'yellow'):
-            add(x.get('part', '?'), f"[{x.get('id')}] {x.get('title')} — {x.get('location','')}", j.get('agent', os.path.basename(f)), 'פתוח', x.get('owner', 'קוד'), x.get('evidence', '')[:120])
-json.dump({'agent': 'qa-notes', 'run': datetime.datetime.now().isoformat(timespec='seconds'), 'rows': rows}, open(os.path.join(OUT, 'notes.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+            st = x.get('status', 'open')
+            done = str(st).startswith(('תוקן', 'fixed'))
+            add(x.get('part', '?'), f"[{x.get('id')}] {x.get('title')} — {x.get('location','')}", j.get('agent', os.path.basename(f)), st if done else 'פתוח', x.get('owner', 'קוד'), str((x.get('verified') if done else x.get('evidence')) or '')[:120])
+out = {'agent': 'qa-notes', 'run': datetime.datetime.now().isoformat(timespec='seconds'), 'rows': rows}
+if VERIFIED: out['verified_overlay'] = {'by': 'qa-notes', 'date': VERIFIED_DATE, 'note': 'סטטוס "תוקן" נקבע רק אחרי הרצה/בדיקה חזותית עם הוכחה; ר׳ qa/out/notes-verification.json'}
+json.dump(out, open(os.path.join(OUT, 'notes.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 order = ['all', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', '?']
 rows.sort(key=lambda r: (order.index(r['part']) if r['part'] in order else 99))
-md = ['# טבלת ההערות האחת — הבאת ברכה', f'עודכן: {datetime.date.today().isoformat()} · {len(rows)} שורות', '', '| מזהה | חלק | ההערה | מקור | מצב | מכריע | הוכחה |', '|---|---|---|---|---|---|---|']
+md = ['# טבלת ההערות האחת — הבאת ברכה', f'עודכן: {datetime.date.today().isoformat()} · {len(rows)} שורות' + (' · כולל אימות בהרצה לפי qa/out/notes-verification.json' if VERIFIED else ''), '', '| מזהה | חלק | ההערה | מקור | מצב | מכריע | הוכחה |', '|---|---|---|---|---|---|---|']
 for r in rows: md.append(f"| {r['id']} | {r['part']} | {r['text'].replace('|','/')} | {r['source']} | {r['status']} | {r['owner']} | {r['proof'].replace('|','/')} |")
 open(os.path.join(ROOT, 'qa', 'טבלת-הערות.md'), 'w', encoding='utf-8').write('\n'.join(md))
 import collections

@@ -1,10 +1,10 @@
 {
- "run": "2026-10-04T07:12:36.207Z",
+ "run": "2026-10-04T10:07:31.759Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
    "id": "a",
-   "name": "מתחם הקטנטנים",
+   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -21,12 +21,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2530,
-   "title": "מתחם הקטנטנים · מורה שמיים",
+   "loadMs": 2036,
+   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 6,
+   "visibleButtons": 7,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -38,19 +38,20 @@
    "lsKeys": 4,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Suez One",
     "Rubik",
     "Arial"
    ],
-   "focusable": 116,
+   "focusable": 117,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 492
+   "bodyText": 646
   },
   {
    "id": "a",
-   "name": "מתחם הקטנטנים",
+   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -73,12 +74,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2069,
-   "title": "מתחם הקטנטנים · מורה שמיים",
+   "loadMs": 2014,
+   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 6,
+   "visibleButtons": 7,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -90,22 +91,24 @@
    "lsKeys": 4,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Suez One",
     "Rubik",
     "Arial"
    ],
-   "focusable": 116,
+   "focusable": 117,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 492,
+   "bodyText": 646,
    "clicked": [
-    "אָ ניקוד",
-    "הגדלת טקסט",
-    "המדליות שלי",
-    "🎨\nדפי צביעה\n15 ציורים להדפסה ",
-    "הכול",
-    "אחים ותינוק"
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d4\u05d2\u05d3\u05dc\u05ea \u05d8\u05e7\u05e1\u05d8",
+    "\u05d4\u05de\u05d3\u05dc\u05d9\u05d5\u05ea \u05e9\u05dc\u05d9",
+    "\ud83c\udfa8\n\u05d3\u05e4\u05d9 \u05e6\u05d1\u05d9\u05e2\u05d4\n19 \u05e6\u05d9\u05d5\u05e8\u05d9\u05dd \u05dc\u05d4\u05d3\u05e4\u05e1\u05d4 ",
+    "\u05d4\u05db\u05d5\u05dc",
+    "\u05d0\u05d7\u05d9\u05dd \u05d5\u05ea\u05d9\u05e0\u05d5\u05e7",
+    "\u05e9\u05d1\u05ea \u05d5\u05d1\u05e8\u05db\u05d5\u05ea"
    ],
    "lsKeysAfter": 5,
    "lsKeysAfterReload": 5,
@@ -113,7 +116,7 @@
   },
   {
    "id": "a",
-   "name": "מתחם הקטנטנים",
+   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -130,12 +133,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2096,
-   "title": "מתחם הקטנטנים · מורה שמיים",
+   "loadMs": 2033,
+   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 6,
+   "visibleButtons": 7,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -147,19 +150,20 @@
    "lsKeys": 4,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Suez One",
     "Rubik",
     "Arial"
    ],
-   "focusable": 116,
+   "focusable": 117,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 492
+   "bodyText": 646
   },
   {
    "id": "b",
-   "name": "אור הגיע אלינו",
+   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -176,12 +180,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2900,
-   "title": "אור הגיע אלינו",
+   "loadMs": 2526,
+   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 11,
+   "visibleButtons": 12,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -196,15 +200,15 @@
     "Assistant",
     "Suez One"
    ],
-   "focusable": 40,
-   "h1": 2,
+   "focusable": 41,
+   "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 439
+   "bodyText": 495
   },
   {
    "id": "b",
-   "name": "אור הגיע אלינו",
+   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -227,12 +231,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2716,
-   "title": "אור הגיע אלינו",
+   "loadMs": 2539,
+   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 11,
+   "visibleButtons": 12,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -247,21 +251,21 @@
     "Assistant",
     "Suez One"
    ],
-   "focusable": 40,
-   "h1": 2,
+   "focusable": 41,
+   "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 439,
+   "bodyText": 495,
    "clicked": [
-    "קוֹרְאִים בספר",
-    "מִשְׂחָקִים יחד",
-    "✦\nמגלים זוּגוֹת\nנראה מי זוכר?\n",
-    "✦\nבוחרים ומתאימים\nמתלבשים נכון",
-    "✦\nמסדרים יחד\nעורכים שׁוּלְחַן ",
-    "✦\nחושבים ומגלים\nשומרים על השקט",
-    "✦\nמכירים חֲפָצִים\nמה נביא לתינ",
-    "✦\nיוצרים בחופשיות\nצִיּוּר חוֹפ",
-    "× סְגִירָה"
+    "\u05e7\u05d5\u05b9\u05e8\u05b0\u05d0\u05b4\u05d9\u05dd \u05d1\u05e1\u05e4\u05e8",
+    "\u05de\u05b4\u05e9\u05c2\u05b0\u05d7\u05b8\u05e7\u05b4\u05d9\u05dd \u05d9\u05d7\u05d3",
+    "\u2726\n\u05de\u05d2\u05dc\u05d9\u05dd \u05d6\u05d5\u05bc\u05d2\u05d5\u05b9\u05ea\n\u05e0\u05e8\u05d0\u05d4 \u05de\u05d9 \u05d6\u05d5\u05db\u05e8?\n",
+    "\u2726\n\u05d1\u05d5\u05d7\u05e8\u05d9\u05dd \u05d5\u05de\u05ea\u05d0\u05d9\u05de\u05d9\u05dd\n\u05de\u05ea\u05dc\u05d1\u05e9\u05d9\u05dd \u05e0\u05db\u05d5\u05df",
+    "\u2726\n\u05de\u05e1\u05d3\u05e8\u05d9\u05dd \u05d9\u05d7\u05d3\n\u05e2\u05d5\u05e8\u05db\u05d9\u05dd \u05e9\u05c1\u05d5\u05bc\u05dc\u05b0\u05d7\u05b7\u05df ",
+    "\u2726\n\u05d7\u05d5\u05e9\u05d1\u05d9\u05dd \u05d5\u05de\u05d2\u05dc\u05d9\u05dd\n\u05e9\u05d5\u05de\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05e9\u05e7\u05d8",
+    "\u2726\n\u05de\u05db\u05d9\u05e8\u05d9\u05dd \u05d7\u05b2\u05e4\u05b8\u05e6\u05b4\u05d9\u05dd\n\u05de\u05d4 \u05e0\u05d1\u05d9\u05d0 \u05dc\u05ea\u05d9\u05e0",
+    "\u2726\n\u05d9\u05d5\u05e6\u05e8\u05d9\u05dd \u05d1\u05d7\u05d5\u05e4\u05e9\u05d9\u05d5\u05ea\n\u05e6\u05b4\u05d9\u05bc\u05d5\u05bc\u05e8 \u05d7\u05d5\u05b9\u05e4",
+    "\u00d7 \u05e1\u05b0\u05d2\u05b4\u05d9\u05e8\u05b8\u05d4"
    ],
    "lsKeysAfter": 4,
    "lsKeysAfterReload": 4,
@@ -269,7 +273,7 @@
   },
   {
    "id": "b",
-   "name": "אור הגיע אלינו",
+   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -286,12 +290,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2563,
-   "title": "אור הגיע אלינו",
+   "loadMs": 2606,
+   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 15,
+   "visibleButtons": 16,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -306,80 +310,35 @@
     "Assistant",
     "Suez One"
    ],
-   "focusable": 40,
-   "h1": 2,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 1002
-  },
-  {
-   "id": "c",
-   "name": "בית המצוות",
-   "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
-   ],
-   "warnings": [],
-   "failed": [],
-   "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1754,
-   "title": "בית המצוות · הרפתקת האותיות",
-   "scrollWidth": 320,
-   "innerWidth": 320,
-   "hOverflow": false,
-   "visibleButtons": 14,
-   "smallTargets": [],
-   "brokenImgs": [],
-   "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "lsKeys": 2,
-   "fonts": [
-    "Heebo"
-   ],
-   "focusable": 21,
+   "focusable": 41,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 537
+   "bodyText": 1058
   },
   {
    "id": "c",
-   "name": "בית המצוות",
-   "width": 390,
+   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1847,
-   "title": "בית המצוות · הרפתקת האותיות",
-   "scrollWidth": 390,
-   "innerWidth": 390,
+   "loadMs": 1865,
+   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "scrollWidth": 320,
+   "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 14,
+   "visibleButtons": 15,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -390,28 +349,76 @@
    ],
    "lsKeys": 2,
    "fonts": [
-    "Heebo"
+    "Heebo",
+    "Assistant"
    ],
-   "focusable": 21,
+   "focusable": 22,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 537,
+   "bodyText": 672
+  },
+  {
+   "id": "c",
+   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1820,
+   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 2,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 22,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 672,
    "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "💰",
-    "🍷",
-    "📘",
-    "🕯️",
-    "📜",
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\ud83d\udcb0",
+    "\ud83c\udf77",
+    "\ud83d\udcd8",
+    "\ud83d\udd6f\ufe0f",
+    "\ud83d\udcdc",
     "",
     "",
     "",
     "",
     "",
-    "🔒 התיבה מחכה לאותיות",
-    "הרפתקה חדשה"
+    "\ud83d\udd12 \u05d4\u05ea\u05d9\u05d1\u05d4 \u05de\u05d7\u05db\u05d4 \u05dc\u05d0\u05d5\u05ea\u05d9\u05d5\u05ea",
+    "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d7\u05d3\u05e9\u05d4",
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
@@ -419,7 +426,7 @@
   },
   {
    "id": "c",
-   "name": "בית המצוות",
+   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
@@ -434,12 +441,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1867,
-   "title": "בית המצוות · הרפתקת האותיות",
+   "loadMs": 1860,
+   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 14,
+   "visibleButtons": 15,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -450,17 +457,18 @@
    ],
    "lsKeys": 2,
    "fonts": [
-    "Heebo"
+    "Heebo",
+    "Assistant"
    ],
-   "focusable": 21,
+   "focusable": 22,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 556
+   "bodyText": 691
   },
   {
    "id": "d",
-   "name": "מסע המצוות",
+   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -477,16 +485,16 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2025,
-   "title": "מסע המצוות · מורה שמיים",
+   "loadMs": 1890,
+   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 13,
+   "visibleButtons": 14,
    "smallTargets": [],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no",
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -494,17 +502,18 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Secular One"
    ],
-   "focusable": 30,
+   "focusable": 31,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 498
+   "bodyText": 571
   },
   {
    "id": "d",
-   "name": "מסע המצוות",
+   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -527,16 +536,16 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2006,
-   "title": "מסע המצוות · מורה שמיים",
+   "loadMs": 2042,
+   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 13,
+   "visibleButtons": 14,
    "smallTargets": [],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no",
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -544,27 +553,29 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Secular One"
    ],
-   "focusable": 30,
+   "focusable": 31,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 498,
+   "bodyText": 571,
    "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "🌙",
-    "●\n1",
-    "●●\n2",
-    "●●●\n3",
-    "●●●●\n4",
-    "",
-    "בן",
-    "בת",
-    "",
-    "בן",
-    "בת"
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\ud83c\udf19",
+    "\u25cf\n1",
+    "\u25cf\u25cf\n2",
+    "\u25cf\u25cf\u25cf\n3",
+    "\u25cf\u25cf\u25cf\u25cf\n4",
+    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 1",
+    "\u05d1\u05df",
+    "\u05d1\u05ea",
+    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 2",
+    "\u05d1\u05df",
+    "\u05d1\u05ea",
+    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 3"
    ],
    "lsKeysAfter": 2,
    "lsKeysAfterReload": 2,
@@ -572,7 +583,7 @@
   },
   {
    "id": "d",
-   "name": "מסע המצוות",
+   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -589,16 +600,16 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1917,
-   "title": "מסע המצוות · מורה שמיים",
+   "loadMs": 1977,
+   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 13,
+   "visibleButtons": 14,
    "smallTargets": [],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no",
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -606,17 +617,18 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Secular One"
    ],
-   "focusable": 30,
+   "focusable": 31,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 498
+   "bodyText": 571
   },
   {
    "id": "e",
-   "name": "מסע בזמן",
+   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -633,42 +645,42 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1891,
-   "title": "מסע בזמן — סדר יום יהודי",
+   "loadMs": 1996,
+   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 14,
+   "visibleButtons": 15,
    "smallTargets": [
     {
-     "t": "קַל",
+     "t": "\u05e7\u05b7\u05dc",
      "w": 77,
      "h": 37
     },
     {
-     "t": "בֵּינוֹנִי",
+     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
      "w": 77,
      "h": 37
     },
     {
-     "t": "אֶתְגָּר",
+     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
      "w": 77,
      "h": 37
     },
     {
-     "t": "שַׂחְקָן אֶחָד",
+     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
      "w": 119,
      "h": 37
     },
     {
-     "t": "שְׁנַיִים",
+     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
      "w": 119,
      "h": 37
     }
    ],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -679,15 +691,15 @@
     "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 25,
+   "focusable": 26,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 409
+   "bodyText": 435
   },
   {
    "id": "e",
-   "name": "מסע בזמן",
+   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -710,42 +722,42 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1878,
-   "title": "מסע בזמן — סדר יום יהודי",
+   "loadMs": 2044,
+   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 14,
+   "visibleButtons": 15,
    "smallTargets": [
     {
-     "t": "קַל",
+     "t": "\u05e7\u05b7\u05dc",
      "w": 100,
      "h": 37
     },
     {
-     "t": "בֵּינוֹנִי",
+     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
      "w": 100,
      "h": 37
     },
     {
-     "t": "אֶתְגָּר",
+     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
      "w": 100,
      "h": 37
     },
     {
-     "t": "שַׂחְקָן אֶחָד",
+     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
      "w": 154,
      "h": 37
     },
     {
-     "t": "שְׁנַיִים",
+     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
      "w": 154,
      "h": 37
     }
    ],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -756,21 +768,21 @@
     "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 25,
+   "focusable": 26,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 409,
+   "bodyText": 435,
    "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "קל",
-    "בינוני",
-    "אתגר",
-    "שחקן אחד",
-    "שניים",
-    "מתחילים!",
-    "☀️\nקימה בבוקר"
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\u05e7\u05dc",
+    "\u05d1\u05d9\u05e0\u05d5\u05e0\u05d9",
+    "\u05d0\u05ea\u05d2\u05e8",
+    "\u05e9\u05d7\u05e7\u05df \u05d0\u05d7\u05d3",
+    "\u05e9\u05e0\u05d9\u05d9\u05dd",
+    "\u05de\u05ea\u05d7\u05d9\u05dc\u05d9\u05dd!",
+    "\u2600\ufe0f\n\u05e7\u05d9\u05de\u05d4 \u05d1\u05d1\u05d5\u05e7\u05e8"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
@@ -778,7 +790,7 @@
   },
   {
    "id": "e",
-   "name": "מסע בזמן",
+   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -795,42 +807,42 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1992,
-   "title": "מסע בזמן — סדר יום יהודי",
+   "loadMs": 2042,
+   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 14,
+   "visibleButtons": 15,
    "smallTargets": [
     {
-     "t": "קַל",
+     "t": "\u05e7\u05b7\u05dc",
      "w": 229,
      "h": 37
     },
     {
-     "t": "בֵּינוֹנִי",
+     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
      "w": 229,
      "h": 37
     },
     {
-     "t": "אֶתְגָּר",
+     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
      "w": 229,
      "h": 37
     },
     {
-     "t": "שַׂחְקָן אֶחָד",
+     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
      "w": 347,
      "h": 37
     },
     {
-     "t": "שְׁנַיִים",
+     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
      "w": 347,
      "h": 37
     }
    ],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -841,15 +853,15 @@
     "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 25,
+   "focusable": 26,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 409
+   "bodyText": 435
   },
   {
    "id": "f",
-   "name": "מטבח השבת",
+   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -866,16 +878,16 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1883,
-   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "loadMs": 1910,
+   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 3,
+   "visibleButtons": 4,
    "smallTargets": [],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0",
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1.0",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -883,17 +895,18 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Suez One"
    ],
-   "focusable": 8,
+   "focusable": 9,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 576
+   "bodyText": 615
   },
   {
    "id": "f",
-   "name": "מטבח השבת",
+   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -916,16 +929,16 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1935,
-   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "loadMs": 2038,
+   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 3,
+   "visibleButtons": 4,
    "smallTargets": [],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0",
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1.0",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -933,17 +946,19 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Suez One"
    ],
-   "focusable": 8,
+   "focusable": 9,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 576,
+   "bodyText": 615,
    "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "מתחילים לאפות"
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\u05de\u05ea\u05d7\u05d9\u05dc\u05d9\u05dd \u05dc\u05d0\u05e4\u05d5\u05ea",
+    "\ud83c\udf6f"
    ],
    "lsKeysAfter": 2,
    "lsKeysAfterReload": 3,
@@ -951,33 +966,33 @@
   },
   {
    "id": "f",
-   "name": "מטבח השבת",
+   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1837,
-   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "loadMs": 2020,
+   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 3,
+   "visibleButtons": 4,
    "smallTargets": [],
    "brokenImgs": [],
-   "zoomLocked": true,
-   "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0",
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1.0",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -985,17 +1000,18 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Suez One"
    ],
-   "focusable": 8,
+   "focusable": 9,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 576
+   "bodyText": 615
   },
   {
    "id": "g",
-   "name": "בלש המידות",
+   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -1010,12 +1026,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1783,
-   "title": "בלש המידות · תיק המתנה",
+   "loadMs": 1742,
+   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 10,
+   "visibleButtons": 11,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -1026,17 +1042,164 @@
    ],
    "lsKeys": 1,
    "fonts": [
-    "Heebo"
+    "Heebo",
+    "Assistant"
    ],
-   "focusable": 14,
+   "focusable": 15,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 844
+   "bodyText": 930
   },
   {
    "id": "g",
-   "name": "בלש המידות",
+   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1905,
+   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 11,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 15,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 930,
+   "clicked": [
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\u05e4\u05d5\u05ea\u05d7\u05d9\u05dd \u05d0\u05ea \u05ea\u05d9\u05e7 \u05d4\u05d7\u05e7\u05d9\u05e8\u05d4",
+    "\ud83e\uddf5",
+    "\u2702",
+    "\ud83d\udeaa",
+    "\ud83d\udd0e",
+    "\ud83c\udf80\n\u05ea\u05de\u05d9, \u05d4\u05d0\u05d7\u05d5\u05ea \u05d4\u05e7\u05d8\u05e0\u05d4\n\u05e8\u05d0\u05d9\u05ea\u05d9 \u05d0\u05ea \u05d3",
+    "\u2702\n\u05d9\u05d5\u05e0\u05d9, \u05d4\u05d0\u05d7 \u05d4\u05d2\u05d3\u05d5\u05dc\n\u05d3\u05d5\u05d3 \u05db\u05e2\u05e1 \u05e2\u05dc\u05d9\u05d9",
+    "\ud83d\udeaa\n\u05d4\u05e9\u05db\u05df \u05de\u05d4\u05de\u05e1\u05d3\u05e8\u05d5\u05df\n\u05d1\u05d3\u05d9\u05d5\u05e7 \u05d9\u05e6\u05d0\u05ea\u05d9 \u05de",
+    "\ud83c\udf37\n\u05d0\u05de\u05d0\n\u05d3\u05d5\u05d3 \u05e8\u05e5 \u05d0\u05dc\u05d9\u05d9 \u05de\u05d6\u05d9\u05e2 \u05d5\u05de\u05d5\u05d3\u05d0\u05d2"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 4
+  },
+  {
+   "id": "g",
+   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1886,
+   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 11,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 15,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 959
+  },
+  {
+   "id": "h",
+   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1876,
+   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 33,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 39,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 2659
+  },
+  {
+   "id": "h",
+   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
@@ -1055,12 +1218,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1853,
-   "title": "בלש המידות · תיק המתנה",
+   "loadMs": 1904,
+   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 10,
+   "visibleButtons": 33,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -1071,32 +1234,48 @@
    ],
    "lsKeys": 1,
    "fonts": [
-    "Heebo"
+    "Heebo",
+    "Assistant"
    ],
-   "focusable": 14,
+   "focusable": 39,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 844,
+   "bodyText": 2659,
    "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "פותחים את תיק החקירה",
-    "🧵",
-    "✂",
-    "🚪",
-    "🔎",
-    "🎀\nתמי, האחות הקטנה\nראיתי את ל",
-    "✂\nיוני, האח הגדול\nדוד כעס עליי",
-    "🚪\nהשכן מהמסדרון\nבדיוק יצאתי מ"
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\u2193 \u05e9\u05d5\u05de\u05e8\u05d9\u05dd \u05db\u05e8\u05d8\u05d9\u05e1 \u05db\u05ea\u05de\u05d5\u05e0\u05d4",
+    "\u05ea\u05e6\u05d5\u05d2\u05d4 \u05de\u05d5\u05d2\u05d3\u05dc\u05ea \u05e9\u05dc \u05d4\u05db\u05e8\u05d8\u05d9\u05e1",
+    "\u05d7\u05d9\u05d1\u05d5\u05e7 \u05d7\u05de\u05d9\u05dd",
+    "\u05d8\u05d5\u05e8\u05e7\u05d9\u05d6 \u05e8\u05d2\u05d5\u05e2",
+    "\u05d5\u05e8\u05d5\u05d3 \u05e7\u05d5\u05e8\u05dc",
+    "\u05e1\u05d2\u05d5\u05dc \u05d7\u05dc\u05d5\u05de\u05d9",
+    "\u05e9\u05de\u05e9 \u05d6\u05d4\u05d5\u05d1\u05d4",
+    "\u05d7\u05d2\u05d9\u05d2\u05d9 \u05d5\u05e0\u05e7\u05d9",
+    "\u05e7\u05e9\u05ea \u05e8\u05db\u05d4",
+    "\u05de\u05e1\u05d2\u05e8\u05ea \u05d7\u05d2\u05d9\u05d2\u05d9\u05ea",
+    "\u05e4\u05e8\u05d7\u05d9\u05dd \u05d1\u05dc\u05d1",
+    "\u2665",
+    "\u273f",
+    "\u2726",
+    "\u2605",
+    "\ud83c\udf37",
+    "\ud83c\udf80",
+    "\ud83c\udf81",
+    "\ud83d\udc9b",
+    "\ud83c\udf3c",
+    "\ud83c\udf88",
+    "\u2728",
+    "\ud83c\udf3f"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
    "errorsAfterClicks": 4
   },
   {
-   "id": "g",
-   "name": "בלש המידות",
+   "id": "h",
+   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
@@ -1111,51 +1290,10 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1858,
-   "title": "בלש המידות · תיק המתנה",
+   "loadMs": 1921,
+   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
    "scrollWidth": 1440,
    "innerWidth": 1440,
-   "hOverflow": false,
-   "visibleButtons": 10,
-   "smallTargets": [],
-   "brokenImgs": [],
-   "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "lsKeys": 1,
-   "fonts": [
-    "Heebo"
-   ],
-   "focusable": 14,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 874
-  },
-  {
-   "id": "h",
-   "name": "הכרטיס לאמא",
-   "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
-   "warnings": [],
-   "failed": [],
-   "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1916,
-   "title": "הכרטיס לאמא · סטודיו יצירה",
-   "scrollWidth": 320,
-   "innerWidth": 320,
    "hOverflow": false,
    "visibleButtons": 32,
    "smallTargets": [],
@@ -1168,133 +1306,18 @@
    ],
    "lsKeys": 1,
    "fonts": [
-    "Heebo"
+    "Heebo",
+    "Assistant"
    ],
-   "focusable": 38,
+   "focusable": 39,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 2570
-  },
-  {
-   "id": "h",
-   "name": "הכרטיס לאמא",
-   "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
-   "warnings": [],
-   "failed": [],
-   "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1755,
-   "title": "הכרטיס לאמא · סטודיו יצירה",
-   "scrollWidth": 390,
-   "innerWidth": 390,
-   "hOverflow": false,
-   "visibleButtons": 32,
-   "smallTargets": [],
-   "brokenImgs": [],
-   "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "lsKeys": 1,
-   "fonts": [
-    "Heebo"
-   ],
-   "focusable": 38,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 2570,
-   "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "↓ שומרים כרטיס כתמונה",
-    "תצוגה מוגדלת של הכרטיס",
-    "חיבוק חמים",
-    "טורקיז רגוע",
-    "ורוד קורל",
-    "סגול חלומי",
-    "שמש זהובה",
-    "חגיגי ונקי",
-    "קשת רכה",
-    "מסגרת חגיגית",
-    "פרחים בלב",
-    "♥",
-    "✿",
-    "✦",
-    "★",
-    "🌷",
-    "🎀",
-    "🎁",
-    "💛",
-    "🌼",
-    "🎈",
-    "✨",
-    "🌿"
-   ],
-   "lsKeysAfter": 3,
-   "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 4
-  },
-  {
-   "id": "h",
-   "name": "הכרטיס לאמא",
-   "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
-   "warnings": [],
-   "failed": [],
-   "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1851,
-   "title": "הכרטיס לאמא · סטודיו יצירה",
-   "scrollWidth": 1440,
-   "innerWidth": 1440,
-   "hOverflow": false,
-   "visibleButtons": 31,
-   "smallTargets": [],
-   "brokenImgs": [],
-   "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "lsKeys": 1,
-   "fonts": [
-    "Heebo"
-   ],
-   "focusable": 38,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 2684
+   "bodyText": 2781
   },
   {
    "id": "i",
-   "name": "צעדים ראשונים",
+   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -1311,12 +1334,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1912,
-   "title": "צעדים ראשונים · שפרה ופועה",
+   "loadMs": 1879,
+   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 23,
+   "visibleButtons": 24,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -1328,17 +1351,18 @@
    "lsKeys": 0,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Frank Ruhl Libre"
    ],
-   "focusable": 53,
+   "focusable": 54,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 983
+   "bodyText": 1039
   },
   {
    "id": "i",
-   "name": "צעדים ראשונים",
+   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -1361,12 +1385,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1839,
-   "title": "צעדים ראשונים · שפרה ופועה",
+   "loadMs": 2036,
+   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 23,
+   "visibleButtons": 24,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -1378,37 +1402,39 @@
    "lsKeys": 0,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Frank Ruhl Libre"
    ],
-   "focusable": 53,
+   "focusable": 54,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 983,
+   "bodyText": 1039,
    "clicked": [
-    "בת",
-    "בן",
-    "עדיין לא מספרים",
-    "לא, רק אחד/ת",
-    "תאומים",
-    "שלישייה",
-    "כללית",
-    "מכבי",
-    "מאוחדת",
-    "לאומית",
-    "שכירה",
-    "עצמאית",
-    "גם וגם",
-    "לא עבדתי",
-    "כן, אני רשומה",
-    "עוד לא",
-    "בואי נבנה את המפה שלי",
-    "+ הערה שלי",
-    "לשמור",
-    "לא עכשיו",
-    "לא עכשיו",
-    "+ הערה שלי",
-    "לשמור"
+    "\u05d1\u05ea",
+    "\u05d1\u05df",
+    "\u05e2\u05d3\u05d9\u05d9\u05df \u05dc\u05d0 \u05de\u05e1\u05e4\u05e8\u05d9\u05dd",
+    "\u05dc\u05d0, \u05e8\u05e7 \u05d0\u05d7\u05d3/\u05ea",
+    "\u05ea\u05d0\u05d5\u05de\u05d9\u05dd",
+    "\u05e9\u05dc\u05d9\u05e9\u05d9\u05d9\u05d4",
+    "\u05db\u05dc\u05dc\u05d9\u05ea",
+    "\u05de\u05db\u05d1\u05d9",
+    "\u05de\u05d0\u05d5\u05d7\u05d3\u05ea",
+    "\u05dc\u05d0\u05d5\u05de\u05d9\u05ea",
+    "\u05e9\u05db\u05d9\u05e8\u05d4",
+    "\u05e2\u05e6\u05de\u05d0\u05d9\u05ea",
+    "\u05d2\u05dd \u05d5\u05d2\u05dd",
+    "\u05dc\u05d0 \u05e2\u05d1\u05d3\u05ea\u05d9",
+    "\u05db\u05df, \u05d0\u05e0\u05d9 \u05e8\u05e9\u05d5\u05de\u05d4",
+    "\u05e2\u05d5\u05d3 \u05dc\u05d0",
+    "\u05d1\u05d5\u05d0\u05d9 \u05e0\u05d1\u05e0\u05d4 \u05d0\u05ea \u05d4\u05de\u05e4\u05d4 \u05e9\u05dc\u05d9",
+    "+ \u05d4\u05e2\u05e8\u05d4 \u05e9\u05dc\u05d9",
+    "\u05dc\u05e9\u05de\u05d5\u05e8",
+    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5",
+    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5",
+    "+ \u05d4\u05e2\u05e8\u05d4 \u05e9\u05dc\u05d9",
+    "\u05dc\u05e9\u05de\u05d5\u05e8",
+    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5"
    ],
    "lsKeysAfter": 1,
    "lsKeysAfterReload": 1,
@@ -1416,7 +1442,7 @@
   },
   {
    "id": "i",
-   "name": "צעדים ראשונים",
+   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -1433,12 +1459,12 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1946,
-   "title": "צעדים ראשונים · שפרה ופועה",
+   "loadMs": 2052,
+   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 23,
+   "visibleButtons": 24,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -1450,17 +1476,18 @@
    "lsKeys": 0,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Frank Ruhl Libre"
    ],
-   "focusable": 53,
+   "focusable": 54,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 983
+   "bodyText": 1039
   },
   {
    "id": "j",
-   "name": "מרווח",
+   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -1477,25 +1504,25 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1975,
-   "title": "מרווח",
+   "loadMs": 2044,
+   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 7,
+   "visibleButtons": 8,
    "smallTargets": [
     {
-     "t": "היום",
+     "t": "\u05d4\u05d9\u05d5\u05dd",
      "w": 99,
      "h": 33
     },
     {
-     "t": "החוט",
+     "t": "\u05d4\u05d7\u05d5\u05d8",
      "w": 99,
      "h": 33
     },
     {
-     "t": "אצלי",
+     "t": "\u05d0\u05e6\u05dc\u05d9",
      "w": 99,
      "h": 33
     }
@@ -1510,17 +1537,18 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Frank Ruhl Libre"
    ],
-   "focusable": 9,
-   "h1": 0,
+   "focusable": 10,
+   "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 252
+   "bodyText": 277
   },
   {
    "id": "j",
-   "name": "מרווח",
+   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -1543,25 +1571,25 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1955,
-   "title": "מרווח",
+   "loadMs": 1934,
+   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 7,
+   "visibleButtons": 8,
    "smallTargets": [
     {
-     "t": "היום",
+     "t": "\u05d4\u05d9\u05d5\u05dd",
      "w": 122,
      "h": 33
     },
     {
-     "t": "החוט",
+     "t": "\u05d4\u05d7\u05d5\u05d8",
      "w": 122,
      "h": 33
     },
     {
-     "t": "אצלי",
+     "t": "\u05d0\u05e6\u05dc\u05d9",
      "w": 122,
      "h": 33
     }
@@ -1576,19 +1604,20 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Frank Ruhl Libre"
    ],
-   "focusable": 9,
-   "h1": 0,
+   "focusable": 10,
+   "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 252,
+   "bodyText": 277,
    "clicked": [
-    "עייפה\nמשהו קטן שלא דורש כוח",
-    "ניסיתי",
-    "♡ לשמור אצלי",
-    "שאלת ערב לשניכם\nהכרטיס הזה, שא",
-    "אצלי"
+    "\u05e2\u05d9\u05d9\u05e4\u05d4\n\u05de\u05e9\u05d4\u05d5 \u05e7\u05d8\u05df \u05e9\u05dc\u05d0 \u05d3\u05d5\u05e8\u05e9 \u05db\u05d5\u05d7",
+    "\u05e0\u05d9\u05e1\u05d9\u05ea\u05d9",
+    "\u2661 \u05dc\u05e9\u05de\u05d5\u05e8 \u05d0\u05e6\u05dc\u05d9",
+    "\u05e9\u05d0\u05dc\u05ea \u05e2\u05e8\u05d1 \u05dc\u05e9\u05e0\u05d9\u05db\u05dd\n\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05d4\u05d6\u05d4, \u05e9\u05d0",
+    "\u05d0\u05e6\u05dc\u05d9"
    ],
    "lsKeysAfter": 1,
    "lsKeysAfterReload": 1,
@@ -1596,7 +1625,7 @@
   },
   {
    "id": "j",
-   "name": "מרווח",
+   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -1613,25 +1642,25 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2149,
-   "title": "מרווח",
+   "loadMs": 2036,
+   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 7,
+   "visibleButtons": 8,
    "smallTargets": [
     {
-     "t": "היום",
+     "t": "\u05d4\u05d9\u05d5\u05dd",
      "w": 135,
      "h": 33
     },
     {
-     "t": "החוט",
+     "t": "\u05d4\u05d7\u05d5\u05d8",
      "w": 135,
      "h": 33
     },
     {
-     "t": "אצלי",
+     "t": "\u05d0\u05e6\u05dc\u05d9",
      "w": 135,
      "h": 33
     }
@@ -1646,13 +1675,14 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Assistant",
     "Frank Ruhl Libre"
    ],
-   "focusable": 9,
-   "h1": 0,
+   "focusable": 10,
+   "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 252
+   "bodyText": 277
   }
  ]
 }

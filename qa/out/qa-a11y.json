@@ -12,7 +12,8 @@
    "evidence": "axe: button-name (critical) · 390 ו-1440 · <button class=\"avdot\" style=\"background:#38b6ff\"><svg …> בלי טקסט/aria-label (a11y-axe-detail-390.json).",
    "proposal": "להוסיף aria-label=\"בחירת סמל\" (ועם שם הסמל הנוכחי) לכל .avdot.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: aria-label לכל .avdot; axe button-name נקי"
   },
   {
    "id": "A-002",
@@ -24,7 +25,8 @@
    "evidence": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no · axe meta-viewport · מפר 1.4.4 (ת\"י 5568). בקבצים הסופיים אין חלון הדפסה עם נעילת זום (נבדקו כל תבניות ה-viewport).",
    "proposal": "להסיר maximum-scale ו-user-scalable.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: viewport ללא חסימה; smoke zoomLock=false"
   },
   {
    "id": "A-003",
@@ -36,7 +38,8 @@
    "evidence": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover · axe meta-viewport.",
    "proposal": "להסיר maximum-scale ו-user-scalable (להשאיר viewport-fit=cover).",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: viewport ללא חסימה; smoke zoomLock=false"
   },
   {
    "id": "A-004",
@@ -48,7 +51,8 @@
    "evidence": "width=device-width, initial-scale=1.0, maximum-scale=1.0 · axe meta-viewport.",
    "proposal": "להסיר maximum-scale=1.0.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: viewport ללא חסימה; smoke zoomLock=false"
   },
   {
    "id": "A-005",
@@ -60,7 +64,8 @@
    "evidence": "axe color-contrast (serious): #ddecec על #197f80 = 3.93:1, 13.5px רגיל.",
    "proposal": "להבהיר את הטקסט או להכהות את הרקע (≥4.5:1).",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: axe.cjs 4.10.2026: אין הפרה זו ב-390 וב-1440"
   },
   {
    "id": "A-006",
@@ -72,7 +77,8 @@
    "evidence": "axe color-contrast (serious): #917b55 על #fbf4e5 = 3.70:1 (11px bold); #8a7653 על #fbf4e5 = 3.99:1 (15px). ב-1440 מופיע אלמנט שלישי נוסף (axe-results.json).",
    "proposal": "להכהות את הצבע (למשל #6f5a38 ≈ 5.8:1).",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: axe.cjs 4.10.2026: אין הפרה זו ב-390 וב-1440"
   },
   {
    "id": "A-007",
@@ -84,7 +90,8 @@
    "evidence": "axe color-contrast (serious): #9aa3b3 על #fff = 2.54:1 (12.5px); #e98274 על #fff2f8 = 2.44:1 (מוּל הַבַּנַּאי, 13.5px bold); לבן על #e98274 = 2.65:1 (כפתור \"בן\" נבחר).",
    "proposal": "להכהות טקסט רמזים (≥ #6b7280) ולהשתמש בצבע כהה יותר לכפתור נבחר או בטקסט כהה על הרקע הוורוד.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: axe.cjs 4.10.2026: אין הפרה זו ב-390 וב-1440"
   },
   {
    "id": "A-008",
@@ -96,7 +103,8 @@
    "evidence": "axe color-contrast (serious): #b8791c על #fff6e4 = 3.37:1, 13.3px רגיל.",
    "proposal": "להכהות את הטקסט הנבחר (≈ #8a5a00 → 5.2:1) או להגדיל/להבליט.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: axe.cjs 4.10.2026: אין הפרה זו ב-390 וב-1440"
   },
   {
    "id": "A-009",
@@ -108,7 +116,8 @@
    "evidence": "axe color-contrast (serious): #647775 על #fbf5e7 = 4.35:1, 14px. ב-1440 נמצאו 5 אלמנטים.",
    "proposal": "להכהות מעט (#566866).",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: axe.cjs 4.10.2026: אין הפרה זו ב-390 וב-1440"
   },
   {
    "id": "A-010",
@@ -120,7 +129,8 @@
    "evidence": "axe color-contrast (serious): #727d70 על #fffcf7 = 4.20:1 (12px); #71817c על #faf3ed = 3.72:1 (13px).",
    "proposal": "להכהות ל-≥4.5:1.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: axe.cjs 4.10.2026: אין הפרה זו ב-390 וב-1440"
   },
   {
    "id": "A-011",
@@ -132,7 +142,8 @@
    "evidence": "axe color-contrast (serious): #a99aa1 על #fbf6f2 = 2.5:1 (13px); #a99aa1 על #fff = 2.68:1 (12.5px); #c9788a על #fbecee = 2.8:1 (לשונית פעילה); #8a8579 על #fbf6f2 = 3.42:1 (11px). מספר האלמנטים הגבוה ביותר בין החלקים.",
    "proposal": "להכהות את האפור-ורדרד (≥ #7c6f76) ואת הלשונית הפעילה; להגדיל את המשפט התחתון מ-11px.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: axe.cjs 4.10.2026: אין הפרה זו ב-390 וב-1440"
   },
   {
    "id": "A-012",
@@ -144,7 +155,8 @@
    "evidence": "axe page-has-heading-one (moderate); הכותרת הראשונה בעמוד היא h2 \"בוקר טוב\"; \"מרווח\" ב-div.",
    "proposal": "להפוך את \"מרווח\" (או הברכה) ל-h1.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: h1 \"מרווח\"; smoke h1=1"
   },
   {
    "id": "A-013",
@@ -156,7 +168,8 @@
    "evidence": "בדיקה ידנית: heads = H1,H1 ב-390 וב-1440.",
    "proposal": "להשאיר h1 אחד; כריכת הספר ל-h2.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: כריכה ל-h2; smoke h1=1"
   },
   {
    "id": "A-014",
@@ -168,7 +181,8 @@
    "evidence": "axe heading-order (moderate).",
    "proposal": "להפוך ל-h2.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: h3→h2 ב-usBox/momentForm"
   },
   {
    "id": "A-015",
@@ -180,7 +194,8 @@
    "evidence": "בדיקה ידנית (a11y-manual-checks.json): d — input ללא label/aria-label; i — <label> עוטף-לא-משויך ל-#fBaby ולקבוצות כפתורי הרדיו; axe לא מסמן כי placeholder נחשב שם.",
    "proposal": "להוסיף aria-label/label for לשדות, ו-role=\"group\" + aria-labelledby לקבוצות הבחירה.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: aria-label לשדה השם ב-ד (התווית ב-ט עדיין לא משויכת)"
   },
   {
    "id": "A-016",

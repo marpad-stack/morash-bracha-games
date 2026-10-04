@@ -11,5 +11,5 @@
     "qa:report": "python .claude/skills/bracha-qa/scripts/report.py",
     "qa": "npm run qa:smoke && npm run qa:axe && npm run qa:inventory && npm run qa:notes && npm run qa:report"
   },
-  "devDependencies": { "playwright": "^1.56.0", "axe-core": "^4.10.0" }
+  "devDependencies": { "playwright": "1.56.0", "axe-core": "^4.10.0" }
 }
