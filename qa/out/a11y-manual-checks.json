@@ -1,0 +1,1138 @@
+{
+ "a": {
+  "imgs": 29,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [
+   {
+    "src": "data:image/webp;base64,UklGRpbcAwBXRUJQV",
+    "alt": "",
+    "vis": true,
+    "w": 320
+   }
+  ],
+  "noName": [],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:צוֹבְעִים ומרכיבים!",
+   "H2:דַּפֵּי צְבִיעָה",
+   "H2:מִשְׂחָקִים"
+  ],
+  "live": 1,
+  "dialogs": 0,
+  "main": 0,
+  "inputsNoLabel": [],
+  "anims": 0,
+  "rmCss": true,
+  "title": "מתחם הקטנטנים · מורה שמיים",
+  "tabWalk": [
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "הגדלת טקסט",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "רמת משחק",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "הַמֵּדַלְיוֹת שֶׁלִּי",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "צבעי התצוגה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "🎨\nדַּפֵּי צְבִיעָה\n15 צִ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "🧩\nמִשְׂחָקִים\nמִשְׂחָקִי",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "📚 הַחוֹבֶרֶת שֶׁלִּי\n0",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   null,
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "הגדלת טקסט",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "רמת משחק",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "הַמֵּדַלְיוֹת שֶׁלִּי",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "צבעי התצוגה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": true,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "b": {
+  "imgs": 2,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [],
+  "noName": [],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:תינוק חדש בבית? קוֹרְאִים ומשחקים!",
+   "H1:אוֹר הִגִּיעַ אֵלֵינוּ"
+  ],
+  "live": 1,
+  "dialogs": 2,
+  "main": 0,
+  "inputsNoLabel": [],
+  "anims": 0,
+  "rmCss": true,
+  "title": "אור הגיע אלינו",
+  "tabWalk": [
+   {
+    "t": "קוֹרְאִים בספר",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "מִשְׂחָקִים יחד",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מצב הקראה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "תוכן העניינים",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מַדְפִּיסִים חוברת",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "הסיפור של מענדי",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "הסיפור של חני",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "לעמודים הבאים",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   null,
+   {
+    "t": "קוֹרְאִים בספר",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "מִשְׂחָקִים יחד",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מצב הקראה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": true,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "c": {
+  "imgs": 1,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [],
+  "noName": [
+   "<button data-open=\"0\">💰 תּוֹפְסִים כּוֹכָבִים </button>",
+   "<button data-open=\"1\">🍷 זִיכָּרוֹן מָהִיר! </button>",
+   "<button data-open=\"2\">📘 מנגינת הצבעים! </button>",
+   "<button data-open=\"3\">🕯️ מסדרים את הרצף </button>",
+   "<button data-open=\"4\">📜 בלשי הצורות! </button>"
+  ],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:הַרְפַּתְקָה בַּבַּיִת!"
+  ],
+  "live": 1,
+  "dialogs": 2,
+  "main": 1,
+  "inputsNoLabel": [],
+  "anims": 0,
+  "rmCss": true,
+  "title": "בית המצוות · הרפתקת האותיות",
+  "tabWalk": [
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "רמת משחק",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "קופת צדקה — תופסים כוכבים",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "גביע קידוש — זיכרון מהיר!",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "סידור — מנגינת הצבעים!",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "נרות שבת — מסדרים את הרצף",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "חומש — בלשי הצורות!",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "מעדיפים לבחור מרשימה?",
+    "outline": "auto 1px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "🔒 הַתֵּיבָה מְחַכָּה לָא",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "הַרְפַּתְקָה חֲדָשָׁה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   null,
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": true,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "d": {
+  "imgs": 3,
+  "imgNoAlt": [
+   {
+    "src": "",
+    "alt": null,
+    "vis": false,
+    "w": 0
+   }
+  ],
+  "imgEmptyAltVisBig": [
+   {
+    "src": "data:image/webp;base64,UklGRhKoAwBXRUJQV",
+    "alt": "",
+    "vis": true,
+    "w": 350
+   }
+  ],
+  "noName": [
+   "<button class=\"avdot\" style=\"background:#38b6ff\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 40 40\" class=\"\"><path d=\"M5 27",
+   "<input placeholder=\"שם 1\" value=\"\" maxlength=\"10\">"
+  ],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:מסע המצוות",
+   "H2:כַּמָּה שַׂחְקָנִים?",
+   "H2:נֶגֶד מִי מְשַׂחֲקִים?",
+   "H2:מִי מְשַׂחֵק?"
+  ],
+  "live": 0,
+  "dialogs": 0,
+  "main": 0,
+  "inputsNoLabel": [
+   "<input placeholder=\"שם 1\" value=\"\" maxlength=\"10\">"
+  ],
+  "anims": 0,
+  "rmCss": true,
+  "title": "מסע המצוות · מורה שמיים",
+  "tabWalk": [
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "מצב לילה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "קצב המשחק",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "●\n1",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "●●\n2",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "●●●\n3",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "●●●●\n4",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מוּל הַבַּנַּאי 🏗️",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "לְבַד בְּשֶׁקֶט",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "BUTTON",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "INPUT",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "בן",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "בת",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": true,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "e": {
+  "imgs": 5,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [
+   {
+    "src": "data:image/webp;base64,UklGRiIoAwBXRUJQV",
+    "alt": "",
+    "vis": true,
+    "w": 306
+   }
+  ],
+  "noName": [],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:מַסָּע בַּזְּמַן"
+  ],
+  "live": 0,
+  "dialogs": 0,
+  "main": 0,
+  "inputsNoLabel": [],
+  "anims": 2,
+  "rmCss": true,
+  "title": "מסע בזמן — סדר יום יהודי",
+  "tabWalk": [
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "אֵיךְ מְשַׂחֲקִים?",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "קַל",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "בֵּינוֹנִי",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "אֶתְגָּר",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "שַׂחְקָן אֶחָד",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "שְׁנַיִים",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "סגנון מסע",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מַתְחִילִים!",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "🏅 אַלְבּוֹם מַדְבֵּקוֹת",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "🔊 צְלִיל",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": true,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "f": {
+  "imgs": 3,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [
+   {
+    "src": "data:image/webp;base64,UklGRshpAwBXRUJQV",
+    "alt": "",
+    "vis": true,
+    "w": 320
+   }
+  ],
+  "noName": [],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:מִטְבַּח הַשַּׁבָּת"
+  ],
+  "live": 0,
+  "dialogs": 0,
+  "main": 0,
+  "inputsNoLabel": [],
+  "anims": 0,
+  "rmCss": true,
+  "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+  "tabWalk": [
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "אֵיךְ מְשַׂחֲקִים?",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "קצב המטבח",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מַתְחִילִים לֶאֱפוֹת",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   null,
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "אֵיךְ מְשַׂחֲקִים?",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "קצב המטבח",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מַתְחִילִים לֶאֱפוֹת",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   null,
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": true,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "g": {
+  "imgs": 2,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [],
+  "noName": [],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:מָה בֶּאֱמֶת\nקָרָה לַמַּתָּנָה?",
+   "H2:מַשֶּׁהוּ מִסְתַּתֵּר כָּאן",
+   "H2:שׁוֹמְעִים אֶת כָּל הַצְּדָדִים",
+   "H3:עֵדוּת 1",
+   "H3:עֵדוּת 2",
+   "H3:עֵדוּת 3",
+   "H3:עֵדוּת 4"
+  ],
+  "live": 1,
+  "dialogs": 1,
+  "main": 1,
+  "inputsNoLabel": [],
+  "anims": 4,
+  "rmCss": true,
+  "title": "בלש המידות · תיק המתנה",
+  "tabWalk": [
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "פּוֹתְחִים אֶת תִּיק הַחֲ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "מסלול חקירה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "בדיקת סימן 1",
+    "outline": "solid 1px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "בדיקת סימן 2",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "בדיקת סימן 3",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "בדיקת סימן 4",
+    "outline": "solid 0px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "מְחַבְּרִים אֶת הָעֵדוּיו",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "צְרִיכִים רֶמֶז?",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "חֲקִירָה חֲדָשָׁה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   null,
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": true,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "h": {
+  "imgs": 1,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [],
+  "noName": [],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:הַכַּרְטִיס לְאִמָּא",
+   "H2:01 · הַבְּרָכָה",
+   "H2:02 · הָאֲווִירָה",
+   "H2:03 · קְצָת קֶסֶם",
+   "H2:04 · הַנְּגִיעָה שֶׁלָּכֶם"
+  ],
+  "live": 2,
+  "dialogs": 0,
+  "main": 1,
+  "inputsNoLabel": [],
+  "anims": 0,
+  "rmCss": true,
+  "title": "הכרטיס לאמא · סטודיו יצירה",
+  "tabWalk": [
+   {
+    "t": "ניקוד אותיות",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טקסט גדול",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "↓ שׁוֹמְרִים כַּרְטִיס כּ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "תצוגה מוגדלת של הַכַּרְטִ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "בחירת ברכה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "signature",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "חיבוק חמים",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "טורקיז רגוע",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "ורוד קורל",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "סגול חלומי",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "שמש זהובה",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "חגיגי ונקי",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "קֶשֶׁת רַכָּה",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מִסְגֶּרֶת חֲגִיגִית",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": true,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "i": {
+  "imgs": 2,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [
+   {
+    "src": "data:image/webp;base64,UklGRtC9AgBXRUJQV",
+    "alt": "",
+    "vis": true,
+    "w": 300
+   }
+  ],
+  "noName": [
+   "<input type=\"text\" id=\"fBaby\" placeholder=\"עדיין מתלבטים\">"
+  ],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H1:מזל טוב! נכיר רגע?",
+   "H3:ושתי שאלות מאיתנו 💛"
+  ],
+  "live": 1,
+  "dialogs": 0,
+  "main": 1,
+  "inputsNoLabel": [
+   "<input type=\"text\" id=\"fBaby\" placeholder=\"עדיין מתלבטים\">"
+  ],
+  "anims": 0,
+  "rmCss": true,
+  "title": "צעדים ראשונים · שפרה ופועה",
+  "tabWalk": [
+   {
+    "t": "fName",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "fBirth",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "fBirth",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "fBirth",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "fBirth",
+    "outline": "none 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "בת",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "בן",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "עדיין לא מספרים",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "fBaby",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "לא, רק אחד/ת",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "תאומים",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "שלישייה",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "כללית",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "מכבי",
+    "outline": "solid 0px",
+    "shadow": false,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": false,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ },
+ "j": {
+  "imgs": 1,
+  "imgNoAlt": [],
+  "imgEmptyAltVisBig": [
+   {
+    "src": "data:image/webp;base64,UklGRu5bAgBXRUJQV",
+    "alt": "",
+    "vis": true,
+    "w": 340
+   }
+  ],
+  "noName": [],
+  "clickDivs": [],
+  "clickDivCount": 0,
+  "heads": [
+   "H2:בוקר טוב"
+  ],
+  "live": 0,
+  "dialogs": 0,
+  "main": 1,
+  "inputsNoLabel": [],
+  "anims": 0,
+  "rmCss": true,
+  "title": "מרווח",
+  "tabWalk": [
+   {
+    "t": "עייפה\nמשהו קטן שלא דורש כ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "על הקצה\nקודם משהו שירגיע ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "רוצה חיזוק\nלהזכיר לי מי א",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "יציבה היום\nיש לי מקום ללמ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "היום",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "החוט",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "אצלי",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   null,
+   {
+    "t": "עייפה\nמשהו קטן שלא דורש כ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "על הקצה\nקודם משהו שירגיע ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "רוצה חיזוק\nלהזכיר לי מי א",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "יציבה היום\nיש לי מקום ללמ",
+    "outline": "solid 3px",
+    "shadow": true,
+    "vis": true
+   },
+   {
+    "t": "היום",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   },
+   {
+    "t": "החוט",
+    "outline": "solid 3px",
+    "shadow": false,
+    "vis": true
+   }
+  ],
+  "animsReduced": 0,
+  "animsReducedAll": 0,
+  "aplus": false,
+  "overflowAfterAplus": 0,
+  "htmlFontSize": "16px / body 16px"
+ }
+}

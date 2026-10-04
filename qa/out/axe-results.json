@@ -1,5 +1,5 @@
 {
- "run": "2026-09-29T22:39:55.072Z",
+ "run": "2026-10-04T07:11:46.282Z",
  "results": [
   {
    "id": "a",
@@ -699,65 +699,6 @@
       ".j-persistence"
      ],
      "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-    }
-   ]
-  },
-  {
-   "id": "L",
-   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
-   "width": 390,
-   "bytesKB": 522,
-   "reqs": 1,
-   "violations": [
-    {
-     "id": "color-contrast",
-     "impact": "serious",
-     "help": "Elements must meet minimum color contrast ratio thresholds",
-     "nodes": 1,
-     "samples": [
-      ".hero-cta"
-     ],
-     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #dfb23e, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio"
-    },
-    {
-     "id": "heading-order",
-     "impact": "moderate",
-     "help": "Heading levels should only increase by one",
-     "nodes": 1,
-     "samples": [
-      ".f-links > h4"
-     ],
-     "summary": "Fix any of the following:\n  Heading order invalid"
-    }
-   ]
-  },
-  {
-   "id": "L",
-   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
-   "width": 1440,
-   "bytesKB": 522,
-   "reqs": 1,
-   "violations": [
-    {
-     "id": "color-contrast",
-     "impact": "serious",
-     "help": "Elements must meet minimum color contrast ratio thresholds",
-     "nodes": 2,
-     "samples": [
-      ".btn-join",
-      ".hero-cta"
-     ],
-     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #dfb23e, font size: 11.8pt (15.75px), font weight: bold). Expected contrast ra"
-    },
-    {
-     "id": "heading-order",
-     "impact": "moderate",
-     "help": "Heading levels should only increase by one",
-     "nodes": 1,
-     "samples": [
-      ".f-links > h4"
-     ],
-     "summary": "Fix any of the following:\n  Heading order invalid"
     }
    ]
   }

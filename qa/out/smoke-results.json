@@ -1,5 +1,5 @@
 {
- "run": "2026-09-29T22:39:18.399Z",
+ "run": "2026-10-04T07:12:36.207Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
@@ -7,9 +7,9 @@
    "name": "מתחם הקטנטנים",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -21,7 +21,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2835,
+   "loadMs": 2530,
    "title": "מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -53,18 +53,18 @@
    "name": "מתחם הקטנטנים",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
@@ -73,7 +73,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1798,
+   "loadMs": 2069,
    "title": "מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -116,21 +116,21 @@
    "name": "מתחם הקטנטנים",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1806,
+   "loadMs": 2096,
    "title": "מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -162,9 +162,9 @@
    "name": "אור הגיע אלינו",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -176,7 +176,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2742,
+   "loadMs": 2900,
    "title": "אור הגיע אלינו",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -207,18 +207,18 @@
    "name": "אור הגיע אלינו",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
@@ -227,7 +227,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2041,
+   "loadMs": 2716,
    "title": "אור הגיע אלינו",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -272,21 +272,21 @@
    "name": "אור הגיע אלינו",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2792,
+   "loadMs": 2563,
    "title": "אור הגיע אלינו",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -317,8 +317,8 @@
    "name": "בית המצוות",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -329,7 +329,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1907,
+   "loadMs": 1754,
    "title": "בית המצוות · הרפתקת האותיות",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -358,23 +358,23 @@
    "name": "בית המצוות",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1668,
+   "loadMs": 1847,
    "title": "בית המצוות · הרפתקת האותיות",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -422,19 +422,19 @@
    "name": "בית המצוות",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1639,
+   "loadMs": 1867,
    "title": "בית המצוות · הרפתקת האותיות",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -463,21 +463,21 @@
    "name": "מסע המצוות",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1696,
+   "loadMs": 2025,
    "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -507,18 +507,18 @@
    "name": "מסע המצוות",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
@@ -527,7 +527,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1665,
+   "loadMs": 2006,
    "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -575,21 +575,21 @@
    "name": "מסע המצוות",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1679,
+   "loadMs": 1917,
    "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -619,21 +619,21 @@
    "name": "מסע בזמן",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1739,
+   "loadMs": 1891,
    "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -690,12 +690,12 @@
    "name": "מסע בזמן",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -710,7 +710,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1690,
+   "loadMs": 1878,
    "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -770,7 +770,7 @@
     "שחקן אחד",
     "שניים",
     "מתחילים!",
-    "✏️\nשיעורים ומשחק"
+    "☀️\nקימה בבוקר"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
@@ -781,9 +781,9 @@
    "name": "מסע בזמן",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -795,7 +795,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1697,
+   "loadMs": 1992,
    "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -852,21 +852,21 @@
    "name": "מטבח השבת",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1709,
+   "loadMs": 1883,
    "title": "מטבח השבת — הכנת החלות לכבוד שבת",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -896,18 +896,18 @@
    "name": "מטבח השבת",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
@@ -916,7 +916,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1693,
+   "loadMs": 1935,
    "title": "מטבח השבת — הכנת החלות לכבוד שבת",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -954,21 +954,21 @@
    "name": "מטבח השבת",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1661,
+   "loadMs": 1837,
    "title": "מטבח השבת — הכנת החלות לכבוד שבת",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -998,8 +998,8 @@
    "name": "בלש המידות",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -1010,7 +1010,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1750,
+   "loadMs": 1783,
    "title": "בלש המידות · תיק המתנה",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -1039,23 +1039,23 @@
    "name": "בלש המידות",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1640,
+   "loadMs": 1853,
    "title": "בלש המידות · תיק המתנה",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -1099,19 +1099,19 @@
    "name": "בלש המידות",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1706,
+   "loadMs": 1858,
    "title": "בלש המידות · תיק המתנה",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -1140,19 +1140,19 @@
    "name": "הכרטיס לאמא",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1702,
+   "loadMs": 1916,
    "title": "הכרטיס לאמא · סטודיו יצירה",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -1181,23 +1181,23 @@
    "name": "הכרטיס לאמא",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1677,
+   "loadMs": 1755,
    "title": "הכרטיס לאמא · סטודיו יצירה",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -1256,19 +1256,19 @@
    "name": "הכרטיס לאמא",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1653,
+   "loadMs": 1851,
    "title": "הכרטיס לאמא · סטודיו יצירה",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -1297,21 +1297,21 @@
    "name": "צעדים ראשונים",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1719,
+   "loadMs": 1912,
    "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -1341,18 +1341,18 @@
    "name": "צעדים ראשונים",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
@@ -1361,7 +1361,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1659,
+   "loadMs": 1839,
    "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -1419,9 +1419,9 @@
    "name": "צעדים ראשונים",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -1433,7 +1433,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1659,
+   "loadMs": 1946,
    "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -1463,9 +1463,9 @@
    "name": "מרווח",
    "width": 320,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -1477,7 +1477,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1674,
+   "loadMs": 1975,
    "title": "מרווח",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -1523,12 +1523,12 @@
    "name": "מרווח",
    "width": 390,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -1543,7 +1543,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1711,
+   "loadMs": 1955,
    "title": "מרווח",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -1599,9 +1599,9 @@
    "name": "מרווח",
    "width": 1440,
    "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
@@ -1613,7 +1613,7 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1611,
+   "loadMs": 2149,
    "title": "מרווח",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -1653,275 +1653,6 @@
    "lang": "he",
    "dir": "rtl",
    "bodyText": 252
-  },
-  {
-   "id": "L",
-   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
-   "width": 320,
-   "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
-   ],
-   "warnings": [],
-   "failed": [
-    "https://morash.co.il/images/logo-white.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/shifra-logo.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/balloon-tree.webp :: HTTP 403",
-    "https://morash.co.il/images/bracha/mazal-tov.svg :: HTTP 403",
-    "https://morash.co.il/images/bracha/briut.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/legadel.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/maanika.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/child-channel.png :: HTTP 403"
-   ],
-   "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1742,
-   "title": "שפרה ופועה של מורה שמים · הבאת ברכה לעולם",
-   "scrollWidth": 320,
-   "innerWidth": 320,
-   "hOverflow": false,
-   "visibleButtons": 24,
-   "smallTargets": [],
-   "brokenImgs": [
-    "https://morash.co.il/images/logo-white.png",
-    "https://morash.co.il/images/bracha/shifra-logo.png",
-    "https://morash.co.il/images/bracha/balloon-tree.webp",
-    "https://morash.co.il/images/bracha/mazal-tov.svg",
-    "https://morash.co.il/images/bracha/briut.png",
-    "https://morash.co.il/images/bracha/legadel.png",
-    "https://morash.co.il/images/bracha/maanika.png",
-    "https://morash.co.il/images/bracha/child-channel.png",
-    "https://morash.co.il/images/logo-white.png"
-   ],
-   "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [],
-   "lsKeys": 0,
-   "fonts": [
-    "Almoni AAA",
-    "Almoni Tzar AAA"
-   ],
-   "focusable": 48,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 1637
-  },
-  {
-   "id": "L",
-   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
-   "width": 390,
-   "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
-   ],
-   "warnings": [],
-   "failed": [
-    "https://morash.co.il/images/logo-white.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/balloon-tree.webp :: HTTP 403",
-    "https://morash.co.il/images/bracha/shifra-logo.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/mazal-tov.svg :: HTTP 403",
-    "https://morash.co.il/images/bracha/briut.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/legadel.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/maanika.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/child-channel.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/sara-drawing.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/binush.webp :: HTTP 403",
-    "https://morash.co.il/images/bracha/lirot-malkeinu.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/derech-habayit.png :: HTTP 403",
-    "https://morash.co.il/bracha :: HTTP 403",
-    "https://morash.co.il/bracha :: HTTP 403"
-   ],
-   "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [
-    "https://morash.co.il/bracha#birth-form",
-    "https://morash.co.il/bracha#birth-form"
-   ],
-   "status": 200,
-   "loadMs": 1730,
-   "title": "שפרה ופועה של מורה שמים · הבאת ברכה לעולם",
-   "scrollWidth": 390,
-   "innerWidth": 390,
-   "hOverflow": false,
-   "visibleButtons": 24,
-   "smallTargets": [],
-   "brokenImgs": [
-    "https://morash.co.il/images/logo-white.png",
-    "https://morash.co.il/images/bracha/shifra-logo.png",
-    "https://morash.co.il/images/bracha/balloon-tree.webp",
-    "https://morash.co.il/images/bracha/mazal-tov.svg",
-    "https://morash.co.il/images/bracha/briut.png",
-    "https://morash.co.il/images/bracha/legadel.png",
-    "https://morash.co.il/images/bracha/maanika.png",
-    "https://morash.co.il/images/bracha/child-channel.png",
-    "https://morash.co.il/images/bracha/sara-drawing.png",
-    "https://morash.co.il/images/logo-white.png"
-   ],
-   "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [],
-   "lsKeys": 0,
-   "fonts": [
-    "Almoni AAA",
-    "Almoni Tzar AAA"
-   ],
-   "focusable": 48,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 1637,
-   "clicked": [
-    "תפריט",
-    "לעדכן שילדתי",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "נפתח ליולדות 💛",
-    "שליחה"
-   ],
-   "lsKeysAfter": 0,
-   "lsKeysAfterReload": 0,
-   "errorsAfterClicks": 15
-  },
-  {
-   "id": "L",
-   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
-   "width": 1440,
-   "errors": [
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()",
-    "Failed to load resource: the server responded with a status of 403 ()"
-   ],
-   "warnings": [],
-   "failed": [
-    "https://morash.co.il/images/logo-white.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/shifra-logo.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/balloon-tree.webp :: HTTP 403",
-    "https://morash.co.il/images/bracha/ad-habayit.svg :: HTTP 403",
-    "https://morash.co.il/images/bracha/gift-box.webp :: HTTP 403",
-    "https://morash.co.il/images/bracha/mazal-tov.svg :: HTTP 403",
-    "https://morash.co.il/images/bracha/briut.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/legadel.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/maanika.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/child-channel.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/sara-drawing.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/binush.webp :: HTTP 403",
-    "https://morash.co.il/images/bracha/lirot-malkeinu.png :: HTTP 403",
-    "https://morash.co.il/images/bracha/derech-habayit.png :: HTTP 403"
-   ],
-   "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1738,
-   "title": "שפרה ופועה של מורה שמים · הבאת ברכה לעולם",
-   "scrollWidth": 1440,
-   "innerWidth": 1440,
-   "hOverflow": false,
-   "visibleButtons": 29,
-   "smallTargets": [
-    {
-     "t": "ראשי",
-     "w": 34,
-     "h": 38
-    },
-    {
-     "t": "אודות",
-     "w": 37,
-     "h": 38
-    },
-    {
-     "t": "תרומה",
-     "w": 40,
-     "h": 38
-    },
-    {
-     "t": "יצירת קשר",
-     "w": 69,
-     "h": 38
-    }
-   ],
-   "brokenImgs": [
-    "https://morash.co.il/images/logo-white.png",
-    "https://morash.co.il/images/bracha/shifra-logo.png",
-    "https://morash.co.il/images/bracha/balloon-tree.webp",
-    "https://morash.co.il/images/bracha/ad-habayit.svg",
-    "https://morash.co.il/images/bracha/gift-box.webp",
-    "https://morash.co.il/images/bracha/mazal-tov.svg",
-    "https://morash.co.il/images/bracha/briut.png",
-    "https://morash.co.il/images/bracha/legadel.png",
-    "https://morash.co.il/images/bracha/maanika.png",
-    "https://morash.co.il/images/bracha/child-channel.png",
-    "https://morash.co.il/images/bracha/sara-drawing.png",
-    "https://morash.co.il/images/bracha/binush.webp",
-    "https://morash.co.il/images/bracha/lirot-malkeinu.png",
-    "https://morash.co.il/images/bracha/derech-habayit.png",
-    "https://morash.co.il/images/logo-white.png"
-   ],
-   "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [],
-   "lsKeys": 0,
-   "fonts": [
-    "Almoni AAA",
-    "Almoni Tzar AAA"
-   ],
-   "focusable": 48,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 1681
   }
  ]
 }

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "a",
+    "passed": false,
+    "error": "locator.click: Error: strict mode violation: locator('[data-close=gpanel]') resolved to 2 elements:\n    1) <button class=\"x\" data-close=\"gpanel\" title=\"סגירה וחזרה\" aria-label=\"סגירה וחזרה\">…</button> aka getByRole('button', { name: 'סגירה וחזרה' })\n    2) <button class=\"btn btn-s\" data-close=\"gpanel\">לבחירת הַמִּשְׂחָקִים</button> aka getByRole('button', { name: 'לבחירת הַמִּשְׂחָקִים' })\n\nCall log:\n\u001b[2m  - waiting for locator('[data-close=gpanel]')\u001b[22m\n",
+    "errors": []
+  },
+  {
+    "id": "b",
+    "passed": false,
+    "error": "locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#bookReaderNext')\u001b[22m\n",
+    "errors": []
+  },
+  {
+    "id": "c",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "id": "d",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "id": "e",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "id": "f",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "id": "g",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "id": "h",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "id": "i",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "id": "j",
+    "passed": true,
+    "errors": []
+  }
+]

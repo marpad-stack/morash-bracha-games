@@ -1,6 +1,6 @@
 {
  "agent": "qa-inventory",
- "run": "2026-09-29T22:40:38",
+ "run": "2026-10-04T07:10:55",
  "findings": [
   {
    "id": "INV-001",

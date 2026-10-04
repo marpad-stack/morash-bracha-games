@@ -1,0 +1,119 @@
+##### verify-b-final 07:56:17
+AssertionError [ERR_ASSERTION]: 0 == 12
+    at <sandbox>/codex/dev/verify-b-final.cjs:10:9 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 0,
+  expected: 12,
+  operator: '==',
+  diff: 'simple'
+}
+##### exit verify-b-final 1
+##### verify-b-edition 07:56:19
+320/390/768/1440 layouts, RTL spreads, contents and reading mode
+No inline questions; three end activities
+Edition bookmark persists
+AssertionError [ERR_ASSERTION]: 24 == 13
+    at <sandbox>/codex/dev/verify-b-edition.cjs:32:89 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 24,
+  expected: 13,
+  operator: '==',
+  diff: 'simple'
+}
+##### exit verify-b-edition 1
+##### verify-b-media 07:56:28
+page.waitForFunction: TypeError: Cannot read properties of null (reading 'getAttribute')
+    at eval (eval at predicate (eval at evaluate (:290:30)), <anonymous>:1:36)
+    at predicate (eval at evaluate (:290:30), <anonymous>:7:23)
+    at next (eval at evaluate (:290:30), <anonymous>:29:29)
+    at eval (eval at evaluate (:290:30), <anonymous>:42:9)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at <sandbox>/codex/dev/verify-b-media.cjs:15:16
+##### exit verify-b-media 1
+##### verify-b-unavailable 07:56:29
+locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.b-book-column .review-tips') to be visible[22m
+
+    at <sandbox>/codex/dev/verify-b-unavailable.cjs:10:73 {
+  name: 'TimeoutError'
+}
+##### exit verify-b-unavailable 1
+##### verify-b-variants 07:57:01
+Chani manuscript, UI, three end activities, four widths, direct URL and separate bookmarks
+All 17 illustrations load; logo changes only its small corner and keeps artwork dimensions
+Chani four print cases: 84 PDF pages, no clipped paper, full A4 and folded A4; print edition remains stable
+Chani memory uses nine different scene pictures and completes eight pairs
+Unavailable artwork leaves readable story and blocks blank printing until explicit text fallback
+##### exit verify-b-variants 0
+##### verify-b-polish 07:57:31
+page.waitForFunction: ReferenceError: pageImg is not defined
+    at eval (eval at predicate (eval at evaluate (:290:30)), <anonymous>:1:25)
+    at predicate (eval at evaluate (:290:30), <anonymous>:7:23)
+    at next (eval at evaluate (:290:30), <anonymous>:29:29)
+    at eval (eval at evaluate (:290:30), <anonymous>:42:9)
+    at UtilityScript.evaluate (<anonymous>:292:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at <sandbox>/codex/dev/verify-b-polish.cjs:4:13
+##### exit verify-b-polish 1
+##### verify-b-print 07:57:32
+AssertionError [ERR_ASSERTION]: 0 == 21
+    at <sandbox>/codex/dev/verify-b-print.cjs:11:175 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 0,
+  expected: 21,
+  operator: '==',
+  diff: 'simple'
+}
+##### exit verify-b-print 1
+##### verify-b-filtered-ui 07:57:36
+locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-g="quiet"] .b-thumbnail-note') to be visible[22m
+
+    at <sandbox>/codex/dev/verify-b-filtered-ui.cjs:12:60 {
+  name: 'TimeoutError'
+}
+##### exit verify-b-filtered-ui 1
+##### verify-brand 07:58:08
+page.evaluate: TypeError: Cannot read properties of undefined (reading 'scene')
+    at pageHTML (http://127.0.0.1:8765/upgraded/b-story.html:1593:51)
+    at http://127.0.0.1:8765/upgraded/b-story.html:1621:35
+    at Array.map (<anonymous>)
+    at render (http://127.0.0.1:8765/upgraded/b-story.html:1621:28)
+    at eval (eval at evaluate (:290:30), <anonymous>:4:9)
+    at async <anonymous>:316:30
+    at <sandbox>/codex/dev/verify-brand.cjs:11:27
+##### exit verify-brand 1
+##### verify-facing-book 07:58:13
+mendy: every word once on painted scene; all art loaded; five viewports; no clipped text; end play; four print cases
+chani: every word once on painted scene; all art loaded; five viewports; no clipped text; end play; four print cases
+##### exit verify-facing-book 0
+##### verify-picture-story 07:59:23
+mendy: every word once on painted scene; all art loaded; five viewports; no clipped text; end play; four print cases
+chani: every word once on painted scene; all art loaded; five viewports; no clipped text; end play; four print cases
+##### exit verify-picture-story 0
+##### verify-painted-large 08:00:31
+Both enlarged reading modes: complete prose, no overflow or clipped text at four widths.
+##### exit verify-painted-large 0
+##### verify-a-print 08:00:46
+390 single pass
+390 booklet pass
+390 painted pass
+1440 single pass
+1440 booklet pass
+1440 painted pass
+##### exit verify-a-print 0
+##### verify-b-edition-offline 08:00:57
+page.goto: net::ERR_FILE_NOT_FOUND at file://<sandbox>/codex/dev/review-evidence/offline-edition/b-story.html
+Call log:
+[2m  - navigating to "file://<sandbox>/codex/dev/review-evidence/offline-edition/b-story.html", waiting until "domcontentloaded"[22m
+
+    at <sandbox>/codex/dev/verify-b-edition-offline.cjs:6:10 {
+  name: 'Error'
+}
+##### exit verify-b-edition-offline 1
