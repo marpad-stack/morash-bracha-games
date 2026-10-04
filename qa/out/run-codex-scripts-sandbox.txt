@@ -1,0 +1,155 @@
+##### review-deep 07:32:11
+a FAIL locator.click: Error: strict mode violation: locator('[data-close=gpanel]') resolved to 2 elements:
+    1) <button class="x" data-close="gpanel" title="סגירה וחזרה" aria-label="סגירה וחזרה">…</button> aka getByRole('button', { name: 'סגירה וחזרה' })
+    2) <button class="btn btn-s" data-close="gpanel">לבחירת הַמִּשְׂחָקִים</button> aka getByRole('button', { name: 'לבחירת הַמִּשְׂחָקִים' })
+
+Call log:
+[2m  - waiting for locator('[data-close=gpanel]')[22m
+
+b FAIL locator.click: Timeout 8000ms exceeded.
+Call log:
+[2m  - waiting for locator('#bookReaderNext')[22m
+
+c PASS
+d PASS
+e PASS
+f PASS
+g PASS
+h PASS
+i PASS
+j PASS
+##### exit review-deep 1 07:33:25
+##### review-final 07:33:25
+{"canvasBox":{"x":60,"y":238.40625,"width":270,"height":337.5},"state":{"mode":"draw","scrollY":191,"point":""}}
+{"name":"h-mobile-tools","passed":true}
+{"name":"f-touch-drag","passed":true}
+{"name":"d-mission-engines","passed":true}
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+page.waitForEvent: Timeout 12000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+    at <sandbox>/codex/dev/review-final.cjs:24:281
+    at async check (<sandbox>/codex/dev/review-final.cjs:6:383)
+    at async <sandbox>/codex/dev/review-final.cjs:23:1 {
+  name: 'TimeoutError'
+}
+
+Node.js v22.22.0
+##### exit review-final 1 07:33:51
+##### editorial-test 07:33:51
+locator.selectOption: Timeout 12000ms exceeded.
+Call log:
+[2m  - waiting for locator('#bookLevel')[22m
+[2m    - locator resolved to <select id="bookLevel" aria-label="רמת משחק">…</select>[22m
+[2m  - attempting select option action[22m
+[2m    2 × waiting for element to be visible and enabled[22m
+[2m      - element is not visible[22m
+[2m    - retrying select option action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible and enabled[22m
+[2m      - element is not visible[22m
+[2m    - retrying select option action[22m
+[2m      - waiting 100ms[22m
+[2m    24 × waiting for element to be visible and enabled[22m
+[2m       - element is not visible[22m
+[2m     - retrying select option action[22m
+[2m       - waiting 500ms[22m
+
+    at <sandbox>/codex/dev/editorial-test.cjs:16:34 {
+  name: 'TimeoutError'
+}
+##### exit editorial-test 1 07:34:05
+##### verify-a-final 07:34:05
+node:fs:560
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open '<sandbox>/codex/dev/a-final-content.json'
+    at Object.openSync (node:fs:560:18)
+    at Object.readFileSync (node:fs:444:35)
+    at Object.<anonymous> (<sandbox>/codex/dev/verify-a-final.cjs:4:78)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '<sandbox>/codex/dev/a-final-content.json'
+}
+
+Node.js v22.22.0
+##### exit verify-a-final 1 07:34:06
+##### verify-painted-book 07:34:06
+mendy: every word once on painted scene; all art loaded; five viewports; no clipped text; end play; four print cases
+chani: every word once on painted scene; all art loaded; five viewports; no clipped text; end play; four print cases
+##### exit verify-painted-book 0 07:35:23
+##### review-flows 07:35:23
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "id": "e",
+    "width": 1440,
+    "label": "activity",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "id": "e",
+    "width": 1440,
+    "label": "next",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "id": "f",
+    "width": 1440,
+    "label": "stage",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "id": "g",
+    "width": 1440,
+    "label": "testimony",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "id": "h",
+    "width": 1440,
+    "label": "editing",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "id": "h",
+    "width": 1440,
+    "label": "restored",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "id": "i",
+    "width": 1440,
+    "label": "map",
+    "errors": [],
+    "overflow": false
+  },
+  {
+    "id": "j",
+    "width": 1440,
+    "label": "card",
+    "errors": [],
+    "overflow": false
+  }
+]
+##### exit review-flows 0 07:36:02

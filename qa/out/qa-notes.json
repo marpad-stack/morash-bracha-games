@@ -1,0 +1,102 @@
+{
+ "agent": "qa-notes",
+ "run": "2026-10-04T08:20:01",
+ "findings": [
+  {
+   "id": "N-001",
+   "part": "all",
+   "severity": "yellow",
+   "type": "חסר קלט",
+   "title": "ייצוא 86 הערות הבודקות (24.9) חסר — אי אפשר לבנות שורה לכל הערה על c–j",
+   "location": "qa/in/ (נעדר) · upgraded/dev/review-evidence/latest-notes-2026-09-24.json (נעדר; התיקייה ב-.gitignore)",
+   "evidence": "בטבלה לכל אחד מ-c–j רק שורת \"מצב החלק: awaiting_joint_review — טרם הוכרעו\" (N-033…N-040). a: 7 החלטות, b: 11 החלטות.",
+   "proposal": "להוריד \"מסמך גיבוי\" מדף בדיקה-סופית ולהניח ב-qa/in/ — ואז להריץ שוב notes-table.py ולהחיל את האימות (ראו N-008).",
+   "owner": "מרפד",
+   "status": "open"
+  },
+  {
+   "id": "N-002",
+   "part": "all",
+   "severity": "info",
+   "type": "אימות",
+   "title": "אימות החלטות \"תוקן\" בהרצה: 16 נבדקו — 11 אומתו, 5 אומתו חלקית, 0 נותרו \"לא אומת\"",
+   "location": "qa/טבלת-הערות.md · qa/out/notes-verification.json",
+   "evidence": "a: 4 אומת (remove-stroller, expand-art, games, presentation) + 1 חלקית (repair-art). b: 7 אומת (presentation, memory, retired, dress, lights, needs, story-manuscript) + grandmother-storybook אומת; חלקית: b-art, b-image-files, brit-clothing. ב-final-review-decisions.json ל-9 מ-11 החלטות b היה verifiedOn=null; הרצת dress/lights/needs/memory השלימה את הפער.",
+   "proposal": "אין — לידיעה. ההחלטות לא שונו ב-JSON המקור.",
+   "owner": "קוד",
+   "status": "verified"
+  },
+  {
+   "id": "N-003",
+   "part": "b",
+   "severity": "yellow",
+   "type": "אימות חלקי",
+   "title": "מה עדיין דורש אימות אנושי בהחלטות a/b",
+   "location": "a-repair-art · b-art · b-image-files · brit-clothing",
+   "evidence": "a-repair-art: תיקון פנים תינוק, מזוזה והפרדת ידי ההורים לא נבדקו בגודל מלא (נראתה רק מסגרת התעודה). b-art: התיקונים בעמודים 2, 8, 36 — מספור העמודים השתנה (28 עמודים/17 כפולות); שולחן השבת אומת. brit-clothing: דף צביעה 17 (המשפחה חוגגת ברית) לא נבדק. b-image-files: ההחלטה מדברת על 40 עמודים.",
+   "proposal": "מרפד עוברת על 19 דפי הצביעה ועל 11 כפולות בכל גרסה מול הכללים.",
+   "owner": "מרפד",
+   "status": "open"
+  },
+  {
+   "id": "N-004",
+   "part": "all",
+   "severity": "yellow",
+   "type": "מסמכים מיושנים",
+   "title": "final-review-decisions.json מציין 40 עמודי ספר (bookPages: 40; b-image-files) בעוד שבמהדורה הנוכחית 28",
+   "location": "upgraded/dev/final-review-decisions.json › printBranding.bookPages, b-image-files",
+   "evidence": "package-checks: book_pages_per_variant 28 (legacy 40); הספר: \"עמוד N מתוך 28\".",
+   "proposal": "לעדכן את הנוסח במסמך (באישור מרפד) כדי שהטבלה לא תטעה.",
+   "owner": "מרפד",
+   "status": "open"
+  },
+  {
+   "id": "N-005",
+   "part": "all",
+   "severity": "info",
+   "type": "סיכום לפי מכריע",
+   "title": "פתוחות לפי מכריע (שורות \"פתוח/הצעה/חסר קלט\" בטבלה)",
+   "location": "qa/טבלת-הערות.md (166 שורות)",
+   "evidence": "קוד 42 · עורכת לשון 33 · מרפד 25 (+8 משותפות עם כותבת) · כותבת 22 · בדיקה מקצועית 6 · רב 3 · אנושי-טלפון 1. תוקן-אומת/חלקית: 16. כללי איור (לא לביצוע): 9. מה חוסם פרסום: R-001, R-002, R-010, A-001…A-011, C-i-001, C-i-002.",
+   "proposal": "לפי הרשימה בדוח \"מה נשאר לאדם\".",
+   "owner": "מרפד",
+   "status": "open"
+  },
+  {
+   "id": "N-006",
+   "part": "all",
+   "severity": "info",
+   "type": "השוואה לריצה קודמת",
+   "title": "בטבלה 166 שורות לעומת 79 ב-29.9: ההפרש כולו ממצאי סוכנים חדשים",
+   "location": "qa/out/notes.json מול qa/out הקודם",
+   "evidence": "קודם: 79 (51 פתוח, 16 תוקן, 9 כלל, 1 הצעה, 1 לידיעה, 1 חסר קלט). עכשיו: 166 (138 פתוח, 16 תוקן, 9 כלל, 1 הצעה, 1 לידיעה, 1 חסר קלט). 87 שורות חדשות: language 30, content 20, a11y 16, design 10, release 9, functional 2. כל 36 הממצאים האוטומטיים (inventory) חוזרים ללא שינוי.",
+   "proposal": "אין.",
+   "owner": "קוד",
+   "status": "verified"
+  },
+  {
+   "id": "N-007",
+   "part": "a",
+   "severity": "info",
+   "type": "הצעה אינה אישור",
+   "title": "a-optional-later (מחולל דפי צביעה מתמונה אישית ומוזיקת רקע) נשארת \"הצעה — לא אושרה\"",
+   "location": "final-review-decisions.json › a › a-optional-later",
+   "evidence": "status=proposed, ללא approvedOn — לא מיושם ולא מסומן \"תוקן\".",
+   "proposal": "להמתין להחלטת המשתמשת.",
+   "owner": "כותבת",
+   "status": "open"
+  },
+  {
+   "id": "N-008",
+   "part": "all",
+   "severity": "info",
+   "type": "תהליך",
+   "title": "האימות ב-notes.json הוחל כשכבה על פלט notes-table.py — הרצה חוזרת של הסקריפט תמחק אותו",
+   "location": "qa/out/notes-verification.json · qa/out/notes-verification-overlay.py",
+   "evidence": "notes-table.py מסמן \"אומת\" לפי השדה verifiedOn בלבד. שכבת האימות נשמרה בקובץ נפרד והסקריפט המחיל אותה הועתק ל-qa/out/.",
+   "proposal": "אחרי כל הרצה מחדש של notes-table.py להריץ את notes-verification-overlay.py; או להעביר את הלוגיקה לסקריפט במאגר (שינוי קוד — באישור).",
+   "owner": "קוד",
+   "status": "open"
+  }
+ ]
+}

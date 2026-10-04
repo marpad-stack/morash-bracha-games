@@ -1,0 +1,1119 @@
+{
+ "a": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": "footer > p:nth-child(2)",
+     "html": "<p>מִתְחַם הַקְּטַנְטַנִּים · פרויקט שפרה ופועה</p>",
+     "data": [
+      {
+       "fgColor": "#ddecec",
+       "bgColor": "#197f80",
+       "contrastRatio": 3.93,
+       "fontSize": "10.1pt (13.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "footer > p:nth-child(3)",
+     "html": "<p>לשימוש אישי ומשפחתי</p>",
+     "data": [
+      {
+       "fgColor": "#ddecec",
+       "bgColor": "#197f80",
+       "contrastRatio": 3.93,
+       "fontSize": "10.1pt (13.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "landmark-one-main",
+   "impact": "moderate",
+   "help": "Document should have one main landmark",
+   "nodes": [
+    {
+     "target": "html",
+     "html": "<html lang=\"he\" dir=\"rtl\">",
+     "data": []
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": "#readingToolbar",
+     "html": "<div class=\"reading-controls\" aria-label=\"אפשרויות קריאה\" id=\"readingToolbar\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "img[alt=\"מורה שמיים\"][src$=\"logo.png\"]",
+     "html": "<img src=\"images/logo.png\" alt=\"מורה שמיים\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".controlbar > label:nth-child(1)",
+     "html": "<label>רָמַת מִשְׂחָק <select id=\"artLevel\" aria-label=\"רמת משחק\"><option value=\"1\">צְעָדִים רִאשׁוֹנִים · 4+</option><option value=\"2\">מִתְקַדְּמִים · 7+</opti",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#artPoints",
+     "html": "<span class=\"mini-medal\" id=\"artPoints\">0 נְקוּדוֹת בַּשִּׂיאִים</span>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "label:nth-child(4)",
+     "html": "<label>צבעי התצוגה <select id=\"artTheme\" aria-label=\"צבעי התצוגה\"><option value=\"bright\">צבעים חיים</option><option value=\"calm\">צבעים רגועים</option></select><",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".hero",
+     "html": "<div class=\"hero\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "b": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": ".b-paper-kicker",
+     "html": "<span class=\"b-paper-kicker\">סיפור על אח קטן ומשפחה שגדלה</span>",
+     "data": [
+      {
+       "fgColor": "#917b55",
+       "bgColor": "#fbf4e5",
+       "contrastRatio": 3.7,
+       "fontSize": "8.3pt (11px)",
+       "fontWeight": "bold",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": ".b-cover-copy > p",
+     "html": "<p>קוראים, מגלים ומשחקים יחד</p>",
+     "data": [
+      {
+       "fgColor": "#8a7653",
+       "bgColor": "#fbf4e5",
+       "contrastRatio": 3.99,
+       "fontSize": "11.3pt (15px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": ".book-intro",
+     "html": "<p class=\"book-intro\">תינוק חדש הגיע הביתה והסיפור מתחיל! ספר מאויר ומנוקד שמחבר את הילדים להתרגשות שבבית, לצד פעילויות חווייתיות ומהנות מִתּוֹךְ שגרת המשפחה.</",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "c": [],
+ "d": [
+  {
+   "id": "button-name",
+   "impact": "critical",
+   "help": "Buttons must have discernible text",
+   "nodes": [
+    {
+     "target": ".avdot",
+     "html": "<button class=\"avdot\" style=\"background:#38b6ff\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 40 40\" class=\"\"><path d=\"M5 27a15 11 0 0 1 30 0z\" fill=\"#3f5a8f\"></pat",
+     "data": [
+      {
+       "messageKey": "noAttr"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": "#s1h",
+     "html": "<div class=\"hint\" id=\"s1h\">אֶפְשָׁר לְשַׂחֵק לְבַד אוֹ עִם הָאַחִים עַל אוֹתוֹ מַכְשִׁיר</div>",
+     "data": [
+      {
+       "fgColor": "#9aa3b3",
+       "bgColor": "#ffffff",
+       "contrastRatio": 2.54,
+       "fontSize": "9.4pt (12.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "#s4h",
+     "html": "<div class=\"hint\" id=\"s4h\">אֶפְשָׁר לְהִתְחָרוֹת מוּל הַבַּנַּאי — שַׂחְקַן מַחְשֵׁב</div>",
+     "data": [
+      {
+       "fgColor": "#9aa3b3",
+       "bgColor": "#ffffff",
+       "contrastRatio": 2.54,
+       "fontSize": "9.4pt (12.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "button[data-solo=\"ai\"]",
+     "html": "<button class=\"opt sel\" data-solo=\"ai\">מוּל הַבַּנַּאי 🏗️</button>",
+     "data": [
+      {
+       "fgColor": "#e98274",
+       "bgColor": "#fff2f8",
+       "contrastRatio": 2.44,
+       "fontSize": "10.1pt (13.5px)",
+       "fontWeight": "bold",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "#s2h",
+     "html": "<div class=\"hint\" id=\"s2h\">שֵׁם, בֵּן אוֹ בַּת, וְסֵמֶל</div>",
+     "data": [
+      {
+       "fgColor": "#9aa3b3",
+       "bgColor": "#ffffff",
+       "contrastRatio": 2.54,
+       "fontSize": "9.4pt (12.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": ".gbtn.sel",
+     "html": "<button class=\"gbtn sel\">בן</button>",
+     "data": [
+      {
+       "fgColor": "#ffffff",
+       "bgColor": "#e98274",
+       "contrastRatio": 2.65,
+       "fontSize": "9.8pt (13px)",
+       "fontWeight": "bold",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "landmark-one-main",
+   "impact": "moderate",
+   "help": "Document should have one main landmark",
+   "nodes": [
+    {
+     "target": "html",
+     "html": "<html lang=\"he\" dir=\"rtl\">",
+     "data": []
+    }
+   ]
+  },
+  {
+   "id": "meta-viewport",
+   "impact": "moderate",
+   "help": "Zooming and scaling must not be disabled",
+   "nodes": [
+    {
+     "target": "meta[name=\"viewport\"]",
+     "html": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no\">",
+     "data": [
+      "user-scalable=no"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": ".review-intro",
+     "html": "<div class=\"review-intro\"><h1>מסע המצוות</h1><p>בוחרים משתתפים וקצב. בכל תור אוספים מצוות, מִתְקַדְּמִים בלוח ובונים יחד עיר.</p></div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".controlbar",
+     "html": "<div class=\"controlbar\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#s1t",
+     "html": "<h2 id=\"s1t\">כַּמָּה שַׂחְקָנִים?</h2>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#s1h",
+     "html": "<div class=\"hint\" id=\"s1h\">אֶפְשָׁר לְשַׂחֵק לְבַד אוֹ עִם הָאַחִים עַל אוֹתוֹ מַכְשִׁיר</div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#s4t",
+     "html": "<h2 id=\"s4t\">נֶגֶד מִי מְשַׂחֲקִים?</h2>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#s4h",
+     "html": "<div class=\"hint\" id=\"s4h\">אֶפְשָׁר לְהִתְחָרוֹת מוּל הַבַּנַּאי — שַׂחְקַן מַחְשֵׁב</div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#s2t",
+     "html": "<h2 id=\"s2t\">מִי מְשַׂחֵק?</h2>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#s2h",
+     "html": "<div class=\"hint\" id=\"s2h\">שֵׁם, בֵּן אוֹ בַּת, וְסֵמֶל</div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "input",
+     "html": "<input placeholder=\"שם 1\" value=\"\" maxlength=\"10\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#fx",
+     "html": "<canvas id=\"fx\" width=\"390\" height=\"844\"></canvas>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "e": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": "button[data-lvl=\"1\"]",
+     "html": "<button class=\"opt sel\" data-lvl=\"1\">קַל</button>",
+     "data": [
+      {
+       "fgColor": "#b8791c",
+       "bgColor": "#fff6e4",
+       "contrastRatio": 3.37,
+       "fontSize": "10.0pt (13.28px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "button[data-ply=\"1\"]",
+     "html": "<button class=\"opt sel\" data-ply=\"1\">שַׂחְקָן אֶחָד</button>",
+     "data": [
+      {
+       "fgColor": "#b8791c",
+       "bgColor": "#fff6e4",
+       "contrastRatio": 3.37,
+       "fontSize": "10.0pt (13.28px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "meta-viewport",
+   "impact": "moderate",
+   "help": "Zooming and scaling must not be disabled",
+   "nodes": [
+    {
+     "target": "meta[name=\"viewport\"]",
+     "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover\">",
+     "data": [
+      "user-scalable=no"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": "#readingToolbar",
+     "html": "<div class=\"reading-controls\" aria-label=\"אפשרויות קריאה\" id=\"readingToolbar\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".logo-start",
+     "html": "<img class=\"logo-start\" src=\"data:image/png;base6...\" alt=\"מורה שמיים\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#sTitle",
+     "html": "<h1 id=\"sTitle\">מַסָּע בַּזְּמַן</h1>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#sSub",
+     "html": "<p class=\"sub\" id=\"sSub\">סֵדֶר יוֹם יְהוּדִי — מֵהַבֹּקֶר וְעַד הַלַּיְלָה. בּוֹאוּ נְסַדֵּר אֶת הַיּוֹם לְפִי הַסֵּדֶר הַנָּכוֹן!</p>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#lvlLabel",
+     "html": "<label id=\"lvlLabel\">רָמַת קוֹשִׁי</label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#plyLabel",
+     "html": "<label id=\"plyLabel\">שַׂחְקָנִים</label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".controlbar",
+     "html": "<div class=\"controlbar\"><label>אֵיךְ מְשַׂחֲקִים? <select id=\"timeMode\" aria-label=\"סגנון מסע\"><option value=\"classic\">חִידוֹת וְאֶתְגָּרִים</option><option val",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".review-start-reading",
+     "html": "<div class=\"reading-controls review-start-reading\" aria-label=\"אפשרויות קריאה\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#orb",
+     "html": "<div class=\"orb\" id=\"orb\" style=\"right: 12%; top: 24%;\">☀️</div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#p1",
+     "html": "<span class=\"pill\" id=\"p1\">⭐ <b>0</b></span>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#digital",
+     "html": "<div class=\"digital\" id=\"digital\">07:00</div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".foot",
+     "html": "<div class=\"foot\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "f": [
+  {
+   "id": "landmark-one-main",
+   "impact": "moderate",
+   "help": "Document should have one main landmark",
+   "nodes": [
+    {
+     "target": "html",
+     "html": "<html lang=\"he\" dir=\"rtl\">",
+     "data": []
+    }
+   ]
+  },
+  {
+   "id": "meta-viewport",
+   "impact": "moderate",
+   "help": "Zooming and scaling must not be disabled",
+   "nodes": [
+    {
+     "target": "meta[name=\"viewport\"]",
+     "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">",
+     "data": [
+      "maximum-scale"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": "#readingToolbar",
+     "html": "<div class=\"reading-controls\" aria-label=\"אפשרויות קריאה\" id=\"readingToolbar\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".opening > .logo[alt=\"לוגו מורה שמיים\"]",
+     "html": "<img class=\"logo\" src=\"data:image/png;base6...\" alt=\"לוגו מורה שמיים\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#txt-eyebrow",
+     "html": "<div class=\"eyebrow\" id=\"txt-eyebrow\">חֵלֶק ו׳ · נִיהוּל זְמַן</div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#txt-title",
+     "html": "<h1 id=\"txt-title\">מִטְבַּח הַשַּׁבָּת</h1>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#txt-sub",
+     "html": "<div class=\"sub\" id=\"txt-sub\">הֲכָנַת הַחַלּוֹת לִכְבוֹד שַׁבָּת</div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#txt-p1",
+     "html": "<p id=\"txt-p1\">מַשֶּׁהוּ מֵרִיחַ נִפְלָא! בּוֹאוּ נַעֲזֹר לְהָכִין אֶת חַלּוֹת הַשַּׁבָּת — הַפַּעַם מַמָּשׁ עִם הַיָּדַיִם: גּוֹרְרִים, לָשִׁים, קוֹלְעִים וְאו",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#txt-tip",
+     "html": "<p class=\"tip\" id=\"txt-tip\">גִּרְרוּ, הַקִּישׁוּ וּמִשְׁכוּ עַל הַמָּסָךְ כְּדֵי לְבַצֵּעַ כָּל שָׁלָב בְּעַצְמְכֶם, לִפְנֵי שֶׁהַנֵּר שֶׁל שַׁבָּת נִגְמָר.</p>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".controlbar",
+     "html": "<div class=\"controlbar\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "g": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": ".muted",
+     "html": "<span class=\"muted\">מִצְאוּ אַרְבָּעָה סִימָנִים בַּחֶדֶר. כָּל סִימָן פּוֹתֵחַ עֵדוּת בְּלוּחַ הַחֲקִירָה.</span>",
+     "data": [
+      {
+       "fgColor": "#647775",
+       "bgColor": "#fbf5e7",
+       "contrastRatio": 4.35,
+       "fontSize": "10.5pt (14px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "h": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": ".field:nth-child(2) > .label-small",
+     "html": "<span class=\"label-small\">בּוֹחֲרִים מִתּוֹךְ הַבְּרָכוֹת</span>",
+     "data": [
+      {
+       "fgColor": "#727d70",
+       "bgColor": "#fffcf7",
+       "contrastRatio": 4.2,
+       "fontSize": "9.0pt (12px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": ".field:nth-child(3) > .label-small",
+     "html": "<span class=\"label-small\">מִמִּי הַכַּרְטִיס?</span>",
+     "data": [
+      {
+       "fgColor": "#727d70",
+       "bgColor": "#fffcf7",
+       "contrastRatio": 4.2,
+       "fontSize": "9.0pt (12px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": ".tool-section:nth-child(4) > .label-small",
+     "html": "<p class=\"label-small\" style=\"margin:10px 0\">לִחְצוּ לְהוֹסִיף מַדְבֵּקָה, וְגִרְרוּ אוֹתָהּ בַּכַּרְטִיס.</p>",
+     "data": [
+      {
+       "fgColor": "#727d70",
+       "bgColor": "#fffcf7",
+       "contrastRatio": 4.2,
+       "fontSize": "9.0pt (12px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "footer",
+     "html": "<footer class=\"footer\">הַכַּרְטִיס נשמר כתמונת PNG באיכות מלאה, מוכן לשליחה או להדפסה.</footer>",
+     "data": [
+      {
+       "fgColor": "#71817c",
+       "bgColor": "#faf3ed",
+       "contrastRatio": 3.72,
+       "fontSize": "9.8pt (13px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "i": [
+  {
+   "id": "heading-order",
+   "impact": "moderate",
+   "help": "Heading levels should only increase by one",
+   "nodes": [
+    {
+     "target": ".usBox > h3",
+     "html": "<h3>ושתי שאלות מאיתנו 💛</h3>",
+     "data": []
+    }
+   ]
+  },
+  {
+   "id": "landmark-one-main",
+   "impact": "moderate",
+   "help": "Document should have one main landmark",
+   "nodes": [
+    {
+     "target": "html",
+     "html": "<html lang=\"he\" dir=\"rtl\">",
+     "data": []
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": ".pill",
+     "html": "<span class=\"pill\">שפרה ופועה</span>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "h1",
+     "html": "<h1>מזל טוב! <em>נכיר רגע?</em></h1>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".sub",
+     "html": "<p class=\"sub\">כמה שאלות קטנות, ונכין לך מפה אישית לשבועות הראשונים — רק מה שרלוונטי לך, עם תאריכים אמיתיים. הכול נשאר אצלך במכשיר.</p>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".row2",
+     "html": "<div class=\"row2\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".field:nth-child(6) > label",
+     "html": "<label>מי הגיע/ה אליכם? 🎀</label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".field:nth-child(7)",
+     "html": "<div class=\"field\">\n      <label>ואיך קוראים לתינוק/ת? <span class=\"hint\">אם עוד לא — נשאיר ריק ונחכה</span></label>\n      <input type=\"text\" id=\"fBaby\" placeho",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".field:nth-child(8) > label",
+     "html": "<label>יש עוד מישהו קטן שהגיע יחד? <span class=\"hint\">תאומים ושלישיות</span></label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".field:nth-child(9) > label",
+     "html": "<label>שירותי הבריאות שלכם <span class=\"hint\">קופת חולים</span></label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".field:nth-child(10) > label",
+     "html": "<label>לפני הלידה עבדת בתור…</label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#tenureField > label",
+     "html": "<label>וכמה זמן היית שם?</label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#returnField",
+     "html": "<div class=\"field\" id=\"returnField\">\n      <label for=\"fReturn\">מתי בערך חוזרים לעבודה? <span class=\"hint\">אפשר לדלג ולעדכן אחר כך</span></label>\n      <input t",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".field:nth-child(13)",
+     "html": "<div class=\"field\">",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".usBox > h3",
+     "html": "<h3>ושתי שאלות מאיתנו 💛</h3>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".usBox > p",
+     "html": "<p>כדי שנדע מה כבר מחכה לך ומה עוד לא.</p>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".usBox > .field:nth-child(3) > label",
+     "html": "<label>נרשמת כבר לשפרה ופועה של מורה שמיים?</label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": "#giftField > label",
+     "html": "<label>וחבילת המתנות שלנו כבר הגיעה אלייך? 🎁</label>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    },
+    {
+     "target": ".privacy",
+     "html": "<p class=\"privacy\">הפרטים נשמרים במכשיר שלך בלבד ואינם נשלחים לשום מקום.</p>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "j": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": [
+    {
+     "target": "#dm",
+     "html": "<div class=\"daymark\" id=\"dm\">יום 1</div>",
+     "data": [
+      {
+       "fgColor": "#a99aa1",
+       "bgColor": "#fbf6f2",
+       "contrastRatio": 2.5,
+       "fontSize": "9.8pt (13px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": ".j-persistence",
+     "html": "<div class=\"j-persistence\">הרגעים והכרטיסים ששמרת מחכים לך במכשיר הזה</div>",
+     "data": [
+      {
+       "fgColor": "#8a8579",
+       "bgColor": "#fbf6f2",
+       "contrastRatio": 3.42,
+       "fontSize": "8.3pt (11px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "button[data-i=\"0\"] > small",
+     "html": "<small>משהו קטן שלא דורש כוח</small>",
+     "data": [
+      {
+       "fgColor": "#a99aa1",
+       "bgColor": "#ffffff",
+       "contrastRatio": 2.68,
+       "fontSize": "9.4pt (12.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "button[data-i=\"1\"] > small",
+     "html": "<small>קודם משהו שירגיע אותי</small>",
+     "data": [
+      {
+       "fgColor": "#a99aa1",
+       "bgColor": "#ffffff",
+       "contrastRatio": 2.68,
+       "fontSize": "9.4pt (12.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "button[data-i=\"2\"] > small",
+     "html": "<small>להזכיר לי מי אני להם</small>",
+     "data": [
+      {
+       "fgColor": "#a99aa1",
+       "bgColor": "#ffffff",
+       "contrastRatio": 2.68,
+       "fontSize": "9.4pt (12.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "button[data-i=\"3\"] > small",
+     "html": "<small>יש לי מקום ללמוד משהו</small>",
+     "data": [
+      {
+       "fgColor": "#a99aa1",
+       "bgColor": "#ffffff",
+       "contrastRatio": 2.68,
+       "fontSize": "9.4pt (12.5px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": ".on",
+     "html": "<button class=\"nb on\" data-g=\"today\">היום</button>",
+     "data": [
+      {
+       "fgColor": "#c9788a",
+       "bgColor": "#fbecee",
+       "contrastRatio": 2.8,
+       "fontSize": "9.8pt (13px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "button[data-g=\"path\"]",
+     "html": "<button class=\"nb\" data-g=\"path\">החוט</button>",
+     "data": [
+      {
+       "fgColor": "#a99aa1",
+       "bgColor": "#fbf6f2",
+       "contrastRatio": 2.5,
+       "fontSize": "9.8pt (13px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    },
+    {
+     "target": "button[data-g=\"album\"]",
+     "html": "<button class=\"nb\" data-g=\"album\">אצלי</button>",
+     "data": [
+      {
+       "fgColor": "#a99aa1",
+       "bgColor": "#fbf6f2",
+       "contrastRatio": 2.5,
+       "fontSize": "9.8pt (13px)",
+       "fontWeight": "normal",
+       "messageKey": null,
+       "expectedContrastRatio": "4.5:1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "page-has-heading-one",
+   "impact": "moderate",
+   "help": "Page should contain a level-one heading",
+   "nodes": [
+    {
+     "target": "html",
+     "html": "<html lang=\"he\" dir=\"rtl\">",
+     "data": []
+    }
+   ]
+  },
+  {
+   "id": "region",
+   "impact": "moderate",
+   "help": "All page content should be contained by landmarks",
+   "nodes": [
+    {
+     "target": ".j-persistence",
+     "html": "<div class=\"j-persistence\">הרגעים והכרטיסים ששמרת מחכים לך במכשיר הזה</div>",
+     "data": [
+      {
+       "isIframe": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
