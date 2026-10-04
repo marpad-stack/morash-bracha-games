@@ -1,36 +1,34 @@
 {
- "run": "2026-10-04T09:51:18.001Z",
+ "run": "2026-10-04T09:51:25.031Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
-   "id": "f",
-   "name": "מטבח השבת",
+   "id": "h",
+   "name": "הכרטיס לאמא",
    "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2022,
-   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "loadMs": 1993,
+   "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 4,
+   "visibleButtons": 33,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1.0",
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -38,50 +36,45 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
-    "Assistant",
-    "Suez One"
+    "Assistant"
    ],
-   "focusable": 9,
+   "focusable": 39,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 615
+   "bodyText": 2662
   },
   {
-   "id": "f",
-   "name": "מטבח השבת",
+   "id": "h",
+   "name": "הכרטיס לאמא",
    "width": 390,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1982,
-   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "loadMs": 1963,
+   "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 4,
+   "visibleButtons": 33,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1.0",
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -89,53 +82,71 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
-    "Assistant",
-    "Suez One"
+    "Assistant"
    ],
-   "focusable": 9,
+   "focusable": 39,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 615,
+   "bodyText": 2662,
    "clicked": [
     "אָ ניקוד",
     "א+",
-    "מתחילים לאפות",
-    "🍯"
+    "↓ שומרים כרטיס כתמונה",
+    "תצוגה מוגדלת של הכרטיס",
+    "חיבוק חמים",
+    "טורקיז רגוע",
+    "ורוד קורל",
+    "סגול חלומי",
+    "שמש זהובה",
+    "חגיגי ונקי",
+    "קשת רכה",
+    "מסגרת חגיגית",
+    "פרחים בלב",
+    "♥",
+    "✿",
+    "✦",
+    "★",
+    "🌷",
+    "🎀",
+    "🎁",
+    "💛",
+    "🌼",
+    "🎈",
+    "✨",
+    "🌿"
    ],
-   "lsKeysAfter": 2,
+   "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
-   "id": "f",
-   "name": "מטבח השבת",
+   "id": "h",
+   "name": "הכרטיס לאמא",
    "width": 1440,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1969,
-   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "loadMs": 1849,
+   "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 4,
+   "visibleButtons": 32,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1.0",
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -143,14 +154,13 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
-    "Assistant",
-    "Suez One"
+    "Assistant"
    ],
-   "focusable": 9,
+   "focusable": 39,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 615
+   "bodyText": 2784
   }
  ]
 }
