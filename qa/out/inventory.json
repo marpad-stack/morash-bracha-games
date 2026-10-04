@@ -1,0 +1,540 @@
+{
+ "run": "2026-09-29T22:40:38",
+ "parts": [
+  {
+   "part": "a",
+   "file": "a-coloring/index.html",
+   "kb": 858,
+   "title": "מתחם הקטנטנים · מורה שמיים",
+   "h1": [
+    "צובעים ומרכיבים!"
+   ],
+   "kit_title": "צובעים ומרכיבים!",
+   "kit_audience": "מגיל 4 · יצירה, זיכרון וחשיבה",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.gstatic.com"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 21,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": false,
+   "print": true,
+   "download": 3,
+   "alert_confirm": 0,
+   "hash_links": 0,
+   "zoom_locked": false,
+   "lang_dir_ok": true,
+   "meta_description": true,
+   "favicon": true,
+   "imgs": 21,
+   "img_no_alt": 1,
+   "reduced_motion": true,
+   "nikud_ktiv_male": [
+    "בַּיָּדַיִים",
+    "מִכְנָסַיִים",
+    "נַעֲלַיִים",
+    "עֲדַיִין",
+    "עֵינַיִים",
+    "רַגְלַיִים"
+   ]
+  },
+  {
+   "part": "b",
+   "file": "b-story.html",
+   "kb": 793,
+   "title": "אור הגיע אלינו",
+   "h1": [
+    "תינוק חדש בבית? קוראים ומשחקים!",
+    "אוֹר הִגִּיעַ אֵלֵינוּ"
+   ],
+   "kit_title": "תינוק חדש בבית? קוראים ומשחקים!",
+   "kit_audience": "מגיל 3 בליווי · סיפור ומשחק",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 19,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": false,
+   "print": true,
+   "download": 2,
+   "alert_confirm": 0,
+   "hash_links": 0,
+   "zoom_locked": false,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 10,
+   "img_no_alt": 1,
+   "reduced_motion": true,
+   "nikud_ktiv_male": [
+    "בֵּינְתַיִים",
+    "בַּיָּדַיִים",
+    "הַלְּחָיַיִים",
+    "הַנַּעֲלַיִים",
+    "וּבֵינְתַיִים",
+    "כַּפַּיִים",
+    "לְחָיַיִים",
+    "מִכְנָסַיִים",
+    "נַעֲלַיִים",
+    "עֲדַיִין",
+    "עֵינַיִים",
+    "רַגְלַיִים",
+    "שֶׁהָיִינוּ"
+   ]
+  },
+  {
+   "part": "c",
+   "file": "beit-hamitzvot.html",
+   "kb": 680,
+   "title": "בית המצוות · הרפתקת האותיות",
+   "h1": [
+    "הרפתקה בבית!"
+   ],
+   "kit_title": "הרפתקה בבית!",
+   "kit_audience": "רמות לגילי 4+, 7+, 10+ · הרפתקה וחשיבה",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 19,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": false,
+   "print": false,
+   "download": 2,
+   "alert_confirm": 1,
+   "hash_links": 0,
+   "zoom_locked": false,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 2,
+   "img_no_alt": 0,
+   "reduced_motion": true,
+   "nikud_ktiv_male": [
+    "בַּיָּדַיִים",
+    "מִכְנָסַיִים",
+    "נַעֲלַיִים",
+    "עֲדַיִין",
+    "עֵינַיִים",
+    "רַגְלַיִים"
+   ]
+  },
+  {
+   "part": "d",
+   "file": "d-mitzvot.html",
+   "kb": 932,
+   "title": "מסע המצוות · מורה שמיים",
+   "h1": [],
+   "kit_title": "מסע המצוות",
+   "kit_audience": "מגיל 4 · עד ארבעה משתתפים",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://fonts.gstatic.com"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 20,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": false,
+   "print": true,
+   "download": 2,
+   "alert_confirm": 0,
+   "hash_links": 0,
+   "zoom_locked": true,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 4,
+   "img_no_alt": 2,
+   "reduced_motion": true,
+   "nikud_ktiv_male": [
+    "בַּיָּדַיִים",
+    "יִישָׁן",
+    "מִכְנָסַיִים",
+    "נַעֲלַיִים",
+    "עֲדַיִין",
+    "עֵינַיִים",
+    "רַגְלַיִים"
+   ]
+  },
+  {
+   "part": "e",
+   "file": "e-time.html",
+   "kb": 840,
+   "title": "מסע בזמן — סדר יום יהודי",
+   "h1": [
+    ""
+   ],
+   "kit_title": "מסע בזמן",
+   "kit_audience": "מגיל 4 · רצף יום, בחירה ועשייה",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&family=Noto+Sans+Hebrew:wght@400;600;700&display=swap",
+    "https://fonts.gstatic.com"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&family=Noto+Sans+Hebrew:wght@400;600;700&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 21,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": true,
+   "canvas": true,
+   "share": true,
+   "clipboard": false,
+   "print": false,
+   "download": 2,
+   "alert_confirm": 0,
+   "hash_links": 0,
+   "zoom_locked": true,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 5,
+   "img_no_alt": 0,
+   "reduced_motion": true,
+   "nikud_ktiv_male": [
+    "בַּיָּדַיִים",
+    "הַצָּהֳרַיִים",
+    "יָדַיִים",
+    "לַיָּדַיִים",
+    "מִכְנָסַיִים",
+    "נַעֲלַיִים",
+    "עֲדַיִין",
+    "עֵינַיִים",
+    "צָהֳרַיִים",
+    "רַגְלַיִים",
+    "שְׁנַיִים",
+    "שִׁינַּיִים"
+   ]
+  },
+  {
+   "part": "f",
+   "file": "f-kitchen.html",
+   "kb": 894,
+   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "h1": [
+    ""
+   ],
+   "kit_title": "מטבח השבת",
+   "kit_audience": "מגיל 4 בליווי · עשייה ומוטוריקה",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://fonts.gstatic.com"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 19,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": false,
+   "print": false,
+   "download": 2,
+   "alert_confirm": 0,
+   "hash_links": 0,
+   "zoom_locked": true,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 3,
+   "img_no_alt": 0,
+   "reduced_motion": true,
+   "nikud_ktiv_male": [
+    "בַּיָּדַיִים",
+    "מִכְנָסַיִים",
+    "נַעֲלַיִים",
+    "עֲדַיִין",
+    "עֵינַיִים",
+    "רַגְלַיִים"
+   ]
+  },
+  {
+   "part": "g",
+   "file": "g-detective.html",
+   "kb": 869,
+   "title": "בלש המידות · תיק המתנה",
+   "h1": [
+    "מה באמת קרה למתנה?"
+   ],
+   "kit_title": "תעלומת המתנה",
+   "kit_audience": "מגיל 6 בליווי · קריאה, חקירה וחשיבה",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 19,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": false,
+   "print": false,
+   "download": 2,
+   "alert_confirm": 1,
+   "hash_links": 0,
+   "zoom_locked": false,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 2,
+   "img_no_alt": 0,
+   "reduced_motion": true,
+   "nikud_ktiv_male": [
+    "בַּיָּדַיִים",
+    "הַמִּסְפָּרַיִים",
+    "מִכְנָסַיִים",
+    "נַעֲלַיִים",
+    "עֲדַיִין",
+    "עֵינַיִים",
+    "רַגְלַיִים"
+   ]
+  },
+  {
+   "part": "h",
+   "file": "h-card-studio.html",
+   "kb": 469,
+   "title": "הכרטיס לאמא · סטודיו יצירה",
+   "h1": [
+    "הכרטיס לאמא"
+   ],
+   "kit_title": "כרטיס מכל הלב",
+   "kit_audience": "מגיל 4 בליווי · יצירה והבעה",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 19,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": false,
+   "print": true,
+   "download": 2,
+   "alert_confirm": 0,
+   "hash_links": 0,
+   "zoom_locked": false,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 3,
+   "img_no_alt": 0,
+   "reduced_motion": true,
+   "nikud_ktiv_male": [
+    "בַּיָּדַיִים",
+    "הַיָּדַיִים",
+    "מִכְנָסַיִים",
+    "נַעֲלַיִים",
+    "עֲדַיִין",
+    "עֵינַיִים",
+    "רַגְלַיִים"
+   ]
+  },
+  {
+   "part": "i",
+   "file": "i-first-steps/index.html",
+   "kb": 663,
+   "title": "צעדים ראשונים · שפרה ופועה",
+   "h1": [
+    "מזל טוב! נכיר רגע?"
+   ],
+   "kit_title": "צעדים ראשונים",
+   "kit_audience": "לאמא אחרי הלידה · סדר ומעקב",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.gstatic.com",
+    "https://wa.me/?text=",
+    "https://www.btl.gov.il",
+    "https://www.clalit.co.il",
+    "https://www.gov.il",
+    "https://www.kolzchut.org.il",
+    "https://www.leumit.co.il",
+    "https://www.maccabi4u.co.il",
+    "https://www.meuhedet.co.il"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 23,
+   "serviceWorker": true,
+   "manifest": true,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": true,
+   "print": true,
+   "download": 4,
+   "alert_confirm": 6,
+   "hash_links": 0,
+   "zoom_locked": false,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 3,
+   "img_no_alt": 0,
+   "reduced_motion": true,
+   "nikud_ktiv_male": []
+  },
+  {
+   "part": "j",
+   "file": "j-meravach.html",
+   "kb": 524,
+   "title": "מרווח",
+   "h1": [
+    "${c.t}"
+   ],
+   "kit_title": "מרווח",
+   "kit_audience": "לאמא ולהורים · התבוננות ושיחה",
+   "external_urls": [
+    "https://bracha-games-review.marpad990579.chatgpt.site",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.gstatic.com"
+   ],
+   "external_scripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "google_fonts": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "review_overlay": true,
+   "chatgpt_site": true,
+   "localStorage": 19,
+   "serviceWorker": false,
+   "manifest": false,
+   "audio": false,
+   "canvas": true,
+   "share": true,
+   "clipboard": true,
+   "print": false,
+   "download": 2,
+   "alert_confirm": 0,
+   "hash_links": 0,
+   "zoom_locked": false,
+   "lang_dir_ok": true,
+   "meta_description": false,
+   "favicon": false,
+   "imgs": 1,
+   "img_no_alt": 0,
+   "reduced_motion": true,
+   "nikud_ktiv_male": []
+  }
+ ]
+}

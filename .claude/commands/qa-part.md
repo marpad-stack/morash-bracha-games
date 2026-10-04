@@ -1,0 +1,1 @@
+הרץ בדיקה מלאה על חלק אחד של הבאת ברכה: $ARGUMENTS (אות a–j או שם החלק). הפעל במקביל את qa-functional (`--part=`), qa-a11y (`--part=`), qa-design, qa-content, qa-language ו-qa-notes על החלק הזה בלבד, ואז report.py. סכם: רמזור, ממצאים, מה נשאר לאדם. לא לתקן בלי בקשה.

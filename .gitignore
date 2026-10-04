@@ -1,5 +1,5 @@
 # Machine-local agent state and temporary files
-.claude/
+.claude/settings.local.json
 __pycache__/
 *.pyc
 *.tmp
@@ -19,3 +19,7 @@ upgraded/dev/review-evidence/
 # Separate Sites source repository and local publication artifacts
 review-service/
 review-service.tar.gz
+
+node_modules/
+qa/out/*.png
+qa/in/

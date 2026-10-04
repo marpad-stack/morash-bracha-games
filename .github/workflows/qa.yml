@@ -1,0 +1,39 @@
+# בדיקות אוטומטיות בכל push — השכבה הדטרמיניסטית בלבד (בלי מפתחות, בלי AI).
+# הפעלה: להעלות את הקובץ, ואז בלשונית Actions של הריפו ללחוץ Enable. הדוח נשמר כ-artifact להורדה.
+name: bracha-qa
+on:
+  push:
+    paths: ['מסירה-משחקי-הבאת-ברכה/**', '.claude/skills/bracha-qa/**']
+  workflow_dispatch:
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: npm i --no-save playwright axe-core && npx playwright install --with-deps chromium
+      - run: python -m http.server 8765 --bind 127.0.0.1 &
+      - run: sleep 2 && node .claude/skills/bracha-qa/scripts/smoke.cjs
+      - run: node .claude/skills/bracha-qa/scripts/axe.cjs
+      - run: python .claude/skills/bracha-qa/scripts/inventory.py
+      - run: python .claude/skills/bracha-qa/scripts/notes-table.py
+      - run: python .claude/skills/bracha-qa/scripts/report.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qa-report
+          path: |
+            qa/דוח-בדיקות.html
+            qa/טבלת-הערות.md
+            qa/out/*.json
+            qa/out/*.png
+      # כשל אמיתי (שגיאת JS / משאב חסר / גלילה אופקית) מפיל את הריצה כדי שיהיה X אדום ליד ה-commit
+      - run: |
+          python - <<'PY'
+          import json,sys
+          r=json.load(open('qa/out/smoke-results.json',encoding='utf-8'))['results']
+          bad=[x for x in r if x['id']!='L' and (x.get('hOverflow') or x.get('fatal') or any('403' not in e and 'net::' not in e for e in x['errors']) or x['failed'])]
+          print('כשלים:',[(b['id'],b['width']) for b in bad]); sys.exit(1 if bad else 0)
+          PY

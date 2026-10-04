@@ -1,0 +1,765 @@
+{
+ "run": "2026-09-29T22:39:55.072Z",
+ "results": [
+  {
+   "id": "a",
+   "name": "מתחם הקטנטנים",
+   "width": 390,
+   "bytesKB": 1170,
+   "reqs": 9,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 2,
+     "samples": [
+      "footer > p:nth-child(2)",
+      "footer > p:nth-child(3)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.93 (foreground color: #ddecec, background color: #197f80, font size: 10.1pt (13.5px), font weight: normal). Expected contrast r"
+    },
+    {
+     "id": "landmark-one-main",
+     "impact": "moderate",
+     "help": "Document should have one main landmark",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Document does not have a main landmark"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 6,
+     "samples": [
+      "#readingToolbar",
+      "img[alt=\"מורה שמיים\"][src$=\"logo.png\"]",
+      ".controlbar > label:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "a",
+   "name": "מתחם הקטנטנים",
+   "width": 1440,
+   "bytesKB": 1170,
+   "reqs": 9,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 2,
+     "samples": [
+      "footer > p:nth-child(2)",
+      "footer > p:nth-child(3)"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.93 (foreground color: #ddecec, background color: #197f80, font size: 10.1pt (13.5px), font weight: normal). Expected contrast r"
+    },
+    {
+     "id": "landmark-one-main",
+     "impact": "moderate",
+     "help": "Document should have one main landmark",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Document does not have a main landmark"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 6,
+     "samples": [
+      "#readingToolbar",
+      "img[alt=\"מורה שמיים\"][src$=\"logo.png\"]",
+      ".controlbar > label:nth-child(1)"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "name": "אור הגיע אלינו",
+   "width": 390,
+   "bytesKB": 1891,
+   "reqs": 10,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 2,
+     "samples": [
+      ".b-paper-kicker",
+      ".b-cover-copy > p"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.7 (foreground color: #917b55, background color: #fbf4e5, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio o"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 1,
+     "samples": [
+      ".book-intro"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "name": "אור הגיע אלינו",
+   "width": 1440,
+   "bytesKB": 1891,
+   "reqs": 10,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 3,
+     "samples": [
+      ".b-edition-label > span",
+      ".b-paper-kicker",
+      ".b-cover-copy > p"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #6d7568, background color: #e4dac6, font size: 8.3pt (11px), font weight: normal). Expected contrast rati"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 5,
+     "samples": [
+      ".book-intro",
+      ".lbl",
+      "label"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "name": "בית המצוות",
+   "width": 390,
+   "bytesKB": 681,
+   "reqs": 1,
+   "violations": []
+  },
+  {
+   "id": "c",
+   "name": "בית המצוות",
+   "width": 1440,
+   "bytesKB": 681,
+   "reqs": 1,
+   "violations": []
+  },
+  {
+   "id": "d",
+   "name": "מסע המצוות",
+   "width": 390,
+   "bytesKB": 935,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "button-name",
+     "impact": "critical",
+     "help": "Buttons must have discernible text",
+     "nodes": 1,
+     "samples": [
+      ".avdot"
+     ],
+     "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references "
+    },
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 5,
+     "samples": [
+      "#s1h",
+      "#s4h",
+      "button[data-solo=\"ai\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.54 (foreground color: #9aa3b3, background color: #ffffff, font size: 9.4pt (12.5px), font weight: normal). Expected contrast ra"
+    },
+    {
+     "id": "landmark-one-main",
+     "impact": "moderate",
+     "help": "Document should have one main landmark",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Document does not have a main landmark"
+    },
+    {
+     "id": "meta-viewport",
+     "impact": "moderate",
+     "help": "Zooming and scaling must not be disabled",
+     "nodes": 1,
+     "samples": [
+      "meta[name=\"viewport\"]"
+     ],
+     "summary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 10,
+     "samples": [
+      ".review-intro",
+      ".controlbar",
+      "#s1t"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "name": "מסע המצוות",
+   "width": 1440,
+   "bytesKB": 935,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "button-name",
+     "impact": "critical",
+     "help": "Buttons must have discernible text",
+     "nodes": 1,
+     "samples": [
+      ".avdot"
+     ],
+     "summary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references "
+    },
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 5,
+     "samples": [
+      "#s1h",
+      "#s4h",
+      "button[data-solo=\"ai\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.54 (foreground color: #9aa3b3, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast rat"
+    },
+    {
+     "id": "landmark-one-main",
+     "impact": "moderate",
+     "help": "Document should have one main landmark",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Document does not have a main landmark"
+    },
+    {
+     "id": "meta-viewport",
+     "impact": "moderate",
+     "help": "Zooming and scaling must not be disabled",
+     "nodes": 1,
+     "samples": [
+      "meta[name=\"viewport\"]"
+     ],
+     "summary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 10,
+     "samples": [
+      ".review-intro",
+      ".controlbar",
+      "#s1t"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "name": "מסע בזמן",
+   "width": 390,
+   "bytesKB": 842,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 2,
+     "samples": [
+      "button[data-lvl=\"1\"]",
+      "button[data-ply=\"1\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.37 (foreground color: #b8791c, background color: #fff6e4, font size: 10.0pt (13.28px), font weight: normal). Expected contrast "
+    },
+    {
+     "id": "meta-viewport",
+     "impact": "moderate",
+     "help": "Zooming and scaling must not be disabled",
+     "nodes": 1,
+     "samples": [
+      "meta[name=\"viewport\"]"
+     ],
+     "summary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 12,
+     "samples": [
+      "#readingToolbar",
+      ".logo-start",
+      "#sTitle"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "name": "מסע בזמן",
+   "width": 1440,
+   "bytesKB": 842,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 2,
+     "samples": [
+      "button[data-lvl=\"1\"]",
+      "button[data-ply=\"1\"]"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.37 (foreground color: #b8791c, background color: #fff6e4, font size: 10.0pt (13.28px), font weight: normal). Expected contrast "
+    },
+    {
+     "id": "meta-viewport",
+     "impact": "moderate",
+     "help": "Zooming and scaling must not be disabled",
+     "nodes": 1,
+     "samples": [
+      "meta[name=\"viewport\"]"
+     ],
+     "summary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 12,
+     "samples": [
+      "#readingToolbar",
+      ".logo-start",
+      "#sTitle"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "name": "מטבח השבת",
+   "width": 390,
+   "bytesKB": 895,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "landmark-one-main",
+     "impact": "moderate",
+     "help": "Document should have one main landmark",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Document does not have a main landmark"
+    },
+    {
+     "id": "meta-viewport",
+     "impact": "moderate",
+     "help": "Zooming and scaling must not be disabled",
+     "nodes": 1,
+     "samples": [
+      "meta[name=\"viewport\"]"
+     ],
+     "summary": "Fix any of the following:\n  maximum-scale on <meta> tag disables zooming on mobile devices"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 8,
+     "samples": [
+      "#readingToolbar",
+      ".opening > .logo[alt=\"לוגו מורה שמיים\"]",
+      "#txt-eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "f",
+   "name": "מטבח השבת",
+   "width": 1440,
+   "bytesKB": 895,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "landmark-one-main",
+     "impact": "moderate",
+     "help": "Document should have one main landmark",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Document does not have a main landmark"
+    },
+    {
+     "id": "meta-viewport",
+     "impact": "moderate",
+     "help": "Zooming and scaling must not be disabled",
+     "nodes": 1,
+     "samples": [
+      "meta[name=\"viewport\"]"
+     ],
+     "summary": "Fix any of the following:\n  maximum-scale on <meta> tag disables zooming on mobile devices"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 8,
+     "samples": [
+      "#readingToolbar",
+      ".opening > .logo[alt=\"לוגו מורה שמיים\"]",
+      "#txt-eyebrow"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "g",
+   "name": "בלש המידות",
+   "width": 390,
+   "bytesKB": 869,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 1,
+     "samples": [
+      ".muted"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #647775, background color: #fbf5e7, font size: 10.5pt (14px), font weight: normal). Expected contrast rat"
+    }
+   ]
+  },
+  {
+   "id": "g",
+   "name": "בלש המידות",
+   "width": 1440,
+   "bytesKB": 869,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 5,
+     "samples": [
+      ".muted",
+      ".evidence.locked:nth-child(1) > h3",
+      ".evidence.locked:nth-child(2) > h3"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #647775, background color: #fbf5e7, font size: 10.5pt (14px), font weight: normal). Expected contrast rat"
+    }
+   ]
+  },
+  {
+   "id": "h",
+   "name": "הכרטיס לאמא",
+   "width": 390,
+   "bytesKB": 470,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 4,
+     "samples": [
+      ".field:nth-child(2) > .label-small",
+      ".field:nth-child(3) > .label-small",
+      ".tool-section:nth-child(4) > .label-small"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.2 (foreground color: #727d70, background color: #fffcf7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio"
+    }
+   ]
+  },
+  {
+   "id": "h",
+   "name": "הכרטיס לאמא",
+   "width": 1440,
+   "bytesKB": 470,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 4,
+     "samples": [
+      ".field:nth-child(2) > .label-small",
+      ".field:nth-child(3) > .label-small",
+      ".tool-section:nth-child(4) > .label-small"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.2 (foreground color: #727d70, background color: #fffcf7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio"
+    }
+   ]
+  },
+  {
+   "id": "i",
+   "name": "צעדים ראשונים",
+   "width": 390,
+   "bytesKB": 664,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "heading-order",
+     "impact": "moderate",
+     "help": "Heading levels should only increase by one",
+     "nodes": 1,
+     "samples": [
+      ".usBox > h3"
+     ],
+     "summary": "Fix any of the following:\n  Heading order invalid"
+    },
+    {
+     "id": "landmark-one-main",
+     "impact": "moderate",
+     "help": "Document should have one main landmark",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Document does not have a main landmark"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 17,
+     "samples": [
+      ".pill",
+      "h1",
+      ".sub"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "i",
+   "name": "צעדים ראשונים",
+   "width": 1440,
+   "bytesKB": 664,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "heading-order",
+     "impact": "moderate",
+     "help": "Heading levels should only increase by one",
+     "nodes": 1,
+     "samples": [
+      ".usBox > h3"
+     ],
+     "summary": "Fix any of the following:\n  Heading order invalid"
+    },
+    {
+     "id": "landmark-one-main",
+     "impact": "moderate",
+     "help": "Document should have one main landmark",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Document does not have a main landmark"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 17,
+     "samples": [
+      ".pill",
+      "h1",
+      ".sub"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "j",
+   "name": "מרווח",
+   "width": 390,
+   "bytesKB": 524,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 9,
+     "samples": [
+      "#dm",
+      ".j-persistence",
+      "button[data-i=\"0\"] > small"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.5 (foreground color: #a99aa1, background color: #fbf6f2, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio"
+    },
+    {
+     "id": "page-has-heading-one",
+     "impact": "moderate",
+     "help": "Page should contain a level-one heading",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Page must have a level-one heading"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 1,
+     "samples": [
+      ".j-persistence"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "j",
+   "name": "מרווח",
+   "width": 1440,
+   "bytesKB": 524,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 9,
+     "samples": [
+      "#dm",
+      ".j-persistence",
+      "button[data-i=\"0\"] > small"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.5 (foreground color: #a99aa1, background color: #fbf6f2, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio"
+    },
+    {
+     "id": "page-has-heading-one",
+     "impact": "moderate",
+     "help": "Page should contain a level-one heading",
+     "nodes": 1,
+     "samples": [
+      "html"
+     ],
+     "summary": "Fix all of the following:\n  Page must have a level-one heading"
+    },
+    {
+     "id": "region",
+     "impact": "moderate",
+     "help": "All page content should be contained by landmarks",
+     "nodes": 1,
+     "samples": [
+      ".j-persistence"
+     ],
+     "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
+   "width": 390,
+   "bytesKB": 522,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 1,
+     "samples": [
+      ".hero-cta"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #dfb23e, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio"
+    },
+    {
+     "id": "heading-order",
+     "impact": "moderate",
+     "help": "Heading levels should only increase by one",
+     "nodes": 1,
+     "samples": [
+      ".f-links > h4"
+     ],
+     "summary": "Fix any of the following:\n  Heading order invalid"
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
+   "width": 1440,
+   "bytesKB": 522,
+   "reqs": 1,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "help": "Elements must meet minimum color contrast ratio thresholds",
+     "nodes": 2,
+     "samples": [
+      ".btn-join",
+      ".hero-cta"
+     ],
+     "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #dfb23e, font size: 11.8pt (15.75px), font weight: bold). Expected contrast ra"
+    },
+    {
+     "id": "heading-order",
+     "impact": "moderate",
+     "help": "Heading levels should only increase by one",
+     "nodes": 1,
+     "samples": [
+      ".f-links > h4"
+     ],
+     "summary": "Fix any of the following:\n  Heading order invalid"
+    }
+   ]
+  }
+ ]
+}
