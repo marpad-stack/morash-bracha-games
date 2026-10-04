@@ -61,7 +61,8 @@
    "evidence": "smoke-results.json smallTargets (זהה לריצה מ-29.9).",
    "proposal": "להגדיל padding לגובה ≥44px.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: .opt min-height:44px; smoke: small=0 ב-320/390/1440"
   },
   {
    "id": "D-006",
@@ -73,7 +74,8 @@
    "evidence": "smoke-results.json: 122×33 ×3; בדיקה ידנית: 33px.",
    "proposal": "להגדיל ל-44px לפחות.",
    "owner": "קוד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: .nb min-height:44px; smoke: small=0 ב-320/390/1440"
   },
   {
    "id": "D-007",
