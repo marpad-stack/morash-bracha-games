@@ -94,7 +94,7 @@ for f in glob.glob(os.path.join(IN, '*')):
     elif '<article>' in raw:
         BACKUP_NOTES = parse_backup(raw); src = os.path.basename(f)
         for nt in BACKUP_NOTES:
-            subs = sorted([k for k in RES if k.split('.')[0] == nt['n'] and '.' in k], key=lambda k: [int(x) for x in k.split('.')])
+            subs = sorted([k for k in RES if k.split('.')[0] == nt['n'] and '.' in k], key=lambda k: [(int(re.sub(r'\D', '', x) or 0), x) for x in k.split('.')])
             keys = [nt['n']] if nt['n'] in RES else []
             keys += subs
             base = f"#{nt['n']} ({nt['reviewer']}) {nt['text']}" + (f" ‖ חני: {nt['reply']}" if nt['reply'] and nt['reviewer'] != 'חני אשכנזי' else '')

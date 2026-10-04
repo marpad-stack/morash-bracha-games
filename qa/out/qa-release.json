@@ -51,8 +51,8 @@
    "evidence": "git grep: כתובת השירות [×©××¨××ª ××¡×§××¨×] מופיעה גם בקבצי העבודה. אין מיילים, מפתחות או קישורים למסמכי Drive/Docs (נסרקו כל הקבצים המנוהלים). כלל 7 ב-CLAUDE.md: אין קישורים/מזהים פרטיים.",
    "proposal": "להסיר עם R-001; להחליט אם כתובת השירות חשופה במאגר (upgraded/) בכוונה.",
    "owner": "מרפד",
-   "status": "open",
-   "verified": "4.10.2026: הוסר מ-10 קובצי המשחקים ומה-ZIP; עדיין מופיע ב-התחילו-כאן.html, בדיקה-סופית.html, מסמכים/b-edition-live-audit.json, upgraded/ ו-README.md — ממתין להחלטה"
+   "status": "תוקן — אומת",
+   "verified": "תוקן — אומת 4.10.2026: git grep נקי (README, QA, upgraded, דפי המסירה); הבנייה לא מזריקה"
   },
   {
    "id": "R-005",
@@ -127,7 +127,8 @@
    "evidence": "a,b במצב implemented_pending_user_review (a: 5 החלטות עם verifiedOn; b: 11 החלטות, ל-9 מהן verifiedOn=null). source.reviewSnapshot = review-evidence/latest-notes-2026-09-24.json — התיקייה ב-.gitignore ואינה במאגר. כלל הפרויקט: לא מפרסמים חלק שהערותיו פתוחות בלי החלטה מפורשת.",
    "proposal": "להוריד \"מסמך גיבוי\" מדף בדיקה-סופית ולשמור ב-qa/in/; הכרעה משותפת מרפד+כותבת לכל חלק c–j; רק אז לסמן \"תוקן\" אחרי הרצה.",
    "owner": "מרפד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "תוקן — אומת 4.10.2026: 86 ההערות הוכרעו (qa/out/notes86, טבלת-הערות.md)"
   },
   {
    "id": "R-011",
