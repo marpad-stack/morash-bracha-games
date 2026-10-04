@@ -1,28 +1,26 @@
 {
- "run": "2026-10-04T10:07:31.759Z",
+ "run": "2026-10-04T13:33:40.263Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
    "id": "a",
-   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
+   "name": "מתחם הקטנטנים",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2036,
-   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "loadMs": 1949,
+   "title": "צובעים ומרכיבים! · מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -32,9 +30,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 4,
    "fonts": [
     "Heebo",
@@ -51,31 +47,27 @@
   },
   {
    "id": "a",
-   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
+   "name": "מתחם הקטנטנים",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2014,
-   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "loadMs": 1955,
+   "title": "צובעים ומרכיבים! · מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -85,9 +77,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 4,
    "fonts": [
     "Heebo",
@@ -102,39 +92,37 @@
    "dir": "rtl",
    "bodyText": 646,
    "clicked": [
-    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
-    "\u05d4\u05d2\u05d3\u05dc\u05ea \u05d8\u05e7\u05e1\u05d8",
-    "\u05d4\u05de\u05d3\u05dc\u05d9\u05d5\u05ea \u05e9\u05dc\u05d9",
-    "\ud83c\udfa8\n\u05d3\u05e4\u05d9 \u05e6\u05d1\u05d9\u05e2\u05d4\n19 \u05e6\u05d9\u05d5\u05e8\u05d9\u05dd \u05dc\u05d4\u05d3\u05e4\u05e1\u05d4 ",
-    "\u05d4\u05db\u05d5\u05dc",
-    "\u05d0\u05d7\u05d9\u05dd \u05d5\u05ea\u05d9\u05e0\u05d5\u05e7",
-    "\u05e9\u05d1\u05ea \u05d5\u05d1\u05e8\u05db\u05d5\u05ea"
+    "אָ ניקוד",
+    "הגדלת טקסט",
+    "המדליות שלי",
+    "🎨\nדפי צביעה\n19 ציורים להדפסה ",
+    "הכול",
+    "אחים ותינוק",
+    "שבת וברכות"
    ],
    "lsKeysAfter": 5,
    "lsKeysAfterReload": 5,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
    "id": "a",
-   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
+   "name": "מתחם הקטנטנים",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2033,
-   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "loadMs": 1894,
+   "title": "צובעים ומרכיבים! · מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -144,9 +132,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 4,
    "fonts": [
     "Heebo",
@@ -163,25 +149,23 @@
   },
   {
    "id": "b",
-   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "name": "אור הגיע אלינו",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2526,
-   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "loadMs": 2744,
+   "title": "תינוק חדש בבית? קוראים ומשחקים! · אור הגיע אלינו",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -191,9 +175,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 4,
    "fonts": [
     "Heebo",
@@ -208,31 +190,27 @@
   },
   {
    "id": "b",
-   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "name": "אור הגיע אלינו",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2539,
-   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "loadMs": 2673,
+   "title": "תינוק חדש בבית? קוראים ומשחקים! · אור הגיע אלינו",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -242,9 +220,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 4,
    "fonts": [
     "Heebo",
@@ -257,41 +233,39 @@
    "dir": "rtl",
    "bodyText": 495,
    "clicked": [
-    "\u05e7\u05d5\u05b9\u05e8\u05b0\u05d0\u05b4\u05d9\u05dd \u05d1\u05e1\u05e4\u05e8",
-    "\u05de\u05b4\u05e9\u05c2\u05b0\u05d7\u05b8\u05e7\u05b4\u05d9\u05dd \u05d9\u05d7\u05d3",
-    "\u2726\n\u05de\u05d2\u05dc\u05d9\u05dd \u05d6\u05d5\u05bc\u05d2\u05d5\u05b9\u05ea\n\u05e0\u05e8\u05d0\u05d4 \u05de\u05d9 \u05d6\u05d5\u05db\u05e8?\n",
-    "\u2726\n\u05d1\u05d5\u05d7\u05e8\u05d9\u05dd \u05d5\u05de\u05ea\u05d0\u05d9\u05de\u05d9\u05dd\n\u05de\u05ea\u05dc\u05d1\u05e9\u05d9\u05dd \u05e0\u05db\u05d5\u05df",
-    "\u2726\n\u05de\u05e1\u05d3\u05e8\u05d9\u05dd \u05d9\u05d7\u05d3\n\u05e2\u05d5\u05e8\u05db\u05d9\u05dd \u05e9\u05c1\u05d5\u05bc\u05dc\u05b0\u05d7\u05b7\u05df ",
-    "\u2726\n\u05d7\u05d5\u05e9\u05d1\u05d9\u05dd \u05d5\u05de\u05d2\u05dc\u05d9\u05dd\n\u05e9\u05d5\u05de\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05e9\u05e7\u05d8",
-    "\u2726\n\u05de\u05db\u05d9\u05e8\u05d9\u05dd \u05d7\u05b2\u05e4\u05b8\u05e6\u05b4\u05d9\u05dd\n\u05de\u05d4 \u05e0\u05d1\u05d9\u05d0 \u05dc\u05ea\u05d9\u05e0",
-    "\u2726\n\u05d9\u05d5\u05e6\u05e8\u05d9\u05dd \u05d1\u05d7\u05d5\u05e4\u05e9\u05d9\u05d5\u05ea\n\u05e6\u05b4\u05d9\u05bc\u05d5\u05bc\u05e8 \u05d7\u05d5\u05b9\u05e4",
-    "\u00d7 \u05e1\u05b0\u05d2\u05b4\u05d9\u05e8\u05b8\u05d4"
+    "קוֹרְאִים בספר",
+    "מִשְׂחָקִים יחד",
+    "✦\nמגלים זוּגוֹת\nנראה מי זוכר?\n",
+    "✦\nבוחרים ומתאימים\nמתלבשים נכון",
+    "✦\nמסדרים יחד\nעורכים שׁוּלְחַן ",
+    "✦\nחושבים ומגלים\nשומרים על השקט",
+    "✦\nמכירים חֲפָצִים\nמה נביא לתינ",
+    "✦\nיוצרים בחופשיות\nצִיּוּר חוֹפ",
+    "× סְגִירָה"
    ],
    "lsKeysAfter": 4,
    "lsKeysAfterReload": 4,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
    "id": "b",
-   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "name": "אור הגיע אלינו",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2606,
-   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "loadMs": 2892,
+   "title": "תינוק חדש בבית? קוראים ומשחקים! · אור הגיע אלינו",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -301,9 +275,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 4,
    "fonts": [
     "Heebo",
@@ -318,23 +290,21 @@
   },
   {
    "id": "c",
-   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "name": "בית המצוות",
    "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1865,
-   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "loadMs": 1873,
+   "title": "הרפתקה בבית! · בית המצוות",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -344,9 +314,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 2,
    "fonts": [
     "Heebo",
@@ -360,27 +328,23 @@
   },
   {
    "id": "c",
-   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "name": "בית המצוות",
    "width": 390,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1820,
-   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "loadMs": 1893,
+   "title": "הרפתקה בבית! · בית המצוות",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -390,9 +354,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 2,
    "fonts": [
     "Heebo",
@@ -404,45 +366,43 @@
    "dir": "rtl",
    "bodyText": 672,
    "clicked": [
-    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
-    "\u05d0+",
-    "\ud83d\udcb0",
-    "\ud83c\udf77",
-    "\ud83d\udcd8",
-    "\ud83d\udd6f\ufe0f",
-    "\ud83d\udcdc",
+    "אָ ניקוד",
+    "א+",
+    "💰",
+    "🍷",
+    "📘",
+    "🕯️",
+    "📜",
     "",
     "",
     "",
     "",
     "",
-    "\ud83d\udd12 \u05d4\u05ea\u05d9\u05d1\u05d4 \u05de\u05d7\u05db\u05d4 \u05dc\u05d0\u05d5\u05ea\u05d9\u05d5\u05ea",
-    "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d7\u05d3\u05e9\u05d4",
-    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3"
+    "🔒 התיבה מחכה לאותיות",
+    "הרפתקה חדשה",
+    "אָ ניקוד"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 2
   },
   {
    "id": "c",
-   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "name": "בית המצוות",
    "width": 1440,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1860,
-   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "loadMs": 1846,
+   "title": "הרפתקה בבית! · בית המצוות",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -452,9 +412,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 2,
    "fonts": [
     "Heebo",
@@ -468,25 +426,23 @@
   },
   {
    "id": "d",
-   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "name": "מסע המצוות",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1890,
-   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "loadMs": 1899,
+   "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -496,9 +452,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -513,31 +467,27 @@
   },
   {
    "id": "d",
-   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "name": "מסע המצוות",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2042,
-   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "loadMs": 1877,
+   "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -547,9 +497,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -562,46 +510,44 @@
    "dir": "rtl",
    "bodyText": 571,
    "clicked": [
-    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
-    "\u05d0+",
-    "\ud83c\udf19",
-    "\u25cf\n1",
-    "\u25cf\u25cf\n2",
-    "\u25cf\u25cf\u25cf\n3",
-    "\u25cf\u25cf\u25cf\u25cf\n4",
-    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 1",
-    "\u05d1\u05df",
-    "\u05d1\u05ea",
-    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 2",
-    "\u05d1\u05df",
-    "\u05d1\u05ea",
-    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 3"
+    "אָ ניקוד",
+    "א+",
+    "🌙",
+    "●\n1",
+    "●●\n2",
+    "●●●\n3",
+    "●●●●\n4",
+    "החלפת הסמל של שחקן 1",
+    "בן",
+    "בת",
+    "החלפת הסמל של שחקן 2",
+    "בן",
+    "בת",
+    "החלפת הסמל של שחקן 3"
    ],
    "lsKeysAfter": 2,
    "lsKeysAfterReload": 2,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
    "id": "d",
-   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "name": "מסע המצוות",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1977,
-   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "loadMs": 1858,
+   "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -611,9 +557,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -628,63 +572,33 @@
   },
   {
    "id": "e",
-   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
+   "name": "מסע בזמן",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1996,
-   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
+   "loadMs": 1907,
+   "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
    "visibleButtons": 15,
-   "smallTargets": [
-    {
-     "t": "\u05e7\u05b7\u05dc",
-     "w": 77,
-     "h": 37
-    },
-    {
-     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
-     "w": 77,
-     "h": 37
-    },
-    {
-     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
-     "w": 77,
-     "h": 37
-    },
-    {
-     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
-     "w": 119,
-     "h": 37
-    },
-    {
-     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
-     "w": 119,
-     "h": 37
-    }
-   ],
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -699,69 +613,37 @@
   },
   {
    "id": "e",
-   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
+   "name": "מסע בזמן",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2044,
-   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
+   "loadMs": 1850,
+   "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
    "visibleButtons": 15,
-   "smallTargets": [
-    {
-     "t": "\u05e7\u05b7\u05dc",
-     "w": 100,
-     "h": 37
-    },
-    {
-     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
-     "w": 100,
-     "h": 37
-    },
-    {
-     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
-     "w": 100,
-     "h": 37
-    },
-    {
-     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
-     "w": 154,
-     "h": 37
-    },
-    {
-     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
-     "w": 154,
-     "h": 37
-    }
-   ],
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -774,79 +656,49 @@
    "dir": "rtl",
    "bodyText": 435,
    "clicked": [
-    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
-    "\u05d0+",
-    "\u05e7\u05dc",
-    "\u05d1\u05d9\u05e0\u05d5\u05e0\u05d9",
-    "\u05d0\u05ea\u05d2\u05e8",
-    "\u05e9\u05d7\u05e7\u05df \u05d0\u05d7\u05d3",
-    "\u05e9\u05e0\u05d9\u05d9\u05dd",
-    "\u05de\u05ea\u05d7\u05d9\u05dc\u05d9\u05dd!",
-    "\u2600\ufe0f\n\u05e7\u05d9\u05de\u05d4 \u05d1\u05d1\u05d5\u05e7\u05e8"
+    "אָ ניקוד",
+    "א+",
+    "קל",
+    "בינוני",
+    "אתגר",
+    "שחקן אחד",
+    "שניים",
+    "מתחילים!",
+    "🎒\nיוצאים ללימודים"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
    "id": "e",
-   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
+   "name": "מסע בזמן",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2042,
-   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
+   "loadMs": 1869,
+   "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
    "visibleButtons": 15,
-   "smallTargets": [
-    {
-     "t": "\u05e7\u05b7\u05dc",
-     "w": 229,
-     "h": 37
-    },
-    {
-     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
-     "w": 229,
-     "h": 37
-    },
-    {
-     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
-     "w": 229,
-     "h": 37
-    },
-    {
-     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
-     "w": 347,
-     "h": 37
-    },
-    {
-     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
-     "w": 347,
-     "h": 37
-    }
-   ],
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -861,25 +713,23 @@
   },
   {
    "id": "f",
-   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
+   "name": "מטבח השבת",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1910,
-   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
+   "loadMs": 1927,
+   "title": "מטבח השבת – הכנת החלות לכבוד שבת",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -889,9 +739,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1.0",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -906,31 +754,27 @@
   },
   {
    "id": "f",
-   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
+   "name": "מטבח השבת",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2038,
-   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
+   "loadMs": 1879,
+   "title": "מטבח השבת – הכנת החלות לכבוד שבת",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -940,9 +784,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1.0",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -955,36 +797,34 @@
    "dir": "rtl",
    "bodyText": 615,
    "clicked": [
-    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
-    "\u05d0+",
-    "\u05de\u05ea\u05d7\u05d9\u05dc\u05d9\u05dd \u05dc\u05d0\u05e4\u05d5\u05ea",
-    "\ud83c\udf6f"
+    "אָ ניקוד",
+    "א+",
+    "מתחילים לאפות",
+    "🍯"
    ],
    "lsKeysAfter": 2,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
    "id": "f",
-   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
+   "name": "מטבח השבת",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2020,
-   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
+   "loadMs": 1936,
+   "title": "מטבח השבת – הכנת החלות לכבוד שבת",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -994,9 +834,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1.0",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1011,23 +849,21 @@
   },
   {
    "id": "g",
-   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "name": "בלש המידות",
    "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1742,
-   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "loadMs": 1748,
+   "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -1037,9 +873,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1053,27 +887,23 @@
   },
   {
    "id": "g",
-   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "name": "בלש המידות",
    "width": 390,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1905,
-   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "loadMs": 1867,
+   "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -1083,9 +913,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1097,41 +925,39 @@
    "dir": "rtl",
    "bodyText": 930,
    "clicked": [
-    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
-    "\u05d0+",
-    "\u05e4\u05d5\u05ea\u05d7\u05d9\u05dd \u05d0\u05ea \u05ea\u05d9\u05e7 \u05d4\u05d7\u05e7\u05d9\u05e8\u05d4",
-    "\ud83e\uddf5",
-    "\u2702",
-    "\ud83d\udeaa",
-    "\ud83d\udd0e",
-    "\ud83c\udf80\n\u05ea\u05de\u05d9, \u05d4\u05d0\u05d7\u05d5\u05ea \u05d4\u05e7\u05d8\u05e0\u05d4\n\u05e8\u05d0\u05d9\u05ea\u05d9 \u05d0\u05ea \u05d3",
-    "\u2702\n\u05d9\u05d5\u05e0\u05d9, \u05d4\u05d0\u05d7 \u05d4\u05d2\u05d3\u05d5\u05dc\n\u05d3\u05d5\u05d3 \u05db\u05e2\u05e1 \u05e2\u05dc\u05d9\u05d9",
-    "\ud83d\udeaa\n\u05d4\u05e9\u05db\u05df \u05de\u05d4\u05de\u05e1\u05d3\u05e8\u05d5\u05df\n\u05d1\u05d3\u05d9\u05d5\u05e7 \u05d9\u05e6\u05d0\u05ea\u05d9 \u05de",
-    "\ud83c\udf37\n\u05d0\u05de\u05d0\n\u05d3\u05d5\u05d3 \u05e8\u05e5 \u05d0\u05dc\u05d9\u05d9 \u05de\u05d6\u05d9\u05e2 \u05d5\u05de\u05d5\u05d3\u05d0\u05d2"
+    "אָ ניקוד",
+    "א+",
+    "פותחים את תיק החקירה",
+    "🧵",
+    "✂",
+    "🚪",
+    "🔎",
+    "🎀\nתמי, האחות הקטנה\nראיתי את ד",
+    "✂\nיוני, האח הגדול\nדוד כעס עליי",
+    "🚪\nהשכן מהמסדרון\nבדיוק יצאתי מ",
+    "🌷\nאמא\nדוד רץ אליי מזיע ומודאג"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 2
   },
   {
    "id": "g",
-   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "name": "בלש המידות",
    "width": 1440,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1886,
-   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "loadMs": 1839,
+   "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -1141,9 +967,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1157,23 +981,21 @@
   },
   {
    "id": "h",
-   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "name": "הכרטיס לאמא",
    "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1876,
-   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "loadMs": 1899,
+   "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -1183,9 +1005,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1199,27 +1019,23 @@
   },
   {
    "id": "h",
-   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "name": "הכרטיס לאמא",
    "width": 390,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1904,
-   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "loadMs": 1902,
+   "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -1229,9 +1045,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1243,55 +1057,53 @@
    "dir": "rtl",
    "bodyText": 2659,
    "clicked": [
-    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
-    "\u05d0+",
-    "\u2193 \u05e9\u05d5\u05de\u05e8\u05d9\u05dd \u05db\u05e8\u05d8\u05d9\u05e1 \u05db\u05ea\u05de\u05d5\u05e0\u05d4",
-    "\u05ea\u05e6\u05d5\u05d2\u05d4 \u05de\u05d5\u05d2\u05d3\u05dc\u05ea \u05e9\u05dc \u05d4\u05db\u05e8\u05d8\u05d9\u05e1",
-    "\u05d7\u05d9\u05d1\u05d5\u05e7 \u05d7\u05de\u05d9\u05dd",
-    "\u05d8\u05d5\u05e8\u05e7\u05d9\u05d6 \u05e8\u05d2\u05d5\u05e2",
-    "\u05d5\u05e8\u05d5\u05d3 \u05e7\u05d5\u05e8\u05dc",
-    "\u05e1\u05d2\u05d5\u05dc \u05d7\u05dc\u05d5\u05de\u05d9",
-    "\u05e9\u05de\u05e9 \u05d6\u05d4\u05d5\u05d1\u05d4",
-    "\u05d7\u05d2\u05d9\u05d2\u05d9 \u05d5\u05e0\u05e7\u05d9",
-    "\u05e7\u05e9\u05ea \u05e8\u05db\u05d4",
-    "\u05de\u05e1\u05d2\u05e8\u05ea \u05d7\u05d2\u05d9\u05d2\u05d9\u05ea",
-    "\u05e4\u05e8\u05d7\u05d9\u05dd \u05d1\u05dc\u05d1",
-    "\u2665",
-    "\u273f",
-    "\u2726",
-    "\u2605",
-    "\ud83c\udf37",
-    "\ud83c\udf80",
-    "\ud83c\udf81",
-    "\ud83d\udc9b",
-    "\ud83c\udf3c",
-    "\ud83c\udf88",
-    "\u2728",
-    "\ud83c\udf3f"
+    "אָ ניקוד",
+    "א+",
+    "↓ שומרים כרטיס כתמונה",
+    "תצוגה מוגדלת של הכרטיס",
+    "חיבוק חמים",
+    "טורקיז רגוע",
+    "ורוד קורל",
+    "סגול חלומי",
+    "שמש זהובה",
+    "חגיגי ונקי",
+    "קשת רכה",
+    "מסגרת חגיגית",
+    "פרחים בלב",
+    "♥",
+    "✿",
+    "✦",
+    "★",
+    "🌷",
+    "🎀",
+    "🎁",
+    "💛",
+    "🌼",
+    "🎈",
+    "✨",
+    "🌿"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 2
   },
   {
    "id": "h",
-   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "name": "הכרטיס לאמא",
    "width": 1440,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1921,
-   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "loadMs": 1789,
+   "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -1301,9 +1113,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1317,25 +1127,23 @@
   },
   {
    "id": "i",
-   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
+   "name": "צעדים ראשונים",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1879,
-   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
+   "loadMs": 1849,
+   "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -1345,9 +1153,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 0,
    "fonts": [
     "Heebo",
@@ -1362,31 +1168,27 @@
   },
   {
    "id": "i",
-   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
+   "name": "צעדים ראשונים",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2036,
-   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
+   "loadMs": 1896,
+   "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -1396,9 +1198,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 0,
    "fonts": [
     "Heebo",
@@ -1411,56 +1211,54 @@
    "dir": "rtl",
    "bodyText": 1039,
    "clicked": [
-    "\u05d1\u05ea",
-    "\u05d1\u05df",
-    "\u05e2\u05d3\u05d9\u05d9\u05df \u05dc\u05d0 \u05de\u05e1\u05e4\u05e8\u05d9\u05dd",
-    "\u05dc\u05d0, \u05e8\u05e7 \u05d0\u05d7\u05d3/\u05ea",
-    "\u05ea\u05d0\u05d5\u05de\u05d9\u05dd",
-    "\u05e9\u05dc\u05d9\u05e9\u05d9\u05d9\u05d4",
-    "\u05db\u05dc\u05dc\u05d9\u05ea",
-    "\u05de\u05db\u05d1\u05d9",
-    "\u05de\u05d0\u05d5\u05d7\u05d3\u05ea",
-    "\u05dc\u05d0\u05d5\u05de\u05d9\u05ea",
-    "\u05e9\u05db\u05d9\u05e8\u05d4",
-    "\u05e2\u05e6\u05de\u05d0\u05d9\u05ea",
-    "\u05d2\u05dd \u05d5\u05d2\u05dd",
-    "\u05dc\u05d0 \u05e2\u05d1\u05d3\u05ea\u05d9",
-    "\u05db\u05df, \u05d0\u05e0\u05d9 \u05e8\u05e9\u05d5\u05de\u05d4",
-    "\u05e2\u05d5\u05d3 \u05dc\u05d0",
-    "\u05d1\u05d5\u05d0\u05d9 \u05e0\u05d1\u05e0\u05d4 \u05d0\u05ea \u05d4\u05de\u05e4\u05d4 \u05e9\u05dc\u05d9",
-    "+ \u05d4\u05e2\u05e8\u05d4 \u05e9\u05dc\u05d9",
-    "\u05dc\u05e9\u05de\u05d5\u05e8",
-    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5",
-    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5",
-    "+ \u05d4\u05e2\u05e8\u05d4 \u05e9\u05dc\u05d9",
-    "\u05dc\u05e9\u05de\u05d5\u05e8",
-    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5"
+    "בת",
+    "בן",
+    "עדיין לא מספרים",
+    "לא, רק אחד/ת",
+    "תאומים",
+    "שלישייה",
+    "כללית",
+    "מכבי",
+    "מאוחדת",
+    "לאומית",
+    "שכירה",
+    "עצמאית",
+    "גם וגם",
+    "לא עבדתי",
+    "כן, אני רשומה",
+    "עוד לא",
+    "בואי נבנה את המפה שלי",
+    "+ הערה שלי",
+    "לשמור",
+    "לא עכשיו",
+    "לא עכשיו",
+    "+ הערה שלי",
+    "לשמור",
+    "לא עכשיו"
    ],
    "lsKeysAfter": 1,
    "lsKeysAfterReload": 1,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
    "id": "i",
-   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
+   "name": "צעדים ראשונים",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2052,
-   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
+   "loadMs": 1849,
+   "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -1470,9 +1268,7 @@
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 0,
    "fonts": [
     "Heebo",
@@ -1487,53 +1283,33 @@
   },
   {
    "id": "j",
-   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "name": "מרווח",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2044,
-   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "loadMs": 1868,
+   "title": "מרווח",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
    "visibleButtons": 8,
-   "smallTargets": [
-    {
-     "t": "\u05d4\u05d9\u05d5\u05dd",
-     "w": 99,
-     "h": 33
-    },
-    {
-     "t": "\u05d4\u05d7\u05d5\u05d8",
-     "w": 99,
-     "h": 33
-    },
-    {
-     "t": "\u05d0\u05e6\u05dc\u05d9",
-     "w": 99,
-     "h": 33
-    }
-   ],
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1548,59 +1324,37 @@
   },
   {
    "id": "j",
-   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "name": "מרווח",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1934,
-   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "loadMs": 1843,
+   "title": "מרווח",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
    "visibleButtons": 8,
-   "smallTargets": [
-    {
-     "t": "\u05d4\u05d9\u05d5\u05dd",
-     "w": 122,
-     "h": 33
-    },
-    {
-     "t": "\u05d4\u05d7\u05d5\u05d8",
-     "w": 122,
-     "h": 33
-    },
-    {
-     "t": "\u05d0\u05e6\u05dc\u05d9",
-     "w": 122,
-     "h": 33
-    }
-   ],
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",
@@ -1613,65 +1367,45 @@
    "dir": "rtl",
    "bodyText": 277,
    "clicked": [
-    "\u05e2\u05d9\u05d9\u05e4\u05d4\n\u05de\u05e9\u05d4\u05d5 \u05e7\u05d8\u05df \u05e9\u05dc\u05d0 \u05d3\u05d5\u05e8\u05e9 \u05db\u05d5\u05d7",
-    "\u05e0\u05d9\u05e1\u05d9\u05ea\u05d9",
-    "\u2661 \u05dc\u05e9\u05de\u05d5\u05e8 \u05d0\u05e6\u05dc\u05d9",
-    "\u05e9\u05d0\u05dc\u05ea \u05e2\u05e8\u05d1 \u05dc\u05e9\u05e0\u05d9\u05db\u05dd\n\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05d4\u05d6\u05d4, \u05e9\u05d0",
-    "\u05d0\u05e6\u05dc\u05d9"
+    "עייפה\nמשהו קטן שלא דורש כוח",
+    "ניסיתי",
+    "♡ לשמור אצלי",
+    "שאלת ערב לשניכם\nהכרטיס הזה, שא",
+    "אצלי"
    ],
    "lsKeysAfter": 1,
    "lsKeysAfterReload": 1,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
    "id": "j",
-   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "name": "מרווח",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2036,
-   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "loadMs": 1814,
+   "title": "מרווח",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
    "visibleButtons": 8,
-   "smallTargets": [
-    {
-     "t": "\u05d4\u05d9\u05d5\u05dd",
-     "w": 135,
-     "h": 33
-    },
-    {
-     "t": "\u05d4\u05d7\u05d5\u05d8",
-     "w": 135,
-     "h": 33
-    },
-    {
-     "t": "\u05d0\u05e6\u05dc\u05d9",
-     "w": 135,
-     "h": 33
-    }
-   ],
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
+   "extScripts": [],
    "lsKeys": 1,
    "fonts": [
     "Heebo",

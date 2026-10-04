@@ -12,7 +12,8 @@
    "evidence": "<script defer src=\"https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1\"> — קוד מדומיין צד-ג׳ שרץ אצל כל יולדת/ילד. נבדק: החבילות ב-אריזות/ ו-corrected-games.zip זהות בתוכן לתיקיית המשחקים, כלומר גם הן נושאות את התגית. לא ניתן היה לטעון את הסקריפט (חסום בסביבה) ולכן לא ידוע מה הוא עושה בפועל.",
    "proposal": "להסיר את התגית (וקוד הסקירה, ראו R-003) בבנייה נקייה של גרסת פרסום, לעדכן את ה-ZIP המתאימים ב-אריזות/ ולהריץ מחדש inventory+smoke. לא מריצים build בלי אישור מפורש.",
    "owner": "מרפד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: התגית הוסרה מ-10 הקבצים; אין live-game.js / chatgpt.site באף ZIP (אריזות/ ו-corrected-games.zip); manifest-sha256 עודכן; inventory: chatgpt_site=false בכל החלקים"
   },
   {
    "id": "R-002",
@@ -37,7 +38,8 @@
    "evidence": "בכל קובץ: \"review=1\" ×1; \"bracha-autodraft-v1\" ×1; \"bracha-review-identity\" ×3 (יוצר מפתח אקראי ב-localStorage); fetch(API …) ×2 אל chatgpt.site (PUT /api/drafts/…); ממשק עברי של הסקירה (\"פתחי משחק וסמני פריט שעליו תרצי להעיר\"); קוד התאמות לכל שאר החלקים (if(part===…)). רדום בלי ?review=1: ללא הפרמטר אין ממשק גלוי; עם ?review=1 והסקריפט החיצוני חסום — לא הופיע ממשק (qa/out/release-review-overlay-i.png). לא אומת מה קורה כשהסקריפט החיצוני זמין.",
    "proposal": "לבנות גרסת פרסום נקייה (בלי קוד סקירה ובלי תגית חיצונית) או להשאיר בהחלטה מתועדת ומאומתת שהוא לא נטען.",
    "owner": "מרפד",
-   "status": "open"
+   "status": "תוקן — אומת",
+   "verified": "4.10.2026: הוסרו שני הבלוקים (גיבוי הטיוטות לענן + שכבת הסקירה ?review=1) מ-10 הקבצים; inventory: review_overlay=false בכל החלקים; smoke ו-axe ללא שינוי לרעה"
   },
   {
    "id": "R-004",
@@ -49,7 +51,8 @@
    "evidence": "git grep: כתובת השירות bracha-games-review.marpad990579.chatgpt.site מופיעה גם בקבצי העבודה. אין מיילים, מפתחות או קישורים למסמכי Drive/Docs (נסרקו כל הקבצים המנוהלים). כלל 7 ב-CLAUDE.md: אין קישורים/מזהים פרטיים.",
    "proposal": "להסיר עם R-001; להחליט אם כתובת השירות חשופה במאגר (upgraded/) בכוונה.",
    "owner": "מרפד",
-   "status": "open"
+   "status": "open",
+   "verified": "4.10.2026: הוסר מ-10 קובצי המשחקים ומה-ZIP; עדיין מופיע ב-התחילו-כאן.html, בדיקה-סופית.html, מסמכים/b-edition-live-audit.json, upgraded/ ו-README.md — ממתין להחלטה"
   },
   {
    "id": "R-005",
