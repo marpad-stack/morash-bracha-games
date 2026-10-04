@@ -1,62 +1,34 @@
 {
- "run": "2026-10-04T09:52:11.048Z",
+ "run": "2026-10-04T09:54:53.903Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
-   "id": "e",
-   "name": "מסע בזמן",
+   "id": "g",
+   "name": "בלש המידות",
    "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2041,
-   "title": "מסע בזמן — סדר יום יהודי",
+   "loadMs": 1907,
+   "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 15,
-   "smallTargets": [
-    {
-     "t": "קַל",
-     "w": 77,
-     "h": 37
-    },
-    {
-     "t": "בֵּינוֹנִי",
-     "w": 77,
-     "h": 37
-    },
-    {
-     "t": "אֶתְגָּר",
-     "w": 77,
-     "h": 37
-    },
-    {
-     "t": "שַׂחְקָן אֶחָד",
-     "w": 119,
-     "h": 37
-    },
-    {
-     "t": "שְׁנַיִם",
-     "w": 119,
-     "h": 37
-    }
-   ],
+   "visibleButtons": 11,
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -64,22 +36,19 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
-    "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 26,
+   "focusable": 15,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 435
+   "bodyText": 933
   },
   {
-   "id": "e",
-   "name": "מסע בזמן",
+   "id": "g",
+   "name": "בלש המידות",
    "width": 390,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -88,52 +57,24 @@
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1990,
-   "title": "מסע בזמן — סדר יום יהודי",
+   "loadMs": 1966,
+   "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 15,
-   "smallTargets": [
-    {
-     "t": "קַל",
-     "w": 100,
-     "h": 37
-    },
-    {
-     "t": "בֵּינוֹנִי",
-     "w": 100,
-     "h": 37
-    },
-    {
-     "t": "אֶתְגָּר",
-     "w": 100,
-     "h": 37
-    },
-    {
-     "t": "שַׂחְקָן אֶחָד",
-     "w": 154,
-     "h": 37
-    },
-    {
-     "t": "שְׁנַיִם",
-     "w": 154,
-     "h": 37
-    }
-   ],
+   "visibleButtons": 11,
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -141,84 +82,57 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
-    "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 26,
+   "focusable": 15,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 435,
+   "bodyText": 933,
    "clicked": [
     "אָ ניקוד",
     "א+",
-    "קל",
-    "בינוני",
-    "אתגר",
-    "שחקן אחד",
-    "שניים",
-    "מתחילים!",
-    "🍲\nארוחת ערב"
+    "פותחים את תיק החקירה",
+    "🧵",
+    "✂",
+    "🚪",
+    "🔎",
+    "🎀\nתמי, האחות הקטנה\nראיתי את ל",
+    "✂\nיוני, האח הגדול\nדוד כעס עליי",
+    "🚪\nהשכן מהמסדרון\nבדיוק יצאתי מ",
+    "🌷\nאמא\nדוד רץ אליי מזיע ומודאג"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 6
+   "errorsAfterClicks": 4
   },
   {
-   "id": "e",
-   "name": "מסע בזמן",
+   "id": "g",
+   "name": "בלש המידות",
    "width": 1440,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1967,
-   "title": "מסע בזמן — סדר יום יהודי",
+   "loadMs": 1942,
+   "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 15,
-   "smallTargets": [
-    {
-     "t": "קַל",
-     "w": 229,
-     "h": 37
-    },
-    {
-     "t": "בֵּינוֹנִי",
-     "w": 229,
-     "h": 37
-    },
-    {
-     "t": "אֶתְגָּר",
-     "w": 229,
-     "h": 37
-    },
-    {
-     "t": "שַׂחְקָן אֶחָד",
-     "w": 347,
-     "h": 37
-    },
-    {
-     "t": "שְׁנַיִם",
-     "w": 347,
-     "h": 37
-    }
-   ],
+   "visibleButtons": 11,
+   "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
-   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "viewport": "width=device-width,initial-scale=1",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -226,14 +140,13 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
-    "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 26,
+   "focusable": 15,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 435
+   "bodyText": 963
   }
  ]
 }
