@@ -1,134 +1,32 @@
 {
- "run": "2026-10-04T09:57:32.548Z",
+ "run": "2026-10-04T09:59:59.679Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
-   "id": "g",
-   "name": "בלש המידות",
+   "id": "d",
+   "name": "מסע המצוות",
    "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
-   "warnings": [],
-   "failed": [],
-   "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1899,
-   "title": "תעלומת המתנה · בלש המידות",
-   "scrollWidth": 320,
-   "innerWidth": 320,
-   "hOverflow": false,
-   "visibleButtons": 11,
-   "smallTargets": [],
-   "brokenImgs": [],
-   "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "lsKeys": 1,
-   "fonts": [
-    "Heebo",
-    "Assistant"
-   ],
-   "focusable": 15,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 933
-  },
-  {
-   "id": "g",
-   "name": "בלש המידות",
-   "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
-   "warnings": [],
-   "failed": [],
-   "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1897,
-   "title": "תעלומת המתנה · בלש המידות",
-   "scrollWidth": 390,
-   "innerWidth": 390,
-   "hOverflow": false,
-   "visibleButtons": 11,
-   "smallTargets": [],
-   "brokenImgs": [],
-   "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "lsKeys": 1,
-   "fonts": [
-    "Heebo",
-    "Assistant"
-   ],
-   "focusable": 15,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 933,
-   "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "פותחים את תיק החקירה",
-    "🧵",
-    "✂",
-    "🚪",
-    "🔎",
-    "🎀\nתמי, האחות הקטנה\nראיתי את ד",
-    "✂\nיוני, האח הגדול\nדוד כעס עליי",
-    "🚪\nהשכן מהמסדרון\nבדיוק יצאתי מ",
-    "🌷\nאמא\nדוד רץ אליי מזיע ומודאג"
-   ],
-   "lsKeysAfter": 3,
-   "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 4
-  },
-  {
-   "id": "g",
-   "name": "בלש המידות",
-   "width": 1440,
-   "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1747,
-   "title": "תעלומת המתנה · בלש המידות",
-   "scrollWidth": 1440,
-   "innerWidth": 1440,
+   "loadMs": 2049,
+   "title": "מסע המצוות · מורה שמיים",
+   "scrollWidth": 320,
+   "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 11,
+   "visibleButtons": 14,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -140,13 +38,129 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
-    "Assistant"
+    "Assistant",
+    "Secular One"
    ],
-   "focusable": 15,
+   "focusable": 31,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 963
+   "bodyText": 571
+  },
+  {
+   "id": "d",
+   "name": "מסע המצוות",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2018,
+   "title": "מסע המצוות · מורה שמיים",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 14,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Secular One"
+   ],
+   "focusable": 31,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 571,
+   "clicked": [
+    "אָ ניקוד",
+    "א+",
+    "🌙",
+    "●\n1",
+    "●●\n2",
+    "●●●\n3",
+    "●●●●\n4",
+    "החלפת הסמל של שחקן 1",
+    "בן",
+    "בת",
+    "החלפת הסמל של שחקן 2",
+    "בן",
+    "בת",
+    "החלפת הסמל של שחקן 3"
+   ],
+   "lsKeysAfter": 2,
+   "lsKeysAfterReload": 2,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "d",
+   "name": "מסע המצוות",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2089,
+   "title": "מסע המצוות · מורה שמיים",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 14,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Secular One"
+   ],
+   "focusable": 31,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 571
   }
  ]
 }
