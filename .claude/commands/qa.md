@@ -1,0 +1,1 @@
+הרץ בדיקה מלאה של הבאת ברכה. השתמש בסוכן qa-orchestrator: הפעל את qa-functional, qa-a11y, qa-design, qa-content (חלק לכל הפעלה, a–j), qa-language (חלק לכל הפעלה), qa-notes ו-qa-release במקביל, ואז `python .claude/skills/bracha-qa/scripts/report.py`. סיים ברמזור לכל חלק, 5 הממצאים החמורים, ומה נשאר לאדם. אל תתקן קוד ואל תשנה תוכן בלי בקשה מפורשת.

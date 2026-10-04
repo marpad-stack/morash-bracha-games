@@ -19,3 +19,7 @@ upgraded/dev/review-evidence/
 # Separate Sites source repository and local publication artifacts
 review-service/
 review-service.tar.gz
+
+node_modules/
+qa/out/*.png
+qa/in/

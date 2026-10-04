@@ -1,0 +1,717 @@
+{
+ "agent": "qa-notes",
+ "run": "2026-09-29T22:40:38",
+ "rows": [
+  {
+   "id": "N-001",
+   "part": "g",
+   "text": "שם האח מתחלף בין דוד ולוי בתוך הסיפור, העדויות, הפתיחה, הרמז והפתרון. בעדות השכן מופיע גם החיבור „דודצועק”. הנוסחים נשמרו כפי שנכתבו. סיווג העדויות במשחק תואם לטבלת המקור.",
+   "source": "הערות-תוכן.html",
+   "status": "פתוח",
+   "owner": "כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-002",
+   "part": "i",
+   "text": "המקור כולל מידע על דמי לידה, תקופת חופשה, עצמאיות, אשפוז ומעקב בריאות. נדרשת בדיקת תוכן מקצועית לפני פרסום, במיוחד ההבחנה בין חופשה לתקופה בתשלום והקביעה על הגשת תביעה לעצמאיות. שום נוסח לא שונה.",
+   "source": "הערות-תוכן.html",
+   "status": "פתוח",
+   "owner": "בדיקה מקצועית",
+   "proof": ""
+  },
+  {
+   "id": "N-003",
+   "part": "i",
+   "text": "קישורי הרשמה ויצירת קשר של שפרה ופועה מופיעים בחלקם כ־#; יש להשלים את היעדים בחיבור לאתר. גם מועדי המשימות מחושבים לפי ההגדרות המקוריות, שלא שונו.",
+   "source": "הערות-תוכן.html",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": ""
+  },
+  {
+   "id": "N-004",
+   "part": "i",
+   "text": "מקורות לבדיקת העורכת: ביטוח לאומי · דמי לידה ו־משרד הבריאות · הטיפול הראשוני בתינוק.",
+   "source": "הערות-תוכן.html",
+   "status": "פתוח",
+   "owner": "בדיקה מקצועית",
+   "proof": ""
+  },
+  {
+   "id": "N-005",
+   "part": "a",
+   "text": "במקור הופיע תיאור „שלושה משחקים” לצד ארבע אפשרויות. תווית הממשק עודכנה ל„ארבעה משחקים”. ברמות הזיכרון נוספה אפשרות לצעירים; באוסף המעודכן 19 דפים; הוסרו שתי הרשומות של ציור בית הכנסת שנדחה, ונוספו שישה איורים מאושרים. שתי כפילויות מקוריות נוספות אינן מופיעות יחד בחבילת הזיכרון.",
+   "source": "הערות-תוכן.html",
+   "status": "פתוח",
+   "owner": "כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-006",
+   "part": "b",
+   "text": "הספר החדש מבוסס על נוסח שאושר, עם גרסאות מענדי וחני. הטקסט קריא ונפרד מהאיור; 40 עמודי המקור נשמרו בארכיון לתיעוד. נוסחי שתי הגרסאות כלולים בנספח הקריאה.",
+   "source": "הערות-תוכן.html",
+   "status": "פתוח",
+   "owner": "כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-007",
+   "part": "all",
+   "text": "בחלק מהברכות והמסמכים מופיעה פנייה לאמא כמורה. היא נשמרה בהתאם להנחיה לא לשנות תוכן. תגיות גיל ומסלול הן הצעות תפעוליות, ולא חלק מהתוכן המקורי.",
+   "source": "הערות-תוכן.html",
+   "status": "פתוח",
+   "owner": "כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-008",
+   "part": "a",
+   "text": "[a-repair-art] לתקן פנים לתינוק, להוסיף מזוזה, להפריד את ידי ההורים ולהוסיף מסגרת עם אות בספר תורה בציור השמיכה.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת 2026-09-24 · 3 הערות"
+  },
+  {
+   "id": "N-009",
+   "part": "a",
+   "text": "[a-remove-stroller] להסיר מהגלריה וממקורות המשחקים את הציור ״בבית הכנסת עם העגלה״.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת 2026-09-24 · 1 הערות"
+  },
+  {
+   "id": "N-010",
+   "part": "a",
+   "text": "[a-expand-art] להוסיף שישה ציורים: סעודת שבת משפחתית עם התינוק, משפחה בברית, קניות משפחתיות, אחים עם תינוקת, קריאת שם לבת וכיסא אליהו. קטגוריית ברית כוללת כיסא אליהו וחגיגה משפחתית; ציור ההכנות עם האם והכורסה הוסר לבקשת המשתמשת.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת 2026-09-24 · 4 הערות"
+  },
+  {
+   "id": "N-011",
+   "part": "a",
+   "text": "[a-games] לשלב את הציורים החדשים בזיכרון; להפוך את משחק הזיהוי למציאת חפץ מתוך ציור בין שלוש תמונות, עם שעון שאפשר להפעיל ולכבות. ברירת המחדל ללא הגבלת זמן.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת 2026-09-24 · 2 הערות"
+  },
+  {
+   "id": "N-012",
+   "part": "a",
+   "text": "[a-presentation] הוראות קצרות בשורות נפרדות, כפתורים ברורים וגדולים, בחירה בין צבעים חיים לרגועים. נוסח החוברת: ״בלחיצה על ＋ הציור שלכם יתווסף לחוברת. את החוברת תוכלו להדפיס לאחר מכן.״ לבדוק בפועל את תיקוני התצוגה שכבר נמצאים בקוד.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת 2026-09-24 · 6 הערות"
+  },
+  {
+   "id": "N-013",
+   "part": "a",
+   "text": "[a-optional-later] להשאיר מחולל דפי צביעה מתמונה אישית ומוזיקת רקע לשלב הבא, בכפוף להחלטת המשתמשת.",
+   "source": "final-review-decisions.json",
+   "status": "הצעה — לא אושרה",
+   "owner": "מרפד",
+   "proof": "אושר — · אומת — · 2 הערות"
+  },
+  {
+   "id": "N-014",
+   "part": "a",
+   "text": "[a-general] המשוב הכללי חיובי; ההערות הפרטניות נכללות בהחלטות לעיל.",
+   "source": "final-review-decisions.json",
+   "status": "לידיעה",
+   "owner": "קוד",
+   "proof": "אושר — · אומת — · 1 הערות"
+  },
+  {
+   "id": "N-015",
+   "part": "a",
+   "text": "הבהרה: תעודת אות בספר תורה דומה לתמונה שסיפקה המשתמשת, לא ציור כללי של ספר תורה",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור/תוכן",
+   "proof": ""
+  },
+  {
+   "id": "N-016",
+   "part": "a",
+   "text": "הבהרה: ללא מגע בין האם לאב או לתינוק בתמונה המשפחתית",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור/תוכן",
+   "proof": ""
+  },
+  {
+   "id": "N-017",
+   "part": "a",
+   "text": "הבהרה: האם והילדה בבית הכנסת בעזרת נשים מאחורי מחיצה ברורה",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור/תוכן",
+   "proof": ""
+  },
+  {
+   "id": "N-018",
+   "part": "a",
+   "text": "הבהרה: למחוק את החפץ ליד האגרטל בציור כיסא אליהו",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור/תוכן",
+   "proof": ""
+  },
+  {
+   "id": "N-019",
+   "part": "a",
+   "text": "הבהרה: להסיר את ציור האם ושני הילדים המכינים כורסה; המשתמשת אישרה הסרה במפורש",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור/תוכן",
+   "proof": ""
+  },
+  {
+   "id": "N-020",
+   "part": "a",
+   "text": "הבהרה: נרות שבת: שני פמוטים גדולים ועוד פמוט קטן לכל ילד המופיע בתמונה, כולל התינוק. בחלק א מדובר בדפים 10 ו־16: חמישה פמוטים בכל ציור.",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור/תוכן",
+   "proof": ""
+  },
+  {
+   "id": "N-021",
+   "part": "a",
+   "text": "הבהרה: על שולחן שבת גביע קידוש ללא רגל ובקבוק יין לצדו.",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור/תוכן",
+   "proof": ""
+  },
+  {
+   "id": "N-022",
+   "part": "b",
+   "text": "[b-presentation] מסך הספר לפי גודל המקור, פריסה למחשב ולטלפון, המשך קריאה, סגירה והדפסה לאחר טעינת כל העמודים.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 1 הערות"
+  },
+  {
+   "id": "N-023",
+   "part": "b",
+   "text": "[b-art] איורים מתוקנים בעמודים 2, 8 ו־36; שולחן שבת בעמוד 21 עם חלות, יין, גביע ללא רגל ושני פמוטים גדולים ושניים קטנים.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 3 הערות"
+  },
+  {
+   "id": "N-024",
+   "part": "b",
+   "text": "[b-memory] זיכרון מתמונות הסיפור בשלוש רמות, הצצה, משוב וכפתור למשחק חדש.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 1 הערות"
+  },
+  {
+   "id": "N-025",
+   "part": "b",
+   "text": "[b-retired] פעילויות ההמתנה והפרצופים הוסתרו מהתפריט כחלק משדרוג שש פעילויות הסיפור; המקורות וההערות שמורים.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 2 הערות"
+  },
+  {
+   "id": "N-026",
+   "part": "b",
+   "text": "[b-dress] הלבשת תינוק בלחיצה או בגרירה, בחירה בין יום חול לשבת, צבעים והשלמת ארבעה פריטים.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 1 הערות"
+  },
+  {
+   "id": "N-027",
+   "part": "b",
+   "text": "[b-lights] חידת אורות בשלוש רמות עם רמז לצעד אפשרי ומצב סיום ברור.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 1 הערות"
+  },
+  {
+   "id": "N-028",
+   "part": "b",
+   "text": "[b-needs] איורים ושמות גלויים לחפצים; תגובה שונה לכל חפץ והשלמה לאחר בדיקת שלושתם.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 1 הערות"
+  },
+  {
+   "id": "N-029",
+   "part": "b",
+   "text": "[b-story-manuscript] שולב הנוסח שאושר עם התאמה נפרדת לחני, שאלות רגישות ללא ניקוד, ואיורים תואמים. ההערות המשותפות נשארות פתוחות לבדיקת המשתמשת.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת 2026-09-24 · 3 הערות"
+  },
+  {
+   "id": "N-030",
+   "part": "b",
+   "text": "[b-image-files] 40 עמודי הספר נטענים מקובצי תמונה נפרדים. אם איור אינו זמין, מוצג טקסט המקור במקום דף לבן. חבילת ההורדה כוללת את כל התמונות.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 0 הערות"
+  },
+  {
+   "id": "N-031",
+   "part": "b",
+   "text": "[brit-clothing] באיורי הברית בספר (28–30) ובדף צביעה 17: האב בטלית מעל סרטוק באורך מתון וללא כובע; שאר הגברים בחליפות וכובעים חב״דיים, עם זקנים טבעיים.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — לא אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת — · 0 הערות"
+  },
+  {
+   "id": "N-032",
+   "part": "b",
+   "text": "[b-grandmother-storybook] פאה שחורה לסבתא עם שמירת מראה מבוגר בעמודים 4, 6, 12, 14, 28; ספר סיפורים מאויר בעמוד 36 במקום צורות.",
+   "source": "final-review-decisions.json",
+   "status": "תוקן — אומת",
+   "owner": "קוד",
+   "proof": "אושר 2026-09-24 · אומת 2026-09-24 · 0 הערות"
+  },
+  {
+   "id": "N-033",
+   "part": "c",
+   "text": "מצב החלק: awaiting_joint_review — הערות הבודקות על חלק זה טרם הוכרעו (מקור: 86 הערות בסבב 24.9)",
+   "source": "final-review-decisions.json",
+   "status": "פתוח — ממתין להכרעה משותפת",
+   "owner": "מרפד + כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-034",
+   "part": "d",
+   "text": "מצב החלק: awaiting_joint_review — הערות הבודקות על חלק זה טרם הוכרעו (מקור: 86 הערות בסבב 24.9)",
+   "source": "final-review-decisions.json",
+   "status": "פתוח — ממתין להכרעה משותפת",
+   "owner": "מרפד + כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-035",
+   "part": "e",
+   "text": "מצב החלק: awaiting_joint_review — הערות הבודקות על חלק זה טרם הוכרעו (מקור: 86 הערות בסבב 24.9)",
+   "source": "final-review-decisions.json",
+   "status": "פתוח — ממתין להכרעה משותפת",
+   "owner": "מרפד + כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-036",
+   "part": "f",
+   "text": "מצב החלק: awaiting_joint_review — הערות הבודקות על חלק זה טרם הוכרעו (מקור: 86 הערות בסבב 24.9)",
+   "source": "final-review-decisions.json",
+   "status": "פתוח — ממתין להכרעה משותפת",
+   "owner": "מרפד + כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-037",
+   "part": "g",
+   "text": "מצב החלק: awaiting_joint_review — הערות הבודקות על חלק זה טרם הוכרעו (מקור: 86 הערות בסבב 24.9)",
+   "source": "final-review-decisions.json",
+   "status": "פתוח — ממתין להכרעה משותפת",
+   "owner": "מרפד + כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-038",
+   "part": "h",
+   "text": "מצב החלק: awaiting_joint_review — הערות הבודקות על חלק זה טרם הוכרעו (מקור: 86 הערות בסבב 24.9)",
+   "source": "final-review-decisions.json",
+   "status": "פתוח — ממתין להכרעה משותפת",
+   "owner": "מרפד + כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-039",
+   "part": "i",
+   "text": "מצב החלק: awaiting_joint_review — הערות הבודקות על חלק זה טרם הוכרעו (מקור: 86 הערות בסבב 24.9)",
+   "source": "final-review-decisions.json",
+   "status": "פתוח — ממתין להכרעה משותפת",
+   "owner": "מרפד + כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-040",
+   "part": "j",
+   "text": "מצב החלק: awaiting_joint_review — הערות הבודקות על חלק זה טרם הוכרעו (מקור: 86 הערות בסבב 24.9)",
+   "source": "final-review-decisions.json",
+   "status": "פתוח — ממתין להכרעה משותפת",
+   "owner": "מרפד + כותבת",
+   "proof": ""
+  },
+  {
+   "id": "N-041",
+   "part": "all",
+   "text": "כלל איור: בכל ציור עם נרות שבת: שני פמוטים גדולים ועוד קטנים כמספר הילדים בתמונה, כולל התינוק.",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור",
+   "proof": ""
+  },
+  {
+   "id": "N-042",
+   "part": "all",
+   "text": "כלל איור: שולחן שבת כולל גביע קידוש ללא רגל ויין.",
+   "source": "final-review-decisions.json",
+   "status": "כלל תוכן",
+   "owner": "איור",
+   "proof": ""
+  },
+  {
+   "id": "N-043",
+   "part": "all",
+   "text": "לא נמצא ייצוא של הערות הבודקות (qa/in ריק). ההערות על חלקים c–j נמצאות רק בשירות הסקירה — יש להוריד \"מסמך גיבוי\" מדף בדיקה-סופית ולשמור ב-qa/in/",
+   "source": "מערכת",
+   "status": "חסר קלט",
+   "owner": "מרפד",
+   "proof": ""
+  },
+  {
+   "id": "N-044",
+   "part": "a",
+   "text": "[INV-001] סקריפט חיצוני נטען מדומיין זר — a-coloring/index.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-045",
+   "part": "a",
+   "text": "[INV-002] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — a-coloring/index.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-046",
+   "part": "a",
+   "text": "[INV-003] 1 תמונות ללא alt — a-coloring/index.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": ""
+  },
+  {
+   "id": "N-047",
+   "part": "a",
+   "text": "[INV-004] מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות) — a-coloring/index.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "עורכת לשון",
+   "proof": "בַּיָּדַיִים, מִכְנָסַיִים, נַעֲלַיִים, עֲדַיִין, עֵינַיִים, רַגְלַיִים"
+  },
+  {
+   "id": "N-048",
+   "part": "b",
+   "text": "[INV-005] סקריפט חיצוני נטען מדומיין זר — b-story.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-049",
+   "part": "b",
+   "text": "[INV-006] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — b-story.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-050",
+   "part": "b",
+   "text": "[INV-007] 1 תמונות ללא alt — b-story.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": ""
+  },
+  {
+   "id": "N-051",
+   "part": "b",
+   "text": "[INV-008] מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות) — b-story.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "עורכת לשון",
+   "proof": "בֵּינְתַיִים, בַּיָּדַיִים, הַלְּחָיַיִים, הַנַּעֲלַיִים, וּבֵינְתַיִים, כַּפַּיִים, לְחָיַיִים, מִכְנָסַיִים"
+  },
+  {
+   "id": "N-052",
+   "part": "c",
+   "text": "[INV-009] סקריפט חיצוני נטען מדומיין זר — beit-hamitzvot.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-053",
+   "part": "c",
+   "text": "[INV-010] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — beit-hamitzvot.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-054",
+   "part": "c",
+   "text": "[INV-012] מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות) — beit-hamitzvot.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "עורכת לשון",
+   "proof": "בַּיָּדַיִים, מִכְנָסַיִים, נַעֲלַיִים, עֲדַיִין, עֵינַיִים, רַגְלַיִים"
+  },
+  {
+   "id": "N-055",
+   "part": "d",
+   "text": "[INV-013] סקריפט חיצוני נטען מדומיין זר — d-mitzvot.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-056",
+   "part": "d",
+   "text": "[INV-014] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — d-mitzvot.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-057",
+   "part": "d",
+   "text": "[INV-015] חסימת זום במטא viewport — d-mitzvot.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+  },
+  {
+   "id": "N-058",
+   "part": "d",
+   "text": "[INV-016] 2 תמונות ללא alt — d-mitzvot.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": ""
+  },
+  {
+   "id": "N-059",
+   "part": "d",
+   "text": "[INV-017] מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות) — d-mitzvot.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "עורכת לשון",
+   "proof": "בַּיָּדַיִים, יִישָׁן, מִכְנָסַיִים, נַעֲלַיִים, עֲדַיִין, עֵינַיִים, רַגְלַיִים"
+  },
+  {
+   "id": "N-060",
+   "part": "e",
+   "text": "[INV-018] סקריפט חיצוני נטען מדומיין זר — e-time.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-061",
+   "part": "e",
+   "text": "[INV-019] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — e-time.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-062",
+   "part": "e",
+   "text": "[INV-020] חסימת זום במטא viewport — e-time.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+  },
+  {
+   "id": "N-063",
+   "part": "e",
+   "text": "[INV-021] מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות) — e-time.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "עורכת לשון",
+   "proof": "בַּיָּדַיִים, הַצָּהֳרַיִים, יָדַיִים, לַיָּדַיִים, מִכְנָסַיִים, נַעֲלַיִים, עֲדַיִין, עֵינַיִים"
+  },
+  {
+   "id": "N-064",
+   "part": "f",
+   "text": "[INV-022] סקריפט חיצוני נטען מדומיין זר — f-kitchen.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-065",
+   "part": "f",
+   "text": "[INV-023] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — f-kitchen.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-066",
+   "part": "f",
+   "text": "[INV-024] חסימת זום במטא viewport — f-kitchen.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "width=device-width, initial-scale=1.0, maximum-scale=1.0"
+  },
+  {
+   "id": "N-067",
+   "part": "f",
+   "text": "[INV-025] מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות) — f-kitchen.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "עורכת לשון",
+   "proof": "בַּיָּדַיִים, מִכְנָסַיִים, נַעֲלַיִים, עֲדַיִין, עֵינַיִים, רַגְלַיִים"
+  },
+  {
+   "id": "N-068",
+   "part": "g",
+   "text": "[INV-026] סקריפט חיצוני נטען מדומיין זר — g-detective.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-069",
+   "part": "g",
+   "text": "[INV-027] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — g-detective.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-070",
+   "part": "g",
+   "text": "[INV-028] שם החלק בכרטיס האתר שונה מכותרת העמוד — g-detective.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "כרטיס: תעלומת המתנה | title: בלש המידות · תיק המתנה | h1: ['מה באמת קרה למתנה?']"
+  },
+  {
+   "id": "N-071",
+   "part": "g",
+   "text": "[INV-030] מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות) — g-detective.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "עורכת לשון",
+   "proof": "בַּיָּדַיִים, הַמִּסְפָּרַיִים, מִכְנָסַיִים, נַעֲלַיִים, עֲדַיִין, עֵינַיִים, רַגְלַיִים"
+  },
+  {
+   "id": "N-072",
+   "part": "h",
+   "text": "[INV-031] סקריפט חיצוני נטען מדומיין זר — h-card-studio.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-073",
+   "part": "h",
+   "text": "[INV-032] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — h-card-studio.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-074",
+   "part": "h",
+   "text": "[INV-033] שם החלק בכרטיס האתר שונה מכותרת העמוד — h-card-studio.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "כרטיס: כרטיס מכל הלב | title: הכרטיס לאמא · סטודיו יצירה | h1: ['הכרטיס לאמא']"
+  },
+  {
+   "id": "N-075",
+   "part": "h",
+   "text": "[INV-034] מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות) — h-card-studio.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "עורכת לשון",
+   "proof": "בַּיָּדַיִים, הַיָּדַיִים, מִכְנָסַיִים, נַעֲלַיִים, עֲדַיִין, עֵינַיִים, רַגְלַיִים"
+  },
+  {
+   "id": "N-076",
+   "part": "i",
+   "text": "[INV-035] סקריפט חיצוני נטען מדומיין זר — i-first-steps/index.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-077",
+   "part": "i",
+   "text": "[INV-036] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — i-first-steps/index.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  },
+  {
+   "id": "N-078",
+   "part": "j",
+   "text": "[INV-038] סקריפט חיצוני נטען מדומיין זר — j-meravach.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "קוד",
+   "proof": "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+  },
+  {
+   "id": "N-079",
+   "part": "j",
+   "text": "[INV-039] ממשק הערות (?review=1) מוטמע בקובץ הפרודקשן — j-meravach.html",
+   "source": "qa-inventory",
+   "status": "פתוח",
+   "owner": "מרפד",
+   "proof": "h1 \"תיקונים למשחקי הבאת ברכה\" / point-review"
+  }
+ ]
+}

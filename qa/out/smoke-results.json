@@ -1,0 +1,1927 @@
+{
+ "run": "2026-09-29T22:39:18.399Z",
+ "base": "http://127.0.0.1:8765",
+ "results": [
+  {
+   "id": "a",
+   "name": "מתחם הקטנטנים",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2835,
+   "title": "מתחם הקטנטנים · מורה שמיים",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 6,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Suez One",
+    "Rubik",
+    "Arial"
+   ],
+   "focusable": 116,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 492
+  },
+  {
+   "id": "a",
+   "name": "מתחם הקטנטנים",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1798,
+   "title": "מתחם הקטנטנים · מורה שמיים",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 6,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Suez One",
+    "Rubik",
+    "Arial"
+   ],
+   "focusable": 116,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 492,
+   "clicked": [
+    "אָ ניקוד",
+    "הגדלת טקסט",
+    "המדליות שלי",
+    "🎨\nדפי צביעה\n15 ציורים להדפסה ",
+    "הכול",
+    "אחים ותינוק"
+   ],
+   "lsKeysAfter": 5,
+   "lsKeysAfterReload": 5,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "a",
+   "name": "מתחם הקטנטנים",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1806,
+   "title": "מתחם הקטנטנים · מורה שמיים",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 6,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Suez One",
+    "Rubik",
+    "Arial"
+   ],
+   "focusable": 116,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 492
+  },
+  {
+   "id": "b",
+   "name": "אור הגיע אלינו",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2742,
+   "title": "אור הגיע אלינו",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 11,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 40,
+   "h1": 2,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 439
+  },
+  {
+   "id": "b",
+   "name": "אור הגיע אלינו",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2041,
+   "title": "אור הגיע אלינו",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 11,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 40,
+   "h1": 2,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 439,
+   "clicked": [
+    "קוֹרְאִים בספר",
+    "מִשְׂחָקִים יחד",
+    "✦\nמגלים זוּגוֹת\nנראה מי זוכר?\n",
+    "✦\nבוחרים ומתאימים\nמתלבשים נכון",
+    "✦\nמסדרים יחד\nעורכים שׁוּלְחַן ",
+    "✦\nחושבים ומגלים\nשומרים על השקט",
+    "✦\nמכירים חֲפָצִים\nמה נביא לתינ",
+    "✦\nיוצרים בחופשיות\nצִיּוּר חוֹפ",
+    "× סְגִירָה"
+   ],
+   "lsKeysAfter": 4,
+   "lsKeysAfterReload": 4,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "b",
+   "name": "אור הגיע אלינו",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2792,
+   "title": "אור הגיע אלינו",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 40,
+   "h1": 2,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 1002
+  },
+  {
+   "id": "c",
+   "name": "בית המצוות",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1907,
+   "title": "בית המצוות · הרפתקת האותיות",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 14,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 2,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 21,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 537
+  },
+  {
+   "id": "c",
+   "name": "בית המצוות",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1668,
+   "title": "בית המצוות · הרפתקת האותיות",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 14,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 2,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 21,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 537,
+   "clicked": [
+    "אָ ניקוד",
+    "א+",
+    "💰",
+    "🍷",
+    "📘",
+    "🕯️",
+    "📜",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "🔒 התיבה מחכה לאותיות",
+    "הרפתקה חדשה"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 4
+  },
+  {
+   "id": "c",
+   "name": "בית המצוות",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1639,
+   "title": "בית המצוות · הרפתקת האותיות",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 14,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 2,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 21,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 556
+  },
+  {
+   "id": "d",
+   "name": "מסע המצוות",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1696,
+   "title": "מסע המצוות · מורה שמיים",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 13,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Secular One"
+   ],
+   "focusable": 30,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 498
+  },
+  {
+   "id": "d",
+   "name": "מסע המצוות",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1665,
+   "title": "מסע המצוות · מורה שמיים",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 13,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Secular One"
+   ],
+   "focusable": 30,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 498,
+   "clicked": [
+    "אָ ניקוד",
+    "א+",
+    "🌙",
+    "●\n1",
+    "●●\n2",
+    "●●●\n3",
+    "●●●●\n4",
+    "",
+    "בן",
+    "בת",
+    "",
+    "בן",
+    "בת"
+   ],
+   "lsKeysAfter": 2,
+   "lsKeysAfterReload": 2,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "d",
+   "name": "מסע המצוות",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1679,
+   "title": "מסע המצוות · מורה שמיים",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 13,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Secular One"
+   ],
+   "focusable": 30,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 498
+  },
+  {
+   "id": "e",
+   "name": "מסע בזמן",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1739,
+   "title": "מסע בזמן — סדר יום יהודי",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 14,
+   "smallTargets": [
+    {
+     "t": "קַל",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "בֵּינוֹנִי",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "אֶתְגָּר",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "שַׂחְקָן אֶחָד",
+     "w": 119,
+     "h": 37
+    },
+    {
+     "t": "שְׁנַיִים",
+     "w": 119,
+     "h": 37
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Noto Sans Hebrew",
+    "Assistant"
+   ],
+   "focusable": 25,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 409
+  },
+  {
+   "id": "e",
+   "name": "מסע בזמן",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1690,
+   "title": "מסע בזמן — סדר יום יהודי",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 14,
+   "smallTargets": [
+    {
+     "t": "קַל",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "בֵּינוֹנִי",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "אֶתְגָּר",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "שַׂחְקָן אֶחָד",
+     "w": 154,
+     "h": 37
+    },
+    {
+     "t": "שְׁנַיִים",
+     "w": 154,
+     "h": 37
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Noto Sans Hebrew",
+    "Assistant"
+   ],
+   "focusable": 25,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 409,
+   "clicked": [
+    "אָ ניקוד",
+    "א+",
+    "קל",
+    "בינוני",
+    "אתגר",
+    "שחקן אחד",
+    "שניים",
+    "מתחילים!",
+    "✏️\nשיעורים ומשחק"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "e",
+   "name": "מסע בזמן",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1697,
+   "title": "מסע בזמן — סדר יום יהודי",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 14,
+   "smallTargets": [
+    {
+     "t": "קַל",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "בֵּינוֹנִי",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "אֶתְגָּר",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "שַׂחְקָן אֶחָד",
+     "w": 347,
+     "h": 37
+    },
+    {
+     "t": "שְׁנַיִים",
+     "w": 347,
+     "h": 37
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Noto Sans Hebrew",
+    "Assistant"
+   ],
+   "focusable": 25,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 409
+  },
+  {
+   "id": "f",
+   "name": "מטבח השבת",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1709,
+   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 3,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Suez One"
+   ],
+   "focusable": 8,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 576
+  },
+  {
+   "id": "f",
+   "name": "מטבח השבת",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1693,
+   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 3,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Suez One"
+   ],
+   "focusable": 8,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 576,
+   "clicked": [
+    "אָ ניקוד",
+    "א+",
+    "מתחילים לאפות"
+   ],
+   "lsKeysAfter": 2,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "f",
+   "name": "מטבח השבת",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1661,
+   "title": "מטבח השבת — הכנת החלות לכבוד שבת",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 3,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": true,
+   "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Suez One"
+   ],
+   "focusable": 8,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 576
+  },
+  {
+   "id": "g",
+   "name": "בלש המידות",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1750,
+   "title": "בלש המידות · תיק המתנה",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 10,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 14,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 844
+  },
+  {
+   "id": "g",
+   "name": "בלש המידות",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1640,
+   "title": "בלש המידות · תיק המתנה",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 10,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 14,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 844,
+   "clicked": [
+    "אָ ניקוד",
+    "א+",
+    "פותחים את תיק החקירה",
+    "🧵",
+    "✂",
+    "🚪",
+    "🔎",
+    "🎀\nתמי, האחות הקטנה\nראיתי את ל",
+    "✂\nיוני, האח הגדול\nדוד כעס עליי",
+    "🚪\nהשכן מהמסדרון\nבדיוק יצאתי מ"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 4
+  },
+  {
+   "id": "g",
+   "name": "בלש המידות",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1706,
+   "title": "בלש המידות · תיק המתנה",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 10,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 14,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 874
+  },
+  {
+   "id": "h",
+   "name": "הכרטיס לאמא",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1702,
+   "title": "הכרטיס לאמא · סטודיו יצירה",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 32,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 38,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 2570
+  },
+  {
+   "id": "h",
+   "name": "הכרטיס לאמא",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1677,
+   "title": "הכרטיס לאמא · סטודיו יצירה",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 32,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 38,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 2570,
+   "clicked": [
+    "אָ ניקוד",
+    "א+",
+    "↓ שומרים כרטיס כתמונה",
+    "תצוגה מוגדלת של הכרטיס",
+    "חיבוק חמים",
+    "טורקיז רגוע",
+    "ורוד קורל",
+    "סגול חלומי",
+    "שמש זהובה",
+    "חגיגי ונקי",
+    "קשת רכה",
+    "מסגרת חגיגית",
+    "פרחים בלב",
+    "♥",
+    "✿",
+    "✦",
+    "★",
+    "🌷",
+    "🎀",
+    "🎁",
+    "💛",
+    "🌼",
+    "🎈",
+    "✨",
+    "🌿"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 4
+  },
+  {
+   "id": "h",
+   "name": "הכרטיס לאמא",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1653,
+   "title": "הכרטיס לאמא · סטודיו יצירה",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 31,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo"
+   ],
+   "focusable": 38,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 2684
+  },
+  {
+   "id": "i",
+   "name": "צעדים ראשונים",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1719,
+   "title": "צעדים ראשונים · שפרה ופועה",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 23,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 0,
+   "fonts": [
+    "Heebo",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 53,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 983
+  },
+  {
+   "id": "i",
+   "name": "צעדים ראשונים",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1659,
+   "title": "צעדים ראשונים · שפרה ופועה",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 23,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 0,
+   "fonts": [
+    "Heebo",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 53,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 983,
+   "clicked": [
+    "בת",
+    "בן",
+    "עדיין לא מספרים",
+    "לא, רק אחד/ת",
+    "תאומים",
+    "שלישייה",
+    "כללית",
+    "מכבי",
+    "מאוחדת",
+    "לאומית",
+    "שכירה",
+    "עצמאית",
+    "גם וגם",
+    "לא עבדתי",
+    "כן, אני רשומה",
+    "עוד לא",
+    "בואי נבנה את המפה שלי",
+    "+ הערה שלי",
+    "לשמור",
+    "לא עכשיו",
+    "לא עכשיו",
+    "+ הערה שלי",
+    "לשמור"
+   ],
+   "lsKeysAfter": 1,
+   "lsKeysAfterReload": 1,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "i",
+   "name": "צעדים ראשונים",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1659,
+   "title": "צעדים ראשונים · שפרה ופועה",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 23,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 0,
+   "fonts": [
+    "Heebo",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 53,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 983
+  },
+  {
+   "id": "j",
+   "name": "מרווח",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1674,
+   "title": "מרווח",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 7,
+   "smallTargets": [
+    {
+     "t": "היום",
+     "w": 99,
+     "h": 33
+    },
+    {
+     "t": "החוט",
+     "w": 99,
+     "h": 33
+    },
+    {
+     "t": "אצלי",
+     "w": 99,
+     "h": 33
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 9,
+   "h1": 0,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 252
+  },
+  {
+   "id": "j",
+   "name": "מרווח",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1711,
+   "title": "מרווח",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 7,
+   "smallTargets": [
+    {
+     "t": "היום",
+     "w": 122,
+     "h": 33
+    },
+    {
+     "t": "החוט",
+     "w": 122,
+     "h": 33
+    },
+    {
+     "t": "אצלי",
+     "w": 122,
+     "h": 33
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 9,
+   "h1": 0,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 252,
+   "clicked": [
+    "עייפה\nמשהו קטן שלא דורש כוח",
+    "ניסיתי",
+    "♡ לשמור אצלי",
+    "שאלת ערב לשניכם\nהכרטיס הזה, שא",
+    "אצלי"
+   ],
+   "lsKeysAfter": 1,
+   "lsKeysAfterReload": 1,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "j",
+   "name": "מרווח",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1611,
+   "title": "מרווח",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 7,
+   "smallTargets": [
+    {
+     "t": "היום",
+     "w": 135,
+     "h": 33
+    },
+    {
+     "t": "החוט",
+     "w": 135,
+     "h": 33
+    },
+    {
+     "t": "אצלי",
+     "w": 135,
+     "h": 33
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 9,
+   "h1": 0,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 252
+  },
+  {
+   "id": "L",
+   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [
+    "https://morash.co.il/images/logo-white.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/shifra-logo.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/balloon-tree.webp :: HTTP 403",
+    "https://morash.co.il/images/bracha/mazal-tov.svg :: HTTP 403",
+    "https://morash.co.il/images/bracha/briut.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/legadel.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/maanika.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/child-channel.png :: HTTP 403"
+   ],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1742,
+   "title": "שפרה ופועה של מורה שמים · הבאת ברכה לעולם",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 24,
+   "smallTargets": [],
+   "brokenImgs": [
+    "https://morash.co.il/images/logo-white.png",
+    "https://morash.co.il/images/bracha/shifra-logo.png",
+    "https://morash.co.il/images/bracha/balloon-tree.webp",
+    "https://morash.co.il/images/bracha/mazal-tov.svg",
+    "https://morash.co.il/images/bracha/briut.png",
+    "https://morash.co.il/images/bracha/legadel.png",
+    "https://morash.co.il/images/bracha/maanika.png",
+    "https://morash.co.il/images/bracha/child-channel.png",
+    "https://morash.co.il/images/logo-white.png"
+   ],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [],
+   "lsKeys": 0,
+   "fonts": [
+    "Almoni AAA",
+    "Almoni Tzar AAA"
+   ],
+   "focusable": 48,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 1637
+  },
+  {
+   "id": "L",
+   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [
+    "https://morash.co.il/images/logo-white.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/balloon-tree.webp :: HTTP 403",
+    "https://morash.co.il/images/bracha/shifra-logo.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/mazal-tov.svg :: HTTP 403",
+    "https://morash.co.il/images/bracha/briut.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/legadel.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/maanika.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/child-channel.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/sara-drawing.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/binush.webp :: HTTP 403",
+    "https://morash.co.il/images/bracha/lirot-malkeinu.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/derech-habayit.png :: HTTP 403",
+    "https://morash.co.il/bracha :: HTTP 403",
+    "https://morash.co.il/bracha :: HTTP 403"
+   ],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [
+    "https://morash.co.il/bracha#birth-form",
+    "https://morash.co.il/bracha#birth-form"
+   ],
+   "status": 200,
+   "loadMs": 1730,
+   "title": "שפרה ופועה של מורה שמים · הבאת ברכה לעולם",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 24,
+   "smallTargets": [],
+   "brokenImgs": [
+    "https://morash.co.il/images/logo-white.png",
+    "https://morash.co.il/images/bracha/shifra-logo.png",
+    "https://morash.co.il/images/bracha/balloon-tree.webp",
+    "https://morash.co.il/images/bracha/mazal-tov.svg",
+    "https://morash.co.il/images/bracha/briut.png",
+    "https://morash.co.il/images/bracha/legadel.png",
+    "https://morash.co.il/images/bracha/maanika.png",
+    "https://morash.co.il/images/bracha/child-channel.png",
+    "https://morash.co.il/images/bracha/sara-drawing.png",
+    "https://morash.co.il/images/logo-white.png"
+   ],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [],
+   "lsKeys": 0,
+   "fonts": [
+    "Almoni AAA",
+    "Almoni Tzar AAA"
+   ],
+   "focusable": 48,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 1637,
+   "clicked": [
+    "תפריט",
+    "לעדכן שילדתי",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "נפתח ליולדות 💛",
+    "שליחה"
+   ],
+   "lsKeysAfter": 0,
+   "lsKeysAfterReload": 0,
+   "errorsAfterClicks": 15
+  },
+  {
+   "id": "L",
+   "name": "דף הבאת ברכה (ייצוא): shifra-vepuah-bracha.html",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()",
+    "Failed to load resource: the server responded with a status of 403 ()"
+   ],
+   "warnings": [],
+   "failed": [
+    "https://morash.co.il/images/logo-white.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/shifra-logo.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/balloon-tree.webp :: HTTP 403",
+    "https://morash.co.il/images/bracha/ad-habayit.svg :: HTTP 403",
+    "https://morash.co.il/images/bracha/gift-box.webp :: HTTP 403",
+    "https://morash.co.il/images/bracha/mazal-tov.svg :: HTTP 403",
+    "https://morash.co.il/images/bracha/briut.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/legadel.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/maanika.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/child-channel.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/sara-drawing.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/binush.webp :: HTTP 403",
+    "https://morash.co.il/images/bracha/lirot-malkeinu.png :: HTTP 403",
+    "https://morash.co.il/images/bracha/derech-habayit.png :: HTTP 403"
+   ],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1738,
+   "title": "שפרה ופועה של מורה שמים · הבאת ברכה לעולם",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 29,
+   "smallTargets": [
+    {
+     "t": "ראשי",
+     "w": 34,
+     "h": 38
+    },
+    {
+     "t": "אודות",
+     "w": 37,
+     "h": 38
+    },
+    {
+     "t": "תרומה",
+     "w": 40,
+     "h": 38
+    },
+    {
+     "t": "יצירת קשר",
+     "w": 69,
+     "h": 38
+    }
+   ],
+   "brokenImgs": [
+    "https://morash.co.il/images/logo-white.png",
+    "https://morash.co.il/images/bracha/shifra-logo.png",
+    "https://morash.co.il/images/bracha/balloon-tree.webp",
+    "https://morash.co.il/images/bracha/ad-habayit.svg",
+    "https://morash.co.il/images/bracha/gift-box.webp",
+    "https://morash.co.il/images/bracha/mazal-tov.svg",
+    "https://morash.co.il/images/bracha/briut.png",
+    "https://morash.co.il/images/bracha/legadel.png",
+    "https://morash.co.il/images/bracha/maanika.png",
+    "https://morash.co.il/images/bracha/child-channel.png",
+    "https://morash.co.il/images/bracha/sara-drawing.png",
+    "https://morash.co.il/images/bracha/binush.webp",
+    "https://morash.co.il/images/bracha/lirot-malkeinu.png",
+    "https://morash.co.il/images/bracha/derech-habayit.png",
+    "https://morash.co.il/images/logo-white.png"
+   ],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [],
+   "lsKeys": 0,
+   "fonts": [
+    "Almoni AAA",
+    "Almoni Tzar AAA"
+   ],
+   "focusable": 48,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 1681
+  }
+ ]
+}
