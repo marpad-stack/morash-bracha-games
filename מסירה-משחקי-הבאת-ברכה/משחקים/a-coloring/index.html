@@ -453,7 +453,7 @@ html body .bracha-world{margin:0 0 10px;font-size:16px;font-weight:600;line-heig
 html body .bracha-part-title{font-size:18px!important;font-weight:800;line-height:1.3!important;letter-spacing:0!important;margin:0 0 6px!important;font-family:inherit}
 @media print{html body .bracha-sitebar{display:none!important}}
 html body[data-morash-part=a] footer p{color:#fff!important;opacity:1!important}
-</style><nav class="bracha-sitebar" aria-label="ניווט לאתר"><a class="bracha-back" href="https://morash.co.il/bracha" target="_top"><span aria-hidden="true">→</span> חזרה לאתר</a><span class="bracha-age">מגיל 4</span></nav>
+</style><nav class="bracha-sitebar" aria-label="ניווט לאתר"><a class="bracha-back" href="https://morash.co.il/bracha#game-a" target="_top"><span aria-hidden="true">→</span> חזרה לאתר</a><span class="bracha-age">מגיל 4</span></nav>
 <div class="blobs"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
 
 <div class="wrap">
@@ -607,7 +607,7 @@ if(!Array.isArray(picked)) picked=[];picked=[...new Set(picked)].filter(id=>PAGE
 
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 // Cache version per drawing: page 16 was edited on 4.10.2026 (dome removed from the wall picture, candle-flame region added).
-const aImgV=n=>+n===16?'20261004-a16':'20260924-a3';
+const aImgV=n=>({2:'20261004-a02',16:'20261004-a16',20:'20261004-a20'})[+n]||'20260924-a3';
 const img=n=>'images/page'+String(n).padStart(2,'0')+'.png?v='+aImgV(n);
 const thumb=n=>'images/thumb'+String(n).padStart(2,'0')+'.png?v='+aImgV(n);
 const mimg=n=>'images/mask'+String(n).padStart(2,'0')+'.png?v='+aImgV(n);
