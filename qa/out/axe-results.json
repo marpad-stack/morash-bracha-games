@@ -1,5 +1,5 @@
 {
- "run": "2026-10-04T14:39:44.184Z",
+ "run": "2026-10-04T19:23:02.707Z",
  "results": [
   {
    "id": "a",
@@ -123,7 +123,7 @@
    "id": "d",
    "name": "מסע המצוות",
    "width": 390,
-   "bytesKB": 910,
+   "bytesKB": 909,
    "reqs": 1,
    "violations": [
     {
@@ -154,7 +154,7 @@
    "id": "d",
    "name": "מסע המצוות",
    "width": 1440,
-   "bytesKB": 910,
+   "bytesKB": 909,
    "reqs": 1,
    "violations": [
     {
@@ -305,7 +305,7 @@
    "id": "h",
    "name": "הכרטיס לאמא",
    "width": 390,
-   "bytesKB": 448,
+   "bytesKB": 463,
    "reqs": 1,
    "violations": []
   },
@@ -313,7 +313,7 @@
    "id": "h",
    "name": "הכרטיס לאמא",
    "width": 1440,
-   "bytesKB": 448,
+   "bytesKB": 463,
    "reqs": 1,
    "violations": []
   },

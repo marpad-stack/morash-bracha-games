@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """Complete the second edition's review and website presentation kit."""
 import csv,io
 kit=FINAL/'ערכת-תצוגה-לאתר';kit.mkdir(exist_ok=True)

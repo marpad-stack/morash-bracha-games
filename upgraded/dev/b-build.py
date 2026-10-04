@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 s=original('or-higia*html')
 for gid,changes in editorial['b']['activities'].items():
     pattern=r"(\{id:'"+gid+r"',icon:'[^']+',t:)'([^']*)'(,how:)'([^']*)'"

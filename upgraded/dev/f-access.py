@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 # Adapt input methods without changing the original stage content.
 s=s.replace("this.classList.add('done');", "if(this.classList.contains('done'))return;this.setAttribute('aria-disabled','true');this.classList.add('done');")
 s=replace(s,"  el.style.touchAction='none';",r'''  el.style.touchAction='none';

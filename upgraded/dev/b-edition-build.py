@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """The user-approved manuscript replaces the visual forty-page source edition."""
 import hashlib, shutil
 def story_plain(n):

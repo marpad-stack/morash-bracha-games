@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 s=original('masa-bazman*html')
 s=replace(s,'function afterMini(){','function afterMini(){')
 s=replace(s,'if(step>=N) finish(); else renderStep();','eSave();if(step>=N) finish(); else renderStep();')

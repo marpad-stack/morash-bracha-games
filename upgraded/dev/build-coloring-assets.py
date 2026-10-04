@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """Package generated illustrations, thumbnails and digital coloring hit regions.
 
 Illustration content and colorization come from image_gen. This script only
