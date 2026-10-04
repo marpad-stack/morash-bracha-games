@@ -1,5 +1,5 @@
 {
- "run": "2026-10-04T09:54:53.903Z",
+ "run": "2026-10-04T09:57:32.548Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
@@ -7,19 +7,19 @@
    "name": "בלש המידות",
    "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1907,
+   "loadMs": 1899,
    "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -51,21 +51,21 @@
    "errors": [
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "warnings": [],
    "failed": [],
    "external": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1966,
+   "loadMs": 1897,
    "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -97,7 +97,7 @@
     "✂",
     "🚪",
     "🔎",
-    "🎀\nתמי, האחות הקטנה\nראיתי את ל",
+    "🎀\nתמי, האחות הקטנה\nראיתי את ד",
     "✂\nיוני, האח הגדול\nדוד כעס עליי",
     "🚪\nהשכן מהמסדרון\nבדיוק יצאתי מ",
     "🌷\nאמא\nדוד רץ אליי מזיע ומודאג"
@@ -111,19 +111,19 @@
    "name": "בלש המידות",
    "width": 1440,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1942,
+   "loadMs": 1747,
    "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 1440,
    "innerWidth": 1440,
