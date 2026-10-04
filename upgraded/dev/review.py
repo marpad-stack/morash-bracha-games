@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """Review pass: navigation, compact mobile layouts and clear controls, 2026-09-16."""
 css=(DEV/'review.css').read_text(encoding='utf-8')
 css+='\n'+(DEV/'technical-fixes.css').read_text(encoding='utf-8')

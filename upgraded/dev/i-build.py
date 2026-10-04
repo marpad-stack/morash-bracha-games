@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 with zipfile.ZipFile(next(ROOT.glob('shifra-tzeadim*zip'))) as z:
     for n in z.namelist():
         if n.endswith('/') or n.startswith('__MACOSX/'):continue

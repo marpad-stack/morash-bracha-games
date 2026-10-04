@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """Consistent black brand in rendered book pages and all formatted print outputs."""
 brand_svg=(DEV/'assets/morash-logo-black.svg').read_text(encoding='utf-8')
 brand_js=(DEV/'brand.js').read_text(encoding='utf-8').replace('__MORASH_LOGO_SVG__',json.dumps(brand_svg))

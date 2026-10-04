@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 s=original('חלק י.html')
 s=replace(s,'מצב הדגמה ← קפצי ליום הבא','כרטיס נוסף להיום')
 s=replace(s,"$('#next').onclick=()=>{S.day++;S.today=null;$('#dm').textContent='יום '+S.day;go('mood');toast('בוקר חדש')};","$('#next').onclick=()=>{S.today=null;go('mood');toast('בוחרים רגע נוסף להיום')};")

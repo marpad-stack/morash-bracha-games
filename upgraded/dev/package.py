@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 from pathlib import Path
 import json,re,html,base64,shutil,zipfile,hashlib,xml.etree.ElementTree as E
 ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'upgraded';DEV=OUT/'dev'

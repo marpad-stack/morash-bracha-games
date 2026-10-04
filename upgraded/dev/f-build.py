@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 s=original('shabbat-kitchen*html')
 s=replace(s,'const TOTAL_TIME = 240;','let TOTAL_TIME = 240;')
 s=replace(s,'function start(){','function start(){TOTAL_TIME=Number(document.getElementById("kitchenPace").value)||240;fCalm=document.getElementById("kitchenPace").value==="0";fClear();')

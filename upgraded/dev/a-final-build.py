@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """Approved part A review, applied reproducibly after the original game builder."""
 import shutil
 art=json.loads((DEV/'a-final-content.json').read_text(encoding='utf-8'))

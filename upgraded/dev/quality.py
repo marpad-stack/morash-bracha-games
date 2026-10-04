@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """Second-pass presentation, reading and cultural-fit enhancements.
 
 This runs after the original builders. All source content arrays stay intact.

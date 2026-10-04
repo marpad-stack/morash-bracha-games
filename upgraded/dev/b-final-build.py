@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """Approved illustration/game review; the story transcript remains unchanged."""
 import base64,io,hashlib
 from PIL import Image

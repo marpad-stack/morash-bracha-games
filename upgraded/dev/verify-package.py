@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 """Verify deliverable assets, internal links, independent archives and content locks."""
 from pathlib import Path
 from html.parser import HTMLParser

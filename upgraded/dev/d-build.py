@@ -1,3 +1,4 @@
+raise SystemExit("קובצי המסירה הם המקור. אין להריץ בנייה ישנה.")  # 4.10.2026 – ר׳ decisions.md
 s=original('masa-hamitzvot*html')
 # Draw tzitzit over the trousers so the existing modest character details remain visible.
 s=s.replace('<path d="M21 49v5M25 49v5M35 49v5M39 49v5" stroke="#fff" stroke-width="1.4"/>','')
