@@ -101,7 +101,7 @@
   .btn-gold:hover{background:var(--gold-deep);border-color:var(--gold-deep);color:#fff}
   .btn-quiet{background:transparent;border-color:transparent;color:var(--muted);font-weight:600}
   .btn-quiet:hover{color:var(--coral);border-color:transparent}
-  .privacy{font-size:12.5px;color:var(--faint);margin-top:14px;text-align:center}
+  .privacy{font-size:12.5px;color:var(--faint);margin-top:14px;text-align:center}.shareNote{margin:8px 2px 0;font-size:13px;color:var(--muted)}.cat-sub{margin:-4px 4px 10px;font-size:14px;color:var(--muted);line-height:1.5}
 
   /* ===== כרטיס העל ===== */
   .hero{background:var(--card);border-radius:26px;padding:20px 22px 22px;box-shadow:var(--shadow);border:1px solid var(--line);position:relative;overflow:hidden}
@@ -180,7 +180,7 @@
   .mynote{display:block;width:100%;margin-top:9px;padding:9px 11px;border:1.5px dashed var(--line);border-radius:12px;background:var(--input);font-size:14px;resize:vertical;min-height:44px}
   .mynote-view{margin-top:8px;padding:8px 11px;background:var(--gold-soft);border-radius:11px;font-size:14px;color:#5A4A1C;white-space:pre-wrap}
   .addrow{display:flex;gap:8px;margin-top:6px}
-  .addrow input{flex:1;padding:10px 13px;border:1.5px solid var(--line);border-radius:13px;background:var(--card)}
+  .addrow input{flex:1;min-width:0;padding:10px 13px;border:1.5px solid var(--line);border-radius:13px;background:var(--card)}
   .empty{text-align:center;color:var(--muted);padding:26px 16px;border:1.5px dashed var(--line);border-radius:var(--r);background:rgba(255,255,255,.5);font-size:14.5px}
   body.night .empty{background:rgba(255,255,255,.03)}
 
@@ -428,7 +428,7 @@ html body.night[data-morash-part=i] .intro .bracha-part-title{color:#8FB0DC}
     </div>
     <h1 class="bracha-part-title">צעדים ראשונים</h1>
     <h2 class="intro-greet">מזל טוב! <em>נכיר רגע?</em></h2>
-    <p class="sub">כמה שאלות קטנות, ונכין לך מפה אישית לשבועות הראשונים – רק מה שרלוונטי לך, עם תאריכים מחושבים לפי יום הלידה. הכול נשאר אצלך במכשיר.</p>
+    <p class="sub">עני על כמה שאלות קצרות, וקבלי לוח זמנים מותאם אישית לשבועות הראשונים – רק מה שחשוב לך, לפי התאריכים המדויקים שלך. המידע נשמר באופן פרטי במכשיר שלך בלבד.</p>
 
     <div class="row2">
       <div class="field">
@@ -436,36 +436,36 @@ html body.night[data-morash-part=i] .intro .bracha-part-title{color:#8FB0DC}
         <input type="text" id="fName" placeholder="שם פרטי">
       </div>
       <div class="field">
-        <label for="fBirth">מתי הייתה הלידה?</label>
+        <label for="fBirth">מתי ילדת?</label>
         <input type="date" id="fBirth">
       </div>
     </div>
 
     <div class="field">
-      <label>מי הגיע/ה אליכם? 🎀</label>
+      <label>מי הגיע אלייך? 🎀</label>
       <div class="segbtns" id="fSex">
         <button type="button" class="segbtn" data-v="f" aria-pressed="false">בת</button>
         <button type="button" class="segbtn" data-v="m" aria-pressed="false">בן</button>
-        <button type="button" class="segbtn" data-v="n" aria-pressed="true">עדיין לא מספרים</button>
+        <button type="button" class="segbtn" data-v="n" aria-pressed="true">עדיין לא מספרת</button>
       </div>
     </div>
 
     <div class="field">
-      <label>ואיך קוראים לתינוק/ת? <span class="hint">אם עוד לא – נשאיר ריק ונחכה</span></label>
-      <input type="text" id="fBaby" placeholder="עדיין מתלבטים">
+      <label for="fBaby">ואיך קראת <span id="fBabyWho">לתינוק</span>? <span class="hint">אם עוד לא – אפשר להשאיר ריק</span></label>
+      <input type="text" id="fBaby">
     </div>
 
     <div class="field">
-      <label>יש עוד מישהו קטן שהגיע יחד? <span class="hint">תאומים ושלישיות</span></label>
+      <label>ילדת יותר מתינוק אחד? <span class="hint">תאומים ושלישיות</span></label>
       <div class="segbtns" id="fMulti">
-        <button type="button" class="segbtn" data-v="1" aria-pressed="true">לא, רק אחד/ת</button>
+        <button type="button" class="segbtn" data-v="1" aria-pressed="true">לא, תינוק אחד</button>
         <button type="button" class="segbtn" data-v="2" aria-pressed="false">תאומים</button>
         <button type="button" class="segbtn" data-v="3" aria-pressed="false">שלישייה</button>
       </div>
     </div>
 
     <div class="field">
-      <label>שירותי הבריאות שלכם <span class="hint">קופת חולים</span></label>
+      <label>באיזו קופת חולים את חברה? <span class="hint">שירותי הבריאות</span></label>
       <div class="segbtns" id="fHmo">
         <button type="button" class="segbtn" data-v="clalit" aria-pressed="false">כללית</button>
         <button type="button" class="segbtn" data-v="maccabi" aria-pressed="false">מכבי</button>
@@ -494,7 +494,7 @@ html body.night[data-morash-part=i] .intro .bracha-part-title{color:#8FB0DC}
     </div>
 
     <div class="field" id="returnField">
-      <label for="fReturn">מתי בערך חוזרים לעבודה? <span class="hint">אפשר לדלג ולעדכן אחר כך</span></label>
+      <label for="fReturn">מתי בערך את חוזרת לעבודה? <span class="hint">אפשר לדלג ולעדכן אחר כך</span></label>
       <input type="date" id="fReturn">
     </div>
 
@@ -552,12 +552,13 @@ html body.night[data-morash-part=i] .intro .bracha-part-title{color:#8FB0DC}
         <span id="urgentLeft"></span>
       </div>
       <div class="heroBtns">
-        <button class="hbtn solid" id="waBtn">לשלוח לעצמי בוואטסאפ</button>
-        <button class="hbtn" id="shareBtn">לשתף עם בן הזוג</button>
-        <button class="hbtn" id="cardBtn">כרטיס מזכרת</button>
-        <button class="hbtn" id="printBtn">להדפיס</button>
-        <button class="hbtn" id="editBtn">לעדכן פרטים</button>
+        <button class="hbtn solid" id="waBtn">שליחה בוואטסאפ</button>
+        <button class="hbtn" id="shareBtn">שיתוף עם הבעל</button>
+        <button class="hbtn" id="cardBtn">מזכרת</button>
+        <button class="hbtn" id="printBtn">הדפסה</button>
+        <button class="hbtn" id="editBtn">עדכון פרטים</button>
       </div>
+      <p class="shareNote" id="shareNote">נשלח בוואטסאפ רק אם תבחרי.</p>
     </section>
 
     <div class="tabs" role="tablist">
@@ -669,43 +670,44 @@ var CATS=[
   {n:0,id:'gift',t:'לוודא שחבילת המתנות בדרך אלייך 🎁',w:'בהקדם',show:'nogift',note:'אם נרשמת ועדיין לא הגיעה – נשמח לבדוק. לחצי וכתבי לנו.',link:{label:'לכתוב לנו',href:'https://morash.co.il/contact'}}
  ]},
  {emoji:'💰',name:'זכויות – כדאי לברר',tasks:[
-  {n:1,t:'לוודא שמענק הלידה נחת בחשבון',w:'בדרך כלל בחודש הראשון',due:{base:'birth',d:30},note:'לפי רוב ההסברים המענק מגיע בלי הגשה, בדרך כלל בתוך כחודש. כדאי לוודא בביטוח לאומי שהוא בדרך אלייך.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
-  {n:2,t:'לבדוק את דמי הלידה ולהגיש אם צריך',w:'שבוע – שבועיים',u:1,due:{base:'birth',d:14},show:'employee',note:'אורך התקופה בתשלום עשוי להיות תלוי בוותק שלך לפני הלידה. כדאי לברר בביטוח לאומי מה מגיע במקרה שלך.',link:{label:'btl.gov.il',href:'https://www.btl.gov.il'}},
-  {n:3,t:'להגיש תביעה לדמי לידה – כעצמאית',w:'מומלץ בהקדם',u:1,due:{base:'birth',d:14},show:'self',note:'בדרך כלל עצמאיות צריכות להגיש תביעה בעצמן – כדאי לברר בביטוח לאומי מה נדרש ועד מתי. לרוב ההגשה קצרה מכפי שנדמה.',link:{label:'טופס מקוון',href:'https://www.btl.gov.il'}},
+  {n:1,t:'לוודא שמענק הלידה נחת בחשבון',w:'בדרך כלל בחודש הראשון',due:{base:'birth',d:30},note:'לפי רוב ההסברים המענק מגיע בלי הגשה, בדרך כלל בתוך כחודש. כדאי לוודא בביטוח לאומי שהוא בדרך אלייך.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050',site:'https://www.btl.gov.il/benefits/Pages/maanakleda.aspx'}},
+  {n:2,t:'לבדוק את דמי הלידה ולהגיש אם צריך',w:'שבוע – שבועיים',u:1,due:{base:'birth',d:14},show:'employee',note:'אורך התקופה בתשלום עשוי להיות תלוי בוותק שלך לפני הלידה. כדאי לברר בביטוח לאומי מה מגיע במקרה שלך.',link:{label:'דמי לידה – ביטוח לאומי',href:'https://www.btl.gov.il/benefits/maternity/Childbirth_Allowance/Pages/default.aspx'}},
+  {n:3,t:'להגיש תביעה לדמי לידה – כעצמאית',w:'מומלץ בהקדם',u:1,due:{base:'birth',d:14},show:'self',note:'בדרך כלל עצמאיות צריכות להגיש תביעה בעצמן – כדאי לברר בביטוח לאומי מה נדרש ועד מתי. לרוב ההגשה קצרה מכפי שנדמה.',link:{label:'איך מגישים תביעה',href:'https://www.btl.gov.il/benefits/maternity/Childbirth_Allowance/Pages/%D7%90%D7%95%D7%A4%D7%9F%20%D7%94%D7%92%D7%A9%D7%AA%20%D7%94%D7%AA%D7%91%D7%99%D7%A2%D7%94.aspx'}},
   {n:38,t:'לבדוק את הזכויות המיוחדות ללידת {baby}',w:'שבועיים',u:1,due:{base:'birth',d:14},show:'multi',note:'בלידה של יותר מתינוק אחד ייתכנו התאמות בזכויות, למשל במענק. כדאי לברר בשיחה אחת עם ביטוח לאומי מה חל עלייך.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
-  {n:4,t:'לברר שקצבת הילדים נפתחה',w:'חודש ראשון',due:{base:'birth',d:30},note:'בדרך כלל הקצבה נפתחת עם רישום הלידה. כדאי לוודא בביטוח לאומי שהיא נפתחה ושפרטי החשבון נכונים.',link:{label:'btl.gov.il',href:'https://www.btl.gov.il'}},
+  {n:4,t:'לברר שקצבת הילדים נפתחה',w:'חודש ראשון',due:{base:'birth',d:30},note:'בדרך כלל הקצבה נפתחת עם רישום הלידה. כדאי לוודא בביטוח לאומי שהיא נפתחה ושפרטי החשבון נכונים.',link:{label:'קצבת ילדים – ביטוח לאומי',href:'https://www.btl.gov.il/benefits/children/Pages/default.aspx'}},
   {n:5,t:'לבדוק הארכת חופשה בגלל האשפוז',w:'בהקדם',u:1,show:'hosp',note:'אשפוז ממושך של האם או של התינוק עשוי להאריך את התקופה בתשלום. כדאי לברר בביטוח לאומי אם זה חל עלייך ובאילו תנאים.',link:{label:'ביטוח לאומי *6050',href:'tel:*6050'}},
-  {n:6,t:'להציץ ב"חיסכון לכל ילד" של {baby}',w:'תוך חודשיים',due:{base:'birth',d:60},note:'בדרך כלל החיסכון נפתח אוטומטית. כדאי לברר באזור האישי בביטוח לאומי מה המצב ואילו מסלולים אפשר לבחור.',link:{label:'אזור אישי בביטוח לאומי',href:'https://www.btl.gov.il'}}
+  {n:6,t:'להציץ ב"חיסכון לכל ילד" של {baby}',w:'תוך חודשיים',due:{base:'birth',d:60},note:'בדרך כלל החיסכון נפתח אוטומטית. כדאי לברר באזור האישי בביטוח לאומי מה המצב ואילו מסלולים אפשר לבחור.',link:{label:'חיסכון לכל ילד – ביטוח לאומי',href:'https://www.btl.gov.il/benefits/children/HisahoLayeled/Pages/default.aspx'}}
  ]},
- {emoji:'📝',name:'ניירת קטנה',tasks:[
-  {n:7,t:'לבחור שם',w:'בקצב שלכם',show:'noname',note:'בדרך כלל בית החולים מעביר את הודעת הלידה. אם יש ספק, כדאי לברר ברשות האוכלוסין. השם – כשתרגישו שזה הוא.'},
-  {n:8,t:'לוודא ש{baby} {מופיע|מופיעה|מופיע/ה|מופיעים} בשירותי הבריאות',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'לרוב זה קורה לבד דרך הודעת הלידה. כדאי להציץ באפליקציה של הקופה, ואם התינוק/ת לא מופיע/ה – לברר במוקד הקופה.'},
+ {emoji:'📝',name:'סדר בניירת',tasks:[
+  {n:7,t:'לבחור שם',w:'בקצב שלכם',show:'noname',note:'בדרך כלל בית החולים מעביר את הודעת הלידה. אם יש ספק, כדאי לברר ברשות האוכלוסין. {השם – בברית.|השם – בקריאת התורה בבית הכנסת.|השם – לבן בברית, ולבת בקריאת התורה בבית הכנסת.|השם – לבן בברית, ולבת בקריאת התורה בבית הכנסת.}'},
+  {n:8,t:'הציצי באפליקציה של הקופה כדי לוודא ש{baby} {עודכן|עודכנה|עודכן/ה|עודכנו} במערכת',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'לרוב זה קורה לבד דרך הודעת הלידה. כדאי להציץ באפליקציה של הקופה, ואם התינוק/ת לא מופיע/ה – לברר במוקד הקופה.'},
   {n:9,t:'להזמין תעודת לידה מלאה (רק אם צריך)',w:'לפי הצורך',note:'דרך רשות האוכלוסין. נדרש לפעמים לרישומים נוספים.',link:{label:'gov.il',href:'https://www.gov.il'}},
   {n:10,t:'להוסיף את {baby} לביטוח המשלים או הפרטי',w:'חודש ראשון',due:{base:'birth',d:30},show:'private',note:'שיחה קצרה עם הסוכן או הקופה – לבדוק אם צריך רישום או שזה אוטומטי.',link:{label:'סוכן הביטוח / הקופה',href:''}},
   {n:11,t:'לעדכן בעבודה מתי חוזרים',w:'חודש לפני החזרה',due:{base:'return',d:-30},show:'employee',note:'ככלל יש חובת הודעה מראש למעסיק על הארכת חופשה. כדאי לברר בכל זכות או במשאבי אנוש מה פרק הזמן הנדרש במקרה שלך.'}
  ]},
  {emoji:'🍼',name:'הבריאות של {baby}',tasks:[
-  {n:12,t:'לוודא שנעשו בדיקות הסקר ליילוד',w:'לפני השחרור',u:1,note:'כ־36 שעות אחרי הלידה, לפני שיוצאים הביתה. בדיקת דם קטנה לזיהוי מוקדם.'},
-  {n:13,t:'לוודא שנעשה סיקור שמיעה',w:'לפני השחרור',u:1,note:'כל התינוקות עוברים. לא כואב, לוקח דקות.'},
-  {n:14,t:'לקבוע ביקור ראשון בטיפת חלב',w:'עד גיל שבועיים',u:1,due:{base:'birth',d:14},note:'הפגישה הראשונה עם האחות – עד גיל שבועיים.',link:{label:'טיפת חלב אזורית',href:''}},
-  {n:15,t:'לשים עין על צהבת בימים הראשונים',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'אם נראה שמחמיר – לרופא/ת ילדים בלי להתלבט.'},
-  {n:16,t:'להכניס ליומן את מעקבי טיפת חלב',w:'לאורך השנה',milestones:1,note:'בסמוך ללידה, ובגיל חודש, חודשיים, 4, 6, 9 חודשים ושנה.'},
-  {n:17,t:'להציץ בלוח החיסונים',w:'לפי הגיל',note:'רוב הביקורים כוללים חיסון. האחות שולחת תזכורות – לא צריך לזכור לבד.'},
-  {n:18,t:'להכין תיק קבוע לטיפת חלב',w:'לפני הביקור הראשון',due:{base:'birth',d:12},note:'חיתול להחלפה, מטלית לשקילה, פנקס המעקב. מוכן ליד הדלת.'}
+  {n:12,t:'בדיקת סקר ליילוד',w:'לפני השחרור',u:1,note:'בבית החולים ביצעו בדיקות סקר ליילוד לפני השחרור הביתה – בדיקת דם קטנה לזיהוי מוקדם, כ־36 שעות אחרי הלידה.'},
+  {n:13,t:'סיקור שמיעה',w:'לפני השחרור',u:1,note:'בבית החולים ביצעו סיקור שמיעה לפני השחרור הביתה. כל התינוקות עוברים אותו; הוא לא כואב ולוקח דקות.'},
+  {n:14,t:'ביקור ראשון בטיפת חלב',w:'עד גיל שבועיים',u:1,due:{base:'birth',d:14},note:'נקבע ביקור ראשון בטיפת חלב – הפגישה הראשונה עם האחות, עד גיל שבועיים.',link:{label:'טיפת חלב אזורית',href:''}},
+  {n:15,t:'מעקב אחר צהבת בימים הראשונים',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},hmo:1,note:'שמנו עין על צהבת בימים הראשונים. אם נראה שמחמיר – לרופא/ת ילדים בלי להתלבט.'},
+  {n:16,t:'מעקבי טיפת חלב ביומן',w:'לאורך השנה',milestones:1,note:'בסמוך ללידה, ובגיל חודש, חודשיים, 4, 6, 9 חודשים ושנה.'},
+  {n:17,t:'לוח החיסונים',w:'לפי הגיל',note:'רוב הביקורים כוללים חיסון. האחות שולחת תזכורות – לא צריך לזכור לבד.'},
+  {n:18,t:'תיק קבוע לטיפת חלב',w:'לפני הביקור הראשון',due:{base:'birth',d:12},note:'חיתול להחלפה, מטלית לשקילה, פנקס המעקב. מוכן ליד הדלת.'}
  ]},
  {emoji:'🌸',name:'ואת? גם את חשובה',tasks:[
   {n:19,t:'לקבוע לעצמך ביקורת רופא/ה אחרי הלידה',w:'כשישה שבועות מהלידה',due:{base:'birth',d:42},hmo:1,note:'גם כשמרגישים מצוין. זה ביקור שגרתי, וזמן קטן בשבילך.'},
   {n:20,t:'להקשיב לעצמך, ולפנות אם משהו מרגיש אחרת',w:'החודשים הראשונים',note:'אחות טיפת חלב שואלת גם על ההרגשה שלך — זה חלק טבעי מהמעקב, ואפשר לפנות אליה עם כל שאלה.'},
   {n:21,t:'לישון כשאפשר. באמת.',w:'יומיומי',note:'"לישון כשהתינוק ישן" – קלישאה, אבל היא עובדת.'},
   {n:22,t:'בקבוק מים ונשנוש ליד מקום ההאכלה',w:'יומיומי',note:'שיהיה שם כבר. ככה לא שוכחים לשתות.'},
-  {n:23,t:'לרשום שאלות שעולות, לביקור הבא',w:'לאורך זמן',note:'קל לשכוח. אפשר לרשום אותן ממש כאן, בהערה.'}
+  {n:23,t:'לרשום שאלות שעולות, לביקור הבא',w:'לאורך זמן'}
  ]},
- {emoji:'🏠',name:'בית שעובד',tasks:[
-  {n:24,t:'להשלים מלאי לשבוע הקרוב',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},note:'חיתולים, מגבונים, בגדים בכל מידה. אפשר לבקש ממי שמציע לעזור.'},
+ {emoji:'🏠',name:'בית שעובד',sub:'הנה לך כמה הצעות מעשיות כדי להקל על ההסתגלות ולהתכונן טוב יותר לימים שאחרי הלידה. אלה רעיונות, לא חובה – בחרי מה שמתאים לך.',tasks:[
+  {n:24,t:'להשלים מלאי לשבוע הקרוב',w:'הצעה לשבוע הראשון',note:'חיתולים, מגבונים, ביגוד בכל מידה. אפשר לבקש ממי שמציע לעזור.'},
   {n:25,t:'מנות מוכנות במקפיא',w:'שוטף',note:'ארוחות מוקפאות מצילות את השבועות הראשונים. וזו משימה מצוינת לתת לאחרים.'},
-  {n:26,t:'פינת החתלה בכל קומה',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},note:'חוסך המון הליכות.'},
-  {n:27,t:'עמדת לילה ליד המיטה',w:'שבוע ראשון',u:1,due:{base:'birth',d:5},note:'מים, חיתולים, אור רך, מטען.'},
-  {n:28,t:'לתאם מי עוזר בכביסה ובסידור',w:'שוטף',note:'לא חייבים הכול לבד. באמת לא.'}
+  {n:26,t:'פינת החתלה בכל קומה',w:'הצעה לשבוע הראשון',note:'חוסך המון הליכות.'},
+  {n:27,t:'עמדת לילה ליד המיטה',w:'הצעה לשבוע הראשון',note:'מים, חיתולים, אור רך, מטען.'},
+  {n:28,t:'לתאם מי עוזר בכביסה ובסידור',w:'שוטף',note:'לא חייבים הכול לבד. באמת לא.'},
+  {n:39,t:'קבעי לעצמך זמן קבוע לארוחות, ואל תדלגי עליהן',w:'יומיומי'}
  ]},
  {emoji:'🤍',name:'סביבך',tasks:[
   {n:29,t:'להכין "לוח עזרה" למי ששואל במה לעזור',w:'שבוע ראשון',u:1,due:{base:'birth',d:7},note:'כששואלים "במה לעזור?" – שתהיה תשובה מוכנה: ארוחה, כביסה, הסעה, שמירה.'},
@@ -756,13 +758,13 @@ function activeTasks(){
 function statusOf(t){
   var d=dueOf(t);if(!d)return null;
   var id=idOf(t),n=daysBetween(new Date(),d),sn=!!data.snooze[id];
-  if(isDone(id))return{cls:'plain',txt:'עד '+fmt(d)};
+  if(isDone(id))return{cls:'plain',txt:'מומלץ עד '+fmt(d)};
   var pre=sn?'נדחה · ':'';
-  if(n<0)return{cls:'coral',txt:'כדאי לטפל · היה עד '+fmt(d),late:1};
+  if(n<0)return{cls:'coral',txt:'כדאי לטפל · היה מומלץ עד '+fmt(d),late:1};
   if(n===0)return{cls:'coral',txt:pre+'היום · '+fmt(d),soon:1};
   if(n===1)return{cls:'gold',txt:pre+'מחר · '+fmt(d),soon:1};
   if(n<=7)return{cls:'gold',txt:pre+'בעוד '+n+' ימים · '+fmt(d),soon:1};
-  return{cls:'plain',txt:pre+'עד '+fmt(d)};
+  return{cls:'plain',txt:pre+'מומלץ עד '+fmt(d)};
 }
 function milestoneText(){
   if(!P.birth)return'';var b=new Date(P.birth),out=[];
@@ -808,7 +810,7 @@ function render(){
     var all=c.tasks.filter(visible);if(!all.length)return;var items=all.filter(passes);if(!items.length)return;shown+=items.length;
     var d=all.filter(function(t){return isDone(idOf(t))}).length,pct=Math.round(d/all.length*100);
     html+='<section class="cat"><div class="cat-head"><span class="cat-emoji">'+c.emoji+'</span><h2 class="cat-name">'+esc(fill(c.name))+'</h2>'+
-      '<span class="cat-bar"><i style="width:'+pct+'%"></i></span>'+(pct===100?'<span class="cat-done">הושלם ✓</span>':'<span class="cat-count">'+d+'/'+all.length+'</span>')+'</div>';
+      '<span class="cat-bar"><i style="width:'+pct+'%"></i></span>'+(pct===100?'<span class="cat-done">הושלם ✓</span>':'<span class="cat-count">'+d+'/'+all.length+'</span>')+'</div>'+(c.sub?'<p class="cat-sub">'+esc(c.sub)+'</p>':'');
     items.forEach(function(t){html+=taskHTML(t);});html+='</section>';
   });
   var mine=data.custom.filter(passes),md=data.custom.filter(function(t){return isDone(t.id)}).length;
@@ -816,7 +818,7 @@ function render(){
     '<span class="cat-bar"><i style="width:'+(data.custom.length?Math.round(md/data.custom.length*100):0)+'%"></i></span><span class="cat-count">'+md+'/'+data.custom.length+'</span></div>';
   mine.forEach(function(t){html+=taskHTML(t);});
   if(!data.custom.length)html+='<div class="empty">מה עוד את רוצה לזכור? ברית, שמות, תור שנקבע, מתנה לאח הגדול – הכול נכנס כאן.</div>';
-  html+='<div class="addrow"><input type="text" id="newTask" placeholder="להוסיף משהו משלי..."><button class="btn btn-gold" id="addBtn">להוסיף</button></div></section>';
+  html+='<form class="addrow" id="addForm" action="#" autocomplete="off"><input type="text" id="newTask" enterkeyhint="enter" aria-label="משימה חדשה משלי" placeholder="להוסיף משהו משלי... (Enter לשורה הבאה)"><button type="button" class="btn btn-gold" id="addBtn">להוסיף</button></form></section>';
   if(!shown&&!mine.length&&filter!=='all')html='<div class="empty">'+(filter==='done'?'עוד לא סימנת כלום – וזה בסדר גמור.':'אין כאן כלום כרגע. יופי.')+'</div>';
   listEl.innerHTML=html;updateHero();
   var ta=listEl.querySelector('textarea[data-area]');if(ta){ta.focus();ta.setSelectionRange(ta.value.length,ta.value.length);}
@@ -959,9 +961,11 @@ listEl.addEventListener('click',function(e){
   if(b.getAttribute('data-cancelnote')){editing=null;render();return;}
   if((id=b.getAttribute('data-savenote'))){var ta=listEl.querySelector('textarea[data-area="'+id+'"]'),v=ta?ta.value.trim():'';if(v)data.notes[id]=v;else delete data.notes[id];editing=null;save();render();toast('נשמר 💛');return;}
   if((id=b.getAttribute('data-del'))){if(!confirm('למחוק את המשימה?'))return;data.custom=data.custom.filter(function(t){return t.id!==id});delete data.checked[id];delete data.notes[id];delete data.snooze[id];save();render();return;}
-  if(b.id==='addBtn'){var inp=document.getElementById('newTask'),v=inp.value.trim();if(!v){inp.focus();return;}data.custom.push({id:'c'+Date.now(),t:v,w:'שלי',cat:MYCAT});save();render();toast('נוסף לרשימה');return;}
+  if(b.id==='addBtn'){addCustom();return;}
 });
-listEl.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.id==='newTask'){e.preventDefault();document.getElementById('addBtn').click();}});
+function addCustom(){var inp=document.getElementById('newTask'),v=inp?inp.value.trim():'';if(!v){if(inp)inp.focus();return;}data.custom.push({id:'c'+Date.now()+Math.floor(Math.random()*1000),t:v,w:'שלי',cat:MYCAT});save();render();var n=document.getElementById('newTask');if(n)n.focus({preventScroll:false});toast('נוסף לרשימה – אפשר לכתוב את הבא');}
+listEl.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.isComposing&&e.target.id==='newTask'){e.preventDefault();addCustom();}});
+listEl.addEventListener('submit',function(e){if(e.target.id==='addForm'){e.preventDefault();addCustom();}});
 document.getElementById('filters').addEventListener('click',function(e){var c=e.target.closest('.chip');if(!c)return;filter=c.getAttribute('data-f');[].forEach.call(this.querySelectorAll('.chip'),function(x){x.setAttribute('aria-pressed',x===c?'true':'false');});render();});
 document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;tab=b.getAttribute('data-tab');[].forEach.call(this.querySelectorAll('.tab'),function(x){x.setAttribute('aria-selected',x===b?'true':'false');});document.getElementById('stepsView').classList.toggle('hidden',tab!=='steps');document.getElementById('momentsView').classList.toggle('hidden',tab!=='moments');if(tab==='moments')renderMoments();});
 document.getElementById('nightBtn').addEventListener('click',function(){data.night=!data.night;applyNight();save();});
@@ -985,6 +989,8 @@ function segSetup(id){var w=document.getElementById(id);w.addEventListener('clic
 function segVal(id){var b=document.querySelector('#'+id+' .segbtn[aria-pressed="true"]');return b?b.getAttribute('data-v'):'';}
 function setSeg(id,v){[].forEach.call(document.querySelectorAll('#'+id+' .segbtn'),function(x){x.setAttribute('aria-pressed',x.getAttribute('data-v')===String(v)?'true':'false');});}
 ['fWork','fTenure','fReg','fGift','fSex','fMulti','fHmo'].forEach(segSetup);
+function syncBabyLabel(){var w=document.getElementById('fBabyWho');if(w)w.textContent=segVal('fSex')==='f'?'לתינוקת':'לתינוק';}
+document.getElementById('fSex').addEventListener('click',syncBabyLabel);
 function syncWorkFields(){var off=segVal('fWork')==='none';document.getElementById('tenureField').classList.toggle('hidden',off);document.getElementById('returnField').classList.toggle('hidden',off);}
 function syncRegFields(){document.getElementById('giftField').classList.toggle('hidden',segVal('fReg')!=='yes');}
 
@@ -999,7 +1005,7 @@ function fillForm(){
   if(!P)return;document.getElementById('fName').value=P.name||'';document.getElementById('fBaby').value=P.babyName||'';document.getElementById('fBirth').value=P.birth||'';document.getElementById('fReturn').value=P.ret||'';
   document.getElementById('fKids').checked=!!P.kids;document.getElementById('fHosp').checked=!!P.hosp;document.getElementById('fPrivate').checked=!!P.private;
   setSeg('fWork',P.work);setSeg('fTenure',P.tenure);setSeg('fReg',P.reg||'yes');setSeg('fGift',P.gift||'yes');setSeg('fSex',P.sex||'n');setSeg('fMulti',P.multi||1);setSeg('fHmo',P.hmo||'');
-  syncWorkFields();syncRegFields();document.getElementById('startBtn').textContent='לעדכן את המפה';
+  syncWorkFields();syncRegFields();syncBabyLabel();document.getElementById('startBtn').textContent='לעדכן את המפה';
 }
 function tenureNote(){var t=CATS[1].tasks.filter(function(x){return x.n===2})[0];if(!t)return;
   if(P.tenure==='12plus')t.note='ותק של שנה ומעלה עשוי להשפיע על אורך התקופה בתשלום. כדאי לוודא בביטוח לאומי שהתביעה נקלטה ומה נקבע לך.';
@@ -1228,7 +1234,7 @@ body[data-morash-part=c] #resetDialog .toolbar{justify-content:center;gap:12px;}
   for(const el of [find('#draw'),find('#move'),find('#stickers')])el.addEventListener('click',()=>{if(matchMedia('(max-width:700px)').matches)find('.canvas-wrap').scrollIntoView({block:'center',behavior:'instant'})});
  }
  if(part==='i'){
-  const p=document.createElement('p');p.className='review-tips';p.textContent='אפשר לדלג על פרטים ולהשלים אותם בהמשך דרך "עריכת פרטים".';find('#fName').closest('.field')?.before(p);
+  const p=document.createElement('p');p.className='review-tips';p.textContent='אפשר לדלג על פרטים ולהשלים אותם בהמשך דרך "עדכון פרטים".';find('#fName').closest('.field')?.before(p);
   find('#startBtn').textContent='בואי נבנה את המפה שלי';
  }
  if(part==='j'){

@@ -32,6 +32,18 @@ if smoke:
             if r390.get('fatal'): auto(pid, 'red', 'טעינה', 'העמוד לא נטען', r390['fatal'][:150], '', 'לבדוק')
             if r390.get('navigations'): auto(pid, 'info', 'ניווט', 'לחיצה הובילה לניווט', ', '.join(r390['navigations'][:3]), '', 'לוודא שזה מכוון')
             if r390.get('dialogs'): auto(pid, 'info', 'דיאלוג', 'דיאלוג מקורי נפתח בלחיצה', '; '.join(r390['dialogs'][:3]), '', '')
+    # גלילה אנכית (גלגלת/מגע) ו-WebKit
+    for r in smoke['results']:
+        sc = r.get('scroll') or {}
+        if sc.get('needed') and (sc.get('wheel') is False or sc.get('touch') is False):
+            auto(r['id'], 'red', 'גלילה', 'גלילה אנכית לא עובדת', f"{r['width']}px · גלגלת={sc.get('wheel')} מגע={sc.get('touch')}", f"פער {sc.get('gap')}px", 'לבדוק overflow/touch-action/preventDefault')
+    wk = smoke.get('webkit') or {}
+    if not wk.get('available'):
+        auto('all', 'info', 'סביבה', 'WebKit לא זמין בסביבת הבדיקה — בדיקת הטלפון רצה בכרום עם אמולציית iPhone 13', 'smoke.cjs', (wk.get('reason') or '')[:150], 'להריץ במחשב עם WebKit (npx playwright install webkit) או בטלפון פיזי', 'אנושי-טלפון')
+    else:
+        for r in wk.get('results', []):
+            if r.get('errors') or r.get('hOverflow') or r.get('fatal'):
+                auto(r['id'], 'red', 'WebKit', 'תקלה ב-WebKit ברוחב טלפון', f"iPhone 13 · שגיאות={len(r.get('errors', []))} גלילה-אופקית={r.get('hOverflow')}", '; '.join(r.get('errors', [])[:2])[:200], 'לשחזר ב-Safari')
 if axe:
     merged = {}
     for r in axe['results']:

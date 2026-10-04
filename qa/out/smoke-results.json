@@ -1,25 +1,24 @@
 {
- "run": "2026-10-04T13:33:40.263Z",
+ "run": "2026-10-04T14:37:36.171Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
    "id": "a",
    "name": "מתחם הקטנטנים",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1949,
+   "loadMs": 1881,
    "title": "צובעים ומרכיבים! · מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -43,30 +42,35 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 646
+   "bodyText": 694,
+   "scroll": {
+    "needed": true,
+    "gap": 994,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "a",
    "name": "מתחם הקטנטנים",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1955,
+   "loadMs": 1889,
    "title": "צובעים ומרכיבים! · מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -90,7 +94,13 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 646,
+   "bodyText": 694,
+   "scroll": {
+    "needed": true,
+    "gap": 671,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
     "אָ ניקוד",
     "הגדלת טקסט",
@@ -102,26 +112,25 @@
    ],
    "lsKeysAfter": 5,
    "lsKeysAfterReload": 5,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 0
   },
   {
    "id": "a",
    "name": "מתחם הקטנטנים",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1894,
+   "loadMs": 1831,
    "title": "צובעים ומרכיבים! · מתחם הקטנטנים · מורה שמיים",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -145,26 +154,30 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 646
+   "bodyText": 694,
+   "scroll": {
+    "needed": true,
+    "gap": 420,
+    "wheel": true
+   }
   },
   {
    "id": "b",
    "name": "אור הגיע אלינו",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2744,
+   "loadMs": 2490,
    "title": "תינוק חדש בבית? קוראים ומשחקים! · אור הגיע אלינו",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -186,30 +199,35 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 495
+   "bodyText": 495,
+   "scroll": {
+    "needed": true,
+    "gap": 701,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "b",
    "name": "אור הגיע אלינו",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2673,
+   "loadMs": 2446,
    "title": "תינוק חדש בבית? קוראים ומשחקים! · אור הגיע אלינו",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -232,6 +250,12 @@
    "lang": "he",
    "dir": "rtl",
    "bodyText": 495,
+   "scroll": {
+    "needed": true,
+    "gap": 458,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
     "קוֹרְאִים בספר",
     "מִשְׂחָקִים יחד",
@@ -245,26 +269,25 @@
    ],
    "lsKeysAfter": 4,
    "lsKeysAfterReload": 4,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 0
   },
   {
    "id": "b",
    "name": "אור הגיע אלינו",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2892,
+   "loadMs": 2515,
    "title": "תינוק חדש בבית? קוראים ומשחקים! · אור הגיע אלינו",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -286,24 +309,28 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 1058
+   "bodyText": 1077,
+   "scroll": {
+    "needed": true,
+    "gap": 1277,
+    "wheel": true
+   }
   },
   {
    "id": "c",
    "name": "בית המצוות",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1873,
+   "loadMs": 1852,
    "title": "הרפתקה בבית! · בית המצוות",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -324,26 +351,31 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 672
+   "bodyText": 666,
+   "scroll": {
+    "needed": true,
+    "gap": 719,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "c",
    "name": "בית המצוות",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1893,
+   "loadMs": 1819,
    "title": "הרפתקה בבית! · בית המצוות",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -364,15 +396,21 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 672,
+   "bodyText": 666,
+   "scroll": {
+    "needed": true,
+    "gap": 448,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
     "אָ ניקוד",
     "א+",
-    "💰",
-    "🍷",
-    "📘",
-    "🕯️",
-    "📜",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
     "",
     "",
     "",
@@ -384,24 +422,23 @@
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 2
+   "errorsAfterClicks": 0
   },
   {
    "id": "c",
    "name": "בית המצוות",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1846,
+   "loadMs": 1865,
    "title": "הרפתקה בבית! · בית המצוות",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -422,26 +459,30 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 691
+   "bodyText": 685,
+   "scroll": {
+    "needed": true,
+    "gap": 84,
+    "wheel": true
+   }
   },
   {
    "id": "d",
    "name": "מסע המצוות",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1899,
+   "loadMs": 1851,
    "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -463,30 +504,35 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 571
+   "bodyText": 618,
+   "scroll": {
+    "needed": true,
+    "gap": 689,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "d",
    "name": "מסע המצוות",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1877,
+   "loadMs": 1833,
    "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -508,7 +554,13 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 571,
+   "bodyText": 618,
+   "scroll": {
+    "needed": true,
+    "gap": 300,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
     "אָ ניקוד",
     "א+",
@@ -527,26 +579,25 @@
    ],
    "lsKeysAfter": 2,
    "lsKeysAfterReload": 2,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 0
   },
   {
    "id": "d",
    "name": "מסע המצוות",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Secular+One&family=Varela+Round&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1858,
+   "loadMs": 1866,
    "title": "מסע המצוות · מורה שמיים",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -568,26 +619,30 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 571
+   "bodyText": 618,
+   "scroll": {
+    "needed": true,
+    "gap": 388,
+    "wheel": true
+   }
   },
   {
    "id": "e",
    "name": "מסע בזמן",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1907,
+   "loadMs": 1875,
    "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -605,34 +660,39 @@
     "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 26,
+   "focusable": 27,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 435
+   "bodyText": 435,
+   "scroll": {
+    "needed": true,
+    "gap": 428,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "e",
    "name": "מסע בזמן",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1850,
+   "loadMs": 1863,
    "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -650,11 +710,17 @@
     "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 26,
+   "focusable": 27,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
    "bodyText": 435,
+   "scroll": {
+    "needed": true,
+    "gap": 102,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
     "אָ ניקוד",
     "א+",
@@ -664,30 +730,29 @@
     "שחקן אחד",
     "שניים",
     "מתחילים!",
-    "🎒\nיוצאים ללימודים"
+    "☀️\nהתעוררות – פוקחים עיניים"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 0
   },
   {
    "id": "e",
    "name": "מסע בזמן",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1869,
+   "loadMs": 1832,
    "title": "מסע בזמן — סדר יום יהודי",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -705,30 +770,34 @@
     "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 26,
+   "focusable": 27,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 435
+   "bodyText": 435,
+   "scroll": {
+    "needed": true,
+    "gap": 95,
+    "wheel": true
+   }
   },
   {
    "id": "f",
    "name": "מטבח השבת",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1927,
+   "loadMs": 1759,
    "title": "מטבח השבת – הכנת החלות לכבוד שבת",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -750,30 +819,35 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 615
+   "bodyText": 622,
+   "scroll": {
+    "needed": true,
+    "gap": 419,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "f",
    "name": "מטבח השבת",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1879,
+   "loadMs": 1826,
    "title": "מטבח השבת – הכנת החלות לכבוד שבת",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -795,7 +869,13 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 615,
+   "bodyText": 622,
+   "scroll": {
+    "needed": true,
+    "gap": 138,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
     "אָ ניקוד",
     "א+",
@@ -804,26 +884,25 @@
    ],
    "lsKeysAfter": 2,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 0
   },
   {
    "id": "f",
    "name": "מטבח השבת",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1936,
+   "loadMs": 1833,
    "title": "מטבח השבת – הכנת החלות לכבוד שבת",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -845,24 +924,28 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 615
+   "bodyText": 622,
+   "scroll": {
+    "needed": true,
+    "gap": 182,
+    "wheel": true
+   }
   },
   {
    "id": "g",
    "name": "בלש המידות",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1748,
+   "loadMs": 1838,
    "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -883,26 +966,31 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 930
+   "bodyText": 949,
+   "scroll": {
+    "needed": true,
+    "gap": 1300,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "g",
    "name": "בלש המידות",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1867,
+   "loadMs": 1846,
    "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -923,7 +1011,13 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 930,
+   "bodyText": 949,
+   "scroll": {
+    "needed": true,
+    "gap": 1000,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
     "אָ ניקוד",
     "א+",
@@ -939,24 +1033,23 @@
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 2
+   "errorsAfterClicks": 0
   },
   {
    "id": "g",
    "name": "בלש המידות",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1839,
+   "loadMs": 1854,
    "title": "תעלומת המתנה · בלש המידות",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -977,29 +1070,33 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 959
+   "bodyText": 978,
+   "scroll": {
+    "needed": true,
+    "gap": 1111,
+    "wheel": true
+   }
   },
   {
    "id": "h",
    "name": "הכרטיס לאמא",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1899,
+   "loadMs": 1863,
    "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 33,
+   "visibleButtons": 38,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -1011,35 +1108,40 @@
     "Heebo",
     "Assistant"
    ],
-   "focusable": 39,
+   "focusable": 46,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 2659
+   "bodyText": 2753,
+   "scroll": {
+    "needed": true,
+    "gap": 2203,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "h",
    "name": "הכרטיס לאמא",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1902,
+   "loadMs": 1913,
    "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
-   "visibleButtons": 33,
+   "visibleButtons": 38,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -1051,16 +1153,23 @@
     "Heebo",
     "Assistant"
    ],
-   "focusable": 39,
+   "focusable": 46,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 2659,
+   "bodyText": 2753,
+   "scroll": {
+    "needed": true,
+    "gap": 1801,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
-    "אָ ניקוד",
     "א+",
-    "↓ שומרים כרטיס כתמונה",
-    "תצוגה מוגדלת של הכרטיס",
+    "↓ שׁוֹמְרִים כַּרְטִיס כִּתְמו",
+    "תצוגה מוגדלת של הַכַּרְטִיס",
+    "עִם נִקּוּד",
+    "לְלֹא נִקּוּד",
     "חיבוק חמים",
     "טורקיז רגוע",
     "ורוד קורל",
@@ -1080,34 +1189,32 @@
     "💛",
     "🌼",
     "🎈",
-    "✨",
-    "🌿"
+    "✨"
    ],
    "lsKeysAfter": 3,
    "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 2
+   "errorsAfterClicks": 0
   },
   {
    "id": "h",
    "name": "הכרטיס לאמא",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1789,
+   "loadMs": 1889,
    "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
-   "visibleButtons": 32,
+   "visibleButtons": 37,
    "smallTargets": [],
    "brokenImgs": [],
    "zoomLocked": false,
@@ -1119,30 +1226,34 @@
     "Heebo",
     "Assistant"
    ],
-   "focusable": 39,
+   "focusable": 46,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 2781
+   "bodyText": 2875,
+   "scroll": {
+    "needed": true,
+    "gap": 1335,
+    "wheel": true
+   }
   },
   {
    "id": "i",
    "name": "צעדים ראשונים",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1849,
+   "loadMs": 1847,
    "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -1164,30 +1275,35 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 1039
+   "bodyText": 1054,
+   "scroll": {
+    "needed": true,
+    "gap": 2286,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "i",
    "name": "צעדים ראשונים",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1896,
+   "loadMs": 1793,
    "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -1209,12 +1325,18 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 1039,
+   "bodyText": 1054,
+   "scroll": {
+    "needed": true,
+    "gap": 1718,
+    "wheel": true,
+    "touch": true
+   },
    "clicked": [
     "בת",
     "בן",
-    "עדיין לא מספרים",
-    "לא, רק אחד/ת",
+    "עדיין לא מספרת",
+    "לא, תינוק אחד",
     "תאומים",
     "שלישייה",
     "כללית",
@@ -1238,26 +1360,25 @@
    ],
    "lsKeysAfter": 1,
    "lsKeysAfterReload": 1,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 0
   },
   {
    "id": "i",
    "name": "צעדים ראשונים",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1849,
+   "loadMs": 1896,
    "title": "צעדים ראשונים · שפרה ופועה",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -1279,26 +1400,30 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 1039
+   "bodyText": 1054,
+   "scroll": {
+    "needed": true,
+    "gap": 1353,
+    "wheel": true
+   }
   },
   {
    "id": "j",
    "name": "מרווח",
    "width": 320,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1868,
+   "loadMs": 1834,
    "title": "מרווח",
    "scrollWidth": 320,
    "innerWidth": 320,
@@ -1320,30 +1445,35 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 277
+   "bodyText": 275,
+   "scroll": {
+    "needed": true,
+    "gap": 218,
+    "wheel": true,
+    "touch": true
+   }
   },
   {
    "id": "j",
    "name": "מרווח",
    "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1843,
+   "loadMs": 1825,
    "title": "מרווח",
    "scrollWidth": 390,
    "innerWidth": 390,
@@ -1365,7 +1495,11 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 277,
+   "bodyText": 275,
+   "scroll": {
+    "needed": false,
+    "gap": 0
+   },
    "clicked": [
     "עייפה\nמשהו קטן שלא דורש כוח",
     "ניסיתי",
@@ -1375,26 +1509,25 @@
    ],
    "lsKeysAfter": 1,
    "lsKeysAfterReload": 1,
-   "errorsAfterClicks": 4
+   "errorsAfterClicks": 0
   },
   {
    "id": "j",
    "name": "מרווח",
    "width": 1440,
-   "errors": [
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
+   "errors": [],
    "warnings": [],
    "failed": [],
    "external": [
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "סביבה: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1814,
+   "loadMs": 1876,
    "title": "מרווח",
    "scrollWidth": 1440,
    "innerWidth": 1440,
@@ -1416,7 +1549,16 @@
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 277
+   "bodyText": 275,
+   "scroll": {
+    "needed": false,
+    "gap": 0
+   }
   }
- ]
+ ],
+ "webkit": {
+  "available": false,
+  "results": [],
+  "reason": "Error: browserType.launch: Executable doesn't exist at /opt/pw-browsers/webkit-2215/pw_run.sh"
+ }
 }

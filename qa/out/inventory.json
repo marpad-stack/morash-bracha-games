@@ -1,5 +1,5 @@
 {
- "run": "2026-10-04T13:36:55",
+ "run": "2026-10-04T14:39:44",
  "parts": [
   {
    "part": "a",
@@ -48,7 +48,7 @@
   {
    "part": "b",
    "file": "b-story.html",
-   "kb": 763,
+   "kb": 764,
    "title": "תינוק חדש בבית? קוראים ומשחקים! · אור הגיע אלינו",
    "h1": [
     "תינוק חדש בבית? קוראים ומשחקים!",
@@ -93,7 +93,7 @@
   {
    "part": "c",
    "file": "beit-hamitzvot.html",
-   "kb": 653,
+   "kb": 659,
    "title": "הרפתקה בבית! · בית המצוות",
    "h1": [
     "הרפתקה בבית!"
@@ -133,7 +133,7 @@
   {
    "part": "d",
    "file": "d-mitzvot.html",
-   "kb": 905,
+   "kb": 910,
    "title": "מסע המצוות · מורה שמיים",
    "h1": [],
    "kit_title": "מסע המצוות",
@@ -177,7 +177,7 @@
   {
    "part": "e",
    "file": "e-time.html",
-   "kb": 811,
+   "kb": 813,
    "title": "מסע בזמן — סדר יום יהודי",
    "h1": [
     ""
@@ -221,7 +221,7 @@
   {
    "part": "f",
    "file": "f-kitchen.html",
-   "kb": 863,
+   "kb": 867,
    "title": "מטבח השבת – הכנת החלות לכבוד שבת",
    "h1": [
     ""
@@ -265,7 +265,7 @@
   {
    "part": "g",
    "file": "g-detective.html",
-   "kb": 840,
+   "kb": 841,
    "title": "תעלומת המתנה · בלש המידות",
    "h1": [
     "תעלומת המתנה"
@@ -305,7 +305,7 @@
   {
    "part": "h",
    "file": "h-card-studio.html",
-   "kb": 441,
+   "kb": 448,
    "title": "כרטיס מכל הלב · הכרטיס לאמא",
    "h1": [
     "כרטיס מכל הלב"
@@ -345,7 +345,7 @@
   {
    "part": "i",
    "file": "i-first-steps/index.html",
-   "kb": 634,
+   "kb": 636,
    "title": "צעדים ראשונים · שפרה ופועה",
    "h1": [
     "צעדים ראשונים"
@@ -361,7 +361,11 @@
     "https://morash.co.il/bracha#birth-form",
     "https://morash.co.il/contact",
     "https://wa.me/?text=",
-    "https://www.btl.gov.il",
+    "https://www.btl.gov.il/benefits/Pages/maanakleda.aspx",
+    "https://www.btl.gov.il/benefits/children/HisahoLayeled/Pages/default.aspx",
+    "https://www.btl.gov.il/benefits/children/Pages/default.aspx",
+    "https://www.btl.gov.il/benefits/maternity/Childbirth_Allowance/Pages/%D7%90%D7%95%D7%A4%D7%9F%20%D7%94%D7%92%D7%A9%D7%AA%20%D7%94%D7%AA%D7%91%D7%99%D7%A2%D7%94.aspx",
+    "https://www.btl.gov.il/benefits/maternity/Childbirth_Allowance/Pages/default.aspx",
     "https://www.clalit.co.il",
     "https://www.gov.il",
     "https://www.kolzchut.org.il",
@@ -399,7 +403,7 @@
   {
    "part": "j",
    "file": "j-meravach.html",
-   "kb": 493,
+   "kb": 492,
    "title": "מרווח",
    "h1": [
     "מרווח"
@@ -411,7 +415,8 @@
     "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://fonts.gstatic.com",
-    "https://morash.co.il/bracha"
+    "https://morash.co.il/bracha",
+    "https://wa.me/?text="
    ],
    "external_scripts": [],
    "google_fonts": [
