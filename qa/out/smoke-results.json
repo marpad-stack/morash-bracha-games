@@ -1,152 +1,62 @@
 {
- "run": "2026-10-04T09:51:25.031Z",
+ "run": "2026-10-04T09:52:11.048Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
-   "id": "h",
-   "name": "הכרטיס לאמא",
+   "id": "e",
+   "name": "מסע בזמן",
    "width": 320,
    "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
-   "warnings": [],
-   "failed": [],
-   "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1993,
-   "title": "כרטיס מכל הלב · הכרטיס לאמא",
-   "scrollWidth": 320,
-   "innerWidth": 320,
-   "hOverflow": false,
-   "visibleButtons": 33,
-   "smallTargets": [],
-   "brokenImgs": [],
-   "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "lsKeys": 1,
-   "fonts": [
-    "Heebo",
-    "Assistant"
-   ],
-   "focusable": 39,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 2662
-  },
-  {
-   "id": "h",
-   "name": "הכרטיס לאמא",
-   "width": 390,
-   "errors": [
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
-    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
-    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
-   ],
-   "warnings": [],
-   "failed": [],
-   "external": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
-    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
-   ],
-   "dialogs": [],
-   "navigations": [],
-   "status": 200,
-   "loadMs": 1963,
-   "title": "כרטיס מכל הלב · הכרטיס לאמא",
-   "scrollWidth": 390,
-   "innerWidth": 390,
-   "hOverflow": false,
-   "visibleButtons": 33,
-   "smallTargets": [],
-   "brokenImgs": [],
-   "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
-   "hashLinks": 0,
-   "extScripts": [
-    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
-   ],
-   "lsKeys": 1,
-   "fonts": [
-    "Heebo",
-    "Assistant"
-   ],
-   "focusable": 39,
-   "h1": 1,
-   "lang": "he",
-   "dir": "rtl",
-   "bodyText": 2662,
-   "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "↓ שומרים כרטיס כתמונה",
-    "תצוגה מוגדלת של הכרטיס",
-    "חיבוק חמים",
-    "טורקיז רגוע",
-    "ורוד קורל",
-    "סגול חלומי",
-    "שמש זהובה",
-    "חגיגי ונקי",
-    "קשת רכה",
-    "מסגרת חגיגית",
-    "פרחים בלב",
-    "♥",
-    "✿",
-    "✦",
-    "★",
-    "🌷",
-    "🎀",
-    "🎁",
-    "💛",
-    "🌼",
-    "🎈",
-    "✨",
-    "🌿"
-   ],
-   "lsKeysAfter": 3,
-   "lsKeysAfterReload": 3,
-   "errorsAfterClicks": 4
-  },
-  {
-   "id": "h",
-   "name": "הכרטיס לאמא",
-   "width": 1440,
-   "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
     "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
    ],
    "warnings": [],
    "failed": [],
    "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
     "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
    ],
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 1849,
-   "title": "כרטיס מכל הלב · הכרטיס לאמא",
-   "scrollWidth": 1440,
-   "innerWidth": 1440,
+   "loadMs": 2041,
+   "title": "מסע בזמן — סדר יום יהודי",
+   "scrollWidth": 320,
+   "innerWidth": 320,
    "hOverflow": false,
-   "visibleButtons": 32,
-   "smallTargets": [],
+   "visibleButtons": 15,
+   "smallTargets": [
+    {
+     "t": "קַל",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "בֵּינוֹנִי",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "אֶתְגָּר",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "שַׂחְקָן אֶחָד",
+     "w": 119,
+     "h": 37
+    },
+    {
+     "t": "שְׁנַיִם",
+     "w": 119,
+     "h": 37
+    }
+   ],
    "brokenImgs": [],
    "zoomLocked": false,
-   "viewport": "width=device-width,initial-scale=1",
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
    "hashLinks": 0,
    "extScripts": [
     "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
@@ -154,13 +64,176 @@
    "lsKeys": 1,
    "fonts": [
     "Heebo",
+    "Noto Sans Hebrew",
     "Assistant"
    ],
-   "focusable": 39,
+   "focusable": 26,
    "h1": 1,
    "lang": "he",
    "dir": "rtl",
-   "bodyText": 2784
+   "bodyText": 435
+  },
+  {
+   "id": "e",
+   "name": "מסע בזמן",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1990,
+   "title": "מסע בזמן — סדר יום יהודי",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [
+    {
+     "t": "קַל",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "בֵּינוֹנִי",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "אֶתְגָּר",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "שַׂחְקָן אֶחָד",
+     "w": 154,
+     "h": 37
+    },
+    {
+     "t": "שְׁנַיִם",
+     "w": 154,
+     "h": 37
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Noto Sans Hebrew",
+    "Assistant"
+   ],
+   "focusable": 26,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 435,
+   "clicked": [
+    "אָ ניקוד",
+    "א+",
+    "קל",
+    "בינוני",
+    "אתגר",
+    "שחקן אחד",
+    "שניים",
+    "מתחילים!",
+    "🍲\nארוחת ערב"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "e",
+   "name": "מסע בזמן",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1967,
+   "title": "מסע בזמן — סדר יום יהודי",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [
+    {
+     "t": "קַל",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "בֵּינוֹנִי",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "אֶתְגָּר",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "שַׂחְקָן אֶחָד",
+     "w": 347,
+     "h": 37
+    },
+    {
+     "t": "שְׁנַיִם",
+     "w": 347,
+     "h": 37
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Noto Sans Hebrew",
+    "Assistant"
+   ],
+   "focusable": 26,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 435
   }
  ]
 }
