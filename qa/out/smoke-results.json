@@ -1,10 +1,474 @@
 {
- "run": "2026-10-04T09:59:59.679Z",
+ "run": "2026-10-04T10:07:31.759Z",
  "base": "http://127.0.0.1:8765",
  "results": [
   {
+   "id": "a",
+   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2036,
+   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 7,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One",
+    "Rubik",
+    "Arial"
+   ],
+   "focusable": 117,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 646
+  },
+  {
+   "id": "a",
+   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2014,
+   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 7,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One",
+    "Rubik",
+    "Arial"
+   ],
+   "focusable": 117,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 646,
+   "clicked": [
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d4\u05d2\u05d3\u05dc\u05ea \u05d8\u05e7\u05e1\u05d8",
+    "\u05d4\u05de\u05d3\u05dc\u05d9\u05d5\u05ea \u05e9\u05dc\u05d9",
+    "\ud83c\udfa8\n\u05d3\u05e4\u05d9 \u05e6\u05d1\u05d9\u05e2\u05d4\n19 \u05e6\u05d9\u05d5\u05e8\u05d9\u05dd \u05dc\u05d4\u05d3\u05e4\u05e1\u05d4 ",
+    "\u05d4\u05db\u05d5\u05dc",
+    "\u05d0\u05d7\u05d9\u05dd \u05d5\u05ea\u05d9\u05e0\u05d5\u05e7",
+    "\u05e9\u05d1\u05ea \u05d5\u05d1\u05e8\u05db\u05d5\u05ea"
+   ],
+   "lsKeysAfter": 5,
+   "lsKeysAfterReload": 5,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "a",
+   "name": "\u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&family=Suez+One&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2033,
+   "title": "\u05e6\u05d5\u05d1\u05e2\u05d9\u05dd \u05d5\u05de\u05e8\u05db\u05d9\u05d1\u05d9\u05dd! \u00b7 \u05de\u05ea\u05d7\u05dd \u05d4\u05e7\u05d8\u05e0\u05d8\u05e0\u05d9\u05dd \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 7,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One",
+    "Rubik",
+    "Arial"
+   ],
+   "focusable": 117,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 646
+  },
+  {
+   "id": "b",
+   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2526,
+   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 12,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 41,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 495
+  },
+  {
+   "id": "b",
+   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2539,
+   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 12,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 41,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 495,
+   "clicked": [
+    "\u05e7\u05d5\u05b9\u05e8\u05b0\u05d0\u05b4\u05d9\u05dd \u05d1\u05e1\u05e4\u05e8",
+    "\u05de\u05b4\u05e9\u05c2\u05b0\u05d7\u05b8\u05e7\u05b4\u05d9\u05dd \u05d9\u05d7\u05d3",
+    "\u2726\n\u05de\u05d2\u05dc\u05d9\u05dd \u05d6\u05d5\u05bc\u05d2\u05d5\u05b9\u05ea\n\u05e0\u05e8\u05d0\u05d4 \u05de\u05d9 \u05d6\u05d5\u05db\u05e8?\n",
+    "\u2726\n\u05d1\u05d5\u05d7\u05e8\u05d9\u05dd \u05d5\u05de\u05ea\u05d0\u05d9\u05de\u05d9\u05dd\n\u05de\u05ea\u05dc\u05d1\u05e9\u05d9\u05dd \u05e0\u05db\u05d5\u05df",
+    "\u2726\n\u05de\u05e1\u05d3\u05e8\u05d9\u05dd \u05d9\u05d7\u05d3\n\u05e2\u05d5\u05e8\u05db\u05d9\u05dd \u05e9\u05c1\u05d5\u05bc\u05dc\u05b0\u05d7\u05b7\u05df ",
+    "\u2726\n\u05d7\u05d5\u05e9\u05d1\u05d9\u05dd \u05d5\u05de\u05d2\u05dc\u05d9\u05dd\n\u05e9\u05d5\u05de\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05e9\u05e7\u05d8",
+    "\u2726\n\u05de\u05db\u05d9\u05e8\u05d9\u05dd \u05d7\u05b2\u05e4\u05b8\u05e6\u05b4\u05d9\u05dd\n\u05de\u05d4 \u05e0\u05d1\u05d9\u05d0 \u05dc\u05ea\u05d9\u05e0",
+    "\u2726\n\u05d9\u05d5\u05e6\u05e8\u05d9\u05dd \u05d1\u05d7\u05d5\u05e4\u05e9\u05d9\u05d5\u05ea\n\u05e6\u05b4\u05d9\u05bc\u05d5\u05bc\u05e8 \u05d7\u05d5\u05b9\u05e4",
+    "\u00d7 \u05e1\u05b0\u05d2\u05b4\u05d9\u05e8\u05b8\u05d4"
+   ],
+   "lsKeysAfter": 4,
+   "lsKeysAfterReload": 4,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "b",
+   "name": "\u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2606,
+   "title": "\u05ea\u05d9\u05e0\u05d5\u05e7 \u05d7\u05d3\u05e9 \u05d1\u05d1\u05d9\u05ea? \u05e7\u05d5\u05e8\u05d0\u05d9\u05dd \u05d5\u05de\u05e9\u05d7\u05e7\u05d9\u05dd! \u00b7 \u05d0\u05d5\u05e8 \u05d4\u05d2\u05d9\u05e2 \u05d0\u05dc\u05d9\u05e0\u05d5",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 16,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 4,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 41,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 1058
+  },
+  {
+   "id": "c",
+   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1865,
+   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 2,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 22,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 672
+  },
+  {
+   "id": "c",
+   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1820,
+   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 2,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 22,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 672,
+   "clicked": [
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\ud83d\udcb0",
+    "\ud83c\udf77",
+    "\ud83d\udcd8",
+    "\ud83d\udd6f\ufe0f",
+    "\ud83d\udcdc",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "\ud83d\udd12 \u05d4\u05ea\u05d9\u05d1\u05d4 \u05de\u05d7\u05db\u05d4 \u05dc\u05d0\u05d5\u05ea\u05d9\u05d5\u05ea",
+    "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d7\u05d3\u05e9\u05d4",
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 4
+  },
+  {
+   "id": "c",
+   "name": "\u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1860,
+   "title": "\u05d4\u05e8\u05e4\u05ea\u05e7\u05d4 \u05d1\u05d1\u05d9\u05ea! \u00b7 \u05d1\u05d9\u05ea \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 2,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 22,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 691
+  },
+  {
    "id": "d",
-   "name": "מסע המצוות",
+   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
    "width": 320,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -21,8 +485,8 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2049,
-   "title": "מסע המצוות · מורה שמיים",
+   "loadMs": 1890,
+   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 320,
    "innerWidth": 320,
    "hOverflow": false,
@@ -49,7 +513,7 @@
   },
   {
    "id": "d",
-   "name": "מסע המצוות",
+   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
    "width": 390,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -72,8 +536,8 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2018,
-   "title": "מסע המצוות · מורה שמיים",
+   "loadMs": 2042,
+   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 390,
    "innerWidth": 390,
    "hOverflow": false,
@@ -98,20 +562,20 @@
    "dir": "rtl",
    "bodyText": 571,
    "clicked": [
-    "אָ ניקוד",
-    "א+",
-    "🌙",
-    "●\n1",
-    "●●\n2",
-    "●●●\n3",
-    "●●●●\n4",
-    "החלפת הסמל של שחקן 1",
-    "בן",
-    "בת",
-    "החלפת הסמל של שחקן 2",
-    "בן",
-    "בת",
-    "החלפת הסמל של שחקן 3"
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\ud83c\udf19",
+    "\u25cf\n1",
+    "\u25cf\u25cf\n2",
+    "\u25cf\u25cf\u25cf\n3",
+    "\u25cf\u25cf\u25cf\u25cf\n4",
+    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 1",
+    "\u05d1\u05df",
+    "\u05d1\u05ea",
+    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 2",
+    "\u05d1\u05df",
+    "\u05d1\u05ea",
+    "\u05d4\u05d7\u05dc\u05e4\u05ea \u05d4\u05e1\u05de\u05dc \u05e9\u05dc \u05e9\u05d7\u05e7\u05df 3"
    ],
    "lsKeysAfter": 2,
    "lsKeysAfterReload": 2,
@@ -119,7 +583,7 @@
   },
   {
    "id": "d",
-   "name": "מסע המצוות",
+   "name": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea",
    "width": 1440,
    "errors": [
     "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
@@ -136,8 +600,8 @@
    "dialogs": [],
    "navigations": [],
    "status": 200,
-   "loadMs": 2089,
-   "title": "מסע המצוות · מורה שמיים",
+   "loadMs": 1977,
+   "title": "\u05de\u05e1\u05e2 \u05d4\u05de\u05e6\u05d5\u05d5\u05ea \u00b7 \u05de\u05d5\u05e8\u05d4 \u05e9\u05de\u05d9\u05d9\u05dd",
    "scrollWidth": 1440,
    "innerWidth": 1440,
    "hOverflow": false,
@@ -161,6 +625,1064 @@
    "lang": "he",
    "dir": "rtl",
    "bodyText": 571
+  },
+  {
+   "id": "e",
+   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1996,
+   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [
+    {
+     "t": "\u05e7\u05b7\u05dc",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
+     "w": 77,
+     "h": 37
+    },
+    {
+     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
+     "w": 119,
+     "h": 37
+    },
+    {
+     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
+     "w": 119,
+     "h": 37
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Noto Sans Hebrew",
+    "Assistant"
+   ],
+   "focusable": 26,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 435
+  },
+  {
+   "id": "e",
+   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2044,
+   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [
+    {
+     "t": "\u05e7\u05b7\u05dc",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
+     "w": 100,
+     "h": 37
+    },
+    {
+     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
+     "w": 154,
+     "h": 37
+    },
+    {
+     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
+     "w": 154,
+     "h": 37
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Noto Sans Hebrew",
+    "Assistant"
+   ],
+   "focusable": 26,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 435,
+   "clicked": [
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\u05e7\u05dc",
+    "\u05d1\u05d9\u05e0\u05d5\u05e0\u05d9",
+    "\u05d0\u05ea\u05d2\u05e8",
+    "\u05e9\u05d7\u05e7\u05df \u05d0\u05d7\u05d3",
+    "\u05e9\u05e0\u05d9\u05d9\u05dd",
+    "\u05de\u05ea\u05d7\u05d9\u05dc\u05d9\u05dd!",
+    "\u2600\ufe0f\n\u05e7\u05d9\u05de\u05d4 \u05d1\u05d1\u05d5\u05e7\u05e8"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "e",
+   "name": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Fredoka:wght@400;500;600;700&family=Assistant:wght@400;600;700&",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2042,
+   "title": "\u05de\u05e1\u05e2 \u05d1\u05d6\u05de\u05df \u2014 \u05e1\u05d3\u05e8 \u05d9\u05d5\u05dd \u05d9\u05d4\u05d5\u05d3\u05d9",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 15,
+   "smallTargets": [
+    {
+     "t": "\u05e7\u05b7\u05dc",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "\u05d1\u05bc\u05b5\u05d9\u05e0\u05d5\u05b9\u05e0\u05b4\u05d9",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "\u05d0\u05b6\u05ea\u05b0\u05d2\u05bc\u05b8\u05e8",
+     "w": 229,
+     "h": 37
+    },
+    {
+     "t": "\u05e9\u05b7\u05c2\u05d7\u05b0\u05e7\u05b8\u05df \u05d0\u05b6\u05d7\u05b8\u05d3",
+     "w": 347,
+     "h": 37
+    },
+    {
+     "t": "\u05e9\u05b0\u05c1\u05e0\u05b7\u05d9\u05b4\u05dd",
+     "w": 347,
+     "h": 37
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Noto Sans Hebrew",
+    "Assistant"
+   ],
+   "focusable": 26,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 435
+  },
+  {
+   "id": "f",
+   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1910,
+   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 4,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1.0",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 9,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 615
+  },
+  {
+   "id": "f",
+   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2038,
+   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 4,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1.0",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 9,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 615,
+   "clicked": [
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\u05de\u05ea\u05d7\u05d9\u05dc\u05d9\u05dd \u05dc\u05d0\u05e4\u05d5\u05ea",
+    "\ud83c\udf6f"
+   ],
+   "lsKeysAfter": 2,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "f",
+   "name": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700;800&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2020,
+   "title": "\u05de\u05d8\u05d1\u05d7 \u05d4\u05e9\u05d1\u05ea \u2013 \u05d4\u05db\u05e0\u05ea \u05d4\u05d7\u05dc\u05d5\u05ea \u05dc\u05db\u05d1\u05d5\u05d3 \u05e9\u05d1\u05ea",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 4,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1.0",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Suez One"
+   ],
+   "focusable": 9,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 615
+  },
+  {
+   "id": "g",
+   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1742,
+   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 11,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 15,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 930
+  },
+  {
+   "id": "g",
+   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1905,
+   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 11,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 15,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 930,
+   "clicked": [
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\u05e4\u05d5\u05ea\u05d7\u05d9\u05dd \u05d0\u05ea \u05ea\u05d9\u05e7 \u05d4\u05d7\u05e7\u05d9\u05e8\u05d4",
+    "\ud83e\uddf5",
+    "\u2702",
+    "\ud83d\udeaa",
+    "\ud83d\udd0e",
+    "\ud83c\udf80\n\u05ea\u05de\u05d9, \u05d4\u05d0\u05d7\u05d5\u05ea \u05d4\u05e7\u05d8\u05e0\u05d4\n\u05e8\u05d0\u05d9\u05ea\u05d9 \u05d0\u05ea \u05d3",
+    "\u2702\n\u05d9\u05d5\u05e0\u05d9, \u05d4\u05d0\u05d7 \u05d4\u05d2\u05d3\u05d5\u05dc\n\u05d3\u05d5\u05d3 \u05db\u05e2\u05e1 \u05e2\u05dc\u05d9\u05d9",
+    "\ud83d\udeaa\n\u05d4\u05e9\u05db\u05df \u05de\u05d4\u05de\u05e1\u05d3\u05e8\u05d5\u05df\n\u05d1\u05d3\u05d9\u05d5\u05e7 \u05d9\u05e6\u05d0\u05ea\u05d9 \u05de",
+    "\ud83c\udf37\n\u05d0\u05de\u05d0\n\u05d3\u05d5\u05d3 \u05e8\u05e5 \u05d0\u05dc\u05d9\u05d9 \u05de\u05d6\u05d9\u05e2 \u05d5\u05de\u05d5\u05d3\u05d0\u05d2"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 4
+  },
+  {
+   "id": "g",
+   "name": "\u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1886,
+   "title": "\u05ea\u05e2\u05dc\u05d5\u05de\u05ea \u05d4\u05de\u05ea\u05e0\u05d4 \u00b7 \u05d1\u05dc\u05e9 \u05d4\u05de\u05d9\u05d3\u05d5\u05ea",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 11,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 15,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 959
+  },
+  {
+   "id": "h",
+   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1876,
+   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 33,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 39,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 2659
+  },
+  {
+   "id": "h",
+   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1904,
+   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 33,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 39,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 2659,
+   "clicked": [
+    "\u05d0\u05b8 \u05e0\u05d9\u05e7\u05d5\u05d3",
+    "\u05d0+",
+    "\u2193 \u05e9\u05d5\u05de\u05e8\u05d9\u05dd \u05db\u05e8\u05d8\u05d9\u05e1 \u05db\u05ea\u05de\u05d5\u05e0\u05d4",
+    "\u05ea\u05e6\u05d5\u05d2\u05d4 \u05de\u05d5\u05d2\u05d3\u05dc\u05ea \u05e9\u05dc \u05d4\u05db\u05e8\u05d8\u05d9\u05e1",
+    "\u05d7\u05d9\u05d1\u05d5\u05e7 \u05d7\u05de\u05d9\u05dd",
+    "\u05d8\u05d5\u05e8\u05e7\u05d9\u05d6 \u05e8\u05d2\u05d5\u05e2",
+    "\u05d5\u05e8\u05d5\u05d3 \u05e7\u05d5\u05e8\u05dc",
+    "\u05e1\u05d2\u05d5\u05dc \u05d7\u05dc\u05d5\u05de\u05d9",
+    "\u05e9\u05de\u05e9 \u05d6\u05d4\u05d5\u05d1\u05d4",
+    "\u05d7\u05d2\u05d9\u05d2\u05d9 \u05d5\u05e0\u05e7\u05d9",
+    "\u05e7\u05e9\u05ea \u05e8\u05db\u05d4",
+    "\u05de\u05e1\u05d2\u05e8\u05ea \u05d7\u05d2\u05d9\u05d2\u05d9\u05ea",
+    "\u05e4\u05e8\u05d7\u05d9\u05dd \u05d1\u05dc\u05d1",
+    "\u2665",
+    "\u273f",
+    "\u2726",
+    "\u2605",
+    "\ud83c\udf37",
+    "\ud83c\udf80",
+    "\ud83c\udf81",
+    "\ud83d\udc9b",
+    "\ud83c\udf3c",
+    "\ud83c\udf88",
+    "\u2728",
+    "\ud83c\udf3f"
+   ],
+   "lsKeysAfter": 3,
+   "lsKeysAfterReload": 3,
+   "errorsAfterClicks": 4
+  },
+  {
+   "id": "h",
+   "name": "\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1921,
+   "title": "\u05db\u05e8\u05d8\u05d9\u05e1 \u05de\u05db\u05dc \u05d4\u05dc\u05d1 \u00b7 \u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05dc\u05d0\u05de\u05d0",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 32,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width,initial-scale=1",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant"
+   ],
+   "focusable": 39,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 2781
+  },
+  {
+   "id": "i",
+   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1879,
+   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 24,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 0,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 54,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 1039
+  },
+  {
+   "id": "i",
+   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2036,
+   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 24,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 0,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 54,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 1039,
+   "clicked": [
+    "\u05d1\u05ea",
+    "\u05d1\u05df",
+    "\u05e2\u05d3\u05d9\u05d9\u05df \u05dc\u05d0 \u05de\u05e1\u05e4\u05e8\u05d9\u05dd",
+    "\u05dc\u05d0, \u05e8\u05e7 \u05d0\u05d7\u05d3/\u05ea",
+    "\u05ea\u05d0\u05d5\u05de\u05d9\u05dd",
+    "\u05e9\u05dc\u05d9\u05e9\u05d9\u05d9\u05d4",
+    "\u05db\u05dc\u05dc\u05d9\u05ea",
+    "\u05de\u05db\u05d1\u05d9",
+    "\u05de\u05d0\u05d5\u05d7\u05d3\u05ea",
+    "\u05dc\u05d0\u05d5\u05de\u05d9\u05ea",
+    "\u05e9\u05db\u05d9\u05e8\u05d4",
+    "\u05e2\u05e6\u05de\u05d0\u05d9\u05ea",
+    "\u05d2\u05dd \u05d5\u05d2\u05dd",
+    "\u05dc\u05d0 \u05e2\u05d1\u05d3\u05ea\u05d9",
+    "\u05db\u05df, \u05d0\u05e0\u05d9 \u05e8\u05e9\u05d5\u05de\u05d4",
+    "\u05e2\u05d5\u05d3 \u05dc\u05d0",
+    "\u05d1\u05d5\u05d0\u05d9 \u05e0\u05d1\u05e0\u05d4 \u05d0\u05ea \u05d4\u05de\u05e4\u05d4 \u05e9\u05dc\u05d9",
+    "+ \u05d4\u05e2\u05e8\u05d4 \u05e9\u05dc\u05d9",
+    "\u05dc\u05e9\u05de\u05d5\u05e8",
+    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5",
+    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5",
+    "+ \u05d4\u05e2\u05e8\u05d4 \u05e9\u05dc\u05d9",
+    "\u05dc\u05e9\u05de\u05d5\u05e8",
+    "\u05dc\u05d0 \u05e2\u05db\u05e9\u05d9\u05d5"
+   ],
+   "lsKeysAfter": 1,
+   "lsKeysAfterReload": 1,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "i",
+   "name": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800&family=Assistant:wght@400;600;700&display=swa",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2052,
+   "title": "\u05e6\u05e2\u05d3\u05d9\u05dd \u05e8\u05d0\u05e9\u05d5\u05e0\u05d9\u05dd \u00b7 \u05e9\u05e4\u05e8\u05d4 \u05d5\u05e4\u05d5\u05e2\u05d4",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 24,
+   "smallTargets": [],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 0,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 54,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 1039
+  },
+  {
+   "id": "j",
+   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "width": 320,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2044,
+   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "scrollWidth": 320,
+   "innerWidth": 320,
+   "hOverflow": false,
+   "visibleButtons": 8,
+   "smallTargets": [
+    {
+     "t": "\u05d4\u05d9\u05d5\u05dd",
+     "w": 99,
+     "h": 33
+    },
+    {
+     "t": "\u05d4\u05d7\u05d5\u05d8",
+     "w": 99,
+     "h": 33
+    },
+    {
+     "t": "\u05d0\u05e6\u05dc\u05d9",
+     "w": 99,
+     "h": 33
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 10,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 277
+  },
+  {
+   "id": "j",
+   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "width": 390,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 1934,
+   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "hOverflow": false,
+   "visibleButtons": 8,
+   "smallTargets": [
+    {
+     "t": "\u05d4\u05d9\u05d5\u05dd",
+     "w": 122,
+     "h": 33
+    },
+    {
+     "t": "\u05d4\u05d7\u05d5\u05d8",
+     "w": 122,
+     "h": 33
+    },
+    {
+     "t": "\u05d0\u05e6\u05dc\u05d9",
+     "w": 122,
+     "h": 33
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 10,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 277,
+   "clicked": [
+    "\u05e2\u05d9\u05d9\u05e4\u05d4\n\u05de\u05e9\u05d4\u05d5 \u05e7\u05d8\u05df \u05e9\u05dc\u05d0 \u05d3\u05d5\u05e8\u05e9 \u05db\u05d5\u05d7",
+    "\u05e0\u05d9\u05e1\u05d9\u05ea\u05d9",
+    "\u2661 \u05dc\u05e9\u05de\u05d5\u05e8 \u05d0\u05e6\u05dc\u05d9",
+    "\u05e9\u05d0\u05dc\u05ea \u05e2\u05e8\u05d1 \u05dc\u05e9\u05e0\u05d9\u05db\u05dd\n\u05d4\u05db\u05e8\u05d8\u05d9\u05e1 \u05d4\u05d6\u05d4, \u05e9\u05d0",
+    "\u05d0\u05e6\u05dc\u05d9"
+   ],
+   "lsKeysAfter": 1,
+   "lsKeysAfterReload": 1,
+   "errorsAfterClicks": 6
+  },
+  {
+   "id": "j",
+   "name": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "width": 1440,
+   "errors": [
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ],
+   "warnings": [],
+   "failed": [],
+   "external": [
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Frank+Ruhl+Libre:wght@400;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap",
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "dialogs": [],
+   "navigations": [],
+   "status": 200,
+   "loadMs": 2036,
+   "title": "\u05de\u05e8\u05d5\u05d5\u05d7",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "hOverflow": false,
+   "visibleButtons": 8,
+   "smallTargets": [
+    {
+     "t": "\u05d4\u05d9\u05d5\u05dd",
+     "w": 135,
+     "h": 33
+    },
+    {
+     "t": "\u05d4\u05d7\u05d5\u05d8",
+     "w": 135,
+     "h": 33
+    },
+    {
+     "t": "\u05d0\u05e6\u05dc\u05d9",
+     "w": 135,
+     "h": 33
+    }
+   ],
+   "brokenImgs": [],
+   "zoomLocked": false,
+   "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+   "hashLinks": 0,
+   "extScripts": [
+    "https://bracha-games-review.marpad990579.chatgpt.site/live-game.js?v=1"
+   ],
+   "lsKeys": 1,
+   "fonts": [
+    "Heebo",
+    "Assistant",
+    "Frank Ruhl Libre"
+   ],
+   "focusable": 10,
+   "h1": 1,
+   "lang": "he",
+   "dir": "rtl",
+   "bodyText": 277
   }
  ]
 }

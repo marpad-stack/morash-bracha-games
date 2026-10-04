@@ -74,7 +74,9 @@ for f in glob.glob(os.path.join(OUT, 'qa-*.json')):
     except Exception: continue
     for x in j.get('findings', []):
         if x.get('severity') in ('red', 'yellow'):
-            add(x.get('part', '?'), f"[{x.get('id')}] {x.get('title')} — {x.get('location','')}", j.get('agent', os.path.basename(f)), 'פתוח', x.get('owner', 'קוד'), x.get('evidence', '')[:120])
+            st = x.get('status', 'open')
+            done = str(st).startswith(('תוקן', 'fixed'))
+            add(x.get('part', '?'), f"[{x.get('id')}] {x.get('title')} — {x.get('location','')}", j.get('agent', os.path.basename(f)), st if done else 'פתוח', x.get('owner', 'קוד'), str((x.get('verified') if done else x.get('evidence')) or '')[:120])
 out = {'agent': 'qa-notes', 'run': datetime.datetime.now().isoformat(timespec='seconds'), 'rows': rows}
 if VERIFIED: out['verified_overlay'] = {'by': 'qa-notes', 'date': VERIFIED_DATE, 'note': 'סטטוס "תוקן" נקבע רק אחרי הרצה/בדיקה חזותית עם הוכחה; ר׳ qa/out/notes-verification.json'}
 json.dump(out, open(os.path.join(OUT, 'notes.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
