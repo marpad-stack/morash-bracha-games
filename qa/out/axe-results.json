@@ -1,11 +1,11 @@
 {
- "run": "2026-10-05T11:33:31.703Z",
+ "run": "2026-10-05T20:37:28.165Z",
  "results": [
   {
    "id": "a",
    "name": "מתחם הקטנטנים",
    "width": 390,
-   "bytesKB": 1152,
+   "bytesKB": 1153,
    "reqs": 9,
    "violations": [
     {
@@ -36,7 +36,7 @@
    "id": "a",
    "name": "מתחם הקטנטנים",
    "width": 1440,
-   "bytesKB": 1152,
+   "bytesKB": 1153,
    "reqs": 9,
    "violations": [
     {
@@ -67,7 +67,7 @@
    "id": "b",
    "name": "אור הגיע אלינו",
    "width": 390,
-   "bytesKB": 1860,
+   "bytesKB": 1861,
    "reqs": 10,
    "violations": [
     {
@@ -86,7 +86,7 @@
    "id": "b",
    "name": "אור הגיע אלינו",
    "width": 1440,
-   "bytesKB": 1860,
+   "bytesKB": 1861,
    "reqs": 10,
    "violations": [
     {
@@ -123,7 +123,7 @@
    "id": "d",
    "name": "מסע המצוות",
    "width": 390,
-   "bytesKB": 909,
+   "bytesKB": 907,
    "reqs": 1,
    "violations": [
     {
@@ -154,7 +154,7 @@
    "id": "d",
    "name": "מסע המצוות",
    "width": 1440,
-   "bytesKB": 909,
+   "bytesKB": 907,
    "reqs": 1,
    "violations": [
     {
@@ -185,7 +185,7 @@
    "id": "e",
    "name": "מסע בזמן",
    "width": 390,
-   "bytesKB": 813,
+   "bytesKB": 818,
    "reqs": 1,
    "violations": [
     {
@@ -206,7 +206,7 @@
    "id": "e",
    "name": "מסע בזמן",
    "width": 1440,
-   "bytesKB": 813,
+   "bytesKB": 818,
    "reqs": 1,
    "violations": [
     {
@@ -227,7 +227,7 @@
    "id": "f",
    "name": "מטבח השבת",
    "width": 390,
-   "bytesKB": 867,
+   "bytesKB": 866,
    "reqs": 1,
    "violations": [
     {
@@ -258,7 +258,7 @@
    "id": "f",
    "name": "מטבח השבת",
    "width": 1440,
-   "bytesKB": 867,
+   "bytesKB": 866,
    "reqs": 1,
    "violations": [
     {
@@ -305,7 +305,7 @@
    "id": "h",
    "name": "הכרטיס לאמא",
    "width": 390,
-   "bytesKB": 463,
+   "bytesKB": 464,
    "reqs": 1,
    "violations": []
   },
@@ -313,7 +313,7 @@
    "id": "h",
    "name": "הכרטיס לאמא",
    "width": 1440,
-   "bytesKB": 463,
+   "bytesKB": 464,
    "reqs": 1,
    "violations": []
   },

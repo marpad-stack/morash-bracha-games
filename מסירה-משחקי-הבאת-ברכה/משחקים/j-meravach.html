@@ -326,7 +326,7 @@ html body[data-morash-part=j] .nb.on{color:#af465d!important}
     <section class="screen" id="s-card"><div id="cardBox"></div></section>
 
     <section class="screen" id="s-path">
-      <h2 class="title">החוט שלך</h2>
+      <h2 class="title">ההתקדמות שלך</h2>
       <p class="eyebrow">כל יום שנפתח מוסיף קטע. לא צריך רצף מושלם.</p>
       <div class="stats" id="stats"></div>
       <div class="thread-box" id="thread"></div>
@@ -344,7 +344,7 @@ html body[data-morash-part=j] .nb.on{color:#af465d!important}
 
   <nav>
     <button class="nb on" data-g="today">היום</button>
-    <button class="nb" data-g="path">החוט</button>
+    <button class="nb" data-g="path">התקדמות</button>
     <button class="nb" data-g="album">אצלי</button>
   </nav>
   <div class="toast" id="toast"></div>
@@ -445,14 +445,14 @@ function drawCard(){
   </button>
   <p class="note" id="note"></p>`;
  $('#rev').onclick=e=>{$('#task').classList.add('open');e.target.style.display='none'};
- $('#did').onclick=e=>{S.done[i]=S.day;e.target.textContent='✓ ניסיתי היום';toast('נרשם בחוט שלך');note()};
+ $('#did').onclick=e=>{S.done[i]=S.day;e.target.textContent='✓ ניסיתי היום';toast('נרשם בהתקדמות שלך');note()};
  $('#sav').onclick=e=>{S.saved[i]=!S.saved[i];e.target.className='btn '+(S.saved[i]?'on':'');
    e.target.textContent=S.saved[i]?'♥ שמור אצלי':'♡ לשמור אצלי';toast(S.saved[i]?'נשמר':'הוסר')};
  $('#cp').onclick=()=>{drawCouple(i);go('couple')};
  note();
 }
 function note(){const n=Object.keys(S.done).length;const e=$('#note');if(!e)return;
- e.textContent=n===0?'לא חייבים לסמן כלום. הכרטיס כבר אצלך.':n===1?'צעד אחד. זה מה שצריך ליום.':`${n} צעדים עד עכשיו. החוט מתארך.`}
+ e.textContent=n===0?'לא חייבים לסמן כלום. הכרטיס כבר אצלך.':n===1?'צעד אחד. זה מה שצריך ליום.':`${n} צעדים עד עכשיו. ההתקדמות נמשכת.`}
 
 /* thread */
 function drawPath(){
