@@ -1,6 +1,6 @@
 {
  "agent": "qa-inventory",
- "run": "2026-10-05T11:33:32",
+ "run": "2026-10-05T20:44:29",
  "findings": [
   {
    "id": "INV-001",
@@ -64,18 +64,6 @@
   },
   {
    "id": "INV-006",
-   "part": "d",
-   "severity": "yellow",
-   "type": "ניקוד",
-   "title": "מילים מנוקדות בכתיב מלא (יו\"ד/וי\"ו כפולות)",
-   "location": "d-mitzvot.html",
-   "evidence": "יִישָׁן",
-   "proposal": "ניקוד = כתיב חסר; לבדוק מול עורכת הלשון",
-   "owner": "עורכת לשון",
-   "status": "open"
-  },
-  {
-   "id": "INV-007",
    "part": "g",
    "severity": "info",
    "type": "חוויה",
@@ -87,7 +75,7 @@
    "status": "open"
   },
   {
-   "id": "INV-008",
+   "id": "INV-007",
    "part": "i",
    "severity": "info",
    "type": "חוויה",
